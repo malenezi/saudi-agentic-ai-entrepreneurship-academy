@@ -1,0 +1,21 @@
+# Secrets: never commit keys or credentials
+.env
+.env.*
+*.key
+*.pem
+secrets/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# OS and editors
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Local data: no real customer data in this repository
+data/private/
+*.local.*

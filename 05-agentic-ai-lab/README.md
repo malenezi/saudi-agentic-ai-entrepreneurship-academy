@@ -1,0 +1,44 @@
+# مختبر الذكاء الاصطناعي الوكيلي · Agentic AI Lab
+
+<div dir="rtl">
+
+المختبر هو الجانب العملي من الأكاديمية: مهارات جاهزة للاستخدام مع أي مساعد ذكي، وقوالب وكلاء لأعمال سعودية شائعة، وقالب تقييم، ودليل لاختيار النماذج العربية.
+
+| القسم | المحتوى | الحالة الحالية |
+|---|---|---|
+| [المهارات الريادية](skills/README.md) | عشر مهارات: تعليمات جاهزة تحوّل مساعدك إلى شريك في اكتشاف الفرص والتسعير والامتثال | جاهزة للاستخدام |
+| [قوالب الوكلاء](agent-templates/README.md) | خمسة مواصفات لوكلاء: خدمة العملاء عبر واتساب، مطابقة الفواتير، تلخيص المنافسات، تأهيل العملاء المحتملين، مساعد الحجوزات | مواصفات؛ النسخ القابلة للتشغيل في إصدار لاحق |
+| [التقييم](evaluation/eval-template.md) | قالب مجموعة اختبار بالعربية ومعايير النجاح | جاهز للاستخدام |
+| [دليل النماذج العربية](arabic-models.md) | كيف تختار نموذجاً، وما المتاح من نماذج عربية مفتوحة الأوزان | جاهز، يُراجع دورياً |
+
+</div>
+
+The lab is the hands-on side of the academy.
+
+| Section | Contents | Current status |
+|---|---|---|
+| [Entrepreneurial skills](skills/README.md) | Ten ready-to-use instruction sets that turn any assistant into a partner for discovery, pricing and compliance | Usable now |
+| [Agent templates](agent-templates/README.md) | Five agent specifications for common Saudi business jobs | Specifications; runnable versions in a later iteration |
+| [Evaluation](evaluation/eval-template.md) | Arabic test-set template and pass criteria | Usable now |
+| [Arabic model guide](arabic-models.md) | How to choose a model; open-weight Arabic options | Usable; reviewed periodically |
+
+## Principles of the lab
+
+1. **Framework-neutral.** Templates are written as specifications so they can be built in a low-code tool or in code. Tools are named only as examples.
+2. **Arabic test cases first.** Nothing is added to the lab without Arabic cases, including Saudi dialect.
+3. **Authority outside the model.** Every agent template ships with an oversight table. Implement it in code or workflow settings.
+4. **Synthetic data only.** No real personal data anywhere in this repository.
+5. **Honest results.** Contributors report the success rate they measured, the model used and the date.
+
+## Technical building blocks (for orientation)
+
+| Layer | What it does | Examples |
+|---|---|---|
+| Model | Understands and generates language; decides next step | Hosted model APIs; open-weight Arabic models |
+| Orchestration | Runs the loop, state and handoffs | Low-code: n8n. Code: LangGraph, CrewAI |
+| Tools and context | Connects the agent to systems and data | APIs, Model Context Protocol servers, retrieval |
+| Channel | Where users meet the agent | WhatsApp Business, web chat, email |
+| Guardrails | Enforces limits and approvals | Allow-lists, approval steps, validators |
+| Evaluation and monitoring | Measures quality and cost | Test sets, tracing, dashboards |
+
+Read each tool's current documentation; this field changes quickly.
