@@ -81,4 +81,4 @@ Answer نعم / لا / جزئي (Yes / No / Partly). Every "No" or "Partly" beco
 |---|---|---|---|
 | | | | |
 
-**متى تستعين بمحامٍ · When to call a lawyer:** any "Yes" in section و; any transfer outside the Kingdom you cannot avoid; your first enterprise or government contract; any breach.
+**متى تستعين بمحامٍ · When to call a lawyer:** any "Yes" in section و, any transfer outside the Kingdom you cannot avoid; your first enterprise or government contract; any breach.
