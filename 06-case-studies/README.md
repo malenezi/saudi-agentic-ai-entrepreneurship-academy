@@ -2,21 +2,78 @@
 
 <div dir="rtl">
 
-## الحالة الحالية
+آخر مراجعة للمصادر: **17 نوفمبر 2026**
 
-لا توجد بعد دراسات حالة حقيقية. المنشور حالياً [ثلاثة سيناريوهات توضيحية](illustrative-scenarios.md): منشآت **مُتخيَّلة** وأرقام **افتراضية** تبيّن كيف تُكتب دراسة الحالة وكيف يُفكَّر في المشكلة. لا تستشهد بها كأدلة سوقية.
+## الغرض
 
-الهدف عشرون دراسة حقيقية خلال السنة الأولى. إن كنت صاحب منشأة أو مؤسساً طبّق وكيلاً فعلياً في المملكة، [شاركنا تجربتك](../.github/ISSUE_TEMPLATE/new-case-study.md).
+هذه ليست مكتبة لقصص نجاح الذكاء الاصطناعي. هي مكتبة لاكتشاف **الفرص الريادية** التي أوجدها الذكاء الاصطناعي الوكيلي. يخرج المتعلم من كل حالة وهو قادر على الإجابة عن سؤال واحد:
+
+> ما المشكلة المشابهة التي أستطيع حلها في السوق السعودي، ومن سيشتري الحل، وكيف أبني شركة حولها؟
+
+## مستويات الدليل
+
+كل حالة تحمل وسماً واحداً. **لا توجد حتى الآن حالة تحقق منها طرف مستقل**، وكل الأرقام المنشورة هنا معلنة من الشركة أو من مزوّد حلّها.
+
+| الوسم | المعنى | كيف تستخدمها |
+|---|---|---|
+| **أ · أرقام من الشركة نفسها** | الشركة صاحبة التجربة نشرت الأرقام والتفاصيل، ومنها ما لم ينجح | مرجع تعليمي؛ اذكر أن الأرقام معلنة ذاتياً |
+| **ب · أرقام من المزوّد** | الحالة حقيقية، والناشر هو من باع الحل أو البنية | اقرأها كما تقرأ مادة تسويقية: ما الذي لم يُذكر؟ |
+| **ج · إعلان بلا نتائج** | نشر أو شراكة معلنة دون أرقام قابلة للقياس | مادة لتمرين استخراج سير العمل، لا دليل على عائد |
+| **سيناريو توضيحي** | منشأة متخيَّلة وأرقام افتراضية | تدريب فقط؛ لا تستشهد به كدليل سوقي |
+
+## الحالات السعودية
+
+| الحالة | القطاع | الدليل | أهم ما تعلّمه |
+|---|---|---|---|
+| [Tamimi Markets: منصة AskBaba](saudi/tamimi-markets-askbaba.md) | تجزئة غذائية | ب | وكيل داخل أدوات الفريق اليومية؛ الفرق بين الإجابة والإجراء |
+| [Alsaif Gallery: منصة وكلاء داخلية](saudi/alsaif-gallery.md) | تجزئة منزلية | ج | توطين البيانات شرط تصميمي؛ قراءة بيان صحفي بعين ناقدة |
+| [Aramco Digital و OrbitronAI](saudi/aramco-digital-orbitronai.md) | صناعة وطاقة | ج | نموذج عمل: حالة حقيقية، قياس، ثم منتج قابل للتكرار |
+
+## الحالات العالمية
+
+| الحالة | البلد | الدليل | أهم ما تعلّمه |
+|---|---|---|---|
+| [SaaStr: عشرون وكيلاً وفريق صغير](global/saastr.md) | الولايات المتحدة | أ | التكلفة الحقيقية لإدارة الوكلاء؛ قائمة «لا تفعل أبداً» |
+| [Klarna: النجاح المعلن ثم التراجع](global/klarna.md) | السويد | أ | ما لا تظهره لوحة المؤشرات في الشهر الأول |
+| [OPLOG: وكلاء في قلب المنتج](global/oplog.md) | تركيا | ب | الوكيل جزء من الخدمة الأساسية لا إضافة عليها |
+| [Simba Sleep: الوكيل Luna](global/simba-sleep.md) | المملكة المتحدة | ب | تحويل خدمة العملاء من مركز تكلفة إلى مصدر إيراد |
+| [TrueLayer: الوكيل Ema](global/truelayer.md) | المملكة المتحدة | ب | وكيل في قطاع منظَّم: متى يمتنع ومتى يصعّد |
+| [Suitor: مشروع بخمسة موظفين](global/suitor.md) | أستراليا | ب | حالة مقارنة: هل هذا وكيل أم محادث آلي؟ |
+
+## مواد أخرى
+
+- [سيناريوهات توضيحية](illustrative-scenarios.md): خمسة سيناريوهات، اثنان منها مشتقان من حالة Tamimi.
+- [ورقة عمل المتعلم](worksheets/learner-worksheet.md): من تشخيص المشكلة إلى أطروحة الفرصة، مرتبطة بنواتج التعلم الخمسة.
+- [ما لم يُعتمد ولماذا](not-adopted.md): ادعاءات وردت في المسودات ولم تثبت. اقرأها قبل أن تقترح حالة جديدة.
+
+## ربط الحالات بنواتج التعلم
+
+| ناتج التعلم | الحالات المناسبة | التمرين |
+|---|---|---|
+| 1. التفريق بين المحادث الآلي والوكيل | Suitor مقابل Tamimi أو OPLOG | طبّق جدول التشخيص في ورقة العمل على الحالتين |
+| 2. رصد سير عمل متكرر ومكلف وتوثيقه | Tamimi، Alsaif | استخرج سير العمل «قبل» من وصف عام، ثم وثّق سير عمل في منشأة سعودية حقيقية |
+| 3. تقييم الفرص واختيار واحدة | Simba، Klarna، SaaStr | قيّم ثلاث فرص بـ[أداة تقييم الفرص](../04-entrepreneur-toolkit/02-ai-opportunity-assessment.md) |
+| 4. مقابلات تكشف السلوك الفعلي | كل الحالات | اكتب خمسة أسئلة كنت ستطرحها على مدير متجر قبل بناء الحل |
+| 5. كتابة أطروحة الفرصة بالعربية | Aramco Digital، OPLOG | اكتب أطروحة من صفحة واحدة لفرصة مماثلة في المملكة |
+
+## ساهم بحالة سعودية
+
+الهدف عشرون دراسة حقيقية خلال السنة الأولى، يكتبها أصحابها. إن كنت صاحب منشأة أو مؤسساً طبّق وكيلاً فعلياً في المملكة، [شاركنا تجربتك](../.github/ISSUE_TEMPLATE/new-case-study.md).
 
 </div>
 
-## Current status
+## In English
 
-There are no real case studies yet. What is published are [three illustrative scenarios](illustrative-scenarios.md): **invented** businesses with **assumed** numbers, written to show the format and the reasoning. Do not cite them as market evidence. They will be replaced as real cases are contributed.
+Nine real cases summarised from public sources (three Saudi, six international), each tagged with an evidence level: **A** figures published by the company itself, **B** figures published by its vendor, **C** announcement without measurable results. **No case here has been independently verified.** Illustrative scenarios remain invented and must not be cited as market evidence. Claims from earlier drafts that could not be confirmed are listed in [not-adopted.md](not-adopted.md). Every figure is registered in [SOURCES.md](../SOURCES.md).
 
-## Case study template
+There are two kinds of case study in this folder:
 
-Every real case study follows this structure. Maximum two pages.
+1. **Public-source summaries** (the nine above): short, paraphrased, linked to the original. They follow the short format used in the files.
+2. **Contributed cases**: written with the business owner. They follow the full template below.
+
+## Template for contributed cases
+
+Maximum two pages.
 
 ```markdown
 # (Title: sector, job, outcome)
@@ -60,8 +117,9 @@ What the reviewer saw: logs, reports, a demo, a customer confirmation.
 
 ## Rules for contributors
 
-- **Permission first.** Written agreement from the business owner.
+- **Permission first** for contributed cases. Written agreement from the business owner.
+- **Public-source summaries** need a link to the original publisher, an evidence tag, and a "what the source does not say" section. Paraphrase; do not copy.
 - **No personal data** and no confidential figures the owner has not cleared.
-- **Measured, not estimated.** Say how every number was obtained. If it is an estimate, label it.
+- **Measured, not estimated.** Say how every number was obtained and who published it. If it is an estimate, label it.
 - **Include what failed.** A case study with no failures is an advertisement.
 - **No promotion** of the builder's company beyond a one-line credit.

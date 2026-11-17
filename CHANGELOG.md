@@ -1,5 +1,20 @@
 # Changelog
 
+## Unreleased (2026-11-17)
+
+Case studies.
+
+**Added**
+- `06-case-studies/`: nine real cases summarised from public sources (Saudi: Tamimi Markets, Alsaif Gallery, Aramco Digital and OrbitronAI; international: SaaStr, Klarna, OPLOG, Simba Sleep, TrueLayer, Suitor), each with an evidence level, "what the source does not say" and questions for learners.
+- Evidence levels (A company-reported, B vendor-reported, C announcement without results, illustrative scenario).
+- Learner worksheet linking the cases to the five learning outcomes of the Opportunity course.
+- `not-adopted.md`: claims from the drafts that were removed, corrected or reclassified.
+- Two illustrative scenarios derived from the Tamimi case.
+
+**Verified and corrected** (details in `SOURCES.md`, A17 to A25 and B12 to B18)
+- No case is independently verified; all figures are company- or vendor-reported and labelled as such.
+- Klarna is presented with its 2025 reversal. Unnamed Saudi examples and one untraceable company were removed.
+
 ## v0.2 (2026-11-16)
 
 Saudi Market Knowledge Framework.

@@ -2,7 +2,7 @@
 
 Every external fact used in this repository is listed here with its source, the date it was last checked and a status. **Rule: if a fact is not in section A, do not quote it as fact anywhere in the academy.**
 
-Last full review: **16 November 2026**
+Last full review: **16 November 2026** · Case-study entries (A17 to A25, B12 to B18) added **17 November 2026**
 
 ## A. Verified on the review date
 
@@ -24,6 +24,15 @@ Last full review: **16 November 2026**
 | A14 | SDAIA published the National AI Risk Management Framework in April 2026 | [Gowling WLG](https://gowlingwlg.com/insights-resources/articles/2026/what-saudi-arabias-ai-risk-management-framework-means-for-organisations) | |
 | A15 | CST Emerging Technologies Regulatory Sandbox: 15 products completed the second cohort; third-cohort registration ran 3 July to 3 October 2025 | [CST](https://www.cst.gov.sa/en/media-center/news/N2025070300), [CST](https://www.cst.gov.sa/en/media-center/news/During-LEAP25-CST-Announces-the-Completion-of-15-Tech-Products-from-Global-and-Local-companies) | |
 | A16 | CST Regulations for Providing Digital Content Platform Services in force 8 October 2024 | [CST](https://www.cst.gov.sa/en/media-center/news/CST-Announces-The-Deadline-for-Complying-with--the-Regulations-for-Providing-Digital-Content-Platfor) | Applies to content platforms, not to software generally |
+| A17 | Tamimi Markets "AskBaba": 19+ specialist agents under a supervisor, in Microsoft Teams, Arabic and English; routine analytics answers in under 30 seconds; 140+ daily active users (from about 100); 500M+ transaction line items and 130+ warehouse tables; in production since 2025 | [NorthBay Solutions case study](https://northbaysolutions.com/case-studies/tamimi-markets-becomes-saudi-arabias-first-retailer-to-run-agentic-ai-at-enterprise-scale/), published 1 Oct 2026 | **Vendor-reported.** No cost, failure or human-approval detail. "First Saudi retailer" is the vendor's claim |
+| A18 | Alsaif Gallery deployed a self-developed enterprise AI agent platform on Tencent Cloud's infrastructure in Saudi Arabia (announced 12 Aug 2026) | Tencent Cloud press release via PR Newswire ([TechNode Global copy](https://technode.global/prnasia/tencent-cloud-powers-alsaif-gallerys-enterprise-ai-transformation-in-saudi-arabia/)) | **No measurable results published.** "Top-three retailer" is the release's own wording |
+| A19 | Aramco Digital and OrbitronAI announced a commercial partnership on 13 Oct 2026 (signed at LEAP 2026 in September) to build and sell agentic AI for asset-intensive industries; key calculations and approvals stay with people | [The Next Web](https://thenextweb.com/news/aramco-digital-orbitronai-industrial-ai-partnership), [Trade Arabia](https://www.tradearabia.com/News/487943/Aramco-Digital-OrbitronAI-sign-AI-partnership-to-help-industrial-firms-recover-lost-value/IT), [Middle East AI News](https://www.middleeastainews.com/p/orbitronai-aramco-digital-target) | **Announcement only.** No deployment, terms or results reported |
+| A20 | SaaStr went from zero to 20+ AI agents in six months; AI SDR sent 15,000 messages in 100 days at 5 to 7% response; eliminated $180K+ a year of agency cost for speaker review; $1.5M revenue attributed to agents in two months; cost over $500,000 in year one; 60+ minutes of daily management | [SaaStr AI Agent Playbook](https://www.saastr.com/saastrs-ai-agent-playbook-how-we-deployed-20-agents-to-scale-8-figure-revenue-with-single-digit-headcount), 25 Sep 2025; [later SaaStr post](https://www.saastr.com/?p=322994) | **Self-reported** by a company that sells content on this topic |
+| A21 | Klarna (27 Feb 2024): AI assistant handled 2.3 million conversations in its first month, two-thirds of customer service chats, equivalent to the work of 700 full-time agents; resolution time from 11 minutes to under 2; 25% fewer repeat inquiries; projected $40M profit improvement in 2024 | [Klarna press release](https://www.klarna.com/international/press/klarna-ai-assistant-handles-two-thirds-of-customer-service-chats-in-its-first-month/) | **Self-reported**, one month after launch. Always cite together with A22 |
+| A22 | Klarna (May 2025): the CEO told Bloomberg the company was hiring human customer service agents again and that the cost-led approach had produced lower quality | [Entrepreneur](https://www.entrepreneur.com/business-news/klarna-ceo-reverses-course-by-hiring-more-humans-not-ai/491396), [PYMNTS](https://pymnts.com/bnpl/2025/klarna-focuses-on-human-powered-customer-service), [Fortune](https://dc.fortune.com/2025/05/09/klarna-ai-humans-return-on-investment/) | Bloomberg original is paywalled; cited through reports of the interview |
+| A23 | OPLOG: 90% reduction in decision-making time; 30% lower operational costs (body text: 30 to 40%); 85% resource usage (body text: 85 to 95%); customer satisfaction up 8 points; first production agent August 2025 | [AWS case study](https://aws.amazon.com/solutions/case-studies/oplog/) | **Vendor-reported.** The page shows two different figures for cost and usage; quote the lower with the range |
+| A24 | Simba Sleep: AI agent "Luna" resolves about 1,000 conversations a week, equivalent to 8 full-time agents; £600K+ additional monthly revenue attributed to reinvesting freed staff capacity | [Ada case study](https://www.ada.cx/case-study/simba-sleep/), [CX Today](https://cxtoday.com/ai-automation-in-cx/ai-agent-roi-growth-automation) | **Vendor-reported.** Read from the page summary; attribution method not published |
+| A25 | Suitor (5 employees, Australia): up to 85% of customer service queries resolved automatically; average response time from about 3 minutes to 6 seconds; 24% transferred to a person. TrueLayer: over 82% of support cases satisfactorily resolved by the Ema agent within weeks of training | [Tidio](https://www.tidio.com/blog/suitor-case-study/); [Ema](https://www.ema.ai/customer/truelayer) | **Vendor-reported.** Suitor describes FAQ answering, not agentic action |
 
 ## B. Corrected from earlier drafts
 
@@ -40,6 +49,13 @@ Last full review: **16 November 2026**
 | B9 | "AI Adoption Framework, November 2025, mandatory baseline, five pillars" | Unveiled September 2024 as a guiding reference (A13) |
 | B10 | "The draft AI Cybersecurity Guidelines will become a mandatory overlay" | Speculation; the draft is described as non-binding (A5) |
 | B11 | A specific SAMA circular number on AI; sandbox durations and participant counts; "ten SDAIA AI governance documents" | Not confirmed; omitted |
+| B12 | Case-study drafts: a Saudi company "Sitmaai" whose customers cut operating costs 40 to 70% | **Not found.** Removed |
+| B13 | Case-study drafts: unnamed Saudi fintech, last-mile and restaurant companies running autonomous agents with results | No company named, no source. Removed from real cases; see `06-case-studies/not-adopted.md` |
+| B14 | Klarna presented as a success story only | Incomplete without the 2025 reversal (A22) |
+| B15 | OPLOG "30 to 40%" cost reduction and "85 to 95%" resource usage | Headline metrics on the same page are 30% and 85% (A23) |
+| B16 | Aramco Digital and OrbitronAI presented as a case study with a deployed solution | Announced partnership, no deployment reported (A19) |
+| B17 | TrueLayer attributed to Capgemini Research Institute; Simba Sleep and Suitor attributed to Toronto Metropolitan University | Replaced by the original publishers (the vendors). Secondary sources were not opened |
+| B18 | Simba Sleep "redeployed three employees to sales" | Not confirmed in the source as read. Omitted |
 
 ## C. Carried from drafts, not yet verified
 
