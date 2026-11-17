@@ -1,8 +1,8 @@
 # Changelog
 
-## v0.4 (in progress)
+## v0.4 (2026-11-17)
 
-Not released yet. The current release is v0.3; the items below ship with v0.4.
+Six new lab exercises with working checkers, Module 1.4 in depth, the academy identity, and automated checks on every change. The founder-essentials work first planned for v0.4 moves to v0.5; see the roadmap.
 
 ### Launch audit (17 Nov 2026)
 
