@@ -7,7 +7,7 @@ The academy is built iteratively, in the open. Each iteration ships something a 
 | v0.1 | Foundation + Founder Toolkit | README, academy framework, course outlines, toolkit, lab, compliance tools | Released |
 | v0.2 | Saudi Market Knowledge Framework | Twelve-domain framework, regulatory register, official directory, founder compliance checklist, agentic governance playbook, founder-agent standard and first agent; open contribution guide | Released |
 | **v0.3** | **Course 1, case studies and companion repositories** | First content release of Course 1 (lessons, sector briefs, templates, rubrics); nine public-source case studies with evidence levels; Riyada and Bayan cross-referenced with an overlap map, learning pathways and eight lab exercises | **This release** (17 November 2026). Course 1 not yet piloted; exercises not yet tried with learners |
-| v0.4 | Founder essentials in depth | Establishment walkthrough, PDPL worked example, tax basics, verified funding directory; Arabic versions of English-only guides | Next |
+| v0.4 | Founder essentials in depth | Establishment walkthrough, PDPL worked example, tax basics, verified funding directory; Arabic versions of English-only guides. Already on main: the Module 1.4 enrichment and the academy banner (`assets/brand/`) | In progress |
 | v0.5 | Business development domains | IP, e-commerce, employment, procurement and sector guides | Planned |
 | v0.6 | Founder agents and runnable templates | Remaining founder agents; workflow exports and reference code; Arabic evaluation sets | Planned |
 | In iterations | **Courses** | Courses 2 to 4, built one at a time on top of the knowledge framework; slides, quizzes and a pilot for Course 1 | Planned |
