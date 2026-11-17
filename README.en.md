@@ -31,7 +31,7 @@ Details in [CONTRIBUTING.md](CONTRIBUTING.md).
 | [Agentic AI Lab](05-agentic-ai-lab/README.md) | Ten entrepreneurial skills, five agent templates, an evaluation template, an Arabic model guide | Available |
 | [Academy](01-academy/) | Vision and mission, learning framework, competency framework | Available |
 | [Courses](03-courses/README.md) | Four courses | **To be built later, in iterations**; draft outlines are published for discussion |
-| [Case studies](06-case-studies/README.md) | Illustrative scenarios and the case-study template | Real cases wanted |
+| [Case studies](06-case-studies/README.md) | Nine real cases from public sources (three Saudi) with evidence levels, scenarios and a learner worksheet | Available; owner-written cases wanted |
 | [Resources](07-resources/README.md) · [Community](08-community/README.md) | Curated references; project showcase | Available |
 
 ## Why this academy
