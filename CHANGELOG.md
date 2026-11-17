@@ -1,5 +1,21 @@
 # Changelog
 
+## Unreleased
+
+### Course 1, Module 1.4: Workflow shadowing
+
+**Changed**
+- `lessons/1-4-workflow-shadowing.md` enriched from three further drafts: going to where the work is done, four varieties of work, where to sit and what to capture, tracing one transaction, unwritten rules, the observer effect, questions to avoid, invisible work, bottlenecks versus failure points, root causes, value and waste, cycle efficiency, the system-of-record conflict rule, data quality, loaded cost, the path personal data takes, ordered questions for classifying steps, three forms of human oversight, a bridge to Module 1.5, and a short reading list.
+- `templates/workflow-map.md`: informal tools, apparent cause of each exception, a new section for unwritten rules, total cycle time, rework rate, what waiting leads to, where personal data moves, and access conditions. Sections renumbered 1 to 11.
+- `rubrics.md`: a "weak performance" column in the workflow-map rubric. `glossary.md`: sixteen terms. `instructor-guide.md`: note for Module 1.4.
+
+**Unchanged:** hours, in-class timings, the deliverable, the four step classes and all rubric weights.
+
+**Verified and corrected** (`SOURCES.md` A36 to A44, B25 to B28, C24 to C25; `not-adopted.md` section و)
+- Left out: "switching raises errors by up to 40%", a loaded-cost multiplier of 1.25 to 1.4, a four-hour rule for quotations, and new invented worked examples.
+- Corrected: four varieties of work, not three; PDPL sensitive data as defined in the amended text; seven wastes plus a later eighth.
+- Not adopted because they conflict with or duplicate published material: a fifth step class, two new map rubrics, two 100-point scorecards, an opportunity card, a new autonomy scale.
+
 ## v0.3 (2026-11-17)
 
 Course 1 content, companion repositories and case studies.
