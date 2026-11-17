@@ -27,6 +27,10 @@
 | يوم | مهارة أو قالب وكيل مجرَّب | راجع شروط المختبر |
 | أسبوع | دراسة حالة حقيقية (بإذن صاحب المنشأة) | قالب دراسة الحالة |
 
+## فحص اختياري للمحتوى العربي
+
+إن كان لديك Python فشغّل مدقق [«بيان»](https://github.com/malenezi/bayan) على ملفاتك العربية قبل طلب الدمج: `python3 bayan/shared/scripts/bidi_lint.py <المجلد>`. يلتقط الأرقام المقلوبة وعلامات الترقيم اللاتينية بعد النص العربي وما يشبهها. هو عون لك وليس شرطاً، ونشغّله عنك إن أحببت.
+
 ## لا تستخدم Git؟ لا مشكلة
 
 افتح Issue والصق ما لديك: نص، ملاحظات، صورة، ملف Word. أو أرسله عبر أي قناة تواصل مع المشرف. نحن نحوّله إلى الصيغة المطلوبة وننسبه إليك.
@@ -85,6 +89,10 @@ Our side of the deal:
 | A few hours | A guide from any domain's "guides wanted" list | Claim it by opening an issue |
 | A day | A tested skill or agent template | See the lab's requirements |
 | A week | A real case study, with the owner's permission | Case-study template |
+
+## Optional check for Arabic content
+
+If you have Python, you can run the [Bayan](https://github.com/malenezi/bayan) linter on Arabic Markdown before a pull request: `python3 bayan/shared/scripts/bidi_lint.py <folder>`. It catches reversed numbers, Latin punctuation after Arabic and similar slips. It is a help, not a condition; we will run it for you if you prefer.
 
 ## Not a Git user? No problem
 

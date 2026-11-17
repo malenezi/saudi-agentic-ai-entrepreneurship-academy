@@ -103,6 +103,19 @@ Four performance levels per criterion, and rubrics for the workflow map and the 
 
 [Opportunity Scanner](../../05-agentic-ai-lab/skills/README.md#1-opportunity-scanner) · [Interview Guide Builder](../../05-agentic-ai-lab/skills/README.md#2-interview-guide-builder) · [Interview Synthesiser](../../05-agentic-ai-lab/skills/README.md#3-interview-synthesiser) · [Competitor Scan](../../05-agentic-ai-lab/skills/README.md#4-competitor-scan) · [Workflow Mapper](../../05-agentic-ai-lab/skills/README.md#5-workflow-mapper)
 
+## Companion tools (optional)
+
+The course is complete without these. They are separate repositories by the same author; see [companion repositories](../../07-resources/companion-repositories.md) for what overlaps and which template to use when.
+
+| Module | Tool | Use |
+|---|---|---|
+| Before 1.3 | [Riyada](https://github.com/malenezi/riyada) opportunity scorecard | Compare ideas from different sectors on an evidence scale before choosing where to look |
+| 1.6 | Riyada market-sizing sheet and [defensibility worksheet](https://github.com/malenezi/riyada/blob/main/frameworks/defensibility.en.md) | Bottom-up reachable market; what you would own |
+| After 1.7 | Riyada experiment card | Turn the weakest assumption in the thesis into a test with a decision rule: [exercise R1](../../05-agentic-ai-lab/exercises/r1-evidence-scorecard-and-experiment.md) |
+| 1.7 pitch | [Bayan](https://github.com/malenezi/bayan) HTML slides | Build the three-minute pitch as an Arabic-first deck: [exercise B3](../../05-agentic-ai-lab/exercises/b3-pitch-deck.md) |
+
+The thesis is graded with the Academy's templates. Riyada's parallel workflow is [Idea to validated opportunity](https://github.com/malenezi/riyada/blob/main/workflows/01-idea-to-validation.en.md).
+
 ## Case studies for discussion
 
 The [case studies](../../06-case-studies/README.md) and their [learner worksheet](../../06-case-studies/worksheets/learner-worksheet.md) are mapped to this course's five learning outcomes.

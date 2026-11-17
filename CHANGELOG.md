@@ -2,7 +2,20 @@
 
 ## Unreleased (2026-11-17)
 
-Course 1 content and case studies.
+Course 1 content, companion repositories and case studies.
+
+### Companion repositories: Riyada and Bayan
+
+**Added**
+- `07-resources/companion-repositories.md`: what each of the three repositories is for, the integration rule (link, never copy), asset-by-asset maps to courses and modules, a "which one do I use" overlap table, and what was checked.
+- `01-academy/learning-pathways.md`: one route across the three repositories, with five learner pathways.
+- `05-agentic-ai-lab/exercises/`: eight exercises. R1 to R4 use Riyada (evidence scorecard and experiment card, context pack with linter, role card and approval matrix, 36-month model). B1 to B4 use Bayan (agent messages, bilingual landing page, pitch deck, RTL audit).
+
+**Changed**
+- A "Companion tools (optional)" section in all four course syllabi; cross-references in the toolkit, lab, skills, resources, framework pages, READMEs, roadmap and contribution guide.
+
+**Notes**
+- Nothing was copied from either repository. Reviewed at Riyada `d2a0607` and Bayan `db941e2`; both repositories' own checks pass and the commands in the exercises were run. Plugin installation and the exercises themselves have not been tried with learners.
 
 ### Course 1: Finding Your Agentic Opportunity
 

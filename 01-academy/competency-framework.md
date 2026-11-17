@@ -68,3 +68,7 @@ One capability separates a person who uses AI tools from a person who runs an ag
 The [Founder Context Template](../04-entrepreneur-toolkit/10-founder-context-template.md) turns this into a file you can fill in today.
 
 **Engineering principle: stochastic reasoning, deterministic authorization.** Language models reason probabilistically and will sometimes be wrong. Authority must therefore sit outside the model, in rules that are checked by code or by a person: spending limits, approval gates, allow-lists of actions and recipients.
+
+## Related framework
+
+[Riyada](https://github.com/malenezi/riyada) publishes an [entrepreneur competency framework](https://github.com/malenezi/riyada/blob/main/frameworks/competency-framework.en.md) with a self-assessment. This page governs the Academy's courses; Riyada's self-assessment is a useful way to find a starting point before Course 1. The seven context layers listed above are available as fillable files with a linter in Riyada's [context pack](https://github.com/malenezi/riyada/tree/main/context); see [exercise R2](../05-agentic-ai-lab/exercises/r2-context-pack.md).

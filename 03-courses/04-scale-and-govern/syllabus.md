@@ -75,3 +75,16 @@ Cohorts end with a weekend sprint before Demo Day. Mixed teams of engineers and 
 - A risk register copied from a template with no product-specific entries.
 - Giving agents broad access "to be safe" instead of the least they need.
 - Raising money to find out whether customers want the product.
+
+## Companion tools (optional)
+
+Separate repositories by the same author; see [companion repositories](../../07-resources/companion-repositories.md). The deliverable is graded with the Academy's templates.
+
+| Module | Tool | Exercise |
+|---|---|---|
+| 4.1, 4.2 | [Riyada](https://github.com/malenezi/riyada) `venture-scaling`: scale-readiness, OKRs, operating cadence, hire-or-automate; `agent-operations` role cards per function | [R3](../../05-agentic-ai-lab/exercises/r3-role-card-and-approval-matrix.md) |
+| 4.2 | [Bayan](https://github.com/malenezi/bayan) `rtl-audit` as a CI gate on Arabic interfaces (deep track) | [B4](../../05-agentic-ai-lab/exercises/b4-rtl-audit.md) |
+| 4.5 | Riyada `fundraising`: round rationale, investor pipeline, data-room checklist, investor updates, round-terms guide; `financial-modeling` for the numbers | [R4](../../05-agentic-ai-lab/exercises/r4-financial-model.md) |
+| 4.6 | Bayan `arabic-html-slides`: the pitch as an Arabic-first HTML deck | [B3](../../05-agentic-ai-lab/exercises/b3-pitch-deck.md) |
+
+Governance, risk and security (4.3, 4.4) and the Saudi funding landscape come from the [Saudi Market Knowledge Framework](../../02-saudi-market-knowledge-framework/README.md). Riyada's parallel workflow is [Plan to funding](https://github.com/malenezi/riyada/blob/main/workflows/02-plan-to-funding.en.md).

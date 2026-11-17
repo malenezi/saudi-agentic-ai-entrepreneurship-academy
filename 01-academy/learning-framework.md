@@ -72,3 +72,7 @@ Self-paced learners follow the same sequence without the peer review.
 | Economics | 20% | Does each completed task earn more than it costs? |
 | Governance | 15% | Are data handling, approvals and limits defined and enforced? |
 | Communication | 10% | Can the founder explain it clearly in Arabic to a non-technical buyer? |
+
+## Pathways and companion tools
+
+[Learning pathways](learning-pathways.md) shows the route for each kind of learner, combining the four courses with two optional companion repositories: [Riyada](https://github.com/malenezi/riyada) for founder skills and context files, and [Bayan](https://github.com/malenezi/bayan) for Arabic interface craft. The courses do not depend on either.
