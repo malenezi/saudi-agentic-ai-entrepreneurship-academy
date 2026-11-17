@@ -111,6 +111,7 @@ The course is complete without these. They are separate repositories by the same
 |---|---|---|
 | Before 1.3 | [Riyada](https://github.com/malenezi/riyada) opportunity scorecard | Compare ideas from different sectors on an evidence scale before choosing where to look |
 | 1.6 | Riyada market-sizing sheet and [defensibility worksheet](https://github.com/malenezi/riyada/blob/main/frameworks/defensibility.en.md) | Bottom-up reachable market; what you would own |
+| 1.3, 1.6 | Riyada `market-research`: competitor matrix and sizing sheet, with a claim register | Sort every market claim into documented fact, estimate or assumption: [exercise R5](../../05-agentic-ai-lab/exercises/r5-market-intelligence.md) |
 | After 1.7 | Riyada experiment card | Turn the weakest assumption in the thesis into a test with a decision rule: [exercise R1](../../05-agentic-ai-lab/exercises/r1-evidence-scorecard-and-experiment.md) |
 | 1.7 pitch | [Bayan](https://github.com/malenezi/bayan) HTML slides | Build the three-minute pitch as an Arabic-first deck: [exercise B3](../../05-agentic-ai-lab/exercises/b3-pitch-deck.md) |
 

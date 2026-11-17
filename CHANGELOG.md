@@ -4,6 +4,30 @@
 
 Not released yet. The current release is v0.3; the items below ship with v0.4.
 
+### Agentic AI Lab: six new exercises
+
+**Added**
+- `05-agentic-ai-lab/exercises/r5-market-intelligence.md`: a market file with a claim register (documented fact, estimate, assumption), using Riyada's competitor matrix and sizing sheet.
+- `r6-agent-evaluation.md`: two evaluation cycles on at least 30 cases, each case run three times, one change between cycles, release rule written first.
+- `r7-agent-red-teaming.md`: at least twelve attack cases in six families against the learner's own agent; a control outside the model is the pass criterion.
+- `b5-venture-dashboard.md` and `b5-venture-dashboard/`: a bilingual founder dashboard for a fictional five-agent company. Ships one month of synthetic records, `generate_data.py` (baseline and three decision scenarios), `compute_metrics.py` (computes every KPI and checks a learner's numbers), a KPI dictionary, a founder decision log and a two-KPI skeleton page.
+- `r8-data-governance.md` and `r8-data-governance/`: `data_governance_lint.py` checks a CSV file against a policy the learner writes (nine rules, standard library only), with an example policy and a synthetic sample that carries deliberate faults.
+- `b6-terminology.md` and `b6-terminology/`: `terminology_lint.py` enforces a venture's own Arabic glossary across messages, pages and decks, with a starter glossary and a sample.
+- `b3-deck-evidence/deck_evidence_check.py`: every slide with a figure names a source or labels it an estimate; added as a step in B3.
+- A language-parity measure in R6 (paired Arabic and English cases).
+- `exercises/not-adopted.md`: what happened to every proposal in the three drafts.
+
+**Changed**
+- Extra challenges in R1 (a deliberately false assumption), R2 (two files that conflict), B1 (mixed-direction messages) and B2 (a conversion test); an accessibility line in B4's criteria.
+- Lab index, lab README, both READMEs and the Course 1, 2, 3 and 4 syllabi now point to the fourteen exercises.
+
+**Verified and corrected** (`SOURCES.md` A46 to A48, B29 to B31, C26 to C27)
+- The drafts' data-governance linter does not compile; rewritten as R8, with the pass criterion changed from "PDPL compliance" to "meets the policy you wrote".
+- Tools the drafts relied on that did not exist (`terminology_lint.py`, a `--market-ready` flag) were written as working scripts; the undefined "linguistic parity score" was given a definition.
+- The drafts' dashboard figures did not reconcile; replaced by generated records. The fictional company was renamed.
+- Deferred: multi-agent architecture, bilingual customer journey, the two integrative exercises, a capstone, supply-chain audit.
+- Run on 17 Nov 2026 with Python 3.11, 3.12 and 3.13: the R8, B6 and B3 scripts on their samples and on Bayan's example deck; both B5 scripts on all four scenarios; Bayan's two linters on the skeleton page; Riyada's context linter on the R2 conflict case. Not tried with learners.
+
 ### Academy identity
 
 **Added**

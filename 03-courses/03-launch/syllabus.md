@@ -82,6 +82,7 @@ Separate repositories by the same author; see [companion repositories](../../07-
 | 3.1 | [Bayan](https://github.com/malenezi/bayan) `arabic-ux-writing` for onboarding and help text; `rtl-audit` for an existing interface | [B1](../../05-agentic-ai-lab/exercises/b1-agent-messages-in-arabic.md), [B4](../../05-agentic-ai-lab/exercises/b4-rtl-audit.md) |
 | 3.2 | [Riyada](https://github.com/malenezi/riyada) `business-planning`: lean canvas, and a full business plan when a bank or support programme asks for one | |
 | 3.3 | Riyada `financial-modeling`: a 36-month company model fed by the Academy's cost per resolved task | [R4](../../05-agentic-ai-lab/exercises/r4-financial-model.md) |
+| 3.4 | The Academy's `data_governance_lint.py`: a file-level check that supports, and does not replace, the PDPL self-assessment | [R8](../../05-agentic-ai-lab/exercises/r8-data-governance.md) |
 | 3.5 | Riyada `go-to-market`: ideal customer profile, positioning and messaging, 90-day launch plan | |
 | 3.5 | Bayan `arabic-rtl-web`: a bilingual landing page for the pilot | [B2](../../05-agentic-ai-lab/exercises/b2-bilingual-landing-page.md) |
 

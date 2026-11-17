@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>لوحة قيادة مِرساة</title>
+<style>
+html[lang="ar"] [data-lang]:not([data-lang="ar"]),
+html[lang="en"] [data-lang]:not([data-lang="en"]) { display: none !important; }
+body { font-family: system-ui, sans-serif; margin-inline: 2rem; }
+.kpi { display: inline-block; padding-inline: 1rem; border-inline-start: 3px solid #0a6; }
+</style>
+</head>
+<body>
+<header>
+  <h1><span data-lang="ar">لوحة قيادة مِرساة</span><span data-lang="en">Mirsah dashboard</span></h1>
+  <p><span data-lang="ar">بيانات مصطنعة للتدريب</span><span data-lang="en">Synthetic training data</span></p>
+  <button id="toggle" type="button"><span data-lang="ar" lang="en">English</span><span data-lang="en" lang="ar">العربية</span></button>
+</header>
+<main>
+  <section class="kpi">
+    <h2><span data-lang="ar">نسبة النجاح</span><span data-lang="en">Success rate</span></h2>
+    <p><bdi dir="ltr" data-kpi="overall.success_rate_pct" data-suffix="%"></bdi></p>
+  </section>
+  <section class="kpi">
+    <h2><span data-lang="ar">تكلفة المهمة الناجحة</span><span data-lang="en">Cost per successful task</span></h2>
+    <p><bdi dir="ltr" data-kpi="overall.cost_per_successful_task"></bdi> <span data-lang="ar">ريال</span><span data-lang="en">SAR</span></p>
+  </section>
+</main>
+<script src="metrics.js"></script>
+<script>
+document.querySelectorAll("[data-kpi]").forEach(function (el) {
+  var v = el.dataset.kpi.split(".").reduce(function (o, k) { return o[k]; }, window.METRICS);
+  el.textContent = v + (el.dataset.suffix || "");
+});
+document.getElementById("toggle").addEventListener("click", function () {
+  var ar = document.documentElement.lang === "ar";
+  document.documentElement.lang = ar ? "en" : "ar";
+  document.documentElement.dir = ar ? "ltr" : "rtl";
+});
+</script>
+</body>
+</html>

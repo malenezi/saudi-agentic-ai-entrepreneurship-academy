@@ -1,0 +1,25 @@
+{
+  "policy_version": "1.0",
+  "description": "Example policy for a test set that will be sent to an external model. Replace every value with your own decision.",
+  "key_column": "record_id",
+  "required_columns": ["record_id", "created_at", "customer_segment", "channel", "status", "message_text"],
+  "max_missing_pct": 2,
+  "allowed_values": {
+    "status": ["open", "resolved", "escalated"],
+    "channel": ["whatsapp", "web", "email"]
+  },
+  "levels": ["public", "internal", "confidential", "restricted"],
+  "highest_shareable_level": "internal",
+  "column_classification": {
+    "record_id": "internal",
+    "created_at": "internal",
+    "customer_segment": "internal",
+    "channel": "internal",
+    "status": "internal",
+    "message_text": "internal"
+  },
+  "masked_columns": [],
+  "restricted_name_patterns": ["national_id", "iqama", "phone", "mobile", "email", "iban", "card", "biometric", "birth"],
+  "value_patterns": ["id_number", "mobile", "email", "iban"],
+  "balance": {"column": "customer_segment", "min_share_pct": 10}
+}

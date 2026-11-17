@@ -1,0 +1,9 @@
+{
+  "company": "Mirsah Business Services (fictional)",
+  "scenario": "baseline",
+  "period_start": "2026-10-01",
+  "period_end": "2026-10-31",
+  "currency": "SAR",
+  "review_hourly_rate": 45.0,
+  "note": "Synthetic data. Every value is invented for training."
+}

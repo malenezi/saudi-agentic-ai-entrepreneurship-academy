@@ -27,9 +27,9 @@ Last reviewed: 17 November 2026 · Riyada at commit `d2a0607` (16 Nov 2026) · B
 | الأصل في «ريادة» | يُستخدم في | الوحدة | التمرين |
 |---|---|---|---|
 | مهارة [`opportunity-discovery`](https://github.com/malenezi/riyada/tree/main/skills/opportunity-discovery) و[بطاقة تقييم الفرص](https://github.com/malenezi/riyada/blob/main/templates/discovery/opportunity-scorecard.ar.md) و[بطاقة التجربة](https://github.com/malenezi/riyada/blob/main/templates/discovery/experiment-card.ar.md) | المقرر 1 | 1.3، 1.6، وما بعد الأطروحة | [R1](../05-agentic-ai-lab/exercises/r1-evidence-scorecard-and-experiment.md) |
-| مهارة [`market-research`](https://github.com/malenezi/riyada/tree/main/skills/market-research) و[ورقة تقدير السوق](https://github.com/malenezi/riyada/blob/main/templates/market/market-sizing.ar.md) | المقرر 1 | 1.6 (السوق الممكن الوصول إليه) | R1 |
+| مهارة [`market-research`](https://github.com/malenezi/riyada/tree/main/skills/market-research) و[ورقة تقدير السوق](https://github.com/malenezi/riyada/blob/main/templates/market/market-sizing.ar.md) | المقرر 1 | 1.3، 1.6 (السوق الممكن الوصول إليه) | R1، و[R5](../05-agentic-ai-lab/exercises/r5-market-intelligence.md) |
 | مهارة [`founder-context`](https://github.com/malenezi/riyada/tree/main/skills/founder-context) و[حزمة السياق بطبقاتها السبع](https://github.com/malenezi/riyada/tree/main/context) و`context_lint.py` | المقرر 2 | 2.2 | [R2](../05-agentic-ai-lab/exercises/r2-context-pack.md) |
-| مهارة [`agent-operations`](https://github.com/malenezi/riyada/tree/main/skills/agent-operations): بطاقة دور الوكيل، مصفوفة الاعتماد، إجراء التشغيل، سلّم التقييم | المقرر 2 والمقرر 4 | 2.1، 2.5، 2.6، 2.8، 4.1 | [R3](../05-agentic-ai-lab/exercises/r3-role-card-and-approval-matrix.md) |
+| مهارة [`agent-operations`](https://github.com/malenezi/riyada/tree/main/skills/agent-operations): بطاقة دور الوكيل، مصفوفة الاعتماد، إجراء التشغيل، سلّم التقييم | المقرر 2 والمقرر 4 | 2.1، 2.5، 2.6، 2.8، 4.1 | [R3](../05-agentic-ai-lab/exercises/r3-role-card-and-approval-matrix.md)، و[R6](../05-agentic-ai-lab/exercises/r6-agent-evaluation.md)، و[R7](../05-agentic-ai-lab/exercises/r7-agent-red-teaming.md) |
 | مهارة [`financial-modeling`](https://github.com/malenezi/riyada/tree/main/skills/financial-modeling) و`build_model.py` | المقرر 3 والمقرر 4 | 3.3، 4.5 | [R4](../05-agentic-ai-lab/exercises/r4-financial-model.md) |
 | مهارة [`business-planning`](https://github.com/malenezi/riyada/tree/main/skills/business-planning): مخطط النموذج المختصر وخطة العمل | المقرر 3 | 3.2 | |
 | مهارة [`go-to-market`](https://github.com/malenezi/riyada/tree/main/skills/go-to-market): ملف العميل المثالي، التموضع والرسائل، خطة الإطلاق | المقرر 3 | 3.5 | [B2](../05-agentic-ai-lab/exercises/b2-bilingual-landing-page.md) يبني على مخرجاتها |
@@ -48,6 +48,7 @@ Last reviewed: 17 November 2026 · Riyada at commit `d2a0607` (16 Nov 2026) · B
 | مهارة [`arabic-rtl-web`](https://github.com/malenezi/bayan/tree/main/skills/arabic-rtl-web) والقالب ثنائي اللغة | المقرر 3 | 3.1، 3.5 (صفحة هبوط للتجربة المدفوعة) | [B2](../05-agentic-ai-lab/exercises/b2-bilingual-landing-page.md) |
 | مهارة [`arabic-html-slides`](https://github.com/malenezi/bayan/tree/main/skills/arabic-html-slides) ومحرك العروض | المقرر 4، واختيارياً المقرر 1 | 4.6 (يوم العروض)، 1.7 (العرض المختصر) | [B3](../05-agentic-ai-lab/exercises/b3-pitch-deck.md) |
 | مهارة [`rtl-audit`](https://github.com/malenezi/bayan/tree/main/skills/rtl-audit) و`bidi_lint.py` و`i18n_parity.py` | المسار العميق في المقررين 3 و4، ومساهمو الأكاديمية | 3.1، 4.2 | [B4](../05-agentic-ai-lab/exercises/b4-rtl-audit.md) |
+| القالب ثنائي اللغة ومرجع الأرقام والتواريخ في `arabic-rtl-web`، مع بيانات الأكاديمية المصطنعة | المقرر 4 والمقرر 3 | 4.2، 3.3 | [B5](../05-agentic-ai-lab/exercises/b5-venture-dashboard.md) |
 
 «بيان» لا يتداخل مع شيء في الأكاديمية: لا محتوى هنا عن اتجاه النص ولا عن كتابة نصوص الواجهات، وكل ما يخصهما يُحال إليه.
 
@@ -101,6 +102,9 @@ git clone https://github.com/malenezi/bayan
 | `build_model.py` على مثال «موجة» بالعربية | كتب الملخص وملف CSV وملف Excel |
 | `context_lint.py` على القوالب الفارغة | 149 خطأً ورمز خروج غير صفري، وهو المتوقع قبل التعبئة |
 | `bidi_lint.py` على محتوى المقرر 1 في الأكاديمية | 23 ملفاً بلا ملاحظات |
+| `bidi_lint.py --strict` و`i18n_parity.py` على هيكل لوحة B5 («بيان» عند الإيداع `b77fbac`) | بلا ملاحظات |
+| برامج الأكاديمية في تمارين R8 و B6 و B3 و B5 على أمثلتها، بـPython 3.11 و3.12 و3.13 | النتائج كما في التمارين: 13 خطأً وتحذيران (R8)، أربعة أخطاء وتحذير (B6)، ملاحظة واحدة على مثال عرض «بيان» (B3) |
+| `context_lint.py` على حزمة «موجة» بعد إضافة جملة تناقض جدول الأسعار | مرّ بلا ملاحظات، وهو ما يبني عليه التحدي الإضافي في R2 |
 
 **ما لم نتحقق منه:** لم نجرّب تثبيت الإضافات في Claude Code ولا رفع المهارات إلى تطبيقات Claude. ولم يُجرَّب أي من التمارين مع متعلمين. و«ريادة» تذكر أن مهاراتها لم تُقيَّم بعد مع مؤسسين حقيقيين وأن عربيتها لم يراجعها محرر مستقل.
 
