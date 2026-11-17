@@ -1,6 +1,13 @@
 # Changelog
 
-## Unreleased
+## v0.4 (in progress)
+
+Not released yet. The current release is v0.3; the items below ship with v0.4.
+
+### Academy identity
+
+**Added**
+- `assets/brand/saaea-banner.jpg`: the academy's banner, shown at the top of both READMEs, with a usage note in `assets/brand/README.md`. Three spelling slips in the artwork's Arabic lettering are recorded there for the next version of the image.
 
 ### Course 1, Module 1.4: Workflow shadowing
 

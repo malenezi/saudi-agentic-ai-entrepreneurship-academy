@@ -1,3 +1,5 @@
+<p align="center"><img src="assets/brand/saaea-banner.jpg" alt="Saudi Agentic AI Entrepreneurship Academy (SAAEA): learn, build, launch" width="100%"></p>
+
 # Saudi Agentic AI Entrepreneurship Academy (SAAEA)
 
 **الأكاديمية السعودية لريادة الأعمال بالذكاء الاصطناعي الوكيلي** · [العربية](README.md)
