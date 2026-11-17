@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this material, please cite it as below."
+title: "Saudi Agentic AI Entrepreneurship Academy (SAAEA)"
+type: dataset
+authors:
+  - family-names: Alenezi
+    given-names: Mamdouh
+repository-code: "https://github.com/malenezi/saudi-agentic-ai-entrepreneurship-academy"
+url: "https://github.com/malenezi/saudi-agentic-ai-entrepreneurship-academy"
+abstract: "An open-source, Arabic-first curriculum and Saudi market knowledge framework for entrepreneurs building with agentic AI. An independent personal initiative."
+keywords:
+  - agentic AI
+  - entrepreneurship
+  - Saudi Arabia
+  - Arabic
+  - open educational resources
+license: CC-BY-4.0
+version: "0.3"
+date-released: "2026-11-17"

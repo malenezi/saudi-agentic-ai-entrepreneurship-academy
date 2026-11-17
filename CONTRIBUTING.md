@@ -116,7 +116,7 @@ These are not barriers. If you cannot meet one, send your contribution anyway an
 
 1. Open an issue describing the idea (optional for small edits).
 2. Branch: `content/...`, `guide/...`, `agent/...` or `fix/...`.
-3. Open a pull request. Its checklist is there to help, not as a gate.
+3. Open a pull request. Its checklist is there to help, not as a gate. If you have Python, `make check` runs the same link check and script tests that run automatically on every pull request; if it reports something you cannot fix, send the pull request anyway and say so.
 
 Contributions are licensed CC BY 4.0 (content) and Apache-2.0 (code).
 

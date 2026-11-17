@@ -4,6 +4,19 @@
 
 Not released yet. The current release is v0.3; the items below ship with v0.4.
 
+### Launch audit (17 Nov 2026)
+
+**Fixed**
+- `assets/brand/saaea-banner.jpg`: three spelling slips in the Arabic lettering corrected in the image itself.
+- `01-academy/learning-pathways.md` now routes learners through R5 to R8, B5 and B6.
+- README status lines say what is released and what is in progress.
+
+**Added**
+- `tools/check_repo.py`: checks every Markdown file for missing link targets, missing anchors, unbalanced right-to-left blocks, unclosed code fences and uneven table rows.
+- `tests/test_scripts.py`: fifteen tests that run every script and assert the figures the exercises quote.
+- `Makefile` (`make check`) and a CI workflow that runs both on every push and pull request, on Python 3.9 and 3.13.
+- `SECURITY.md` and `CITATION.cff`.
+
 ### Agentic AI Lab: six new exercises
 
 **Added**
