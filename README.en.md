@@ -34,7 +34,7 @@ Details in [CONTRIBUTING.md](CONTRIBUTING.md).
 | [Academy](01-academy/) | Vision and mission, learning framework, competency framework | Available |
 | [Courses](03-courses/README.md) | Four courses | [Course 1](03-courses/01-opportunity/syllabus.md): **first content release available** (lessons, sector briefs, templates, rubrics). Courses 2 to 4 are draft outlines |
 | [Case studies](06-case-studies/README.md) | Nine real cases from public sources (three Saudi) with evidence levels, scenarios and a learner worksheet | Available; owner-written cases wanted |
-| [Learning pathways](01-academy/learning-pathways.md) · [Lab exercises](05-agentic-ai-lab/exercises/README.md) | A route for each kind of learner, and eight hands-on exercises that use the two companion repositories | Available; exercises not yet tried with learners |
+| [Learning pathways](01-academy/learning-pathways.md) · [Lab exercises](05-agentic-ai-lab/exercises/README.md) | A route for each kind of learner, and twelve hands-on exercises that use the two companion repositories | Available; exercises not yet tried with learners |
 | [Resources](07-resources/README.md) · [Community](08-community/README.md) | Curated references; project showcase | Available |
 
 ## Companion repositories

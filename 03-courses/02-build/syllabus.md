@@ -89,6 +89,7 @@ Separate repositories by the same author; see [companion repositories](../../07-
 | 2.1, 2.6 | [Riyada](https://github.com/malenezi/riyada) `agent-operations`: SOP, agent role card, approval matrix with an enforcement column | [R3](../../05-agentic-ai-lab/exercises/r3-role-card-and-approval-matrix.md) |
 | 2.2 | Riyada `founder-context`: seven-layer context pack and `context_lint.py` | [R2](../../05-agentic-ai-lab/exercises/r2-context-pack.md) |
 | 2.2 | [Bayan](https://github.com/malenezi/bayan) `arabic-ux-writing`: the agent's fixed messages in Arabic | [B1](../../05-agentic-ai-lab/exercises/b1-agent-messages-in-arabic.md) |
-| 2.5, 2.8 | Riyada eval rubric: critical errors, release rule, failure analysis. Test cases stay in the Academy's [evaluation template](../../05-agentic-ai-lab/evaluation/eval-template.md) | R3 |
+| 2.5, 2.8 | Riyada eval rubric: critical errors, release rule, failure analysis. Test cases stay in the Academy's [evaluation template](../../05-agentic-ai-lab/evaluation/eval-template.md) | R3, then [R6](../../05-agentic-ai-lab/exercises/r6-agent-evaluation.md): two evaluation cycles with repeated runs |
+| 2.6 | The Academy's [agent security assessment](../../02-saudi-market-knowledge-framework/compliance-toolkit/agent-security-assessment.md) with Riyada's approval matrix | [R7](../../05-agentic-ai-lab/exercises/r7-agent-red-teaming.md): attack your own agent in a test environment |
 
 Riyada's parallel workflow is [First agent in 30 days](https://github.com/malenezi/riyada/blob/main/workflows/04-first-agent-in-30-days.en.md).

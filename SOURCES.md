@@ -2,7 +2,7 @@
 
 Every external fact used in this repository is listed here with its source, the date it was last checked and a status. **Rule: if a fact is not in section A, do not quote it as fact anywhere in the academy.**
 
-Last full review: **16 November 2026** · Case-study entries (A17 to A25, B12 to B18) and Course 1 entries (A26 to A35, B19 to B24, C19 to C23) added **17 November 2026** · Module 1.4 enrichment entries (A36 to A45, B25 to B28, C24 to C25) added **17 November 2026**
+Last full review: **16 November 2026** · Case-study entries (A17 to A25, B12 to B18) and Course 1 entries (A26 to A35, B19 to B24, C19 to C23) added **17 November 2026** · Module 1.4 enrichment entries (A36 to A45, B25 to B28, C24 to C25) added **17 November 2026** · Lab exercise entries (A46 to A48, B29 to B31, C26 to C27) added **17 November 2026**
 
 ## A. Verified on the review date
 
@@ -53,6 +53,9 @@ Last full review: **16 November 2026** · Case-study entries (A17 to A25, B12 to
 | A43 | Salla, Zid, Qoyod and Daftra publish developer documentation: Salla a REST Merchant API with OAuth 2.0 and webhooks; Zid authorization (OAuth), webhooks and rate limits; Qoyod a REST API (v2.0) using a key created in the business settings; Daftra API keys generated under Settings, with API docs in the same menu | [Salla](https://docs.salla.dev), [Zid docs index](https://docs.zid.sa/llms.txt), [Qoyod](https://www.qoyod.com/en/api-integrations/), [Daftra](https://docs.daftra.com/en/?p=5809) | All four pages opened 17 Nov 2026. Qoyod's page says both that the API is free for subscribers and that API integrations need the Pro plan or above. Zoho not opened. The learner checks access terms for the system observed |
 | A44 | Process cycle efficiency is value-added time divided by total lead time. ISO/IEC 19510:2013 is identical to OMG BPMN 2.0.1 (September 2013, since superseded by 2.0.2) | [iSixSigma](https://www.isixsigma.com/dictionary/process-cycle-efficiency-pce/); [OMG](https://www.omg.org/spec/BPMN/2.0.1/About-BPMN), [IEC webstore](https://webstore.iec.ch/publication/10695) | The benchmark often quoted with it ("lean is above 25%") comes from manufacturing and is not used in the course |
 | A45 | PDPL defines credit data as personal data about an individual's request for, or receipt of, financing and about their ability to obtain and repay credit or their credit history. Article 24 provides for additional controls on processing it, including consent before collection, change of purpose, disclosure or publication, and notice to the individual when disclosure is requested. The 2023 amendments replaced "written" with "explicit" in paragraph 1 of that article | 2021 text via [Argaam](https://www.argaam.com/ar/article/articledetail/id/1498349); amendment 18 in [Umm Al-Qura](https://www.uqn.gov.sa/details?p=21670) | A consolidated current text was not opened. See D5 |
+| A46 | OWASP, Top 10 for LLM Applications 2025, LLM01 Prompt Injection: distinguishes direct injection (the user's own prompt) from indirect injection (external content the model processes); states it is unclear whether fool-proof prevention exists; lists mitigations including least privilege, human approval for high-risk actions, segregating external content and adversarial testing | [OWASP GenAI Security Project](https://genai.owasp.org/llmrisk/llm01-prompt-injection/) | Opened 17 Nov 2026. Used in lab exercise R7 |
+| A47 | OWASP glossary entry on AI red teaming: adversarial probing of AI systems, with prompt-injection resistance as the foundational test for an LLM deployment | [OWASP GenAI glossary](https://genai.owasp.org/glossary/ai-red-teaming/) | Opened 17 Nov 2026. Used in lab exercise R7 |
+| A48 | SDAIA and the King Salman Global Academy for Arabic Language launched a Data and AI dictionary in March 2022; a second edition is reported with more than 1,200 terms, available on the Siwar platform | Secondary: [Saudipedia](https://saudipedia.com/معجم-البيانات-والذكاء-الاصطناعي), [Okaz](https://www.okaz.com.sa/ampArticle/2181336) | News reports only; the dictionary's own page and its terms of use were not opened. Not used in course content; recorded for the deferred terminology exercise |
 
 ## B. Corrected from earlier drafts
 
@@ -86,6 +89,9 @@ Last full review: **16 November 2026** · Case-study entries (A17 to A25, B12 to
 | B26 | Module 1.4 drafts: "the three versions of work" (imagined, done, disclosed), with the written procedure placed under work-as-imagined | The source describes four; the written procedure is work-as-prescribed (A37) |
 | B27 | Module 1.4 drafts: banking data and minors' data listed as "sensitive data" under PDPL | Neither is in the amended definition as published (A41). The lesson lists the categories from the published text and tells the learner to treat bank and salary fields with care as personal data |
 | B28 | Module 1.4 drafts: "the eight wastes" presented as the Lean standard; a list announced as "the seven forbidden questions" containing four | Seven wastes are Ohno's and the eighth is a later addition (A36). The four questions were kept as four |
+| B29 | Lab drafts: `data_governance_lint.py` offered as a working checker with the pass criterion "100% compliance with PDPL" | The script does not compile (an unquoted string in a print call), its paths contradict its own run instructions, it only matches column names, and the promised bias check is absent. Not adopted; see the lab's `not-adopted.md` |
+| B30 | Lab drafts: dashboard mock-up figures (1,250 tasks, 91.2% success, SAR 3.80 per completed task, SAR 42,000 revenue, 31% margin, 72% automation) | The figures do not reconcile: task costs come to about SAR 4,300 while the stated margin implies about SAR 29,000 of direct cost. Replaced by generated records from which every KPI is computed. The fictional company was renamed from "Musanid", which is close to the Musaned platform |
+| B31 | Lab drafts: a bidi-lint flag `--market-ready` and a script `terminology_lint.py` | Neither exists in Bayan or Riyada |
 
 ## C. Carried from drafts, not yet verified
 
@@ -118,6 +124,8 @@ Use these as leads for research only. Each needs a primary source before it appe
 | C23 | Whether, and on what terms, Qiwa, GOSI, Mudad, Absher Business and FASAH offer programmatic access to third parties | Each platform's official developer or integration documentation |
 | C24 | A loaded employee cost in Saudi Arabia of 1.25 to 1.4 times basic salary | A payroll or HR cost study with its method. Until then the learner asks the host business for the figure |
 | C25 | A quotation sent more than four hours late sharply reduces the chance of closing; an observed employee returns to normal habits "by the third or fourth transaction" | A study in a comparable market for the first; any empirical source for the second. The lesson states neither |
+| C26 | A "Linguistic Parity Score" above 95% as a pass mark for bilingual agents | A published definition and method. None was given |
+| C27 | Alignment of a dataset check with NDMO standards and ISO 8000, and of an agent check with NCA controls | The specific control numbers and the current, binding text of each. The NCA AI guidelines are recorded here as a non-binding draft |
 
 ## D. Regulatory statements pending legal review
 

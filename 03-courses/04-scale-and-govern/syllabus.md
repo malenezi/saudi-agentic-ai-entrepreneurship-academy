@@ -83,6 +83,8 @@ Separate repositories by the same author; see [companion repositories](../../07-
 | Module | Tool | Exercise |
 |---|---|---|
 | 4.1, 4.2 | [Riyada](https://github.com/malenezi/riyada) `venture-scaling`: scale-readiness, OKRs, operating cadence, hire-or-automate; `agent-operations` role cards per function | [R3](../../05-agentic-ai-lab/exercises/r3-role-card-and-approval-matrix.md) |
+| 4.2 | Bayan `arabic-rtl-web` with the Academy's synthetic operating data: a bilingual founder dashboard and three written decisions | [B5](../../05-agentic-ai-lab/exercises/b5-venture-dashboard.md) |
+| 4.4 | The Academy's agent security assessment: a prompt-injection and authority test set | [R7](../../05-agentic-ai-lab/exercises/r7-agent-red-teaming.md) |
 | 4.2 | [Bayan](https://github.com/malenezi/bayan) `rtl-audit` as a CI gate on Arabic interfaces (deep track) | [B4](../../05-agentic-ai-lab/exercises/b4-rtl-audit.md) |
 | 4.5 | Riyada `fundraising`: round rationale, investor pipeline, data-room checklist, investor updates, round-terms guide; `financial-modeling` for the numbers | [R4](../../05-agentic-ai-lab/exercises/r4-financial-model.md) |
 | 4.6 | Bayan `arabic-html-slides`: the pitch as an Arabic-first HTML deck | [B3](../../05-agentic-ai-lab/exercises/b3-pitch-deck.md) |

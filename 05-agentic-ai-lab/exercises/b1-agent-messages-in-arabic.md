@@ -46,6 +46,16 @@ python3 bayan/shared/scripts/bidi_lint.py my-venture/messages/ar.json
 
 للمقارنة: [مثال «بيان» الرابع](https://github.com/malenezi/bayan/tree/main/examples/04-ui-strings) فيه ملف قبل الإصلاح وبعده.
 
+## تحدٍّ إضافي: رسائل مختلطة الاتجاه
+
+أضف ثلاث رسائل فيها ما يكسر الاتجاه، وافحصها بالأمرين نفسيهما ثم بعينك على جوال:
+
+- مبلغ وعملة ورقم فاتورة في جملة واحدة: `{amount}` ريال، فاتورة `{invoice_no}`.
+- تاريخ ووقت، ونطاق أسعار (من كذا إلى كذا).
+- رقم جوال ورابط وبريد في رسالة التحويل إلى موظف.
+
+مرجع الأرقام والتواريخ: [numbers-dates-forms.md](https://github.com/malenezi/bayan/blob/main/skills/arabic-rtl-web/references/numbers-dates-forms.md).
+
 ## ما لا يغطيه «بيان»
 
 - **اللهجة السعودية** في ردود الوكيل المولَّدة: تُختبر بحالات [قالب التقييم](../evaluation/eval-template.md).

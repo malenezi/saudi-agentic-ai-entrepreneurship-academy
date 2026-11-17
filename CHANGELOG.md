@@ -4,6 +4,25 @@
 
 Not released yet. The current release is v0.3; the items below ship with v0.4.
 
+### Agentic AI Lab: exercises, phase 1
+
+**Added**
+- `05-agentic-ai-lab/exercises/r5-market-intelligence.md`: a market file with a claim register (documented fact, estimate, assumption), using Riyada's competitor matrix and sizing sheet.
+- `r6-agent-evaluation.md`: two evaluation cycles on at least 30 cases, each case run three times, one change between cycles, release rule written first.
+- `r7-agent-red-teaming.md`: at least twelve attack cases in six families against the learner's own agent; a control outside the model is the pass criterion.
+- `b5-venture-dashboard.md` and `b5-venture-dashboard/`: a bilingual founder dashboard for a fictional five-agent company. Ships one month of synthetic records, `generate_data.py` (baseline and three decision scenarios), `compute_metrics.py` (computes every KPI and checks a learner's numbers), a KPI dictionary, a founder decision log and a two-KPI skeleton page.
+- `exercises/not-adopted.md`: what happened to every proposal in the three drafts.
+
+**Changed**
+- Extra challenges in R1 (a deliberately false assumption), R2 (two files that conflict), B1 (mixed-direction messages) and B2 (a conversion test); an accessibility line in B4's criteria.
+- Lab index, lab README, both READMEs and the Course 1, 2 and 4 syllabi now point to the twelve exercises.
+
+**Verified and corrected** (`SOURCES.md` A46 to A48, B29 to B31, C26 to C27)
+- The drafts' data-governance linter does not compile and cannot show PDPL compliance; not adopted.
+- The drafts' dashboard figures did not reconcile; replaced by generated records. The fictional company was renamed.
+- Deferred: multi-agent architecture, bilingual customer journey, the two integrative exercises, a capstone, supply-chain audit, terminology alignment.
+- Run on 17 Nov 2026: both B5 scripts on all four scenarios; Bayan's two linters on the skeleton page; Riyada's context linter on the R2 conflict case. Not tried with learners.
+
 ### Academy identity
 
 **Added**
