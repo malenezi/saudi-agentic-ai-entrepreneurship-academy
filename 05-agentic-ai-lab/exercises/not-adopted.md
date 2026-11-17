@@ -15,7 +15,7 @@ Reviewed: 17 November 2026
 
 المسودتان (أ) و(ب) استخدمتا الرموز نفسها لتمارين مختلفة. الترقيم المعتمد في [فهرس التمارين](README.md).
 
-## أ. ما اعتُمد (المرحلة الأولى)
+## أ. ما اعتُمد
 
 | في المسودات | صار | التغيير |
 |---|---|---|
@@ -23,6 +23,10 @@ Reviewed: 17 November 2026
 | (ب) R7 تقييم الوكلاء | [R6](r6-agent-evaluation.md) | يُبنى على قالب التقييم المنشور؛ أضيف التشغيل ثلاث مرات، وتنبيه إلى حجم العيّنة |
 | (ب) R8 الاختبار السلوكي | [R7](r7-agent-red-teaming.md) | أضيف: الضابط خارج النموذج هو معيار النجاح، وحدود التمرين، ومرجعا OWASP |
 | (ب) B6 و(ج) لوحة القيادة | [B5](b5-venture-dashboard.md) | انظر القسم (ب) |
+| (أ) R5 مدقق حوكمة البيانات | [R8](r8-data-governance.md) | برنامج المسودة لا يعمل: جملة طباعة بلا علامتي تنصيص توقفه عند التحميل، ومساراته تخالف تعليمات تشغيله، ويطابق أسماء الأعمدة فقط. كُتب من جديد بتسع قواعد وبلا مكتبات. المعيار «امتثال 100% لنظام حماية البيانات الشخصية» صار «الملف يطابق سياستك»، لأن برنامجاً لا يثبت امتثالاً. والبرنامج في الأكاديمية وليس في «ريادة» |
+| (أ) B5 مواءمة المصطلحات | [B6](b6-terminology.md) | `terminology_lint.py` لم يكن موجوداً؛ كُتب. المسرد قرار المنشأة، ومعجم سدايا مرجع يعود إليه المتعلم ولم يُنقل منه |
+| (أ) B6 «درجة تكافؤ لغوي فوق 95%» | تحدٍّ إضافي في [R6](r6-agent-evaluation.md) | المؤشر كان بلا تعريف. عُرّف: نسبة الأزواج (عربي وإنجليزي) المتطابقة النتيجة. الحد يضعه المتعلم؛ 95% لا مصدر لها |
+| (أ) B7 مدقق العرض الاستثماري | خطوة في [B3](b3-pitch-deck.md) | الخيار `--market-ready` غير موجود في «بيان». كُتب `deck_evidence_check.py`: كل شريحة فيها رقم تذكر مصدره. «معايير استثمارية للسوق السعودي» لا مصدر لها، فلا يفحصها |
 | (ب) إضافات على التمارين الثمانية | تحدٍّ إضافي في R1 و R2 و B1 و B2، وبند في B4 | إضافات R3 (المخاطر وقابلية التراجع) و R4 (تكلفة الإشراف) و B3 (اتساق الأرقام مع الأدلة) موجودة في التمارين المنشورة |
 
 ## ب. لوحة القيادة: ما تغيّر عن المسودة (ج)
@@ -47,7 +51,6 @@ Reviewed: 17 November 2026
 | (ب) X1 نموذج أولي لمشروع وكيلي، و X2 تشغيل شركة أسبوعاً | بعد بناء المقررات 2 إلى 4 | يتداخلان مع مخرج المقرر 2 (وكيل يعمل ومقيَّم) ومع البيلداثون في المقرر 4. X2 يحتاج محاكياً لطلبات العملاء |
 | (ب) مشروع ختامي «Venture-in-a-Box»، وفكرة الاجتياز الثلاثي (تقني، تجاري، تشغيلي) | قرار يُتخذ عند بناء المقرر 4 | لكل مقرر مخرج وسلّم منشوران، ويوم العروض قائم |
 | (أ) R7 تدقيق سلسلة التوريد (SBOM) | المسار العميق في الوحدة 4.4 | أداة فعلية تُسمّى وتُجرَّب. البند 5.2 في تقييم أمن الوكيل يغطي الأساس |
-| (أ) B5 مواءمة المصطلحات | حين تتوفر قائمة مصطلحات يجوز استخدامها | «معجم البيانات والذكاء الاصطناعي» قائم (سدايا ومجمع الملك سلمان العالمي للغة العربية). لم تُفتح صفحته ولا شروط استخدامه. وبرنامج `terminology_lint.py` غير موجود |
 | (أ) بيانات مصطنعة لقطاعات (تقنية مالية، صحة، لوجستيات) | بعد تجربة بيانات B5 مع متعلمين | مولّد B5 يصلح أساساً |
 | (ج) خمسة سيناريوهات أخرى، ومقارنة عبر الزمن، وربط بسجلات تنفيذ فعلية | النسخة الثانية والثالثة من B5 | تجربة النسخة الأولى |
 | (ب) مفاهيم: إدارة الذاكرة، المراقبة والتتبع، التعافي من الفشل، الاعتماد على مزوّد واحد، إعادة تصميم العملية | دروس المقررين 2 و4 | بقية القائمة (السياق، الأدوات، التقييم، اختيار النموذج، الاقتصاديات، الموافقة البشرية) وحدات قائمة في المنهج |
@@ -56,11 +59,8 @@ Reviewed: 17 November 2026
 
 | المقترح | السبب |
 |---|---|
-| (أ) R5 مدقق حوكمة البيانات `data_governance_lint.py`، ومعياره «امتثال 100% لنظام حماية البيانات الشخصية» | البرنامج لا يعمل: جملة طباعة بلا علامتي تنصيص توقفه عند التحميل، ومساراته تخالف تعليمات تشغيله. وهو يطابق أسماء الأعمدة فقط، وفحص التحيز الموعود ليس فيه. برنامج كهذا لا يثبت امتثالاً. المتاح: [التقييم الذاتي](../../02-saudi-market-knowledge-framework/compliance-toolkit/pdpl-self-assessment.md) ومراجعة مختص. تنظيف البيانات دخل الخطوة 2 في B5 |
 | (أ) وضع تمارين الأنظمة السعودية داخل مستودع «ريادة» | «ريادة» عام ولا يعرف المملكة. ما يخص المملكة مكانه الأكاديمية ([قاعدة التكامل](../../07-resources/companion-repositories.md)) |
 | (أ) R6 «تقرير مخاطر آلي لا يُظهر ثغرات حرجة»، منسوباً إلى ضوابط الهيئة الوطنية للأمن السيبراني | لا برنامج في المستودعات الثلاثة ينتج هذا التقرير. وإرشادات الهيئة للذكاء الاصطناعي مسودة غير ملزمة بحسب [سجل المصادر](../../SOURCES.md). المتاح: [تقييم أمن الوكيل](../../02-saudi-market-knowledge-framework/compliance-toolkit/agent-security-assessment.md) و[تقييم المزوّد](../../02-saudi-market-knowledge-framework/compliance-toolkit/third-party-provider-assessment.md) و R7 |
-| (أ) B6 «درجة تكافؤ لغوي فوق 95%» | مؤشر بلا تعريف ولا طريقة قياس. ما يُقاس منه: حالات اللهجة في R6، وتكافؤ النصوص الثابتة في B1 |
-| (أ) B7 مدقق العرض الاستثماري بالخيار `--market-ready` | الخيار غير موجود في «بيان». و[B3](b3-pitch-deck.md) يشترط مصدراً لكل رقم. و«معايير استثمارية للسوق السعودي» لم يُذكر لها مصدر |
 | (أ) بوابات إلزامية بتوقيع رقمي أو شهادة من المدقق | قواعد الجودة في الأكاديمية عون لا حاجز ([دليل المساهمة](../../CONTRIBUTING.md))، والتمارين تعمل بلا Git وبلا وكيل. ولا بنية لإصدار الشهادات |
 | (ب) سلّم موحّد من خمسة أبعاد بوزن 20% لكل منها لكل التمارين | للمقررات سلالم منشورة بأوزانها، وتمارين المختبر بقوائم إنجاز |
 | (ب) «From Prompting to Venture Operating» هويةً للمختبر | للأكاديمية هوية وشعار اعتمدهما صاحبها في 17 نوفمبر 2026. العبارة تصلح وصفاً، والقرار له |
@@ -75,4 +75,4 @@ Reviewed: 17 November 2026
 
 ---
 
-**English.** Three drafts proposed expanding the lab. Phase 1 adopted four exercises: R5 market intelligence, R6 agent evaluation, R7 red teaming and B5 venture dashboard, plus small additions to R1, R2, B1, B2 and B4. For the dashboard, the draft's mock figures did not reconcile and were replaced by generated records; the company was renamed because "Musanid" is close to an existing government platform. Deferred and open for contribution: multi-agent architecture, bilingual customer journey, the two integrative exercises, a capstone, supply-chain audit, terminology alignment and sector datasets. Not adopted: a data-governance linter that does not run and cannot show PDPL compliance, an automatic sovereign-risk report, an undefined linguistic parity score, a pitch-deck flag that does not exist, mandatory signed gates, and a single weighted rubric for all exercises.
+**English.** Three drafts proposed expanding the lab. Adopted: R5 market intelligence, R6 agent evaluation, R7 red teaming, R8 data quality and governance check, B5 venture dashboard and B6 venture glossary, plus a source check for decks in B3, a language-parity measure in R6, and small additions to R1, R2, B1, B2 and B4. The drafts' broken or missing tools were rewritten as working scripts with honest pass criteria. For the dashboard, the draft's mock figures did not reconcile and were replaced by generated records; the company was renamed because "Musanid" is close to an existing government platform. Deferred and open for contribution: multi-agent architecture, bilingual customer journey, the two integrative exercises, a capstone, supply-chain audit and sector datasets. Not adopted: an automatic sovereign-risk report that no script can produce, mandatory signed gates, a single weighted rubric for all exercises, and placing Saudi-specific exercises inside Riyada.

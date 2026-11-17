@@ -9,7 +9,7 @@
 | [المهارات الريادية](skills/README.md) | عشر مهارات: تعليمات جاهزة تحوّل مساعدك إلى شريك في اكتشاف الفرص والتسعير والامتثال | جاهزة للاستخدام |
 | [قوالب الوكلاء](agent-templates/README.md) | خمسة مواصفات لوكلاء: خدمة العملاء عبر واتساب، مطابقة الفواتير، تلخيص المنافسات، تأهيل العملاء المحتملين، مساعد الحجوزات | مواصفات؛ النسخ القابلة للتشغيل في إصدار لاحق |
 | [التقييم](evaluation/eval-template.md) | قالب مجموعة اختبار بالعربية ومعايير النجاح | جاهز للاستخدام |
-| [تمارين المختبر](exercises/README.md) | اثنا عشر تمريناً تستخدم «ريادة» و«بيان»: حزمة سياق تمر من مدقق، مصفوفة اعتماد، نموذج مالي، سجل ادعاءات السوق، تقييم الوكيل واختبار حدوده، رسائل وصفحات وعروض عربية مفحوصة، ولوحة قيادة ببيانات مصطنعة | الأوامر مجرَّبة؛ لم تُجرَّب مع متعلمين |
+| [تمارين المختبر](exercises/README.md) | أربعة عشر تمريناً تستخدم «ريادة» و«بيان»: حزمة سياق تمر من مدقق، مصفوفة اعتماد، نموذج مالي، سجل ادعاءات السوق، تقييم الوكيل واختبار حدوده، رسائل وصفحات وعروض عربية مفحوصة، ولوحة قيادة ببيانات مصطنعة | الأوامر مجرَّبة؛ لم تُجرَّب مع متعلمين |
 | [دليل النماذج العربية](arabic-models.md) | كيف تختار نموذجاً، وما المتاح من نماذج عربية مفتوحة الأوزان | جاهز، يُراجع دورياً |
 
 </div>
@@ -21,7 +21,7 @@ The lab is the hands-on side of the academy.
 | [Entrepreneurial skills](skills/README.md) | Ten ready-to-use instruction sets that turn any assistant into a partner for discovery, pricing and compliance | Usable now |
 | [Agent templates](agent-templates/README.md) | Five agent specifications for common Saudi business jobs | Specifications; runnable versions in a later iteration |
 | [Evaluation](evaluation/eval-template.md) | Arabic test-set template and pass criteria | Usable now |
-| [Lab exercises](exercises/README.md) | Twelve exercises using the companion repositories [Riyada](https://github.com/malenezi/riyada) and [Bayan](https://github.com/malenezi/bayan): a context pack that passes a linter, an approval matrix, a financial model, a market claim register, agent evaluation and red teaming, checked Arabic messages, pages and decks, and a venture dashboard built on synthetic data | Commands run; not yet tried with learners |
+| [Lab exercises](exercises/README.md) | Fourteen exercises using the companion repositories [Riyada](https://github.com/malenezi/riyada) and [Bayan](https://github.com/malenezi/bayan): a context pack that passes a linter, an approval matrix, a financial model, a market claim register, agent evaluation and red teaming, checked Arabic messages, pages and decks, and a venture dashboard built on synthetic data | Commands run; not yet tried with learners |
 | [Arabic model guide](arabic-models.md) | How to choose a model; open-weight Arabic options | Usable; reviewed periodically |
 
 ## Principles of the lab

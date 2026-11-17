@@ -36,7 +36,19 @@ python3 bayan/shared/scripts/i18n_parity.py my-venture/deck.html
 
 <div dir="rtl">
 
-7. تصفّح العرض كاملاً بكل لغة. في العربية السهم الأيسر يتقدم، و`L` يبدّل اللغة، و`P` يطبع.
+7. افحص أن كل شريحة فيها رقم تذكر مصدره في عنصر `class="source"`، أو تقول إنه تقدير:
+
+</div>
+
+```bash
+python3 saudi-agentic-ai-entrepreneurship-academy/05-agentic-ai-lab/exercises/b3-deck-evidence/deck_evidence_check.py my-venture/deck.html
+```
+
+<div dir="rtl">
+
+للمعايرة: [مثال «بيان»](https://github.com/malenezi/bayan/tree/main/examples/02-executive-deck) يخرج بملاحظة واحدة، على شريحة «الأثر المتوقع»: أرقام مستهدفة لم توصف بأنها تقدير. البرنامج يرى وجود المصدر ولا يفتحه؛ فتحه عملك في [R5](r5-market-intelligence.md). للعرض الاستثماري أضف `data-topic` لكل شريحة واستخدم `--require` للتأكد من حضور شرائح المشكلة والاقتصاديات والحوكمة والطلب.
+
+8. تصفّح العرض كاملاً بكل لغة. في العربية السهم الأيسر يتقدم، و`L` يبدّل اللغة، و`P` يطبع.
 
 مثال مكتمل: [عرض تنفيذي في «بيان»](https://github.com/malenezi/bayan/tree/main/examples/02-executive-deck).
 
@@ -45,7 +57,7 @@ python3 bayan/shared/scripts/i18n_parity.py my-venture/deck.html
 - [ ] العناوين جمل كاملة، والطلب في الشريحة الأخيرة.
 - [ ] `--profile deck --strict` بلا ملاحظات.
 - [ ] `i18n_parity.py` بلا مشكلات.
-- [ ] كل رقم له مصدر أو معلَّم بأنه تقدير.
+- [ ] كل رقم له مصدر أو معلَّم بأنه تقدير، و`deck_evidence_check.py` بلا ملاحظات.
 - [ ] شريحة للحوكمة: ما يفعله الوكيل وحده، وما يحتاج موافقة.
 - [ ] نسخة PDF مطبوعة ومراجَعة.
 
