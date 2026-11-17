@@ -6,7 +6,7 @@
 
 An open-source, Arabic-first reference for anyone who wants to start, run or grow a business in Saudi Arabia built on agentic AI. A personal initiative founded and maintained by **Prof. Mamdouh Alenezi**, developed with community contributions.
 
-**Status:** v0.2 · Last reviewed: 16 November 2026
+**Status:** v0.3 · Last reviewed: 17 November 2026
 
 ---
 

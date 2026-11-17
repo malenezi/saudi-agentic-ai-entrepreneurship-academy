@@ -105,7 +105,7 @@ Use these as leads for research only. Each needs a primary source before it appe
 
 ## D. Regulatory statements pending legal review
 
-The following appear in `02-saudi-market-knowledge-framework/` and were written from the instruments as understood on the review date, without a fresh check against the official text in this iteration. A Saudi lawyer must confirm them before v0.5.
+The following appear in `02-saudi-market-knowledge-framework/` and were written from the instruments as understood on the review date, without a fresh check against the official text in this iteration. A Saudi lawyer must confirm them before v0.6.
 
 | # | Statement | Check against |
 |---|---|---|
