@@ -9,7 +9,7 @@ The academy is built iteratively, in the open. Each iteration ships something a 
 | v0.3 | Founder essentials in depth | Establishment walkthrough, PDPL worked example, tax basics, verified funding directory; Arabic versions of English-only guides | Next |
 | v0.4 | Business development domains | IP, e-commerce, employment, procurement and sector guides | Planned |
 | v0.5 | Founder agents and runnable templates | Remaining founder agents; workflow exports and reference code; Arabic evaluation sets | Planned |
-| Later, in iterations | **Courses** | The four courses, built one at a time on top of the knowledge framework | Planned |
+| In iterations | **Courses** | The four courses, built one at a time on top of the knowledge framework | Course 1: first content release (Nov 2026), not yet piloted. Courses 2 to 4: planned |
 | v1.0 | Public launch | Website generated from the repository; project showcase | Planned |
 
 ## Why the knowledge framework comes before the courses

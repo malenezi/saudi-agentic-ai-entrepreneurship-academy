@@ -2,7 +2,26 @@
 
 ## Unreleased (2026-11-17)
 
-Case studies.
+Course 1 content and case studies.
+
+### Course 1: Finding Your Agentic Opportunity
+
+**Added** (`03-courses/01-opportunity/`)
+- Seven lessons in Arabic with English terms, one per module, each with concepts, an activity, track differences, a quick review and common mistakes.
+- Six sector briefs for Module 1.3: e-commerce, customs documentation, private clinics, real estate brokerage, accounting, HR back office. Candidate workflows are hypotheses; only sourced figures appear.
+- Templates: workflow map pack, interview evidence pack, thesis template. Scoring and unit economics continue to use the Founder Toolkit.
+- An annotated model thesis with invented data, a glossary, four-level rubrics, validation gates, an instructor guide and `not-adopted.md`.
+
+**Changed**
+- The Course 1 syllabus now links every module to its lesson, adds validation gates and extends the track differences. Structure, hours, the seven thesis sections and the rubric weights are unchanged.
+
+**Verified and corrected** (details in `SOURCES.md`, A26 to A35, B19 to B24, C19 to C23)
+- Unsourced market sizes, NPHIES volumes, licensee counts and per-workflow volumes from the drafts were left out.
+- The Musaned recruitment figure refers to domestic workers; one draft's cost example did not add up; fabricated interviews became a labelled model.
+
+**Not done yet:** slides, quizzes, role cards, a reading list, and a pilot with a cohort.
+
+### Case studies
 
 **Added**
 - `06-case-studies/`: nine real cases summarised from public sources (Saudi: Tamimi Markets, Alsaif Gallery, Aramco Digital and OrbitronAI; international: SaaStr, Klarna, OPLOG, Simba Sleep, TrueLayer, Suitor), each with an evidence level, "what the source does not say" and questions for learners.

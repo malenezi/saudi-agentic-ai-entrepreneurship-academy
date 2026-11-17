@@ -2,7 +2,7 @@
 
 <div dir="rtl">
 
-> **الحالة: تُبنى لاحقاً، على مراحل.** المقررات لم تُبنَ بعد. ما في هذا المجلد **مخططات أولية** منشورة للنقاش، وستتغير. الأولوية الحالية لـ[إطار المعرفة بالسوق السعودي](../02-saudi-market-knowledge-framework/README.md)، والمقررات تُبنى فوقه واحداً تلو الآخر.
+> **الحالة: تُبنى على مراحل.** المقرر 1 صدر محتواه الأول في 17 نوفمبر 2026 ولم يُجرَّب مع فوج بعد. المقررات 2 إلى 4 **مخططات أولية** منشورة للنقاش، وستتغير. الأولوية الحالية لـ[إطار المعرفة بالسوق السعودي](../02-saudi-market-knowledge-framework/README.md)، والمقررات تُبنى فوقه واحداً تلو الآخر.
 
 ## المخطط المقترح
 
@@ -10,7 +10,7 @@
 
 | # | المقرر | الساعات المقترحة | المُخرَج | الحالة |
 |---|---|---|---|---|
-| 1 | [اكتشاف الفرصة الوكيلية](01-opportunity/syllabus.md) | 16 | أطروحة الفرصة | مسودة مخطط |
+| 1 | [اكتشاف الفرصة الوكيلية](01-opportunity/syllabus.md) | 16 | أطروحة الفرصة | **الإصدار الأول من المحتوى** |
 | 2 | [بناء الوكلاء الأذكياء](02-build/syllabus.md) | 24 | وكيل يعمل ومُقيَّم | مسودة مخطط |
 | 3 | [الإطلاق وبناء النموذج التجاري](03-launch/syllabus.md) | 20 | منتج أولي وتجربة مع عميل | مسودة مخطط |
 | 4 | [التوسع والحوكمة](04-scale-and-govern/syllabus.md) | 16 | معمارية تشغيل وعرض استثماري | مسودة مخطط |
@@ -25,7 +25,7 @@
 
 ## English
 
-> **Status: to be built later, in iterations.** The courses are not built yet. This folder holds **draft outlines** published for discussion, and they will change. The current priority is the [Saudi Market Knowledge Framework](../02-saudi-market-knowledge-framework/README.md); the courses will be built on top of it, one at a time.
+> **Status: built in iterations.** Course 1 has its first content release (17 November 2026): seven lessons, six sector briefs, templates, rubrics and an instructor guide. It has not been piloted with a cohort. Courses 2 to 4 are **draft outlines** published for discussion, and they will change. The current priority is the [Saudi Market Knowledge Framework](../02-saudi-market-knowledge-framework/README.md); the courses will be built on top of it, one at a time.
 
 ## Proposed shape
 
