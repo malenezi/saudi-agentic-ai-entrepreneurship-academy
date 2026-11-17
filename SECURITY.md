@@ -4,11 +4,11 @@
 
 <div dir="rtl">
 
-إن وجدت في هذا المستودع مفتاحاً أو كلمة مرور أو بيانات شخصية حقيقية، أو خللاً في أحد البرامج قد يضر من يشغّله، فلا تفتح Issue عاماً. استخدم [الإبلاغ الخاص عن الثغرات](https://github.com/malenezi/saudi-agentic-ai-entrepreneurship-academy/security/advisories/new) في GitHub.
+إن وجدت في هذا المستودع مفتاحاً أو كلمة مرور أو بيانات شخصية حقيقية، أو خللاً في أحد البرامج قد يضر من يشغّله، فلا تفتح Issue عاماً. استخدم [الإبلاغ الخاص عن الثغرات](https://github.com/malenezi/saudi-agentic-ai-entrepreneurship-academy/security/advisories/new) في GitHub. وإن لم تكن الصفحة متاحة فافتح Issue بعنوان `security` تذكر فيه فقط أن لديك بلاغاً.
 
 </div>
 
-If you find a secret, real personal data, or a flaw in one of the scripts that could harm someone who runs it, please do not open a public issue. Use GitHub's [private vulnerability reporting](https://github.com/malenezi/saudi-agentic-ai-entrepreneurship-academy/security/advisories/new) for this repository. This is a volunteer-maintained personal initiative; there is no guaranteed response time.
+If you find a secret, real personal data, or a flaw in one of the scripts that could harm someone who runs it, please do not open a public issue. Use GitHub's [private vulnerability reporting](https://github.com/malenezi/saudi-agentic-ai-entrepreneurship-academy/security/advisories/new) for this repository. If that page is not available, open an issue titled `security` that says only that you have a report, and the maintainer will arrange a private channel. This is a volunteer-maintained personal initiative; there is no guaranteed response time.
 
 ## Scope · النطاق
 
