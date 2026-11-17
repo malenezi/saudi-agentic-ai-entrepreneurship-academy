@@ -19,6 +19,8 @@
 
 A skill is a set of instructions you paste into any AI assistant so it performs one entrepreneurial job methodically. Paste your filled-in [Founder Context](../../04-entrepreneur-toolkit/10-founder-context-template.md) first, then the skill, then answer its questions one at a time. The assistant proposes; you decide and verify.
 
+**Installable alternatives.** The ten skills below are paste-in instructions that work in any assistant. If your agent reads `SKILL.md` folders, [Riyada](https://github.com/malenezi/riyada) packages nine founder skills with their templates and checking scripts, and [Bayan](https://github.com/malenezi/bayan) four Arabic interface skills with linters. They are separate repositories; see [companion repositories](../../07-resources/companion-repositories.md) for how they map to these skills and to the courses.
+
 | # | المهارة · Skill | المقرر · Course |
 |---|---|---|
 | 1 | [Opportunity Scanner · ماسح الفرص](#1-opportunity-scanner) | 1 |

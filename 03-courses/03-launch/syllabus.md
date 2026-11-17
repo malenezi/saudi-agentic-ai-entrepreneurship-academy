@@ -72,3 +72,17 @@
 - Promising a customer that data stays in the Kingdom without checking where each provider processes it.
 
 **Note.** Module 3.7 is orientation only. Company formation, tax and licensing rules change; follow the official portals and take professional advice.
+
+## Companion tools (optional)
+
+Separate repositories by the same author; see [companion repositories](../../07-resources/companion-repositories.md). The deliverable is graded with the Academy's templates.
+
+| Module | Tool | Exercise |
+|---|---|---|
+| 3.1 | [Bayan](https://github.com/malenezi/bayan) `arabic-ux-writing` for onboarding and help text; `rtl-audit` for an existing interface | [B1](../../05-agentic-ai-lab/exercises/b1-agent-messages-in-arabic.md), [B4](../../05-agentic-ai-lab/exercises/b4-rtl-audit.md) |
+| 3.2 | [Riyada](https://github.com/malenezi/riyada) `business-planning`: lean canvas, and a full business plan when a bank or support programme asks for one | |
+| 3.3 | Riyada `financial-modeling`: a 36-month company model fed by the Academy's cost per resolved task | [R4](../../05-agentic-ai-lab/exercises/r4-financial-model.md) |
+| 3.5 | Riyada `go-to-market`: ideal customer profile, positioning and messaging, 90-day launch plan | |
+| 3.5 | Bayan `arabic-rtl-web`: a bilingual landing page for the pilot | [B2](../../05-agentic-ai-lab/exercises/b2-bilingual-landing-page.md) |
+
+Compliance (3.4), pilots and letters of intent (3.6) and company set-up (3.7) have no equivalent in Riyada; use the [Saudi Market Knowledge Framework](../../02-saudi-market-knowledge-framework/README.md). Riyada's parallel workflow is [Launch to traction](https://github.com/malenezi/riyada/blob/main/workflows/03-launch-to-traction.en.md).

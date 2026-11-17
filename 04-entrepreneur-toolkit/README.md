@@ -24,3 +24,24 @@ Ten bilingual templates covering the journey from idea to investor pitch. Copy, 
 **How to use them with an AI assistant.** Fill in template 10 first and give it to your assistant. Then ask it to interview you through any other template, one question at a time, and to challenge weak answers. The [skills](../05-agentic-ai-lab/skills/README.md) do this for you.
 
 **Legal note.** Template 9 is an outline for discussion and has not been reviewed by a lawyer. Have a licensed Saudi lawyer review any document before you sign it.
+
+## Related templates in Riyada · قوالب ذات صلة في «ريادة»
+
+<div dir="rtl">
+
+[«ريادة»](https://github.com/malenezi/riyada) مستودع مستقل لصاحب الأكاديمية نفسه، فيه قوالب ومهارات ريادية عامة. بعضها يشبه قوالب هذه الحقيبة وبعضها يكملها. القاعدة: مخرجات المقررات تُقيَّم بقوالب هذه الحقيبة، وجدول «أيهما أستخدم» في [المستودعات المرافقة](../07-resources/companion-repositories.md) يحسم كل تداخل.
+
+| قالب الحقيبة | ما يكمله من «ريادة» |
+|---|---|
+| 2 تقييم فرص الوكلاء | بطاقة تقييم الفرص (للمفاضلة بين أفكار قبل اختيار القطاع)، بطاقة التجربة |
+| 3 اكتشاف العملاء | دليل مقابلة العملاء |
+| 4 مقارنة المنافسين | مصفوفة المنافسين، ورقة تقدير السوق |
+| 5 نموذج العمل | مخطط النموذج المختصر، خطة العمل |
+| 6 اقتصاديات الوحدة | نموذج مالي لـ36 شهراً ([تمرين R4](../05-agentic-ai-lab/exercises/r4-financial-model.md)) |
+| 7 مخطط المنتج الأولي | بطاقة دور الوكيل، مصفوفة الاعتماد، إجراء التشغيل ([تمرين R3](../05-agentic-ai-lab/exercises/r3-role-card-and-approval-matrix.md)) |
+| 8 هيكل العرض الاستثماري | غرفة البيانات، متابعة المستثمرين، تحديث المستثمرين |
+| 10 قالب سياق المؤسس | حزمة السياق بطبقاتها السبع ومدققها ([تمرين R2](../05-agentic-ai-lab/exercises/r2-context-pack.md)) |
+
+</div>
+
+[Riyada](https://github.com/malenezi/riyada) is a separate repository by the same author with general founder templates and installable skills. Course deliverables are graded with this toolkit; the overlap table in [companion repositories](../07-resources/companion-repositories.md) says which template to use when the two are similar.

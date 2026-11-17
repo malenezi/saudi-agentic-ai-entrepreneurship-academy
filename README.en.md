@@ -30,9 +30,22 @@ Details in [CONTRIBUTING.md](CONTRIBUTING.md).
 | [Founder Toolkit](04-entrepreneur-toolkit/README.md) | Ten bilingual business templates and a unit-economics calculator | Available |
 | [Agentic AI Lab](05-agentic-ai-lab/README.md) | Ten entrepreneurial skills, five agent templates, an evaluation template, an Arabic model guide | Available |
 | [Academy](01-academy/) | Vision and mission, learning framework, competency framework | Available |
-| [Courses](03-courses/README.md) | Four courses | **To be built later, in iterations**; draft outlines are published for discussion |
+| [Courses](03-courses/README.md) | Four courses | [Course 1](03-courses/01-opportunity/syllabus.md): **first content release available** (lessons, sector briefs, templates, rubrics). Courses 2 to 4 are draft outlines |
 | [Case studies](06-case-studies/README.md) | Nine real cases from public sources (three Saudi) with evidence levels, scenarios and a learner worksheet | Available; owner-written cases wanted |
+| [Learning pathways](01-academy/learning-pathways.md) · [Lab exercises](05-agentic-ai-lab/exercises/README.md) | A route for each kind of learner, and eight hands-on exercises that use the two companion repositories | Available; exercises not yet tried with learners |
 | [Resources](07-resources/README.md) · [Community](08-community/README.md) | Curated references; project showcase | Available |
+
+## Companion repositories
+
+The Academy is one of three independent repositories by the same author. Each works on its own.
+
+| Repository | Job |
+|---|---|
+| **Academy** | Curriculum and Saudi market knowledge |
+| [**Riyada**](https://github.com/malenezi/riyada) | Skills, context files and templates for founders who build and run a company with AI agents |
+| [**Bayan**](https://github.com/malenezi/bayan) | Skills and linters for correct Arabic websites, decks and interface text |
+
+We link and do not copy. Details and a "which one do I use" table: [companion repositories](07-resources/companion-repositories.md).
 
 ## Why this academy
 

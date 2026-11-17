@@ -117,6 +117,10 @@ Briefs below are at **seed level**: parts 1, 2, 5, 6, 7 and 8 are drafted; parts
 
 ---
 
+## Deeper briefs for Course 1
+
+Six sectors have a longer learner handout (workflows to shadow, systems, regulatory touchpoints, candidate workflows, interview targets) in [`03-courses/01-opportunity/sector-briefs/`](../../03-courses/01-opportunity/sector-briefs/README.md): e-commerce, customs documentation, private clinics, real estate brokerage, accounting, and HR back office. They follow the same rule: hypotheses to test, and no figure without a source.
+
 ## From brief to opportunity
 
 1. Pick one brief.

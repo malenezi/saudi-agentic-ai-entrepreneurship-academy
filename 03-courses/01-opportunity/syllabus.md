@@ -1,16 +1,17 @@
 # المقرر 1: اكتشاف الفرصة الوكيلية
 # Course 1: Finding Your Agentic Opportunity
 
-> **مسودة مخطط · Draft outline.** هذا المقرر لم يُبنَ بعد. المحتوى التفصيلي يُطوَّر على مراحل، والمخطط قابل للتغيير. ملاحظاتك واقتراحاتك مرحّب بها. · This course is not built yet. Detailed content will be developed in later iterations and this outline may change. Comments and suggestions are welcome.
-
+> **الإصدار الأول من المحتوى · First content release (17 November 2026).** الدروس والموجزات القطاعية والقوالب وسلالم التقدير متاحة الآن. لم يُجرَّب المقرر مع فوج بعد، والعروض التقديمية والاختبارات القصيرة لم تُعدّ. ملاحظاتك مرحّب بها. · Lessons, sector briefs, templates and rubrics are available. The course has not been piloted with a cohort, and slides and quizzes are not built yet. Comments are welcome.
 
 <div dir="rtl">
 
-**المدة:** 16 ساعة · **المستوى:** مبتدئ · **المتطلب السابق:** لا يوجد · **الركيزة:** فكّر
+**المدة:** 16 ساعة، ومهمتان ميدانيتان بين الجلسات · **المستوى:** مبتدئ · **المتطلب السابق:** لا يوجد · **الركيزة:** فكّر
 
 **لمن؟** رواد الأعمال الجدد، أصحاب المنشآت، الخبراء في قطاعاتهم، والمؤسسون التقنيون الباحثون عن مشكلة تستحق الحل.
 
 **السؤال الذي يجيب عنه المقرر:** أي مشكلة في السوق السعودي تستحق أن أبني لها وكيلاً، وما الدليل؟
+
+**القاعدة التي تحكمه:** لا تبحث عن منشأة تحتاج وكيلاً. ابحث عن عمل مكلف ومتكرر، ثم اختبر هل يقدم وكيل بإشراف بشري نتيجة أفضل بتكلفة أقل ومخاطرة مقبولة.
 
 **المُخرَج:** أطروحة فرصة من صفحتين، مدعومة بخمس مقابلات عملاء على الأقل، وتقدير أولي لاقتصاديات الوحدة.
 
@@ -21,6 +22,20 @@
 4. يجري مقابلات عملاء تكشف السلوك الفعلي لا الآراء المجاملة.
 5. يكتب أطروحة فرصة مقنعة بالعربية.
 
+## ابدأ من هنا
+
+| الوحدة | الدرس | الساعات | المخرج |
+|---|---|---|---|
+| 1.1 | [من المحادث الآلي إلى الوكيل](lessons/1-1-from-chatbots-to-agents.md) | 2 | ورقة تصنيف |
+| 1.2 | [المنشأة القائمة على الوكلاء](lessons/1-2-agent-native-business.md) | 2 | إعادة تصميم خدمة |
+| 1.3 | [أين تبحث في السوق السعودي؟](lessons/1-3-where-to-look.md) | 3 | ثلاثة مسارات مرشحة |
+| 1.4 | [مراقبة سير العمل](lessons/1-4-workflow-shadowing.md) | 3 | خريطة سير عمل |
+| 1.5 | [اكتشاف العملاء](lessons/1-5-customer-discovery.md) | 3 | حزمة أدلة المقابلات |
+| 1.6 | [التقييم والاقتصاديات الأولى](lessons/1-6-scoring-and-economics.md) | 2 | تقييم واقتصاديات وقرار |
+| 1.7 | [كتابة أطروحة الفرصة](lessons/1-7-writing-the-thesis.md) | 1 | الأطروحة |
+
+**مواد المقرر:** [الموجزات القطاعية الستة](sector-briefs/README.md) · [خريطة سير العمل](templates/workflow-map.md) · [حزمة أدلة المقابلات](templates/interview-evidence-pack.md) · [قالب الأطروحة](templates/thesis-template.md) · [أطروحة نموذجية](examples/model-thesis.md) · [المسرد](glossary.md) · [سلالم التقدير](rubrics.md) · [دليل المدرب](instructor-guide.md) · [ما لم يُعتمد ولماذا](not-adopted.md)
+
 </div>
 
 ---
@@ -29,25 +44,30 @@
 
 | # | Module | Hours | Core content | Activity |
 |---|---|---|---|---|
-| 1.1 | From chatbots to agents | 2 | What an agent is: goal, tools, memory, limits. What agents do well and badly today. Bounded autonomy. Why this changes the cost of starting a company | Classify ten real examples as chatbot, workflow automation or agent |
-| 1.2 | The agent-native business | 2 | Selling outcomes instead of software seats. Service delivered by agents with people supervising. Where the margin comes from and where it leaks | Rewrite one traditional service business as an agent-native one |
-| 1.3 | Where to look in the Saudi market | 3 | Reading the sector briefs. The workflow wedge: one painful, repetitive, rule-rich process. Signals of a good wedge: high volume, clear success criteria, tolerable error cost, data access | Shortlist three workflows using the [sector briefs](../../02-saudi-market-knowledge-framework/11-market-intelligence/sectors-and-opportunities.md) |
-| 1.4 | Workflow shadowing | 3 | Observing a real process inside a business. Mapping steps, systems, people, exceptions and time. Spotting personal data early | Field task: shadow one process and produce a workflow map |
-| 1.5 | Customer discovery | 3 | Interviewing about past behaviour, not future intentions. Finding who feels the pain, who decides and who pays. Recording evidence | Five interviews using the [Customer Discovery Template](../../04-entrepreneur-toolkit/03-customer-discovery.md) |
-| 1.6 | Scoring and first economics | 2 | Scoring opportunities. First estimate of value per task and cost per task. Competitor scan | Complete the [AI Opportunity Assessment](../../04-entrepreneur-toolkit/02-ai-opportunity-assessment.md) |
-| 1.7 | Writing the thesis | 1 | Structure of a two-page opportunity thesis. Peer review | Submit the thesis |
+| 1.1 | [From chatbots to agents](lessons/1-1-from-chatbots-to-agents.md) | 2 | What an agent is: goal, tools, memory, decision loop. The autonomy ladder. Bounded autonomy. What agents do well and badly today. The verification tax. Why this changes the cost of starting a company | Classify ten examples as chatbot, automation, workflow with a model step, or agent |
+| 1.2 | [The agent-native business](lessons/1-2-agent-native-business.md) | 2 | Selling outcomes instead of software seats. Service delivered by agents with people supervising. Where the margin comes from and where it leaks | Rewrite one traditional service business as an agent-native one |
+| 1.3 | [Where to look in the Saudi market](lessons/1-3-where-to-look.md) | 3 | The workflow wedge: one painful, repetitive, rule-rich process with a buyer. Signals of a good and a bad wedge. Regulatory and data readiness | Shortlist three workflows using the [Course 1 sector briefs](sector-briefs/README.md) and the [framework briefs](../../02-saudi-market-knowledge-framework/11-market-intelligence/sectors-and-opportunities.md) |
+| 1.4 | [Workflow shadowing](lessons/1-4-workflow-shadowing.md) | 3 | Observing a real process inside a business. Mapping steps, systems, people, exceptions and time. Touch time, waiting time, first-pass yield. Spotting personal data early | Field task: shadow one process and produce a [workflow map](templates/workflow-map.md) |
+| 1.5 | [Customer discovery](lessons/1-5-customer-discovery.md) | 3 | Interviewing about past behaviour, not future intentions. The politeness trap. Who feels the pain, who decides, who pays, who blocks. Evidence hierarchy | Five interviews using the [Customer Discovery Template](../../04-entrepreneur-toolkit/03-customer-discovery.md) and the [evidence pack](templates/interview-evidence-pack.md) |
+| 1.6 | [Scoring and first economics](lessons/1-6-scoring-and-economics.md) | 2 | Scoring with evidence. Value per task and cost per resolved task. Three sensitivity scenarios. Alternatives scan. Validation gates | Complete the [AI Opportunity Assessment](../../04-entrepreneur-toolkit/02-ai-opportunity-assessment.md) and the [unit-economics worksheet](../../04-entrepreneur-toolkit/06-unit-economics.md) |
+| 1.7 | [Writing the thesis](lessons/1-7-writing-the-thesis.md) | 1 | Structure of a two-page opportunity thesis. Writing for a non-technical buyer. Peer review | Submit the [thesis](templates/thesis-template.md) |
+
+Field work happens between sessions and is not counted in the 16 hours. Suggested schedules are in the [instructor guide](instructor-guide.md).
 
 ## Track differences
 
 | | Core track | Deep track |
 |---|---|---|
 | Module 1.1 | Try three agent products as a user | Also read one orchestration framework's quick-start and run its hello-world |
+| Module 1.2 | Rewrite a service with a first cost estimate | Also run the calculator on three scenarios and find the break-even success rate |
+| Module 1.3 | Three workflows from the briefs | Also a sourced opportunity map for one sector |
 | Module 1.4 | Workflow map on paper or a whiteboard | Also list the systems and APIs involved and check which have documented access |
+| Module 1.5 | Five interviews | Eight to ten, including one with IT or compliance |
 | Module 1.6 | Estimate cost per task from published API prices | Also measure tokens for one sample task on a hosted model and a local model |
 
 ## Deliverable: the opportunity thesis
 
-Two pages, in Arabic, using the [Startup Idea Canvas](../../04-entrepreneur-toolkit/01-startup-idea-canvas.md) as the base.
+Two pages, in Arabic, using the [thesis template](templates/thesis-template.md), with the [Startup Idea Canvas](../../04-entrepreneur-toolkit/01-startup-idea-canvas.md) as the base.
 
 1. **The customer.** Who exactly, in which sector and city, with what role.
 2. **The workflow.** The steps today, time taken, cost, error rate, who does it.
@@ -56,6 +76,16 @@ Two pages, in Arabic, using the [Startup Idea Canvas](../../04-entrepreneur-tool
 5. **The economics.** Value per completed task, estimated cost per task, how you might charge.
 6. **The wedge and the moat.** Why this workflow first, and what you would own that a new model release cannot erase: data, integrations, trust, distribution.
 7. **Risks.** Data, regulatory, technical and market, with the first mitigation for each.
+
+## Validation gates
+
+A thesis is graded only if all five are "yes". Otherwise it goes back for more field evidence.
+
+1. Real interviews with people in the segment were carried out.
+2. A buyer is identified by role.
+3. The problem is documented by observation.
+4. The thesis explains why an agent is needed and not plain automation, or says that automation is enough.
+5. The thesis explains how revenue arrives and who pays.
 
 ## Rubric
 
@@ -67,9 +97,28 @@ Two pages, in Arabic, using the [Startup Idea Canvas](../../04-entrepreneur-tool
 | Economics | 15% | Value and cost per task are estimated with stated assumptions |
 | Writing | 10% | Clear Arabic a non-technical buyer would understand |
 
+Four performance levels per criterion, and rubrics for the workflow map and the interview pack, are in [rubrics.md](rubrics.md).
+
 ## Skills to use
 
-[Opportunity Scanner](../../05-agentic-ai-lab/skills/README.md#1-opportunity-scanner) · [Interview Guide Builder](../../05-agentic-ai-lab/skills/README.md#2-interview-guide-builder) · [Interview Synthesiser](../../05-agentic-ai-lab/skills/README.md#3-interview-synthesiser) · [Competitor Scan](../../05-agentic-ai-lab/skills/README.md#4-competitor-scan)
+[Opportunity Scanner](../../05-agentic-ai-lab/skills/README.md#1-opportunity-scanner) · [Interview Guide Builder](../../05-agentic-ai-lab/skills/README.md#2-interview-guide-builder) · [Interview Synthesiser](../../05-agentic-ai-lab/skills/README.md#3-interview-synthesiser) · [Competitor Scan](../../05-agentic-ai-lab/skills/README.md#4-competitor-scan) · [Workflow Mapper](../../05-agentic-ai-lab/skills/README.md#5-workflow-mapper)
+
+## Companion tools (optional)
+
+The course is complete without these. They are separate repositories by the same author; see [companion repositories](../../07-resources/companion-repositories.md) for what overlaps and which template to use when.
+
+| Module | Tool | Use |
+|---|---|---|
+| Before 1.3 | [Riyada](https://github.com/malenezi/riyada) opportunity scorecard | Compare ideas from different sectors on an evidence scale before choosing where to look |
+| 1.6 | Riyada market-sizing sheet and [defensibility worksheet](https://github.com/malenezi/riyada/blob/main/frameworks/defensibility.en.md) | Bottom-up reachable market; what you would own |
+| After 1.7 | Riyada experiment card | Turn the weakest assumption in the thesis into a test with a decision rule: [exercise R1](../../05-agentic-ai-lab/exercises/r1-evidence-scorecard-and-experiment.md) |
+| 1.7 pitch | [Bayan](https://github.com/malenezi/bayan) HTML slides | Build the three-minute pitch as an Arabic-first deck: [exercise B3](../../05-agentic-ai-lab/exercises/b3-pitch-deck.md) |
+
+The thesis is graded with the Academy's templates. Riyada's parallel workflow is [Idea to validated opportunity](https://github.com/malenezi/riyada/blob/main/workflows/01-idea-to-validation.en.md).
+
+## Case studies for discussion
+
+The [case studies](../../06-case-studies/README.md) and their [learner worksheet](../../06-case-studies/worksheets/learner-worksheet.md) are mapped to this course's five learning outcomes.
 
 ## Common mistakes
 
@@ -77,3 +126,8 @@ Two pages, in Arabic, using the [Startup Idea Canvas](../../04-entrepreneur-tool
 - Interviewing friends who say the idea is great.
 - Choosing a task where a single error is very costly and no human review is planned.
 - Quoting market sizes with no source. Describe the customers you can reach instead.
+- Counting model tokens and forgetting review, escalation and failed attempts.
+
+## What is still missing
+
+Slides, short quizzes, role cards and practice interview records for Module 1.5, a recorded agent demonstration, a reading list, and a first cohort's feedback. See the [instructor guide](instructor-guide.md) and [CONTRIBUTING.md](../../CONTRIBUTING.md).

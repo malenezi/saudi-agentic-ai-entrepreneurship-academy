@@ -8,6 +8,15 @@ Last reviewed: 16 November 2026. A short, curated list. Links point to organisat
 
 </div>
 
+## Companion repositories · المستودعات المرافقة
+
+| Repository | What it adds |
+|---|---|
+| [Riyada · ريادة](https://github.com/malenezi/riyada) | Nine installable founder skills, a seven-layer context pack with a linter, eighteen bilingual templates, four workflows and a financial model builder. Country-neutral |
+| [Bayan · بيان](https://github.com/malenezi/bayan) | Four Arabic-first skills for bilingual websites, HTML decks, RTL audits and UX writing, with two linters |
+
+Both are by the Academy's author and work on their own. How they map to the courses, which template to use when two are similar, and what was checked: [companion-repositories.md](companion-repositories.md). Hands-on use: [lab exercises](../05-agentic-ai-lab/exercises/README.md).
+
 ## 1. Official Saudi sources · المصادر الرسمية
 
 | Source | What to find there |
