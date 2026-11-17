@@ -58,7 +58,11 @@ If your agent reads a customer's name, phone number, message, address, order, bo
 
 ## 4. Sensitive data
 
-Health, genetic, biometric, credit and certain other categories are treated as sensitive and attract stricter conditions. Data about minors needs particular care. If your opportunity involves these categories (clinics, lending, schools), take legal advice **before** building, and prefer designs where the agent handles administration without seeing the sensitive content.
+The law defines sensitive data as personal data about racial or ethnic origin; religious, intellectual or political belief; security and criminal data; biometric identifiers; genetic data; health data; and data indicating that one or both parents are unknown. This is the definition as amended in 2023 ([SOURCES.md](../../SOURCES.md), A41). Sensitive data attracts stricter conditions.
+
+Credit data is no longer in that definition, but it is not ordinary either: the law gives it its own article (Article 24), with additional controls set by the regulations, including consent before it is collected or disclosed and notice to the individual when its disclosure is requested (A45). Data about minors needs particular care.
+
+If your opportunity involves any of these categories (clinics, lending, schools), take legal advice **before** building, and prefer designs where the agent handles administration without seeing the sensitive content.
 
 ## 5. Other obligations that may apply
 

@@ -11,9 +11,11 @@
 
 **Unchanged:** hours, in-class timings, the deliverable, the four step classes and all rubric weights.
 
-**Verified and corrected** (`SOURCES.md` A36 to A44, B25 to B28, C24 to C25; `not-adopted.md` section و)
+**Verified and corrected** (`SOURCES.md` A36 to A45, B25 to B28, C24 to C25; `not-adopted.md` section و)
 - Left out: "switching raises errors by up to 40%", a loaded-cost multiplier of 1.25 to 1.4, a four-hour rule for quotations, and new invented worked examples.
 - Corrected: four varieties of work, not three; PDPL sensitive data as defined in the amended text; seven wastes plus a later eighth.
+- `02-saudi-market-knowledge-framework/03-data-protection-pdpl/pdpl-founder-guide.md`, section 4: sensitive data now follows the amended definition; credit data is described separately under its own article.
+- Every external link in the lesson was opened on 17 Nov 2026.
 - Not adopted because they conflict with or duplicate published material: a fifth step class, two new map rubrics, two 100-point scorecards, an opportunity card, a new autonomy scale.
 
 ## v0.3 (2026-11-17)
