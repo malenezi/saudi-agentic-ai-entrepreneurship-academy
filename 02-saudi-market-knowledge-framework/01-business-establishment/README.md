@@ -17,8 +17,8 @@
 | Companies Law | Ministry of Commerce | Binding | ◻ |
 | Commercial Register Law and commercial registration services | Ministry of Commerce | Binding | ◻ |
 | Unified establishment and licensing services | Saudi Business Center | Service | ◻ |
-| Investment Law: foreign investors register with the Ministry of Investment | MISA | Binding | ◻ |
-| Entrepreneur pathway for foreign founders backed by an approved university or incubator | MISA | Programme | ◻ confirm in the current investor guide |
+| Investment Law: foreign investors register with the Ministry of Investment | MISA | Binding | ✔ registration described in the Investor Guide, 13th edition, issue 04 of 2026 (A64) · ◻ the law itself |
+| Entrepreneur pathway for foreign founders backed by an approved university or incubator | MISA | Programme | ✔ "Registration for Entrepreneurial Establishments": support letter or accreditation from a Saudi university or accredited business incubator, stating activity and ownership; 10 working days stated for registration; no fee amounts printed (A64) |
 | SME definitions, support centres and guidance | Monsha'at | Programme | ◻ |
 
 ## Founder decisions

@@ -17,10 +17,10 @@
 |---|---|---|---|
 | 01 | [تأسيس الأعمال](01-business-establishment/README.md) | كيف أؤسس منشأتي نظامياً؟ | بذرة |
 | 02 | [تنظيم الذكاء الاصطناعي](02-ai-regulations/README.md) | ما المطلوب من منتج قائم على الوكلاء؟ | دليلان منشوران |
-| 03 | [البيانات والخصوصية](03-data-protection-pdpl/README.md) | كيف أتعامل مع البيانات الشخصية؟ | دليل منشور |
+| 03 | [البيانات والخصوصية](03-data-protection-pdpl/README.md) | كيف أتعامل مع البيانات الشخصية؟ | دليل ومثال تطبيقي |
 | 04 | [الأمن السيبراني](04-cybersecurity/README.md) | ما الضوابط التي تنطبق عليّ؟ | دليل منشور |
-| 05 | [الضرائب والمالية](05-tax-accounting-finance/README.md) | ما التزاماتي الضريبية والمحاسبية؟ | بذرة |
-| 06 | [التمويل والاستثمار](06-funding-investment/README.md) | من أين أموّل مشروعي؟ | دليلان منشوران |
+| 05 | [الضرائب والمالية](05-tax-accounting-finance/README.md) | ما التزاماتي الضريبية والمحاسبية؟ | دليل أول، بانتظار مراجعة مستشار |
+| 06 | [التمويل والاستثمار](06-funding-investment/README.md) | من أين أموّل مشروعي؟ | دليلان ودليل برامج موثّق |
 | 07 | [الملكية الفكرية](07-intellectual-property/README.md) | كيف أحمي ما أبنيه؟ | بذرة |
 | 08 | [التجارة الإلكترونية](08-ecommerce-digital-business/README.md) | كيف أبيع رقمياً بشكل نظامي؟ | بذرة |
 | 09 | [الموارد البشرية](09-employment-hr/README.md) | كيف أوظّف وأتعاقد؟ | بذرة |
@@ -75,10 +75,10 @@ A first-class product of the academy, not supplementary reading. It gives any en
 |---|---|---|---|
 | 01 | [Starting a business](01-business-establishment/README.md) | How do I set up legally? | Seed |
 | 02 | [AI regulations](02-ai-regulations/README.md) | What is expected of an agentic product? | Two guides published |
-| 03 | [Data and privacy](03-data-protection-pdpl/README.md) | How do I handle personal data? | Guide published |
+| 03 | [Data and privacy](03-data-protection-pdpl/README.md) | How do I handle personal data? | Guide and worked example |
 | 04 | [Cybersecurity](04-cybersecurity/README.md) | Which controls apply to me? | Guide published |
-| 05 | [Tax and finance](05-tax-accounting-finance/README.md) | What are my tax and accounting duties? | Seed |
-| 06 | [Funding and investment](06-funding-investment/README.md) | Where does the money come from? | Two guides published |
+| 05 | [Tax and finance](05-tax-accounting-finance/README.md) | What are my tax and accounting duties? | First guide, awaiting adviser review |
+| 06 | [Funding and investment](06-funding-investment/README.md) | Where does the money come from? | Two guides and a verified directory |
 | 07 | [Intellectual property](07-intellectual-property/README.md) | How do I protect what I build? | Seed |
 | 08 | [E-commerce and digital business](08-ecommerce-digital-business/README.md) | How do I sell online lawfully? | Seed |
 | 09 | [Employment and HR](09-employment-hr/README.md) | How do I hire and contract? | Seed |

@@ -8,7 +8,7 @@ The academy is built iteratively, in the open. Each iteration ships something a 
 | v0.2 | Saudi Market Knowledge Framework | Twelve-domain framework, regulatory register, official directory, founder compliance checklist, agentic governance playbook, founder-agent standard and first agent; open contribution guide | Released |
 | v0.3 | Course 1, case studies and companion repositories | First content release of Course 1 (lessons, sector briefs, templates, rubrics); nine public-source case studies with evidence levels; Riyada and Bayan cross-referenced with an overlap map, learning pathways and eight lab exercises | Released |
 | **v0.4** | **Lab, Module 1.4 in depth, identity and quality checks** | Six new lab exercises with working checkers (R5 to R8, B5, B6), fourteen in all; Module 1.4 enriched; the academy banner; automated link checks and script tests on every change | **This release** (17 November 2026). Course 1 not yet piloted; exercises not yet tried with learners |
-| v0.5 | Founder essentials in depth | Establishment walkthrough, PDPL worked example, tax basics, verified funding directory; Arabic versions of English-only guides | Planned |
+| v0.5 | Founder essentials in depth | Establishment walkthrough, PDPL worked example, tax basics, verified funding directory; Arabic versions of English-only guides | **In progress.** Done on 18 November 2026: the PDPL worked example, the first funding directory, and the tax guide with its adviser review pack (not yet reviewed). To do: establishment walkthrough; Arabic versions |
 | v0.6 | Business development domains | IP, e-commerce, employment, procurement and sector guides | Planned |
 | v0.7 | Founder agents and runnable templates | Remaining founder agents; workflow exports and reference code; Arabic evaluation sets | Planned |
 | In iterations | **Courses** | Courses 2 to 4, built one at a time on top of the knowledge framework; slides, quizzes and a pilot for Course 1 | Planned |
@@ -20,7 +20,7 @@ The courses teach what to do; the framework says how to do it in the Kingdom. Bu
 
 ## Known gaps in v0.4
 
-- Seven of the twelve domains are at seed level: maps, decisions, checklists and a list of wanted guides.
+- Six of the twelve domains are at seed level: maps, decisions, checklists and a list of wanted guides. (Tax gained its first guide on 18 November 2026, awaiting an adviser's review.)
 - Many register entries are marked ◻ (to verify). Each is an open task.
 - Regulatory summaries have not been reviewed by a Saudi lawyer; tax content has not been reviewed by a tax adviser.
 - Deeper guides are in English with Arabic summaries.

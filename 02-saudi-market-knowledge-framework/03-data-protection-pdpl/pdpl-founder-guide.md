@@ -1,7 +1,7 @@
 # دليل المؤسس لنظام حماية البيانات الشخصية
 # PDPL: a founder's guide for agentic products
 
-Last reviewed: 16 November 2026 · Educational, not legal advice · Not yet lawyer-reviewed
+Last reviewed: 18 November 2026 · Educational, not legal advice · Not yet lawyer-reviewed
 
 <div dir="rtl">
 
@@ -20,7 +20,7 @@ Last reviewed: 16 November 2026 · Educational, not legal advice · Not yet lawy
 
 ## 1. Does it apply to you?
 
-The Personal Data Protection Law applies to processing of personal data about individuals that takes place in the Kingdom, and to processing of data about individuals residing in the Kingdom by entities outside it. SDAIA is the competent authority. The law has been enforceable since September 2024, after a one-year transition from its effective date in September 2023.
+The Personal Data Protection Law applies to processing of personal data about individuals that takes place in the Kingdom, and to processing of data about individuals residing in the Kingdom by entities outside it. SDAIA is the competent authority. The law was issued by Royal Decree M/19 of 9/2/1443H and amended by Royal Decree M/148 of 5/9/1444H ([SOURCES.md](../../SOURCES.md), A49). It has been enforceable since September 2024, after a one-year transition from its effective date in September 2023.
 
 If your agent reads a customer's name, phone number, message, address, order, booking or ID, you are processing personal data.
 
@@ -48,11 +48,11 @@ If your agent reads a customer's name, phone number, message, address, order, bo
 
 **4. Minimise.** Collect only what the task needs. Mask or drop identifiers before sending text to a model where the task allows. Do not put personal data in prompts used for testing.
 
-**5. Respect rights.** Individuals have rights that include being informed, accessing their data, obtaining a copy, correcting it and requesting its destruction. Design the agent's storage so that you can find and delete one person's data, including memory and embeddings.
+**5. Respect rights.** Individuals have rights that include being informed, accessing their data, obtaining a copy, correcting it and requesting its destruction. The Implementing Regulation gives you 30 days to answer a request, extendable by up to 30 more with notice and reasons (A50). Design the agent's storage so that you can find and delete one person's data, including memory and embeddings.
 
 **6. Control your processors.** Every model API, automation platform, messaging provider and database is a processor or sub-processor. Sign terms that restrict their use of the data, and check each with the [provider assessment](../compliance-toolkit/third-party-provider-assessment.md).
 
-**7. Handle transfers outside the Kingdom deliberately.** Sending personal data to a provider that processes it abroad is a transfer and is governed by dedicated regulations with conditions and safeguards. Know the processing location of every provider. Options to reduce exposure: providers with in-Kingdom regions, self-hosting an open-weight model on infrastructure in the Kingdom, or removing personal data before the call.
+**7. Handle transfers outside the Kingdom deliberately.** Sending personal data to a provider that processes it abroad is a transfer and is governed by dedicated regulations with conditions and safeguards. As reported, SDAIA has not yet published its list of countries with an adequate level of protection, so transfers rest on safeguards such as its standard contractual clauses (A51). Know the processing location of every provider. Options to reduce exposure: providers with in-Kingdom regions, self-hosting an open-weight model on infrastructure in the Kingdom, or removing personal data before the call.
 
 **8. Prepare for incidents.** Keep access controls and logs. Have a short written plan for a data breach: who decides, how you contain it, how you assess harm, and how you notify. The implementing rules require notifying the competent authority within 72 hours of becoming aware of a breach that meets the stated criteria, and notifying affected individuals in defined cases.
 
@@ -60,7 +60,7 @@ If your agent reads a customer's name, phone number, message, address, order, bo
 
 The law defines sensitive data as personal data about racial or ethnic origin; religious, intellectual or political belief; security and criminal data; biometric identifiers; genetic data; health data; and data indicating that one or both parents are unknown. This is the definition as amended in 2023 ([SOURCES.md](../../SOURCES.md), A41). Sensitive data attracts stricter conditions.
 
-Credit data is no longer in that definition, but it is not ordinary either: the law gives it its own article (Article 24), with additional controls set by the regulations, including consent before it is collected or disclosed and notice to the individual when its disclosure is requested (A45). Data about minors needs particular care.
+Credit data is no longer in that definition, but it is not ordinary either: the law gives it its own article (Article 24), with additional controls set by the regulations, including consent before it is collected or disclosed and notice to the individual when its disclosure is requested (A45). A minor's data is not a category of sensitive data in that definition. What the Implementing Regulation addresses is capacity: where a person fully or partially lacks legal capacity, the legal guardian consents and exercises rights on their behalf, and you must verify the guardianship. The text we read names no age (A50, B32).
 
 If your opportunity involves any of these categories (clinics, lending, schools), take legal advice **before** building, and prefer designs where the agent handles administration without seeing the sensitive content.
 
@@ -89,6 +89,12 @@ Larger customers will send you a questionnaire. Be ready with:
 | No training on customer data | Contractually and technically disabled |
 | In-Kingdom processing option | A deployment choice you can offer buyers who require it |
 | Deletion that reaches everywhere | One function removes a person from the database, memory, vector store and logs |
+
+## A complete example, and what may change
+
+[مثال تطبيقي: وكيل خدمة عملاء مرتبط بنظام CRM](worked-example-customer-service-agent.md) applies every step above to one agent, in Arabic.
+
+SDAIA consulted from 6 October to 5 November 2026 on draft amendments to the Implementing Regulation. As reported by law firms, the draft would require personal data to be stored in the Kingdom (transfers staying possible under the law), would make the 72-hour notice to SDAIA apply to every breach whether or not harm is likely, and would widen the triggers for impact assessments. **It is a draft and binds no one today** (A52). Watch for the final text.
 
 ## Official sources
 

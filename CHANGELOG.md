@@ -1,5 +1,42 @@
 # Changelog
 
+## v0.5 (in progress)
+
+Founder essentials in depth. First part, 18 November 2026: the PDPL worked example, the funding directory and the first tax guide. Still to come in v0.5: the establishment walkthrough and Arabic versions of the English-only guides. READMEs stay at v0.4 until then.
+
+### Data protection (domain 03)
+
+**Added**
+- `03-data-protection-pdpl/worked-example-customer-service-agent.md`: the whole PDPL file for one fictional agent, in Arabic. Roles, a filled-in data map, lawful basis per purpose, an in-chat privacy notice, processing location and transfers, retention, individuals' requests, a breach plan, the agent's permission matrix, what the October 2026 draft would change, and seven questions for a lawyer.
+
+**Changed**
+- `compliance-toolkit/pdpl-self-assessment.md`: the single question that grouped health, credit, biometric and minors' data is now three (sensitive data as defined, credit data, minors and people lacking capacity). The checklist has 27 questions.
+- The PDPL Pre-Check skill asks the same three questions separately.
+- `pdpl-founder-guide.md`: decree numbers, the 30-day response period, the state of the adequacy list, guardians and capacity, and a section on the draft amendments.
+- Domain page: instruments table with verification marks, and a table of what the check settled.
+
+### Tax (domain 05)
+
+**Added**
+- `05-tax-accounting-finance/tax-basics-for-founders.md`: VAT registration, e-invoicing waves, zakat or income tax by ownership, and withholding tax on foreign model and cloud bills, in Arabic. **Sources checked; not reviewed by a tax adviser.**
+- `foreign-supplier-payment-register.md`: a bilingual register whose classification column stays "awaiting adviser review" until an adviser signs it.
+- `adviser-review-pack.md`: twenty questions, three review gates and an approval record for the adviser who reviews the domain.
+
+### Funding (domain 06)
+
+**Added**
+- `06-funding-investment/funding-directory.md`: one entry per programme with a status and the date its official page was opened, in Arabic. Four verified (Estrdad, CODE, Kafalah at the SME Bank, Monsha'at's directory), five partial (MVPLAB, Tech Crew, Boost, TAQADAM, the AI Incubator), two sandboxes listed apart, and the rest named as "to verify" without terms. No entry says applications are open.
+
+### Verified and corrected
+
+`SOURCES.md` A49 to A64, B32 to B39, C28 to C32; D3 to D6 updated. `02-saudi-market-knowledge-framework/not-adopted.md` records what was taken from the five drafts, what was corrected or dropped, and what was deferred.
+
+- Confirmed: the amending decree M/148; the 30-day response period; explicit consent for solely automated decisions; the VAT thresholds; e-invoicing wave 25 (1 February 2027); withholding rates and deadlines from ZATCA's May 2026 guideline; the Ministry of Investment's registration category for entrepreneurial establishments.
+- Not found, left out: parental consent "under 15"; "Decision 816 of 2025"; an SDAIA adequacy list; a general Arabic-language rule for notices; several programme amounts; first-year and second-year investment fees.
+- Recorded as a draft only: the amendments to the PDPL Implementing Regulation consulted on from 6 October to 5 November 2026.
+
+**Limits of this check.** The Implementing Regulation was read from an English copy on a non-official site, and ZATCA's withholding guideline through an automated extraction of the English PDF. NTDP's product pages and SAMA's sandbox page did not open. No lawyer or tax adviser has reviewed any of it.
+
 ## v0.4 (2026-11-17)
 
 Six new lab exercises with working checkers, Module 1.4 in depth, the academy identity, and automated checks on every change. The founder-essentials work first planned for v0.4 moves to v0.5; see the roadmap.
