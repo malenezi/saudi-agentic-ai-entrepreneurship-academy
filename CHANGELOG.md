@@ -2,7 +2,7 @@
 
 ## v0.5 (in progress)
 
-Founder essentials in depth. First part, 18 November 2026: the PDPL worked example, the funding directory and the first tax guide. Second part, 18 November 2026: the establishment walkthrough. Still to come in v0.5: Arabic versions of the English-only guides. READMEs stay at v0.4 until then.
+Founder essentials in depth. First part, 18 November 2026: the PDPL worked example, the funding directory and the first tax guide. Second part, 18 November 2026: the establishment walkthrough. Third part, 18 November 2026: Arabic versions (`.ar.md`) of the seven English-only guides and five domain READMEs (domains 02, 03, 04, 06, 11); three were translated by the owner and reviewed, nine by Claude, none lawyer-reviewed. Still to come in v0.5: the funding directory's "to verify" entries. READMEs stay at v0.4 until then.
 
 ### Establishment (domain 01)
 

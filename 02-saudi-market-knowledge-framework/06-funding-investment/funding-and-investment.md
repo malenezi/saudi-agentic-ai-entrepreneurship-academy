@@ -2,6 +2,8 @@
 
 Last reviewed: 16 November 2026. This is orientation, not financial advice. Confirm every programme's current terms at source.
 
+النسخة العربية: [funding-and-investment.ar.md](funding-and-investment.ar.md)
+
 <div dir="rtl">
 
 **الخلاصة:** ليس كل مشروع وكيلي يحتاج إلى استثمار جريء. كثير من المشاريع التي تقدّم خدمة عبر الوكلاء تستطيع أن تنمو من إيراداتها. اختر المسار قبل أن تختار الممول.

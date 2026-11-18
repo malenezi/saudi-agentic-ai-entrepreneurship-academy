@@ -2,6 +2,8 @@
 
 Last reviewed: 16 November 2026. Descriptions are general; confirm current programmes on each official site.
 
+النسخة العربية: [startup-ecosystem.ar.md](startup-ecosystem.ar.md)
+
 <div dir="rtl">
 
 **كيف تقرأ هذا الدليل:** لكل جهة ثلاثة أسئلة: ما دورها؟ ماذا تقدّم لمؤسس مشروع وكيلي؟ ومتى تتواصل معها في رحلتك؟

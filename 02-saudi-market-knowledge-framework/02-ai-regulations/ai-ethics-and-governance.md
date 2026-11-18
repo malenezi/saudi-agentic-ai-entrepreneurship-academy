@@ -3,6 +3,8 @@
 
 Last reviewed: 16 November 2026 · Educational, not legal advice
 
+النسخة العربية: [ai-ethics-and-governance.ar.md](ai-ethics-and-governance.ar.md)
+
 <div dir="rtl">
 
 ## الخلاصة

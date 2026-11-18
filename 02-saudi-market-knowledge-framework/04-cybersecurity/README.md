@@ -1,5 +1,7 @@
 # المجال 04: الأمن السيبراني · Domain 04: Cybersecurity and digital infrastructure
 
+النسخة العربية: [README.ar.md](README.ar.md)
+
 **Status:** Guide published · Last reviewed 16 November 2026 · Educational, not legal advice
 
 <div dir="rtl">

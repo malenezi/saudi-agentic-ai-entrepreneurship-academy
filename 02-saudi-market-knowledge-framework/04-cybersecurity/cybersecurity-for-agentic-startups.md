@@ -3,6 +3,8 @@
 
 Last reviewed: 16 November 2026 · Educational, not legal advice
 
+النسخة العربية: [cybersecurity-for-agentic-startups.ar.md](cybersecurity-for-agentic-startups.ar.md)
+
 <div dir="rtl">
 
 ## الخلاصة
