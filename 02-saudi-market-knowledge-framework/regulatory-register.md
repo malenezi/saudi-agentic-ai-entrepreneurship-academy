@@ -2,6 +2,8 @@
 
 Last full review: **16 November 2026** · Data protection and tax rows updated **18 November 2026**
 
+النسخة العربية: [regulatory-register.ar.md](regulatory-register.ar.md)
+
 <div dir="rtl">
 
 سجل واحد لكل وثيقة تنظيمية تذكرها الأكاديمية: من أصدرها، ما حالتها النظامية، على من تنطبق، ومتى تحققنا منها. القاعدة: **لا تُعرض وثيقة على أنها سارية قبل التحقق من مصدرها الرسمي.**
