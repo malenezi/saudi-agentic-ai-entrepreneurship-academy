@@ -1,8 +1,8 @@
 # Changelog
 
-## v0.5 (in progress)
+## v0.5 (2026-11-18)
 
-Founder essentials in depth. First part, 18 November 2026: the PDPL worked example, the funding directory and the first tax guide. Second part, 18 November 2026: the establishment walkthrough. Third part, 18 November 2026: Arabic versions (`.ar.md`) of the seven English-only guides and five domain READMEs (domains 02, 03, 04, 06, 11); three were translated by the owner and reviewed, nine by Claude, none lawyer-reviewed. Still to come in v0.5: the funding directory's "to verify" entries. READMEs stay at v0.4 until then.
+Founder essentials in depth. First part, 18 November 2026: the PDPL worked example, the funding directory and the first tax guide. Second part, 18 November 2026: the establishment walkthrough. Third part, 18 November 2026: Arabic versions (`.ar.md`) of the seven English-only guides and five domain READMEs (domains 02, 03, 04, 06, 11); three were translated by the owner and reviewed, nine by Claude, none lawyer-reviewed. Fourth part, launch audit, 18 November 2026: Arabic version of the regulatory register; READMEs and CITATION.cff moved to v0.5. The funding directory's "to verify" entries move to v0.6; each is labelled as unverified in the directory.
 
 ### Establishment (domain 01)
 
