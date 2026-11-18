@@ -1,6 +1,6 @@
 # المجال 05: الضرائب والمحاسبة والمالية · Domain 05: Tax, accounting and finance
 
-**Status:** Seed · Last reviewed 16 November 2026 · Educational, not tax or financial advice
+**Status:** First guide published, awaiting a tax adviser's review · Last reviewed 18 November 2026 · Educational, not tax or financial advice
 
 <div dir="rtl">
 
@@ -10,6 +10,14 @@
 
 </div>
 
+## Guides and tools
+
+| Resource | Use it for |
+|---|---|
+| [أساسيات الضريبة والزكاة لمؤسس مشروع وكيلي](tax-basics-for-founders.md) | VAT registration, e-invoicing waves, zakat or income tax by ownership, withholding tax on foreign model and cloud bills. In Arabic. **Sources checked; not yet reviewed by a tax adviser** |
+| [سجل المدفوعات للمزوّدين الأجانب](foreign-supplier-payment-register.md) | One row per foreign supplier; classification stays "awaiting adviser review" until an adviser signs it |
+| [حزمة مراجعة المستشار الضريبي](adviser-review-pack.md) | Twenty questions and three review gates for the adviser who reviews this domain |
+
 ## Authority
 
 ZATCA (Zakat, Tax and Customs Authority) administers VAT, zakat, income tax, withholding tax, e-invoicing and customs.
@@ -18,25 +26,25 @@ ZATCA (Zakat, Tax and Customs Authority) administers VAT, zakat, income tax, wit
 
 | Subject | Instrument | Status | Verification |
 |---|---|---|---|
-| VAT | VAT Law and Implementing Regulations | Binding | ◻ |
-| E-invoicing | FATOORA regulations and integration requirements | Binding | ◻ current waves |
+| VAT | VAT Law and Implementing Regulations | Binding | ✔ thresholds (A53) · ◻ the rest |
+| E-invoicing | FATOORA regulations and integration requirements | Binding | ✔ wave 25, announced 24 July 2026 (A54) |
 | Zakat | Zakat regulations | Binding | ◻ |
 | Income tax | Income Tax Law | Binding | ◻ |
-| Withholding tax | Rules on payments to non-residents | Binding | ◻ |
+| Withholding tax | Rules on payments to non-residents | Binding | ✔ rates and deadlines from ZATCA's General Guideline, May 2026 (A55) · ◻ software, cloud and API payments (C32) |
 | Transfer pricing | Bylaws | Binding where applicable | ◻ |
 
 ## Points every agentic founder should check with an adviser
 
-All figures below are from general knowledge and early drafts. **Confirm each with ZATCA or a licensed tax adviser before relying on it.**
+The VAT thresholds, the e-invoicing wave and the withholding rates were checked against ZATCA's pages on 18 November 2026 ([SOURCES.md](../../SOURCES.md), A53 to A55). The rest is from general knowledge and early drafts. **Confirm each point with ZATCA or a licensed tax adviser before relying on it.**
 
 | Topic | What to check | ◻ |
 |---|---|---|
-| VAT registration | Mandatory registration is generally stated as SAR 375,000 of annual taxable supplies, with voluntary registration from SAR 187,500 | ◻ |
+| VAT registration | Mandatory registration above SAR 375,000 of taxable supplies in twelve months; voluntary above SAR 187,500 (A53). How the test looks backward and forward is for the adviser | ✔ thresholds |
 | VAT on what you sell | Whether your service is standard-rated, and how subscriptions and usage fees are invoiced | ◻ |
 | Imported services | VAT treatment of model APIs, cloud and software bought from foreign suppliers | ◻ |
-| Withholding tax | Whether payments to non-resident providers for services or software attract withholding tax | ◻ |
+| Withholding tax | Which rate applies to each foreign supplier: 5% technical and consulting services, 15% royalties, 15% any other payments, 20% management fees (A55). The classification is the adviser's decision | ✔ rates · ◻ classification |
 | Zakat or income tax | Zakat generally applies to Saudi and GCC ownership and income tax to foreign ownership; mixed ownership is split | ◻ |
-| E-invoicing | Whether and when your business must issue compliant electronic invoices and integrate with the platform | ◻ |
+| E-invoicing | Whether you fall in wave 25 (VAT-subject revenue above SAR 187,500 in any of 2022 to 2025; integrate by 1 February 2027) or an earlier wave (A54) | ✔ wave 25 |
 
 ## Founder decisions
 
@@ -66,7 +74,8 @@ All figures below are from general knowledge and early drafts. **Confirm each wi
 
 ## Guides wanted
 
-- [ ] VAT explained for technology founders
+- [x] First guide: VAT, e-invoicing, zakat or income tax, withholding tax (18 November 2026; awaiting adviser review)
+- [ ] VAT explained for technology founders, in depth
 - [ ] Zakat versus income tax for mixed-ownership startups
 - [ ] FATOORA for a small software business
 - [ ] Buying foreign AI and cloud services: VAT and withholding tax

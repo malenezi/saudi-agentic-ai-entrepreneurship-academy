@@ -1,6 +1,6 @@
 # التقييم الذاتي لنظام حماية البيانات الشخصية · PDPL self-assessment
 
-Educational tool, not legal advice. Complete before the first real customer's data enters your product. Review every quarter and after any change of provider.
+Educational tool, not legal advice. Complete before the first real customer's data enters your product. Review every quarter and after any change of provider. A filled-in example: [customer-service agent with a CRM](../03-data-protection-pdpl/worked-example-customer-service-agent.md).
 
 **المشروع · Venture:** ____________  **التاريخ · Date:** ____________  **المسؤول · Owner:** ____________
 
@@ -67,13 +67,17 @@ Answer نعم / لا / جزئي (Yes / No / Partly). Every "No" or "Partly" beco
 | 21 | هل توجد خطة مكتوبة للتعامل مع تسرب البيانات؟ · Is there a written data-breach plan? | | |
 | 22 | هل نعرف متى وكيف نُبلّغ الجهة المختصة والأفراد؟ · Do we know when and how to notify the authority and individuals? | | |
 
-### و. البيانات الحساسة · Sensitive data
+### و. فئات لها أحكام خاصة · Categories with their own rules
+
+Three separate questions, because the law treats them separately. Sensitive data is a defined list; credit data is not on that list and has its own article; a minor's data is not a category of data at all, it is about who may consent ([SOURCES.md](../../SOURCES.md), A41, A45, A50).
 
 | # | السؤال · Question | الإجابة | الإجراء |
 |---|---|---|---|
-| 23 | هل نعالج بيانات صحية أو ائتمانية أو حيوية أو بيانات قاصرين؟ · Do we process health, credit, biometric or minors' data? | | |
-| 24 | إن كان نعم، هل حصلنا على استشارة قانونية؟ · If yes, have we taken legal advice? | | |
-| 25 | هل قيّمنا حاجتنا إلى تقييم أثر أو مسؤول حماية بيانات أو تسجيل؟ · Have we assessed whether an impact assessment, a DPO or registration is required? | | |
+| 23 | هل نعالج بيانات حساسة بتعريف النظام: الأصل العرقي أو الإثني، المعتقد الديني أو الفكري أو السياسي، البيانات الأمنية والجنائية، السمات الحيوية، البيانات الوراثية، البيانات الصحية، ما يدل على أن الفرد مجهول الأبوين أو أحدهما؟ · Do we process sensitive data as the law defines it: racial or ethnic origin; religious, intellectual or political belief; security and criminal data; biometric identifiers; genetic data; health data; data indicating that one or both parents are unknown? | | |
+| 24 | هل نعالج بيانات ائتمانية (طلب تمويل، قدرة على السداد، تاريخ ائتماني)؟ · Do we process credit data (a financing request, ability to repay, credit history)? | | |
+| 25 | هل يُحتمل أن يكون بعض أصحاب البيانات قاصرين أو ناقصي الأهلية؟ وإن كان، فكيف نتحقق من موافقة الولي ومن صفته؟ · Could some of the individuals be minors or lack full legal capacity? If so, how do we obtain the guardian's consent and verify guardianship? | | |
+| 26 | إن كان الجواب نعم في أي من الثلاثة، هل حصلنا على استشارة قانونية قبل البناء؟ · If yes to any of the three, have we taken legal advice before building? | | |
+| 27 | هل قيّمنا حاجتنا إلى تقييم أثر أو مسؤول حماية بيانات أو تسجيل؟ · Have we assessed whether an impact assessment, a DPO or registration is required? | | |
 
 ## الجزء 3: خطة الإجراءات · Part 3: Action plan
 
@@ -81,4 +85,4 @@ Answer نعم / لا / جزئي (Yes / No / Partly). Every "No" or "Partly" beco
 |---|---|---|---|
 | | | | |
 
-**متى تستعين بمحامٍ · When to call a lawyer:** any "Yes" in section و, any transfer outside the Kingdom you cannot avoid; your first enterprise or government contract; any breach.
+**متى تستعين بمحامٍ · When to call a lawyer:** any "Yes" to questions 23 to 25; any transfer outside the Kingdom you cannot avoid; your first enterprise or government contract; any breach.
