@@ -1,5 +1,7 @@
 # المجال 02: تنظيم الذكاء الاصطناعي · Domain 02: AI regulations and responsible AI
 
+النسخة العربية: [README.ar.md](README.ar.md)
+
 **Status:** Two guides published · Last reviewed 16 November 2026 · Educational, not legal advice
 
 <div dir="rtl">
@@ -57,6 +59,6 @@ There is no single AI statute. Binding obligations come mainly from data protect
 - [ ] AI product documentation: models, data, limits and testing in two pages
 - [ ] Mapping a startup's dossier to the AI Adoption Framework for procurement
 - [ ] Reading the National AI Risk Management Framework as a ten-person company
-- [ ] Arabic versions of both published guides
+- [x] Arabic versions of both published guides (18 November 2026)
 
 **Not carried over from early drafts:** descriptions of the AI Adoption Framework as mandatory or as dated November 2025, which the sources checked do not support. See the [register](../regulatory-register.md).

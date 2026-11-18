@@ -1,5 +1,7 @@
 # المجال 03: البيانات والخصوصية · Domain 03: Data protection and privacy
 
+النسخة العربية: [README.ar.md](README.ar.md)
+
 **Status:** Guide and worked example published · Last reviewed 18 November 2026 · Educational, not legal advice
 
 <div dir="rtl">
@@ -50,7 +52,7 @@ One early draft cited the law as "Royal Decree M/19 of 2024". The decree dates f
 - [ ] Training and fine-tuning on customer data
 - [ ] Impact assessment template sized for a startup
 - [ ] Breach response playbook
-- [ ] Arabic version of the founder's guide
+- [x] Arabic version of the founder's guide (18 November 2026)
 
 ## What the 18 November 2026 check settled
 

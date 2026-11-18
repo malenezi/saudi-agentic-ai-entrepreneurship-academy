@@ -3,6 +3,8 @@
 
 Version 0.1 · Last reviewed 16 November 2026 · Academy practice, not a legal requirement
 
+النسخة العربية: [agentic-ai-governance-playbook.ar.md](agentic-ai-governance-playbook.ar.md)
+
 <div dir="rtl">
 
 ## لماذا دليل خاص بالوكلاء؟

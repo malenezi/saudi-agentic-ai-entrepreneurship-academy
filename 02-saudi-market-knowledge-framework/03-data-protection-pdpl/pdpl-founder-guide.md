@@ -3,6 +3,8 @@
 
 Last reviewed: 18 November 2026 · Educational, not legal advice · Not yet lawyer-reviewed
 
+النسخة العربية: [pdpl-founder-guide.ar.md](pdpl-founder-guide.ar.md)
+
 <div dir="rtl">
 
 ## الخلاصة في ستة أسطر

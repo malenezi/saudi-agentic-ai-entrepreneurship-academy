@@ -1,5 +1,7 @@
 # المجال 06: التمويل والاستثمار · Domain 06: Funding, investment and startup support
 
+النسخة العربية: [README.ar.md](README.ar.md)
+
 **Status:** Two guides and a verified directory published · Last reviewed 18 November 2026 · Educational, not financial advice
 
 <div dir="rtl">

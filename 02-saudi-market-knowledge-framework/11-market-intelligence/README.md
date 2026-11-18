@@ -1,5 +1,7 @@
 # المجال 11: ذكاء السوق واكتشاف الفرص · Domain 11: Market intelligence and opportunity discovery
 
+النسخة العربية: [README.ar.md](README.ar.md)
+
 **Status:** Guide published · Last reviewed 16 November 2026
 
 <div dir="rtl">
