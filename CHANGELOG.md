@@ -17,9 +17,9 @@ Founder essentials in depth. First part, 18 November 2026: the PDPL worked examp
 - The simplified joint-stock company has no minimum capital (Companies Law, Art. 139(2)); the ordinary joint-stock company's SAR 500,000 does not apply to it.
 - All three services require that the applicant or partner is not a government employee. No exception is stated; the walkthrough lists it as a question for a lawyer.
 
-**Found conflicting, not resolved**
-- The sole-establishment register fee: 500 on its service page, SR 200 on the Ministry's start-your-project page (C35).
-- The supervising authority for an entrepreneurial establishment: a Saudi university or accredited incubator in the Investor Guide; a venture capital fund or business incubator in the Ministry of Investment's FAQ (C34).
+**Found conflicting; treatment settled 18 Nov 2026, later pass**
+- The sole-establishment register fee: 500 on its service page, SR 200 on the Ministry's start-your-project page. The walkthrough now uses 500 as the planning figure (the page is for the service itself and dates from the new law's start), says not to add the two, and says to confirm at payment (C35).
+- The supervising authority for an entrepreneurial establishment: a Saudi university or accredited incubator in the Investor Guide; a venture capital fund or business incubator in the Ministry of Investment's FAQ (C34). Kept open: no merged list is presented, and the walkthrough tells the founder to ask the Ministry in writing.
 
 **Not found**
 - A list of software or AI activities that need a licence (C33); fees for entrepreneurial registration at the Ministry of Investment (C29).
