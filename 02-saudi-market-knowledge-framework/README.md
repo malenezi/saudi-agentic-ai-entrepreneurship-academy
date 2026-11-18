@@ -15,7 +15,7 @@
 
 | # | المجال | يجيب عن سؤال | الحالة |
 |---|---|---|---|
-| 01 | [تأسيس الأعمال](01-business-establishment/README.md) | كيف أؤسس منشأتي نظامياً؟ | بذرة |
+| 01 | [تأسيس الأعمال](01-business-establishment/README.md) | كيف أؤسس منشأتي نظامياً؟ | [دليل المسار](01-business-establishment/establishment-walkthrough.md) (بانتظار مراجعة محامٍ) |
 | 02 | [تنظيم الذكاء الاصطناعي](02-ai-regulations/README.md) | ما المطلوب من منتج قائم على الوكلاء؟ | دليلان منشوران |
 | 03 | [البيانات والخصوصية](03-data-protection-pdpl/README.md) | كيف أتعامل مع البيانات الشخصية؟ | دليل ومثال تطبيقي |
 | 04 | [الأمن السيبراني](04-cybersecurity/README.md) | ما الضوابط التي تنطبق عليّ؟ | دليل منشور |
@@ -73,7 +73,7 @@ A first-class product of the academy, not supplementary reading. It gives any en
 
 | # | Domain | Founder question | Status |
 |---|---|---|---|
-| 01 | [Starting a business](01-business-establishment/README.md) | How do I set up legally? | Seed |
+| 01 | [Starting a business](01-business-establishment/README.md) | How do I set up legally? | [Walkthrough](01-business-establishment/establishment-walkthrough.md) (awaiting lawyer review) |
 | 02 | [AI regulations](02-ai-regulations/README.md) | What is expected of an agentic product? | Two guides published |
 | 03 | [Data and privacy](03-data-protection-pdpl/README.md) | How do I handle personal data? | Guide and worked example |
 | 04 | [Cybersecurity](04-cybersecurity/README.md) | Which controls apply to me? | Guide published |

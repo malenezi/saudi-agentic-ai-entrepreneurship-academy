@@ -2,7 +2,27 @@
 
 ## v0.5 (in progress)
 
-Founder essentials in depth. First part, 18 November 2026: the PDPL worked example, the funding directory and the first tax guide. Still to come in v0.5: the establishment walkthrough and Arabic versions of the English-only guides. READMEs stay at v0.4 until then.
+Founder essentials in depth. First part, 18 November 2026: the PDPL worked example, the funding directory and the first tax guide. Second part, 18 November 2026: the establishment walkthrough. Still to come in v0.5: Arabic versions of the English-only guides. READMEs stay at v0.4 until then.
+
+### Establishment (domain 01)
+
+**Added**
+- `01-business-establishment/establishment-walkthrough.md`: from idea to commercial register, in Arabic. A comparison of the sole establishment, the limited liability company and the simplified joint-stock company as the Ministry of Commerce pages and the Companies Law state them; trade name reservation; the Saudi path step by step; the foreign-founder path through the Ministry of Investment, including the entrepreneurial category; fees as printed with a worked total; what registration does automatically and what it leaves to the founder; what an agent may and may not do; a founder's data sheet; seven questions for a lawyer. **Sources checked; not reviewed by a lawyer.**
+
+**Changed**
+- Domain 01 page: instruments table with verification marks, the walkthrough as the starting point, and the open items (C29, C33 to C35).
+
+**Verified in this pass**
+- The Ministry of Commerce service pages state that registration completes automatically with human resources, ZATCA, GOSI, Saudi Post and the Chamber of Commerce (C30 resolved). They do not say this includes VAT registration.
+- The simplified joint-stock company has no minimum capital (Companies Law, Art. 139(2)); the ordinary joint-stock company's SAR 500,000 does not apply to it.
+- All three services require that the applicant or partner is not a government employee. No exception is stated; the walkthrough lists it as a question for a lawyer.
+
+**Found conflicting, not resolved**
+- The sole-establishment register fee: 500 on its service page, SR 200 on the Ministry's start-your-project page (C35).
+- The supervising authority for an entrepreneurial establishment: a Saudi university or accredited incubator in the Investor Guide; a venture capital fund or business incubator in the Ministry of Investment's FAQ (C34).
+
+**Not found**
+- A list of software or AI activities that need a licence (C33); fees for entrepreneurial registration at the Ministry of Investment (C29).
 
 ### Data protection (domain 03)
 
@@ -29,7 +49,7 @@ Founder essentials in depth. First part, 18 November 2026: the PDPL worked examp
 
 ### Verified and corrected
 
-`SOURCES.md` A49 to A64, B32 to B39, C28 to C32; D3 to D6 updated. `02-saudi-market-knowledge-framework/not-adopted.md` records what was taken from the five drafts, what was corrected or dropped, and what was deferred.
+`SOURCES.md` A49 to A72, B32 to B39, C28 to C35; D3 to D6 updated. `02-saudi-market-knowledge-framework/not-adopted.md` records what was taken from the five drafts, what was corrected or dropped, and what was deferred.
 
 - Confirmed: the amending decree M/148; the 30-day response period; explicit consent for solely automated decisions; the VAT thresholds; e-invoicing wave 25 (1 February 2027); withholding rates and deadlines from ZATCA's May 2026 guideline; the Ministry of Investment's registration category for entrepreneurial establishments.
 - Not found, left out: parental consent "under 15"; "Decision 816 of 2025"; an SDAIA adequacy list; a general Arabic-language rule for notices; several programme amounts; first-year and second-year investment fees.

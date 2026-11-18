@@ -59,8 +59,8 @@ Last full review: **16 November 2026** · Data protection and tax rows updated *
 | VAT Law and Implementing Regulations | ZATCA | Binding | ✔ registration thresholds of SAR 375,000 and SAR 187,500 from ZATCA's pages (A53). ◻ how the test is applied; the rate from a primary source | 05 |
 | E-invoicing (FATOORA) regulations | ZATCA | Binding | ✔ wave 25: revenues above SAR 187,500 in 2022 to 2025, integration by 1 February 2027, announced 24 July 2026 (A54). Re-check on each announcement | 05 |
 | Zakat rules; Income Tax Law; withholding tax | ZATCA | Binding | ✔ withholding rates and deadlines from the General Guideline, second version, May 2026 (A55). ◻ zakat and income tax; treatment of software, cloud and API payments (C32) | 05 |
-| Companies Law; Commercial Register Law | Ministry of Commerce | Binding | ◻ | 01 |
-| Investment Law (registration with the Ministry of Investment) | MISA | Binding | ✔ the Investor Guide, 13th edition, issue 04 of 2026, describes registration, including a category for entrepreneurial establishments backed by a Saudi university or accredited incubator (A64). ◻ the law itself; fees (C29) | 01 |
+| Companies Law; Commercial Register Law | Ministry of Commerce | Binding | ✔ company forms, capital rules for the simplified company and the single-person company read in the English text of the Companies Law (A69); incorporation, register and trade-name services read on the Ministry's pages, with fees as printed (A65 to A68). ◻ the Commercial Register Law itself; the Arabic text; fee conflict for the sole establishment (C35) | 01 |
+| Investment Law (registration with the Ministry of Investment) | MISA | Binding | ✔ the Investor Guide, 13th edition, issue 04 of 2026, describes registration, including a category for entrepreneurial establishments backed by a Saudi university or accredited incubator (A64). ◻ the law itself; fees (C29); supervising authority (C34). The Ministry's FAQ adds the document list for entrepreneur registration (A70) | 01 |
 | E-Commerce Law and Implementing Regulations | Ministry of Commerce | Binding | ◻ | 08 |
 
 ## 5. Intellectual property (SAIP)
