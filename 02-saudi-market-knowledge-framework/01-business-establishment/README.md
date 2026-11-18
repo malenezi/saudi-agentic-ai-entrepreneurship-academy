@@ -1,6 +1,8 @@
 # المجال 01: تأسيس الأعمال · Domain 01: Starting a business
 
-**Status:** Seed · Last reviewed 16 November 2026 · Educational, not legal advice
+**Status:** Walkthrough published, awaiting a lawyer's review · Last reviewed 18 November 2026 · Educational, not legal advice
+
+**Start here:** [From idea to commercial register: the establishment walkthrough](establishment-walkthrough.md) (Arabic): legal forms compared, name reservation, the Saudi and foreign-founder paths, fees as printed, what registration does automatically and what it leaves to you.
 
 <div dir="rtl">
 
@@ -14,9 +16,9 @@
 
 | Instrument or service | Authority | Status | Verification |
 |---|---|---|---|
-| Companies Law | Ministry of Commerce | Binding | ◻ |
-| Commercial Register Law and commercial registration services | Ministry of Commerce | Binding | ◻ |
-| Unified establishment and licensing services | Saudi Business Center | Service | ◻ |
+| Companies Law | Ministry of Commerce | Binding | ✔ provisions on the limited liability and simplified joint-stock company read in the English text (A69) · ◻ the whole law and the Arabic text |
+| Commercial Register Law and commercial registration services | Ministry of Commerce | Binding | ✔ service pages for the sole establishment, the limited liability and the simplified joint-stock company, and trade name reservation (A65 to A68) · ◻ the law itself |
+| Unified establishment and licensing services | Saudi Business Center | Service | ✔ the platform through which the services above are run (A65 to A68) · ◻ screenshots of the journey |
 | Investment Law: foreign investors register with the Ministry of Investment | MISA | Binding | ✔ registration described in the Investor Guide, 13th edition, issue 04 of 2026 (A64) · ◻ the law itself |
 | Entrepreneur pathway for foreign founders backed by an approved university or incubator | MISA | Programme | ✔ "Registration for Entrepreneurial Establishments": support letter or accreditation from a Saudi university or accredited business incubator, stating activity and ownership; 10 working days stated for registration; no fee amounts printed (A64) |
 | SME definitions, support centres and guidance | Monsha'at | Programme | ◻ |
@@ -48,12 +50,12 @@
 
 Each line is an open invitation. Claim one by opening an issue.
 
-- [ ] Establishing a Saudi startup from scratch, step by step with screenshots of the official journey
-- [ ] Choosing between a sole establishment, an LLC and a simplified joint-stock company
+- [x] Establishing a Saudi startup from scratch, step by step: [published in Arabic](establishment-walkthrough.md). **Still wanted:** screenshots of the official journey, and an English version
+- [ ] Choosing between a sole establishment, an LLC and a simplified joint-stock company (the walkthrough compares what the pages and the law say; a lawyer-reviewed choice guide is still wanted)
 - [ ] Choosing the economic activity for a software or AI company
 - [ ] Opening a business bank account
-- [ ] The foreign entrepreneur pathway, including founders already resident in the Kingdom
+- [ ] The foreign entrepreneur pathway, including founders already resident in the Kingdom (outline in the walkthrough, section 4; the open questions are C29 and C34)
 - [ ] Founders' agreements: a plain-language checklist
 - [ ] Post-registration obligations calendar
 
-**Unverified leads from early drafts:** fee-refund and growth programmes for new businesses, and details of the foreign entrepreneur pathway. Confirm with the operator before publishing.
+**Still unverified:** the fee for entrepreneurial registration at the Ministry of Investment (C29); who counts as the supervising authority (C34); the fee for a sole-establishment register, where two Ministry pages disagree (C35); which software or AI activities need a licence (C33).
