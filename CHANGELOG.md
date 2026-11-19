@@ -2,6 +2,21 @@
 
 ## Unreleased (v0.6 in progress)
 
+### Course 1 quizzes and practice interview records (19 November 2026)
+
+**Added**
+- `03-courses/01-opportunity/quizzes/`: seven formative quizzes, one per module (72 questions), built from each lesson's Quick Review and Common Mistakes. Three question types (understanding, application, spot the mistake), each tagged with the learning outcome it measures and its source in the lesson; collapsed answer keys with short explanations pointing back to the lesson section. Worked-example arithmetic matches the calculator (SAR 1.46 per resolved task, 75 customers to break even, five-month payback, break-even success rate about 78%).
+- `03-courses/01-opportunity/practice-interviews/`: six invented 25-minute interview transcripts, one per role card in deck 1.5, in the speakers' dialects and following the lesson's six-part structure. Records ع1 to ع4 share one segment (prior approvals and rejected claims in private clinics in Riyadh); ع5 (finance controller, Dammam transport) and ع6 (fashion e-commerce founder, Jeddah) stand alone. Each has a turn-numbered transcript with deliberate interviewer errors, the interviewer's own evidence record (also with errors), questions for the learner, and a collapsed instructor key (moves by turn, evidence levels, said versus did, corrected record).
+- `practice-interviews/synthesis-exercise.md`: the 30-minute synthesis exercise of lesson 1.5, using ع1 to ع4, with an instructor key and three traps.
+
+**Changed**
+- Every lesson now ends with a link to its quiz. Lesson 1.5 points the role-play and the synthesis exercise to the records.
+- Syllabus, instructor guide, slides README and `not-adopted.md` list the quizzes and records as available; deck 1.5 speaker notes name the record for each role card.
+- Quizzes are formative: the assessment map and its weights (50/20/15/15) are unchanged.
+
+**Not added**
+- No new facts or sources. Every person, business, figure and quote in the interview records is invented and labelled as such; the quizzes use only the lessons' content and the course's illustrative example.
+
 ### Course 1 slides (19 November 2026)
 
 **Added**
