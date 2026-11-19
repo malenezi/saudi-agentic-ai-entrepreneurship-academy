@@ -1,0 +1,28 @@
+name: External links
+
+# Opens every external link in the Markdown files and writes a report to the run summary.
+# Informational: it never blocks a pull request, because many official sites refuse
+# automated requests. Run it by hand from the Actions tab, or wait for the weekly run.
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 4 * * 1"
+  pull_request:
+    paths:
+      - "tools/check_external_links.py"
+      - ".github/workflows/links.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  links:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.13"
+      - name: Check external links
+        run: python tools/check_external_links.py

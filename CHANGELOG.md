@@ -17,6 +17,10 @@ Courses 1 and 2 in full: slides, quizzes and practice interview records for Cour
 - `tests/test_courses.py`: six tests. The landing page is up to date and lists every deck; built decks match their sources; every slide has speaker notes; slide counts in the slide READMEs match the decks; every quiz question has four distinct options and a key; every lesson links to its quiz. Twenty-one tests in all.
 - `.github/dependabot.yml`: monthly updates for the GitHub Actions used by CI.
 
+- GitHub Pages is on: the landing page and all fifteen decks open in the browser at https://malenezi.github.io/saudi-agentic-ai-entrepreneurship-academy/. READMEs, `START-HERE.md` and both slide READMEs link to it.
+- `tools/check_external_links.py` and the `External links` workflow: every external link in the Markdown is opened weekly and on demand, and the result is written to the run summary as broken, could not verify, or ok. Informational; it never blocks a pull request.
+- First run of the link check (19 November 2026): 229 links, 203 load, 22 refuse automated requests, 4 were broken. Three were fixed in `SOURCES.md` after opening the working address in a browser (A8 Saudi Gazette; A49 and A62 SAMA rulebook, whose host no longer takes `www`). The fourth, a SAMA news page cited in A62, no longer exists; the entry now says so.
+
 **Fixed**
 - Version state: READMEs, `CITATION.cff` and ROADMAP said v0.5 while main held Course 2 and the Course 1 materials. Now v0.6; the planned iterations move to v0.7 (business development domains) and v0.8 (founder agents).
 - Stale statements: the learning framework said the courses "will be built later"; learning pathways said Courses 2 to 4 were outlines; ROADMAP counted six seed-level domains where the framework README lists five, and its first-year table said courses would start "after the framework matures".
