@@ -26,7 +26,7 @@ The courses teach what to do; the framework says how to do it in the Kingdom. Bu
 - Many register entries are marked ◻ (to verify). Each is an open task.
 - Regulatory summaries have not been reviewed by a Saudi lawyer; tax content has not been reviewed by a tax adviser.
 - Arabic versions of the deeper guides (domains 02, 03, 04, 06, 11) and the regulatory register are not lawyer-reviewed.
-- The funding directory has 15 of 32 entries pending; several official sites refuse automated requests and need a person with a browser.
+- The funding directory has 13 of 32 entries pending; several official sites refuse automated requests and need a person with a browser.
 - Case studies and venture journeys are summaries of public sources, none independently verified; no owner-written Saudi case yet. One venture source (the Aqar company page) could not be opened.
 - Course 1 has slides, quizzes and practice interview records but has not been piloted. Course 2 has lessons, templates, a worked example, slides and quizzes, and has not been piloted. Courses 3 and 4 have one lesson each (3.1 and 4.5, without slide decks); the other modules are outlines.
 - The lab exercises, the venture workbook and the instructor kit have not been tried with learners.
