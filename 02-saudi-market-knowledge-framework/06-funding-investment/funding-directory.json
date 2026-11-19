@@ -153,14 +153,14 @@
       "source": null
     },
     {
-      "name": "Sanabil 500 MENA Seed Accelerator",
-      "match": "Sanabil 500",
-      "operator": "Sanabil Investments and 500 Global",
+      "name": "Sanabil Accelerator (500 Global)",
+      "match": "Sanabil Accelerator",
+      "operator": "500 Global",
       "type": "equity acceleration",
-      "status": "pending",
-      "official_url": null,
-      "last_checked": null,
-      "source": null
+      "status": "partial",
+      "official_url": "https://mena.aplica.500.co",
+      "last_checked": "2026-11-19",
+      "source": "A99"
     },
     {
       "name": "Misk Accelerator",

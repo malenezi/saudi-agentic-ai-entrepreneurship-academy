@@ -8,7 +8,7 @@
 
 An open-source, Arabic-first reference for anyone who wants to start, run or grow a business in Saudi Arabia built on agentic AI. A personal initiative founded and maintained by **Prof. Mamdouh Alenezi**, developed with community contributions.
 
-**Status:** v0.6 ([changelog](CHANGELOG.md) · [roadmap](ROADMAP.md)) · Last reviewed: 19 November 2026
+**Status:** v0.7 ([changelog](CHANGELOG.md) · [roadmap](ROADMAP.md)) · Last reviewed: 19 November 2026
 
 **First visit?** [Start here](START-HERE.md#english): one page that points you to your route and answers the common questions. · **Slide decks:** [open them in the browser](https://malenezi.github.io/saudi-agentic-ai-entrepreneurship-academy/)
 

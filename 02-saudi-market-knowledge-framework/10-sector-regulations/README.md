@@ -1,6 +1,8 @@
 # المجال 10: التنظيمات القطاعية · Domain 10: Sector-specific regulations
 
-**Status:** Seed · Last reviewed 16 November 2026 · Educational, not legal advice
+**Status:** First guide published · Last reviewed 19 November 2026 · Educational, not legal advice
+
+**Guide · الدليل:** [هل نشاطي منظَّم؟ طريقة من خمسة أسئلة وأربعة أمثلة](am-i-regulated.md) · Am I regulated?. Sources read and what remains unverified are stated at the top of the guide; it awaits a lawyer's review.
 
 <div dir="rtl">
 

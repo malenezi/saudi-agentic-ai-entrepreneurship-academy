@@ -1,6 +1,8 @@
 # المجال 07: الملكية الفكرية · Domain 07: Intellectual property
 
-**Status:** Seed · Last reviewed 16 November 2026 · Educational, not legal advice
+**Status:** First guide published · Last reviewed 19 November 2026 · Educational, not legal advice
+
+**Guide · الدليل:** [من يملك ما بنيت؟ الملكية الفكرية لمؤسس مشروع وكيلي](ip-for-agentic-founders.md) · Who owns what you built?. Sources read and what remains unverified are stated at the top of the guide; it awaits a lawyer's review.
 
 <div dir="rtl">
 

@@ -2,6 +2,31 @@
 
 ## Unreleased
 
+Nothing yet.
+
+## v0.7 (2026-11-19)
+
+Business development domains, and the integration of an earlier university course.
+
+### Five first guides (the roadmap's v0.7 scope)
+
+- [Intellectual property](02-saudi-market-knowledge-framework/07-intellectual-property/ip-for-agentic-founders.md): chain of title, trade mark, copyright, secrets, patents, licences, and who owns what the agent produces.
+- [E-commerce](02-saudi-market-knowledge-framework/08-ecommerce-digital-business/selling-online-with-an-agent.md): the ten criteria the Ministry of Commerce used to evaluate online stores, and what changes when an agent answers the customer.
+- [Employment](02-saudi-market-knowledge-framework/09-employment-hr/first-hire-in-an-agent-native-company.md): employee, contractor, outsourced firm or freelance document; the February 2025 amendments as headings to ask about; who is accountable for each agent.
+- [Sector regulation](02-saudi-market-knowledge-framework/10-sector-regulations/am-i-regulated.md): five questions, a one-page regulatory position memo, four worked examples.
+- [Government procurement](02-saudi-market-knowledge-framework/12-government-procurement/selling-to-government.md): contracting methods, the direct-purchase cases that matter to a software supplier, guarantees and the SME exemption, subcontracting, grievances. **The law text read on the gazette site repeals the 2019 law; its decree number and effective date are not confirmed (C44).**
+- Each guide states at its top what was read and what was not, prints no fee, rate or period it could not source, and ends with questions for a lawyer. All five await legal review. Sources A95 to A98; unverified C41 to C44.
+
+### Venture journeys verified
+
+- Every source cited for the seven venture cases was opened (the Aqar company page refused; the case says so and drops the figures taken from it). Corrections: Tabby's founding place is not stated by the sources read, only its move from Dubai to Riyadh; Tamara's "including secondaries" is the press's wording, not the company's; Tarjama's Saudi headquarters comes from sponsored content that names no city; Careem's case now carries the filing's figures (consideration US$3,003 million, goodwill US$2,484 million, three countries on delayed closing pending regulatory approval); Zid's Series A lead is dropped.
+
+### Funding directory
+
+- One entry moved from pending to partly verified (Sanabil Accelerator, from the operator's application page, A99). Eighteen remain pending; several official sites refuse automated requests.
+
+### Integration of an earlier university course
+
 Material from the author's earlier university course on software entrepreneurship (SE495, 2024), reviewed against what the Academy already has. Only what filled a gap was brought in, and every company fact was re-sourced.
 
 **Added**

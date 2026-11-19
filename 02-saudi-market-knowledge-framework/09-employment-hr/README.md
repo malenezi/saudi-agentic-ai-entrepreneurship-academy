@@ -1,6 +1,8 @@
 # المجال 09: الموارد البشرية والتوظيف · Domain 09: Employment and workforce
 
-**Status:** Seed · Last reviewed 16 November 2026 · Educational, not legal advice
+**Status:** First guide published · Last reviewed 19 November 2026 · Educational, not legal advice
+
+**Guide · الدليل:** [التوظيف الأول في منشأة يعمل فيها الوكلاء](first-hire-in-an-agent-native-company.md) · The first hire in an agent-native company. Sources read and what remains unverified are stated at the top of the guide; it awaits a lawyer's review.
 
 <div dir="rtl">
 

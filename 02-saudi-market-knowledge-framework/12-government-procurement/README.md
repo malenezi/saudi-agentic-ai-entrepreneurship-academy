@@ -1,6 +1,8 @@
 # المجال 12: الفرص والمشتريات الحكومية · Domain 12: Government opportunities and procurement
 
-**Status:** Seed · Last reviewed 16 November 2026 · Educational, not legal advice
+**Status:** First guide published · Last reviewed 19 November 2026 · Educational, not legal advice
+
+**Guide · الدليل:** [البيع للجهات الحكومية: ما يقوله نص النظام لمنشأة صغيرة](selling-to-government.md) · Selling to government. Sources read and what remains unverified are stated at the top of the guide; it awaits a lawyer's review.
 
 <div dir="rtl">
 
@@ -30,7 +32,7 @@ A working AI product does not by itself qualify for deployment in a government e
 
 | Instrument | Status | Verification |
 |---|---|---|
-| Government Tenders and Procurement Law and Implementing Regulations | Binding | ◻ |
+| Government Tenders and Procurement Law and Implementing Regulations | Binding | ◐ law text read on the gazette site (A98); it repeals Royal Decree M/128; its effective date is not confirmed (C44); regulations not opened |
 | Local content and SME preference rules | Binding in public procurement | ◻ |
 | Data classification policy (levels from public to top secret) and what may be processed where | Binding on government entities | ◻ |
 | NCA controls applied to suppliers | Binding on entities; contractual for vendors | ◻ |
