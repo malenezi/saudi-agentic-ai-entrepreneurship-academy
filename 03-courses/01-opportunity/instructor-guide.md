@@ -29,9 +29,11 @@ Allow at least one week between S2 and S3, and two weeks between S3 and S4. Inte
 | Rubrics | [`rubrics.md`](rubrics.md) |
 | Case studies for discussion | [`06-case-studies/`](../../06-case-studies/README.md) |
 | Consent script | [Lesson 1.4](lessons/1-4-workflow-shadowing.md) |
+| Seven module quizzes with answer keys (formative) | [`quizzes/`](quizzes/README.md) |
+| Six practice interview records, one per role card, and the synthesis exercise | [`practice-interviews/`](practice-interviews/README.md) |
 | Large paper or whiteboards, stopwatches (phones) | Bring |
 
-Slides for all seven modules, with speaker notes, are in [`slides/`](slides/README.md) (19 November 2026); deck 1.5 carries six role cards for the interview lab. Still to be produced (contributions welcome): three practice interview records for the synthesis exercise, short quizzes, a video of an agent completing a multi-step task.
+Slides for all seven modules, with speaker notes, are in [`slides/`](slides/README.md) (19 November 2026); deck 1.5 carries six role cards for the interview lab. Quizzes and practice interview records were added the same day: use a quiz in the first ten minutes of the next session and discuss only the question most learners missed; for the Module 1.5 synthesis exercise hand out records ع1, ع2 and ع3 (ع4 for fast groups) and keep the keys. Still to be produced (contributions welcome): a video of an agent completing a multi-step task.
 
 <div dir="rtl">
 
@@ -43,7 +45,7 @@ Slides for all seven modules, with speaker notes, are in [`slides/`](slides/READ
 | 1.2 | المتعلمون يحسبون تكلفة الرموز فقط | شغّل الحاسبة أمامهم وغيّر نسبة المراجعة |
 | 1.3 | تتحول إلى محاضرة عن القطاعات | ساعة شرح على الأكثر. الباقي تقييم ودفاع |
 | 1.4 | خرائط للإجراء المكتوب؛ والمراقبة تنقلب مقابلة | تمثيل المراقبة في القاعة قبل الميدان، والمدوِّن يعدّ «الأسئلة التي تُتجنَّب». مفاهيم الدرس مرجع للقراءة لا محاضرة: اعرض صور العمل الأربع والأسئلة الأربعة في عشر دقائق ثم ابدأ التمرين |
-| 1.5 | عرض الفكرة أثناء المقابلة | المراقب في التمثيل يعدّ المرات بصوت مسموع |
+| 1.5 | عرض الفكرة أثناء المقابلة | المراقب في التمثيل يعدّ المرات بصوت مسموع. قبل التمثيل يقرأ كل متعلم [سجلاً تدريبياً](practice-interviews/README.md) ويحدد أخطاء المقابِل فيه، ومن يأخذ بطاقة دور يقرأ سجلها ليعرف متى تكشف الشخصية حقيقتها |
 | 1.6 | درجات بلا أدلة، ونسب نجاح متفائلة | اطلب الدليل بجانب كل درجة، وافرض السيناريوهات الثلاثة |
 | 1.7 | أطروحة تقنية | مراجع من خارج التقنية يقرؤها أولاً |
 

@@ -1,7 +1,7 @@
 # المقرر 1: اكتشاف الفرصة الوكيلية
 # Course 1: Finding Your Agentic Opportunity
 
-> **الإصدار الأول من المحتوى · First content release (17 November 2026).** الدروس والموجزات القطاعية والقوالب وسلالم التقدير متاحة الآن. وأُضيفت عروض الوحدات السبع في 19 نوفمبر 2026 ([العروض](slides/README.md)). لم يُجرَّب المقرر مع فوج بعد، والاختبارات القصيرة لم تُعدّ. ملاحظاتك مرحّب بها. · Lessons, sector briefs, templates and rubrics are available; slides for all seven modules were added on 19 November 2026 ([slides](slides/README.md)). The course has not been piloted with a cohort, and quizzes are not built yet. Comments are welcome.
+> **الإصدار الأول من المحتوى · First content release (17 November 2026).** الدروس والموجزات القطاعية والقوالب وسلالم التقدير متاحة الآن. وأُضيفت في 19 نوفمبر 2026 عروض الوحدات السبع ([العروض](slides/README.md))، واختبار قصير لكل وحدة ([الاختبارات](quizzes/README.md))، وستة سجلات مقابلات تدريبية للوحدة 1.5 ([السجلات](practice-interviews/README.md)). لم يُجرَّب المقرر مع فوج بعد. ملاحظاتك مرحّب بها. · Lessons, sector briefs, templates and rubrics are available; slides for all seven modules, a quiz per module and six practice interview records for Module 1.5 were added on 19 November 2026 ([slides](slides/README.md), [quizzes](quizzes/README.md), [practice interviews](practice-interviews/README.md)). The course has not been piloted with a cohort. Comments are welcome.
 
 <div dir="rtl">
 
@@ -34,7 +34,7 @@
 | 1.6 | [التقييم والاقتصاديات الأولى](lessons/1-6-scoring-and-economics.md) | 2 | تقييم واقتصاديات وقرار |
 | 1.7 | [كتابة أطروحة الفرصة](lessons/1-7-writing-the-thesis.md) | 1 | الأطروحة |
 
-**مواد المقرر:** [العروض التقديمية](slides/README.md) · [الموجزات القطاعية الستة](sector-briefs/README.md) · [خريطة سير العمل](templates/workflow-map.md) · [حزمة أدلة المقابلات](templates/interview-evidence-pack.md) · [قالب الأطروحة](templates/thesis-template.md) · [أطروحة نموذجية](examples/model-thesis.md) · [المسرد](glossary.md) · [سلالم التقدير](rubrics.md) · [دليل المدرب](instructor-guide.md) · [ما لم يُعتمد ولماذا](not-adopted.md)
+**مواد المقرر:** [العروض التقديمية](slides/README.md) · [الاختبارات القصيرة](quizzes/README.md) · [سجلات المقابلات التدريبية](practice-interviews/README.md) · [الموجزات القطاعية الستة](sector-briefs/README.md) · [خريطة سير العمل](templates/workflow-map.md) · [حزمة أدلة المقابلات](templates/interview-evidence-pack.md) · [قالب الأطروحة](templates/thesis-template.md) · [أطروحة نموذجية](examples/model-thesis.md) · [المسرد](glossary.md) · [سلالم التقدير](rubrics.md) · [دليل المدرب](instructor-guide.md) · [ما لم يُعتمد ولماذا](not-adopted.md)
 
 </div>
 
@@ -131,4 +131,4 @@ The [case studies](../../06-case-studies/README.md) and their [learner worksheet
 
 ## What is still missing
 
-Short quizzes, practice interview records for Module 1.5, a recorded agent demonstration, a reading list, and a first cohort's feedback. Slides and role cards now exist (see [slides](slides/README.md)). See the [instructor guide](instructor-guide.md) and [CONTRIBUTING.md](../../CONTRIBUTING.md).
+A recorded agent demonstration, a full reading list, and a first cohort's feedback. Slides, role cards, quizzes and practice interview records now exist (see [slides](slides/README.md), [quizzes](quizzes/README.md) and [practice interviews](practice-interviews/README.md)). See the [instructor guide](instructor-guide.md) and [CONTRIBUTING.md](../../CONTRIBUTING.md).

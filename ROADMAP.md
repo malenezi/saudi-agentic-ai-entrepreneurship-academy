@@ -11,7 +11,7 @@ The academy is built iteratively, in the open. Each iteration ships something a 
 | **v0.5** | **Founder essentials in depth** | Establishment walkthrough, PDPL worked example, tax basics, funding directory; Arabic versions of English-only guides | **This release** (18 November 2026). Course 1 not yet piloted; exercises not yet tried with learners. Done on 18 November 2026 (part 1): the PDPL worked example, the first funding directory, and the tax guide with its adviser review pack (not yet reviewed). Done on 18 November 2026 (part 2): the establishment walkthrough (domain 01), from official Ministry of Commerce and Ministry of Investment pages, awaiting a lawyer's review. Done on 18 November 2026 (part 3): Arabic versions of the English-only guides in domains 02, 03, 04, 06 and 11 (not lawyer-reviewed). Done in the launch audit: Arabic version of the regulatory register. Moved to v0.6: the funding directory's "to verify" entries |
 | v0.6 | Business development domains | IP, e-commerce, employment, procurement and sector guides; verification of the funding directory's remaining entries | Planned |
 | v0.7 | Founder agents and runnable templates | Remaining founder agents; workflow exports and reference code; Arabic evaluation sets | Planned |
-| In iterations | **Courses** | Courses 2 to 4, built one at a time on top of the knowledge framework; slides, quizzes and a pilot for Course 1 | Planned |
+| In iterations | **Courses** | Courses 2 to 4, built one at a time on top of the knowledge framework; a pilot for Course 1 (its slides, quizzes and practice interview records were added on 19 November 2026) | Planned |
 | v1.0 | Public launch | Website generated from the repository, built and checked with Bayan's skills and linters; project showcase | Planned |
 
 ## Why the knowledge framework comes before the courses
@@ -26,7 +26,7 @@ The courses teach what to do; the framework says how to do it in the Kingdom. Bu
 - Arabic versions of the deeper guides (domains 02, 03, 04, 06, 11) and the regulatory register are not lawyer-reviewed.
 - The funding directory still has entries marked "to verify".
 - Case studies are summaries of public sources, none independently verified; no owner-written Saudi case yet.
-- Course 1 has no slides or quizzes and has not been piloted; Courses 2 to 4 are outlines.
+- Course 1 has slides, quizzes and practice interview records but has not been piloted; Courses 2 to 4 are outlines.
 - The lab exercises have not been tried with learners.
 - Agent templates are specifications, not runnable exports.
 
