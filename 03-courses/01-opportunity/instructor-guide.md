@@ -31,7 +31,7 @@ Allow at least one week between S2 and S3, and two weeks between S3 and S4. Inte
 | Consent script | [Lesson 1.4](lessons/1-4-workflow-shadowing.md) |
 | Large paper or whiteboards, stopwatches (phones) | Bring |
 
-Still to be produced (contributions welcome): slides, role cards for the interview lab, three practice interview records for the synthesis exercise, short quizzes, a video of an agent completing a multi-step task.
+Slides for all seven modules, with speaker notes, are in [`slides/`](slides/README.md) (19 November 2026); deck 1.5 carries six role cards for the interview lab. Still to be produced (contributions welcome): three practice interview records for the synthesis exercise, short quizzes, a video of an agent completing a multi-step task.
 
 <div dir="rtl">
 
