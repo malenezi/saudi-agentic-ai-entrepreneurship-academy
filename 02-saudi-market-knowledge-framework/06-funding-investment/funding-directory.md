@@ -1,6 +1,6 @@
 # دليل برامج التمويل والدعم · Funding and support directory
 
-Last checked: 18 November 2026 (pending names added 19 November 2026) · Educational, not financial advice · Entries are not endorsements
+Last checked: 18 November 2026 (pending names added and one entry moved to partly verified, 19 November 2026) · Educational, not financial advice · Entries are not endorsements
 
 **In English, briefly.** One entry per programme, each with a verification status and the date its official page was last opened. An entry says what the operator's own page says and nothing more. **No entry states that applications are open**: windows change, so check the operator's page on the day you apply. Amounts appear only where the operator publishes them. A regulatory sandbox is listed separately because it is permission to test, not funding.
 
@@ -89,6 +89,7 @@ Last checked: 18 November 2026 (pending names added 19 November 2026) · Educati
 | 7 | Boost | NTDP، ويُذكر ضمن حاضنات «كود» | صفحة لحاضنة في «كود»: مكافأة شهرية للمؤسسين السعوديين، بحد أقصى ثلاثة مؤسسين، لمدة لا تتجاوز 12 شهراً، بين 7,000 و13,500 ريال | صفحة البرنامج لدى NTDP؛ هل ما زالت الشروط كما هي | 18 نوفمبر 2026 ([A57](../../SOURCES.md)) |
 | 8 | مسرّعة «تقدّم» TAQADAM | جامعة الملك عبدالله للعلوم والتقنية (كاوست) مع البنك السعودي الأول | صفحة مركز المساعدة للمسرّعة: 40 ألف دولار تمويلاً غير مقابل حصص للفرق المقبولة، مع مساحات عمل ودعم لتأسيس الشركات للمؤسسين الدوليين؛ ولا تُمنح خطابات دعم وزارة الاستثمار إلا لشركات في البرنامج أو من خريجيه | المبلغ الحالي: تقارير سابقة تذكر 150 ألف ريال (2020) و75 ألف ريال (2019). الرقم الوارد في إحدى المسودات (100 ألف ريال) لم نجده. موقع التقديم taqadam.kaust.edu.sa لم نفتحه | 18 نوفمبر 2026 ([A61](../../SOURCES.md)) |
 | 9 | حاضنة الذكاء الاصطناعي | منشآت بالشراكة مع NTDP | خرّجت 33 شركة من دفعتها الأولى (ستة أشهر) في يونيو 2026 | هل تُفتح دفعة جديدة ومتى؛ الشروط | 16 نوفمبر 2026 ([A3](../../SOURCES.md)) |
+| 10 | مسرّعة سنابل Sanabil Accelerator (وردت في المسودات باسم Sanabil 500 MENA Seed Accelerator) | 500 Global | صفحة التقديم لدى المشغّل: لشركات تقنية ناشئة لها بدايات إقبال في الشرق الأوسط وشمال أفريقيا؛ الدفعة 12 من 27 سبتمبر إلى 9 ديسمبر 2026 | مبلغ الاستثمار والحصة المقابلة: لم يُذكرا في الصفحة، والأرقام المتداولة في مصادر ثانوية لا نعتمدها. موعد الدفعة التالية | 19 نوفمبر 2026 ([A99](../../SOURCES.md)) |
 
 بوابة NTDP تعرض منتجاتها في خمس مجموعات ([A57](../../SOURCES.md)): دعم الابتكار (AIM، MVPLAB، Nextera، +Transform)، دعم التمويل (Fuel، Lendtech، ضمان القروض، Venture Debt)، دعم المواهب (Boost، Lead It، Source Tech، Tech Crew، تمكين)، الوصول إلى السوق (Connect)، دعم النمو (Bridge، تمكين المسرّعات). الأسماء موثّقة من قائمة الموقع؛ أما شروط كل منتج فلا.
 
@@ -110,8 +111,7 @@ Last checked: 18 November 2026 (pending names added 19 November 2026) · Educati
 | +Transform | NTDP | صفحة حكومية قديمة تذكر دعماً لتبنّي الحوسبة السحابية؛ المبلغ والشروط الحالية غير مؤكدة |
 | Venture Debt · Fuel · Lendtech · ضمان القروض | NTDP | أسماء من قائمة الموقع فقط |
 | منتجات تمويل رواد الأعمال | بنك التنمية الاجتماعية | للبنك منتجات لرواد الأعمال والمنشآت الناشئة؛ لم نفتح صفحة منتج بعينه |
-| The Garage وبرامجه | تقارير صحفية: مدينة الملك عبدالعزيز للعلوم والتقنية مع وزارة الاتصالات، ويشغّله الاتحاد السعودي للأمن السيبراني والبرمجة والدرونز | إحدى المسودات نسبته إلى NTDP؛ لم نجد ذلك ([B38](../../SOURCES.md)) |
-| Sanabil 500 MENA Seed Accelerator | سنابل للاستثمار و500 Global | استثمار مقابل حصص؛ لم نفتح الصفحة |
+| The Garage وبرامجه | تقارير صحفية: مدينة الملك عبدالعزيز للعلوم والتقنية مع وزارة الاتصالات، ويشغّله الاتحاد السعودي للأمن السيبراني والبرمجة والدرونز | إحدى المسودات نسبته إلى NTDP؛ لم نجد ذلك ([B38](../../SOURCES.md)). في 19 نوفمبر 2026 رفض موقعه الرسمي الطلب الآلي فلم نقرأه؛ افتحه في متصفحك |
 | Misk Accelerator | مؤسسة مسك | لم نفتح الصفحة |
 | Wa'ed Ventures | أرامكو | صندوق استثمار، لا برنامج دعم |
 | Flat6Labs | Flat6Labs | الدليل الحالي في المستودع يذكر الرياض؛ إحدى المسودات ذكرت جدة ومبلغاً بالدولار لم نجد مصدره |
