@@ -1,6 +1,6 @@
 # الإطار التعليمي · Learning framework
 
-> **ملاحظة · Note.** المقررات تُبنى لاحقاً على مراحل؛ ما يرد هنا عنها تصميم مقترح. · The courses will be built later, in iterations; references to them here describe the proposed design.
+> **ملاحظة · Note.** المقرران 1 و2 لهما محتوى اليوم؛ المقرران 3 و4 مخططان أوليان، وما يرد هنا عنهما تصميم مقترح. · Courses 1 and 2 have content today; Courses 3 and 4 are outlines, and references to them here describe the proposed design.
 
 <div dir="rtl">
 

@@ -8,7 +8,9 @@
 
 An open-source, Arabic-first reference for anyone who wants to start, run or grow a business in Saudi Arabia built on agentic AI. A personal initiative founded and maintained by **Prof. Mamdouh Alenezi**, developed with community contributions.
 
-**Status:** v0.5 ([changelog](CHANGELOG.md) · [roadmap](ROADMAP.md)) · Last reviewed: 18 November 2026
+**Status:** v0.6 ([changelog](CHANGELOG.md) · [roadmap](ROADMAP.md)) · Last reviewed: 19 November 2026
+
+**First visit?** [Start here](START-HERE.md#english): one page that points you to your route and answers the common questions.
 
 ---
 
@@ -32,7 +34,7 @@ Details in [CONTRIBUTING.md](CONTRIBUTING.md).
 | [Founder Toolkit](04-entrepreneur-toolkit/README.md) | Ten bilingual business templates and a unit-economics calculator | Available |
 | [Agentic AI Lab](05-agentic-ai-lab/README.md) | Ten entrepreneurial skills, five agent templates, an evaluation template, an Arabic model guide | Available |
 | [Academy](01-academy/) | Vision and mission, learning framework, competency framework | Available |
-| [Courses](03-courses/README.md) | Four courses | [Course 1](03-courses/01-opportunity/syllabus.md): **first content release available** (lessons, sector briefs, templates, rubrics). [Course 2](03-courses/02-build/syllabus.md): **first content release available** (eight lessons, slide decks and quizzes, templates, a worked example, rubrics). Courses 3 and 4 are draft outlines |
+| [Courses](03-courses/README.md) | Four courses | [Course 1](03-courses/01-opportunity/syllabus.md): **first content release available** (seven lessons, slide decks and quizzes, sector briefs, templates, rubrics). [Course 2](03-courses/02-build/syllabus.md): **first content release available** (eight lessons, slide decks and quizzes, templates, a worked example, rubrics). Courses 3 and 4 are draft outlines |
 | [Case studies](06-case-studies/README.md) | Nine real cases from public sources (three Saudi) with evidence levels, scenarios and a learner worksheet | Available; owner-written cases wanted |
 | [Learning pathways](01-academy/learning-pathways.md) · [Lab exercises](05-agentic-ai-lab/exercises/README.md) | A route for each kind of learner, and fourteen hands-on exercises that use the two companion repositories | Available; exercises not yet tried with learners |
 | [Resources](07-resources/README.md) · [Community](08-community/README.md) | Curated references; project showcase | Available |
