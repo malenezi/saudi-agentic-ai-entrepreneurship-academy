@@ -145,12 +145,12 @@
     {
       "name": "The Garage",
       "match": "The Garage",
-      "operator": "as reported",
+      "operator": "not stated on the home page",
       "type": "incubation",
-      "status": "pending",
-      "official_url": null,
-      "last_checked": null,
-      "source": null
+      "status": "partial",
+      "official_url": "https://thegarage.sa/",
+      "last_checked": "2026-11-19",
+      "source": "A100"
     },
     {
       "name": "Sanabil Accelerator (500 Global)",
