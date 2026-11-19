@@ -1,0 +1,8 @@
+# Keeps the GitHub Actions used by CI up to date. The repository has no other dependencies:
+# every script uses the Python standard library only.
+version: 2
+updates:
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "monthly"
