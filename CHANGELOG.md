@@ -2,6 +2,12 @@
 
 ## Unreleased
 
+Nothing yet.
+
+## v0.7.1 (2026-11-19)
+
+Same-day additions after v0.7: five more venture journeys and a first round of funding directory verification from operators' own pages. The directory stands at 12 verified, 6 partly verified, 13 pending and 1 not active.
+
 - Funding directory: TAQADAM, the Social Development Bank's Entrepreneurs Financing and the Misk Accelerator verified from their own pages (A108).
 - Funding directory: five NTDP products (MVPLAB, Tech Crew, Boost, Transform+, Lendtech) read from their own pages in a browser and moved to verified, with the figures each page prints (A106); Fuel partly verified; Flat6Labs marked not active from its own page (A107), with a new `inactive` status in the index and checker. Two research summaries supplied by the owner were used as leads only: where they disagreed with a page, the page decided (B55), and what is still unchecked is listed in C46.
 - Five venture journeys on Saudi companies building for agents in 2025 and 2026: [Wittify.ai](06-case-studies/ventures/wittify.md), [DEEP.SA](06-case-studies/ventures/deep-sa.md), [Lucidya](06-case-studies/ventures/lucidya.md), [MOZN](06-case-studies/ventures/mozn.md) and [Think](06-case-studies/ventures/think.md), from the owner's drafts and rewritten from open sources (A101 to A105). Funding rounds, investors and dates were confirmed; product names, accuracy figures, awards and accelerator histories that the sources read do not carry are listed as not found (C45), and one round was a pre-seed, not a seed (B54). The drafts' learner exercises are kept as the cases' questions. Twelve venture journeys in total.
