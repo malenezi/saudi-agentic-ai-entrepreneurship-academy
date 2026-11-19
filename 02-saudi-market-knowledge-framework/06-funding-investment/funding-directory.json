@@ -77,10 +77,10 @@
       "match": "TAQADAM",
       "operator": "KAUST with Saudi Awwal Bank",
       "type": "acceleration",
-      "status": "partial",
-      "official_url": null,
-      "last_checked": "2026-11-18",
-      "source": "A61"
+      "status": "verified",
+      "official_url": "https://taqadam.kaust.edu.sa/ar/%D8%AA%D9%82%D8%AF%D9%85/",
+      "last_checked": "2026-11-19",
+      "source": "A108"
     },
     {
       "name": "AI Incubator",
@@ -123,14 +123,14 @@
       "source": "A106"
     },
     {
-      "name": "Entrepreneur financing products",
-      "match": "بنك التنمية الاجتماعية",
+      "name": "Entrepreneurs Financing",
+      "match": "تمويل رواد الأعمال",
       "operator": "Social Development Bank",
       "type": "loan",
-      "status": "pending",
-      "official_url": null,
-      "last_checked": null,
-      "source": null
+      "status": "verified",
+      "official_url": "https://www.sdb.gov.sa/ar/enterprise-financing/entrepreneur-financing",
+      "last_checked": "2026-11-19",
+      "source": "A108"
     },
     {
       "name": "The Garage",
@@ -156,11 +156,11 @@
       "name": "Misk Accelerator",
       "match": "Misk Accelerator",
       "operator": "Misk Foundation",
-      "type": "acceleration",
-      "status": "pending",
-      "official_url": null,
-      "last_checked": null,
-      "source": null
+      "type": "zero-equity acceleration",
+      "status": "verified",
+      "official_url": "https://misk.org.sa/en/programs/misk-accelerator/",
+      "last_checked": "2026-11-19",
+      "source": "A108"
     },
     {
       "name": "Wa'ed Ventures",
