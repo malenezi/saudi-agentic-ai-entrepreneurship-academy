@@ -1,6 +1,8 @@
 # المجال 08: التجارة الإلكترونية والأعمال الرقمية · Domain 08: E-commerce and digital business
 
-**Status:** Seed · Last reviewed 16 November 2026 · Educational, not legal advice
+**Status:** First guide published · Last reviewed 19 November 2026 · Educational, not legal advice
+
+**Guide · الدليل:** [متجر يبيع ووكيل يتكلم باسمه](selling-online-with-an-agent.md) · A store that sells and an agent that speaks for it. Sources read and what remains unverified are stated at the top of the guide; it awaits a lawyer's review.
 
 <div dir="rtl">
 
