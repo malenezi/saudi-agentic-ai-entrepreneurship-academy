@@ -40,6 +40,22 @@
 | [TrueLayer: الوكيل Ema](global/truelayer.md) | المملكة المتحدة | ب | وكيل في قطاع منظَّم: متى يمتنع ومتى يصعّد |
 | [Suitor: مشروع بخمسة موظفين](global/suitor.md) | أستراليا | ب | حالة مقارنة: هل هذا وكيل أم محادث آلي؟ |
 
+## مسارات شركات
+
+سبع صفحات من نوع آخر: كيف بُنيت شركات تقنية في هذه السوق ومُوّلت وتخارجت. مادة للمقررين 3 و4، وليست أدلة على عائد الوكلاء.
+
+| الحالة | الزاوية |
+|---|---|
+| [Foodics](ventures/foodics.md) | برمجيات قطاع واحد، ثم خدمات مالية فوقها |
+| [Tamara](ventures/tamara.md) | تمويل على مراحل في نشاط مرخّص |
+| [Tabby](ventures/tabby.md) | نقل المقر تمهيداً للإدراج |
+| [Careem](ventures/careem.md) | استحواذ: ما بين التوقيع والإغلاق |
+| [Zid](ventures/zid.md) | منصة تمكين: من الاشتراك إلى الشحن والدفع |
+| [Aqar](ventures/aqar.md) | سوق إلكترونية تغيّرها اللائحة |
+| [Tarjama](ventures/tarjama.md) | شركة خدمات تتحول إلى منتج ذكاء اصطناعي |
+
+طريقة القراءة ومستويات المصدر في [فهرس المسارات](ventures/README.md).
+
 ## مواد أخرى
 
 - [سيناريوهات توضيحية](illustrative-scenarios.md): خمسة سيناريوهات، اثنان منها مشتقان من حالة Tamimi.
@@ -65,6 +81,8 @@
 ## In English
 
 Nine real cases summarised from public sources (three Saudi, six international), each tagged with an evidence level: **A** figures published by the company itself, **B** figures published by its vendor, **C** announcement without measurable results. **No case here has been independently verified.** Illustrative scenarios remain invented and must not be cited as market evidence. Claims from earlier drafts that could not be confirmed are listed in [not-adopted.md](not-adopted.md). Every figure is registered in [SOURCES.md](../SOURCES.md).
+
+A separate set, [venture journeys](ventures/README.md), gives seven sourced accounts of how technology companies in this market were built, funded and exited (Foodics, Tamara, Tabby, Careem, Zid, Aqar, Tarjama). They serve Courses 3 and 4 and are not evidence about agents.
 
 There are two kinds of case study in this folder:
 

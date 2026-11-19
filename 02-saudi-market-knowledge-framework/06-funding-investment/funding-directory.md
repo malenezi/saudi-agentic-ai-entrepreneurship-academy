@@ -1,6 +1,6 @@
 # دليل برامج التمويل والدعم · Funding and support directory
 
-Last checked: 18 November 2026 · Educational, not financial advice · Entries are not endorsements
+Last checked: 18 November 2026 (pending names added 19 November 2026) · Educational, not financial advice · Entries are not endorsements
 
 **In English, briefly.** One entry per programme, each with a verification status and the date its official page was last opened. An entry says what the operator's own page says and nothing more. **No entry states that applications are open**: windows change, so check the operator's page on the day you apply. Amounts appear only where the operator publishes them. A regulatory sandbox is listed separately because it is permission to test, not funding.
 
@@ -117,8 +117,13 @@ Last checked: 18 November 2026 · Educational, not financial advice · Entries a
 | Flat6Labs | Flat6Labs | الدليل الحالي في المستودع يذكر الرياض؛ إحدى المسودات ذكرت جدة ومبلغاً بالدولار لم نجد مصدره |
 | صندوق التنمية الصناعية · صندوق التنمية السياحي · بنك التصدير والاستيراد | كلٌّ باسمه | لمشاريع صناعية أو سياحية أو تصديرية؛ لم نفتح صفحاتها |
 | مسرّعات الجامعات | جامعات سعودية | كل جامعة على حدة |
+| 9/10ths · Riyadh Valley Company · Business Incubators and Accelerators Company · Badir · Falak Business Hub · Nomow · SURE International Technology · Startups House · Wadi Makkah · KAUST Innovation Fund | كلٌّ باسمه | أسماء من شريحة في مقرر جامعي سابق للمؤلف (2024). لم نفتح صفحة أي منها، ولا نعرف أيها ما زال يعمل أو تغيّر اسمه ([C40](../../SOURCES.md)) |
 
 المستثمرون وصناديق الصناديق (مثل الشركة السعودية للاستثمار الجريء) في [دليل التمويل والاستثمار](funding-and-investment.md)، لأنهم لا يُتقدَّم إليهم كما يُتقدَّم إلى برنامج.
+
+## الفهرس الآلي
+
+الجدول نفسه في ملف يقرؤه البرنامج: [`funding-directory.json`](funding-directory.json). فيه لكل بند: الاسم، الجهة، النوع، الحالة، الرابط الرسمي، وتاريخ آخر فتح للصفحة. الأداة [`tools/check_funding_directory.py`](../../tools/check_funding_directory.py) تتحقق من أن كل بند في الفهرس مذكور في هذه الصفحة، وتنبّه إلى كل بند موثّق مرّ على فتح صفحته أكثر من تسعين يوماً. الفهرس لا يضيف معلومة غير موجودة هنا.
 
 ## قبل أن تتقدم إلى أي برنامج
 

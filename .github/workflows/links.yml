@@ -26,3 +26,6 @@ jobs:
           python-version: "3.13"
       - name: Check external links
         run: python tools/check_external_links.py
+      - name: Funding directory freshness
+        # Fails only when the index and the page disagree. Stale entries are printed, not failed.
+        run: python tools/check_funding_directory.py

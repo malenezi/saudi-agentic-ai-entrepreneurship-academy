@@ -4,6 +4,8 @@
 > **مسودة مخطط · Draft outline.** هذا المقرر لم يُبنَ بعد. المحتوى التفصيلي يُطوَّر على مراحل، والمخطط قابل للتغيير. ملاحظاتك واقتراحاتك مرحّب بها. · This course is not built yet. Detailed content will be developed in later iterations and this outline may change. Comments and suggestions are welcome.
 
 
+> **أول درس مبني · First lesson built:** [الوحدة 3.1: من النموذج الأولي إلى المنتج الأولي](lessons/3-1-from-prototype-to-mvp.md) مع [اختباره](quizzes/3-1-quiz.md). بقية الوحدات مخطط. · Module 3.1 is written, with its quiz; the other modules are still an outline.
+
 <div dir="rtl">
 
 **المدة:** 20 ساعة · **المستوى:** متوسط · **المتطلب السابق:** وكيل يعمل (المقرر 2 أو ما يعادله) · **الركيزة:** ابنِ

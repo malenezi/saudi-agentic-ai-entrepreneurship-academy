@@ -4,6 +4,8 @@
 > **مسودة مخطط · Draft outline.** هذا المقرر لم يُبنَ بعد. المحتوى التفصيلي يُطوَّر على مراحل، والمخطط قابل للتغيير. ملاحظاتك واقتراحاتك مرحّب بها. · This course is not built yet. Detailed content will be developed in later iterations and this outline may change. Comments and suggestions are welcome.
 
 
+> **أول درس مبني · First lesson built:** [الوحدة 4.5: مسارات النمو والتمويل والتخارج](lessons/4-5-growth-paths-and-funding.md) مع [اختباره](quizzes/4-5-quiz.md). بقية الوحدات مخطط. · Module 4.5 is written, with its quiz; the other modules are still an outline.
+
 <div dir="rtl">
 
 **المدة:** 16 ساعة · **المستوى:** متقدم · **المتطلب السابق:** منتج أولي له مستخدم حقيقي · **الركيزة:** احكُم وتوسّع

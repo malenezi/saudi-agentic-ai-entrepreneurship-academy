@@ -40,6 +40,71 @@ class UnitEconomicsCalculator(unittest.TestCase):
         self.assertIn("Cost per resolved task", result.stdout)
 
 
+class FounderCalculators(unittest.TestCase):
+    TOOLKIT = "04-entrepreneur-toolkit"
+
+    def test_funnel_default_run(self):
+        result = run(os.path.join(self.TOOLKIT, "first_customers_funnel.py"))
+        self.assertEqual(result.returncode, 0, result.stderr)
+        self.assertIn("contacted -> replied (45%)", result.stdout)
+        self.assertIn("at these rates: 200", result.stdout)
+
+    def test_funnel_rejects_a_step_larger_than_the_one_before(self):
+        result = run(os.path.join(self.TOOLKIT, "first_customers_funnel.py"), "--replied", "50")
+        self.assertEqual(result.returncode, 2)
+
+    def test_funnel_with_no_paying_customer_does_not_size_the_plan(self):
+        result = run(os.path.join(self.TOOLKIT, "first_customers_funnel.py"), "--paying", "0")
+        self.assertEqual(result.returncode, 0, result.stderr)
+        self.assertIn("cannot be sized", result.stdout)
+
+    def test_dilution_matches_the_worked_example(self):
+        # Riyada's round-terms reference: 50% founder, 10% pool, 2m at 8m pre -> 36%.
+        result = run(os.path.join(self.TOOLKIT, "round_dilution.py"),
+                     "--founders", "0.5", "--round", "2000000:8000000:0.10")
+        self.assertEqual(result.returncode, 0, result.stderr)
+        self.assertIn("36.0%", result.stdout)
+
+    def test_dilution_default_two_rounds(self):
+        result = run(os.path.join(self.TOOLKIT, "round_dilution.py"))
+        self.assertIn("57.6%", result.stdout)
+
+    def test_dilution_rejects_a_malformed_round(self):
+        result = run(os.path.join(self.TOOLKIT, "round_dilution.py"), "--round", "2000000")
+        self.assertEqual(result.returncode, 2)
+
+
+class FundingDirectory(unittest.TestCase):
+    TOOL = os.path.join("tools", "check_funding_directory.py")
+
+    def test_index_matches_the_page(self):
+        result = run(self.TOOL, "--today", "2026-11-19")
+        self.assertEqual(result.returncode, 0, result.stdout)
+        self.assertNotIn("ERROR", result.stdout)
+
+    def test_old_entries_are_flagged_and_strict_fails(self):
+        result = run(self.TOOL, "--today", "2027-06-01", "--strict")
+        self.assertEqual(result.returncode, 1)
+        self.assertIn("STALE", result.stdout)
+
+    def test_entry_missing_from_the_page_is_an_error(self):
+        folder = os.path.join(ROOT, "02-saudi-market-knowledge-framework", "06-funding-investment")
+        with open(os.path.join(folder, "funding-directory.json"), encoding="utf-8") as f:
+            index = json.load(f)
+        index["entries"].append(dict(index["entries"][0], name="Invented programme", match="برنامج لا وجود له"))
+        with tempfile.TemporaryDirectory() as tmp:
+            with open(os.path.join(folder, "funding-directory.md"), encoding="utf-8") as f:
+                page = f.read()
+            with open(os.path.join(tmp, "funding-directory.md"), "w", encoding="utf-8") as f:
+                f.write(page)
+            path = os.path.join(tmp, "funding-directory.json")
+            with open(path, "w", encoding="utf-8") as f:
+                json.dump(index, f, ensure_ascii=False)
+            result = run(self.TOOL, "--index", path, "--today", "2026-11-19")
+        self.assertEqual(result.returncode, 1)
+        self.assertIn("Invented programme", result.stdout)
+
+
 class VentureDashboard(unittest.TestCase):
     def test_baseline_data_is_reproducible(self):
         with tempfile.TemporaryDirectory() as tmp:
