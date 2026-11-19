@@ -20,6 +20,7 @@ import re
 import socket
 import sys
 import urllib.error
+import urllib.parse
 import urllib.request
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -45,7 +46,9 @@ def collect():
 
 
 def check(url):
-    request = urllib.request.Request(url, headers={"User-Agent": AGENT, "Accept": "*/*"})
+    # Percent-encode Arabic and other non-ASCII characters; leave existing escapes alone.
+    safe = urllib.parse.quote(url, safe=":/?#[]@!$&'()*+,;=%~-._")
+    request = urllib.request.Request(safe, headers={"User-Agent": AGENT, "Accept": "*/*"})
     try:
         with urllib.request.urlopen(request, timeout=25) as response:
             return "ok", str(response.status)
