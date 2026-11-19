@@ -11,7 +11,14 @@ Material from the author's earlier university course on software entrepreneurshi
 - [Venture journeys](06-case-studies/ventures/README.md): seven sourced accounts (Foodics, Tamara, Tabby, Careem, Zid, Aqar, Tarjama) of how companies in this market were built, funded and exited. They are not evidence about agents and say so.
 - `funding-directory.json` and `tools/check_funding_directory.py`: a machine-readable index of the funding directory, checked against the page in CI, with a warning for entries whose official page was last opened more than 90 days ago. The weekly link workflow runs it.
 - Sources A88 to A94, corrections B50 to B53, unverified C39 and C40. Ten incubator names from an SE495 slide are listed as pending in the funding directory.
-- Nine tests (24 for scripts in total): the two calculators and the funding directory index.
+- Nine tests: the two calculators and the funding directory index.
+
+- Lab skills: Pitch Challenger now runs as a three-investor panel scored on the Demo Day rubric; new skills 11 (Interview Rehearsal) and 12 (Sourced Case Builder). Twelve skills in total.
+- Lab exercises A1 (Pitch Room), A2 (Interview rehearsal) and A3 (A sourced case), the first that use the Academy's own skills instead of a companion repository. Seventeen exercises in total. A2 states one rule without exception: a rehearsal with an assistant is never customer evidence.
+- `case_lint.py` (exercise A3): checks a venture case for its five sections in order, a source level, source numbers that exist in the register, and figures outside the documented section. The seven published cases pass with `--strict`; a deliberately flawed sample gives five errors and one warning.
+- [Venture Workbook](workbook/index.html): one static page with the gates of the four courses (24 items), one evidence note per item, saved in the browser only, exported as Markdown. A tick without evidence is shown as such and not counted. Linked from the landing page.
+- [Instructor kit](01-academy/instructor-kit/README.md): a proposed 15-week, three-credit delivery of Courses 1 and 2 with Module 3.1, four graded gates and suggested weights, plus peer-evaluation, panel and buildathon judging forms. Not yet piloted.
+- Four more tests (34 in total): the case linter and the workbook (its repository links exist; it makes no network calls).
 
 **Not brought in, and why**
 - The SE495 slide decks: generic, and Units 1 to 3 repeat Course 1.

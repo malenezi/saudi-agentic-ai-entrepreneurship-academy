@@ -1,0 +1,290 @@
+<!doctype html>
+<!--
+  SAAEA · Venture Workbook. One static page: the gates of the four courses as a checklist
+  with an evidence note for each, kept in this browser only, exported as Markdown.
+  No server, no account, no analytics. Licence: Apache-2.0 (code), CC BY 4.0 (text).
+-->
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>دفتر المشروع · الأكاديمية السعودية لريادة الأعمال بالذكاء الاصطناعي الوكيلي</title>
+<meta name="description" content="دفتر يتتبع بوابات المقررات الأربعة: لكل بند دليل. يُحفظ في متصفحك فقط، ويُصدَّر ملفاً نصياً.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@500;700&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root { --bg: #f8fafc; --ink: #1e293b; --muted: #475569; --line: #e2e8f0; --card: #ffffff; --accent: #d97706; --accent-ink: #b45309; --accent-soft: #fef3c7; --ok: #047857; --ok-soft: #d1fae5;
+  --font-ar: "IBM Plex Sans Arabic", "Noto Sans Arabic", "Segoe UI", Tahoma, sans-serif; --font-en: "IBM Plex Sans", "Segoe UI", system-ui, sans-serif;
+  --display-ar: "Noto Kufi Arabic", "IBM Plex Sans Arabic", "Segoe UI", Tahoma, sans-serif; }
+*, *::before, *::after { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 17px/1.9 var(--font-ar); }
+[lang="en"] { font-family: var(--font-en); line-height: 1.6; }
+a { color: var(--accent-ink); text-underline-offset: 4px; }
+:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; border-radius: 6px; }
+.wrap { max-inline-size: 980px; margin-inline: auto; padding-inline: 20px; }
+header { background: var(--ink); color: #f8fafc; padding-block: 32px 28px; }
+h1, h2, h3 { font-family: var(--display-ar); line-height: 1.5; margin: 0; }
+h1 { font-size: clamp(24px, 4vw, 36px); }
+header p { color: #cbd5e1; margin: 8px 0 0; max-inline-size: 64ch; }
+header .en { color: #94a3b8; font-size: 15px; }
+header a { color: #fcd34d; }
+.note { background: var(--accent-soft); border-inline-start: 5px solid var(--accent); padding: 12px 18px; border-radius: 12px; margin-block: 24px 0; font-size: 15.5px; }
+.bar { position: sticky; inset-block-start: 0; z-index: 2; background: var(--bg); border-block-end: 1px solid var(--line); padding-block: 12px; }
+.bar .wrap { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; }
+.bar label { font-weight: 600; }
+.bar input[type="text"] { flex: 1 1 220px; }
+input[type="text"], textarea { font: inherit; color: inherit; background: #fff; border: 1px solid #94a3b8; border-radius: 10px; padding: 6px 12px; inline-size: 100%; }
+textarea { min-block-size: 44px; resize: vertical; line-height: 1.7; }
+button { font: 600 15px var(--font-ar); border: 0; border-radius: 999px; padding: 8px 18px; background: var(--accent); color: #fff; cursor: pointer; }
+button.ghost { background: transparent; color: var(--ink); border: 2px solid #94a3b8; }
+.meter { flex: 1 1 100%; display: flex; align-items: center; gap: 12px; font-size: 15px; color: var(--muted); }
+progress { flex: 1; block-size: 12px; accent-color: var(--ok); }
+section { background: var(--card); border: 1px solid var(--line); border-block-start: 5px solid var(--accent); border-radius: 16px; padding: 20px 22px; margin-block-start: 24px; }
+section.done { border-block-start-color: var(--ok); }
+section h2 { font-size: 23px; }
+section .q { color: var(--muted); margin: 2px 0 0; }
+section .q span { display: block; font-size: 14.5px; text-align: end; }
+section .links { font-size: 15px; margin: 6px 0 0; }
+.count { font: 600 14px var(--font-en); background: var(--accent-soft); color: var(--accent-ink); border-radius: 999px; padding: 2px 12px; margin-inline: 12px; white-space: nowrap; display: inline-block; }
+section.done .count { background: var(--ok-soft); color: var(--ok); }
+ol.gates { list-style: none; padding: 0; margin: 16px 0 0; display: grid; gap: 12px; }
+ol.gates li { display: grid; grid-template-columns: auto 1fr; gap: 6px 12px; align-items: start; border-block-start: 1px solid var(--line); padding-block-start: 12px; }
+ol.gates input[type="checkbox"] { inline-size: 22px; block-size: 22px; margin-block-start: 8px; accent-color: var(--ok); }
+ol.gates .t { font-weight: 600; }
+ol.gates .h { display: block; font-weight: 400; font-size: 15px; color: var(--muted); }
+ol.gates textarea { grid-column: 2; }
+.warn { color: #b91c1c; font-size: 14.5px; grid-column: 2; margin: 0; }
+footer { margin-block: 40px 56px; color: var(--muted); font-size: 15px; }
+#status { font-size: 14.5px; color: var(--muted); min-block-size: 1.9em; }
+@media print { .bar, .note, footer, button { display: none; } section { break-inside: avoid; } body { background: #fff; } }
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <h1>دفتر المشروع</h1>
+    <p>أربع بوابات من الفكرة إلى يوم العروض. لكل بند خانة واحدة: <strong>ما الدليل؟</strong> بند بلا دليل ليس منجزاً، ولو وضعت عليه علامة.</p>
+    <p class="en" lang="en" dir="ltr">Venture Workbook: the four course gates as a checklist with one evidence note per item. Part of the <a href="../index.html">Saudi Agentic AI Entrepreneurship Academy</a>.</p>
+  </div>
+</header>
+
+<div class="bar">
+  <div class="wrap">
+    <label for="project">اسم المشروع</label>
+    <input type="text" id="project" dir="auto" autocomplete="off" placeholder="مثال: مساعد استفسارات الطلبات لمتاجر العطور">
+    <button type="button" id="export">صدّر ملفاً نصياً</button>
+    <button type="button" id="copy" class="ghost">انسخ</button>
+    <button type="button" id="reset" class="ghost">ابدأ من جديد</button>
+    <div class="meter"><progress id="progress" value="0" max="1" aria-label="نسبة البنود المنجزة بدليل"></progress><span id="summary"></span></div>
+  </div>
+</div>
+
+<main class="wrap">
+  <p class="note"><strong>أين تُحفظ بياناتك؟</strong> في هذا المتصفح على هذا الجهاز فقط. لا شيء يُرسل إلى أي خادم، ولا حساب ولا تتبّع. إن مسحت بيانات المتصفح أو غيّرت الجهاز ضاع ما كتبت، فصدّر ملفك بعد كل جلسة. ولا تكتب هنا بيانات شخصية لعملاء: اكتب أين الدليل، لا الدليل نفسه.</p>
+  <p id="status" role="status" aria-live="polite"></p>
+  <div id="stages"></div>
+</main>
+
+<footer class="wrap">
+  <p>الدفتر يتتبع، ولا يقيّم. التقييم بسلالم المقررات، ومن مدرّب أو زميل. المحتوى تعليمي، وليس استشارة نظامية أو مالية.</p>
+  <p lang="en" dir="ltr">The workbook tracks; it does not grade. Nothing leaves this browser. <a href="https://github.com/malenezi/saudi-agentic-ai-entrepreneurship-academy">Repository</a> · Apache-2.0 (code), CC BY 4.0 (text).</p>
+</footer>
+
+<script>
+"use strict";
+var REPO = "https://github.com/malenezi/saudi-agentic-ai-entrepreneurship-academy/blob/main/";
+var STAGES = [
+  { id: "c1", title: "البوابة 1: أطروحة الفرصة", en: "Course 1 · Opportunity", question: "أي مشكلة تستحق وكيلاً، ومن يدفع لحلها؟",
+    links: [["خطة المقرر 1", "03-courses/01-opportunity/syllabus.md"], ["لوحة الفكرة", "04-entrepreneur-toolkit/01-startup-idea-canvas.md"], ["اكتشاف العملاء", "04-entrepreneur-toolkit/03-customer-discovery.md"]],
+    gates: [
+      ["العميل", "من بالضبط: القطاع، المدينة، الدور"],
+      ["سير العمل اليوم", "الخطوات، الزمن، التكلفة، نسبة الخطأ، من يؤديه"],
+      ["الأدلة", "خمس مقابلات حقيقية على الأقل: ما قالوه وما فعلوه. البروفات مع مساعد لا تُحسب"],
+      ["الوكيل", "ما يتولاه، ما يبقى مع إنسان، وما يحتاج موافقة"],
+      ["الاقتصاديات الأولية", "قيمة المهمة المنجزة، وتكلفتها التقديرية، وطريقة التسعير"],
+      ["المدخل والحاجز", "لماذا هذا المسار أولاً، وما الذي تملكه ولا يمحوه إصدار نموذج جديد"],
+      ["المخاطر", "بيانات، تنظيم، تقنية، سوق: وأول معالجة لكل منها"]
+    ] },
+  { id: "c2", title: "البوابة 2: وكيل يعمل ومُقيَّم", en: "Course 2 · Build", question: "هل يعمل، وكيف تعرف؟",
+    links: [["خطة المقرر 2", "03-courses/02-build/syllabus.md"], ["قائمة الجاهزية", "03-courses/02-build/templates/readiness-checklist.md"], ["قالب التقييم", "05-agentic-ai-lab/evaluation/eval-template.md"]],
+    gates: [
+      ["ورقة تصميم الوكيل", "الهدف، الأدوات، المعرفة، الحدود"],
+      ["الوكيل على قناة اختبار", "يمكن الوصول إليه وتجربته"],
+      ["مجموعة التقييم", "ثلاثون حالة عربية على الأقل، عشر منها بلهجة سعودية، بمعايير نجاح ونتائج"],
+      ["مصفوفة الرقابة البشرية", "والبوابات منفَّذة في التطبيق، لا في التعليمات"],
+      ["سجل الإخفاقات", "دورتا تحسين بنتائج قبل وبعد"],
+      ["العرض المصوّر", "ثلاث دقائق بالعربية، وفيه حالة توقف أو فشل"]
+    ] },
+  { id: "c3", title: "البوابة 3: حزمة الإطلاق", en: "Course 3 · Launch", question: "هل سيدفعون؟",
+    links: [["خطة المقرر 3", "03-courses/03-launch/syllabus.md"], ["الدرس 3.1", "03-courses/03-launch/lessons/3-1-from-prototype-to-mvp.md"], ["خطة أول عشرة عملاء", "04-entrepreneur-toolkit/11-first-ten-customers-plan.md"], ["عرض التجربة", "04-entrepreneur-toolkit/09-pilot-and-loi-outline.md"]],
+    gates: [
+      ["منتج أولي حي", "مستخدم تجريبي واحد على الأقل من منشأة حقيقية، وزر إيقاف مجرَّب"],
+      ["نموذج العمل والتسعير", "ومعه حساب تكلفة المهمة المنجزة، مقيسة لا مخمَّنة"],
+      ["خطة أول عشرة عملاء", "أسماء حقيقية، وقناة وصول، وقاعدة قرار"],
+      ["جاهزية الامتثال", "تقييم ذاتي لحماية البيانات، وتقييم المزوّدين، ومسودة إشعار خصوصية، وبنود مفتوحة مسمّاة"],
+      ["عرض التجربة", "أُرسل إلى ثلاث منشآت على الأقل، وسُجّلت الردود"]
+    ] },
+  { id: "c4", title: "البوابة 4: حزمة التوسع ويوم العروض", en: "Course 4 · Scale and Govern", question: "هل ينمو دون أن يفلت؟",
+    links: [["خطة المقرر 4", "03-courses/04-scale-and-govern/syllabus.md"], ["الدرس 4.5", "03-courses/04-scale-and-govern/lessons/4-5-growth-paths-and-funding.md"], ["ملف الفحص التقني", "04-entrepreneur-toolkit/12-agentic-due-diligence-pack.md"], ["غرفة العرض", "05-agentic-ai-lab/exercises/a1-pitch-room.md"]],
+    gates: [
+      ["معمارية التشغيل", "الوكلاء، الأدوار البشرية، الأنظمة، ونقاط الموافقة"],
+      ["ورقة المؤشرات", "أربعة أسابيع على الأقل من بيانات حقيقية أو تجريبية"],
+      ["سجل المخاطر وتقييم أمن الوكيل", "مخاطر تخص هذا المنتج، ولكل منها صاحب وضابط موجود"],
+      ["خارطة التوسع", "اثنا عشر شهراً، ومسار نمو مختار ومسار مستبعد ولماذا"],
+      ["العرض الاستثماري والعرض الحي", "أدلة أولاً، وصدق في الحدود، وطلب واضح"],
+      ["دليل التخرج", "خطاب نوايا موقّع، أو مؤشرات استخدام حقيقية"]
+    ] }
+];
+
+var KEY = "saaea-workbook-v1";
+var state = { project: "", items: {} };
+var memoryOnly = false;
+
+function load() {
+  try {
+    var raw = window.localStorage.getItem(KEY);
+    if (raw) {
+      var saved = JSON.parse(raw);
+      if (saved && typeof saved === "object" && saved.items) { state = saved; }
+    }
+  } catch (error) { memoryOnly = true; }
+}
+function save() {
+  if (memoryOnly) { return; }
+  try { window.localStorage.setItem(KEY, JSON.stringify(state)); }
+  catch (error) { memoryOnly = true; say("تعذّر الحفظ في هذا المتصفح. ما تكتبه يبقى حتى تغلق الصفحة فقط، فصدّر ملفك قبل الإغلاق."); }
+}
+function say(text) { document.getElementById("status").textContent = text; }
+function item(key) { return state.items[key] || (state.items[key] = { done: false, evidence: "" }); }
+function complete(key) { var it = item(key); return it.done && it.evidence.trim() !== ""; }
+
+function render() {
+  var host = document.getElementById("stages");
+  host.textContent = "";
+  STAGES.forEach(function (stage) {
+    var section = document.createElement("section");
+    section.id = stage.id;
+    var h2 = document.createElement("h2");
+    h2.textContent = stage.title;
+    var count = document.createElement("span");
+    count.className = "count"; count.dir = "ltr";
+    h2.appendChild(count);
+    section.appendChild(h2);
+    var q = document.createElement("p");
+    q.className = "q"; q.textContent = stage.question;
+    var en = document.createElement("span");
+    en.lang = "en"; en.dir = "ltr"; en.textContent = stage.en;
+    q.appendChild(en);
+    section.appendChild(q);
+    var links = document.createElement("p");
+    links.className = "links";
+    stage.links.forEach(function (pair, index) {
+      if (index) { links.appendChild(document.createTextNode(" · ")); }
+      var a = document.createElement("a");
+      a.href = REPO + pair[1]; a.textContent = pair[0];
+      links.appendChild(a);
+    });
+    section.appendChild(links);
+    var list = document.createElement("ol");
+    list.className = "gates";
+    stage.gates.forEach(function (gate, index) {
+      var key = stage.id + "-" + (index + 1);
+      var it = item(key);
+      var li = document.createElement("li");
+      var box = document.createElement("input");
+      box.type = "checkbox"; box.id = key; box.checked = it.done;
+      var label = document.createElement("label");
+      label.htmlFor = key;
+      var t = document.createElement("span"); t.className = "t"; t.textContent = gate[0];
+      var h = document.createElement("span"); h.className = "h"; h.textContent = gate[1];
+      label.appendChild(t); label.appendChild(h);
+      var area = document.createElement("textarea");
+      area.rows = 1; area.dir = "auto"; area.value = it.evidence;
+      area.placeholder = "الدليل: اسم الملف أو الرابط أو التاريخ";
+      area.setAttribute("aria-label", "الدليل على: " + gate[0]);
+      var warn = document.createElement("p");
+      warn.className = "warn"; warn.hidden = true;
+      warn.textContent = "علامة بلا دليل لا تُحسب. اكتب أين الدليل.";
+      box.addEventListener("change", function () { it.done = box.checked; save(); update(); });
+      area.addEventListener("input", function () { it.evidence = area.value; save(); update(); });
+      li.appendChild(box); li.appendChild(label); li.appendChild(area); li.appendChild(warn);
+      list.appendChild(li);
+    });
+    section.appendChild(list);
+    host.appendChild(section);
+  });
+  document.getElementById("project").value = state.project || "";
+  update();
+}
+
+function update() {
+  var total = 0, done = 0;
+  STAGES.forEach(function (stage) {
+    var stageDone = 0;
+    var section = document.getElementById(stage.id);
+    stage.gates.forEach(function (gate, index) {
+      var key = stage.id + "-" + (index + 1);
+      total += 1;
+      if (complete(key)) { done += 1; stageDone += 1; }
+      var warn = section.querySelectorAll(".warn")[index];
+      warn.hidden = !(item(key).done && item(key).evidence.trim() === "");
+    });
+    section.querySelector(".count").textContent = stageDone + " / " + stage.gates.length;
+    section.classList.toggle("done", stageDone === stage.gates.length);
+  });
+  var bar = document.getElementById("progress");
+  bar.max = total; bar.value = done;
+  document.getElementById("summary").textContent = done + " من " + total + " بنداً منجزاً بدليل";
+}
+
+function toMarkdown() {
+  var lines = ["# دفتر المشروع: " + (state.project.trim() || "(بلا اسم)"), "",
+    "صُدّر في " + new Date().toISOString().slice(0, 10) + " من دفتر المشروع في الأكاديمية السعودية لريادة الأعمال بالذكاء الاصطناعي الوكيلي.", ""];
+  STAGES.forEach(function (stage) {
+    var stageDone = stage.gates.filter(function (gate, index) { return complete(stage.id + "-" + (index + 1)); }).length;
+    lines.push("## " + stage.title + " (" + stageDone + " / " + stage.gates.length + ")", "", "| البند | الحالة | الدليل |", "|---|---|---|");
+    stage.gates.forEach(function (gate, index) {
+      var key = stage.id + "-" + (index + 1), it = item(key);
+      var status = complete(key) ? "منجز" : (it.done ? "علامة بلا دليل" : "مفتوح");
+      var evidence = it.evidence.trim().replace(/\|/g, "\\|").replace(/\s*\n\s*/g, " ");
+      lines.push("| " + gate[0] + " | " + status + " | " + (evidence || "") + " |");
+    });
+    lines.push("");
+  });
+  return lines.join("\n");
+}
+
+document.getElementById("project").addEventListener("input", function (event) { state.project = event.target.value; save(); });
+document.getElementById("export").addEventListener("click", function () {
+  var blob = new Blob([toMarkdown()], { type: "text/markdown;charset=utf-8" });
+  var a = document.createElement("a");
+  a.href = URL.createObjectURL(blob); a.download = "venture-workbook.md";
+  document.body.appendChild(a); a.click(); a.remove();
+  setTimeout(function () { URL.revokeObjectURL(a.href); }, 1000);
+  say("نُزّل الملف.");
+});
+document.getElementById("copy").addEventListener("click", function () {
+  var text = toMarkdown();
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(text).then(function () { say("نُسخ الدفتر نصاً."); }, function () { say("تعذّر النسخ. استخدم زر التصدير."); });
+  } else { say("النسخ غير متاح في هذا المتصفح. استخدم زر التصدير."); }
+});
+var resetArmed = false;
+document.getElementById("reset").addEventListener("click", function (event) {
+  if (!resetArmed) {
+    resetArmed = true; event.target.textContent = "اضغط مرة ثانية للمسح";
+    say("سيُمسح كل ما كتبته في هذا المتصفح. صدّر ملفك أولاً إن أردت الاحتفاظ به.");
+    setTimeout(function () { resetArmed = false; event.target.textContent = "ابدأ من جديد"; }, 6000);
+    return;
+  }
+  resetArmed = false; event.target.textContent = "ابدأ من جديد";
+  state = { project: "", items: {} }; save(); render(); say("مُسح الدفتر.");
+});
+
+load();
+render();
+if (memoryOnly) { say("هذا المتصفح لا يسمح بالحفظ. ما تكتبه يبقى حتى تغلق الصفحة فقط، فصدّر ملفك قبل الإغلاق."); }
+</script>
+</body>
+</html>

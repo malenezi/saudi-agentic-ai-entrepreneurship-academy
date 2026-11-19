@@ -29,7 +29,7 @@
 |---|---|
 | المقرر 1 والمقرر 2: دروس، عروض، اختبارات قصيرة، قوالب، سلالم تقدير، دليل مدرب | المقرران 3 و4: مخططان أوليان |
 | إطار المعرفة بالسوق السعودي: اثنا عشر مجالاً، خمسة منها بأدلة منشورة | سبعة مجالات في مستوى البذرة، وبنود كثيرة في السجل «للتحقق» |
-| حقيبة المؤسس، والمختبر بأربعة عشر تمريناً، وتسع دراسات حالة من مصادر منشورة | تجربة أي مقرر أو تمرين مع فوج؛ مراجعة قانونية وضريبية؛ حالة سعودية يكتبها صاحبها |
+| حقيبة المؤسس، والمختبر بسبعة عشر تمريناً، وتسع دراسات حالة من مصادر منشورة | تجربة أي مقرر أو تمرين مع فوج؛ مراجعة قانونية وضريبية؛ حالة سعودية يكتبها صاحبها |
 
 التفصيل في [خارطة الطريق](ROADMAP.md).
 
@@ -65,6 +65,6 @@ One page for a first visit. Details are in the [English README](README.en.md).
 
 **Where to start.** First-time founder: the [Founder Context Template](04-entrepreneur-toolkit/10-founder-context-template.md), then [Course 1](03-courses/01-opportunity/syllabus.md). SME owner: the [AI Opportunity Assessment](04-entrepreneur-toolkit/02-ai-opportunity-assessment.md) on your own operations. Technical founder: Course 1, then [Course 2](03-courses/02-build/syllabus.md) on the deep track. Cohort organiser: the two instructor guides. Full routes are in [learning pathways](01-academy/learning-pathways.md).
 
-**Ready today.** Courses 1 and 2 (lessons, slide decks, quizzes, templates, rubrics, instructor guides), the twelve-domain knowledge framework (five domains with published guides), the Founder Toolkit, a lab with fourteen exercises, and nine case studies from public sources. **Not ready.** Courses 3 and 4 are outlines; nothing has been piloted with a cohort; there is no legal or tax review yet. See the [roadmap](ROADMAP.md).
+**Ready today.** Courses 1 and 2 (lessons, slide decks, quizzes, templates, rubrics, instructor guides), the twelve-domain knowledge framework (five domains with published guides), the Founder Toolkit, a lab with seventeen exercises, nine case studies and seven venture journeys from public sources, a [venture workbook](workbook/index.html) and an [instructor kit](01-academy/instructor-kit/README.md) for a 15-week course. **Not ready.** Courses 3 and 4 are outlines with one lesson each; nothing has been piloted with a cohort; there is no legal or tax review yet. See the [roadmap](ROADMAP.md).
 
 **Frequently asked.** It is free (content CC BY 4.0, code Apache-2.0). It issues no certificates. You do not need to code: every course has a low-code core track. You may teach it under the licence terms. The slide decks open in the browser from the [slide gallery](https://malenezi.github.io/saudi-agentic-ai-entrepreneurship-academy/), a single page that lists all fifteen; inside GitHub an HTML file shows as source, and offline you can download the repository and open `index.html`. To report an error, open an issue; one line is enough. There is no wiki on purpose: everything here goes through the link checker, the source register and the changelog, and this page does the wiki's job.

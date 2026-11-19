@@ -105,6 +105,25 @@ class FundingDirectory(unittest.TestCase):
         self.assertIn("Invented programme", result.stdout)
 
 
+class CaseLint(unittest.TestCase):
+    A3 = os.path.join(LAB, "a3-sourced-case")
+    TOOL = os.path.join(A3, "case_lint.py")
+    SOURCES = os.path.join(ROOT, "SOURCES.md")
+
+    def test_published_venture_cases_pass_strict(self):
+        import glob
+        cases = [p for p in glob.glob(os.path.join(ROOT, "06-case-studies", "ventures", "*.md"))
+                 if os.path.basename(p) != "README.md"]
+        self.assertEqual(len(cases), 7)
+        result = run(self.TOOL, *cases, "--sources", self.SOURCES, "--strict")
+        self.assertEqual(result.returncode, 0, result.stdout)
+
+    def test_sample_draft_gives_the_quoted_counts(self):
+        result = run(self.TOOL, os.path.join(self.A3, "sample-draft.md"), "--sources", self.SOURCES)
+        self.assertEqual(result.returncode, 1)
+        self.assertIn("1 file(s), 5 error(s), 1 warning(s)", result.stdout)
+
+
 class VentureDashboard(unittest.TestCase):
     def test_baseline_data_is_reproducible(self):
         with tempfile.TemporaryDirectory() as tmp:
