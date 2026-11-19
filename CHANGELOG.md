@@ -5,17 +5,20 @@
 ### Course 1 slides (19 November 2026)
 
 **Added**
-- `03-courses/01-opportunity/slides/`: seven Bayan HTML decks, one per module (141 slides in all), in Arabic with English terms, with speaker notes, print-to-PDF, evidence badges on every example, and six role cards for the Module 1.5 interview lab.
+- `03-courses/01-opportunity/slides/`: seven Bayan HTML decks, one per module (143 slides in all), in Arabic with English terms, with speaker notes, print-to-PDF, evidence badges on every example, and six role cards for the Module 1.5 interview lab.
 - `slides/content-pack.md`: how the owner's two instructor raw-content packs were verified and merged, with a table of what was checked, what was corrected and what was not adopted.
 - `slides/src/`: the deck fragments, the shared theme (slate, sandstone gold, off-white; a Sadu-to-graph motif) and `build.py`.
 
 **Changed**
 - Course 1 syllabus and instructor guide point to the slides; slides and role cards are no longer listed as missing.
+- `SOURCES.md`: A73 to A79, B40 to B43 and C36 for the facts used in the slides.
+- Lesson 1.7: peer review is now the owner's "investment committee audit" (15 minutes per pair, three stress-test questions); the four earlier questions remain the scoring guide.
 
 **Verified in this pass**
 - Klarna figures (company release, Feb 2024) and Intercom's $0.99 per outcome (Intercom help pages).
 - WhatsApp Business pricing has been per message since 1 July 2025; Saudi rates quoted from business pages that cite Meta's 1 October 2026 card.
 - NPHIES claims use ICD-10-AM and the Saudi Billing System (BMC Health Services Research, 2025); initial claim rejection of 15 to 25% (KPMG Middle East, June 2026, via press).
+- Owner's follow-up sources on Tabby and Tamara: Tabby's read-only MCP server for coding agents (used in deck 1.1) and Tabby's 2026 shopping survey (used in deck 1.3, labelled as a company survey). Neither shows agents in either company's operations (C36).
 
 **Not adopted** (details in `content-pack.md`)
 - Tamara/Tabby as an agent case (no public evidence); unsourced market price ranges; named-vendor judgements; a seven-level autonomy ladder, a ten-criterion scorecard, renamed thesis sections and rubric, and a second set of worked-example numbers, all of which conflict with the published course.

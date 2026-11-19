@@ -2,7 +2,7 @@
 # المقرر 1: حزمة محتوى العروض بعد التحقق والإثراء
 
 **Course:** اكتشاف الفرصة الوكيلية · Finding Your Agentic Opportunity · 16 hours · 7 modules
-**Date:** 19 November 2026 · **Status:** first version of the slides, not yet piloted
+**Date:** 19 November 2026 (updated the same day with the owner's Tabby and Tamara sources) · **Status:** first version of the slides, not yet piloted
 
 This pack merges the two instructor raw-content files supplied by the owner on 19 November 2026 ("Instructor Raw Content Pack" v1.0, here **Pack A**, and "Instructor Raw Material, Local Examples, Stories & Assets", here **Pack B**) with the published Course 1 lessons. It was handled by the Course 1 rule: verify, keep the published structure, enrich. The seven decks in this folder are built from it.
 
@@ -23,11 +23,11 @@ This pack merges the two instructor raw-content files supplied by the owner on 1
 |---|---|---|
 | Klarna: 2.3 million chats in month one, work of 700 full-time staff, resolution from 11 minutes to under 2 (Pack B) | **Confirmed**, company press release of 27 Feb 2024 (already in `06-case-studies/global/klarna.md`, level A). The May 2025 return to hiring people is also documented | Used with both chapters. "700 staff" is a workload equivalent, not jobs removed |
 | Tamimi AskBaba, OPLOG (Packs A and B) | Already in the case-studies section (level B). OPLOG's source shows 30% and 85% in headlines, 30 to 40% and 85 to 95% in the body | Used as published. Pack B's "customs clearance across Saudi borders" for OPLOG is **not in the source**; not used |
-| Tamara and Tabby use multi-step agents for merchant onboarding and collections "without human agents touching routine cases" (Pack B) | **Not found.** Tamara's own job postings (2025 to 2026) describe human teams doing KYB reviews, document checks and follow-ups | Not used as a case. The fact that KYB review is still done by people is used, in Module 1.3, as a signal worth investigating |
+| Tamara and Tabby use multi-step agents for merchant onboarding and collections "without human agents touching routine cases" (Pack B) | **Still not found** after the owner's follow-up sources (19 Nov). Tamara's job postings describe human KYB teams. Tabby's developer page documents a read-only MCP server for coding agents, and Tabby's 2026 survey covers shoppers' use of AI; neither describes agents in Tabby's own operations. Tamara's help-centre page loaded without its article text. The ResearchGate paper reviews ML fraud scoring for BNPL in general, not either company | Not used as an operations case. Used instead: Tabby's read-only MCP server as a bounded-autonomy example (deck 1.1, SOURCES A78); Tabby's survey as a market signal labelled as a company survey (deck 1.3, A79); the human KYB teams as a signal worth investigating (deck 1.3) |
 | Clinics lose 10 to 18% of revenue to NPHIES rejections (Pack B) | **Not found** as a revenue figure. A KPMG Middle East report (June 2026, via press) puts initial claim rejection at 15 to 25%. A peer-reviewed study of insurers' records put rejection at about 15% for 2014 to 2019, highest in dental and obstetrics | Decks say "initial rejection rate 15 to 25% (KPMG, 2026)". A rejection rate is not a revenue loss; resubmitted claims are often paid |
 | NPHIES coding: dentist note translated into "ICD-10" (Pack B) | NPHIES claims follow ICD-10-AM for diagnoses and the Saudi Billing System (SBS), built on ACHI, for procedures (BMC Health Services Research, 2025) | Corrected to "ICD-10-AM for the diagnosis and SBS for the procedure" |
-| WhatsApp Business API costs SAR 0.08 to 0.18 per 24-hour session (Pack B) | **Outdated.** Meta moved from conversation pricing to per-message pricing on 1 July 2025. Business pages quoting Meta's 1 October 2026 card give, for Saudi recipients, about SAR 0.22 per marketing message and SAR 0.04 per utility message | Decks give the per-message model and these two figures as "check Meta's rate card on the day" |
-| Intercom Fin at $0.99 per resolution (Pack B) | **Confirmed** on Intercom's help pages: $0.99 per outcome, at most one per conversation | Used as an example of outcome pricing in Module 1.2 |
+| WhatsApp Business API costs SAR 0.08 to 0.18 per 24-hour session (Pack B) | **Outdated.** Meta moved from conversation pricing to per-message pricing on 1 July 2025. Meta's SAR card from 1 October 2026: marketing SAR 0.2159, utility and authentication SAR 0.0401, and service replies inside the 24-hour window now also SAR 0.0401 after the first 1,000 a month per number (business pages citing the card) | Decks give the per-message model, ≈ SAR 0.04 and ≈ SAR 0.22, and "check Meta's rate card on the day" |
+| Intercom Fin at $0.99 per resolution (Pack B) | **Confirmed** on Intercom's help pages: $0.99 per outcome, at most one per conversation; a resolution is counted when no further help is requested after the last AI answer | Used as an example of outcome pricing in Module 1.2 |
 | "WhatsApp fees and human review cost 5 to 10 times the model tokens" (Pack B) | No source. In the course's own worked example, review plus escalation is SAR 0.94 per attempt against SAR 0.20 for the model, **4.6 times** | Decks use the 4.6 times figure, computed from the worked example |
 | Model prices "Claude 3.5/3.7 Sonnet, GPT-4o class" (Pack B) | Model names are out of date, and Pack A itself says prices must not be embedded | Not used. Decks keep the lesson's illustrative SAR 11 / 45 per million tokens and the rule: check the provider's page, write the date |
 | Arabic STT/TTS SAR 0.15 to 0.30 per minute; OCR $0.002 to 0.005 per page; customs-broker data prep SAR 80 to 120; per-ticket SAR 2.50 to 4.00; remote CS agent SAR 3,500 to 5,500 a month (Pack B) | No source found | Not quoted as market prices. Where useful they appear as "assumptions to replace with your own quotes" |
@@ -44,6 +44,7 @@ This pack merges the two instructor raw-content files supplied by the owner on 1
 ## 3. What was added, by module
 
 ### Module 1.1 · From chatbots to agents (2 h · LO1)
+- Tabby's read-only MCP server for coding agents (owner's follow-up source, checked): a published Saudi example of separating read access from moving money.
 - Course opener: the Academy narrative (Pack A, shortened; Pack B's story offered in the speaker notes), the course question, the seven modules, the deliverable and the five validation gates in one line each.
 - Three demonstrations of capability: conversational assistant, tool-using research agent, bounded invoice agent (Pack A), each tied to the four-property test. Product screenshots (Pack B: coding agent, contract review, WhatsApp booking) are left as instructor-captured placeholders; no product claims are made on the slides.
 - Ten classification examples localised from Pack B, mapped to the **course's four types** (chatbot, automation, workflow with a model step, agent) plus "not suitable". Midjourney was replaced by Pack A's "agent that changes supplier bank details from an email" so the set keeps an unsafe case.
@@ -59,6 +60,7 @@ This pack merges the two instructor raw-content files supplied by the owner on 1
 - Margin gains and leaks (Pack A) merged with the lesson's seven leaks; founder question: what disappears, what moves, what is new.
 
 ### Module 1.3 · Where to look in the Saudi market (3 h · LO2, LO3)
+- Tabby's 2026 shopping survey as a signal (43% use AI in purchase decisions, 30% fully trust it), badged as a company survey.
 - Six sector cards with one candidate wedge each (Pack A), aligned with the six sector briefs.
 - Two additional sectors from Pack B: multi-branch food and beverage (reconciling delivery-app payouts against POS and supplier invoices) and tier-2 contractor compliance paperwork. Marked as hypotheses.
 - Forced wedges from regulation (Pack B, corrected): e-invoicing waves, NPHIES and its coding standards, PDPL.
@@ -87,7 +89,7 @@ This pack merges the two instructor raw-content files supplied by the owner on 1
 ### Module 1.7 · Writing the thesis (1 h · LO5)
 - Arabic sentence starters from Pack A mapped onto the **published** seven sections.
 - Pack B's dental excerpt as a tone model (invented numbers, labelled).
-- Peer review: Pack B's "investment committee audit" (15 minutes per pair: silent read with yellow and red highlights, a three-question stress test, rubric score and one sentence to rewrite). The lesson's four reviewer questions remain the scoring guide.
+- Peer review: Pack B's "investment committee audit" (15 minutes per pair: silent read with yellow and red highlights, a three-question stress test, rubric score and one sentence to rewrite). Lesson 1.7 was updated to match; its four earlier reviewer questions remain the scoring guide.
 - Three-minute pitch timing (Pack A).
 - Red flags (Pack A) as the closing checklist.
 
@@ -105,7 +107,7 @@ This pack merges the two instructor raw-content files supplied by the owner on 1
 | Rubric renamed (risk and accountability 15%, communication 10%) | Pack A 8.3 | The published rubric (35/25/15/15/10: evidence, workflow, agent fit, economics, writing) stays |
 | Minimum of three interviews, and an illustrative workflow when no organisation is available | Pack A 10.3 | The syllabus requires five interviews and validation gate 3 requires observation |
 | Pack A's 12-minute peer review | Pack A 8.4 | The owner's Pack B protocol was preferred; Pack A's "keep, clarify, prove, narrow, next test" prompts are kept as reviewer prompts |
-| Tamara/Tabby as an agent case | Pack B | No public evidence (section 2) |
+| Tamara/Tabby as an agent case | Pack B | No public evidence, including after the owner's follow-up sources (section 2) |
 | Named vendor judgements (WideBot, Botme, Unifonic, Intercom dialect handling) | Pack B | No source; replaced by categories |
 | Market price ranges without a source | Pack B | Course rule: no number without a source |
 | OPLOG customs and cross-border orchestration | Pack B | Not in the source |
@@ -115,7 +117,7 @@ This pack merges the two instructor raw-content files supplied by the owner on 1
 
 1. Is Pack B's opening story your own experience, and the Jeddah dispatcher anecdote? If yes, the badge changes from «سيناريو توضيحي» to «من تجربة المدرب».
 2. Screenshots for Module 1.1 (three agent products in use) are placeholders: capture them yourself so no product claim rests on the slides.
-3. Lesson 1.7 still describes the 20-minute, three-reviewer peer review. The deck uses your investment-committee protocol; the lesson can be aligned in the next commit.
+3. Done 19 Nov: lesson 1.7 now describes the investment-committee audit, matching the deck; the earlier four reviewer questions remain as the scoring guide.
 4. WhatsApp and model prices change quarterly: re-check Meta's rate card and the provider pages before each cohort.
 
 ## Sources checked for this pack
@@ -127,4 +129,5 @@ This pack merges the two instructor raw-content files supplied by the owner on 1
 - Reka et al., "The development of the Saudi Billing System", BMC Health Services Research 25:534 (2025) (ICD-10-AM, ACHI, SBS).
 - WhatsApp Business Platform pricing documentation (per-message pricing from 1 July 2025) and business pages quoting Meta's 1 October 2026 Saudi rates (letsbot.net, chatmaxima.com).
 - Tamara job postings on Greenhouse (KYB and onboarding roles).
+- Tabby, "AI tools" page in the developer documentation (docs.tabby.ai/introduction/ai-tools), and the 2026 shopping survey newsroom page (tabby.sa). Opened 19 Nov 2026.
 - ZATCA wave 25 (SOURCES A54).
