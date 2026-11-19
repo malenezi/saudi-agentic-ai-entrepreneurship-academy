@@ -1,5 +1,25 @@
 # Changelog
 
+## Unreleased (v0.6 in progress)
+
+### Course 1 slides (19 November 2026)
+
+**Added**
+- `03-courses/01-opportunity/slides/`: seven Bayan HTML decks, one per module (141 slides in all), in Arabic with English terms, with speaker notes, print-to-PDF, evidence badges on every example, and six role cards for the Module 1.5 interview lab.
+- `slides/content-pack.md`: how the owner's two instructor raw-content packs were verified and merged, with a table of what was checked, what was corrected and what was not adopted.
+- `slides/src/`: the deck fragments, the shared theme (slate, sandstone gold, off-white; a Sadu-to-graph motif) and `build.py`.
+
+**Changed**
+- Course 1 syllabus and instructor guide point to the slides; slides and role cards are no longer listed as missing.
+
+**Verified in this pass**
+- Klarna figures (company release, Feb 2024) and Intercom's $0.99 per outcome (Intercom help pages).
+- WhatsApp Business pricing has been per message since 1 July 2025; Saudi rates quoted from business pages that cite Meta's 1 October 2026 card.
+- NPHIES claims use ICD-10-AM and the Saudi Billing System (BMC Health Services Research, 2025); initial claim rejection of 15 to 25% (KPMG Middle East, June 2026, via press).
+
+**Not adopted** (details in `content-pack.md`)
+- Tamara/Tabby as an agent case (no public evidence); unsourced market price ranges; named-vendor judgements; a seven-level autonomy ladder, a ten-criterion scorecard, renamed thesis sections and rubric, and a second set of worked-example numbers, all of which conflict with the published course.
+
 ## v0.5 (2026-11-18)
 
 Founder essentials in depth. First part, 18 November 2026: the PDPL worked example, the funding directory and the first tax guide. Second part, 18 November 2026: the establishment walkthrough. Third part, 18 November 2026: Arabic versions (`.ar.md`) of the seven English-only guides and five domain READMEs (domains 02, 03, 04, 06, 11); three were translated by the owner and reviewed, nine by Claude, none lawyer-reviewed. Fourth part, launch audit, 18 November 2026: Arabic version of the regulatory register; READMEs and CITATION.cff moved to v0.5. The funding directory's "to verify" entries move to v0.6; each is labelled as unverified in the directory.
