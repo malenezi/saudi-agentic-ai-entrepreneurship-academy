@@ -2,6 +2,25 @@
 
 ## Unreleased (v0.6 in progress)
 
+### Course 2: Building AI Agents, first content release (19 November 2026)
+
+Built from three drafts supplied by the owner, by the usual rule: verify, keep the published syllabus, enrich.
+
+**Added**
+- `03-courses/02-build/lessons/`: eight lessons in Arabic with English terms (2.1 agent anatomy, 2.2 context engineering in Arabic, 2.3 tools and integrations, 2.4 choosing a model, 2.5 evaluation, 2.6 guardrails and human approval, 2.7 from one agent to several, 2.8 failure analysis and iteration). Each has concepts, an activity, track differences, a quick review and common mistakes.
+- `templates/`: tool contract, model selection memo, architecture decision record, failure and improvement log, readiness checklist, demo video outline. The agent design sheet, Founder Context Template, evaluation template and Human Oversight Matrix stay where they are and are linked, not copied.
+- `examples/worked-example-order-enquiry-agent.md`: one illustrative build across the eight modules for an invented online store (35 cases; 24, 25, 28 then 30 passing; a held-back set; a pilot decision). All figures invented and labelled.
+- `glossary.md`, `rubrics.md` (four levels per criterion, four validation gates, a checkpoint per module), `instructor-guide.md` (schedules, time splits, notes by module, reading list) and `not-adopted.md`.
+- `SOURCES.md`: A80 to A87, B44 to B49, C37 to C38.
+
+**Changed**
+- `03-courses/02-build/syllabus.md`: structure, hours, deliverable and rubric weights unchanged; now links each module to its lesson and adds the validation gates and a list of what is still missing.
+- READMEs, `03-courses/README.md`, ROADMAP and learning pathways now describe Course 2 as having its first content.
+
+**Not adopted** (recorded in `03-courses/02-build/not-adopted.md`): ten learning outcomes, a second autonomy scale, seven error classes, a 30-case distribution that differs from the evaluation template, a tool-count threshold for splitting agents, named model versions, and a lab mapping that did not match the exercises.
+
+**Limits**: no slides or quizzes yet; not piloted; OWASP and Anthropic sources were read through search extracts or secondary summaries, as noted in SOURCES.md.
+
 ### Deck 1.1 demonstration screens (19 November 2026)
 
 **Added**

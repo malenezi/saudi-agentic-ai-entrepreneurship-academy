@@ -2,7 +2,7 @@
 
 <div dir="rtl">
 
-> **الحالة: تُبنى على مراحل.** المقرر 1 صدر محتواه الأول في 17 نوفمبر 2026 ولم يُجرَّب مع فوج بعد. المقررات 2 إلى 4 **مخططات أولية** منشورة للنقاش، وستتغير. الأولوية الحالية لـ[إطار المعرفة بالسوق السعودي](../02-saudi-market-knowledge-framework/README.md)، والمقررات تُبنى فوقه واحداً تلو الآخر.
+> **الحالة: تُبنى على مراحل.** المقرر 1 صدر محتواه الأول في 17 نوفمبر 2026، والمقرر 2 في 19 نوفمبر 2026، ولم يُجرَّب أي منهما مع فوج بعد. المقرران 3 و4 **مخططان أوليان** منشوران للنقاش، وسيتغيران. الأولوية الحالية لـ[إطار المعرفة بالسوق السعودي](../02-saudi-market-knowledge-framework/README.md)، والمقررات تُبنى فوقه واحداً تلو الآخر.
 
 ## المخطط المقترح
 
@@ -11,7 +11,7 @@
 | # | المقرر | الساعات المقترحة | المُخرَج | الحالة |
 |---|---|---|---|---|
 | 1 | [اكتشاف الفرصة الوكيلية](01-opportunity/syllabus.md) | 16 | أطروحة الفرصة | **الإصدار الأول من المحتوى** |
-| 2 | [بناء الوكلاء الأذكياء](02-build/syllabus.md) | 24 | وكيل يعمل ومُقيَّم | مسودة مخطط |
+| 2 | [بناء الوكلاء الأذكياء](02-build/syllabus.md) | 24 | وكيل يعمل ومُقيَّم | **الإصدار الأول من المحتوى** |
 | 3 | [الإطلاق وبناء النموذج التجاري](03-launch/syllabus.md) | 20 | منتج أولي وتجربة مع عميل | مسودة مخطط |
 | 4 | [التوسع والحوكمة](04-scale-and-govern/syllabus.md) | 16 | معمارية تشغيل وعرض استثماري | مسودة مخطط |
 
@@ -25,7 +25,7 @@
 
 ## English
 
-> **Status: built in iterations.** Course 1 has its first content release (17 November 2026): seven lessons, six sector briefs, templates, rubrics and an instructor guide. It has not been piloted with a cohort. Courses 2 to 4 are **draft outlines** published for discussion, and they will change. The current priority is the [Saudi Market Knowledge Framework](../02-saudi-market-knowledge-framework/README.md); the courses will be built on top of it, one at a time.
+> **Status: built in iterations.** Course 1 has its first content release (17 November 2026): seven lessons, six sector briefs, templates, rubrics and an instructor guide. Course 2 has its first content release (19 November 2026): eight lessons, six templates, a worked example, a glossary, rubrics and an instructor guide. Neither has been piloted with a cohort. Courses 3 and 4 are **draft outlines** published for discussion, and they will change. The current priority is the [Saudi Market Knowledge Framework](../02-saudi-market-knowledge-framework/README.md); the courses will be built on top of it, one at a time.
 
 ## Proposed shape
 
