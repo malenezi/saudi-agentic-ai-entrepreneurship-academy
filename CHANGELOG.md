@@ -2,6 +2,14 @@
 
 ## Unreleased (v0.6 in progress)
 
+### Deck 1.1 demonstration screens (19 November 2026)
+
+**Added**
+- Deck 1.1 gains three slides (10 to 12; the deck is now 28 slides, the course 146): one illustrative screen for each of the three demonstrations (conversational assistant, tool-using research agent, bounded invoice-matching agent). The screens are drawn in HTML, use invented data, carry the «شاشة توضيحية» badge and name no product. The assistant's answer text is hidden on purpose so the slide makes no regulatory claim.
+
+**Changed**
+- `slides/src/_template.html`: styles for the screens (`.shot`, `.screen`); all seven decks rebuilt. Slides README and `content-pack.md` no longer describe placeholders; an instructor's own captures stay optional.
+
 ### Course 1 quizzes and practice interview records (19 November 2026)
 
 **Added**

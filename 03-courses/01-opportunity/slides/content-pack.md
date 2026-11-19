@@ -46,7 +46,7 @@ This pack merges the two instructor raw-content files supplied by the owner on 1
 ### Module 1.1 · From chatbots to agents (2 h · LO1)
 - Tabby's read-only MCP server for coding agents (owner's follow-up source, checked): a published Saudi example of separating read access from moving money.
 - Course opener: the Academy narrative (Pack A, shortened; Pack B's story offered in the speaker notes), the course question, the seven modules, the deliverable and the five validation gates in one line each.
-- Three demonstrations of capability: conversational assistant, tool-using research agent, bounded invoice agent (Pack A), each tied to the four-property test. Product screenshots (Pack B: coding agent, contract review, WhatsApp booking) are left as instructor-captured placeholders; no product claims are made on the slides.
+- Three demonstrations of capability: conversational assistant, tool-using research agent, bounded invoice agent (Pack A), each tied to the four-property test. Each demonstration has an illustrative screen drawn in HTML (slides 10 to 12, added 19 November 2026, invented data, labelled «شاشة توضيحية»). Product screenshots (Pack B: coding agent, contract review, WhatsApp booking) are not included; an instructor may show their own captures. No product claims are made on the slides.
 - Ten classification examples localised from Pack B, mapped to the **course's four types** (chatbot, automation, workflow with a model step, agent) plus "not suitable". Midjourney was replaced by Pack A's "agent that changes supplier bank details from an email" so the set keeps an unsafe case.
 - Six questions for any proposed agent (Pack A): allowed, prohibited, needs approval, low confidence, reversible, who stops it. Laid onto the course's four written limits.
 - Two failure scenarios (illustrative): the supplier bank account (Pack A) and the perfume refund (Pack B), analysed with the four limits.
@@ -116,7 +116,7 @@ This pack merges the two instructor raw-content files supplied by the owner on 1
 ## 5. Open items for the owner
 
 1. Is Pack B's opening story your own experience, and the Jeddah dispatcher anecdote? If yes, the badge changes from «سيناريو توضيحي» to «من تجربة المدرب».
-2. Screenshots for Module 1.1 (three agent products in use) are placeholders: capture them yourself so no product claim rests on the slides.
+2. Module 1.1 now carries three illustrative screens (slides 10 to 12). Real screenshots of agent products in use remain optional: capture them yourself so no product claim rests on the slides.
 3. Done 19 Nov: lesson 1.7 now describes the investment-committee audit, matching the deck; the earlier four reviewer questions remain as the scoring guide.
 4. WhatsApp and model prices change quarterly: re-check Meta's rate card and the provider pages before each cohort.
 
