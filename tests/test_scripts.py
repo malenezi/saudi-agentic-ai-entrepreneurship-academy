@@ -114,7 +114,7 @@ class CaseLint(unittest.TestCase):
         import glob
         cases = [p for p in glob.glob(os.path.join(ROOT, "06-case-studies", "ventures", "*.md"))
                  if os.path.basename(p) != "README.md"]
-        self.assertEqual(len(cases), 7)
+        self.assertEqual(len(cases), 12)
         result = run(self.TOOL, *cases, "--sources", self.SOURCES, "--strict")
         self.assertEqual(result.returncode, 0, result.stdout)
 

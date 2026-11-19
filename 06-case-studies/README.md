@@ -42,7 +42,7 @@
 
 ## مسارات شركات
 
-سبع صفحات من نوع آخر: كيف بُنيت شركات تقنية في هذه السوق ومُوّلت وتخارجت. مادة للمقررين 3 و4، وليست أدلة على عائد الوكلاء.
+اثنتا عشرة صفحة من نوع آخر. سبع منها: كيف بُنيت شركات تقنية في هذه السوق ومُوّلت وتخارجت. وخمس: شركات سعودية تبني للوكلاء في 2025 و2026. مادة للمقررات، وليست أدلة على عائد الوكلاء.
 
 | الحالة | الزاوية |
 |---|---|
@@ -53,6 +53,11 @@
 | [Zid](ventures/zid.md) | منصة تمكين: من الاشتراك إلى الشحن والدفع |
 | [Aqar](ventures/aqar.md) | سوق إلكترونية تغيّرها اللائحة |
 | [Tarjama](ventures/tarjama.md) | شركة خدمات تتحول إلى منتج ذكاء اصطناعي |
+| [Wittify.ai](ventures/wittify.md) | وكيل صوتي يبدأ من اللهجة |
+| [DEEP.SA](ventures/deep-sa.md) | بيع البنية التي يحتاجها بنّاؤو الوكلاء |
+| [Lucidya](ventures/lucidya.md) | من برمجيات تعرض إلى وكيل ينفّذ |
+| [MOZN](ventures/mozn.md) | وكيل متخصص لقطاع منظَّم، وقناة توزيع وطنية |
+| [Think](ventures/think.md) | تكلفة الاستدلال ومكان المعالجة |
 
 طريقة القراءة ومستويات المصدر في [فهرس المسارات](ventures/README.md).
 
@@ -82,7 +87,7 @@
 
 Nine real cases summarised from public sources (three Saudi, six international), each tagged with an evidence level: **A** figures published by the company itself, **B** figures published by its vendor, **C** announcement without measurable results. **No case here has been independently verified.** Illustrative scenarios remain invented and must not be cited as market evidence. Claims from earlier drafts that could not be confirmed are listed in [not-adopted.md](not-adopted.md). Every figure is registered in [SOURCES.md](../SOURCES.md).
 
-A separate set, [venture journeys](ventures/README.md), gives seven sourced accounts of how technology companies in this market were built, funded and exited (Foodics, Tamara, Tabby, Careem, Zid, Aqar, Tarjama). They serve Courses 3 and 4 and are not evidence about agents.
+A separate set, [venture journeys](ventures/README.md), gives twelve sourced accounts: seven on how technology companies in this market were built, funded and exited (Foodics, Tamara, Tabby, Careem, Zid, Aqar, Tarjama), and five on Saudi companies building for agents in 2025 and 2026 (Wittify.ai, DEEP.SA, Lucidya, MOZN, Think). They serve Courses 3 and 4 and are not evidence about agents.
 
 There are two kinds of case study in this folder:
 
