@@ -2,6 +2,7 @@
 
 ## Unreleased
 
+- Five venture journeys on Saudi companies building for agents in 2025 and 2026: [Wittify.ai](06-case-studies/ventures/wittify.md), [DEEP.SA](06-case-studies/ventures/deep-sa.md), [Lucidya](06-case-studies/ventures/lucidya.md), [MOZN](06-case-studies/ventures/mozn.md) and [Think](06-case-studies/ventures/think.md), from the owner's drafts and rewritten from open sources (A101 to A105). Funding rounds, investors and dates were confirmed; product names, accuracy figures, awards and accelerator histories that the sources read do not carry are listed as not found (C45), and one round was a pre-seed, not a seed (B54). The drafts' learner exercises are kept as the cases' questions. Twelve venture journeys in total.
 - Funding directory: The Garage moved from pending to partly verified, read from its own site in a browser (A100). Seventeen entries remain pending.
 
 ## v0.7 (2026-11-19)
