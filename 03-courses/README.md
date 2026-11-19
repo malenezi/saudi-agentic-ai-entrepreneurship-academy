@@ -25,7 +25,7 @@
 
 ## English
 
-> **Status: built in iterations.** Course 1 has its first content release (17 November 2026): seven lessons, six sector briefs, templates, rubrics and an instructor guide. Course 2 has its first content release (19 November 2026): eight lessons, six templates, a worked example, a glossary, rubrics and an instructor guide. Neither has been piloted with a cohort. Courses 3 and 4 are **draft outlines** published for discussion, and they will change. The current priority is the [Saudi Market Knowledge Framework](../02-saudi-market-knowledge-framework/README.md); the courses will be built on top of it, one at a time.
+> **Status: built in iterations.** Course 1 has its first content release (17 November 2026): seven lessons, six sector briefs, templates, rubrics and an instructor guide. Course 2 has its first content release (19 November 2026): eight lessons, eight slide decks, eight quizzes, six templates, a worked example, a glossary, rubrics and an instructor guide. Neither has been piloted with a cohort. Courses 3 and 4 are **draft outlines** published for discussion, and they will change. The current priority is the [Saudi Market Knowledge Framework](../02-saudi-market-knowledge-framework/README.md); the courses will be built on top of it, one at a time.
 
 ## Proposed shape
 

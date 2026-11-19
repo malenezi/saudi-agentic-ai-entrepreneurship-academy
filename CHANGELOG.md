@@ -2,6 +2,17 @@
 
 ## Unreleased (v0.6 in progress)
 
+### Course 2 slides and quizzes (19 November 2026)
+
+**Added**
+- `03-courses/02-build/slides/`: eight Bayan HTML decks, one per module (118 slides in all), in Arabic with English terms, with speaker notes on every slide, print-to-PDF and evidence badges on every example. Deck 2.1 also opens the course. Built from the lessons; the decks add no fact or number of their own. Sources in `slides/src/`, built with `src/build.py` (a copy of Course 1's engine).
+- `03-courses/02-build/quizzes/`: eight formative quizzes, one per module (80 questions), built from each lesson's Quick Review and Common Mistakes. Three question types; collapsed answer keys with explanations pointing to the lesson section; answer positions spread across the four letters, and option lengths balanced so the correct answer is not the longest.
+
+**Changed**
+- Every Course 2 lesson now ends with a link to its quiz and to the decks. Syllabus, instructor guide, rubrics, `not-adopted.md`, READMEs and ROADMAP updated. Quizzes are formative: the rubric weights (30/25/20/15/10) and the validation gates are unchanged.
+
+**Limits**: no new facts or sources; not tried with learners.
+
 ### Course 2: Building AI Agents, first content release (19 November 2026)
 
 Built from three drafts supplied by the owner, by the usual rule: verify, keep the published syllabus, enrich.
@@ -19,7 +30,7 @@ Built from three drafts supplied by the owner, by the usual rule: verify, keep t
 
 **Not adopted** (recorded in `03-courses/02-build/not-adopted.md`): ten learning outcomes, a second autonomy scale, seven error classes, a 30-case distribution that differs from the evaluation template, a tool-count threshold for splitting agents, named model versions, and a lab mapping that did not match the exercises.
 
-**Limits**: no slides or quizzes yet; not piloted; OWASP and Anthropic sources were read through search extracts or secondary summaries, as noted in SOURCES.md.
+**Limits**: slides and quizzes followed later the same day (entry above); not piloted; OWASP and Anthropic sources were read through search extracts or secondary summaries, as noted in SOURCES.md.
 
 ### Deck 1.1 demonstration screens (19 November 2026)
 

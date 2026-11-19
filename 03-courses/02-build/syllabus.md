@@ -1,7 +1,7 @@
 # المقرر 2: بناء الوكلاء الأذكياء
 # Course 2: Building AI Agents
 
-> **الإصدار الأول من المحتوى · First content release (19 November 2026).** الدروس الثمانية والقوالب والمثال المحلول والمسرد وسلالم التقدير ودليل المدرب متاحة الآن. لم يُجرَّب المقرر مع فوج بعد، ولا عروض ولا اختبارات له حتى الآن. ملاحظاتك مرحّب بها. · Eight lessons, templates, a worked example, a glossary, rubrics and an instructor guide are available. The course has not been piloted, and it has no slides or quizzes yet. Comments are welcome.
+> **الإصدار الأول من المحتوى · First content release (19 November 2026).** الدروس الثمانية والقوالب والمثال المحلول والمسرد وسلالم التقدير ودليل المدرب متاحة الآن. وأُضيفت في اليوم نفسه عروض الوحدات الثماني ([العروض](slides/README.md)) واختبار قصير لكل وحدة ([الاختبارات](quizzes/README.md)). لم يُجرَّب المقرر مع فوج بعد. ملاحظاتك مرحّب بها. · Eight lessons, templates, a worked example, a glossary, rubrics and an instructor guide are available. Eight slide decks and eight quizzes were added the same day. The course has not been piloted. Comments are welcome.
 
 
 <div dir="rtl">
@@ -36,7 +36,7 @@
 | 2.7 | [من وكيل واحد إلى عدة وكلاء](lessons/2-7-from-one-agent-to-several.md) | 3 | القرار المعماري |
 | 2.8 | [تحليل الإخفاق والتحسين](lessons/2-8-failure-analysis-and-iteration.md) | 3 | السجل والدورتان والعرض |
 
-**مواد المقرر:** [المثال المحلول](examples/worked-example-order-enquiry-agent.md) (متجر وبيانات مختلقة) · [عقد الأداة](templates/tool-contract.md) · [مذكرة اختيار النموذج](templates/model-selection-memo.md) · [سجل القرار المعماري](templates/architecture-decision.md) · [سجل الإخفاق والتحسين](templates/failure-and-improvement-log.md) · [قائمة التحقق قبل الاعتماد](templates/readiness-checklist.md) · [مخطط العرض المصوّر](templates/demo-video-outline.md) · [المسرد](glossary.md) · [سلالم التقدير](rubrics.md) · [دليل المدرب](instructor-guide.md) · [ما لم يُعتمد ولماذا](not-adopted.md)
+**مواد المقرر:** [العروض التقديمية](slides/README.md) · [الاختبارات القصيرة](quizzes/README.md) · [المثال المحلول](examples/worked-example-order-enquiry-agent.md) (متجر وبيانات مختلقة) · [عقد الأداة](templates/tool-contract.md) · [مذكرة اختيار النموذج](templates/model-selection-memo.md) · [سجل القرار المعماري](templates/architecture-decision.md) · [سجل الإخفاق والتحسين](templates/failure-and-improvement-log.md) · [قائمة التحقق قبل الاعتماد](templates/readiness-checklist.md) · [مخطط العرض المصوّر](templates/demo-video-outline.md) · [المسرد](glossary.md) · [سلالم التقدير](rubrics.md) · [دليل المدرب](instructor-guide.md) · [ما لم يُعتمد ولماذا](not-adopted.md)
 
 </div>
 
@@ -126,4 +126,4 @@ Riyada's parallel workflow is [First agent in 30 days](https://github.com/malene
 
 ## What is still missing
 
-Slides, quizzes, step-by-step labs for one low-code orchestrator and one Python framework, runnable reference code, a shared Saudi-dialect test set, a recorded demonstration, and a first cohort's feedback. See the [instructor guide](instructor-guide.md) and [CONTRIBUTING.md](../../CONTRIBUTING.md).
+Step-by-step labs for one low-code orchestrator and one Python framework, runnable reference code, a shared Saudi-dialect test set, a recorded demonstration, and a first cohort's feedback. Slides and quizzes now exist (see [slides](slides/README.md) and [quizzes](quizzes/README.md)). See the [instructor guide](instructor-guide.md) and [CONTRIBUTING.md](../../CONTRIBUTING.md).
