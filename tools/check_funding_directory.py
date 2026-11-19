@@ -23,7 +23,7 @@ import sys
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 FOLDER = os.path.join(ROOT, "02-saudi-market-knowledge-framework", "06-funding-investment")
 FIELDS = ("name", "match", "operator", "type", "status", "official_url", "last_checked", "source")
-STATUSES = ("verified", "partial", "pending")
+STATUSES = ("verified", "partial", "pending", "inactive")
 
 
 def load(index_path):
@@ -63,7 +63,7 @@ def check(index, page, today, max_age):
             age = (today - checked).days
             if age < 0:
                 errors.append("%s: last_checked is in the future" % name)
-            elif entry["status"] != "pending" and age > max_age:
+            elif entry["status"] in ("verified", "partial") and age > max_age:
                 stale.append("%s: page last opened %d days ago" % (name, age))
     return errors, stale
 
@@ -84,8 +84,8 @@ def main(argv=None):
         if entry.get("status") in counts:
             counts[entry["status"]] += 1
 
-    print("Funding directory: %d entries (%d verified, %d partial, %d pending)"
-          % (len(index["entries"]), counts["verified"], counts["partial"], counts["pending"]))
+    print("Funding directory: %d entries (%d verified, %d partial, %d pending, %d inactive)"
+          % (len(index["entries"]), counts["verified"], counts["partial"], counts["pending"], counts["inactive"]))
     for message in errors:
         print("ERROR  " + message)
     for message in stale:
