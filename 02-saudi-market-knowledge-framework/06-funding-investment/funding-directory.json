@@ -1,5 +1,5 @@
 {
-  "note": "Machine-readable index of funding-directory.md. It adds no fact that the page does not state. status: verified = official page opened on last_checked; partial = text read from the operator's site but not the full page; pending = name only, do not rely on it. No entry says applications are open.",
+  "note": "Machine-readable index of funding-directory.md. It adds no fact that the page does not state. status: verified = official page opened on last_checked; partial = text read from the operator's site but not the full page; pending = name only, do not rely on it; inactive = the operator's own page marks it not active. No entry says applications are open.",
   "page": "funding-directory.md",
   "entries": [
     {
@@ -47,30 +47,30 @@
       "match": "MVPLAB",
       "operator": "NTDP",
       "type": "grant and incubation",
-      "status": "partial",
-      "official_url": null,
-      "last_checked": "2026-11-18",
-      "source": "A57"
+      "status": "verified",
+      "official_url": "https://ntdp.mcit.gov.sa/mvplab",
+      "last_checked": "2026-11-19",
+      "source": "A106"
     },
     {
       "name": "Tech Crew",
       "match": "Tech Crew",
       "operator": "NTDP",
       "type": "salary subsidy",
-      "status": "partial",
-      "official_url": null,
-      "last_checked": "2026-11-18",
-      "source": "A57"
+      "status": "verified",
+      "official_url": "https://ntdp.mcit.gov.sa/techcrew",
+      "last_checked": "2026-11-19",
+      "source": "A106"
     },
     {
       "name": "Boost",
       "match": "Boost",
       "operator": "NTDP",
       "type": "founder stipend",
-      "status": "partial",
-      "official_url": null,
-      "last_checked": "2026-11-18",
-      "source": "A57"
+      "status": "verified",
+      "official_url": "https://ntdp.mcit.gov.sa/boost",
+      "last_checked": "2026-11-19",
+      "source": "A106"
     },
     {
       "name": "TAQADAM accelerator",
@@ -116,21 +116,11 @@
       "name": "+Transform",
       "match": "+Transform",
       "operator": "NTDP",
-      "type": "support",
-      "status": "pending",
-      "official_url": null,
-      "last_checked": null,
-      "source": null
-    },
-    {
-      "name": "Venture Debt, Fuel, Lendtech, loan guarantee",
-      "match": "Venture Debt",
-      "operator": "NTDP",
-      "type": "financing",
-      "status": "pending",
-      "official_url": null,
-      "last_checked": null,
-      "source": null
+      "type": "cost subsidy for cloud and GPU adoption",
+      "status": "verified",
+      "official_url": "https://ntdp.mcit.gov.sa/transform",
+      "last_checked": "2026-11-19",
+      "source": "A106"
     },
     {
       "name": "Entrepreneur financing products",
@@ -177,16 +167,6 @@
       "match": "Wa'ed Ventures",
       "operator": "Aramco",
       "type": "equity investment",
-      "status": "pending",
-      "official_url": null,
-      "last_checked": null,
-      "source": null
-    },
-    {
-      "name": "Flat6Labs",
-      "match": "Flat6Labs",
-      "operator": "Flat6Labs",
-      "type": "equity acceleration",
       "status": "pending",
       "official_url": null,
       "last_checked": null,
@@ -301,6 +281,46 @@
       "official_url": null,
       "last_checked": null,
       "source": "C40"
+    },
+    {
+      "name": "Lendtech",
+      "match": "Lendtech",
+      "operator": "NTDP",
+      "type": "loan through the Social Development Bank",
+      "status": "verified",
+      "official_url": "https://ntdp.mcit.gov.sa/lendtech",
+      "last_checked": "2026-11-19",
+      "source": "A106"
+    },
+    {
+      "name": "Fuel",
+      "match": "Fuel",
+      "operator": "NTDP",
+      "type": "deep-tech financing support",
+      "status": "partial",
+      "official_url": "https://ntdp.mcit.gov.sa/fuel",
+      "last_checked": "2026-11-19",
+      "source": "A106"
+    },
+    {
+      "name": "Loan Guarantee and Venture Debt",
+      "match": "ضمان القروض · Venture Debt",
+      "operator": "NTDP",
+      "type": "financing",
+      "status": "pending",
+      "official_url": null,
+      "last_checked": null,
+      "source": null
+    },
+    {
+      "name": "Flat6Labs (Saudi Arabia)",
+      "match": "Flat6Labs في المملكة",
+      "operator": "Flat6Labs",
+      "type": "equity acceleration",
+      "status": "inactive",
+      "official_url": "https://flat6labs.com/Location/ksa/",
+      "last_checked": "2026-11-19",
+      "source": "A107"
     }
   ]
 }
