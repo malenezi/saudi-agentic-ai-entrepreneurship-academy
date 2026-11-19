@@ -12,7 +12,7 @@ If you find a secret, real personal data, or a flaw in one of the scripts that c
 
 ## Scope · النطاق
 
-- The scripts in this repository are teaching tools. They use the Python standard library only, read local files, write local files, and make no network calls.
+- The scripts in this repository are teaching tools. They use the Python standard library only, read local files, write local files, and make no network calls. The one exception is `tools/check_external_links.py`, which opens the links already written in the Markdown files and sends nothing else; it runs in its own workflow and is not part of `make check`.
 - All data in the repository is synthetic. A real name, number or record is a bug: report it.
 - Content errors (an outdated rule, a wrong figure, a broken link) are not security issues. Open a normal issue with the [resource update](.github/ISSUE_TEMPLATE/resource-update.md) template.
 
