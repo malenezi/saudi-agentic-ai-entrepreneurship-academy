@@ -66,6 +66,20 @@ class LandingPage(unittest.TestCase):
                 self.assertTrue(os.path.exists(os.path.join(ROOT, href)), href)
 
 
+class Workbook(unittest.TestCase):
+    def test_every_repository_link_in_the_workbook_exists(self):
+        page = read(os.path.join(ROOT, "workbook", "index.html"))
+        paths = re.findall(r'"(0\d-[\w./-]+\.md)"', page)
+        self.assertGreaterEqual(len(paths), 12)
+        for path in paths:
+            self.assertTrue(os.path.exists(os.path.join(ROOT, path)), path)
+
+    def test_the_workbook_keeps_data_in_the_browser(self):
+        page = read(os.path.join(ROOT, "workbook", "index.html"))
+        for call in ("fetch(", "XMLHttpRequest", "sendBeacon", "<form"):
+            self.assertNotIn(call, page)
+
+
 class Quizzes(unittest.TestCase):
     def test_every_question_has_four_options_and_a_valid_key(self):
         quizzes = sorted(glob.glob(os.path.join(COURSES, "*", "quizzes", "*-quiz.md")))
