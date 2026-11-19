@@ -1,7 +1,7 @@
 # المقرر 2: بناء الوكلاء الأذكياء
 # Course 2: Building AI Agents
 
-> **مسودة مخطط · Draft outline.** هذا المقرر لم يُبنَ بعد. المحتوى التفصيلي يُطوَّر على مراحل، والمخطط قابل للتغيير. ملاحظاتك واقتراحاتك مرحّب بها. · This course is not built yet. Detailed content will be developed in later iterations and this outline may change. Comments and suggestions are welcome.
+> **الإصدار الأول من المحتوى · First content release (19 November 2026).** الدروس الثمانية والقوالب والمثال المحلول والمسرد وسلالم التقدير ودليل المدرب متاحة الآن. لم يُجرَّب المقرر مع فوج بعد، ولا عروض ولا اختبارات له حتى الآن. ملاحظاتك مرحّب بها. · Eight lessons, templates, a worked example, a glossary, rubrics and an instructor guide are available. The course has not been piloted, and it has no slides or quizzes yet. Comments are welcome.
 
 
 <div dir="rtl">
@@ -21,6 +21,23 @@
 4. يضع بوابات الموافقة البشرية وحدود الصلاحيات خارج النموذج.
 5. يوثّق الإخفاقات ويحسّن الوكيل بناءً عليها.
 
+**القاعدة التي تحكمه:** وكيل صغير محدود الصلاحيات ينجز مهمة حقيقية بجودة مقاسة ويعرف متى يتوقف، أفضل من عرض مبهر لوكيل واسع الصلاحيات لا يمكن إثبات موثوقيته.
+
+## ابدأ من هنا
+
+| الوحدة | الدرس | الساعات | المخرج |
+|---|---|---|---|
+| 2.1 | [تشريح الوكيل](lessons/2-1-agent-anatomy.md) | 2 | ورقة التصميم والقرار |
+| 2.2 | [هندسة السياق بالعربية](lessons/2-2-context-engineering-in-arabic.md) | 3 | التعليمات وقالب السياق |
+| 2.3 | [الأدوات والتكاملات](lessons/2-3-tools-and-integrations.md) | 4 | أداتان وعقداهما |
+| 2.4 | [اختيار النموذج](lessons/2-4-choosing-a-model.md) | 2 | مذكرة الاختيار |
+| 2.5 | [التقييم](lessons/2-5-evaluation.md) | 4 | مجموعة التقييم وخط الأساس |
+| 2.6 | [ضوابط الحماية والموافقة البشرية](lessons/2-6-guardrails-and-human-approval.md) | 3 | المصفوفة والبوابات |
+| 2.7 | [من وكيل واحد إلى عدة وكلاء](lessons/2-7-from-one-agent-to-several.md) | 3 | القرار المعماري |
+| 2.8 | [تحليل الإخفاق والتحسين](lessons/2-8-failure-analysis-and-iteration.md) | 3 | السجل والدورتان والعرض |
+
+**مواد المقرر:** [المثال المحلول](examples/worked-example-order-enquiry-agent.md) (متجر وبيانات مختلقة) · [عقد الأداة](templates/tool-contract.md) · [مذكرة اختيار النموذج](templates/model-selection-memo.md) · [سجل القرار المعماري](templates/architecture-decision.md) · [سجل الإخفاق والتحسين](templates/failure-and-improvement-log.md) · [قائمة التحقق قبل الاعتماد](templates/readiness-checklist.md) · [مخطط العرض المصوّر](templates/demo-video-outline.md) · [المسرد](glossary.md) · [سلالم التقدير](rubrics.md) · [دليل المدرب](instructor-guide.md) · [ما لم يُعتمد ولماذا](not-adopted.md)
+
 </div>
 
 ---
@@ -29,14 +46,14 @@
 
 | # | Module | Hours | Core content | Activity |
 |---|---|---|---|---|
-| 2.1 | Agent anatomy | 2 | Goal, instructions, tools, knowledge, memory, limits. The loop: perceive, plan, act, check. Workflows versus agents and when a plain workflow is the better choice | Turn the Course 1 workflow map into an agent design using the [AI MVP Blueprint](../../04-entrepreneur-toolkit/07-ai-mvp-blueprint.md) |
-| 2.2 | Context engineering in Arabic | 3 | Writing instructions and business context in Arabic. Structured outputs. Giving the agent the business's own knowledge. Handling MSA, Saudi dialect and mixed Arabic-English input | Write agent instructions and fill the [Founder Context Template](../../04-entrepreneur-toolkit/10-founder-context-template.md) |
-| 2.3 | Tools and integrations | 4 | Tool calling. Connecting to email, spreadsheets, CRM and messaging. Model Context Protocol in outline. Saudi-specific handling: Hijri and Gregorian dates, SAR and VAT, national address formats, Arabic names | Connect the agent to two real tools |
-| 2.4 | Choosing a model | 2 | Hosted APIs versus self-hosted open-weight models. Arabic capability, cost, latency, context length, licence and data location. Reading a model card and its licence | Compare two models on ten of your own cases using the [Arabic model guide](../../05-agentic-ai-lab/arabic-models.md) |
-| 2.5 | Evaluation | 4 | Building a test set from real cases. Pass criteria. Measuring success rate, cost and time per task. Regression testing after every change | Build a test set of at least 30 cases with the [Evaluation Template](../../05-agentic-ai-lab/evaluation/eval-template.md) |
-| 2.6 | Guardrails and human approval | 3 | Deterministic authorization: allow-lists, spending limits, approval gates, confirmation before irreversible actions. Prompt injection in outline. What to log | Complete the [Human Oversight Matrix](../../02-saudi-market-knowledge-framework/compliance-toolkit/human-oversight-matrix.md) and implement its gates |
-| 2.7 | From one agent to several | 3 | When to split: specialist agents, a coordinator, sequential pipelines. Handoffs and shared state. Why more agents means more cost and more failure points | Decide, with reasons, whether your product needs more than one agent |
-| 2.8 | Failure analysis and iteration | 3 | Reading failure logs. Classifying errors: understanding, knowledge, tool, policy. Fixing the cause | Two improvement cycles; record the before and after success rate |
+| 2.1 | [Agent anatomy](lessons/2-1-agent-anatomy.md) | 2 | Goal, instructions, tools, knowledge, memory, limits. The loop: perceive, plan, act, check. Workflows versus agents and when a plain workflow is the better choice | Turn the Course 1 workflow map into an agent design using the [AI MVP Blueprint](../../04-entrepreneur-toolkit/07-ai-mvp-blueprint.md) |
+| 2.2 | [Context engineering in Arabic](lessons/2-2-context-engineering-in-arabic.md) | 3 | Writing instructions and business context in Arabic. Structured outputs. Giving the agent the business's own knowledge. Handling MSA, Saudi dialect and mixed Arabic-English input | Write agent instructions and fill the [Founder Context Template](../../04-entrepreneur-toolkit/10-founder-context-template.md) |
+| 2.3 | [Tools and integrations](lessons/2-3-tools-and-integrations.md) | 4 | Tool calling. Connecting to email, spreadsheets, CRM and messaging. Model Context Protocol in outline. Saudi-specific handling: Hijri and Gregorian dates, SAR and VAT, national address formats, Arabic names | Connect the agent to two real tools |
+| 2.4 | [Choosing a model](lessons/2-4-choosing-a-model.md) | 2 | Hosted APIs versus self-hosted open-weight models. Arabic capability, cost, latency, context length, licence and data location. Reading a model card and its licence | Compare two models on ten of your own cases using the [Arabic model guide](../../05-agentic-ai-lab/arabic-models.md) |
+| 2.5 | [Evaluation](lessons/2-5-evaluation.md) | 4 | Building a test set from real cases. Pass criteria. Measuring success rate, cost and time per task. Regression testing after every change | Build a test set of at least 30 cases with the [Evaluation Template](../../05-agentic-ai-lab/evaluation/eval-template.md) |
+| 2.6 | [Guardrails and human approval](lessons/2-6-guardrails-and-human-approval.md) | 3 | Deterministic authorization: allow-lists, spending limits, approval gates, confirmation before irreversible actions. Prompt injection in outline. What to log | Complete the [Human Oversight Matrix](../../02-saudi-market-knowledge-framework/compliance-toolkit/human-oversight-matrix.md) and implement its gates |
+| 2.7 | [From one agent to several](lessons/2-7-from-one-agent-to-several.md) | 3 | When to split: specialist agents, a coordinator, sequential pipelines. Handoffs and shared state. Why more agents means more cost and more failure points | Decide, with reasons, whether your product needs more than one agent |
+| 2.8 | [Failure analysis and iteration](lessons/2-8-failure-analysis-and-iteration.md) | 3 | Reading failure logs. Classifying errors: understanding, knowledge, tool, policy. Fixing the cause | Two improvement cycles; record the before and after success rate |
 
 ## Track differences
 
@@ -60,7 +77,16 @@ The academy is tool-neutral. Tools are named as examples; any equivalent that me
 5. **Failure log** covering two improvement cycles.
 6. **Demo video**, three minutes, in Arabic.
 
-Starting points: the five [agent templates](../../05-agentic-ai-lab/agent-templates/README.md).
+Starting points: the five [agent templates](../../05-agentic-ai-lab/agent-templates/README.md). A complete illustrative build is in the [worked example](examples/worked-example-order-enquiry-agent.md). The evaluation set follows the [evaluation template](../../05-agentic-ai-lab/evaluation/eval-template.md), whose category minimums add up to 35 cases. The failure log covers the two improvement cycles and lists what was not fixed. Check the whole submission against the [readiness checklist](templates/readiness-checklist.md).
+
+## Validation gates
+
+A project is graded only if all four are "yes". Otherwise it goes back.
+
+1. No sensitive action runs without approval.
+2. No unauthorised data is disclosed.
+3. There is a test that another person can re-run and check.
+4. No material failure is hidden.
 
 ## Rubric
 
@@ -71,6 +97,8 @@ Starting points: the five [agent templates](../../05-agentic-ai-lab/agent-templa
 | Guardrails | 20% | No irreversible or financial action without a gate; limits are enforced outside the model |
 | Improvement | 15% | Failure log shows causes found and fixed; success rate moved |
 | Arabic quality | 10% | Output reads naturally to a Saudi customer |
+
+Four performance levels per criterion, the validation gates and a checkpoint for each module are in [rubrics.md](rubrics.md).
 
 ## Common mistakes
 
@@ -95,3 +123,7 @@ Separate repositories by the same author; see [companion repositories](../../07-
 | 2.6 | The Academy's [agent security assessment](../../02-saudi-market-knowledge-framework/compliance-toolkit/agent-security-assessment.md) with Riyada's approval matrix | [R7](../../05-agentic-ai-lab/exercises/r7-agent-red-teaming.md): attack your own agent in a test environment |
 
 Riyada's parallel workflow is [First agent in 30 days](https://github.com/malenezi/riyada/blob/main/workflows/04-first-agent-in-30-days.en.md).
+
+## What is still missing
+
+Slides, quizzes, step-by-step labs for one low-code orchestrator and one Python framework, runnable reference code, a shared Saudi-dialect test set, a recorded demonstration, and a first cohort's feedback. See the [instructor guide](instructor-guide.md) and [CONTRIBUTING.md](../../CONTRIBUTING.md).
