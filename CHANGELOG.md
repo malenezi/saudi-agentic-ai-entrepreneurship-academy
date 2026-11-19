@@ -2,7 +2,7 @@
 
 ## Unreleased
 
-Nothing yet.
+- Funding directory: The Garage moved from pending to partly verified, read from its own site in a browser (A100). Seventeen entries remain pending.
 
 ## v0.7 (2026-11-19)
 
