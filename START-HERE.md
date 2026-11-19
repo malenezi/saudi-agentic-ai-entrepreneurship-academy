@@ -43,7 +43,7 @@
 
 **هل أستطيع تدريسها في جامعتي أو حاضنتي؟** نعم، وفق الرخصة. نطلب ثلاثة أشياء: نسبتها إلى الأكاديمية، والإبقاء على قاعدة «لا رقم بلا مصدر»، ومشاركة نتائج مجهولة الهوية. التفاصيل في [المجتمع](08-community/README.md).
 
-**كيف أشاهد العروض التقديمية؟** العروض ملفات HTML، وGitHub يعرض شيفرتها لا العرض نفسه. نزّل المستودع (Code ثم Download ZIP) وافتح ملف `index.html` في المتصفح: صفحة واحدة تجمع العروض الخمسة عشر. وإن كانت صفحة المشروع على GitHub Pages مفعّلة فالصفحة نفسها تُفتح من هناك دون تنزيل.
+**كيف أشاهد العروض التقديمية؟** افتح [صفحة العروض](https://malenezi.github.io/saudi-agentic-ai-entrepreneurship-academy/): صفحة واحدة تجمع العروض الخمسة عشر وتعمل في المتصفح مباشرة. (روابط ملفات HTML داخل GitHub تعرض الشيفرة لا العرض. وللعمل دون اتصال: نزّل المستودع وافتح ملف `index.html`.)
 
 **هل أعتمد على ما فيها في قرار نظامي أو ضريبي؟** لا. استخدمها لتعرف ما تسأل عنه، ثم اسأل محامياً أو مستشاراً مرخّصاً. كل معلومة خارجية لها رقم في [سجل المصادر](SOURCES.md) مع تاريخ التحقق وحدّه.
 
@@ -67,4 +67,4 @@ One page for a first visit. Details are in the [English README](README.en.md).
 
 **Ready today.** Courses 1 and 2 (lessons, slide decks, quizzes, templates, rubrics, instructor guides), the twelve-domain knowledge framework (five domains with published guides), the Founder Toolkit, a lab with fourteen exercises, and nine case studies from public sources. **Not ready.** Courses 3 and 4 are outlines; nothing has been piloted with a cohort; there is no legal or tax review yet. See the [roadmap](ROADMAP.md).
 
-**Frequently asked.** It is free (content CC BY 4.0, code Apache-2.0). It issues no certificates. You do not need to code: every course has a low-code core track. You may teach it under the licence terms. The slide decks are HTML files, which GitHub shows as source: download the repository and open `index.html`, a single page that lists all fifteen decks, or open the project's GitHub Pages site if it is enabled. To report an error, open an issue; one line is enough. There is no wiki on purpose: everything here goes through the link checker, the source register and the changelog, and this page does the wiki's job.
+**Frequently asked.** It is free (content CC BY 4.0, code Apache-2.0). It issues no certificates. You do not need to code: every course has a low-code core track. You may teach it under the licence terms. The slide decks open in the browser from the [slide gallery](https://malenezi.github.io/saudi-agentic-ai-entrepreneurship-academy/), a single page that lists all fifteen; inside GitHub an HTML file shows as source, and offline you can download the repository and open `index.html`. To report an error, open an issue; one line is enough. There is no wiki on purpose: everything here goes through the link checker, the source register and the changelog, and this page does the wiki's job.

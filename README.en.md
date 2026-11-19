@@ -10,7 +10,7 @@ An open-source, Arabic-first reference for anyone who wants to start, run or gro
 
 **Status:** v0.6 ([changelog](CHANGELOG.md) · [roadmap](ROADMAP.md)) · Last reviewed: 19 November 2026
 
-**First visit?** [Start here](START-HERE.md#english): one page that points you to your route and answers the common questions.
+**First visit?** [Start here](START-HERE.md#english): one page that points you to your route and answers the common questions. · **Slide decks:** [open them in the browser](https://malenezi.github.io/saudi-agentic-ai-entrepreneurship-academy/)
 
 ---
 
