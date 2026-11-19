@@ -1,0 +1,306 @@
+{
+  "note": "Machine-readable index of funding-directory.md. It adds no fact that the page does not state. status: verified = official page opened on last_checked; partial = text read from the operator's site but not the full page; pending = name only, do not rely on it. No entry says applications are open.",
+  "page": "funding-directory.md",
+  "entries": [
+    {
+      "name": "Estrdad (second edition)",
+      "match": "استرداد",
+      "operator": "Monsha'at",
+      "type": "fee refund",
+      "status": "verified",
+      "official_url": "https://monshaat.gov.sa/en/node/360739",
+      "last_checked": "2026-11-18",
+      "source": "A58"
+    },
+    {
+      "name": "CODE digital entrepreneurship centre",
+      "match": "كود",
+      "operator": "Ministry of Communications and Information Technology",
+      "type": "incubation and acceleration",
+      "status": "verified",
+      "official_url": "https://mcit.gov.sa/code",
+      "last_checked": "2026-11-18",
+      "source": "A59"
+    },
+    {
+      "name": "Kafalah financing guarantee / SME Bank",
+      "match": "كفالة",
+      "operator": "SME Bank",
+      "type": "guarantee",
+      "status": "verified",
+      "official_url": "https://www.smebank.gov.sa/ar",
+      "last_checked": "2026-11-18",
+      "source": "A60"
+    },
+    {
+      "name": "Monsha'at support programmes catalogue",
+      "match": "دليل برامج وخدمات الدعم لدى منشآت",
+      "operator": "Monsha'at",
+      "type": "index of programmes",
+      "status": "verified",
+      "official_url": "https://monshaat.gov.sa/en/catalyst-listing?page=0",
+      "last_checked": "2026-11-18",
+      "source": "A58"
+    },
+    {
+      "name": "MVPLAB",
+      "match": "MVPLAB",
+      "operator": "NTDP",
+      "type": "grant and incubation",
+      "status": "partial",
+      "official_url": null,
+      "last_checked": "2026-11-18",
+      "source": "A57"
+    },
+    {
+      "name": "Tech Crew",
+      "match": "Tech Crew",
+      "operator": "NTDP",
+      "type": "salary subsidy",
+      "status": "partial",
+      "official_url": null,
+      "last_checked": "2026-11-18",
+      "source": "A57"
+    },
+    {
+      "name": "Boost",
+      "match": "Boost",
+      "operator": "NTDP",
+      "type": "founder stipend",
+      "status": "partial",
+      "official_url": null,
+      "last_checked": "2026-11-18",
+      "source": "A57"
+    },
+    {
+      "name": "TAQADAM accelerator",
+      "match": "TAQADAM",
+      "operator": "KAUST with Saudi Awwal Bank",
+      "type": "acceleration",
+      "status": "partial",
+      "official_url": null,
+      "last_checked": "2026-11-18",
+      "source": "A61"
+    },
+    {
+      "name": "AI Incubator",
+      "match": "حاضنة الذكاء الاصطناعي",
+      "operator": "Monsha'at with NTDP",
+      "type": "incubation",
+      "status": "partial",
+      "official_url": "https://monshaat.gov.sa/en/node/485041",
+      "last_checked": "2026-11-16",
+      "source": "A3"
+    },
+    {
+      "name": "Fintech regulatory sandbox",
+      "match": "البيئة التجريبية التنظيمية للتقنية المالية",
+      "operator": "Saudi Central Bank",
+      "type": "sandbox",
+      "status": "partial",
+      "official_url": null,
+      "last_checked": "2026-11-18",
+      "source": "A62"
+    },
+    {
+      "name": "Emerging technologies regulatory sandbox",
+      "match": "البيئة التنظيمية التجريبية للتقنيات الناشئة",
+      "operator": "Communications, Space and Technology Commission",
+      "type": "sandbox",
+      "status": "partial",
+      "official_url": null,
+      "last_checked": "2026-11-16",
+      "source": "A15"
+    },
+    {
+      "name": "+Transform",
+      "match": "+Transform",
+      "operator": "NTDP",
+      "type": "support",
+      "status": "pending",
+      "official_url": null,
+      "last_checked": null,
+      "source": null
+    },
+    {
+      "name": "Venture Debt, Fuel, Lendtech, loan guarantee",
+      "match": "Venture Debt",
+      "operator": "NTDP",
+      "type": "financing",
+      "status": "pending",
+      "official_url": null,
+      "last_checked": null,
+      "source": null
+    },
+    {
+      "name": "Entrepreneur financing products",
+      "match": "بنك التنمية الاجتماعية",
+      "operator": "Social Development Bank",
+      "type": "loan",
+      "status": "pending",
+      "official_url": null,
+      "last_checked": null,
+      "source": null
+    },
+    {
+      "name": "The Garage",
+      "match": "The Garage",
+      "operator": "as reported",
+      "type": "incubation",
+      "status": "pending",
+      "official_url": null,
+      "last_checked": null,
+      "source": null
+    },
+    {
+      "name": "Sanabil 500 MENA Seed Accelerator",
+      "match": "Sanabil 500",
+      "operator": "Sanabil Investments and 500 Global",
+      "type": "equity acceleration",
+      "status": "pending",
+      "official_url": null,
+      "last_checked": null,
+      "source": null
+    },
+    {
+      "name": "Misk Accelerator",
+      "match": "Misk Accelerator",
+      "operator": "Misk Foundation",
+      "type": "acceleration",
+      "status": "pending",
+      "official_url": null,
+      "last_checked": null,
+      "source": null
+    },
+    {
+      "name": "Wa'ed Ventures",
+      "match": "Wa'ed Ventures",
+      "operator": "Aramco",
+      "type": "equity investment",
+      "status": "pending",
+      "official_url": null,
+      "last_checked": null,
+      "source": null
+    },
+    {
+      "name": "Flat6Labs",
+      "match": "Flat6Labs",
+      "operator": "Flat6Labs",
+      "type": "equity acceleration",
+      "status": "pending",
+      "official_url": null,
+      "last_checked": null,
+      "source": null
+    },
+    {
+      "name": "University accelerators",
+      "match": "مسرّعات الجامعات",
+      "operator": "Saudi universities",
+      "type": "acceleration",
+      "status": "pending",
+      "official_url": null,
+      "last_checked": null,
+      "source": null
+    },
+    {
+      "name": "9/10ths",
+      "match": "9/10ths",
+      "operator": "as named",
+      "type": "incubation or acceleration",
+      "status": "pending",
+      "official_url": null,
+      "last_checked": null,
+      "source": "C40"
+    },
+    {
+      "name": "Riyadh Valley Company",
+      "match": "Riyadh Valley Company",
+      "operator": "as named",
+      "type": "incubation or acceleration",
+      "status": "pending",
+      "official_url": null,
+      "last_checked": null,
+      "source": "C40"
+    },
+    {
+      "name": "Business Incubators and Accelerators Company",
+      "match": "Business Incubators and Accelerators Company",
+      "operator": "as named",
+      "type": "incubation or acceleration",
+      "status": "pending",
+      "official_url": null,
+      "last_checked": null,
+      "source": "C40"
+    },
+    {
+      "name": "Badir",
+      "match": "Badir",
+      "operator": "as named",
+      "type": "incubation or acceleration",
+      "status": "pending",
+      "official_url": null,
+      "last_checked": null,
+      "source": "C40"
+    },
+    {
+      "name": "Falak Business Hub",
+      "match": "Falak Business Hub",
+      "operator": "as named",
+      "type": "incubation or acceleration",
+      "status": "pending",
+      "official_url": null,
+      "last_checked": null,
+      "source": "C40"
+    },
+    {
+      "name": "Nomow",
+      "match": "Nomow",
+      "operator": "as named",
+      "type": "incubation or acceleration",
+      "status": "pending",
+      "official_url": null,
+      "last_checked": null,
+      "source": "C40"
+    },
+    {
+      "name": "SURE International Technology",
+      "match": "SURE International Technology",
+      "operator": "as named",
+      "type": "incubation or acceleration",
+      "status": "pending",
+      "official_url": null,
+      "last_checked": null,
+      "source": "C40"
+    },
+    {
+      "name": "Startups House",
+      "match": "Startups House",
+      "operator": "as named",
+      "type": "incubation or acceleration",
+      "status": "pending",
+      "official_url": null,
+      "last_checked": null,
+      "source": "C40"
+    },
+    {
+      "name": "Wadi Makkah",
+      "match": "Wadi Makkah",
+      "operator": "as named",
+      "type": "incubation or acceleration",
+      "status": "pending",
+      "official_url": null,
+      "last_checked": null,
+      "source": "C40"
+    },
+    {
+      "name": "KAUST Innovation Fund",
+      "match": "KAUST Innovation Fund",
+      "operator": "as named",
+      "type": "incubation or acceleration",
+      "status": "pending",
+      "official_url": null,
+      "last_checked": null,
+      "source": "C40"
+    }
+  ]
+}

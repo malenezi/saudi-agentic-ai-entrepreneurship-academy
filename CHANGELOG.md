@@ -2,7 +2,21 @@
 
 ## Unreleased
 
-Nothing yet.
+Material from the author's earlier university course on software entrepreneurship (SE495, 2024), reviewed against what the Academy already has. Only what filled a gap was brought in, and every company fact was re-sourced.
+
+**Added**
+- Course 3, Module 3.1, [From prototype to MVP](03-courses/03-launch/lessons/3-1-from-prototype-to-mvp.md), with a ten-question quiz: the three rungs and the question each answers, what an agentic MVP must have, a six-item gate, a narrow first deployment and five weekly numbers. First lesson of Course 3; the other modules remain an outline.
+- Course 4, Module 4.5, [Growth paths, funding and exits](03-courses/04-scale-and-govern/lessons/4-5-growth-paths-and-funding.md), with a quiz: choosing a path from the next milestone, who funds and what each expects, the six things an informed investor checks in an agentic product, and exits. It points to the funding guide and directory instead of repeating them.
+- Founder Toolkit 11, [First Ten Customers Plan](04-entrepreneur-toolkit/11-first-ten-customers-plan.md), with `first_customers_funnel.py`; and 12, [Agentic Due-Diligence Pack](04-entrepreneur-toolkit/12-agentic-due-diligence-pack.md), with `round_dilution.py`. The general data room and round terms stay in Riyada and are linked, not copied.
+- [Venture journeys](06-case-studies/ventures/README.md): seven sourced accounts (Foodics, Tamara, Tabby, Careem, Zid, Aqar, Tarjama) of how companies in this market were built, funded and exited. They are not evidence about agents and say so.
+- `funding-directory.json` and `tools/check_funding_directory.py`: a machine-readable index of the funding directory, checked against the page in CI, with a warning for entries whose official page was last opened more than 90 days ago. The weekly link workflow runs it.
+- Sources A88 to A94, corrections B50 to B53, unverified C39 and C40. Ten incubator names from an SE495 slide are listed as pending in the funding directory.
+- Nine tests (24 for scripts in total): the two calculators and the funding directory index.
+
+**Not brought in, and why**
+- The SE495 slide decks: generic, and Units 1 to 3 repeat Course 1.
+- The SE495 case texts: unsourced, with factual errors in four of them (recorded in `06-case-studies/not-adopted.md`).
+- DevOps, containers, serverless and interface-design slides: outside the Academy's scope and tool-specific.
 
 ## v0.6 (2026-11-19)
 

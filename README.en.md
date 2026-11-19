@@ -31,11 +31,11 @@ Details in [CONTRIBUTING.md](CONTRIBUTING.md).
 | Section | Contents | Status |
 |---|---|---|
 | [**Saudi Market Knowledge Framework**](02-saudi-market-knowledge-framework/README.md) | Twelve domains: establishment, AI regulation, data, cybersecurity, tax, funding, IP, e-commerce, employment, sectors, market intelligence, government procurement. With a regulatory register, a compliance checklist and a toolkit | **Available and growing** |
-| [Founder Toolkit](04-entrepreneur-toolkit/README.md) | Ten bilingual business templates and a unit-economics calculator | Available |
+| [Founder Toolkit](04-entrepreneur-toolkit/README.md) | Twelve bilingual business templates and three calculators (cost per resolved task, first-customers funnel, dilution) | Available |
 | [Agentic AI Lab](05-agentic-ai-lab/README.md) | Ten entrepreneurial skills, five agent templates, an evaluation template, an Arabic model guide | Available |
 | [Academy](01-academy/) | Vision and mission, learning framework, competency framework | Available |
 | [Courses](03-courses/README.md) | Four courses | [Course 1](03-courses/01-opportunity/syllabus.md): **first content release available** (seven lessons, slide decks and quizzes, sector briefs, templates, rubrics). [Course 2](03-courses/02-build/syllabus.md): **first content release available** (eight lessons, slide decks and quizzes, templates, a worked example, rubrics). Courses 3 and 4 are draft outlines |
-| [Case studies](06-case-studies/README.md) | Nine real cases from public sources (three Saudi) with evidence levels, scenarios and a learner worksheet | Available; owner-written cases wanted |
+| [Case studies](06-case-studies/README.md) | Nine real cases from public sources (three Saudi) with evidence levels, scenarios and a learner worksheet; plus seven sourced venture journeys (funding, platforms, exits) | Available; owner-written cases wanted |
 | [Learning pathways](01-academy/learning-pathways.md) · [Lab exercises](05-agentic-ai-lab/exercises/README.md) | A route for each kind of learner, and fourteen hands-on exercises that use the two companion repositories | Available; exercises not yet tried with learners |
 | [Resources](07-resources/README.md) · [Community](08-community/README.md) | Curated references; project showcase | Available |
 
