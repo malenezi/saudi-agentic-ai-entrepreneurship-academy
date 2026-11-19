@@ -42,6 +42,8 @@ Suggested split, in minutes. The pattern is the same throughout: short explanati
 | Item | Where |
 |---|---|
 | Eight lessons | [`lessons/`](lessons/) |
+| Eight slide decks with speaker notes (118 slides) | [`slides/`](slides/README.md) |
+| Eight formative quizzes with answer keys (80 questions) | [`quizzes/`](quizzes/README.md) |
 | Worked example (invented store and data) | [`examples/worked-example-order-enquiry-agent.md`](examples/worked-example-order-enquiry-agent.md) |
 | Tool contract, model selection memo, architecture decision record, failure and improvement log, readiness checklist, demo video outline | [`templates/`](templates/) |
 | Agent design sheet and Saudi specifics checklist | [AI MVP Blueprint](../../04-entrepreneur-toolkit/07-ai-mvp-blueprint.md) |
@@ -77,7 +79,7 @@ Named in the source drafts and **not opened in this pass** ([C37](../../SOURCES.
 
 ## What is not built yet
 
-Slides, quizzes, a step-by-step lab for one low-code orchestrator and one Python framework, runnable reference code, a shared Saudi-dialect test set, and a recorded demonstration. The course has not been piloted. See [CONTRIBUTING.md](../../CONTRIBUTING.md).
+A step-by-step lab for one low-code orchestrator and one Python framework, runnable reference code, a shared Saudi-dialect test set, and a recorded demonstration. The course has not been piloted. See [CONTRIBUTING.md](../../CONTRIBUTING.md).
 
 ## Questions for the first pilot
 
