@@ -139,7 +139,7 @@ A binding instrument still applies only to the entities and activities in its sc
 | **Now (v0.2)** | Framework structure, register, directory, compliance checklist, agentic governance playbook, all twelve domain maps |
 | Next | Founder essentials in depth: establishment, PDPL worked example, tax basics, funding directory with verified terms |
 | Then | IP, e-commerce, employment, procurement and sector guides |
-| Then | Runnable founder agents |
+| v0.9 | All twelve [founder agents](founder-agents/README.md) published as definitions; five [runnable agent templates](../05-agentic-ai-lab/agent-templates/workflows/README.md) |
 
 ## Disclaimer
 

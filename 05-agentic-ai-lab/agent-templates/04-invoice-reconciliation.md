@@ -2,6 +2,8 @@
 
 **For:** accounting offices, bookkeepers, SME finance staff · **Difficulty:** medium · **Architecture:** a workflow with model steps; rules do the matching
 
+**Runnable version:** [`workflows/04-invoice-reconciliation.n8n.json`](workflows/04-invoice-reconciliation.n8n.json), an n8n workflow that enforces the oversight table below in code and runs with a simulated model. [How to run it, and what is not tested](workflows/README.md).
+
 ## 1. The job
 
 Read incoming invoices, match them against bank lines and purchase records, and present the accountant with a short list of exceptions instead of a full day of ticking.

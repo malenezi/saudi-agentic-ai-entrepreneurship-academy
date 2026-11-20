@@ -1,0 +1,223 @@
+{
+ "note": "Invented cases for template 3. Each case carries the conversation `state` it starts from.",
+ "cases": [
+  {
+   "message": "السلام عليكم، عندكم دورات؟",
+   "account": "0500000001",
+   "expect": {
+    "action": "ask_question",
+    "state": {
+     "asking": "need"
+    }
+   }
+  },
+  {
+   "message": "دورة تحليل بيانات لفريقي",
+   "account": "0500000001",
+   "state": {
+    "greeted": true,
+    "lead": {},
+    "asking": "need"
+   },
+   "expect": {
+    "action": "ask_question",
+    "state": {
+     "asking": "timing",
+     "lead": {
+      "need": "دورة تحليل بيانات لفريقي"
+     }
+    }
+   }
+  },
+  {
+   "message": "هذا الشهر",
+   "account": "0500000001",
+   "state": {
+    "greeted": true,
+    "lead": {
+     "need": "دورة تحليل بيانات لفريقي"
+    },
+    "asking": "timing"
+   },
+   "expect": {
+    "action": "ask_question",
+    "state": {
+     "asking": "budget",
+     "lead": {
+      "timing": "this_month"
+     }
+    }
+   }
+  },
+  {
+   "message": "ما أحب أجاوب",
+   "account": "0500000001",
+   "state": {
+    "greeted": true,
+    "lead": {
+     "need": "دورة تحليل بيانات لفريقي"
+    },
+    "asking": "timing"
+   },
+   "expect": {
+    "action": "ask_question",
+    "state": {
+     "asking": "budget",
+     "lead": {
+      "timing": "skipped"
+     }
+    }
+   }
+  },
+  {
+   "message": "الرياض، حي الملقا",
+   "account": "0500000001",
+   "state": {
+    "greeted": true,
+    "lead": {
+     "need": "دورة تحليل بيانات لفريقي",
+     "timing": "this_month",
+     "budget": "within_range",
+     "decision": "shared"
+    },
+    "asking": "location"
+   },
+   "expect": {
+    "action": "offer_call",
+    "score": 2,
+    "score_reasons": [
+     "timing",
+     "budget"
+    ],
+    "state": {
+     "awaiting": "call_confirmation"
+    }
+   }
+  },
+  {
+   "message": "نعم يناسبني",
+   "account": "0500000001",
+   "state": {
+    "greeted": true,
+    "lead": {
+     "need": "دورة تحليل بيانات لفريقي",
+     "timing": "this_month",
+     "budget": "within_range",
+     "decision": "shared"
+    },
+    "awaiting": "call_confirmation"
+   },
+   "expect": {
+    "action": "call_booked",
+    "notify_staff": [
+     "عميل مؤهل حجز مكالمة: الأربعاء 2026-12-02 الساعة 11:00."
+    ]
+   }
+  },
+  {
+   "message": "جدة",
+   "account": "0500000001",
+   "state": {
+    "greeted": true,
+    "lead": {
+     "need": "دورة",
+     "timing": "later",
+     "budget": "below_range",
+     "decision": "shared"
+    },
+    "asking": "location"
+   },
+   "expect": {
+    "action": "not_yet_ask_consent",
+    "score": 0,
+    "state": {
+     "awaiting": "followup_consent"
+    }
+   }
+  },
+  {
+   "message": "لا شكرا",
+   "account": "0500000001",
+   "state": {
+    "greeted": true,
+    "lead": {},
+    "awaiting": "followup_consent"
+   },
+   "expect": {
+    "action": "consent_recorded",
+    "state": {
+     "followup_consent": false
+    }
+   }
+  },
+  {
+   "message": "ابي عرض سعر رسمي",
+   "account": "0500000001",
+   "state": {
+    "greeted": true,
+    "lead": {
+     "need": "دورة تحليل بيانات لفريقي"
+    },
+    "asking": "timing"
+   },
+   "expect": {
+    "action": "quote_needs_approval",
+    "level": "approve",
+    "state": {
+     "asking": "timing"
+    }
+   }
+  },
+  {
+   "message": "كم آخر سعر؟ ابي خصم",
+   "account": "0500000001",
+   "state": {
+    "greeted": true,
+    "lead": {
+     "need": "دورة تحليل بيانات لفريقي"
+    },
+    "asking": "budget"
+   },
+   "expect": {
+    "action": "handover_negotiation",
+    "level": "forbidden",
+    "pending_approval": []
+   }
+  },
+  {
+   "message": "لا تراسلوني مرة ثانية",
+   "account": "0500000001",
+   "state": {
+    "greeted": true,
+    "lead": {
+     "need": "دورة تحليل بيانات لفريقي"
+    },
+    "asking": "timing"
+   },
+   "expect": {
+    "action": "stop_contact",
+    "state": {
+     "do_not_contact": true
+    }
+   }
+  },
+  {
+   "message": "طيب عندي سؤال ثاني",
+   "account": "0500000001",
+   "state": {
+    "greeted": true,
+    "lead": {
+     "need": "دورة"
+    },
+    "asking": "timing",
+    "do_not_contact": true
+   },
+   "expect": {
+    "action": "ask_question",
+    "state": {
+     "do_not_contact": true
+    }
+   }
+  }
+ ]
+}

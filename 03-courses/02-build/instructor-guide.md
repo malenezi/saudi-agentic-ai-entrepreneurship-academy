@@ -103,7 +103,7 @@ Named in the source drafts and **not opened in this pass** ([C37](../../SOURCES.
 
 Eight [labs](labs/README.md), one per module, were added on 20 November 2026 with a tested reference implementation: Python 3.9 or newer, standard library only, offline, no key and no cost. The default model is a deterministic simulator, so every learner gets the numbers of the worked example (24, 25, 28 and 30 of 35). Run `python3 -m unittest tests.test_course2_labs` on the room's machine before the session. The labs rehearse the method on the example; each learner still builds their own agent, with whatever tool they choose, for the graded project.
 
-Not built: a lab for a named low-code orchestrator, a test set of real Saudi-dialect messages, and a recorded demonstration. The course has not been piloted. See [CONTRIBUTING.md](../../CONTRIBUTING.md).
+Since v0.9 the core track has a [low-code lab](labs/lab-n8n-low-code.md): the same agent as an n8n workflow, scored with the same evaluator. It needs n8n on the room's machines (Node.js 22.22 or newer for n8n 2.35); rehearse the import and the publish step before the session, because it has not been tried with learners. Not built: a test set of real Saudi-dialect messages and a recorded demonstration. The course has not been piloted. See [CONTRIBUTING.md](../../CONTRIBUTING.md).
 
 ## Questions for the first pilot
 

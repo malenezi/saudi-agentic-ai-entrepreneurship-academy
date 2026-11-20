@@ -1,0 +1,191 @@
+{
+ "name": "SAAEA template 3: lead qualification agent",
+ "output": "../../03-lead-qualification.n8n.json",
+ "webhook_path": "saaea-lead-qualification",
+ "note": "## SAAEA agent template 3: lead qualification\n**Invented sample data. Educational. No CRM, calendar or messaging channel is connected: `tool_calls` shows what would be written.**\n\n1. **Config** holds the qualification questions, the scoring rules, the approved price range and the simulator's keywords. The sales lead writes them.\n2. `model_mode` is `simulated`: keyword matching, NOT a language model. Set `http` to call any OpenAI-compatible endpoint.\n3. **Decide** enforces the oversight table: one question at a time, approved ranges only, a specific quotation waits for a person, negotiation is refused, and \"stop\" ends contact at once.\n4. Send `{\"message\": \"...\", \"account\": \"0500000001\", \"state\": {}}` and pass back the `state` you receive: it carries the conversation. Guide: 05-agentic-ai-lab/agent-templates/workflows/README.md",
+ "config": {
+  "model_mode": "simulated",
+  "model_base_url": "http://localhost:11434/v1",
+  "model_name": "set-the-model-name-your-endpoint-expects",
+  "stopped": false,
+  "normalise_digits": true,
+  "business_name": "مركز إتقان للتدريب (اسم مختلق)",
+  "questions": [
+   {
+    "field": "need",
+    "ask": "ما الذي تبحث عنه؟"
+   },
+   {
+    "field": "timing",
+    "ask": "متى تحتاجه؟",
+    "options": [
+     "this_month",
+     "this_quarter",
+     "later"
+    ]
+   },
+   {
+    "field": "budget",
+    "ask": "ما الميزانية التقريبية؟",
+    "options": [
+     "within_range",
+     "below_range"
+    ]
+   },
+   {
+    "field": "decision",
+    "ask": "هل القرار لك أم مع آخرين؟",
+    "options": [
+     "self",
+     "shared"
+    ]
+   },
+   {
+    "field": "location",
+    "ask": "في أي مدينة أو حي؟"
+   }
+  ],
+  "scoring": {
+   "timing": [
+    "this_month",
+    "this_quarter"
+   ],
+   "budget": [
+    "within_range"
+   ],
+   "decision": [
+    "self"
+   ]
+  },
+  "qualified_at": 2,
+  "approved_price_range": "من 2,000 إلى 5,000 ريال للدورة (مثال مختلق)",
+  "useful_information": "تجد وصف الدورات ومواعيدها في صفحتنا.",
+  "call_slot": "الأربعاء 2026-12-02 الساعة 11:00",
+  "sim": {
+   "intents": [
+    [
+     "human",
+     [
+      "موظف",
+      "انسان"
+     ]
+    ],
+    [
+     "stop",
+     [
+      "لا تراسل",
+      "لا ترسل",
+      "وقف الرسائل",
+      "توقفوا",
+      "stop"
+     ]
+    ],
+    [
+     "negotiate",
+     [
+      "خصم",
+      "تخفيض",
+      "اخر سعر",
+      "نزل السعر"
+     ]
+    ],
+    [
+     "quote_request",
+     [
+      "عرض سعر",
+      "كم السعر بالضبط",
+      "السعر النهائي",
+      "تسعيره"
+     ]
+    ],
+    [
+     "yes",
+     [
+      "نعم",
+      "تمام",
+      "اوافق",
+      "موافق",
+      "يناسبني"
+     ]
+    ],
+    [
+     "no",
+     [
+      "لا اوافق",
+      "ما يناسب",
+      "لا شكرا"
+     ]
+    ]
+   ],
+   "choices": {
+    "value": [
+     [
+      "this_month",
+      [
+       "هذا الشهر",
+       "الحين",
+       "الاسبوع"
+      ]
+     ],
+     [
+      "this_quarter",
+      [
+       "الشهر الجاي",
+       "بعد شهر",
+       "شهرين"
+      ]
+     ],
+     [
+      "later",
+      [
+       "السنه الجايه",
+       "ما ادري",
+       "لاحقا"
+      ]
+     ],
+     [
+      "within_range",
+      [
+       "3000",
+       "4000",
+       "5000",
+       "ثلاثه الاف",
+       "اربعه الاف"
+      ]
+     ],
+     [
+      "below_range",
+      [
+       "500",
+       "1000",
+       "الف ريال"
+      ]
+     ],
+     [
+      "self",
+      [
+       "لي",
+       "انا",
+       "قراري"
+      ]
+     ],
+     [
+      "shared",
+      [
+       "المدير",
+       "الاداره",
+       "شريكي",
+       "مع اخرين"
+      ]
+     ]
+    ]
+   },
+   "patterns": {}
+  }
+ },
+ "config_files": {
+  "instructions": {
+   "path": "instructions.md"
+  }
+ }
+}

@@ -2,6 +2,8 @@
 
 **For:** small stores, clinics, training centres, service businesses · **Difficulty:** low · **Architecture:** one agent with retrieval
 
+**Runnable version:** [`workflows/01-whatsapp-customer-service.n8n.json`](workflows/01-whatsapp-customer-service.n8n.json), an n8n workflow that enforces the oversight table below in code and runs with a simulated model. [How to run it, and what is not tested](workflows/README.md).
+
 ## 1. The job
 
 Answer recurring customer questions on WhatsApp from the business's own approved information, at any hour, and hand everything else to a person with a summary.

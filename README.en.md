@@ -8,7 +8,7 @@
 
 An open-source, Arabic-first knowledge initiative for anyone who wants to start, run or grow a business in Saudi Arabia built on agentic AI. It takes a founder from a real problem inside a Saudi business to a working agent and a paying customer, brings entrepreneurship, engineering, operations and governance into one pathway, and grounds its content in the Kingdom's regulatory and economic context. Founded and maintained by **Prof. Mamdouh Alenezi** as an independent personal initiative, and developed with community contributions.
 
-**Status:** v0.8 ([changelog](CHANGELOG.md) · [roadmap](ROADMAP.md) · [release readiness](RELEASE-READINESS.md)) · Last reviewed: 20 November 2026
+**Status:** v0.9 ([changelog](CHANGELOG.md) · [roadmap](ROADMAP.md) · [release readiness](RELEASE-READINESS.md)) · Last reviewed: 20 November 2026
 
 | First visit? | Want to see the slides? | Want to contribute? |
 |---|---|---|
@@ -65,7 +65,7 @@ The full route for each kind of learner is in [learning pathways](01-academy/lea
 1. Fill in the [Startup Idea Canvas](04-entrepreneur-toolkit/01-startup-idea-canvas.md).
 2. Read the [founder compliance checklist](02-saudi-market-knowledge-framework/founder-compliance-checklist.md) to see what applies to you.
 3. Paste the [Founder Context Template](04-entrepreneur-toolkit/10-founder-context-template.md) into your preferred AI assistant.
-4. Run the [Regulatory Navigator](02-saudi-market-knowledge-framework/founder-agents/README.md) or one of the [entrepreneurial skills](05-agentic-ai-lab/skills/README.md) on your idea.
+4. Run the [Regulatory Navigator](02-saudi-market-knowledge-framework/founder-agents/README.md#reference-agent-saudi-regulatory-navigator), another of the [founder agents](02-saudi-market-knowledge-framework/founder-agents/README.md) or one of the [entrepreneurial skills](05-agentic-ai-lab/skills/README.md) on your idea.
 
 ## The four courses
 
@@ -83,7 +83,7 @@ Four sequential courses, 76 hours, on two tracks: a low-code core track and a de
 | Course | Lessons | Decks | Quizzes | Practice material | Status | Not yet tested |
 |---|---|---|---|---|---|---|
 | Course 1 | 7 | 7 | 7 | Sector briefs, templates, interview records, a sample thesis, rubrics | **First content release available** | Not piloted with a cohort |
-| Course 2 | 8 | 8 | 8 | Templates, a worked example, rubrics, and [eight labs](03-courses/02-build/labs/README.md) that run with no key and at no cost | **First content release available** | Not piloted with a cohort |
+| Course 2 | 8 | 8 | 8 | Templates, a worked example, rubrics, [eight labs](03-courses/02-build/labs/README.md) that run with no key and at no cost, and a [low-code lab](03-courses/02-build/labs/lab-n8n-low-code.md) | **First content release available** | Not piloted with a cohort |
 | Course 3 | 7 | 7 | 7 | Templates, a worked example, rubrics | **First content release available** | Not piloted with a cohort; Modules 3.4 and 3.7 have had no specialist review |
 | Course 4 | 6 | 6 | 6 | Templates, a worked example, rubrics | **First content release available** | Not piloted with a cohort; Modules 4.3 and 4.4 have had no specialist review |
 
@@ -106,6 +106,8 @@ Every course has a glossary and an instructor guide. Details are in the [courses
 | [Courses](03-courses/README.md) | Four courses: 28 lessons, each with a deck and a quiz, plus templates, worked examples and rubrics ([details above](#status-of-each-course)) | First content release available; not piloted with a cohort |
 | [Founder Toolkit](04-entrepreneur-toolkit/README.md) | Twelve bilingual business templates and three calculators: cost per resolved task, first-customers funnel, dilution | Available |
 | [Agentic AI Lab](05-agentic-ai-lab/README.md) | Twelve [entrepreneurial skills](05-agentic-ai-lab/skills/README.md), five agent templates, an evaluation template, an Arabic model guide | Available |
+| [Founder agents](02-saudi-market-knowledge-framework/founder-agents/README.md) | Twelve agents: a definition to paste into any assistant, the pages it reads, and three test conversations each | Available; no test conversation recorded yet, not tried with founders |
+| [Runnable agent templates](05-agentic-ai-lab/agent-templates/workflows/README.md) | Five files that import into n8n and run with a simulated model and no key, enforcing the oversight table in code | Available; not run with a real model, no channel connected |
 | [Lab exercises](05-agentic-ai-lab/exercises/README.md) | Seventeen hands-on exercises: fourteen use the two companion repositories, three use the Academy's own skills | Available; not yet tried with learners |
 | [Case studies](06-case-studies/README.md) | Nine real cases from public sources (three Saudi) with evidence levels, scenarios and a learner worksheet; plus twelve sourced venture journeys: funding, platforms, exits, and five Saudi companies building for agents | Available; owner-written cases wanted |
 | [Learning pathways](01-academy/learning-pathways.md) | A route for each kind of learner, an [instructor kit](01-academy/instructor-kit/README.md) for a 15-week course, and a [venture workbook](workbook/index.html) | Available; not yet tried with learners |
@@ -122,7 +124,8 @@ We describe what exists as it is. The status of every item and the results of ev
 | Knowledge framework: at least one published guide in every domain | Five newer guides rest on limited sources: IP, e-commerce, employment, sectors, government procurement | No lawyer, tax adviser or security specialist has reviewed the regulatory content |
 | Founder Toolkit, lab and case studies | Saudi cases written by their owners | The exercises, the workbook and the instructor kit have not been tried with learners |
 | Course 2 labs with a tested reference implementation | English versions of the lessons: lessons are in Arabic with English terms and an English summary | The completion standard has not been applied to a cohort |
-| Automated link checks and tests on every change | The remaining founder agents and runnable agent templates (v0.9) | |
+| The twelve founder agents and the five runnable agent templates | An evaluation set from real Saudi-dialect messages | No test conversation of a founder agent has been recorded, and no founder has used one |
+| Automated link checks and tests on every change | Connecting the runnable templates to real channels and systems | The templates and the low-code lab have not been run with a real language model |
 
 What comes next, and in what order, is in the [roadmap](ROADMAP.md).
 

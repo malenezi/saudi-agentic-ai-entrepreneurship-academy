@@ -1,6 +1,6 @@
 # وكلاء المؤسس · Founder agents
 
-**Status:** Operating standard and one reference agent published; eleven wanted · Last reviewed 16 November 2026
+**Status:** Operating standard and all twelve agents published (the eleven added in v0.9 on 20 November 2026) · **None has been tried with founders, and no test conversation has been recorded with an assistant yet** · Last reviewed 20 November 2026
 
 <div dir="rtl">
 
@@ -18,18 +18,20 @@ Independent, reusable agent definitions an entrepreneur can run on any AI assist
 
 | # | Agent | Function | Domains | Status |
 |---|---|---|---|---|
-| 1 | Saudi Regulatory Navigator · المرشد التنظيمي | Identifies instruments that may apply and what to ask | All | **Published below** |
-| 2 | Saudi Startup Advisor | Guides founders through establishment | 01 | Wanted |
-| 3 | PDPL Compliance Assistant | First-pass privacy readiness | 03 | Available as a [skill](../../05-agentic-ai-lab/skills/README.md#9-pdpl-pre-check) |
-| 4 | AI Governance Advisor | Reviews agent architecture and controls | 02, 04 | Partly: [Agent Designer skill](../../05-agentic-ai-lab/skills/README.md#6-agent-designer) |
-| 5 | Saudi Market Researcher | Researches competitors and opportunities | 11 | Partly: [Opportunity Scanner](../../05-agentic-ai-lab/skills/README.md#1-opportunity-scanner), [Competitor Scan](../../05-agentic-ai-lab/skills/README.md#4-competitor-scan) |
-| 6 | Business Model Designer | Develops business models | 06, 11 | Wanted |
-| 7 | Financial Advisor | Projections and unit economics | 05 | Partly: [Pricing Coach](../../05-agentic-ai-lab/skills/README.md#8-pricing-coach) |
-| 8 | Funding Opportunity Finder | Matches programmes to stage and sector | 06 | Wanted; needs the verified directory first |
-| 9 | Investor Pitch Coach | Reviews pitch and readiness | 06 | Available as a [skill](../../05-agentic-ai-lab/skills/README.md#10-pitch-challenger) |
-| 10 | Saudi E-commerce Advisor | Guides digital business setup | 08 | Wanted |
-| 11 | Government Tender Assistant | Analyses tender documents | 12 | Specification: [tender summariser](../../05-agentic-ai-lab/agent-templates/05-tender-summariser.md) |
-| 12 | AI Startup Architect | Designs agent architectures and workflows | 02 | Partly: [Agent Designer skill](../../05-agentic-ai-lab/skills/README.md#6-agent-designer) |
+| 1 | [Saudi Regulatory Navigator · المرشد التنظيمي](#reference-agent-saudi-regulatory-navigator) | Identifies instruments that may apply and what to ask | All | **Published below** |
+| 2 | [Saudi Startup Advisor · مستشار التأسيس](02-saudi-startup-advisor.md) | Guides founders through establishment | 01 | **Published (v0.9).** |
+| 3 | [PDPL Compliance Assistant · مساعد حماية البيانات](03-pdpl-compliance-assistant.md) | First-pass privacy readiness | 03 | **Published (v0.9).** Quick version: [PDPL Pre-Check skill](../../05-agentic-ai-lab/skills/README.md#9-pdpl-pre-check) |
+| 4 | [AI Governance Advisor · مستشار حوكمة الذكاء الاصطناعي](04-ai-governance-advisor.md) | Reviews agent architecture and controls | 02, 04 | **Published (v0.9).** Quick version: [Agent Designer skill](../../05-agentic-ai-lab/skills/README.md#6-agent-designer) |
+| 5 | [Saudi Market Researcher · باحث السوق السعودي](05-saudi-market-researcher.md) | Researches competitors and opportunities | 11 | **Published (v0.9).** Quick versions: [Opportunity Scanner](../../05-agentic-ai-lab/skills/README.md#1-opportunity-scanner), [Competitor Scan](../../05-agentic-ai-lab/skills/README.md#4-competitor-scan) |
+| 6 | [Business Model Designer · مصمم نموذج العمل](06-business-model-designer.md) | Develops business models | 06, 11 | **Published (v0.9).** |
+| 7 | [Financial Advisor · المساعد المالي](07-financial-advisor.md) | Projections and unit economics | 05 | **Published (v0.9).** Quick version: [Pricing Coach](../../05-agentic-ai-lab/skills/README.md#8-pricing-coach) |
+| 8 | [Funding Opportunity Finder · باحث فرص التمويل](08-funding-opportunity-finder.md) | Matches programmes to stage and sector | 06 | **Published (v0.9).** Uses verified directory entries only and labels the rest |
+| 9 | [Investor Pitch Coach · مدرب العرض الاستثماري](09-investor-pitch-coach.md) | Reviews pitch and readiness | 06 | **Published (v0.9).** Quick version: [Pitch Challenger skill](../../05-agentic-ai-lab/skills/README.md#10-pitch-challenger) |
+| 10 | [Saudi E-commerce Advisor · مستشار التجارة الإلكترونية](10-saudi-ecommerce-advisor.md) | Guides digital business setup | 08 | **Published (v0.9).** |
+| 11 | [Government Tender Assistant · مساعد المنافسات الحكومية](11-government-tender-assistant.md) | Analyses tender documents | 12 | **Published (v0.9).** Runnable core: [tender summariser workflow](../../05-agentic-ai-lab/agent-templates/workflows/README.md) |
+| 12 | [AI Startup Architect · معماري المشروع الوكيلي](12-ai-startup-architect.md) | Designs agent architectures and workflows | 02 | **Published (v0.9).** Quick version: [Agent Designer skill](../../05-agentic-ai-lab/skills/README.md#6-agent-designer) |
+
+Each agent is one page: the definition to paste, the pages it reads, and three test conversations (an ordinary case, a case where the right answer is "I do not know", and a case where the user pushes for a definitive answer). The agents are definitions for an assistant you already use; they are not programs, and they call no tool. For agents that run as workflows, see the [runnable templates](../../05-agentic-ai-lab/agent-templates/workflows/README.md).
 
 ## Operating standard (applies to every founder agent)
 
@@ -92,7 +94,7 @@ Paste your [Founder Context](../../04-entrepreneur-toolkit/10-founder-context-te
 
 ## Contributing an agent
 
-Any of the "wanted" rows is open. A contribution needs:
+All twelve agents are published, and every one is open to improvement. What they need most is a **recorded run**: paste a definition into an assistant, run its three test conversations, and send what happened, with the assistant and the date. A new agent, or a change to one, needs:
 
 - The definition, in Arabic (English welcome too)
 - Which domain pages it reads

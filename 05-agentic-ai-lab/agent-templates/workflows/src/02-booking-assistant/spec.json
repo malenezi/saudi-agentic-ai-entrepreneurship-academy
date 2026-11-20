@@ -1,0 +1,150 @@
+{
+ "name": "SAAEA template 2: booking assistant",
+ "output": "../../02-booking-assistant.n8n.json",
+ "webhook_path": "saaea-booking-assistant",
+ "note": "## SAAEA agent template 2: booking assistant\n**Invented sample data. Educational. No real calendar or messaging channel is connected.**\n\n1. **Config** holds the services, the published slots, the sample bookings, the late-cancellation window and `now` (a fixed test date: replace it with the real clock when you connect a calendar).\n2. `model_mode` is `simulated`: keyword matching, NOT a language model. Set `http` to call any OpenAI-compatible endpoint.\n3. **Decide** enforces the oversight table: only published free slots are offered, a booking needs the customer's explicit choice, a late cancellation waits for a person, clinical questions are refused.\n4. Send `{\"message\": \"...\", \"account\": \"0500000001\", \"state\": {}}` and pass back the `state` you receive. Guide: 05-agentic-ai-lab/agent-templates/workflows/README.md",
+ "config": {
+  "model_mode": "simulated",
+  "model_base_url": "http://localhost:11434/v1",
+  "model_name": "set-the-model-name-your-endpoint-expects",
+  "stopped": false,
+  "normalise_digits": true,
+  "business_name": "عيادة الندى (اسم مختلق)",
+  "branch": "فرع حي الياسمين",
+  "now": "2026-12-01T08:00:00+03:00",
+  "late_cancellation_hours": 24,
+  "services": [
+   "تنظيف أسنان",
+   "كشف"
+  ],
+  "slots": [
+   {
+    "id": "S1",
+    "service": "تنظيف أسنان",
+    "day": "الثلاثاء",
+    "start": "2026-12-01T16:00:00+03:00"
+   },
+   {
+    "id": "S2",
+    "service": "تنظيف أسنان",
+    "day": "الأربعاء",
+    "start": "2026-12-02T10:00:00+03:00"
+   },
+   {
+    "id": "S3",
+    "service": "تنظيف أسنان",
+    "day": "الخميس",
+    "start": "2026-12-03T17:30:00+03:00"
+   },
+   {
+    "id": "S4",
+    "service": "كشف",
+    "day": "الأربعاء",
+    "start": "2026-12-02T11:00:00+03:00"
+   },
+   {
+    "id": "S5",
+    "service": "كشف",
+    "day": "الخميس",
+    "start": "2026-12-03T09:00:00+03:00"
+   },
+   {
+    "id": "S6",
+    "service": "كشف",
+    "day": "الثلاثاء",
+    "start": "2026-12-01T18:00:00+03:00"
+   }
+  ],
+  "bookings": {
+   "B-1001": {
+    "account": "0500000001",
+    "slot": "S6"
+   },
+   "B-1002": {
+    "account": "0500000002",
+    "slot": "S5"
+   }
+  },
+  "sim": {
+   "intents": [
+    [
+     "human",
+     [
+      "موظف",
+      "انسان"
+     ]
+    ],
+    [
+     "symptoms",
+     [
+      "الم",
+      "وجع",
+      "ورم",
+      "نزيف",
+      "دواء",
+      "مضاد",
+      "علاج"
+     ]
+    ],
+    [
+     "cancel",
+     [
+      "الغاء",
+      "الغي",
+      "كنسل"
+     ]
+    ],
+    [
+     "reschedule",
+     [
+      "تغيير",
+      "تاجيل",
+      "اغير",
+      "اجل"
+     ]
+    ],
+    [
+     "book",
+     [
+      "حجز",
+      "احجز",
+      "موعد"
+     ]
+    ],
+    [
+     "confirm",
+     [
+      "1",
+      "2",
+      "3"
+     ]
+    ]
+   ],
+   "choices": {
+    "service": [
+     [
+      "تنظيف أسنان",
+      [
+       "تنظيف"
+      ]
+     ],
+     [
+      "كشف",
+      [
+       "كشف"
+      ]
+     ]
+    ]
+   },
+   "patterns": {
+    "choice": "(?<![\\p{Nd}-])([123])(?!\\p{Nd})",
+    "booking_ref": "b-\\d{4}"
+   }
+  }
+ },
+ "config_files": {
+  "instructions": {
+   "path": "instructions.md"
+  }
+ }
+}

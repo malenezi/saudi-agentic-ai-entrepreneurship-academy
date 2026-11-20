@@ -4,6 +4,42 @@
 
 Nothing yet.
 
+## v0.9 (2026-11-20)
+
+Founder agents and runnable templates. All twelve founder agents are now published, the five agent templates have runnable versions, and Course 2 has a low-code lab. **Nothing here has been tried with founders or learners, and nothing has been run with a real language model.**
+
+### Founder agents
+
+- Eleven new agents in [`02-saudi-market-knowledge-framework/founder-agents/`](02-saudi-market-knowledge-framework/founder-agents/README.md), one page each: Saudi Startup Advisor, PDPL Compliance Assistant, AI Governance Advisor, Saudi Market Researcher, Business Model Designer, Financial Advisor, Funding Opportunity Finder, Investor Pitch Coach, Saudi E-commerce Advisor, Government Tender Assistant and AI Startup Architect. Each has an Arabic definition to paste into any assistant, the pages it reads, and three test conversations: an ordinary case, a case where the right answer is "I do not know", and a case where the user pushes for a definitive answer.
+- Every definition carries the operating standard as fixed rules: sources and verification dates from the attached pages, "to verify" labels passed on as they are, no article numbers, fees, amounts or eligibility criteria from memory, and no declaration of compliance.
+- The Funding Opportunity Finder separates the directory's verified, partly verified and pending entries into three tables, never says that applications are open, and names no programme that is not in the directory. 13 of the directory's 32 entries are still pending.
+- **Limits.** The agents are definitions, not programs. No test conversation has been recorded with an assistant, and no founder has used them. The definitions were written from the repository's own pages and contain no regulatory fact of their own.
+
+### Runnable agent templates
+
+- Five importable n8n workflows in [`05-agentic-ai-lab/agent-templates/workflows/`](05-agentic-ai-lab/agent-templates/workflows/README.md), one per template: customer service, booking assistant, lead qualification, invoice reconciliation and tender summariser. One shape for all: the model proposes and a `Decide` node enforces the template's oversight table in code.
+- They run on import with a keyword simulator (not a language model), no key and no cost, and can call any OpenAI-compatible endpoint instead. Model output that cannot be read does nothing; a stop switch sends everything to a person.
+- Two guards were added while building: the tender workflow keeps a fact only if its text is on the page the model cites, and ties a requirement to the company profile by the bid team's own keywords, so a model that names the wrong profile entry cannot turn a gap into "meets".
+- `tools/build_n8n_workflows.py` builds the workflows from readable sources; `tools/n8n_harness.js` runs their nodes without n8n; `tests/test_n8n_workflows.py` adds 12 tests (50 template cases, the stop switch, a model that answers nonsense, an unreachable model), and `tests/test_founder_agents.py` adds 3 for the agents' pages. `make check` now runs 89 tests. The logic tests need Node.js and are skipped without it.
+- **Checked inside n8n 2.35.7** from the command line with `tools/n8n_e2e.py`: all six workflows imported and published, 84 requests to the live webhooks, none failed. The HTTP model path was exercised in n8n against a local stub only. The live run found one defect the harness had missed (the lab's approval flow read a node that had not run); it is fixed, and the harness now refuses that pattern.
+- **Limits.** No real model, no messaging channel, calendar, CRM or ledger, no authentication on the webhooks, invented data and invented test cases. Not imported through the editor's menu, and not tried on n8n Cloud or n8n 1.x.
+
+### Low-code lab for Course 2
+
+- [Core-track lab: the same agent in n8n](03-courses/02-build/labs/lab-n8n-low-code.md). The order-enquiry agent of the eight labs as an n8n workflow whose nodes are a port of the Python reference. A test compares the two on every case at every stage (258 comparisons), and `labs/n8n/evaluate_n8n.py` scores the running workflow with the reference evaluator.
+- Run in n8n: 24 of 35 at the baseline, 30 of 35 after the second cycle with the launch rule met, and 6 of 8 on the held-out set. The intermediate stages (25 and 28) were confirmed through the harness.
+- This closes the item "no lab for a named low-code orchestrator" of the release-readiness report. n8n is used because the course names it for the core track; it is not a recommendation.
+
+### Housekeeping
+
+- The Arabic and English READMEs were restructured as a landing page; the English README follows the Arabic structure.
+- Source A1 now cites GASTAT's own publication for the 33.1% figure and records where the 2024 figure comes from.
+- The roadmap's known-gaps heading and its courses target line reflect the current release.
+
+### Not done
+
+- An evaluation set from real Saudi-dialect messages: it needs a business willing to share anonymised messages. Every test case in the repository is still invented.
+
 ## v0.8 (2026-11-20)
 
 The four courses are complete in content. Courses 3 and 4 received their first content; Course 2 received executable labs; every module now has a lesson, a deck, a quiz, an activity with a template and a sample solution; one completion standard and one fifteen-week kit cover the programme. **Not piloted and not professionally reviewed**: see the [release-readiness report](RELEASE-READINESS.md) for the status of every gap. The roadmap item previously planned as v0.8 (founder agents and runnable templates) moves to v0.9.

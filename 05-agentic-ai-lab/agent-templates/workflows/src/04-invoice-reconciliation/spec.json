@@ -1,0 +1,59 @@
+{
+ "name": "SAAEA template 4: invoice reconciliation",
+ "output": "../../04-invoice-reconciliation.n8n.json",
+ "webhook_path": "saaea-invoice-reconciliation",
+ "note": "## SAAEA agent template 4: invoice reconciliation\n**Invented sample data. Educational, not accounting or tax advice. No ledger, bank or document reader is connected.**\n\n1. **Config** holds the supplier list with its Arabic and English spellings, sample bank lines, the tolerance and `vat_rate_set_by_accountant` (a sample value for the invented invoices: your accountant sets the rate and its exceptions).\n2. `model_mode` is `simulated`: it reads labelled lines and is NOT a language model. Set `http` to call any OpenAI-compatible endpoint for extraction.\n3. **Decide** does the arithmetic, duplicate, supplier and bank checks by rule and writes a draft. Posting waits for the accountant at the approval webhook. There is no tool to pay or to file.\n4. Send `{\"message\": \"<invoice text>\"}`; approve with `{\"draft\": \"D-001\", \"approved_by\": \"name\"}` at `/saaea-invoice-reconciliation-approve`. Guide: 05-agentic-ai-lab/agent-templates/workflows/README.md",
+ "config": {
+  "model_mode": "simulated",
+  "model_base_url": "http://localhost:11434/v1",
+  "model_name": "set-the-model-name-your-endpoint-expects",
+  "stopped": false,
+  "normalise_digits": true,
+  "vat_rate_set_by_accountant": 0.15,
+  "tolerance_halalas": 1,
+  "suppliers": [
+   {
+    "id": "SUP-1",
+    "name": "مؤسسة النخبة للتوريدات",
+    "variants": [
+     "Al Nokhba Supplies",
+     "النخبة للتوريدات"
+    ],
+    "vat_number": "300000000000003"
+   },
+   {
+    "id": "SUP-2",
+    "name": "شركة المدار التقنية",
+    "variants": [
+     "Al Madar Tech"
+    ],
+    "vat_number": "300000000000013"
+   }
+  ],
+  "posted_invoices": [
+   "SUP-2|INV-0900"
+  ],
+  "bank_lines": [
+   {
+    "id": "BL-1",
+    "amount": 1150.0,
+    "reference": "TRF INV-1001 NOKHBA"
+   },
+   {
+    "id": "BL-2",
+    "amount": 2300.0,
+    "reference": "TRF INV-1002"
+   },
+   {
+    "id": "BL-3",
+    "amount": 575.0,
+    "reference": "TRF INV-0900 MADAR"
+   }
+  ]
+ },
+ "config_files": {
+  "instructions": {
+   "path": "instructions.md"
+  }
+ }
+}
