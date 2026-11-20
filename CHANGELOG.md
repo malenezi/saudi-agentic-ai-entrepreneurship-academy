@@ -2,6 +2,12 @@
 
 ## Unreleased
 
+Nothing yet.
+
+## v0.8 (2026-11-20)
+
+The four courses are complete in content. Courses 3 and 4 received their first content; Course 2 received executable labs; every module now has a lesson, a deck, a quiz, an activity with a template and a sample solution; one completion standard and one fifteen-week kit cover the programme. **Not piloted and not professionally reviewed**: see the [release-readiness report](RELEASE-READINESS.md) for the status of every gap. The roadmap item previously planned as v0.8 (founder agents and runnable templates) moves to v0.9.
+
 ### Remediation and release readiness (20 November 2026)
 
 Status of every gap, tests, readiness by course and a go/no-go recommendation are in the [release-readiness report](RELEASE-READINESS.md).
