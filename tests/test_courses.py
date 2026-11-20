@@ -176,5 +176,33 @@ class CourseStructure(unittest.TestCase):
                 self.assertIn(part, text, "%s rubrics lack %s" % (os.path.basename(course), part))
 
 
+class InstructorKit(unittest.TestCase):
+    """The fifteen-week plan covers every module with the hours its syllabus gives it."""
+
+    def test_session_minutes_match_syllabus_hours_and_sessions_are_three_hours(self):
+        plans = read(os.path.join(ROOT, "01-academy", "instructor-kit", "session-plans.md"))
+        sessions = re.split(r"^### الجلسة \d+: ", plans, flags=re.M)[1:]
+        self.assertEqual(len(sessions), 30)
+        minutes = {}
+        for number, session in enumerate(sessions, 1):
+            row = re.search(r"^\| \*\*الوحدات\*\* \| (.+) \|$", session, re.M).group(1)
+            total = 0
+            for part in row.split(" · "):
+                amount = int(re.search(r"(\d+) دقيقة", part).group(1))
+                total += amount
+                module = re.match(r"\[(\d\.\d)\]", part)
+                if module:
+                    minutes[module.group(1)] = minutes.get(module.group(1), 0) + amount
+            self.assertEqual(total, 180, "session %d" % number)
+            for field in ("نواتج التعلّم", "هدف الجلسة", "العملي", "التقييم", "المواد", "تحضير المدرب"):
+                self.assertIn("| **%s** |" % field, session, "session %d lacks %s" % (number, field))
+        hours = {}
+        for number, course in enumerate(sorted(glob.glob(os.path.join(COURSES, "0*"))), 1):
+            table = read(os.path.join(course, "syllabus.md")).split("## Modules")[1]
+            for module, value in re.findall(r"^\| (%d\.\d) \| .+? \| (\d+) \|" % number, table, re.M):
+                hours[module] = int(value) * 60
+        self.assertEqual(minutes, hours)
+
+
 if __name__ == "__main__":
     unittest.main()
