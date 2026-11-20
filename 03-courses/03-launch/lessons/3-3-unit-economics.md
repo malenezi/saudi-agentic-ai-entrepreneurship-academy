@@ -174,7 +174,9 @@ python cost_per_resolved_task.py --calls 4 --in-tokens 2000 --out-tokens 250 \
 
 ## اختبر فهمك
 
-[اختبار الوحدة 3.3](../quizzes/3-3-quiz.md): عشرة أسئلة من المراجعة السريعة والأخطاء الشائعة، مع الإجابات وشروحها.
+[اختبار الوحدة 3.3](../quizzes/3-3-quiz.md): عشرة أسئلة من المراجعة السريعة والأخطاء الشائعة، مع الإجابات وشروحها. وللعرض التقديمي: [عروض المقرر 3](../slides/README.md).
+
+**التنقل:** السابق: [الوحدة 3.2](3-2-business-models-for-agentic-ventures.md) · [خطة المقرر](../syllabus.md) · التالي: [الوحدة 3.4](3-4-compliance-readiness.md)
 
 </div>
 

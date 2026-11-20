@@ -162,6 +162,8 @@ Measure baseline  →  classify failures  →  pick the costliest pattern
 
 [اختبار الوحدة 2.8](../quizzes/2-8-quiz.md): أسئلة من المراجعة السريعة والأخطاء الشائعة، مع الإجابات وشروحها. وللعرض التقديمي: [عروض المقرر 2](../slides/README.md).
 
+**التنقل:** السابق: [الوحدة 2.7](2-7-from-one-agent-to-several.md) · [خطة المقرر](../syllabus.md) · التالي: [المقرر 3](../../03-launch/syllabus.md)
+
 </div>
 
 ---

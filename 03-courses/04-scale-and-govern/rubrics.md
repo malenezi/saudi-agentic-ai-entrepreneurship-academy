@@ -8,6 +8,8 @@ The six-part scale pack is graded as one piece of work with the rubric in sectio
 
 **Graduation condition** (from the syllabus): a signed LOI from a Saudi business, a paying customer, or sustained real usage. Without one of the three the pack is returned, whatever its score.
 
+The assessment standard shared by the four courses, including a recommended completion standard, is in the [programme trainer guide](../TRAINER-GUIDE.md), section 4.
+
 ## 2. Validation gates
 
 Checked before the pack is graded. Any "no" returns it.

@@ -6,6 +6,8 @@ The deliverable rubric keeps the criteria and weights of the [syllabus](syllabus
 
 The six-part deliverable is graded as one piece of work with the rubric in section 3. Module outputs are checkpoints: they are reviewed, not graded separately. Self-paced learners use the checkpoints and the [readiness checklist](templates/readiness-checklist.md) as self-checks. The [module quizzes](quizzes/README.md) are formative and carry no weight.
 
+The assessment standard shared by the four courses, including a recommended completion standard, is in the [programme trainer guide](../TRAINER-GUIDE.md), section 4.
+
 ## 2. Validation gates
 
 Checked before the deliverable is graded. Any "no" returns the project, whatever the score would be.

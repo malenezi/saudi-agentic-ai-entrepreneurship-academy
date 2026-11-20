@@ -131,6 +131,8 @@ Cost per successful task = total run cost ÷ number of tasks that passed
 
 [اختبار الوحدة 2.4](../quizzes/2-4-quiz.md): أسئلة من المراجعة السريعة والأخطاء الشائعة، مع الإجابات وشروحها. وللعرض التقديمي: [عروض المقرر 2](../slides/README.md).
 
+**التنقل:** السابق: [الوحدة 2.3](2-3-tools-and-integrations.md) · [خطة المقرر](../syllabus.md) · التالي: [الوحدة 2.5](2-5-evaluation.md)
+
 </div>
 
 ---

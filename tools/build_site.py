@@ -98,6 +98,9 @@ footer { margin-block-start: 56px; border-block-start: 1px solid var(--line); pa
     <ul class="grid">
       <li><a href="{G}/blob/main/03-courses/01-opportunity/syllabus.md"><span class="t">المقرر 1: اكتشاف الفرصة الوكيلية</span><span class="d">سبعة دروس تنتهي بأطروحة فرصة مدعومة بمقابلات عملاء.</span></a></li>
       <li><a href="{G}/blob/main/03-courses/02-build/syllabus.md"><span class="t">المقرر 2: بناء الوكلاء الأذكياء</span><span class="d">ثمانية دروس تنتهي بوكيل يعمل ومعه دليل على أنه يعمل.</span></a></li>
+      <li><a href="{G}/blob/main/03-courses/03-launch/syllabus.md"><span class="t">المقرر 3: الإطلاق وبناء النموذج التجاري</span><span class="d">سبعة دروس تنتهي بمنتج أولي يستخدمه عميل حقيقي وسعر محسوب من السجل.</span></a></li>
+      <li><a href="{G}/blob/main/03-courses/04-scale-and-govern/syllabus.md"><span class="t">المقرر 4: التوسع والحوكمة</span><span class="d">ستة دروس تنتهي بمعمارية تشغيل وسجل مخاطر وعرض استثماري.</span></a></li>
+      <li><a href="{G}/blob/main/03-courses/TRAINER-GUIDE.md"><span class="t">دليل المدرب للبرنامج</span><span class="d">ما يحتاجه مدرب أو جهة لتقديم المقررات الأربعة: المتطلبات، التقييم، التحضير.</span></a></li>
       <li><a href="{G}/blob/main/02-saudi-market-knowledge-framework/README.md"><span class="t">إطار المعرفة بالسوق السعودي</span><span class="d">اثنا عشر مجالاً: التأسيس، البيانات، الضرائب، التمويل، وغيرها، بمصدر لكل معلومة.</span></a></li>
       <li><a href="{G}/blob/main/04-entrepreneur-toolkit/README.md"><span class="t">حقيبة المؤسس</span><span class="d">اثنا عشر قالب أعمال ثنائي اللغة وثلاث حاسبات.</span></a></li>
       <li><a href="{G}/blob/main/05-agentic-ai-lab/README.md"><span class="t">مختبر الذكاء الاصطناعي الوكيلي</span><span class="d">مهارات، قوالب وكلاء، قالب تقييم، وسبعة عشر تمريناً.</span></a></li>
@@ -122,6 +125,22 @@ footer { margin-block-start: 56px; border-block-start: 1px solid var(--line); pa
     </ul>
   </section>
 
+  <section aria-labelledby="h-c3">
+    <h2 id="h-c3">عروض المقرر 3: الإطلاق وبناء النموذج التجاري</h2>
+    <p>سبعة عروض بالعربية، مولَّدة من الدروس. الأمثلة والأرقام المختلقة معلَّمة على شرائحها.</p>
+    <ul class="grid">
+{C3}
+    </ul>
+  </section>
+
+  <section aria-labelledby="h-c4">
+    <h2 id="h-c4">عروض المقرر 4: التوسع والحوكمة</h2>
+    <p>ستة عروض بالعربية، مولَّدة من الدروس. الأمثلة والأرقام المختلقة معلَّمة على شرائحها.</p>
+    <ul class="grid">
+{C4}
+    </ul>
+  </section>
+
   <section class="start" aria-labelledby="h-co">
     <h2 id="h-co">المستودعان المرافقان</h2>
     <p>يعمل كل منهما وحده. نربط ولا ننسخ.</p>
@@ -132,7 +151,7 @@ footer { margin-block-start: 56px; border-block-start: 1px solid var(--line); pa
   </section>
 </main>
 <footer>
-  <div class="wrap">المحتوى برخصة <bdi dir="ltr" lang="en">CC BY 4.0</bdi>، والبرامج برخصة <bdi dir="ltr" lang="en">Apache-2.0</bdi>. محرك العروض من «بيان» برخصة <bdi dir="ltr" lang="en">MIT</bdi>. لم يُجرَّب المقرران مع فوج بعد، ولم يراجع المحتوى التنظيمي محامٍ ولا مستشار ضريبي.</div>
+  <div class="wrap">المحتوى برخصة <bdi dir="ltr" lang="en">CC BY 4.0</bdi>، والبرامج برخصة <bdi dir="ltr" lang="en">Apache-2.0</bdi>. محرك العروض من «بيان» برخصة <bdi dir="ltr" lang="en">MIT</bdi>. لم تُجرَّب المقررات مع فوج بعد، ولم يراجع المحتوى التنظيمي محامٍ ولا مستشار ضريبي ولا مختص أمني.</div>
 </footer>
 </body>
 </html>
@@ -154,7 +173,7 @@ def cards(course):
 
 
 def build():
-    return PAGE.replace("{G}", REPO).replace("{C1}", cards("1")).replace("{C2}", cards("2"))
+    return PAGE.replace("{G}", REPO).replace("{C1}", cards("1")).replace("{C2}", cards("2")).replace("{C3}", cards("3")).replace("{C4}", cards("4"))
 
 
 def main(argv):

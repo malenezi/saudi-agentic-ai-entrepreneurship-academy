@@ -55,7 +55,7 @@
 
 ## مراجع
 
-- OWASP، Top 10 for LLM Applications 2025: [LLM01 Prompt Injection](https://genai.owasp.org/llmrisk/llm01-prompt-injection/) (المباشر وغير المباشر).
+- OWASP، Top 10 for LLM Applications (حقن التعليمات في المرتبة الأولى في إصداري 2025 و2026): [LLM01 Prompt Injection](https://genai.owasp.org/llmrisk/llm01-prompt-injection/) (المباشر وغير المباشر).
 - OWASP، مسرد المصطلحات: [AI Red Teaming](https://genai.owasp.org/glossary/ai-red-teaming/).
 - [دليل حوكمة الذكاء الاصطناعي الوكيلي](../../02-saudi-market-knowledge-framework/02-ai-regulations/agentic-ai-governance-playbook.md) في الأكاديمية.
 

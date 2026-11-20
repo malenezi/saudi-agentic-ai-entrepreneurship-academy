@@ -142,6 +142,8 @@ python cost_per_resolved_task.py --calls 4 --in-tokens 3000 --out-tokens 400 \
 
 [اختبار الوحدة 1.2](../quizzes/1-2-quiz.md): أسئلة من المراجعة السريعة والأخطاء الشائعة، مع الإجابات وشروحها.
 
+**التنقل:** السابق: [الوحدة 1.1](1-1-from-chatbots-to-agents.md) · [خطة المقرر](../syllabus.md) · التالي: [الوحدة 1.3](1-3-where-to-look.md)
+
 </div>
 
 ---

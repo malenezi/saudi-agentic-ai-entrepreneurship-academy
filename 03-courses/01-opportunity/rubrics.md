@@ -13,6 +13,8 @@ The thesis rubric keeps the criteria and weights of the [syllabus](syllabus.md).
 
 Self-paced learners are assessed on the thesis alone and use the other two rubrics as self-checks.
 
+The assessment standard shared by the four courses, including a recommended completion standard, is in the [programme trainer guide](../TRAINER-GUIDE.md), section 4. In Courses 2 to 4 the deliverable is graded as one piece of work; this course alone also grades two field packs, because the evidence is the course.
+
 ## 2. Validation gates
 
 Checked before the thesis is graded. Any "no" returns the work for more field evidence, whatever the score would be.
@@ -29,7 +31,7 @@ Checked before the thesis is graded. Any "no" returns the work for more field ev
 
 ## 3. سلّم تقدير الأطروحة
 
-| المعيار والوزن | 4 قوي | 3 مقبول | 2 ضعيف | 1 غير كافٍ |
+| المعيار والوزن | 4 متقن | 3 جيد | 2 نامٍ | 1 غير مكتمل |
 |---|---|---|---|---|
 | **أدلة العملاء 35%** | خمس مقابلات أو أكثر تغطي المنفّذ وصاحب القرار والدافع؛ اقتباسات حرفية؛ سلوك مُشاهَد؛ التزام موثّق؛ ذُكر ما خالف التوقع | خمس مقابلات أغلبها سلوك؛ المشتري محدد | خمس مقابلات لكنها آراء؛ المشتري غامض | أقل من خمس، أو معارف وأقارب |
 | **وضوح سير العمل 25%** | كل خطوة ونظام واستثناء؛ أحجام وأزمنة مقيسة مع طريقة القياس؛ نظام السجل وبوابة الموافقة مسمّيان | الخطوات والأنظمة كاملة؛ الأرقام من قول الموظف | خطوات عامة؛ بلا استثناءات أو بلا أرقام | وصف للإجراء المكتوب، لا لما يحدث |
@@ -62,6 +64,8 @@ Checked before the thesis is graded. Any "no" returns the work for more field ev
 | عمق التجميع | 20 | أنماط متكررة، جدول «قيل مقابل فُعل»، دليل ناقض، وقرار مكتوب |
 
 ## 6. معايرة المقيّمين
+
+أسماء المستويات الأربعة وُحّدت مع المقررات الأخرى في 20 نوفمبر 2026 (كانت: قوي، مقبول، ضعيف، غير كافٍ). الأوصاف والأوزان لم تتغير. معيار الإتمام المشترك في [دليل المدرب للبرنامج](../TRAINER-GUIDE.md).
 
 - قيّما أطروحتين معاً قبل التقييم المنفرد. معيار «أدلة العملاء» هو الأكثر انحرافاً بين المقيّمين.
 - ليكن أحد المقيّمين، إن أمكن، ممارساً من القطاع يقرأ الأطروحة بعين المشتري.

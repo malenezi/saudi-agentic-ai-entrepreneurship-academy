@@ -157,6 +157,8 @@ Reachable market (18 months) = customers you can actually reach × realistic ann
 
 [اختبار الوحدة 1.6](../quizzes/1-6-quiz.md): أسئلة من المراجعة السريعة والأخطاء الشائعة، مع الإجابات وشروحها.
 
+**التنقل:** السابق: [الوحدة 1.5](1-5-customer-discovery.md) · [خطة المقرر](../syllabus.md) · التالي: [الوحدة 1.7](1-7-writing-the-thesis.md)
+
 </div>
 
 ---

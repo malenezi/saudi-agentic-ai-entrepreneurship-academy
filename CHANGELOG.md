@@ -2,6 +2,18 @@
 
 ## Unreleased
 
+### QA audit of the four courses (20 November 2026)
+
+Findings, fixes, remaining gaps and a course-by-course readiness assessment are in the [QA report](03-courses/QA-REPORT.md).
+
+- Slide decks for Courses 3 and 4: thirteen decks generated from the lessons by `tools/slides_from_lessons.py`, built with the shared engine, rendered and checked for overflow, and listed on the landing page.
+- A [programme trainer guide](03-courses/TRAINER-GUIDE.md): the four courses at a glance, entry checks, one assessment standard with a recommended completion standard, where each activity's sample solution is, and how to prepare.
+- Course 2 updated to the 2026 OWASP numbering (lessons 2.3 and 2.6, their decks, lab exercise R7).
+- Navigation (previous, syllabus, next) in all 28 lessons. Missing sections added to the Course 1 and Course 2 instructor guides. Rubric level names and two Arabic security terms unified.
+- [Sample solutions](03-courses/01-opportunity/examples/activity-sample-solutions.md) for Course 1 activities 1.2 and 1.3.
+- The [courses index](03-courses/README.md) rewritten; stale "outline" notes removed from the learning and competency frameworks.
+- Six structure tests in `tests/test_courses.py` so the gaps do not return.
+
 ### Course 4: Scale and Govern, first content release (20 November 2026)
 
 Built from two drafts supplied by the owner, by the same rule: verify, keep the published syllabus, enrich. Hours (16), the five learning outcomes, the six-part scale pack and the rubric weights (30/20/20/15/15) are unchanged.

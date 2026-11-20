@@ -6,6 +6,8 @@ The deliverable rubric keeps the criteria and weights of the [syllabus](syllabus
 
 The five-part launch pack is graded as one piece of work with the rubric in section 3. Module outputs are checkpoints: they are reviewed, not graded separately. The Module 3.7 setup checklist is reviewed and carries no weight. Self-paced learners use the checkpoints and the [launch pack checklist](templates/launch-pack-checklist.md) as self-checks. The [module quizzes](quizzes/README.md) are formative and carry no weight.
 
+The assessment standard shared by the four courses, including a recommended completion standard, is in the [programme trainer guide](../TRAINER-GUIDE.md), section 4.
+
 ## 2. Validation gates
 
 Checked before the pack is graded. Any "no" returns it, whatever the score would be.

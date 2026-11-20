@@ -45,10 +45,11 @@ Suggested split, in minutes.
 | AI risk register, agent security assessment, human oversight matrix | [Compliance toolkit](../../02-saudi-market-knowledge-framework/compliance-toolkit/ai-risk-register.md) |
 | Unit economics calculator, pitch deck outline | [Founder Toolkit](../../04-entrepreneur-toolkit/README.md) |
 | Funding directory and startup ecosystem | [Domain 06](../../02-saudi-market-knowledge-framework/06-funding-investment/funding-and-investment.md) |
+| Six slide decks with speaker notes | [`slides/`](slides/README.md) |
 | Glossary and rubrics | [`glossary.md`](glossary.md), [`rubrics.md`](rubrics.md) |
 | Six formative quizzes with answer keys (60 questions) | [`quizzes/`](quizzes/README.md) |
 
-Slide decks do not exist yet.
+Slide decks for all six modules, with speaker notes, are in [`slides/`](slides/README.md). They were generated from the lessons on 20 November 2026 and are plainer than the hand-designed decks of Courses 1 and 2: read the notes (`N`) before the session and expect to talk around the tables. Programme-level guidance common to the four courses is in the [trainer guide](../TRAINER-GUIDE.md).
 
 ## Notes by module
 

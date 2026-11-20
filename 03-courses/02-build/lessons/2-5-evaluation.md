@@ -152,6 +152,8 @@ Success rate = passed cases ÷ total cases × 100
 
 [اختبار الوحدة 2.5](../quizzes/2-5-quiz.md): أسئلة من المراجعة السريعة والأخطاء الشائعة، مع الإجابات وشروحها. وللعرض التقديمي: [عروض المقرر 2](../slides/README.md).
 
+**التنقل:** السابق: [الوحدة 2.4](2-4-choosing-a-model.md) · [خطة المقرر](../syllabus.md) · التالي: [الوحدة 2.6](2-6-guardrails-and-human-approval.md)
+
 </div>
 
 ---

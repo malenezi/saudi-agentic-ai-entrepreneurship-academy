@@ -50,10 +50,11 @@ Suggested split, in minutes.
 | PDPL self-assessment, provider assessment, human oversight matrix, agent security assessment | [Compliance toolkit](../../02-saudi-market-knowledge-framework/compliance-toolkit/pdpl-self-assessment.md) |
 | PDPL founder guide and its worked example | [Domain 03](../../02-saudi-market-knowledge-framework/03-data-protection-pdpl/README.md) |
 | Establishment walkthrough; tax basics | [Domain 01](../../02-saudi-market-knowledge-framework/01-business-establishment/establishment-walkthrough.md), [Domain 05](../../02-saudi-market-knowledge-framework/05-tax-accounting-finance/tax-basics-for-founders.md) |
+| Seven slide decks with speaker notes | [`slides/`](slides/README.md) |
 | Glossary and rubrics | [`glossary.md`](glossary.md), [`rubrics.md`](rubrics.md) |
 | Seven formative quizzes with answer keys (70 questions) | [`quizzes/`](quizzes/README.md) |
 
-Slide decks do not exist yet. The quizzes for Modules 3.4 and 3.7 test what the lesson says, not the law; say so when you use them.
+Slide decks for all seven modules, with speaker notes, are in [`slides/`](slides/README.md). They were generated from the lessons on 20 November 2026 and are plainer than the hand-designed decks of Courses 1 and 2: read the notes (`N`) before the session and expect to talk around the tables. The quizzes for Modules 3.4 and 3.7 test what the lesson says, not the law; say so when you use them. Programme-level guidance common to the four courses is in the [trainer guide](../TRAINER-GUIDE.md).
 
 ## Notes by module
 

@@ -1,7 +1,7 @@
 # المقرر 4: التوسع والحوكمة
 # Course 4: Scale and Govern
 
-> **الإصدار الأول من المحتوى · First content release (20 November 2026).** الدروس الستة واختبار قصير لكل وحدة والقوالب والمثال المحلول والمسرد وسلالم التقدير ودليل المدرب متاحة الآن. لم يُجرَّب المقرر مع فوج بعد، ولم يراجع محامٍ الوحدة 4.3 ولا مختص في الأمن السيبراني الوحدة 4.4. ملاحظاتك واقتراحاتك مرحّب بها. · The six lessons, a quiz for each module, templates, a worked example, a glossary, rubrics and an instructor guide are available. The course has not been piloted, and Modules 4.3 and 4.4 have not been reviewed by a lawyer or a security specialist. Comments and suggestions are welcome.
+> **الإصدار الأول من المحتوى · First content release (20 November 2026).** الدروس الستة وعرض واختبار قصير لكل وحدة والقوالب والمثال المحلول والمسرد وسلالم التقدير ودليل المدرب متاحة الآن. لم يُجرَّب المقرر مع فوج بعد، ولم يراجع محامٍ الوحدة 4.3 ولا مختص في الأمن السيبراني الوحدة 4.4. ملاحظاتك واقتراحاتك مرحّب بها. · The six lessons, a slide deck and a quiz for each module, templates, a worked example, a glossary, rubrics and an instructor guide are available. The course has not been piloted, and Modules 4.3 and 4.4 have not been reviewed by a lawyer or a security specialist. Comments and suggestions are welcome.
 
 <div dir="rtl">
 
@@ -35,7 +35,7 @@
 | 4.5 | [مسارات النمو والتمويل والتخارج](lessons/4-5-growth-paths-and-funding.md) | 3 | مذكرة المسار وخارطة التوسع |
 | 4.6 | [العرض ويوم العروض](lessons/4-6-pitch-and-demo-day.md) | 2 | عرض في عشر دقائق، وعرض حي لمسار واحد |
 
-**مواد المقرر:** [المثال المحلول](examples/worked-example-scale-pack.md) (مؤسِّسة ومتاجر وبيانات مختلقة) · [حزمة التوسع](templates/scale-pack-checklist.md) · [معمارية التشغيل](templates/operating-architecture.md) · [ورقة المؤشرات وسجل التغيير](templates/weekly-kpi-sheet-and-change-log.md) · [خارطة التوسع](templates/scaling-roadmap.md) · [ورقة تشغيل يوم العروض](templates/demo-day-run-sheet.md) · [المسرد](glossary.md) · [سلالم التقدير](rubrics.md) · [دليل المدرب](instructor-guide.md) · [الاختبارات القصيرة](quizzes/README.md) · [ما لم يُعتمد من المسودات](not-adopted.md)
+**مواد المقرر:** [المثال المحلول](examples/worked-example-scale-pack.md) (مؤسِّسة ومتاجر وبيانات مختلقة) · [حزمة التوسع](templates/scale-pack-checklist.md) · [معمارية التشغيل](templates/operating-architecture.md) · [ورقة المؤشرات وسجل التغيير](templates/weekly-kpi-sheet-and-change-log.md) · [خارطة التوسع](templates/scaling-roadmap.md) · [ورقة تشغيل يوم العروض](templates/demo-day-run-sheet.md) · [المسرد](glossary.md) · [سلالم التقدير](rubrics.md) · [دليل المدرب](instructor-guide.md) · [العروض](slides/README.md) · [الاختبارات القصيرة](quizzes/README.md) · [ما لم يُعتمد من المسودات](not-adopted.md)
 
 **الوحدات 4.3 و4.4 و4.5 تثقيفية، وليست استشارة قانونية ولا أمنية ولا استثمارية.** ما فيها مسنود في [سجل المصادر](../../SOURCES.md) ومعه حدوده، والنص الرسمي هو المرجع.
 
@@ -121,4 +121,4 @@ Governance, risk and security (4.3, 4.4) and the Saudi funding landscape come fr
 
 ## What is still missing
 
-Slide decks for the six modules. A lawyer's review of Module 4.3 and a security specialist's review of Module 4.4. A reading of NCA's ECC-2:2024 and its controls for private entities from their own text. A buildathon run book. A second worked example with more than one acting agent. A first cohort's feedback. What was left out of the owner's drafts, and why, is in [not-adopted.md](not-adopted.md).
+Hand-designed slide decks: the current [decks](slides/README.md) are generated from the lessons. A lawyer's review of Module 4.3 and a security specialist's review of Module 4.4. A reading of NCA's ECC-2:2024 and its controls for private entities from their own text. A buildathon run book. A second worked example with more than one acting agent. A first cohort's feedback. What was left out of the owner's drafts, and why, is in [not-adopted.md](not-adopted.md).

@@ -1,7 +1,7 @@
 # المقرر 3: الإطلاق وبناء النموذج التجاري
 # Course 3: Launch and Business Model
 
-> **الإصدار الأول من المحتوى · First content release (20 November 2026).** الدروس السبعة واختبار قصير لكل وحدة والقوالب والمثال المحلول والمسرد وسلالم التقدير ودليل المدرب متاحة الآن. لم يُجرَّب المقرر مع فوج بعد، ولم يراجع محامٍ ولا مستشار ضريبي الوحدتين 3.4 و3.7. ملاحظاتك واقتراحاتك مرحّب بها. · The seven lessons, a quiz for each module, templates, a worked example, a glossary, rubrics and an instructor guide are now available. The course has not been piloted with a cohort, and Modules 3.4 and 3.7 have not been reviewed by a lawyer or a tax adviser. Comments and suggestions are welcome.
+> **الإصدار الأول من المحتوى · First content release (20 November 2026).** الدروس السبعة وعرض واختبار قصير لكل وحدة والقوالب والمثال المحلول والمسرد وسلالم التقدير ودليل المدرب متاحة الآن. لم يُجرَّب المقرر مع فوج بعد، ولم يراجع محامٍ ولا مستشار ضريبي الوحدتين 3.4 و3.7. ملاحظاتك واقتراحاتك مرحّب بها. · The seven lessons, a slide deck and a quiz for each module, templates, a worked example, a glossary, rubrics and an instructor guide are now available. The course has not been piloted with a cohort, and Modules 3.4 and 3.7 have not been reviewed by a lawyer or a tax adviser. Comments and suggestions are welcome.
 
 <div dir="rtl">
 
@@ -34,7 +34,7 @@
 | 3.6 | [التجارب وخطابات النوايا](lessons/3-6-pilots-and-letters-of-intent.md) | 2 | عرض تجربة أُرسل إلى ثلاث منشآت، وسجل الردود |
 | 3.7 | [تأسيس العمل](lessons/3-7-setting-up-the-business.md) | 2 | قائمة التأسيس وأسئلتك للمحامي والمحاسب |
 
-**مواد المقرر:** [المثال المحلول](examples/worked-example-launch-pack.md) (مؤسِّسة ومتاجر وبيانات مختلقة) · [حزمة الإطلاق](templates/launch-pack-checklist.md) · [مذكرة التسعير](templates/pricing-memo.md) · [ملف أدلة المشتري](templates/buyer-evidence-pack.md) · [قائمة تأسيس العمل](templates/business-setup-checklist.md) · [المسرد](glossary.md) · [سلالم التقدير](rubrics.md) · [دليل المدرب](instructor-guide.md) · [الاختبارات القصيرة](quizzes/README.md) · [ما لم يُعتمد ولماذا](not-adopted.md)
+**مواد المقرر:** [المثال المحلول](examples/worked-example-launch-pack.md) (مؤسِّسة ومتاجر وبيانات مختلقة) · [حزمة الإطلاق](templates/launch-pack-checklist.md) · [مذكرة التسعير](templates/pricing-memo.md) · [ملف أدلة المشتري](templates/buyer-evidence-pack.md) · [قائمة تأسيس العمل](templates/business-setup-checklist.md) · [المسرد](glossary.md) · [سلالم التقدير](rubrics.md) · [دليل المدرب](instructor-guide.md) · [العروض](slides/README.md) · [الاختبارات القصيرة](quizzes/README.md) · [ما لم يُعتمد ولماذا](not-adopted.md)
 
 **الوحدتان 3.4 و3.7 تثقيفيتان، وليستا استشارة قانونية ولا ضريبية.** ما فيهما مسنود في [سجل المصادر](../../SOURCES.md) ومعه حدوده، والنص الرسمي هو المرجع.
 
@@ -121,4 +121,4 @@ Compliance (3.4), pilots and letters of intent (3.6) and company set-up (3.7) ha
 
 ## What is still missing
 
-Slide decks for the seven modules. Quizzes now exist (see [quizzes](quizzes/README.md)). A lawyer's review of Module 3.4 and of the pilot and LOI outline, and a tax adviser's review of Module 3.7. A data processing agreement template. A second worked example on the software model. A first cohort's feedback. What was left out of the owner's drafts, and why, is in [not-adopted.md](not-adopted.md). See the [instructor guide](instructor-guide.md) and [CONTRIBUTING.md](../../CONTRIBUTING.md).
+Hand-designed slide decks: the current [decks](slides/README.md) are generated from the lessons. Quizzes now exist (see [quizzes](quizzes/README.md)). A lawyer's review of Module 3.4 and of the pilot and LOI outline, and a tax adviser's review of Module 3.7. A data processing agreement template. A second worked example on the software model. A first cohort's feedback. What was left out of the owner's drafts, and why, is in [not-adopted.md](not-adopted.md). See the [instructor guide](instructor-guide.md) and [CONTRIBUTING.md](../../CONTRIBUTING.md).

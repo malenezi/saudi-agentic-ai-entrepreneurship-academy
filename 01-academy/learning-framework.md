@@ -1,6 +1,6 @@
 # الإطار التعليمي · Learning framework
 
-> **ملاحظة · Note.** المقرران 1 و2 لهما محتوى اليوم؛ المقرران 3 و4 مخططان أوليان، وما يرد هنا عنهما تصميم مقترح. · Courses 1 and 2 have content today; Courses 3 and 4 are outlines, and references to them here describe the proposed design.
+> **ملاحظة · Note.** المقررات الأربعة لها محتوى اليوم (عروض المقررين 3 و4 مولَّدة من الدروس)، ولم يُجرَّب أي منها مع فوج. · All four courses have content today; none has been piloted with a cohort. See the [trainer guide](../03-courses/TRAINER-GUIDE.md).
 
 <div dir="rtl">
 

@@ -65,6 +65,27 @@ Suggested split, in minutes. The pattern is the same throughout: short explanati
 - **2.7.** Most learners should end on one agent. Ask for the condition that would make them revisit the decision.
 - **2.8.** One change per cycle is the rule learners break most. Ask to see the diff. Grade the honesty of the "not fixed" section.
 
+## What a facilitator should not do
+
+- Recommend a model, a framework or a provider. Names and prices change faster than the course; Module 2.4 teaches the comparison.
+- Let a learner connect an agent to a production system or to real customer data. Everything in this course runs on test accounts and masked or synthetic messages.
+- Accept a success rate with no test set another person can re-run. Gate 3 has no exceptions.
+- Let a learner raise the success rate by removing hard cases from the set.
+- Programme-level guidance common to the four courses is in the [trainer guide](../TRAINER-GUIDE.md).
+
+## Before each cohort
+
+Re-check, and update the lessons or tell us:
+
+| What | Where it is used | Source entry |
+|---|---|---|
+| Whether OWASP has published an edition newer than 2026 | 2.3, 2.6 | A84, A121 |
+| Token-ratio figures for Arabic | 2.2, 2.4 | A86 |
+| Multi-agent token figures | 2.7 | A87 |
+| The licence of any open-weights model named as an example | 2.4 | A6 |
+| The status of the Model Context Protocol and its governance | 2.3 | A83 |
+| The status of the draft amendments on storing data inside the Kingdom, described in lesson 2.4 as not final | 2.4 | the [PDPL founder guide](../../02-saudi-market-knowledge-framework/03-data-protection-pdpl/pdpl-founder-guide.md) |
+
 ## Reading for instructors
 
 Opened and checked on 19 November 2026 (see [SOURCES.md](../../SOURCES.md), A80 to A87):
@@ -72,7 +93,7 @@ Opened and checked on 19 November 2026 (see [SOURCES.md](../../SOURCES.md), A80 
 - Yao et al., "ReAct: Synergizing Reasoning and Acting in Language Models" (arXiv 2210.03629).
 - Anthropic, "Building effective agents" (December 2024) and "Effective context engineering for AI agents" (September 2025).
 - Anthropic, "How we built our multi-agent research system" (June 2025).
-- OWASP, Top 10 for LLM Applications, 2025 edition. Check for a newer edition before teaching.
+- OWASP, Top 10 for LLM Applications. The 2026 edition (August 2026) keeps Prompt Injection first and moves Excessive Agency from sixth to third (A121); the lessons and decks were updated on 20 November 2026. The companion list for agentic applications is used in Course 4 (A122).
 - The Model Context Protocol specification and its current governance.
 
 Named in the source drafts and **not opened in this pass** ([C37](../../SOURCES.md)): the NIST AI Risk Management Framework, the original retrieval-augmented generation paper, and general references on human-centred AI, regression testing, least privilege and defence in depth. Use the current official editions if you cite them.
