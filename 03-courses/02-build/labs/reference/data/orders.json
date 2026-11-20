@@ -1,0 +1,30 @@
+{
+ "note": "Invented test data for the labs. No real customer, order or phone number.",
+ "orders": {
+  "84521": {
+   "account": "0500000001",
+   "status": "shipped",
+   "days_since_update": 6
+  },
+  "84522": {
+   "account": "0500000001",
+   "status": "out_for_delivery",
+   "days_since_update": 0
+  },
+  "84523": {
+   "account": "0500000001",
+   "status": "processing",
+   "days_since_update": 1
+  },
+  "84540": {
+   "account": "0500000001",
+   "status": "delivered",
+   "days_since_update": 9
+  },
+  "84530": {
+   "account": "0500000002",
+   "status": "delivered",
+   "days_since_update": 2
+  }
+ }
+}

@@ -52,6 +52,7 @@ Suggested split, in minutes. The pattern is the same throughout: short explanati
 | Human Oversight Matrix and agent security assessment | [Compliance toolkit](../../02-saudi-market-knowledge-framework/compliance-toolkit/human-oversight-matrix.md) |
 | Arabic model guide | [Lab](../../05-agentic-ai-lab/arabic-models.md) |
 | Five agent templates as starting points | [Lab](../../05-agentic-ai-lab/agent-templates/README.md) |
+| Eight labs with a tested reference implementation, sample data and expected outputs | [`labs/`](labs/README.md) |
 | Glossary and rubrics | [`glossary.md`](glossary.md), [`rubrics.md`](rubrics.md) |
 
 ## Notes by module
@@ -98,9 +99,11 @@ Opened and checked on 19 November 2026 (see [SOURCES.md](../../SOURCES.md), A80 
 
 Named in the source drafts and **not opened in this pass** ([C37](../../SOURCES.md)): the NIST AI Risk Management Framework, the original retrieval-augmented generation paper, and general references on human-centred AI, regression testing, least privilege and defence in depth. Use the current official editions if you cite them.
 
-## What is not built yet
+## Labs and what is not built yet
 
-A step-by-step lab for one low-code orchestrator and one Python framework, runnable reference code, a shared Saudi-dialect test set, and a recorded demonstration. The course has not been piloted. See [CONTRIBUTING.md](../../CONTRIBUTING.md).
+Eight [labs](labs/README.md), one per module, were added on 20 November 2026 with a tested reference implementation: Python 3.9 or newer, standard library only, offline, no key and no cost. The default model is a deterministic simulator, so every learner gets the numbers of the worked example (24, 25, 28 and 30 of 35). Run `python3 -m unittest tests.test_course2_labs` on the room's machine before the session. The labs rehearse the method on the example; each learner still builds their own agent, with whatever tool they choose, for the graded project.
+
+Not built: a lab for a named low-code orchestrator, a test set of real Saudi-dialect messages, and a recorded demonstration. The course has not been piloted. See [CONTRIBUTING.md](../../CONTRIBUTING.md).
 
 ## Questions for the first pilot
 

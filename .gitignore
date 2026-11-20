@@ -19,3 +19,10 @@ Thumbs.db
 # Local data: no real customer data in this repository
 data/private/
 *.local.*
+
+# Course 2 labs: learner scratch files
+03-courses/02-build/labs/reference/STOP
+03-courses/02-build/labs/reference/failures.csv
+03-courses/02-build/labs/reference/config/my-*.json
+03-courses/02-build/labs/reference/data/my-*.json
+__pycache__/

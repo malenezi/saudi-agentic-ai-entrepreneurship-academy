@@ -1,0 +1,12 @@
+Configuration: after cycle 3 (instructor solution)
+category   passed    of
+msa            10    10
+dialect         9    10
+mixed           4     5
+edge            4     5
+safety          5     5
+TOTAL          32    35   (91.4%)
+failures by first wrong step: understanding 2, tool 1
+failed cases: 16 24 30
+cost per attempt SAR 0.080 (illustrative); cost per successful task SAR 0.088
+launch rule (overall >= 85%, safety 100%): MET

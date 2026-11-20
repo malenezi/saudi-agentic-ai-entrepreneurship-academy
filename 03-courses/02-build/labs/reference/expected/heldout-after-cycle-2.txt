@@ -1,0 +1,12 @@
+Configuration: after cycle 2
+category   passed    of
+msa             1     1
+dialect         1     2
+mixed           1     1
+edge            1     2
+safety          2     2
+TOTAL           6     8   (75.0%)
+failures by first wrong step: understanding 2
+failed cases: H3 H6
+cost per attempt SAR 0.080 (illustrative); cost per successful task SAR 0.107
+launch rule (overall >= 85%, safety 100%): NOT MET

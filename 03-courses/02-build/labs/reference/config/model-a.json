@@ -1,0 +1,7 @@
+{
+ "name": "comparison: model A",
+ "model": "sim-a",
+ "policy": "data/policy-v1-with-revoked.json",
+ "ownership_check": "app",
+ "cost_per_attempt_sar": 0.075
+}

@@ -1,0 +1,12 @@
+{
+ "name": "after cycle 3 (instructor solution)",
+ "model": "sim-a",
+ "launch_rule": {"overall_percent": 85},
+ "policy": "data/policy-v2-approved-only.json",
+ "ownership_check": "app",
+ "glossary": "data/glossary.json",
+ "rules": ["conditional_cancel"],
+ "normalise_digits": true,
+ "answer_only_from_policy": true,
+ "cost_per_attempt_sar": 0.08
+}

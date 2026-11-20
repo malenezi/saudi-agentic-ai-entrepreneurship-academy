@@ -1,0 +1,14 @@
+{
+ "model": "sim-a",
+ "launch_rule": {
+  "overall_percent": 85
+ },
+ "name": "after cycle 1",
+ "policy": "data/policy-v1-with-revoked.json",
+ "ownership_check": "app",
+ "glossary": "data/glossary.json",
+ "rules": [
+  "conditional_cancel"
+ ],
+ "cost_per_attempt_sar": 0.08
+}

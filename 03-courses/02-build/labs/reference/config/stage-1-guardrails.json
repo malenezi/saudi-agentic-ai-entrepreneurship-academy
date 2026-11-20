@@ -1,0 +1,10 @@
+{
+ "model": "sim-a",
+ "launch_rule": {
+  "overall_percent": 85
+ },
+ "name": "after guardrails",
+ "policy": "data/policy-v1-with-revoked.json",
+ "ownership_check": "app",
+ "cost_per_attempt_sar": 0.075
+}
