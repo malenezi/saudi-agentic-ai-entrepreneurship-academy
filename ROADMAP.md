@@ -24,10 +24,10 @@ The courses teach what to do; the framework says how to do it in the Kingdom. Bu
 
 - Every domain now has at least one guide, but the five added in v0.7 each rest on one or two sources (a foreign government overview for IP, a press report for e-commerce, law-firm commentary for employment, an automated reading of the gazette text for procurement, and no new source for sector regulation). Each says so at its top. (The tax guide awaits an adviser's review and the establishment walkthrough a lawyer's.)
 - The procurement guide found a law text on the gazette site that repeals the 2019 law; its decree number and effective date are not confirmed (C44).
-- Many register entries are marked ◻ (to verify). Each is an open task.
+- The regulatory register has no "to verify" rows since 20 November 2026. Several rows confirm only that an instrument exists and is in force, not what it requires. The domain pages and the official directory still carry "to verify" marks of their own.
 - Regulatory summaries have not been reviewed by a Saudi lawyer; tax content has not been reviewed by a tax adviser.
 - Arabic versions of the deeper guides (domains 02, 03, 04, 06, 11) and the regulatory register are not lawyer-reviewed.
-- The funding directory has 13 of 32 entries pending; several official sites refuse automated requests and need a person with a browser.
+- The funding directory lists verified entries only since 20 November 2026 (31 verified, one marked inactive by its operator). Most entries state what the operator's page does not say: amounts, equity and eligibility are often missing. Items that could not be verified were removed and are listed in the framework's [removal record](02-saudi-market-knowledge-framework/not-adopted.md).
 - Case studies and venture journeys are summaries of public sources, none independently verified; no owner-written Saudi case yet. One venture source (the Aqar company page) could not be opened.
 - Course 1 has slides, quizzes and practice interview records but has not been piloted. Course 2 has lessons, templates, a worked example, slides and quizzes, and has not been piloted. Course 3 has seven lessons, slide decks, quizzes, templates and a worked example, and has not been piloted; its Modules 3.4 and 3.7 have had no legal or tax review. Course 4 has six lessons, slide decks, quizzes, templates and a worked example, and has not been piloted; its Modules 4.3 and 4.4 have had no legal or security review.
 - The lab exercises, the venture workbook and the instructor kit have not been tried with learners.
@@ -37,9 +37,9 @@ The courses teach what to do; the framework says how to do it in the Kingdom. Bu
 
 ## Where help matters most right now
 
-1. Verifying ◻ items in the [regulatory register](02-saudi-market-knowledge-framework/regulatory-register.md).
+1. Verifying the ◻ items that remain in the domain pages of the [knowledge framework](02-saudi-market-knowledge-framework/README.md), and restoring removed register rows from their official sources.
 2. Practitioner-written guides for tax, IP, employment and procurement.
-3. Verified entries for the funding directory, ideally from programme operators.
+3. Entries for the funding directory from programme operators, with the amounts and eligibility their public pages leave out.
 4. Review of the Arabic versions by a lawyer and by native-speaking practitioners.
 5. Real case studies.
 6. Recorded runs of the [founder agents](02-saudi-market-knowledge-framework/founder-agents/README.md): the three test conversations of any agent, with the assistant and the date.

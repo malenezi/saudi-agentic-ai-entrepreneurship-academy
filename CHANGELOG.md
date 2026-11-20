@@ -12,7 +12,7 @@ Founder agents and runnable templates. All twelve founder agents are now publish
 
 - Eleven new agents in [`02-saudi-market-knowledge-framework/founder-agents/`](02-saudi-market-knowledge-framework/founder-agents/README.md), one page each: Saudi Startup Advisor, PDPL Compliance Assistant, AI Governance Advisor, Saudi Market Researcher, Business Model Designer, Financial Advisor, Funding Opportunity Finder, Investor Pitch Coach, Saudi E-commerce Advisor, Government Tender Assistant and AI Startup Architect. Each has an Arabic definition to paste into any assistant, the pages it reads, and three test conversations: an ordinary case, a case where the right answer is "I do not know", and a case where the user pushes for a definitive answer.
 - Every definition carries the operating standard as fixed rules: sources and verification dates from the attached pages, "to verify" labels passed on as they are, no article numbers, fees, amounts or eligibility criteria from memory, and no declaration of compliance.
-- The Funding Opportunity Finder separates the directory's verified, partly verified and pending entries into three tables, never says that applications are open, and names no programme that is not in the directory. 13 of the directory's 32 entries are still pending.
+- The Funding Opportunity Finder reads a directory of verified programmes only, separates funding from what is not funding, never says that applications are open, and names no programme that is not in the directory.
 - **Limits.** The agents are definitions, not programs. No test conversation has been recorded with an assistant, and no founder has used them. The definitions were written from the repository's own pages and contain no regulatory fact of their own.
 
 ### Runnable agent templates
@@ -29,6 +29,15 @@ Founder agents and runnable templates. All twelve founder agents are now publish
 - [Core-track lab: the same agent in n8n](03-courses/02-build/labs/lab-n8n-low-code.md). The order-enquiry agent of the eight labs as an n8n workflow whose nodes are a port of the Python reference. A test compares the two on every case at every stage (258 comparisons), and `labs/n8n/evaluate_n8n.py` scores the running workflow with the reference evaluator.
 - Run in n8n: 24 of 35 at the baseline, 30 of 35 after the second cycle with the launch rule met, and 6 of 8 on the held-out set. The intermediate stages (25 and 28) were confirmed through the harness.
 - This closes the item "no lab for a named low-code orchestrator" of the release-readiness report. n8n is used because the course names it for the core track; it is not a recommendation.
+
+### Funding directory and regulatory register: verified entries only
+
+At the owner's direction, both now keep only what was confirmed, and what could not be confirmed was removed. Every removed item and its reason is in the framework's [removal record](02-saudi-market-knowledge-framework/not-adopted.md).
+
+- **Funding directory:** 31 verified entries and one that its operator marks inactive; no partly verified or pending entries. Every partly verified and pending entry was opened in a browser on its operator's site on 20 November 2026. Added from their own pages: ten more NTDP products (Loan Guarantee, Nextera, Connect, Tamkeen, Lead It, Bridge, Saudi Unicorns, and three that are not for founders directly: Fuel, Empowering Accelerators, Source Tech), MCIT's Code AI Catalyst, Wa'ed, Falak, Riyadh Valley Company and 9/10ths. The Garage, the Sanabil Accelerator, Monsha'at's AI Incubator and CST's sandbox moved from partly verified to verified. Removed: ten names and SAMA's sandbox, whose page returned an error. Fuel is corrected: it supports venture capital funds, not startups (A140, A141).
+- **Regulatory register:** no "to verify" rows. Twenty rows or claims were confirmed against the issuer's site or the Bureau of Experts (A126 to A139), among them the current NCA control versions, the E-Commerce Law, the Labor Law amendments in force since February 2025, the Commercial Register Law in force since April 2025, the VAT rate, and CST's cloud regulations, which replace the framework the register used to name. Two rows and several unconfirmed claims were removed. The procurement row now says that the Ministry of Finance lists a new law next to the 2019 one.
+- The Funding Opportunity Finder agent was updated for a directory that lists verified programmes only.
+- **Limits.** Register rows were confirmed from official pages as returned by search, not by reading each instrument: several rows confirm that an instrument exists and is in force, and say so. The domain pages, the official directory, and the two funding guides still carry their own unverified mentions.
 
 ### Housekeeping
 
