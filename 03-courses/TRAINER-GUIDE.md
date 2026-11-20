@@ -49,7 +49,7 @@ Ask these before enrolling a learner. A "no" sends the learner to the course bef
 | Piece | Where | Use |
 |---|---|---|
 | Lesson | `lessons/` | The content. Header line gives duration, outcome and output. Sections: the idea, numbered content, activity, track differences, quick review, common mistakes, quiz link, navigation |
-| Slide deck with speaker notes | `slides/` | One HTML file per module, opens in a browser. Courses 1 and 2 are hand-designed; Courses 3 and 4 are generated from the lessons and plainer |
+| Slide deck with speaker notes | `slides/` | One HTML file per module, opens in a browser, with one idea per slide and the detail in the speaker notes |
 | Quiz with answer key | `quizzes/` | Ten questions (twelve in 1.4), formative, key and explanations in a collapsed section |
 | Activity template | `templates/`, the [Founder Toolkit](../04-entrepreneur-toolkit/README.md), the [compliance toolkit](../02-saudi-market-knowledge-framework/compliance-toolkit/pdpl-self-assessment.md) | What the learner fills in |
 | Sample solution | `examples/` | A worked version on invented data: see section 6 |

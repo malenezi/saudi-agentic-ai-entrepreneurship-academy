@@ -54,7 +54,7 @@ Suggested split, in minutes.
 | Glossary and rubrics | [`glossary.md`](glossary.md), [`rubrics.md`](rubrics.md) |
 | Seven formative quizzes with answer keys (70 questions) | [`quizzes/`](quizzes/README.md) |
 
-Slide decks for all seven modules, with speaker notes, are in [`slides/`](slides/README.md). They were generated from the lessons on 20 November 2026 and are plainer than the hand-designed decks of Courses 1 and 2: read the notes (`N`) before the session and expect to talk around the tables. The quizzes for Modules 3.4 and 3.7 test what the lesson says, not the law; say so when you use them. Programme-level guidance common to the four courses is in the [trainer guide](../TRAINER-GUIDE.md).
+Slide decks for all seven modules, with speaker notes, are in [`slides/`](slides/README.md). They were authored slide by slide on 20 November 2026, one idea per slide, with the detail in the speaker notes: read the notes (`N`) before the session. The quizzes for Modules 3.4 and 3.7 test what the lesson says, not the law; say so when you use them. Programme-level guidance common to the four courses is in the [trainer guide](../TRAINER-GUIDE.md).
 
 ## Notes by module
 

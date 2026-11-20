@@ -1,6 +1,6 @@
 # الإطار التعليمي · Learning framework
 
-> **ملاحظة · Note.** المقررات الأربعة لها محتوى اليوم (عروض المقررين 3 و4 مولَّدة من الدروس)، ولم يُجرَّب أي منها مع فوج. · All four courses have content today; none has been piloted with a cohort. See the [trainer guide](../03-courses/TRAINER-GUIDE.md).
+> **ملاحظة · Note.** المقررات الأربعة لها محتوى اليوم، ولم يُجرَّب أي منها مع فوج. · All four courses have content today; none has been piloted with a cohort. See the [trainer guide](../03-courses/TRAINER-GUIDE.md).
 
 <div dir="rtl">
 

@@ -121,4 +121,4 @@ Governance, risk and security (4.3, 4.4) and the Saudi funding landscape come fr
 
 ## What is still missing
 
-Hand-designed slide decks: the current [decks](slides/README.md) are generated from the lessons. A lawyer's review of Module 4.3 and a security specialist's review of Module 4.4. A reading of NCA's ECC-2:2024 and its controls for private entities from their own text. A buildathon run book. A second worked example with more than one acting agent. A first cohort's feedback. What was left out of the owner's drafts, and why, is in [not-adopted.md](not-adopted.md).
+A lawyer's review of Module 4.3 and a security specialist's review of Module 4.4. A reading of NCA's ECC-2:2024 and its controls for private entities from their own text. A buildathon run book. A second worked example with more than one acting agent. A first cohort's feedback. What was left out of the owner's drafts, and why, is in [not-adopted.md](not-adopted.md).

@@ -127,7 +127,7 @@ footer { margin-block-start: 56px; border-block-start: 1px solid var(--line); pa
 
   <section aria-labelledby="h-c3">
     <h2 id="h-c3">عروض المقرر 3: الإطلاق وبناء النموذج التجاري</h2>
-    <p>سبعة عروض بالعربية، مولَّدة من الدروس. الأمثلة والأرقام المختلقة معلَّمة على شرائحها.</p>
+    <p>سبعة عروض بالعربية. الأمثلة والأرقام المختلقة معلَّمة على شرائحها.</p>
     <ul class="grid">
 {C3}
     </ul>
@@ -135,7 +135,7 @@ footer { margin-block-start: 56px; border-block-start: 1px solid var(--line); pa
 
   <section aria-labelledby="h-c4">
     <h2 id="h-c4">عروض المقرر 4: التوسع والحوكمة</h2>
-    <p>ستة عروض بالعربية، مولَّدة من الدروس. الأمثلة والأرقام المختلقة معلَّمة على شرائحها.</p>
+    <p>ستة عروض بالعربية. الأمثلة والأرقام المختلقة معلَّمة على شرائحها.</p>
     <ul class="grid">
 {C4}
     </ul>

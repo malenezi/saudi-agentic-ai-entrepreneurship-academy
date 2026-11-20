@@ -49,7 +49,7 @@ Suggested split, in minutes.
 | Glossary and rubrics | [`glossary.md`](glossary.md), [`rubrics.md`](rubrics.md) |
 | Six formative quizzes with answer keys (60 questions) | [`quizzes/`](quizzes/README.md) |
 
-Slide decks for all six modules, with speaker notes, are in [`slides/`](slides/README.md). They were generated from the lessons on 20 November 2026 and are plainer than the hand-designed decks of Courses 1 and 2: read the notes (`N`) before the session and expect to talk around the tables. Programme-level guidance common to the four courses is in the [trainer guide](../TRAINER-GUIDE.md).
+Slide decks for all six modules, with speaker notes, are in [`slides/`](slides/README.md). They were authored slide by slide on 20 November 2026, one idea per slide, with the detail in the speaker notes: read the notes (`N`) before the session. Programme-level guidance common to the four courses is in the [trainer guide](../TRAINER-GUIDE.md).
 
 ## Notes by module
 

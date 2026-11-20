@@ -1,7 +1,11 @@
 #!/usr/bin/env python3
 # Copyright 2026 Saudi Agentic AI Entrepreneurship Academy contributors
 # Licensed under the Apache License, Version 2.0
-"""Generate first-version slide fragments from the lessons of a course. Standard library only.
+"""Generate a first-draft slide fragment from each lesson of a course. Standard library only.
+
+A drafting aid for a NEW course. The decks of Courses 3 and 4 were first drafted this way and then
+replaced by authored decks on 20 November 2026: do not run it on a course whose fragments were
+written or edited by hand, because it overwrites them.
 
     python3 tools/slides_from_lessons.py 3 4      write 03-courses/<course>/slides/src/<n>-<m>.html
 
@@ -259,6 +263,9 @@ def build(course, path):
 
 
 def main(argv):
+    if "--force" not in argv:
+        sys.exit("This overwrites slides/src/*.html. The decks of Courses 3 and 4 are hand-authored; pass --force only for a new course.")
+    argv = [a for a in argv if a != "--force"]
     for course in argv or sorted(FOLDERS):
         base = ROOT / FOLDERS[course]
         (base / "slides" / "src").mkdir(parents=True, exist_ok=True)

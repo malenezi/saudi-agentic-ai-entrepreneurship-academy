@@ -121,4 +121,4 @@ Compliance (3.4), pilots and letters of intent (3.6) and company set-up (3.7) ha
 
 ## What is still missing
 
-Hand-designed slide decks: the current [decks](slides/README.md) are generated from the lessons. Quizzes now exist (see [quizzes](quizzes/README.md)). A lawyer's review of Module 3.4 and of the pilot and LOI outline, and a tax adviser's review of Module 3.7. A data processing agreement template. A second worked example on the software model. A first cohort's feedback. What was left out of the owner's drafts, and why, is in [not-adopted.md](not-adopted.md). See the [instructor guide](instructor-guide.md) and [CONTRIBUTING.md](../../CONTRIBUTING.md).
+Quizzes now exist (see [quizzes](quizzes/README.md)). A lawyer's review of Module 3.4 and of the pilot and LOI outline, and a tax adviser's review of Module 3.7. A data processing agreement template. A second worked example on the software model. A first cohort's feedback. What was left out of the owner's drafts, and why, is in [not-adopted.md](not-adopted.md). See the [instructor guide](instructor-guide.md) and [CONTRIBUTING.md](../../CONTRIBUTING.md).

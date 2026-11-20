@@ -32,7 +32,7 @@
 | المقرر 3 | 7 | 7 | 7 | 4 | حزمة الإطلاق | نعم |
 | المقرر 4 | 6 | 6 | 6 | 5 | حزمة التوسع | نعم |
 
-عروض المقررين 3 و4 مولَّدة من الدروس، وهي أبسط تصميماً من عروض المقررين 1 و2. لمشاهدة العروض افتح [صفحة العروض](https://malenezi.github.io/saudi-agentic-ai-entrepreneurship-academy/).
+للمقرر 2 [ثمانية مختبرات](02-build/labs/README.md) بشيفرة مرجعية مختبَرة. لمشاهدة العروض افتح [صفحة العروض](https://malenezi.github.io/saudi-agentic-ai-entrepreneurship-academy/).
 
 ## شارك في تحسينها
 
