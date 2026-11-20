@@ -13,7 +13,7 @@
 | 1 | [اكتشاف الفرصة الوكيلية](01-opportunity/syllabus.md) | 16 | أطروحة الفرصة | **الإصدار الأول من المحتوى** |
 | 2 | [بناء الوكلاء الأذكياء](02-build/syllabus.md) | 24 | وكيل يعمل ومُقيَّم | **الإصدار الأول من المحتوى** |
 | 3 | [الإطلاق وبناء النموذج التجاري](03-launch/syllabus.md) | 20 | منتج أولي وتجربة مع عميل | **الإصدار الأول من المحتوى** |
-| 4 | [التوسع والحوكمة](04-scale-and-govern/syllabus.md) | 16 | معمارية تشغيل وعرض استثماري | مسودة مخطط · [الدرس 4.5](04-scale-and-govern/lessons/4-5-growth-paths-and-funding.md) مبني |
+| 4 | [التوسع والحوكمة](04-scale-and-govern/syllabus.md) | 16 | معمارية تشغيل وعرض استثماري | الإصدار الأول متاح · [ابدأ بالدرس 4.1](04-scale-and-govern/lessons/4-1-the-agent-operated-company.md) |
 
 ## شارك في تصميمها
 
@@ -25,7 +25,7 @@
 
 ## English
 
-> **Status: built in iterations.** Course 1 has its first content release (17 November 2026): seven lessons, six sector briefs, templates, rubrics and an instructor guide. Course 2 has its first content release (19 November 2026): eight lessons, eight slide decks, eight quizzes, six templates, a worked example, a glossary, rubrics and an instructor guide. Course 3 has its first content release (20 November 2026): seven lessons, seven quizzes, four templates, a worked example, a glossary, rubrics and an instructor guide, with slide decks still to come; its compliance and company set-up modules have had no legal or tax review. None has been piloted with a cohort. Course 4 is a **draft outline** published for discussion, with one lesson built, and it will change. The current priority is the [Saudi Market Knowledge Framework](../02-saudi-market-knowledge-framework/README.md); the courses will be built on top of it, one at a time.
+> **Status: built in iterations.** Course 1 has its first content release (17 November 2026): seven lessons, six sector briefs, templates, rubrics and an instructor guide. Course 2 has its first content release (19 November 2026): eight lessons, eight slide decks, eight quizzes, six templates, a worked example, a glossary, rubrics and an instructor guide. Course 3 has its first content release (20 November 2026): seven lessons, seven quizzes, four templates, a worked example, a glossary, rubrics and an instructor guide, with slide decks still to come; its compliance and company set-up modules have had no legal or tax review. Course 4 has its first content release (20 November 2026): six lessons, six quizzes, five templates, a worked example, a glossary, rubrics and an instructor guide, with slide decks still to come; its governance and security modules have had no legal or security review. None has been piloted with a cohort. The current priority is the [Saudi Market Knowledge Framework](../02-saudi-market-knowledge-framework/README.md); the courses will be built on top of it, one at a time.
 
 ## Proposed shape
 

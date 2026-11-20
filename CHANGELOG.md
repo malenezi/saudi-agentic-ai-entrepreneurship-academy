@@ -2,6 +2,18 @@
 
 ## Unreleased
 
+### Course 4: Scale and Govern, first content release (20 November 2026)
+
+Built from two drafts supplied by the owner, by the same rule: verify, keep the published syllabus, enrich. Hours (16), the five learning outcomes, the six-part scale pack and the rubric weights (30/20/20/15/15) are unchanged.
+
+- Five new lessons in [`03-courses/04-scale-and-govern/lessons/`](03-courses/04-scale-and-govern/lessons/), Arabic with English terms: [4.1 the agent-operated company](03-courses/04-scale-and-govern/lessons/4-1-the-agent-operated-company.md), [4.2 monitoring quality and cost](03-courses/04-scale-and-govern/lessons/4-2-monitoring-quality-and-cost.md), [4.3 governance and risk](03-courses/04-scale-and-govern/lessons/4-3-governance-and-risk.md), [4.4 security for agentic systems](03-courses/04-scale-and-govern/lessons/4-4-security-for-agentic-systems.md) and [4.6 pitch and Demo Day](03-courses/04-scale-and-govern/lessons/4-6-pitch-and-demo-day.md). Lesson 4.5 already existed.
+- A [worked example](03-courses/04-scale-and-govern/examples/worked-example-scale-pack.md) that carries the same invented store through four weeks of operation, including one bad week caused by an unpinned model version, and the six parts of the scale pack. All figures are invented, labelled and re-computed with the Academy's calculator.
+- Five templates: [operating architecture](03-courses/04-scale-and-govern/templates/operating-architecture.md), [weekly KPI sheet and change log](03-courses/04-scale-and-govern/templates/weekly-kpi-sheet-and-change-log.md), [scaling roadmap](03-courses/04-scale-and-govern/templates/scaling-roadmap.md), [Demo Day run sheet](03-courses/04-scale-and-govern/templates/demo-day-run-sheet.md) and [scale pack checklist](03-courses/04-scale-and-govern/templates/scale-pack-checklist.md). The risk register, security assessment and pitch outline stay in their toolkits and are linked.
+- Five new [quizzes](03-courses/04-scale-and-govern/quizzes/README.md) of ten questions (4.1 to 4.4 and 4.6); every lesson links its quiz.
+- A [glossary](03-courses/04-scale-and-govern/glossary.md), [rubrics](03-courses/04-scale-and-govern/rubrics.md) with four levels and five validation gates, an [instructor guide](03-courses/04-scale-and-govern/instructor-guide.md) with buildathon rules, and a record of [what was not adopted](03-courses/04-scale-and-govern/not-adopted.md).
+- Sources A120 to A124: NIST AI 600-1, the 2026 edition of the OWASP Top 10 for LLM Applications, the OWASP Top 10 for Agentic Applications, MAGNiTT's full-year 2025 investor count and regional share, and NCA's ECC-2:2024. Most are read through summaries, and each entry says so. Corrections B61 to B63 (the drafts cited ECC-1:2018 as current; "more than half" of regional venture funding is 45% for the full year; a requirement attributed to NIST AI 600-1 was not found). C49 lists what was not checked and not used. A84 now notes that the 2026 OWASP edition renumbers the list; Course 2 lessons and decks still cite the 2025 numbering.
+- **Limits.** Modules 4.3, 4.4 and 4.5 are educational, not legal, security or investment advice, and have had no specialist review. No slide decks yet. Not piloted.
+
 ### Course 3: Launch and Business Model, first content release (20 November 2026)
 
 Built from two drafts supplied by the owner, by the standing rule: verify, keep the published syllabus, enrich. Hours (20), learning outcomes, the five-part deliverable and the rubric weights (30/25/20/15/10) are unchanged.
