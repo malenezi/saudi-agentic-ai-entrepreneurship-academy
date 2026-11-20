@@ -11,7 +11,7 @@ One page for a trainer or an organisation that wants to run the four courses wit
 - **المساران:** أساسي منخفض الكود وعميق برمجي. المخرج واحد والسلّم واحد.
 - **التقييم:** مخرج تجاري واحد لكل مقرر، يمر ببوابات تحقق ثم يُقدَّر بسلّم من أربعة مستويات، و[معيار إتمام واحد](assessment-standard.md) للمقررات الأربعة. الاختبارات القصيرة تكوينية بلا درجات.
 - **كل مثال في المقررات مختلق وموسوم بذلك.** لا يعالج متعلم بيانات شخصية حقيقية قبل اتفاق مكتوب مع المنشأة.
-- **ما ليس جاهزاً:** لم يُجرَّب أي مقرر مع فوج، ولا مراجعة قانونية أو ضريبية أو أمنية للوحدات التي تمس الأنظمة. التفصيل في [تقرير ضمان الجودة](QA-REPORT.md).
+- **ما ليس جاهزاً:** لم يُجرَّب أي مقرر مع فوج، ولا مراجعة قانونية أو ضريبية أو أمنية للوحدات التي تمس الأنظمة. التفصيل في [تقرير جاهزية الإصدار](../RELEASE-READINESS.md).
 
 </div>
 
@@ -52,6 +52,7 @@ Ask these before enrolling a learner. A "no" sends the learner to the course bef
 | Slide deck with speaker notes | `slides/` | One HTML file per module, opens in a browser, with one idea per slide and the detail in the speaker notes |
 | Quiz with answer key | `quizzes/` | Ten questions (twelve in 1.4), formative, key and explanations in a collapsed section |
 | Activity template | `templates/`, the [Founder Toolkit](../04-entrepreneur-toolkit/README.md), the [compliance toolkit](../02-saudi-market-knowledge-framework/compliance-toolkit/pdpl-self-assessment.md) | What the learner fills in |
+| Lab (Course 2) | `labs/` | Eight executable labs with a tested reference implementation; offline, no key, no cost |
 | Sample solution | `examples/` | A worked version on invented data: see section 6 |
 | Checkpoint | `rubrics.md` | What the trainer or a peer looks for in the module output, ungraded |
 
@@ -70,7 +71,7 @@ The four courses use the same structure. Use it as written or adapt it, and say 
 7. **Calibrate before grading alone**: two assessors grade two submissions together. Each `rubrics.md` names the criterion that drifts most.
 8. **Assessors do not rule on law, tax, security or investment.** They check that the question was asked and that what is unsettled is written down with an owner and a date.
 
-For a 15-week university delivery with grade weights, forms and a peer-evaluation sheet, see the [instructor kit](../01-academy/instructor-kit/README.md); it was designed before Courses 3 and 4 were built and covers mainly Courses 1 and 2.
+For a fifteen-week delivery of all four courses (thirty session plans, four gates, grade weights and forms), or two three-credit semesters, see the [instructor kit](../01-academy/instructor-kit/README.md). How each outcome is taught and assessed is in the [alignment](alignment.md).
 
 ## 5. The running example
 
@@ -112,4 +113,4 @@ A sample solution shows the shape and standard of a good answer. A learner who c
 
 ## 9. Readiness
 
-The course-by-course assessment, what was fixed in the audit of 20 November 2026 and what remains open are in the [QA report](QA-REPORT.md).
+The course-by-course assessment, every gap and its status, and what still depends on people outside the repository are in the [release-readiness report](../RELEASE-READINESS.md). What has been validated and how is in [validation](validation/README.md). Learners have their own [guide](LEARNER-GUIDE.md).

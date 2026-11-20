@@ -73,6 +73,20 @@ class CompletionStandard(unittest.TestCase):
         self.assertIn("version %s" % standard.VERSION, shared)
         self.assertIn(str(standard.PASS_SCORE), shared)
 
+    def test_every_outcome_is_taught_and_assessed_and_every_criterion_is_used(self):
+        text = read("03-courses", "alignment.md")
+        sections = text.split("\n## Course ")[1:]
+        self.assertEqual(len(sections), 4)
+        for section in sections:
+            course = section[0]
+            rows = re.findall(r"^\| (\d) \| .+? \| ([\d., ]+) \| Quizzes .+? \| (.+?) \|$", section, re.M)
+            self.assertEqual([r[0] for r in rows], ["1", "2", "3", "4", "5"], "course " + course)
+            used = set()
+            for _, modules, criteria in rows:
+                self.assertTrue(modules.strip())
+                used.update(c.strip() for c in criteria.split(","))
+            self.assertEqual(used, {name for name, _ in standard.COURSES[course]["criteria"]}, "course " + course)
+
 
 if __name__ == "__main__":
     unittest.main()

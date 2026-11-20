@@ -2,7 +2,7 @@
 
 <div dir="rtl">
 
-> **الحالة:** المقررات الأربعة لها محتواها الأول (17 إلى 20 نوفمبر 2026): 28 وحدة، لكل منها درس وعرض واختبار قصير بإجاباته ونشاط بقالبه وحله النموذجي. **لم يُجرَّب أي مقرر مع فوج بعد**، ولم يراجع مختص قانوني أو ضريبي أو أمني الوحدات التي تمس الأنظمة. التفصيل في [تقرير ضمان الجودة](QA-REPORT.md).
+> **الحالة:** المقررات الأربعة لها محتواها الأول (17 إلى 20 نوفمبر 2026): 28 وحدة، لكل منها درس وعرض واختبار قصير بإجاباته ونشاط بقالبه وحله النموذجي. **لم يُجرَّب أي مقرر مع فوج بعد**، ولم يراجع مختص قانوني أو ضريبي أو أمني الوحدات التي تمس الأنظمة. التفصيل في [تقرير جاهزية الإصدار](../RELEASE-READINESS.md).
 
 أربعة مقررات متتابعة بمسارين (أساسي منخفض الكود، وعميق برمجي)، كل مقرر ينتهي بمُخرَج تجاري يُقيَّم بالدليل.
 
@@ -17,11 +17,13 @@
 
 | أنت | ابدأ من |
 |---|---|
-| متعلم ذاتي | خطة المقرر 1، ثم قسم «ابدأ من هنا» فيها. كل درس ينتهي برابط الدرس التالي |
+| متعلم ذاتي | [دليل المتعلم](LEARNER-GUIDE.md)، ثم خطة المقرر 1. كل درس ينتهي برابط الدرس التالي |
 | عندك فكرة موثقة أو وكيل يعمل | راجع «المتطلب السابق» في الجدول، وابدأ من المقرر الذي تحققه |
 | مدرب أو جهة تريد تقديم المقررات | [دليل المدرب للبرنامج](TRAINER-GUIDE.md)، ثم دليل المدرب في كل مقرر |
-| مدرّس جامعي | [حقيبة المدرّس](../01-academy/instructor-kit/README.md): خطة من 15 أسبوعاً |
-| تريد أن تعرف ما ينقص | [تقرير ضمان الجودة](QA-REPORT.md) |
+| مدرّس جامعي أو برنامج من 15 أسبوعاً | [حقيبة المدرّس](../01-academy/instructor-kit/README.md): المقررات الأربعة في ثلاثين جلسة، أو في فصلين |
+| مقيّم | [معيار الإتمام](assessment-standard.md) و[مصفوفة النواتج والتقييم](alignment.md) |
+| مختص يراجع المحتوى التنظيمي، أو جهة تجرّب فوجاً | [التحقق](validation/README.md): حزم المراجعة وبروتوكول التجربة |
+| تريد أن تعرف ما ينقص | [تقرير جاهزية الإصدار](../RELEASE-READINESS.md) |
 
 ## ما في كل مقرر
 
@@ -44,7 +46,7 @@
 
 ## English
 
-> **Status.** All four courses have their first content (17 to 20 November 2026): 28 modules, each with a lesson, a slide deck, a quiz with an answer key, and an activity with a template and a sample solution. **No course has been piloted with a cohort**, and the modules that touch law, tax and security have had no specialist review. Details are in the [QA report](QA-REPORT.md).
+> **Status.** All four courses have their first content (17 to 20 November 2026): 28 modules, each with a lesson, a slide deck, a quiz with an answer key, and an activity with a template and a sample solution. **No course has been piloted with a cohort**, and the modules that touch law, tax and security have had no specialist review. Details are in the [release-readiness report](../RELEASE-READINESS.md).
 
 ```
  Course 1            Course 2            Course 3              Course 4
@@ -57,10 +59,12 @@ Four courses, 76 contact hours, two tracks (a low-code core track and a code dee
 
 | You are | Start at |
 |---|---|
-| A self-paced learner | The Course 1 [syllabus](01-opportunity/syllabus.md) and its "start here" table. Every lesson ends with a link to the next |
+| A self-paced learner | The [learner guide](LEARNER-GUIDE.md), then the Course 1 [syllabus](01-opportunity/syllabus.md). Every lesson ends with a link to the next |
 | A founder with a documented idea or a working agent | The entry requirements in the [trainer guide](TRAINER-GUIDE.md), section 2 |
 | A trainer or an organisation running a cohort | The [programme trainer guide](TRAINER-GUIDE.md), then each course's instructor guide |
-| A university instructor | The [instructor kit](../01-academy/instructor-kit/README.md): a 15-week plan |
+| A university instructor or a 15-week programme | The [instructor kit](../01-academy/instructor-kit/README.md): all four courses in thirty sessions, or in two semesters |
+| An assessor | The [completion standard](assessment-standard.md) and the [outcomes and assessment alignment](alignment.md) |
+| A specialist reviewer or an organisation piloting a cohort | [Validation](validation/README.md): review packets and the pilot protocol |
 
 ## What you can use without taking a course
 

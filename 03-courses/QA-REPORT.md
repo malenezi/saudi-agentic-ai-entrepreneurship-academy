@@ -2,6 +2,8 @@
 
 **Date:** 20 November 2026 · **Scope:** `03-courses/` and the files that describe it · **Method and limits:** section 1
 
+> **Superseded in part.** This is the audit as written. The remediation that followed on the same day closed gaps 4, 5 and 6 of section 5, replaced the completion standard proposed in section 6, and replaced the generated decks. The current status of every gap is in the [release-readiness report](../RELEASE-READINESS.md).
+
 <div dir="rtl">
 
 ## الخلاصة بالعربية

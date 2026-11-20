@@ -2,6 +2,18 @@
 
 ## Unreleased
 
+### Remediation and release readiness (20 November 2026)
+
+Status of every gap, tests, readiness by course and a go/no-go recommendation are in the [release-readiness report](RELEASE-READINESS.md).
+
+- **Course 2 labs:** eight labs, one per module, with a tested reference implementation (Python, standard library only) that runs offline with a simulated model and reproduces the worked example: 24, 25, 28 and 30 of 35. Test data, configurations, expected outputs, troubleshooting, and an optional path to any OpenAI-compatible endpoint.
+- **Decks for Courses 3 and 4:** thirteen decks authored slide by slide replace the generated ones. No overflow, no dense-slide notes.
+- **Completion standard, version 1.0:** gates, no level 1, lead criterion at level 3 or above, weighted score of 2.7 or more; distinction band; evidence, remediation and certification eligibility. Applied in all four rubrics, with `tools/score_submission.py`.
+- **Instructor kit:** fifteen weeks for all four courses, thirty session plans, four gates, a two-semester alternative, a completion record form.
+- **Validation:** a desk walkthrough (not a pilot) with six findings corrected, a pilot protocol, and four specialist review packets with claim registers and unsigned sign-off forms. Ten regulated lessons state their verification status.
+- **Guides:** a learner guide, an outcomes-to-assessment alignment, third-party attribution, contribution notes for reviewers, pilot organisations and code contributors.
+- **Not done:** no pilot, no specialist sign-off, no English versions of the lessons.
+
 ### QA audit of the four courses (20 November 2026)
 
 Findings, fixes, remaining gaps and a course-by-course readiness assessment are in the [QA report](03-courses/QA-REPORT.md).
