@@ -19,7 +19,7 @@
 | دقيقة | تصحيح خطأ إملائي أو رابط معطّل | زر التعديل في GitHub مباشرة |
 | 5 دقائق | سؤال أو ملاحظة: «هذا غير واضح» أو «هذا ينقصه كذا» | افتح Issue |
 | 10 دقائق | تحديث معلومة تغيّرت (برنامج، رابط، تاريخ) | Issue من نوع `resource-update` |
-| 20 دقيقة | التحقق من بند عليه علامة ◻ في [السجل التنظيمي](02-saudi-market-knowledge-framework/regulatory-register.md) | أرسل الرابط الرسمي وتاريخ التحقق |
+| 20 دقيقة | توثيق بند من [قائمة ما حُذف](02-saudi-market-knowledge-framework/not-adopted.md) من مصدره الرسمي | أرسل الرابط الرسمي وتاريخ التحقق |
 | 30 دقيقة | ترجمة فقرة أو تدقيق لغوي | طلب دمج أو Issue |
 | ساعة | حالات اختبار باللهجة السعودية لوكيل | أضفها إلى قالب التقييم |
 | ساعة | تجربة من عملك: «هكذا أسسنا» أو «هكذا تعاملنا مع كذا» | اكتبها بأي صيغة |
@@ -43,7 +43,7 @@
 
 هذه ليست حواجز، بل ما يجعل المستودع موثوقاً. وإن لم تستطع استيفاء أحدها فأرسل مساهمتك ونساعدك:
 
-- **الأرقام والمعلومات التنظيمية لها مصدر.** أضفه إن عرفته، أو ضع علامة ◻ (للتحقق) ونبحث عنه معاً.
+- **الأرقام والمعلومات التنظيمية لها مصدر.** أضفه إن عرفته، أو قل في طلبك إنه بلا مصدر ونبحث عنه معاً. ما لا مصدر له لا يُنشر في إطار المعرفة.
 - **لا بيانات شخصية ولا أسرار.** لا مفاتيح API، ولا بيانات عملاء، ولا معلومات تجارية سرية.
 - **المحتوى التنظيمي توعوي** وليس استشارة قانونية أو ضريبية.
 - **الحياد.** نذكر الأدوات والجهات لقيمتها التعليمية، دون ترويج.
@@ -90,7 +90,7 @@ Our side of the deal:
 | 1 minute | Fix a typo or a broken link | The edit button on GitHub |
 | 5 minutes | A question or remark: "this is unclear", "this is missing" | Open an issue |
 | 10 minutes | Update something that changed (programme, link, date) | A `resource-update` issue |
-| 20 minutes | Verify an item marked ◻ in the [regulatory register](02-saudi-market-knowledge-framework/regulatory-register.md) | Send the official link and the date you checked |
+| 20 minutes | Verify an item from the [removal record](02-saudi-market-knowledge-framework/not-adopted.md) at its official source | Send the official link and the date you checked |
 | 30 minutes | Translate a paragraph or proofread | Pull request or issue |
 | 1 hour | Saudi-dialect test cases for an agent | Add them to the evaluation template |
 | 1 hour | An experience from your business: "how we set up", "how we handled this" | Write it in any form |
@@ -114,7 +114,7 @@ Founders and business owners · lawyers · accountants and tax advisers · cyber
 
 These are not barriers. If you cannot meet one, send your contribution anyway and we will help.
 
-- **Numbers and regulatory statements have a source.** Add it if you know it, or mark the item ◻ (to verify) and we will look for it together.
+- **Numbers and regulatory statements have a source.** Add it if you know it, or say in your request that it has no source and we will look for it together. An item without a source is not published in the knowledge framework.
 - **No personal data or secrets.** No API keys, customer data or confidential business information.
 - **Regulatory content is educational**, not legal or tax advice.
 - **Neutrality.** Tools and organisations are named for their teaching value, without promotion.

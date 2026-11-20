@@ -93,6 +93,12 @@ class FundingDirectory(unittest.TestCase):
                 text = f.read()
             for mark in ("\u25fb", "\u25d0"):
                 self.assertNotIn(mark, text, name)
+        import glob
+        for path in glob.glob(os.path.join(folder, "**", "*.md"), recursive=True):
+            if os.path.basename(path) == "not-adopted.md" or "founder-agents" in path:
+                continue
+            with open(path, encoding="utf-8") as f:
+                self.assertNotIn("\u25fb", f.read(), path)
 
     def test_old_entries_are_flagged_and_strict_fails(self):
         result = run(self.TOOL, "--today", "2027-06-01", "--strict")

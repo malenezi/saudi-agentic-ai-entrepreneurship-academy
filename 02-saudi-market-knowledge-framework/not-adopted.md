@@ -93,9 +93,25 @@
 | نص نظام الاستثمار ورسومه والجهة المشرفة | لم تتأكد؛ وبقي ما في دليل المستثمر |
 | حدود الحجم في ضوابط القطاع الخاص غير الحرج · النشر النهائي لإرشادات الأمن السيبراني للذكاء الاصطناعي · نتيجة استطلاع تعديلات لائحة حماية البيانات · النص الموحد الرسمي للنظام | أسئلة مفتوحة كانت موسومة «للتحقق» ولم نجد لها جواباً رسمياً |
 
+**من صفحات المجالات ودليل الجهات ودليلَي التمويل (الدفعة الثانية، 20 نوفمبر 2026)**
+
+| الصفحة | ما حُذف |
+|---|---|
+| الضرائب (05) | الزكاة، ضريبة الدخل، تسعير المعاملات، وقاعدة توزيع الزكاة وضريبة الدخل بحسب الملكية |
+| التوظيف (09) | حماية الأجور، رخص العمل والإقامة، وثيقة العمل الحر، العمل عن بعد والمرن |
+| التجارة الإلكترونية (08) | حماية المستهلك ومكافحة الغش التجاري، التعاملات الإلكترونية، خدمات المدفوعات، ترخيص الإعلان للأفراد، شروط التسويق المباشر |
+| القطاعات (10) | التعليم؛ بيئة البنك المركزي التجريبية؛ مختبر التقنية المالية؛ بيئات تجريبية أخرى وردت في مسودات |
+| حماية البيانات (03) | دليل سدايا لجهات التحكم والمعالجة |
+| المشتريات الحكومية (12) | سدايا ومكتب إدارة البيانات الوطنية؛ سياسة تصنيف البيانات |
+| دليل الجهات الرسمية | وزارة التعليم (موقعها أعاد صفحة خطأ) |
+| منظومة ريادة الأعمال | برنامج بادر؛ مراكز الجامعات؛ قسم الفعاليات كله (بيبان، ليب، أسابيع منشآت، الهاكاثونات، الغرف) |
+| التمويل والاستثمار | بادر؛ Flat6Labs؛ مسرّعات الجامعات؛ «جدا»؛ شبكات الملائكة العامة |
+
+وصُحّحت أربعة عناوين في دليل الجهات: البرنامج الوطني لتنمية تقنية المعلومات، وهيئة السوق المالية، وكفالة، والمركز السعودي للأعمال.
+
 </div>
 
 ## Removed on 20 November 2026 because it could not be verified
 
-At the owner's direction, the funding directory and the regulatory register now keep only what was confirmed. Official pages were opened in a browser; what could not be read there was removed. Removal does not mean an item is wrong or that an organisation does not exist. It means we did not read it at its source. The two tables above list every removed item and the reason. Programmes searched for and not added: stc's inspireU (its site did not open), Blossom Accelerator's DominAite (the announced page shows a hosting placeholder) and GAIA (no current official page found).
+At the owner's direction, the funding directory and the regulatory register now keep only what was confirmed. Official pages were opened in a browser; what could not be read there was removed. Removal does not mean an item is wrong or that an organisation does not exist. It means we did not read it at its source. The tables above list every removed item and the reason. The same rule was then applied to the twelve domain pages, the official directory and the two funding guides; the third table lists what left them. Programmes searched for and not added: stc's inspireU (its site did not open), Blossom Accelerator's DominAite (the announced page shows a hosting placeholder) and GAIA (no current official page found).
 

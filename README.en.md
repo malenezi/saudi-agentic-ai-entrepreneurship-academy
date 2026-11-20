@@ -120,7 +120,7 @@ We describe what exists as it is. The status of every item and the results of ev
 
 | Available to use | In progress | Not yet tested |
 |---|---|---|
-| First content of all four courses | Many regulatory register entries are marked ◻ (to verify) | No course has been piloted with a cohort |
+| First content of all four courses | Restoring what was removed from the register and the funding directory, once verified at its source | No course has been piloted with a cohort |
 | Knowledge framework: at least one published guide in every domain | Five newer guides rest on limited sources: IP, e-commerce, employment, sectors, government procurement | No lawyer, tax adviser or security specialist has reviewed the regulatory content |
 | Founder Toolkit, lab and case studies | Saudi cases written by their owners | The exercises, the workbook and the instructor kit have not been tried with learners |
 | Course 2 labs with a tested reference implementation | English versions of the lessons: lessons are in Arabic with English terms and an English summary | The completion standard has not been applied to a cohort |
@@ -159,11 +159,11 @@ This academy is built in the open, in iterations, and it belongs to the people w
 |---|---|
 | A minute | Fix a typo or a broken link |
 | 5 minutes | A question or a note: "this is unclear" or "this is missing" |
-| 20 minutes | Verify an item marked ◻ in the [regulatory register](02-saudi-market-knowledge-framework/regulatory-register.md) |
+| 20 minutes | Verify an item from the [removal record](02-saudi-market-knowledge-framework/not-adopted.md) at its official source |
 | An hour | An experience from your own business, or Saudi-dialect test cases for an agent |
 | A few hours to a week | A guide in one of the domains, or a real case study |
 
-Not sure where to start? Pick any item marked ☐ or ◻ in the [Saudi Market Knowledge Framework](02-saudi-market-knowledge-framework/README.md).
+Not sure where to start? Pick an item from the [list of what was removed as unverified](02-saudi-market-knowledge-framework/not-adopted.md) and verify it at its official page.
 
 **2. Send it the way that is easiest for you**
 
@@ -179,7 +179,7 @@ Every contribution is received with respect and answered. We help you complete a
 
 - A legal, tax or security specialist to review one of the [review packets](03-courses/validation/README.md).
 - An organisation to pilot a course with a cohort, following the [pilot protocol](03-courses/validation/pilot-protocol.md).
-- Verifying ◻ items in the regulatory register, and entries in the funding directory.
+- Verifying what was removed from the register and the funding directory, and adding the amounts and conditions that programme pages leave out.
 - Practitioner-written guides for tax, IP, employment and government procurement.
 - Real Saudi case studies written by their owners.
 

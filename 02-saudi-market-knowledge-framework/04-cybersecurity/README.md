@@ -28,10 +28,10 @@ Do not assume every NCA control applies to every startup. For each control set a
 
 | Instrument | Applies to | Status | Verification |
 |---|---|---|---|
-| Non-CNI Private Sector Entities Cybersecurity Controls (NCNICC-1:2025) | Private-sector entities that are not critical infrastructure; obligations vary by entity size | Binding | ✔ adopted 28 December 2025 · ◻ thresholds |
-| Essential Cybersecurity Controls (ECC) | Government and critical-infrastructure entities; vendors by contract | Binding | ◻ version |
-| Cloud Cybersecurity Controls (CCC) | Cloud providers and tenants in scope | Binding | ◻ version |
-| Data Cybersecurity Controls (DCC) | Entities in scope | Binding | ◻ |
+| Non-CNI Private Sector Entities Cybersecurity Controls (NCNICC-1:2025) | Private-sector entities that are not critical infrastructure; obligations vary by entity size | Binding | ✔ adopted 28 December 2025 |
+| Essential Cybersecurity Controls (ECC-2:2024) | Government and critical-infrastructure entities; vendors by contract | Binding | ✔ current version, updating ECC-1:2018 (A124, A126) |
+| Cloud Cybersecurity Controls (CCC-2:2024) | Cloud providers and tenants in scope | Binding | ✔ current version (A126) |
+| Data Cybersecurity Controls (DCC-1:2022) | Entities in scope | Binding | ✔ (A126) |
 | National Cybersecurity Risk Management Framework | Government and critical-infrastructure entities | Framework | ✔ released July 2025 |
 | AI Cybersecurity Guidelines (AICG-1:2026) | AI systems | **Draft**, non-binding | ✔ status |
 

@@ -22,9 +22,9 @@ Saudi Authority for Intellectual Property (SAIP). Under the new Copyright Law so
 |---|---|---|
 | Copyright Law, Royal Decree M/169 | Binding | ✔ in force 12 August 2026 |
 | Copyright Implementing Regulations | Binding | ✔ published 31 July 2026 |
-| Trademark law and registration | Binding | ◻ |
-| Patent law and registration | Binding | ◻ |
-| Trade secret and confidentiality rules | Binding | ◻ |
+| GCC Trademark Law and its implementing regulation | Binding | ✔ listed among SAIP's laws and regulations (A136); text not read here |
+| Law of Patents, Layout Designs of Integrated Circuits, Plant Varieties and Industrial Designs | Binding | ✔ listed among SAIP's laws and regulations (A136); text not read here |
+| Regulation for the Protection of Confidential Commercial Information | Binding | ✔ listed among SAIP's laws and regulations, published 27 June 2022 (A136); text not read here |
 
 ## The AI training exception
 

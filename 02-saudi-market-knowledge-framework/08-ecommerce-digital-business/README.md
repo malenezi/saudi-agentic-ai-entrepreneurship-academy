@@ -20,13 +20,8 @@ Ministry of Commerce (e-commerce and consumer protection), ZATCA (VAT and invoic
 
 | Instrument | Authority | Status | Verification |
 |---|---|---|---|
-| E-Commerce Law and Implementing Regulations | Ministry of Commerce | Binding | ◻ |
-| Consumer protection and anti-commercial-fraud rules | Ministry of Commerce | Binding | ◻ |
-| Electronic transactions framework | — | Binding | ◻ |
-| Payment services rules; licensed payment providers | SAMA | Binding | ◻ |
-| Advertising licence for individuals advertising on social media | Media regulator | Binding | ◻ |
+| E-Commerce Law and Implementing Regulations | Ministry of Commerce | Binding | ✔ Royal Decree M/126 of 7/11/1440H, in force; applied from 20 October 2019; the regulation and a compliance list for online stores are on the Ministry's page (A128) |
 | Regulations for Providing Digital Content Platform Services | CST | Binding for content platforms | ✔ in force 8 October 2024 |
-| PDPL conditions on direct marketing | SDAIA | Binding | ◻ |
 
 ## What changes when an agent sells or serves
 

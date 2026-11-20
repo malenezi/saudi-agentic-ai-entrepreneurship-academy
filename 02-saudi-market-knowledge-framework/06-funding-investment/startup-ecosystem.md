@@ -1,6 +1,6 @@
 # منظومة ريادة الأعمال · Startup ecosystem directory
 
-Last reviewed: 16 November 2026. Descriptions are general; confirm current programmes on each official site.
+Last reviewed: **20 November 2026**. Since that date this page names only organisations whose own sites were opened; the rest were removed ([what was removed](../not-adopted.md)). Confirm current programmes on each official site.
 
 النسخة العربية: [startup-ecosystem.ar.md](startup-ecosystem.ar.md)
 
@@ -15,19 +15,17 @@ Last reviewed: 16 November 2026. Descriptions are general; confirm current progr
 | Organisation | Role | What a founder of an agentic venture gets | When |
 |---|---|---|---|
 | **Monsha'at** (الهيئة العامة للمنشآت الصغيرة والمتوسطة) · monshaat.gov.sa | The SME authority | Training through its academy, support centres in major cities, incubators and accelerators including an AI Incubator run with NTDP (33 startups graduated from the first cohort in June 2026), the quarterly SME Monitor for market data | From day one; AI Incubator once you have an MVP |
-| **NTDP** (البرنامج الوطني لتنمية تقنية المعلومات) · ntdp.gov.sa | National programme supporting technology companies | Support products for technology startups at different stages; partner behind several incubators and accelerators | Prototype stage onward |
-| **MCIT Center of Digital Entrepreneurship (CODE)** (مركز ريادة الأعمال الرقمية) | The ICT ministry's entrepreneurship arm | Digital entrepreneurship programmes, mentorship, incubation | Idea to early traction |
-| **The Garage** (الكراج) | Startup district and accelerator in Riyadh | Workspace, acceleration programmes, community and investor access for technology startups | MVP onward |
+| **NTDP** (البرنامج الوطني لتنمية تقنية المعلومات) · ntdp.mcit.gov.sa | National programme supporting technology companies | Sixteen support products for technology companies, from grants and salary support to financing guarantees: see the [funding directory](funding-directory.md) | Prototype stage onward |
+| **MCIT Center of Digital Entrepreneurship (CODE)** (مركز ريادة الأعمال الرقمية) · mcit.gov.sa/code | The ICT ministry's entrepreneurship programme | Co-working space, business services, incubation and acceleration; its Code AI Catalyst programme is for AI founders | Idea to early traction |
+| **The Garage** (الكراج) · thegarage.sa | Incubator and accelerator in Riyadh for technology startups | An incubator for first-stage ideas, a 16-week bridge programme, and an accelerator for companies with sales | Idea onward |
 | **SDAIA** (الهيئة السعودية للبيانات والذكاء الاصطناعي) · sdaia.gov.sa | National authority for data and AI; competent authority for personal data protection | The rules and guidance your product must respect: PDPL, AI ethics principles, generative AI guidelines, AI adoption framework | Before you handle any personal data |
-| **Badir Program** (برنامج بادر) | Technology incubators and accelerators | Incubation for technology startups | Early stage |
-| **Misk** (مؤسسة مسك) | Youth and entrepreneurship foundation | Entrepreneurship programmes and community | Idea to early stage |
-| **University innovation and entrepreneurship centres** | Campus incubators and accelerators | Mentors, space, access to student talent and research | If you are a student, graduate or researcher |
+| **Misk** (مؤسسة مسك) · misk.org.sa | Foundation that runs the Misk Accelerator | A three-month, equity-free accelerator for seed-stage technology companies | Seed stage |
 
 ## 2. Setting up and operating
 
 | Organisation | Role | Why it matters to you |
 |---|---|---|
-| **Saudi Business Center** (المركز السعودي للأعمال) · business.sa | Single window for starting and running a business | Establishment, commercial registration and related government services |
+| **Saudi Business Center** (المركز السعودي للأعمال) · business.sa, which now opens scbc.gov.sa | Single window for starting and running a business | Establishment, commercial registration and related government services |
 | **Ministry of Commerce** (وزارة التجارة) · mc.gov.sa | Commercial registration, company law, e-commerce regulation, consumer protection | Your legal form and your obligations to customers |
 | **ZATCA** (هيئة الزكاة والضريبة والجمارك) · zatca.gov.sa | Tax, zakat and customs; e-invoicing | VAT registration and e-invoicing obligations; also a major source of agent opportunities in invoicing and reconciliation |
 | **Ministry of Investment** (وزارة الاستثمار) · misa.gov.sa | Licensing for foreign investors | Relevant if you have non-Saudi founders or investors |
@@ -36,13 +34,7 @@ Last reviewed: 16 November 2026. Descriptions are general; confirm current progr
 
 ## 3. Communities and events
 
-| What | Why go |
-|---|---|
-| **Biban** (ملتقى بيبان) by Monsha'at | The main SME and entrepreneurship forum: support bodies, funders and customers in one place |
-| **LEAP** | The Kingdom's largest technology event; investors and enterprise buyers |
-| **Monsha'at business weeks and AI Week** | Sector-focused sessions and meetings with support entities |
-| **Hackathons and buildathons** run by universities, authorities and companies | Fast feedback, teammates, first visibility |
-| **Sector chambers and business councils** | Direct access to the SME owners whose workflows you want to automate |
+Events and communities change every year, and none was verified from its organiser's page, so none is listed here. Ask the incubator or support centre you work with which events matter for your sector this year.
 
 ## 4. Where the academy fits
 

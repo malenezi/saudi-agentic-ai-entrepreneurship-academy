@@ -20,13 +20,9 @@ Ministry of Human Resources and Social Development (HRSD), General Organization 
 
 | Instrument | Authority | Status | Verification |
 |---|---|---|---|
-| Labor Law and Implementing Regulations | HRSD | Binding | ◻ |
-| Saudization (Nitaqat) requirements | HRSD | Binding | ◻ |
-| Wage Protection System | HRSD | Binding | ◻ |
-| Social Insurance Law: registration and contributions | GOSI | Binding | ◻ |
-| Work permits and residency rules for non-Saudi staff | HRSD and others | Binding | ◻ |
-| Freelance work document | HRSD | Programme | ◻ |
-| Remote and flexible work arrangements | HRSD | Binding | ◻ |
+| Labor Law and its Executive Regulations | HRSD | Binding | ✔ Royal Decree M/51 of 23/8/1426H; amendments under Royal Decree M/44 took effect on 19 February 2025 with new Executive Regulations (A130). Provisions not summarised here |
+| Saudization (Nitaqat) programme | HRSD | Binding | ✔ referred to in the Executive Regulations of the Labor Law (A130). Quotas and bands not read |
+| Social Insurance Law (1445H) | GOSI | Binding | ✔ the text is on GOSI's site (A131). Contribution rates not read |
 
 ## Founder decisions
 

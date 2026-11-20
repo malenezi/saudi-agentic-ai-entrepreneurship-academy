@@ -25,8 +25,8 @@ Both are by the Academy's author and work on their own. How they map to the cour
 | National Cybersecurity Authority · nca.gov.sa | Essential Cybersecurity Controls and other control sets; public consultations including the draft AI Cybersecurity Guidelines |
 | Monsha'at · monshaat.gov.sa | SME Monitor (quarterly data), academy courses, support centres, incubator and accelerator programmes |
 | GASTAT · stats.gov.sa | Establishments ICT Access and Usage Statistics; SME statistics |
-| NTDP · ntdp.gov.sa | Support products for technology startups |
-| Saudi Business Center · business.sa | Starting and operating a business |
+| NTDP · ntdp.mcit.gov.sa | Support products for technology startups |
+| Saudi Business Center · business.sa (opens scbc.gov.sa) | Starting and operating a business |
 | ZATCA · zatca.gov.sa | VAT and e-invoicing requirements and developer documentation |
 | Ministry of Commerce · mc.gov.sa | Commercial registration, e-commerce and consumer rules |
 | Saudi Venture Capital · svc.com.sa | Venture market reports |
