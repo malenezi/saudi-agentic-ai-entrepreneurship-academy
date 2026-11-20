@@ -20,7 +20,7 @@ The academy is built iteratively, in the open. Each iteration ships something a 
 
 The courses teach what to do; the framework says how to do it in the Kingdom. Building the framework first means the courses can point to maintained, sourced material instead of repeating it. All four courses now have their first content; none has been piloted, and each will change with a first cohort.
 
-## Known gaps in v0.7
+## Known gaps in v0.8
 
 - Every domain now has at least one guide, but the five added in v0.7 each rest on one or two sources (a foreign government overview for IP, a press report for e-commerce, law-firm commentary for employment, an automated reading of the gazette text for procurement, and no new source for sector regulation). Each says so at its top. (The tax guide awaits an adviser's review and the establishment walkthrough a lawyer's.)
 - The procurement guide found a law text on the gazette site that repeals the 2019 law; its decree number and effective date are not confirmed (C44).
@@ -51,7 +51,7 @@ The courses teach what to do; the framework says how to do it in the Kingdom. Bu
 | Real Saudi case studies | 20 |
 | Founder agents published | 12 |
 | Community contributors | 30 |
-| Courses built | 4 (2 have content today) |
+| Courses built | 4 (all four have their first content today; none piloted) |
 
 <div dir="rtl">
 
