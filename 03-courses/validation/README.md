@@ -1,12 +1,13 @@
 # التحقق من المقررات · Validation
 
-What has been checked, by what means, and what has not. Four layers, in increasing order of what they can prove.
+What has been checked, by what means, and what has not. Five layers, in increasing order of what they can prove.
 
 | Layer | What it is | Status on 20 November 2026 |
 |---|---|---|
 | 1. Automated checks | Links, tables, deck builds, quiz keys, course structure, lab code, the completion standard, the fifteen-week plan | **Run on every change** (`make check`) |
 | 2. [Desk walkthrough](desk-walkthrough.md) | Four invented learners through all 28 modules; every command executed | **Done.** Six findings corrected. Not a pilot |
-| 3. [Specialist review packets](review-packets/) | Claim registers, questions and sign-off forms for a lawyer, a tax adviser, a security practitioner and an investor | **Prepared, not reviewed.** No sign-off exists |
+| 2b. [Source re-check, Courses 1 and 2](source-recheck-c1-c2.md) | Every cited source page re-opened and compared with the register | **Done by automated fetch.** Three entries corrected. Not repeated by a human reader |
+| 3. [Specialist review packets](review-packets/) | Claim registers, questions and sign-off forms for a lawyer, a tax adviser, a security practitioner and an investor | **Prepared, not reviewed.** No sign-off exists. [Invitation messages](review-packets/invitations.md) are ready to send |
 | 4. [Pilot protocol](pilot-protocol.md) | What a first cohort should collect and how to report it | **Not run** |
 
 ## How regulatory content is labelled
