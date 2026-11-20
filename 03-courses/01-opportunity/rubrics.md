@@ -13,7 +13,9 @@ The thesis rubric keeps the criteria and weights of the [syllabus](syllabus.md).
 
 Self-paced learners are assessed on the thesis alone and use the other two rubrics as self-checks.
 
-The assessment standard shared by the four courses, including a recommended completion standard, is in the [programme trainer guide](../TRAINER-GUIDE.md), section 4. In Courses 2 to 4 the deliverable is graded as one piece of work; this course alone also grades two field packs, because the evidence is the course.
+## Completion
+
+The four courses share one [assessment and completion standard](../assessment-standard.md), version 1.0. A deliverable is **complete** when every validation gate is "yes", no criterion is at level 1, the lead criterion (**customer evidence**) is at level 3 or above, and the weighted score is 2.7 or more out of 4. **Distinction:** no criterion below level 3 and a weighted score of 3.5 or more. Completion is decided on the thesis rubric in section 3; the two field packs are graded for cohort feedback and must have been submitted. One resubmission after written feedback. Check a set of levels with `python3 tools/score_submission.py 1 --levels … --gates …`.
 
 ## 2. Validation gates
 

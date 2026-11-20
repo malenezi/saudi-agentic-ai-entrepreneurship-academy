@@ -9,7 +9,7 @@ One page for a trainer or an organisation that wants to run the four courses wit
 - **أربعة مقررات، 76 ساعة تدريبية، 28 وحدة.** لكل وحدة درس وعرض واختبار قصير بإجاباته ونشاط له قالب وحل نموذجي. ولكل مقرر مسرد وسلّم تقدير ودليل مدرب ومثال محلول.
 - **اللغة:** الدروس والعروض والاختبارات بالعربية مع المصطلح الإنجليزي عند أول ورود. أدلة المدربين بالإنجليزية مع ملاحظات عربية.
 - **المساران:** أساسي منخفض الكود وعميق برمجي. المخرج واحد والسلّم واحد.
-- **التقييم:** مخرج تجاري واحد لكل مقرر، يمر ببوابات تحقق ثم يُقدَّر بسلّم من أربعة مستويات. الاختبارات القصيرة تكوينية بلا درجات.
+- **التقييم:** مخرج تجاري واحد لكل مقرر، يمر ببوابات تحقق ثم يُقدَّر بسلّم من أربعة مستويات، و[معيار إتمام واحد](assessment-standard.md) للمقررات الأربعة. الاختبارات القصيرة تكوينية بلا درجات.
 - **كل مثال في المقررات مختلق وموسوم بذلك.** لا يعالج متعلم بيانات شخصية حقيقية قبل اتفاق مكتوب مع المنشأة.
 - **ما ليس جاهزاً:** لم يُجرَّب أي مقرر مع فوج، ولا مراجعة قانونية أو ضريبية أو أمنية للوحدات التي تمس الأنظمة. التفصيل في [تقرير ضمان الجودة](QA-REPORT.md).
 
@@ -64,7 +64,7 @@ The four courses use the same structure. Use it as written or adapt it, and say 
 1. **One business deliverable per course**, graded as one piece of work. Module outputs are checkpoints, reviewed and not graded.
 2. **Validation gates first.** A deliverable that fails any gate is returned ungraded, with the gate named. Gates are about honesty and safety: real evidence, no hidden failure, no unapproved consequential action.
 3. **Four levels per criterion**: 4 proficient, 3 good, 2 developing, 1 incomplete. The descriptors are in each course's `rubrics.md`. Customer evidence or real usage carries the largest weight in every course.
-4. **Recommended completion standard** (a default proposed here, not yet tested with a cohort): all gates passed, no criterion at level 1, and a weighted average of 2.5 or more out of 4. Course 4 adds its graduation condition: a signed LOI, a paying customer or sustained real usage.
+4. **Completion standard, version 1.0** ([assessment-standard.md](assessment-standard.md)): all gates passed, no criterion at level 1, the lead criterion at level 3 or above, and a weighted score of 2.7 or more out of 4. Distinction: no criterion below 3 and 3.5 or more. Course 4 adds its graduation condition. The standard defines the evidence to be seen, remediation and what a delivering organisation may certify; it has not been tested with a cohort.
 5. **Quizzes are formative.** Eight of ten means the learner is ready for the activity. A lower score sends the learner back to the lesson, not out of the course.
 6. **One resubmission** after written feedback is normal. The second submission is graded as if it were the first.
 7. **Calibrate before grading alone**: two assessors grade two submissions together. Each `rubrics.md` names the criterion that drifts most.

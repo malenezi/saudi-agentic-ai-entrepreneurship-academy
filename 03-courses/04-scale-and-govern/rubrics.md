@@ -8,7 +8,9 @@ The six-part scale pack is graded as one piece of work with the rubric in sectio
 
 **Graduation condition** (from the syllabus): a signed LOI from a Saudi business, a paying customer, or sustained real usage. Without one of the three the pack is returned, whatever its score.
 
-The assessment standard shared by the four courses, including a recommended completion standard, is in the [programme trainer guide](../TRAINER-GUIDE.md), section 4.
+## Completion
+
+The four courses share one [assessment and completion standard](../assessment-standard.md), version 1.0. A deliverable is **complete** when every validation gate is "yes", no criterion is at level 1, the lead criterion (**customer evidence**) is at level 3 or above, and the weighted score is 2.7 or more out of 4. **Distinction:** no criterion below level 3 and a weighted score of 3.5 or more. The graduation condition below also applies. One resubmission after written feedback. Check a set of levels with `python3 tools/score_submission.py 4 --levels … --gates …`.
 
 ## 2. Validation gates
 
