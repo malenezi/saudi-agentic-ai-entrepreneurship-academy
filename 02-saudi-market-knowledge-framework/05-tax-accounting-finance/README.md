@@ -26,24 +26,20 @@ ZATCA (Zakat, Tax and Customs Authority) administers VAT, zakat, income tax, wit
 
 | Subject | Instrument | Status | Verification |
 |---|---|---|---|
-| VAT | VAT Law and Implementing Regulations | Binding | ✔ thresholds (A53) · ◻ the rest |
+| VAT | VAT Law and Implementing Regulations | Binding | ✔ thresholds (A53) · ✔ standard rate 15% (A138) |
 | E-invoicing | FATOORA regulations and integration requirements | Binding | ✔ wave 25, announced 24 July 2026 (A54) |
-| Zakat | Zakat regulations | Binding | ◻ |
-| Income tax | Income Tax Law | Binding | ◻ |
-| Withholding tax | Rules on payments to non-residents | Binding | ✔ rates and deadlines from ZATCA's General Guideline, May 2026 (A55) · ◻ software, cloud and API payments (C32) |
-| Transfer pricing | Bylaws | Binding where applicable | ◻ |
+| Withholding tax | Rules on payments to non-residents | Binding | ✔ rates and deadlines from ZATCA's General Guideline, May 2026 (A55). How software, cloud and API payments are classified is the adviser's decision |
 
 ## Points every agentic founder should check with an adviser
 
-The VAT thresholds, the e-invoicing wave and the withholding rates were checked against ZATCA's pages on 18 November 2026 ([SOURCES.md](../../SOURCES.md), A53 to A55). The rest is from general knowledge and early drafts. **Confirm each point with ZATCA or a licensed tax adviser before relying on it.**
+The VAT thresholds, the e-invoicing wave and the withholding rates were checked against ZATCA's pages on 18 November 2026 ([SOURCES.md](../../SOURCES.md), A53 to A55). Rows that could not be confirmed were removed on 20 November 2026. **Confirm each point with ZATCA or a licensed tax adviser before relying on it.**
 
-| Topic | What to check | ◻ |
+| Topic | What to check | Verified |
 |---|---|---|
 | VAT registration | Mandatory registration above SAR 375,000 of taxable supplies in twelve months; voluntary above SAR 187,500 (A53). How the test looks backward and forward is for the adviser | ✔ thresholds |
-| VAT on what you sell | Whether your service is standard-rated, and how subscriptions and usage fees are invoiced | ◻ |
-| Imported services | VAT treatment of model APIs, cloud and software bought from foreign suppliers | ◻ |
-| Withholding tax | Which rate applies to each foreign supplier: 5% technical and consulting services, 15% royalties, 15% any other payments, 20% management fees (A55). The classification is the adviser's decision | ✔ rates · ◻ classification |
-| Zakat or income tax | Zakat generally applies to Saudi and GCC ownership and income tax to foreign ownership; mixed ownership is split | ◻ |
+| VAT on what you sell | Whether your service is standard-rated (the standard rate is 15%, A138), and how subscriptions and usage fees are invoiced | ✔ rate. The rest is a question for the adviser |
+| Imported services | How VAT applies to model APIs, cloud and software bought from foreign suppliers | A question for the adviser; nothing is stated here |
+| Withholding tax | Which rate applies to each foreign supplier: 5% technical and consulting services, 15% royalties, 15% any other payments, 20% management fees (A55). The classification is the adviser's decision | ✔ rates |
 | E-invoicing | Whether you fall in wave 25 (VAT-subject revenue above SAR 187,500 in any of 2022 to 2025; integrate by 1 February 2027) or an earlier wave (A54) | ✔ wave 25 |
 
 ## Founder decisions

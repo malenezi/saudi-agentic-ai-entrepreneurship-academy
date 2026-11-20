@@ -20,22 +20,20 @@ A working AI product does not by itself qualify for deployment in a government e
 
 | Institution | Role | Verification |
 |---|---|---|
-| Etimad | Government tenders, supplier registration and procurement services | ◻ |
-| Ministry of Finance | Procurement law and policy | ◻ |
-| Local Content and Government Procurement Authority | Local content requirements and preferences | ◻ |
-| Digital Government Authority | Digital government policies, standards and frameworks | ◻ |
-| NCA | Cybersecurity controls that government entities apply to vendors | ◻ |
-| SDAIA and the National Data Management Office | Data classification and governance for government data | ◻ |
-| National Center for Privatization | Privatisation and partnership opportunities | ◻ |
+| Etimad | Government tenders, supplier registration and procurement services | ✔ etimad.sa opened the Etimad portal on 20 November 2026 (A142). Services not read |
+| Ministry of Finance | Procurement law and its regulations | ✔ its regulations page lists the law, the implementing regulation and the local content preference regulation (A129) |
+| Local Content and Government Procurement Authority | Local content requirements and preferences | ✔ its regulations library carries the law, the implementing regulation and the preference regulation (A129) |
+| Digital Government Authority | Digital government policies, standards and frameworks | ✔ site opened on 20 November 2026 (A142). Policies not read |
+| NCA | The cybersecurity controls government entities work under | ✔ ECC-2:2024, CCC-2:2024 and DCC-1:2022 on NCA's site (A126) |
+| National Center for Privatization & PPP | Privatisation and partnership opportunities | ✔ site opened on 20 November 2026 (A142). Opportunities not read |
 
 ## Instruments
 
 | Instrument | Status | Verification |
 |---|---|---|
-| Government Tenders and Procurement Law and Implementing Regulations | Binding | ◐ law text read on the gazette site (A98); it repeals Royal Decree M/128; its effective date is not confirmed (C44); regulations not opened |
-| Local content and SME preference rules | Binding in public procurement | ◻ |
-| Data classification policy (levels from public to top secret) and what may be processed where | Binding on government entities | ◻ |
-| NCA controls applied to suppliers | Binding on entities; contractual for vendors | ◻ |
+| Government Tenders and Procurement Law and Implementing Regulations | Binding | ✔ Royal Decree M/128 of 13/11/1440H on the Bureau of Experts' site. ✔ the Ministry of Finance lists a **new** law and its implementing regulation next to the earlier one (A129; see also A98). Its decree number and effective date were not read: the tender documents say which text governs |
+| Regulation on preference for local content, local SMEs and listed companies | Binding in public procurement | ✔ Council of Ministers Resolution 245 of 29/3/1441H (A129) |
+| NCA Essential Cybersecurity Controls (ECC-2:2024) | Binding on entities in scope; reaches vendors by contract | ✔ version (A126). What a given entity asks of its vendors is in its tender documents |
 
 ## What a government buyer will ask an agentic startup
 

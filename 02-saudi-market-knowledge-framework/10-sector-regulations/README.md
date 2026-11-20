@@ -25,16 +25,15 @@ Two distinctions that decide the pathway:
 
 | Sector | Authorities | Topics to investigate | Verification |
 |---|---|---|---|
-| Financial technology | SAMA, CMA | Licensing for payments, lending and securities; sandbox routes; open banking; cyber security framework | ◻ |
-| Insurance | Insurance Authority | Distribution, underwriting, claims | ◻ |
-| Healthcare | Ministry of Health, SFDA, health data and accreditation bodies | Health data; software as a medical device (SFDA guidance MDS-G010 on AI and machine-learning devices); clinical software | ◻ |
-| Education | Ministry of Education, training regulators | Licensing; digital learning; minors' data | ◻ |
+| Financial technology | SAMA, CMA | Licensing for payments, lending and securities; SAMA's Cyber Security Framework | ✔ the framework is in force (A132); both authorities' sites opened (A142). Licensing routes not read |
+| Insurance | Insurance Authority | Distribution, underwriting, claims | ✔ the authority's site was opened on 20 November 2026 (A142). The topics are questions to investigate, not confirmed rules |
+| Healthcare | Ministry of Health, SFDA | Health data; software as a medical device; clinical software | ✔ SFDA guidance MDS-G010 on AI and machine-learning devices (A133); both sites opened (A142). Health data rules not read |
 | Telecommunications and cloud | CST | Cloud, communications, digital content platforms | ✔ content platform rules |
-| Tourism | Ministry of Tourism | Activity licences | ◻ |
-| Real estate | REGA | Brokerage, advertising and platform licensing | ◻ |
-| Transport and logistics | Transport General Authority | Activity and platform requirements | ◻ |
-| Food | SFDA, municipalities | Safety, licensing, traceability | ◻ |
-| Government technology | The procuring entity, NCA, DGA, data classification policies | Government data, procurement, security | ◻ |
+| Tourism | Ministry of Tourism | Activity licences | ✔ the authority's site was opened on 20 November 2026 (A142). The topics are questions to investigate, not confirmed rules |
+| Real estate | REGA | Brokerage, advertising and platform licensing | ✔ the authority's site was opened on 20 November 2026 (A142). The topics are questions to investigate, not confirmed rules |
+| Transport and logistics | Transport General Authority | Activity and platform requirements | ✔ the authority's site was opened on 20 November 2026 (A142). The topics are questions to investigate, not confirmed rules |
+| Food | SFDA | Safety, licensing, traceability | ✔ the authority's site was opened on 20 November 2026 (A142). The topics are questions to investigate, not confirmed rules |
+| Government technology | The procuring entity, NCA, Digital Government Authority | Procurement, security controls, digital government policies | ✔ NCA's controls (A126) and the procurement instruments (A129); DGA's site opened (A142) |
 
 ## Regulatory sandboxes
 
@@ -43,9 +42,6 @@ A sandbox lets a company test a product under supervision with adapted requireme
 | Sandbox | Regulator | Focus | Verification |
 |---|---|---|---|
 | Emerging Technologies Regulatory Sandbox | CST | AI, Internet of Things, digital twin, space and other emerging technologies | ✔ Fifteen products completed the second cohort; registration for the third ran from 3 July to 3 October 2025 |
-| Regulatory Sandbox | SAMA | Payments, banking, finance, insurance-related innovation | ◻ |
-| FinTech Lab | CMA | Securities-related fintech | ◻ |
-| Other sandboxes mentioned in early drafts (SDAIA; real estate) | — | — | ◻ not confirmed |
 
 Early drafts quoted typical sandbox durations and participant counts. They could not be confirmed and are omitted. Check each regulator's current call for applications.
 

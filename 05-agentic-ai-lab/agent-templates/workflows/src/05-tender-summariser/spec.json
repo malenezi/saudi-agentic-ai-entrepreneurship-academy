@@ -1,0 +1,57 @@
+{
+ "name": "SAAEA template 5: tender summariser and fit assessor",
+ "output": "../../05-tender-summariser.n8n.json",
+ "webhook_path": "saaea-tender-summariser",
+ "note": "## SAAEA agent template 5: tender summariser\n**Invented sample data. Educational, not procurement or legal advice. No document reader, portal or calendar is connected.**\n\n1. **Config** holds the company profile: the evidence you actually have for each requirement key, the gaps you know of, and `requirement_keys`: the words that tie a requirement to a profile entry, written by your bid team.\n2. `model_mode` is `simulated`: it reads labelled lines and is NOT a language model. Long, unlabelled or scanned documents need `http` and a real model, which this workflow has not been tested with.\n3. **Decide** keeps a fact only if its text is on the page it cites, marks the rest \"غير مذكور\", and never marks a requirement as met without evidence in the profile. The decision to bid is management's.\n4. Send `{\"message\": \"<document text with [[صفحة N]] markers>\"}`. Read only documents you have already obtained, under the portal's terms. Guide: 05-agentic-ai-lab/agent-templates/workflows/README.md",
+ "config": {
+  "model_mode": "simulated",
+  "model_base_url": "http://localhost:11434/v1",
+  "model_name": "set-the-model-name-your-endpoint-expects",
+  "stopped": false,
+  "normalise_digits": false,
+  "company_profile": {
+   "name": "شركة البيان للحلول الرقمية (اسم مختلق)",
+   "evidence": {
+    "commercial_registration": "سجل تجاري ساري (ملف المنشأة، بند 1)",
+    "similar_projects": "مشروعان مماثلان في 2025 (ملف المنشأة، بند 4)"
+   },
+   "known_gaps": [
+    "iso27001"
+   ]
+  },
+  "requirement_keys": [
+   [
+    "commercial_registration",
+    [
+     "سجل تجاري"
+    ]
+   ],
+   [
+    "similar_projects",
+    [
+     "مشاريع مماثلة",
+     "مشاريع مماثله",
+     "خبرة سابقة"
+    ]
+   ],
+   [
+    "iso27001",
+    [
+     "iso 27001",
+     "ايزو 27001"
+    ]
+   ],
+   [
+    "local_content",
+    [
+     "المحتوى المحلي"
+    ]
+   ]
+  ]
+ },
+ "config_files": {
+  "instructions": {
+   "path": "instructions.md"
+  }
+ }
+}

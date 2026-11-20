@@ -33,6 +33,10 @@ Opening a deck online therefore contacts Google's font servers. Offline, or wher
 
 The Course 2 labs run with a built-in simulator and need no service. They can call any chat endpoint that follows the OpenAI chat-completions format. One free local runtime is named as an example ([SOURCES.md](SOURCES.md), A125). Naming it is not a recommendation, and no provider's software or model weights are included here. A model's own licence governs its use.
 
+## Optional tools named in the low-code lab and the runnable templates
+
+The n8n workflow files (`*.n8n.json`) are written for this repository and licensed with its code. They are data for [n8n](https://docs.n8n.io), which is not bundled, not required by `make check`, and installed by the learner under n8n's own licence. Naming it is not a recommendation. The logic tests of the workflows use Node.js when it is installed and are skipped when it is not.
+
 ## Names, marks and sources
 
 Company names, product names, standards and official documents referred to in the lessons belong to their owners. Facts taken from them are listed with links in [SOURCES.md](SOURCES.md). Nothing here is endorsed by, or affiliated with, any government body, standards project or company named.

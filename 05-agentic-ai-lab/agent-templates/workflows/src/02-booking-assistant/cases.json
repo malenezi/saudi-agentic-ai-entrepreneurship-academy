@@ -1,0 +1,152 @@
+{
+ "note": "Invented cases for template 2, run in order: bookings made by one case are seen by the next.",
+ "cases": [
+  {
+   "message": "ابي احجز تنظيف",
+   "account": "0500000001",
+   "expect": {
+    "action": "offer_slots",
+    "state": {
+     "offered": [
+      "S1",
+      "S2",
+      "S3"
+     ]
+    }
+   }
+  },
+  {
+   "message": "2",
+   "account": "0500000001",
+   "state": {
+    "greeted": true,
+    "offered": [
+     "S1",
+     "S2",
+     "S3"
+    ]
+   },
+   "expect": {
+    "action": "booked",
+    "booking": {
+     "ref": "B-1003",
+     "start": "2026-12-02T10:00:00+03:00"
+    }
+   }
+  },
+  {
+   "message": "2",
+   "account": "0500000003",
+   "state": {
+    "greeted": true,
+    "offered": [
+     "S1",
+     "S2",
+     "S3"
+    ]
+   },
+   "expect": {
+    "action": "slot_unavailable",
+    "level": "forbidden"
+   }
+  },
+  {
+   "message": "1",
+   "account": "0500000001",
+   "state": {
+    "greeted": true,
+    "offered": [
+     "S9"
+    ]
+   },
+   "expect": {
+    "action": "slot_unavailable"
+   }
+  },
+  {
+   "message": "ابي اغير موعدي B-1003",
+   "account": "0500000001",
+   "expect": {
+    "action": "offer_slots",
+    "state": {
+     "offered": [
+      "S1",
+      "S3"
+     ],
+     "moving": "B-1003"
+    }
+   }
+  },
+  {
+   "message": "2",
+   "account": "0500000001",
+   "state": {
+    "greeted": true,
+    "offered": [
+     "S1",
+     "S3"
+    ],
+    "moving": "B-1003"
+   },
+   "expect": {
+    "action": "rescheduled",
+    "booking": {
+     "ref": "B-1004"
+    }
+   }
+  },
+  {
+   "message": "الغي حجزي B-1001",
+   "account": "0500000001",
+   "expect": {
+    "action": "cancel_needs_approval",
+    "level": "approve",
+    "pending_approval": [
+     {
+      "action": "cancel_booking",
+      "booking_ref": "B-1001",
+      "level": "approve"
+     }
+    ]
+   }
+  },
+  {
+   "message": "الغي الحجز B-1002",
+   "account": "0500000001",
+   "expect": {
+    "action": "ask_booking_ref",
+    "tool_calls": []
+   }
+  },
+  {
+   "message": "الغي حجزي B-1004",
+   "account": "0500000001",
+   "expect": {
+    "action": "cancelled",
+    "level": "notify"
+   }
+  },
+  {
+   "message": "عندي الم شديد في الضرس وش آخذ؟",
+   "account": "0500000001",
+   "expect": {
+    "action": "refuse_clinical",
+    "level": "forbidden"
+   }
+  },
+  {
+   "message": "ابي موعد",
+   "account": "0500000001",
+   "expect": {
+    "action": "ask_service"
+   }
+  },
+  {
+   "message": "ابي اعفاء من رسوم التأخير",
+   "account": "0500000001",
+   "expect": {
+    "action": "handover_not_understood"
+   }
+  }
+ ]
+}

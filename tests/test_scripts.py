@@ -78,9 +78,27 @@ class FundingDirectory(unittest.TestCase):
     TOOL = os.path.join("tools", "check_funding_directory.py")
 
     def test_index_matches_the_page(self):
-        result = run(self.TOOL, "--today", "2026-11-19")
+        result = run(self.TOOL, "--today", "2026-11-20")
         self.assertEqual(result.returncode, 0, result.stdout)
         self.assertNotIn("ERROR", result.stdout)
+
+    def test_the_directory_and_the_register_list_verified_items_only(self):
+        """Since 20 November 2026: nothing partly verified or pending, and no "to verify" marks."""
+        folder = os.path.join(ROOT, "02-saudi-market-knowledge-framework")
+        with open(os.path.join(folder, "06-funding-investment", "funding-directory.json"), encoding="utf-8") as f:
+            statuses = {entry["status"] for entry in json.load(f)["entries"]}
+        self.assertLessEqual(statuses, {"verified", "inactive"})
+        for name in (os.path.join("06-funding-investment", "funding-directory.md"), "regulatory-register.md", "regulatory-register.ar.md"):
+            with open(os.path.join(folder, name), encoding="utf-8") as f:
+                text = f.read()
+            for mark in ("\u25fb", "\u25d0"):
+                self.assertNotIn(mark, text, name)
+        import glob
+        for path in glob.glob(os.path.join(folder, "**", "*.md"), recursive=True):
+            if os.path.basename(path) == "not-adopted.md" or "founder-agents" in path:
+                continue
+            with open(path, encoding="utf-8") as f:
+                self.assertNotIn("\u25fb", f.read(), path)
 
     def test_old_entries_are_flagged_and_strict_fails(self):
         result = run(self.TOOL, "--today", "2027-06-01", "--strict")

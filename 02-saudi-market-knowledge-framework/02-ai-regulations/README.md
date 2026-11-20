@@ -34,11 +34,11 @@ There is no single AI statute. Binding obligations come mainly from data protect
 | Instrument | Authority | Status | Verification |
 |---|---|---|---|
 | AI Ethics Principles 2.0 (September 2023): seven principles, risk-tiered | SDAIA | Official guidance | ✔ |
-| Generative AI Guidelines (government and public editions) | SDAIA | Official guidance | ◻ |
+| Generative AI Guidelines (one version for government, one for the public) | SDAIA | Official guidance | ✔ both on SDAIA's site; issued early 2024 according to SDAIA's own report (A127) |
 | AI Adoption Framework (September 2024) | SDAIA | Official guidance | ✔ |
 | National AI Risk Management Framework (April 2026) | SDAIA | Official guidance | ✔ |
 | AI Cybersecurity Guidelines (AICG-1:2026) | NCA | **Draft**, non-binding | ✔ status |
-| Draft Global AI Hub Law | CST | **Draft** | ◻ |
+| Draft Global AI Hub Law | CST | **Draft** | ✔ published for consultation on 14 April 2025, feedback until 14 May 2025 (A135) |
 | Copyright Law with AI training exception (in force 12 August 2026) | SAIP | Binding | ✔ |
 
 ## Founder decisions

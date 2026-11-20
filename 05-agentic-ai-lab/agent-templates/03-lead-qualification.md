@@ -2,6 +2,8 @@
 
 **For:** real estate brokerages, training providers, B2B service firms, contractors · **Difficulty:** low to medium · **Architecture:** one agent with a CRM tool
 
+**Runnable version:** [`workflows/03-lead-qualification.n8n.json`](workflows/03-lead-qualification.n8n.json), an n8n workflow that enforces the oversight table below in code and runs with a simulated model. [How to run it, and what is not tested](workflows/README.md).
+
 ## 1. The job
 
 Respond to every enquiry within minutes, ask the few questions that separate a serious buyer from a browser, and hand qualified leads to sales with a clean summary.

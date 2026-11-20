@@ -25,12 +25,11 @@ Last reviewed: 16 November 2026. This is orientation, not financial advice. Conf
 | Type | Examples in the Kingdom | Notes |
 |---|---|---|
 | Government support programmes | Monsha'at programmes; NTDP products for technology startups | Check eligibility by stage and by Saudi ownership |
-| Incubators and accelerators | Monsha'at AI Incubator (with NTDP); The Garage; MCIT CODE programmes; Badir; Flat6Labs Riyadh; university accelerators | The Monsha'at AI Incubator's first cohort ran six months and graduated 33 startups in June 2026 |
-| Fund of funds | Saudi Venture Capital (SVC) · svc.com.sa; Jada | They invest in funds, not directly in most startups; their reports are useful market data |
-| Venture funds | Several Saudi and regional funds are active from pre-seed to growth, including corporate venture arms | Build your target list from current portfolio pages, not from old articles |
+| Incubators and accelerators | Monsha'at AI Incubator (with NTDP); The Garage; MCIT CODE programmes, including Code AI Catalyst; TAQADAM; Misk Accelerator; Sanabil Accelerator by 500 Global | The Monsha'at AI Incubator's first cohort graduated 33 companies in June 2026. Each is in the [funding directory](funding-directory.md) with what its page says |
+| Fund of funds | Saudi Venture Capital (SVC) · svc.com.sa | It invests in funds, not directly in most startups; NTDP's Fuel product supports venture funds through it |
+| Venture funds and investment arms | Wa'ed (Saudi Aramco); Riyadh Valley Company (King Saud University); Falak Investment Hub and its angel network | Their pages do not state amounts or terms. Build your target list from current portfolio pages, not from old articles |
 | AI-dedicated capital | Red Sea Global and Bunat Ventures announced an AI venture fund in January 2026 aiming to back about 25 AI startups over three years, pre-seed to growth, with access to Red Sea Global sites as live test environments | Sign of sector-specific capital; check investment criteria directly |
-| Angels and angel networks | Angel groups and syndicates in Riyadh, Jeddah and the Eastern Province | Often the first cheque; warm introductions matter |
-| Lending and guarantees | Social Development Bank; Kafalah loan-guarantee programme; SME Bank | For businesses with revenue or a clear repayment path |
+| Lending and guarantees | Social Development Bank; Kafalah financing guarantees with the SME Bank; NTDP's Lendtech and Loan Guarantee | For businesses with revenue or a clear repayment path |
 
 Market context: Saudi startups raised $1.72 billion in 2025 across 257 deals, up 145% year on year, according to MAGNiTT ([SOURCES.md](../../SOURCES.md), A2).
 

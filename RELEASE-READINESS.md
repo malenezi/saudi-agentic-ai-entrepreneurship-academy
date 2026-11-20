@@ -19,6 +19,8 @@ The release should carry the three labels it already carries in its pages: not p
 
 </div>
 
+> **Update, v0.9 (20 November 2026).** This report describes v0.8 and is kept as written. Since then: the remainder of gap 4 that read "no lab for a named low-code orchestrator" is closed by the [low-code lab](03-courses/02-build/labs/lab-n8n-low-code.md), an n8n workflow that reproduces the reference numbers; the eleven remaining founder agents and five runnable agent templates were published. None of this has been tried with learners or founders, and none of it has been run with a real language model. Details are in the [changelog](CHANGELOG.md).
+
 ## 2. Every original gap and its status
 
 Gaps are numbered as in section 5 of the QA report.

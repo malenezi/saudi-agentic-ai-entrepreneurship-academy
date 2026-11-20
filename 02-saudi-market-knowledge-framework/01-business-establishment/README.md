@@ -16,12 +16,12 @@
 
 | Instrument or service | Authority | Status | Verification |
 |---|---|---|---|
-| Companies Law | Ministry of Commerce | Binding | ✔ provisions on the limited liability and simplified joint-stock company read in the English text (A69) · ◻ the whole law and the Arabic text |
-| Commercial Register Law and commercial registration services | Ministry of Commerce | Binding | ✔ service pages for the sole establishment, the limited liability and the simplified joint-stock company, and trade name reservation (A65 to A68) · ◻ the law itself |
-| Unified establishment and licensing services | Saudi Business Center | Service | ✔ the platform through which the services above are run (A65 to A68) · ◻ screenshots of the journey |
-| Investment Law: foreign investors register with the Ministry of Investment | MISA | Binding | ✔ registration described in the Investor Guide, 13th edition, issue 04 of 2026 (A64) · ◻ the law itself |
+| Companies Law | Ministry of Commerce | Binding | ✔ provisions on the limited liability and simplified joint-stock company read in the English text (A69) |
+| Commercial Register Law and commercial registration services | Ministry of Commerce | Binding | ✔ service pages for the sole establishment, the limited liability and the simplified joint-stock company, and trade name reservation (A65 to A68) · ✔ the Commercial Register Law and the Trade Names Law took effect on 3 April 2025, with annual confirmation of register data in place of renewal (A139) |
+| Unified establishment and licensing services | Saudi Business Center | Service | ✔ the platform through which the services above are run (A65 to A68) |
+| Foreign investors register with the Ministry of Investment | MISA | Binding | ✔ registration described in the Investor Guide, 13th edition, issue 04 of 2026 (A64) |
 | Entrepreneur pathway for foreign founders backed by an approved university or incubator | MISA | Programme | ✔ "Registration for Entrepreneurial Establishments": support letter or accreditation from a Saudi university or accredited business incubator, stating activity and ownership; 10 working days stated for registration; no fee amounts printed (A64) |
-| SME definitions, support centres and guidance | Monsha'at | Programme | ◻ |
+| Support programmes and services catalogue; Estrdad fee-refund initiative | Monsha'at | Programme | ✔ read on Monsha'at's pages (A58) |
 
 ## Founder decisions
 

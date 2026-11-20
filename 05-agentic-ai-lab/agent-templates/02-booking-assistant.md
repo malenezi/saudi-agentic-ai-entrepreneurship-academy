@@ -2,6 +2,8 @@
 
 **For:** clinics, salons, service centres, consultants, tour and experience providers · **Difficulty:** low to medium · **Architecture:** one agent with calendar tools
 
+**Runnable version:** [`workflows/02-booking-assistant.n8n.json`](workflows/02-booking-assistant.n8n.json), an n8n workflow that enforces the oversight table below in code and runs with a simulated model. [How to run it, and what is not tested](workflows/README.md).
+
 ## 1. The job
 
 Book, reschedule and remind, so staff stop spending their day on the phone and fewer customers miss appointments.

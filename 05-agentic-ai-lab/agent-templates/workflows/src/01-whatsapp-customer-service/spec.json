@@ -1,0 +1,172 @@
+{
+ "name": "SAAEA template 1: customer service agent",
+ "output": "../../01-whatsapp-customer-service.n8n.json",
+ "webhook_path": "saaea-customer-service",
+ "note": "## SAAEA agent template 1: customer service\n**Invented sample data. Educational. The messaging channel is not connected: the Webhook stands in for it.**\n\n1. **Config** holds the business name, the approved knowledge, the sample orders and the simulator's keywords. Replace them with your own approved content.\n2. `model_mode` is `simulated`: keyword matching, NOT a language model. Set `http` to call any OpenAI-compatible endpoint.\n3. **Decide** enforces the oversight table: answers only from approved knowledge, one order by its reference and only for its owner; refunds, cancellations, discounts and promises go to a person.\n4. Send `{\"message\": \"...\", \"account\": \"0500000001\", \"state\": {}}` and pass back the `state` you receive. Guide: 05-agentic-ai-lab/agent-templates/workflows/README.md",
+ "config": {
+  "model_mode": "simulated",
+  "model_base_url": "http://localhost:11434/v1",
+  "model_name": "set-the-model-name-your-endpoint-expects",
+  "stopped": false,
+  "normalise_digits": true,
+  "business_name": "متجر الواحة (اسم مختلق)",
+  "knowledge": {
+   "hours": {
+    "text": "نعمل من السبت إلى الخميس، من 9 صباحاً إلى 9 مساءً.",
+    "approved_on": "2026-11-01"
+   },
+   "delivery": {
+    "text": "التوصيل داخل الرياض خلال يومي عمل، وخارجها خلال 3 إلى 5 أيام عمل.",
+    "approved_on": "2026-11-01"
+   },
+   "returns": {
+    "text": "يمكن طلب الاسترجاع خلال المدة المذكورة في سياسة المتجر المنشورة، ويراجع الفريق كل طلب.",
+    "approved_on": "2026-11-01"
+   }
+  },
+  "orders": {
+   "A-1001": {
+    "account": "0500000001",
+    "status_text": "شُحن وهو في الطريق"
+   },
+   "A-1002": {
+    "account": "0500000002",
+    "status_text": "قيد التجهيز"
+   }
+  },
+  "sim": {
+   "intents": [
+    [
+     "human",
+     [
+      "موظف",
+      "انسان",
+      "agent"
+     ]
+    ],
+    [
+     "advice",
+     [
+      "دواء",
+      "علاج",
+      "حكم الشرع",
+      "حلال",
+      "حرام",
+      "قانونيا",
+      "محامي"
+     ]
+    ],
+    [
+     "refund",
+     [
+      "استرجاع",
+      "استرداد",
+      "ارجع فلوسي",
+      "refund"
+     ]
+    ],
+    [
+     "cancel",
+     [
+      "الغاء",
+      "الغي",
+      "كنسل",
+      "cancel"
+     ]
+    ],
+    [
+     "discount",
+     [
+      "خصم",
+      "تخفيض",
+      "discount"
+     ]
+    ],
+    [
+     "promise",
+     [
+      "تضمن",
+      "وعد",
+      "تعويض",
+      "استثناء"
+     ]
+    ],
+    [
+     "complaint",
+     [
+      "شكوي",
+      "سيء",
+      "زعلان",
+      "complaint"
+     ]
+    ],
+    [
+     "order_status",
+     [
+      "طلبي",
+      "الطلب",
+      "order"
+     ]
+    ],
+    [
+     "faq",
+     [
+      "ساعات",
+      "متي تفتح",
+      "دوام",
+      "توصيل",
+      "التوصيل",
+      "شحن",
+      "سياسه الاسترجاع",
+      "فرع",
+      "فروع",
+      "hours",
+      "delivery"
+     ]
+    ]
+   ],
+   "choices": {
+    "topic": [
+     [
+      "hours",
+      [
+       "ساعات",
+       "متي تفتح",
+       "دوام",
+       "hours"
+      ]
+     ],
+     [
+      "delivery",
+      [
+       "توصيل",
+       "شحن",
+       "delivery"
+      ]
+     ],
+     [
+      "returns",
+      [
+       "سياسه الاسترجاع"
+      ]
+     ],
+     [
+      "branches",
+      [
+       "فرع",
+       "فروع"
+      ]
+     ]
+    ]
+   },
+   "patterns": {
+    "order_ref": "a-\\d{4}"
+   }
+  }
+ },
+ "config_files": {
+  "instructions": {
+   "path": "instructions.md"
+  }
+ }
+}

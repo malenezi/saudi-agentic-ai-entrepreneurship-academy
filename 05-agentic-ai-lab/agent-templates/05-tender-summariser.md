@@ -2,6 +2,8 @@
 
 **For:** contractors, consultancies, suppliers and service firms that bid for work · **Difficulty:** medium · **Architecture:** one agent for long-document analysis; optionally a second for drafting
 
+**Runnable version:** [`workflows/05-tender-summariser.n8n.json`](workflows/05-tender-summariser.n8n.json), an n8n workflow that enforces the oversight table below in code and runs with a simulated model. [How to run it, and what is not tested](workflows/README.md).
+
 ## 1. The job
 
 Read tender documents (كراسة الشروط والمواصفات), produce a reliable two-page brief, and assess fit against the company's profile so the team decides in minutes whether to bid.

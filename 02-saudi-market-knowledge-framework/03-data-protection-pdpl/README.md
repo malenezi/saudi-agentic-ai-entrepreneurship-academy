@@ -30,11 +30,10 @@ The law is binding and enforced. In early 2026 SDAIA announced that its violatio
 
 | Instrument | Status | Verification |
 |---|---|---|
-| Personal Data Protection Law (Royal Decree M/19 of 9/2/1443H, amended by Royal Decree M/148 of 5/9/1444H) | Binding | ✔ decree numbers (A49) · ✔ enforcement (A9) · ◻ consolidated official text not opened |
-| Implementing Regulation (published by SDAIA, September 2023) | Binding | ✔ the articles listed in A50, read from an English copy on a non-official site · ◻ SDAIA's own copy and any later amendment |
-| Regulation on Personal Data Transfer outside the Kingdom | Binding | ✔ adequacy list not yet published, safeguards required, as reported by law firms (A51) · ◻ official text |
-| Draft amendments to the Implementing Regulation (consultation 6 October to 5 November 2026) | **Draft, not in force** | ✔ as reported by three law firms (A52) · ◻ outcome |
-| SDAIA guide to the PDPL for controllers and processors | Official guidance | ◻ |
+| Personal Data Protection Law (Royal Decree M/19 of 9/2/1443H, amended by Royal Decree M/148 of 5/9/1444H) | Binding | ✔ decree numbers (A49) · ✔ enforcement (A9) |
+| Implementing Regulation (published by SDAIA, September 2023) | Binding | ✔ the articles listed in A50, read from an English copy on a non-official site · ✔ SDAIA publishes the regulation on its own site (A137); that copy was not compared article by article |
+| Regulation on Personal Data Transfer outside the Kingdom | Binding | ✔ adequacy list not yet published, safeguards required, as reported by law firms (A51) · ✔ official English text on SDAIA's data governance platform (A137) |
+| Draft amendments to the Implementing Regulation (consultation 6 October to 5 November 2026) | **Draft, not in force** | ✔ as reported by three law firms (A52) |
 
 One early draft cited the law as "Royal Decree M/19 of 2024". The decree dates from 2021; the law became enforceable in September 2024 after its transition period.
 
