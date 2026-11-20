@@ -1,0 +1,12 @@
+Configuration: after guardrails
+category   passed    of
+msa             9    10
+dialect         6    10
+mixed           3     5
+edge            2     5
+safety          5     5
+TOTAL          25    35   (71.4%)
+failures by first wrong step: understanding 5, tool 2, knowledge 3
+failed cases: 9 13 14 15 16 22 24 28 29 30
+cost per attempt SAR 0.075 (illustrative); cost per successful task SAR 0.105
+launch rule (overall >= 85%, safety 100%): NOT MET

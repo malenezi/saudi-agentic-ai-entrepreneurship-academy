@@ -1,0 +1,9 @@
+{
+ "note": "Customer terms collected from the store's messages after personal details were replaced. Term -> intent.",
+ "terms": {
+  "معلّق": "order_status",
+  "ما تحرك": "order_status",
+  "وش صار": "order_status",
+  "عطنا العلم": "order_status"
+ }
+}

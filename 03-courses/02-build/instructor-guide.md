@@ -52,6 +52,7 @@ Suggested split, in minutes. The pattern is the same throughout: short explanati
 | Human Oversight Matrix and agent security assessment | [Compliance toolkit](../../02-saudi-market-knowledge-framework/compliance-toolkit/human-oversight-matrix.md) |
 | Arabic model guide | [Lab](../../05-agentic-ai-lab/arabic-models.md) |
 | Five agent templates as starting points | [Lab](../../05-agentic-ai-lab/agent-templates/README.md) |
+| Eight labs with a tested reference implementation, sample data and expected outputs | [`labs/`](labs/README.md) |
 | Glossary and rubrics | [`glossary.md`](glossary.md), [`rubrics.md`](rubrics.md) |
 
 ## Notes by module
@@ -65,6 +66,27 @@ Suggested split, in minutes. The pattern is the same throughout: short explanati
 - **2.7.** Most learners should end on one agent. Ask for the condition that would make them revisit the decision.
 - **2.8.** One change per cycle is the rule learners break most. Ask to see the diff. Grade the honesty of the "not fixed" section.
 
+## What a facilitator should not do
+
+- Recommend a model, a framework or a provider. Names and prices change faster than the course; Module 2.4 teaches the comparison.
+- Let a learner connect an agent to a production system or to real customer data. Everything in this course runs on test accounts and masked or synthetic messages.
+- Accept a success rate with no test set another person can re-run. Gate 3 has no exceptions.
+- Let a learner raise the success rate by removing hard cases from the set.
+- Programme-level guidance common to the four courses is in the [trainer guide](../TRAINER-GUIDE.md).
+
+## Before each cohort
+
+Re-check, and update the lessons or tell us:
+
+| What | Where it is used | Source entry |
+|---|---|---|
+| Whether OWASP has published an edition newer than 2026 | 2.3, 2.6 | A84, A121 |
+| Token-ratio figures for Arabic | 2.2, 2.4 | A86 |
+| Multi-agent token figures | 2.7 | A87 |
+| The licence of any open-weights model named as an example | 2.4 | A6 |
+| The status of the Model Context Protocol and its governance | 2.3 | A83 |
+| The status of the draft amendments on storing data inside the Kingdom, described in lesson 2.4 as not final | 2.4 | the [PDPL founder guide](../../02-saudi-market-knowledge-framework/03-data-protection-pdpl/pdpl-founder-guide.md) |
+
 ## Reading for instructors
 
 Opened and checked on 19 November 2026 (see [SOURCES.md](../../SOURCES.md), A80 to A87):
@@ -72,14 +94,16 @@ Opened and checked on 19 November 2026 (see [SOURCES.md](../../SOURCES.md), A80 
 - Yao et al., "ReAct: Synergizing Reasoning and Acting in Language Models" (arXiv 2210.03629).
 - Anthropic, "Building effective agents" (December 2024) and "Effective context engineering for AI agents" (September 2025).
 - Anthropic, "How we built our multi-agent research system" (June 2025).
-- OWASP, Top 10 for LLM Applications, 2025 edition. Check for a newer edition before teaching.
+- OWASP, Top 10 for LLM Applications. The 2026 edition (August 2026) keeps Prompt Injection first and moves Excessive Agency from sixth to third (A121); the lessons and decks were updated on 20 November 2026. The companion list for agentic applications is used in Course 4 (A122).
 - The Model Context Protocol specification and its current governance.
 
 Named in the source drafts and **not opened in this pass** ([C37](../../SOURCES.md)): the NIST AI Risk Management Framework, the original retrieval-augmented generation paper, and general references on human-centred AI, regression testing, least privilege and defence in depth. Use the current official editions if you cite them.
 
-## What is not built yet
+## Labs and what is not built yet
 
-A step-by-step lab for one low-code orchestrator and one Python framework, runnable reference code, a shared Saudi-dialect test set, and a recorded demonstration. The course has not been piloted. See [CONTRIBUTING.md](../../CONTRIBUTING.md).
+Eight [labs](labs/README.md), one per module, were added on 20 November 2026 with a tested reference implementation: Python 3.9 or newer, standard library only, offline, no key and no cost. The default model is a deterministic simulator, so every learner gets the numbers of the worked example (24, 25, 28 and 30 of 35). Run `python3 -m unittest tests.test_course2_labs` on the room's machine before the session. The labs rehearse the method on the example; each learner still builds their own agent, with whatever tool they choose, for the graded project.
+
+Not built: a lab for a named low-code orchestrator, a test set of real Saudi-dialect messages, and a recorded demonstration. The course has not been piloted. See [CONTRIBUTING.md](../../CONTRIBUTING.md).
 
 ## Questions for the first pilot
 

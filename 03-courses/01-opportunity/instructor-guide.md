@@ -2,6 +2,14 @@
 
 For anyone running Course 1 as a cohort. Self-paced learners can skip this file. Nothing here has been piloted yet; tell us what happened when you run it.
 
+## Before the first session
+
+- No prior course is required. Learners need written Arabic and basic computer use; the core track needs no programming.
+- **Each learner needs a host business for the field task in Module 1.4 and five people to interview for Module 1.5.** This is the scarce resource of the course. Ask learners to name a host business before the first session, and keep two or three spare introductions for those who cannot.
+- Print or share the consent script from [Lesson 1.4](lessons/1-4-workflow-shadowing.md). No learner observes or records anyone without it, and no personal data leaves the host business.
+- Work the activities yourself once: the sample answers are in the lesson (1.1), in [activity sample solutions](examples/activity-sample-solutions.md) (1.2, 1.3) and in the [model thesis](examples/model-thesis.md).
+- Programme-level guidance common to the four courses is in the [trainer guide](../TRAINER-GUIDE.md).
+
 ## Delivery schedules (16 contact hours)
 
 Field tasks sit **between** sessions in every format. They carry the course; contact hours cannot replace them.
@@ -15,6 +23,22 @@ Field tasks sit **between** sessions in every format. They carry the course; con
 | **Eight evenings** | 8 × 2h | One module per evening; 1.3, 1.4 and 1.5 take the extra evening between them | Same two field tasks |
 
 Allow at least one week between S2 and S3, and two weeks between S3 and S4. Interviews with budget holders take time to arrange.
+
+## Time inside each module
+
+In minutes, taken from the timings stated in the lessons. Field work in 1.4 and 1.5 happens between sessions and is not counted here.
+
+| Module | Hours | Concepts | Activity | Review or questions |
+|---|---|---|---|---|
+| 1.1 From chatbots to agents | 2 | 50 | 40 | 30 |
+| 1.2 The agent-native business | 2 | 50 | 45 | 25 |
+| 1.3 Where to look in the Saudi market | 3 | 60 | 120, of which 40 is the defence | |
+| 1.4 Workflow shadowing | 3 | Pre-reading | 150: map exercise 60, shadowing role-play 45, field-task preparation 45 | 30 |
+| 1.5 Customer discovery | 3 | Pre-reading | 180: question lab 45, live role-play 75, practice synthesis 30, access plan 30 | |
+| 1.6 Scoring and first economics | 2 | Pre-reading | 120: scoring 30, economics and three scenarios 45, alternatives 30, written decision 15 | |
+| 1.7 Writing the thesis | 1 | 15 | 15 for each pair in peer review | 30 |
+
+For 1.1, 1.2 and 1.7 the lessons fix only the activity length; the rest of the split is a suggestion. Modules 1.4 to 1.6 are workshops: learners read the lesson before the session, and the deck is used to recall, not to lecture.
 
 ## Materials checklist
 
@@ -82,6 +106,25 @@ Slides for all seven modules, with speaker notes, are in [`slides/`](slides/READ
 راجع [سلالم التقدير](rubrics.md). قيّم أطروحتين مع مقيّم آخر قبل التقييم المنفرد.
 
 </div>
+
+## What a facilitator should not do
+
+- Supply the opportunity. A learner who is handed a problem has nothing to defend at the gates.
+- Accept invented interviews or observations "to complete the exercise". Gate 1 has no exceptions.
+- Give a legal view on whether an idea needs a licence. Module 1.3 teaches which authority to ask.
+- Let a learner record or copy personal data from a host business.
+
+## Before each cohort
+
+Re-check, and update the lessons or tell us:
+
+| What | Where it is used | Source entry |
+|---|---|---|
+| Market figures in the sector briefs (delivery, merchants, clinics, insurance, real estate, recruitment) | 1.3 and the six briefs | A26 to A32, A34 |
+| Counts of enterprises and commercial registrations | 1.3 | A8, A28, A35 |
+| E-invoicing phases | Accounting brief, 1.3 | A33 |
+| Model prices used in the worked cost example | 1.2, 1.6 | the provider's own page |
+| The sensitive-data definition and the PDPL founder guide | 1.3, 1.4 | Domain 03 of the framework |
 
 ## Open questions for the next iteration
 

@@ -1,0 +1,15 @@
+{
+ "note": "Invented policy. Approved version only, with its approval date.",
+ "followup_after_days": 3,
+ "versions": [
+  {
+   "name": "approved",
+   "approved_on": "2026-09-01",
+   "delivery": {
+    "الرياض": "من يوم إلى يومي عمل",
+    "جدة": "من 2 إلى 4 أيام عمل",
+    "الدمام": "من 2 إلى 3 أيام عمل"
+   }
+  }
+ ]
+}

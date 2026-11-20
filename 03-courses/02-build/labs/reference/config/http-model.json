@@ -1,0 +1,9 @@
+{
+ "name": "your own model over HTTP",
+ "model": "http",
+ "policy": "data/policy-v2-approved-only.json",
+ "ownership_check": "app",
+ "glossary": "data/glossary.json",
+ "normalise_digits": true,
+ "launch_rule": {"overall_percent": 85}
+}

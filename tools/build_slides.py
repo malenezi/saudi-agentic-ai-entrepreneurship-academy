@@ -44,6 +44,23 @@ COURSES = {
         ("2-7.html", "2-7-from-one-agent-to-several.html", "الوحدة 2.7 | من وكيل واحد إلى عدة وكلاء", "Module 2.7 From one agent to several"),
         ("2-8.html", "2-8-failure-analysis-and-iteration.html", "الوحدة 2.8 | تحليل الإخفاق والتحسين", "Module 2.8 Failure analysis and iteration"),
     ]),
+    "3": ("03-courses/03-launch/slides", [
+        ("3-1.html", "3-1-from-prototype-to-mvp.html", "الوحدة 3.1 | من النموذج الأولي إلى المنتج الأولي", "Module 3.1 From prototype to MVP"),
+        ("3-2.html", "3-2-business-models-for-agentic-ventures.html", "الوحدة 3.2 | نماذج الأعمال للمشاريع الوكيلية", "Module 3.2 Business models for agentic ventures"),
+        ("3-3.html", "3-3-unit-economics.html", "الوحدة 3.3 | اقتصاديات الوحدة", "Module 3.3 Unit economics"),
+        ("3-4.html", "3-4-compliance-readiness.html", "الوحدة 3.4 | جاهزية الامتثال", "Module 3.4 Compliance readiness"),
+        ("3-5.html", "3-5-going-to-market-in-the-kingdom.html", "الوحدة 3.5 | الوصول إلى السوق في المملكة", "Module 3.5 Going to market in the Kingdom"),
+        ("3-6.html", "3-6-pilots-and-letters-of-intent.html", "الوحدة 3.6 | التجارب وخطابات النوايا", "Module 3.6 Pilots and letters of intent"),
+        ("3-7.html", "3-7-setting-up-the-business.html", "الوحدة 3.7 | تأسيس العمل", "Module 3.7 Setting up the business"),
+    ]),
+    "4": ("03-courses/04-scale-and-govern/slides", [
+        ("4-1.html", "4-1-the-agent-operated-company.html", "الوحدة 4.1 | المنشأة التي يشغّلها الوكلاء", "Module 4.1 The agent-operated company"),
+        ("4-2.html", "4-2-monitoring-quality-and-cost.html", "الوحدة 4.2 | مراقبة الجودة والتكلفة", "Module 4.2 Monitoring quality and cost"),
+        ("4-3.html", "4-3-governance-and-risk.html", "الوحدة 4.3 | الحوكمة والمخاطر", "Module 4.3 Governance and risk"),
+        ("4-4.html", "4-4-security-for-agentic-systems.html", "الوحدة 4.4 | أمن الأنظمة الوكيلية", "Module 4.4 Security for agentic systems"),
+        ("4-5.html", "4-5-growth-paths-and-funding.html", "الوحدة 4.5 | مسارات النمو والتمويل والتخارج", "Module 4.5 Growth paths, funding and exits"),
+        ("4-6.html", "4-6-pitch-and-demo-day.html", "الوحدة 4.6 | العرض ويوم العروض", "Module 4.6 Pitch and Demo Day"),
+    ]),
 }
 
 

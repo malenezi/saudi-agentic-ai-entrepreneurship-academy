@@ -49,6 +49,14 @@
 - **الحياد.** نذكر الأدوات والجهات لقيمتها التعليمية، دون ترويج.
 - **الاحترام.** راجع [ميثاق السلوك](CODE_OF_CONDUCT.md).
 
+## مراجعة مختص، وتجربة فوج، ومساهمة في الشيفرة
+
+- **مختص قانوني أو ضريبي أو أمني أو استثماري؟** في [حزم المراجعة](03-courses/validation/README.md) سجل لكل معلومة وأسئلة محددة ونموذج توقيع. ساعاتك الثلاث أثمن مساهمة يحتاجها المستودع اليوم.
+- **جرّبت مقرراً مع متعلمين؟** [بروتوكول التجربة](03-courses/validation/pilot-protocol.md) يحدد ما يُجمع وكيف يُرسل. التقرير يُنشر كما كُتب.
+- **تعدّل شيفرة المختبرات أو الأدوات؟** المكتبة القياسية وحدها، و Python 3.9 فأحدث، واختبار لكل سلوك جديد. لا مفتاح ولا بيانات حقيقية في أي ملف. شغّل `make check` قبل طلب الدمج.
+- **تعدّل عرضاً؟** عدّل المقطع في `slides/src/` ثم `python3 tools/build_slides.py`. شريحة لكل فكرة، والتفصيل في ملاحظات المتحدث.
+- **تعدّل معيار الإتمام أو سلّماً؟** غيّر رقم إصدار المعيار، وحدّث `tools/score_submission.py` واختباراته معه.
+
 ## إن كنت تستخدم Git
 
 1. افتح Issue تصف فيه اقتراحك (اختياري للتعديلات الصغيرة).
@@ -111,6 +119,15 @@ These are not barriers. If you cannot meet one, send your contribution anyway an
 - **Regulatory content is educational**, not legal or tax advice.
 - **Neutrality.** Tools and organisations are named for their teaching value, without promotion.
 - **Respect.** See the [Code of Conduct](CODE_OF_CONDUCT.md).
+
+## Specialist review, cohort pilots and code contributions
+
+- **A lawyer, tax adviser, security practitioner or investor?** The [review packets](03-courses/validation/README.md) hold a claim register, specific questions and a sign-off form. Three hours of your time is the contribution the repository needs most today.
+- **Ran a course with learners?** The [pilot protocol](03-courses/validation/pilot-protocol.md) says what to collect and how to send it. A pilot report is published as written.
+- **Changing lab or tool code?** Standard library only, Python 3.9 or newer, and a test for every new behaviour. No key and no real data in any file. Run `make check` before a pull request.
+- **Changing a deck?** Edit the fragment in `slides/src/`, then `python3 tools/build_slides.py`. One idea per slide; detail goes in the speaker notes.
+- **Changing the completion standard or a rubric?** Bump the standard's version, and update `tools/score_submission.py` and its tests with it.
+- Third-party components and their terms are listed in [THIRD-PARTY.md](THIRD-PARTY.md).
 
 ## If you do use Git
 

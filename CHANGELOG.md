@@ -2,7 +2,54 @@
 
 ## Unreleased
 
-Nothing yet.
+### Remediation and release readiness (20 November 2026)
+
+Status of every gap, tests, readiness by course and a go/no-go recommendation are in the [release-readiness report](RELEASE-READINESS.md).
+
+- **Course 2 labs:** eight labs, one per module, with a tested reference implementation (Python, standard library only) that runs offline with a simulated model and reproduces the worked example: 24, 25, 28 and 30 of 35. Test data, configurations, expected outputs, troubleshooting, and an optional path to any OpenAI-compatible endpoint.
+- **Decks for Courses 3 and 4:** thirteen decks authored slide by slide replace the generated ones. No overflow, no dense-slide notes.
+- **Completion standard, version 1.0:** gates, no level 1, lead criterion at level 3 or above, weighted score of 2.7 or more; distinction band; evidence, remediation and certification eligibility. Applied in all four rubrics, with `tools/score_submission.py`.
+- **Instructor kit:** fifteen weeks for all four courses, thirty session plans, four gates, a two-semester alternative, a completion record form.
+- **Validation:** a desk walkthrough (not a pilot) with six findings corrected, a pilot protocol, and four specialist review packets with claim registers and unsigned sign-off forms. Ten regulated lessons state their verification status.
+- **Guides:** a learner guide, an outcomes-to-assessment alignment, third-party attribution, contribution notes for reviewers, pilot organisations and code contributors.
+- **Not done:** no pilot, no specialist sign-off, no English versions of the lessons.
+
+### QA audit of the four courses (20 November 2026)
+
+Findings, fixes, remaining gaps and a course-by-course readiness assessment are in the [QA report](03-courses/QA-REPORT.md).
+
+- Slide decks for Courses 3 and 4: thirteen decks generated from the lessons by `tools/slides_from_lessons.py`, built with the shared engine, rendered and checked for overflow, and listed on the landing page.
+- A [programme trainer guide](03-courses/TRAINER-GUIDE.md): the four courses at a glance, entry checks, one assessment standard with a recommended completion standard, where each activity's sample solution is, and how to prepare.
+- Course 2 updated to the 2026 OWASP numbering (lessons 2.3 and 2.6, their decks, lab exercise R7).
+- Navigation (previous, syllabus, next) in all 28 lessons. Missing sections added to the Course 1 and Course 2 instructor guides. Rubric level names and two Arabic security terms unified.
+- [Sample solutions](03-courses/01-opportunity/examples/activity-sample-solutions.md) for Course 1 activities 1.2 and 1.3.
+- The [courses index](03-courses/README.md) rewritten; stale "outline" notes removed from the learning and competency frameworks.
+- Six structure tests in `tests/test_courses.py` so the gaps do not return.
+
+### Course 4: Scale and Govern, first content release (20 November 2026)
+
+Built from two drafts supplied by the owner, by the same rule: verify, keep the published syllabus, enrich. Hours (16), the five learning outcomes, the six-part scale pack and the rubric weights (30/20/20/15/15) are unchanged.
+
+- Five new lessons in [`03-courses/04-scale-and-govern/lessons/`](03-courses/04-scale-and-govern/lessons/), Arabic with English terms: [4.1 the agent-operated company](03-courses/04-scale-and-govern/lessons/4-1-the-agent-operated-company.md), [4.2 monitoring quality and cost](03-courses/04-scale-and-govern/lessons/4-2-monitoring-quality-and-cost.md), [4.3 governance and risk](03-courses/04-scale-and-govern/lessons/4-3-governance-and-risk.md), [4.4 security for agentic systems](03-courses/04-scale-and-govern/lessons/4-4-security-for-agentic-systems.md) and [4.6 pitch and Demo Day](03-courses/04-scale-and-govern/lessons/4-6-pitch-and-demo-day.md). Lesson 4.5 already existed.
+- A [worked example](03-courses/04-scale-and-govern/examples/worked-example-scale-pack.md) that carries the same invented store through four weeks of operation, including one bad week caused by an unpinned model version, and the six parts of the scale pack. All figures are invented, labelled and re-computed with the Academy's calculator.
+- Five templates: [operating architecture](03-courses/04-scale-and-govern/templates/operating-architecture.md), [weekly KPI sheet and change log](03-courses/04-scale-and-govern/templates/weekly-kpi-sheet-and-change-log.md), [scaling roadmap](03-courses/04-scale-and-govern/templates/scaling-roadmap.md), [Demo Day run sheet](03-courses/04-scale-and-govern/templates/demo-day-run-sheet.md) and [scale pack checklist](03-courses/04-scale-and-govern/templates/scale-pack-checklist.md). The risk register, security assessment and pitch outline stay in their toolkits and are linked.
+- Five new [quizzes](03-courses/04-scale-and-govern/quizzes/README.md) of ten questions (4.1 to 4.4 and 4.6); every lesson links its quiz.
+- A [glossary](03-courses/04-scale-and-govern/glossary.md), [rubrics](03-courses/04-scale-and-govern/rubrics.md) with four levels and five validation gates, an [instructor guide](03-courses/04-scale-and-govern/instructor-guide.md) with buildathon rules, and a record of [what was not adopted](03-courses/04-scale-and-govern/not-adopted.md).
+- Sources A120 to A124: NIST AI 600-1, the 2026 edition of the OWASP Top 10 for LLM Applications, the OWASP Top 10 for Agentic Applications, MAGNiTT's full-year 2025 investor count and regional share, and NCA's ECC-2:2024. Most are read through summaries, and each entry says so. Corrections B61 to B63 (the drafts cited ECC-1:2018 as current; "more than half" of regional venture funding is 45% for the full year; a requirement attributed to NIST AI 600-1 was not found). C49 lists what was not checked and not used. A84 now notes that the 2026 OWASP edition renumbers the list; Course 2 lessons and decks still cite the 2025 numbering.
+- **Limits.** Modules 4.3, 4.4 and 4.5 are educational, not legal, security or investment advice, and have had no specialist review. No slide decks yet. Not piloted.
+
+### Course 3: Launch and Business Model, first content release (20 November 2026)
+
+Built from two drafts supplied by the owner, by the standing rule: verify, keep the published syllabus, enrich. Hours (20), learning outcomes, the five-part deliverable and the rubric weights (30/25/20/15/10) are unchanged.
+
+- Six new lessons in [`03-courses/03-launch/lessons/`](03-courses/03-launch/lessons/), Arabic with English terms, in the format of Courses 1 and 2: [3.2 business models](03-courses/03-launch/lessons/3-2-business-models-for-agentic-ventures.md) (five pricing models, productised service versus software, the thin-wrapper test), [3.3 unit economics](03-courses/03-launch/lessons/3-3-unit-economics.md) (four scenarios, break-even success rate, price from value with cost as a floor), [3.4 compliance readiness](03-courses/03-launch/lessons/3-4-compliance-readiness.md) (controller or processor, seven questions and the evidence for each, conditional obligations as questions, buyers' AI-ethics questions, security basics, when to see a lawyer), [3.5 going to market](03-courses/03-launch/lessons/3-5-going-to-market-in-the-kingdom.md), [3.6 pilots and letters of intent](03-courses/03-launch/lessons/3-6-pilots-and-letters-of-intent.md) and [3.7 setting up the business](03-courses/03-launch/lessons/3-7-setting-up-the-business.md).
+- Lesson 3.1 gains a section on Arabic in the live channel: the three-line opening message, fixed keywords handled in the application, and right-to-left handling.
+- A [worked example](03-courses/03-launch/examples/worked-example-launch-pack.md) that continues Course 2's invented store through a two-week deployment and the five parts of the launch pack. All figures are invented, labelled and re-computed with the Academy's calculator.
+- Four templates: [launch pack checklist](03-courses/03-launch/templates/launch-pack-checklist.md), [pricing memo](03-courses/03-launch/templates/pricing-memo.md), [buyer evidence pack](03-courses/03-launch/templates/buyer-evidence-pack.md) and [business setup checklist](03-courses/03-launch/templates/business-setup-checklist.md). Existing toolkit and compliance templates are linked, not copied.
+- Six new [quizzes](03-courses/03-launch/quizzes/README.md) of ten questions (3.2 to 3.7), built from each lesson's Quick Review and Common Mistakes, with collapsed answer keys; every lesson links its quiz. Sixty questions generated from one data file so each key matches its option.
+- A [glossary](03-courses/03-launch/glossary.md), [rubrics](03-courses/03-launch/rubrics.md) with four levels and five validation gates, an [instructor guide](03-courses/03-launch/instructor-guide.md), and a record of [what was not adopted](03-courses/03-launch/not-adopted.md) from the drafts and why.
+- Sources A109 to A119: PDPL penalties, the data protection officer and controller-register rules, SDAIA's accreditation of AI service providers and its generative AI guidelines, the Commercial Register Law in force since April 2025, ZATCA's solution-provider directory, the central bank's list of licensed payment companies, two investor essays, the GAIA accelerator. Most are law-firm or press summaries, and each entry says so. Corrections B56 to B60 (among them: the 72-hour breach notice is conditional in the rule as read; the drafts' cost formula was replaced by the calculator's). Unverified C47 and C48.
+- **Limits.** Modules 3.4 and 3.7 are educational, not legal or tax advice, and have not been reviewed by a lawyer or a tax adviser. No slide decks yet. Not piloted.
 
 ## v0.7.1 (2026-11-19)
 

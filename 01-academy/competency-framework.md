@@ -1,6 +1,6 @@
 # إطار الكفايات · Competency framework
 
-> **ملاحظة · Note.** المقررات تُبنى لاحقاً على مراحل؛ ما يرد هنا عنها تصميم مقترح. · The courses will be built later, in iterations; references to them here describe the proposed design.
+> **ملاحظة · Note.** المقررات الأربعة مبنية اليوم ولم تُجرَّب مع فوج بعد؛ الربط بينها وبين الكفايات هنا تصميم لم يُختبر. · All four courses are built and none has been piloted; the mapping to competencies here is a design that has not been tested with learners.
 
 Eight domains describe what an agentic entrepreneur can do. Each has three levels. Courses map to domains so a learner can see what they have covered and what remains.
 

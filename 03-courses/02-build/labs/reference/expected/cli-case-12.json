@@ -1,0 +1,22 @@
+{
+  "account": "********01",
+  "intent": "order_status",
+  "action": "reply_status",
+  "tool_calls": [
+    {
+      "tool": "get_order_status",
+      "input": "84521"
+    }
+  ],
+  "pending_approval": [
+    {
+      "tool": "create_followup_ticket",
+      "order_id": "84521",
+      "level": "B"
+    }
+  ],
+  "escalated_to_human": false,
+  "urgent": false,
+  "reply_draft": "أهلاً بك. حالة طلبك رقم 84521: شُحن. آخر تحديث قبل 6 يوم. نقترح فتح طلب متابعة مع فريق الشحن.",
+  "summary": ""
+}

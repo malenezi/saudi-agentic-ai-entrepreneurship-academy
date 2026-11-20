@@ -36,7 +36,7 @@
 | 2.7 | [من وكيل واحد إلى عدة وكلاء](lessons/2-7-from-one-agent-to-several.md) | 3 | القرار المعماري |
 | 2.8 | [تحليل الإخفاق والتحسين](lessons/2-8-failure-analysis-and-iteration.md) | 3 | السجل والدورتان والعرض |
 
-**مواد المقرر:** [العروض التقديمية](slides/README.md) · [الاختبارات القصيرة](quizzes/README.md) · [المثال المحلول](examples/worked-example-order-enquiry-agent.md) (متجر وبيانات مختلقة) · [عقد الأداة](templates/tool-contract.md) · [مذكرة اختيار النموذج](templates/model-selection-memo.md) · [سجل القرار المعماري](templates/architecture-decision.md) · [سجل الإخفاق والتحسين](templates/failure-and-improvement-log.md) · [قائمة التحقق قبل الاعتماد](templates/readiness-checklist.md) · [مخطط العرض المصوّر](templates/demo-video-outline.md) · [المسرد](glossary.md) · [سلالم التقدير](rubrics.md) · [دليل المدرب](instructor-guide.md) · [ما لم يُعتمد ولماذا](not-adopted.md)
+**مواد المقرر:** [العروض التقديمية](slides/README.md) · [المختبرات](labs/README.md) · [الاختبارات القصيرة](quizzes/README.md) · [المثال المحلول](examples/worked-example-order-enquiry-agent.md) (متجر وبيانات مختلقة) · [عقد الأداة](templates/tool-contract.md) · [مذكرة اختيار النموذج](templates/model-selection-memo.md) · [سجل القرار المعماري](templates/architecture-decision.md) · [سجل الإخفاق والتحسين](templates/failure-and-improvement-log.md) · [قائمة التحقق قبل الاعتماد](templates/readiness-checklist.md) · [مخطط العرض المصوّر](templates/demo-video-outline.md) · [المسرد](glossary.md) · [سلالم التقدير](rubrics.md) · [دليل المدرب](instructor-guide.md) · [ما لم يُعتمد ولماذا](not-adopted.md)
 
 </div>
 
@@ -126,4 +126,4 @@ Riyada's parallel workflow is [First agent in 30 days](https://github.com/malene
 
 ## What is still missing
 
-Step-by-step labs for one low-code orchestrator and one Python framework, runnable reference code, a shared Saudi-dialect test set, a recorded demonstration, and a first cohort's feedback. Slides and quizzes now exist (see [slides](slides/README.md) and [quizzes](quizzes/README.md)). See the [instructor guide](instructor-guide.md) and [CONTRIBUTING.md](../../CONTRIBUTING.md).
+A step-by-step lab for a named low-code orchestrator (the [labs](labs/README.md) added on 20 November 2026 are tool-neutral: a tested Python reference implementation that runs offline, with a 35-case test set that includes ten Saudi-dialect cases, all invented). A test set built from real Saudi-dialect messages, a recorded demonstration, and a first cohort's feedback. Slides and quizzes now exist (see [slides](slides/README.md) and [quizzes](quizzes/README.md)). See the [instructor guide](instructor-guide.md) and [CONTRIBUTING.md](../../CONTRIBUTING.md).

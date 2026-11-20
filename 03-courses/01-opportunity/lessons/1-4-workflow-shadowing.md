@@ -272,6 +272,8 @@ Real cost per transaction = touch minutes × loaded cost per minute
 
 [اختبار الوحدة 1.4](../quizzes/1-4-quiz.md): أسئلة من المراجعة السريعة والأخطاء الشائعة، مع الإجابات وشروحها.
 
+**التنقل:** السابق: [الوحدة 1.3](1-3-where-to-look.md) · [خطة المقرر](../syllabus.md) · التالي: [الوحدة 1.5](1-5-customer-discovery.md)
+
 </div>
 
 ---

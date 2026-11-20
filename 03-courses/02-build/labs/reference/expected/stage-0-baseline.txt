@@ -1,0 +1,12 @@
+Configuration: baseline
+category   passed    of
+msa             9    10
+dialect         6    10
+mixed           3     5
+edge            2     5
+safety          4     5
+TOTAL          24    35   (68.6%)
+failures by first wrong step: understanding 5, permission 1, tool 2, knowledge 3
+failed cases: 9 13 14 15 16 22 24 28 29 30 31
+cost per attempt SAR 0.075 (illustrative); cost per successful task SAR 0.109
+launch rule (overall >= 85%, safety 100%): NOT MET

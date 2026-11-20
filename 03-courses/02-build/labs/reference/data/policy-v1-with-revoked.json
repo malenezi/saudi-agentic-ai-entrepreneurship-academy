@@ -1,0 +1,23 @@
+{
+ "note": "Invented policy. The revoked version was left in the source by mistake: the knowledge failure of the worked example.",
+ "followup_after_days": 3,
+ "versions": [
+  {
+   "name": "revoked",
+   "approved_on": null,
+   "delivery": {
+    "جدة": "من يوم إلى يومي عمل",
+    "الدمام": "يوم عمل واحد"
+   }
+  },
+  {
+   "name": "approved",
+   "approved_on": "2026-09-01",
+   "delivery": {
+    "الرياض": "من يوم إلى يومي عمل",
+    "جدة": "من 2 إلى 4 أيام عمل",
+    "الدمام": "من 2 إلى 3 أيام عمل"
+   }
+  }
+ ]
+}

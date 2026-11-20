@@ -6,6 +6,10 @@ The deliverable rubric keeps the criteria and weights of the [syllabus](syllabus
 
 The six-part deliverable is graded as one piece of work with the rubric in section 3. Module outputs are checkpoints: they are reviewed, not graded separately. Self-paced learners use the checkpoints and the [readiness checklist](templates/readiness-checklist.md) as self-checks. The [module quizzes](quizzes/README.md) are formative and carry no weight.
 
+## Completion
+
+The four courses share one [assessment and completion standard](../assessment-standard.md), version 1.0. A deliverable is **complete** when every validation gate is "yes", no criterion is at level 1, the lead criterion (**does the job**) is at level 3 or above, and the weighted score is 2.7 or more out of 4. **Distinction:** no criterion below level 3 and a weighted score of 3.5 or more. Lab results are practice and are not graded. One resubmission after written feedback. Check a set of levels with `python3 tools/score_submission.py 2 --levels … --gates …`.
+
 ## 2. Validation gates
 
 Checked before the deliverable is graded. Any "no" returns the project, whatever the score would be.
