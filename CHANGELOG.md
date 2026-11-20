@@ -8,6 +8,11 @@ Nothing yet.
 
 The four courses are complete in content. Courses 3 and 4 received their first content; Course 2 received executable labs; every module now has a lesson, a deck, a quiz, an activity with a template and a sample solution; one completion standard and one fifteen-week kit cover the programme. **Not piloted and not professionally reviewed**: see the [release-readiness report](RELEASE-READINESS.md) for the status of every gap. The roadmap item previously planned as v0.8 (founder agents and runnable templates) moves to v0.9.
 
+### Source re-check and reviewer invitations (20 November 2026)
+
+- **Sources of Courses 1 and 2 re-opened:** 33 register entries hold as recorded. Three corrected: A29 (the 12-day clearance figure was wrongly dated 2017), A75 (the study gives one rejection rate, not a rate by service) and B20 (the eight-day average is in the sources). No figure in a lesson, sector brief or deck changed. Done by automated fetch; limits are in the [re-check record](03-courses/validation/source-recheck-c1-c2.md).
+- **Reviewer invitations:** [messages in Arabic and English](03-courses/validation/review-packets/invitations.md) for the four specialist reviewers. No review has taken place.
+
 ### Remediation and release readiness (20 November 2026)
 
 Status of every gap, tests, readiness by course and a go/no-go recommendation are in the [release-readiness report](RELEASE-READINESS.md).
