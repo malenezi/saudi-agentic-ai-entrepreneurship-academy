@@ -5,7 +5,7 @@
 
 **المدة:** 3 ساعات · **ناتج التعلّم:** 1 · **المخرج:** وكيل منشور على قناة اختبار حية، يستخدمه مستخدم تجريبي واحد من منشأة حقيقية، مع ورقة جاهزية موقّعة
 
-> **حالة الدرس:** أول دروس المقرر 3. بقية الوحدات ما زالت مخططاً في [خطة المقرر](../syllabus.md). أرقام مثال «مِسكة» **مختلقة للتعليم** ومأخوذة من [المثال المحلول في المقرر 2](../../02-build/examples/worked-example-order-enquiry-agent.md).
+> أرقام مثال «مِسكة» **مختلقة للتعليم** ومأخوذة من [المثال المحلول في المقرر 2](../../02-build/examples/worked-example-order-enquiry-agent.md). ما حدث بعد النشر في [المثال المحلول لهذا المقرر](../examples/worked-example-launch-pack.md).
 
 ## الفكرة
 
@@ -92,6 +92,22 @@
 
 اكتب قاعدة القرار قبل البدء: «نستمر إذا…، نتوقف إذا…، ونعدّل كذا بين الحدّين».
 
+## 7. العربية في القناة
+
+القناة الحية تكشف ما لا تكشفه مجموعة الاختبار. أربعة أمور تُحسم قبل أول مستخدم:
+
+**رسالة الترحيب في ثلاثة أسطر:** من أنا، ما أفعله وما لا أفعله، وكيف تصل إلى موظف.
+
+> أهلاً بك في «مِسكة». أنا مساعد آلي أجيبك عن حالة طلبك وشحنه.
+> لا أستطيع الإلغاء ولا الاسترداد ولا تغيير العنوان، وأحوّلها إلى الموظفة.
+> اكتب «موظف» في أي وقت لتكلّم أحد أفراد الفريق.
+
+**كلمتا «موظف» و«إيقاف» تُعالَجان في التطبيق، لا في النموذج.** كلمة ثابتة تُطابَق بقاعدة، فتحوّل المحادثة أو توقف الرسائل فوراً. لا تترك للنموذج أن «يفهم» أن العميل يريد إنساناً.
+
+**اللغة كما يكتبها الناس.** فصحى، ولهجة، وكتابة مختلطة، وأرقام عربية ولاتينية في الرسالة نفسها. اختبرتَ هذا في [الوحدة 2.2](../../02-build/lessons/2-2-context-engineering-in-arabic.md) و[الوحدة 2.5](../../02-build/lessons/2-5-evaluation.md). الجديد هنا أن كل عبارة لم يفهمها الوكيل في التشغيل تدخل قائمة المصطلحات ومجموعة الاختبار في الأسبوع نفسه.
+
+**الاتجاه من اليمين إلى اليسار في واجهة الويب.** اضبط اتجاه الصفحة كلها، لا فقرة فقرة. واعزل ما يُكتب من اليسار إلى اليمين داخل النص العربي: رقم الطلب، والمبلغ والعملة، ورقم الجوال، والكلمة اللاتينية. بلا عزل ينقلب ترتيبها في بعض المتصفحات. وقرّر نوع الأرقام في ردود الوكيل والتزم به. الفحص في [تمرين B4](../../../05-agentic-ai-lab/exercises/b4-rtl-audit.md)، وصياغة الرسائل الثابتة في [تمرين B1](../../../05-agentic-ai-lab/exercises/b1-agent-messages-in-arabic.md).
+
 ## النشاط
 
 1. اكتب في سطر واحد: أي درجة أنت عليها الآن، وما الدليل.
@@ -100,7 +116,7 @@
 4. اتفق مع مستخدم واحد من منشأة حقيقية على أسبوعين، ومقياس واحد، وقاعدة قرار.
 5. سجّل الأرقام الخمسة في نهاية كل أسبوع.
 
-رسائل الترحيب والتصعيد والاعتذار بالعربية: [تمرين B1](../../../05-agentic-ai-lab/exercises/b1-agent-messages-in-arabic.md). وإن كانت القناة صفحة ويب: [تمرين B4](../../../05-agentic-ai-lab/exercises/b4-rtl-audit.md).
+الأرقام الخمسة هي مدخل [الوحدة 3.3](3-3-unit-economics.md): منها تُحسب تكلفة المهمة المنجزة.
 
 ## فرق المسارين
 
@@ -135,4 +151,4 @@
 
 ---
 
-**English summary.** Proof of concept, prototype and MVP answer three different questions (can the task be done at all; does the agent do it reliably within its limits; does a real business use it, return and pay), each with its own evidence and audience. Pick the rung from the riskiest untested assumption; do not climb before the previous question is answered, and do not polish a rung beyond its question. An agentic MVP needs one job, one channel, a clear opening message, a named route to a person, a tested stop switch, a log, and cost per resolved task. A six-item gate precedes deployment. Start narrow (one user, one branch, staff sends every reply in week one), track five weekly numbers, feed every real failure back into the test set, and write the decision rule before starting.
+**English summary.** Proof of concept, prototype and MVP answer three different questions (can the task be done at all; does the agent do it reliably within its limits; does a real business use it, return and pay), each with its own evidence and audience. Pick the rung from the riskiest untested assumption; do not climb before the previous question is answered, and do not polish a rung beyond its question. An agentic MVP needs one job, one channel, a clear opening message, a named route to a person, a tested stop switch, a log, and cost per resolved task. A six-item gate precedes deployment. Start narrow (one user, one branch, staff sends every reply in week one), track five weekly numbers, feed every real failure back into the test set, and write the decision rule before starting. Before the first user: a three-line opening message, fixed keywords for reaching a person and for stopping that are handled in the application, input as people actually write it, and right-to-left handling in a web channel with left-to-right fragments isolated.
