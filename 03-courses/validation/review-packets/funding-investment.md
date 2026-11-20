@@ -17,7 +17,7 @@ For each claim in section 4: **confirm**, **correct** (with the instrument and a
 ## 3. Questions
 
 1. Is the description of who funds what, and what each expects, accurate for the Saudi market today?
-2. The funding directory records 12 programmes as verified, 6 as partly verified, 13 as pending and 1 as not active. Which entries are wrong or closed?
+2. Since 20 November 2026 the funding directory records 31 programmes as verified from their operators' pages and 1 as not active; unverified names were removed. Which entries are wrong or closed, and which credible programmes are missing?
 3. Are the four company journeys used as cases (A88 to A91) described fairly?
 4. Are the six things lesson 4.5 says an informed investor checks in an agentic product the right six?
 5. Is the guidance on choosing revenue over raising sound, or does it understate what early capital buys?

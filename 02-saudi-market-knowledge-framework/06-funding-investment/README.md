@@ -18,7 +18,7 @@
 |---|---|
 | [Funding and investment](funding-and-investment.md) | Choosing a path, the landscape by type, investor questions, data room |
 | [Startup ecosystem directory](startup-ecosystem.md) | Who does what, and when to approach them |
-| [دليل برامج التمويل والدعم](funding-directory.md) | One entry per programme with a verification status and the date its official page was opened. In Arabic. Four entries verified, five partial, the rest listed as "to verify" |
+| [دليل برامج التمويل والدعم](funding-directory.md) | One entry per programme with a verification status and the date its official page was opened. In Arabic. Since 20 November 2026 it lists verified entries only: 31 verified, and one that its operator marks inactive |
 
 ## Verified facts
 
@@ -34,7 +34,7 @@ A funding entry is published only with: operator, what is offered, eligibility, 
 
 ## Where the programmes went
 
-The table of unconfirmed programmes that stood here has moved into the [funding directory](funding-directory.md), where each name now carries one of three statuses: verified on its operator's page, partly verified, or to verify. On 18 November 2026 the verified entries were Monsha'at's Estrdad fee refund, MCIT's CODE programmes, the SME Bank's Kafalah guarantee, and Monsha'at's own directory of support services. No entry says that applications are open.
+The table of unconfirmed programmes that stood here has moved into the [funding directory](funding-directory.md), which since 20 November 2026 lists only programmes whose operator's page was opened. Names that could not be verified were removed and are recorded in the framework's [removal record](../not-adopted.md). No entry says that applications are open.
 
 ## Founder decisions
 
@@ -47,7 +47,7 @@ The table of unconfirmed programmes that stood here has moved into the [funding 
 
 ## Guides wanted
 
-- [x] A verified, dated directory, first edition (18 November 2026). Most accelerators are still "to verify"
+- [x] A verified, dated directory (first edition 18 November 2026; verified entries only since 20 November 2026). Most pages do not state amounts, equity or eligibility: operators are invited to fill these in
 - [ ] Bootstrapping versus venture capital for agentic ventures
 - [ ] Pre-seed, seed and Series A: what each expects in the Kingdom
 - [ ] Capitalisation tables and equity basics in Arabic
