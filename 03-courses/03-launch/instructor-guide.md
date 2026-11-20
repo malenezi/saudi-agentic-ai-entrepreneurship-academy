@@ -51,9 +51,9 @@ Suggested split, in minutes.
 | PDPL founder guide and its worked example | [Domain 03](../../02-saudi-market-knowledge-framework/03-data-protection-pdpl/README.md) |
 | Establishment walkthrough; tax basics | [Domain 01](../../02-saudi-market-knowledge-framework/01-business-establishment/establishment-walkthrough.md), [Domain 05](../../02-saudi-market-knowledge-framework/05-tax-accounting-finance/tax-basics-for-founders.md) |
 | Glossary and rubrics | [`glossary.md`](glossary.md), [`rubrics.md`](rubrics.md) |
-| Quiz for Module 3.1 | [`quizzes/3-1-quiz.md`](quizzes/3-1-quiz.md) |
+| Seven formative quizzes with answer keys (70 questions) | [`quizzes/`](quizzes/README.md) |
 
-Slide decks and quizzes for Modules 3.2 to 3.7 do not exist yet.
+Slide decks do not exist yet. The quizzes for Modules 3.4 and 3.7 test what the lesson says, not the law; say so when you use them.
 
 ## Notes by module
 

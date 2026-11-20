@@ -2,7 +2,18 @@
 
 ## Unreleased
 
-Nothing yet.
+### Course 3: Launch and Business Model, first content release (20 November 2026)
+
+Built from two drafts supplied by the owner, by the standing rule: verify, keep the published syllabus, enrich. Hours (20), learning outcomes, the five-part deliverable and the rubric weights (30/25/20/15/10) are unchanged.
+
+- Six new lessons in [`03-courses/03-launch/lessons/`](03-courses/03-launch/lessons/), Arabic with English terms, in the format of Courses 1 and 2: [3.2 business models](03-courses/03-launch/lessons/3-2-business-models-for-agentic-ventures.md) (five pricing models, productised service versus software, the thin-wrapper test), [3.3 unit economics](03-courses/03-launch/lessons/3-3-unit-economics.md) (four scenarios, break-even success rate, price from value with cost as a floor), [3.4 compliance readiness](03-courses/03-launch/lessons/3-4-compliance-readiness.md) (controller or processor, seven questions and the evidence for each, conditional obligations as questions, buyers' AI-ethics questions, security basics, when to see a lawyer), [3.5 going to market](03-courses/03-launch/lessons/3-5-going-to-market-in-the-kingdom.md), [3.6 pilots and letters of intent](03-courses/03-launch/lessons/3-6-pilots-and-letters-of-intent.md) and [3.7 setting up the business](03-courses/03-launch/lessons/3-7-setting-up-the-business.md).
+- Lesson 3.1 gains a section on Arabic in the live channel: the three-line opening message, fixed keywords handled in the application, and right-to-left handling.
+- A [worked example](03-courses/03-launch/examples/worked-example-launch-pack.md) that continues Course 2's invented store through a two-week deployment and the five parts of the launch pack. All figures are invented, labelled and re-computed with the Academy's calculator.
+- Four templates: [launch pack checklist](03-courses/03-launch/templates/launch-pack-checklist.md), [pricing memo](03-courses/03-launch/templates/pricing-memo.md), [buyer evidence pack](03-courses/03-launch/templates/buyer-evidence-pack.md) and [business setup checklist](03-courses/03-launch/templates/business-setup-checklist.md). Existing toolkit and compliance templates are linked, not copied.
+- Six new [quizzes](03-courses/03-launch/quizzes/README.md) of ten questions (3.2 to 3.7), built from each lesson's Quick Review and Common Mistakes, with collapsed answer keys; every lesson links its quiz. Sixty questions generated from one data file so each key matches its option.
+- A [glossary](03-courses/03-launch/glossary.md), [rubrics](03-courses/03-launch/rubrics.md) with four levels and five validation gates, an [instructor guide](03-courses/03-launch/instructor-guide.md), and a record of [what was not adopted](03-courses/03-launch/not-adopted.md) from the drafts and why.
+- Sources A109 to A119: PDPL penalties, the data protection officer and controller-register rules, SDAIA's accreditation of AI service providers and its generative AI guidelines, the Commercial Register Law in force since April 2025, ZATCA's solution-provider directory, the central bank's list of licensed payment companies, two investor essays, the GAIA accelerator. Most are law-firm or press summaries, and each entry says so. Corrections B56 to B60 (among them: the 72-hour breach notice is conditional in the rule as read; the drafts' cost formula was replaced by the calculator's). Unverified C47 and C48.
+- **Limits.** Modules 3.4 and 3.7 are educational, not legal or tax advice, and have not been reviewed by a lawyer or a tax adviser. No slide decks yet. Not piloted.
 
 ## v0.7.1 (2026-11-19)
 
