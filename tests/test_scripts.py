@@ -78,7 +78,7 @@ class FundingDirectory(unittest.TestCase):
     TOOL = os.path.join("tools", "check_funding_directory.py")
 
     def test_index_matches_the_page(self):
-        result = run(self.TOOL, "--today", "2026-11-20")
+        result = run(self.TOOL, "--today", "2026-11-21")
         self.assertEqual(result.returncode, 0, result.stdout)
         self.assertNotIn("ERROR", result.stdout)
 
