@@ -2,7 +2,7 @@
 
 ## Unreleased
 
-Nothing yet.
+- AskBaba case study: restored the learner question on the purchase-order value at which execution should wait for the buyer's approval, and the thesis clause that approval of anything with financial effect stays with the authorised person. Both had been dropped in the edit of pull request #42; the contributor's corrections and additions are kept.
 
 ## v0.10 (2026-11-21)
 
