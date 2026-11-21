@@ -106,7 +106,7 @@ Every course has a glossary and an instructor guide. Details are in the [courses
 | [Courses](03-courses/README.md) | Four courses: 28 lessons, each with a deck and a quiz, plus templates, worked examples and rubrics ([details above](#status-of-each-course)) | First content release available; not piloted with a cohort |
 | [Founder Toolkit](04-entrepreneur-toolkit/README.md) | Thirteen bilingual business templates and three calculators: cost per resolved task, first-customers funnel, dilution | Available |
 | [Agentic AI Lab](05-agentic-ai-lab/README.md) | Twelve [entrepreneurial skills](05-agentic-ai-lab/skills/README.md), five agent templates, an evaluation template, an Arabic model guide | Available |
-| [Founder agents](02-saudi-market-knowledge-framework/founder-agents/README.md) | Twelve agents: a definition to paste into any assistant, the pages it reads, and three test conversations each | Available; no test conversation recorded yet, not tried with founders |
+| [Founder agents](02-saudi-market-knowledge-framework/founder-agents/README.md) | Twelve agents: a definition to paste into any assistant, the pages it reads, and three test conversations each | Available; eleven agents have one recorded run each with one assistant, not tried with founders |
 | [Runnable agent templates](05-agentic-ai-lab/agent-templates/workflows/README.md) | Five files that import into n8n and run with a simulated model and no key, enforcing the oversight table in code | Available; not run with a real model, no channel connected |
 | [Lab exercises](05-agentic-ai-lab/exercises/README.md) | Seventeen hands-on exercises: fourteen use the two companion repositories, three use the Academy's own skills | Available; not yet tried with learners |
 | [Case studies](06-case-studies/README.md) | Nine real cases from public sources (three Saudi) with evidence levels, scenarios and a learner worksheet; plus twelve sourced venture journeys: funding, platforms, exits, and five Saudi companies building for agents | Available; owner-written cases wanted |
@@ -124,7 +124,7 @@ We describe what exists as it is. The status of every item and the results of ev
 | Knowledge framework: at least one published guide in every domain | Five newer guides rest on limited sources: IP, e-commerce, employment, sectors, government procurement | No lawyer, tax adviser or security specialist has reviewed the regulatory content |
 | Founder Toolkit, lab and case studies | Saudi cases written by their owners | The exercises, the workbook and the instructor kit have not been tried with learners |
 | Course 2 labs with a tested reference implementation | English versions of the lessons: lessons are in Arabic with English terms and an English summary | The completion standard has not been applied to a cohort |
-| The twelve founder agents and the five runnable agent templates | An evaluation set from real Saudi-dialect messages | No test conversation of a founder agent has been recorded, and no founder has used one |
+| The twelve founder agents and the five runnable agent templates | An evaluation set from real Saudi-dialect messages | The test conversations of agents 2 to 12 were recorded once with one assistant (21 November 2026); no founder has used one |
 | Automated link checks and tests on every change | Connecting the runnable templates to real channels and systems | The templates and the low-code lab have not been run with a real language model |
 
 What comes next, and in what order, is in the [roadmap](ROADMAP.md).

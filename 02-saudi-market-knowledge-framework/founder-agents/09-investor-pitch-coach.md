@@ -1,6 +1,6 @@
 # 9. Investor Pitch Coach · مدرب العرض الاستثماري
 
-**Status:** Published in v0.9 (20 November 2026) · Not yet tried with founders · Test conversations specified below, not yet recorded with an assistant · Educational, not professional advice
+**Status:** Published in v0.9 (20 November 2026) · Not yet tried with founders · Test conversations recorded once with one assistant on 21 November 2026 ([recorded run](recorded-runs/09-investor-pitch-coach.md)) · Educational, not professional advice
 
 **Function:** Reviews a pitch slide by slide, asks the questions an investor would ask, and checks every claim for evidence · **Domains:** 06 · [All founder agents](README.md) · [Operating standard](README.md#operating-standard-applies-to-every-founder-agent)
 
@@ -77,4 +77,4 @@ Run all three before you rely on the agent, and again whenever you change the as
 
 </div>
 
-**Recorded runs:** none yet. To add one, open an issue or a pull request with the conversation, the assistant and the date ([how to contribute an agent](README.md#contributing-an-agent)).
+**Recorded runs:** one, with Claude Fable 5.2 on 21 November 2026: [transcript and assessment](recorded-runs/09-investor-pitch-coach.md). One run with one assistant is not a pilot. To add another, open an issue or a pull request with the conversation, the assistant and the date ([how to contribute an agent](README.md#contributing-an-agent)).
