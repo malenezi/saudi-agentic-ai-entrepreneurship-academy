@@ -2,6 +2,12 @@
 
 ## Unreleased
 
+### Recorded runs of the founder agents
+
+- [Recorded runs](02-saudi-market-knowledge-framework/founder-agents/recorded-runs/README.md): the three test conversations of agents 2 to 12, 33 in all, run on 21 November 2026 with Claude Fable 5.2. The assistant saw each agent's definition and the pages it reads, and not the expected behaviour. Replies are kept verbatim, one file per agent.
+- 30 conversations were consistent with the expected behaviour. 3 (the Financial Advisor's, the Pitch Coach's and the Tender Assistant's ordinary case) could not be exercised in full because the founder's numbers, the deck and the tender document the cases describe were not supplied; the assistant asked for them and invented nothing.
+- **Limits.** One run, one assistant, from the model family that drafted the definitions; assessed by the session that ran the test; no founder involved. Agent 1 has no specified test conversations and was not run.
+
 ### Founder planning guide
 
 - [Founder planning guide](03-courses/founder-planning-guide.md): a companion page for all four courses on when to plan and when to experiment (Agile, waterfall and hybrid planning). It is not a module and changes no hours or deliverables. Covers the four kinds of uncertainty mapped to the courses, four questions that sort every decision, fixed and open tracks in a Saudi agentic venture, stage-gated money, and the three lines of a customer agreement (what is fixed, what is variable, how the variable is swapped).

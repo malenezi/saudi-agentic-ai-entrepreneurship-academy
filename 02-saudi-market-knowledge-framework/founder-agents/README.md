@@ -94,7 +94,7 @@ Paste your [Founder Context](../../04-entrepreneur-toolkit/10-founder-context-te
 
 ## Contributing an agent
 
-All twelve agents are published, and every one is open to improvement. What they need most is a **recorded run**: paste a definition into an assistant, run its three test conversations, and send what happened, with the assistant and the date. A new agent, or a change to one, needs:
+All twelve agents are published, and every one is open to improvement. Agents 2 to 12 each have one [recorded run](recorded-runs/README.md) with one assistant (21 November 2026); none has been tried with a founder. What they need most is **more recorded runs**, with other assistants and with real founder inputs: paste a definition into an assistant, run its three test conversations, and send what happened, with the assistant and the date. A new agent, or a change to one, needs:
 
 - The definition, in Arabic (English welcome too)
 - Which domain pages it reads

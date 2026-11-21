@@ -32,7 +32,7 @@ The courses teach what to do; the framework says how to do it in the Kingdom. Bu
 - Course 1 has slides, quizzes and practice interview records but has not been piloted. Course 2 has lessons, templates, a worked example, slides and quizzes, and has not been piloted. Course 3 has seven lessons, slide decks, quizzes, templates and a worked example, and has not been piloted; its Modules 3.4 and 3.7 have had no legal or tax review. Course 4 has six lessons, slide decks, quizzes, templates and a worked example, and has not been piloted; its Modules 4.3 and 4.4 have had no legal or security review.
 - The lab exercises, the venture workbook and the instructor kit have not been tried with learners.
 - The runnable agent templates and the low-code lab run with a keyword simulator. Their instructions for a real model are untested, no messaging channel, calendar, CRM or ledger is connected, and their webhooks have no authentication.
-- The twelve founder agents are definitions with specified test conversations. None has a recorded run with an assistant, and none has been tried with a founder.
+- The twelve founder agents are definitions with specified test conversations. Agents 2 to 12 each have one [recorded run](02-saudi-market-knowledge-framework/founder-agents/recorded-runs/README.md) with one assistant (Claude Fable 5.2, 21 November 2026): 30 of 33 conversations consistent with the expected behaviour, 3 not fully exercised for want of the input the case describes. None has been tried with a founder, and no second assistant has been used.
 - There is no evaluation set from real Saudi-dialect messages: every test case in the repository is invented.
 
 ## Where help matters most right now
@@ -42,7 +42,7 @@ The courses teach what to do; the framework says how to do it in the Kingdom. Bu
 3. Entries for the funding directory from programme operators, with the amounts and eligibility their public pages leave out.
 4. Review of the Arabic versions by a lawyer and by native-speaking practitioners.
 5. Real case studies.
-6. Recorded runs of the [founder agents](02-saudi-market-knowledge-framework/founder-agents/README.md): the three test conversations of any agent, with the assistant and the date.
+6. More recorded runs of the [founder agents](02-saudi-market-knowledge-framework/founder-agents/README.md): the three test conversations of any agent, with the assistant and the date.
 7. Anonymised real customer messages in Saudi dialect, with the owner's permission, for a shared evaluation set.
 
 ## First-year targets (proposed, not forecasts)
@@ -53,7 +53,7 @@ The courses teach what to do; the framework says how to do it in the Kingdom. Bu
 | Register entries verified | 100% |
 | Reusable templates | 40 |
 | Real Saudi case studies | 20 |
-| Founder agents published | 12 (all twelve published in v0.9; none with a recorded run) |
+| Founder agents published | 12 (all twelve published in v0.9; eleven with one recorded run each, 21 November 2026) |
 | Community contributors | 30 |
 | Courses built | 4 (all four have their first content today; none piloted) |
 
