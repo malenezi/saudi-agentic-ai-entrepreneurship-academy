@@ -12,7 +12,7 @@ An open-source, Arabic-first knowledge initiative for anyone who wants to start,
 
 | First visit? | Want to see the slides? | Want to contribute? |
 |---|---|---|
-| [Start here](START-HERE.md#english): one page that points you to your route and answers the common questions | [Slide decks in the browser](https://malenezi.github.io/saudi-agentic-ai-entrepreneurship-academy/) | [Contribute](#contribute): every contribution is welcome, and you do not need Git |
+| [Start here](START-HERE.md#english): one page that points you to your route and answers the common questions | [Slide decks in the browser](https://malenezi.github.io/saudi-agentic-ai-entrepreneurship-academy/), and [every page on the site](https://malenezi.github.io/saudi-agentic-ai-entrepreneurship-academy/read.html?p=README.en.md) | [Contribute](#contribute): every contribution is welcome, and you do not need Git |
 
 **Language.** Arabic is the Academy's primary language. Lessons are in Arabic with English terms and an English summary; syllabi, trainer guides, the completion standard and the labs' code are in English or in both.
 

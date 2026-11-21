@@ -14,7 +14,7 @@
 
 | أول زيارة؟ | تريد مشاهدة العروض؟ | تريد المساهمة؟ |
 |---|---|---|
-| [ابدأ من هنا](START-HERE.md): صفحة واحدة تدلّك على طريقك وتجيب عن الأسئلة الشائعة | [العروض التقديمية في المتصفح](https://malenezi.github.io/saudi-agentic-ai-entrepreneurship-academy/) | [ساهم معنا](#ساهم-معنا): كل مساهمة مرحّب بها، ولا تحتاج إلى Git |
+| [ابدأ من هنا](START-HERE.md): صفحة واحدة تدلّك على طريقك وتجيب عن الأسئلة الشائعة | [العروض التقديمية في المتصفح](https://malenezi.github.io/saudi-agentic-ai-entrepreneurship-academy/)، و[المحتوى كله صفحات على الموقع](https://malenezi.github.io/saudi-agentic-ai-entrepreneurship-academy/read.html?p=START-HERE.md) | [ساهم معنا](#ساهم-معنا): كل مساهمة مرحّب بها، ولا تحتاج إلى Git |
 
 ---
 

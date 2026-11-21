@@ -10,6 +10,7 @@ The deck list and slide counts come from tools/build_slides.py, so the page cann
 drift from the decks. Standard library only.
 """
 import pathlib
+import json
 import re
 import sys
 
@@ -83,9 +84,9 @@ footer { margin-block-start: 56px; border-block-start: 1px solid var(--line); pa
     <p>مرجع مفتوح المصدر، عربي أولاً، لكل من يريد تأسيس أو تشغيل أو تنمية مشروع في المملكة العربية السعودية يعتمد على الذكاء الاصطناعي الوكيلي.</p>
     <p class="en" lang="en" dir="ltr">Saudi Agentic AI Entrepreneurship Academy (SAAEA): an open-source, Arabic-first academy and Saudi market knowledge framework for entrepreneurs building with agentic AI.</p>
     <div class="actions">
-      <a class="btn" href="{G}/blob/main/START-HERE.md">ابدأ من هنا</a>
+      <a class="btn" href="read.html?p=START-HERE.md">ابدأ من هنا</a>
       <a class="btn ghost" href="{G}">المستودع على <bdi dir="ltr" lang="en">GitHub</bdi></a>
-      <a class="btn ghost" href="{G}/blob/main/README.en.md" lang="en" dir="ltr">English</a>
+      <a class="btn ghost" href="read.html?p=README.en.md" lang="en" dir="ltr">English</a>
     </div>
   </div>
 </header>
@@ -96,16 +97,16 @@ footer { margin-block-start: 56px; border-block-start: 1px solid var(--line); pa
     <h2 id="h-start">ما الذي تجده في الأكاديمية؟</h2>
     <p>المحتوى كله في المستودع. هذه الروابط تأخذك إلى أقسامه.</p>
     <ul class="grid">
-      <li><a href="{G}/blob/main/03-courses/01-opportunity/syllabus.md"><span class="t">المقرر 1: اكتشاف الفرصة الوكيلية</span><span class="d">سبعة دروس تنتهي بأطروحة فرصة مدعومة بمقابلات عملاء.</span></a></li>
-      <li><a href="{G}/blob/main/03-courses/02-build/syllabus.md"><span class="t">المقرر 2: بناء الوكلاء الأذكياء</span><span class="d">ثمانية دروس تنتهي بوكيل يعمل ومعه دليل على أنه يعمل.</span></a></li>
-      <li><a href="{G}/blob/main/03-courses/03-launch/syllabus.md"><span class="t">المقرر 3: الإطلاق وبناء النموذج التجاري</span><span class="d">سبعة دروس تنتهي بمنتج أولي يستخدمه عميل حقيقي وسعر محسوب من السجل.</span></a></li>
-      <li><a href="{G}/blob/main/03-courses/04-scale-and-govern/syllabus.md"><span class="t">المقرر 4: التوسع والحوكمة</span><span class="d">ستة دروس تنتهي بمعمارية تشغيل وسجل مخاطر وعرض استثماري.</span></a></li>
-      <li><a href="{G}/blob/main/03-courses/TRAINER-GUIDE.md"><span class="t">دليل المدرب للبرنامج</span><span class="d">ما يحتاجه مدرب أو جهة لتقديم المقررات الأربعة: المتطلبات، التقييم، التحضير.</span></a></li>
-      <li><a href="{G}/blob/main/02-saudi-market-knowledge-framework/README.md"><span class="t">إطار المعرفة بالسوق السعودي</span><span class="d">اثنا عشر مجالاً: التأسيس، البيانات، الضرائب، التمويل، وغيرها، بمصدر لكل معلومة.</span></a></li>
-      <li><a href="{G}/blob/main/04-entrepreneur-toolkit/README.md"><span class="t">حقيبة المؤسس</span><span class="d">ثلاثة عشر قالب أعمال ثنائي اللغة وثلاث حاسبات.</span></a></li>
-      <li><a href="{G}/blob/main/05-agentic-ai-lab/README.md"><span class="t">مختبر الذكاء الاصطناعي الوكيلي</span><span class="d">مهارات، قوالب وكلاء، قالب تقييم، وسبعة عشر تمريناً.</span></a></li>
+      <li><a href="read.html?p=03-courses/01-opportunity/syllabus.md"><span class="t">المقرر 1: اكتشاف الفرصة الوكيلية</span><span class="d">سبعة دروس تنتهي بأطروحة فرصة مدعومة بمقابلات عملاء.</span></a></li>
+      <li><a href="read.html?p=03-courses/02-build/syllabus.md"><span class="t">المقرر 2: بناء الوكلاء الأذكياء</span><span class="d">ثمانية دروس تنتهي بوكيل يعمل ومعه دليل على أنه يعمل.</span></a></li>
+      <li><a href="read.html?p=03-courses/03-launch/syllabus.md"><span class="t">المقرر 3: الإطلاق وبناء النموذج التجاري</span><span class="d">سبعة دروس تنتهي بمنتج أولي يستخدمه عميل حقيقي وسعر محسوب من السجل.</span></a></li>
+      <li><a href="read.html?p=03-courses/04-scale-and-govern/syllabus.md"><span class="t">المقرر 4: التوسع والحوكمة</span><span class="d">ستة دروس تنتهي بمعمارية تشغيل وسجل مخاطر وعرض استثماري.</span></a></li>
+      <li><a href="read.html?p=03-courses/TRAINER-GUIDE.md"><span class="t">دليل المدرب للبرنامج</span><span class="d">ما يحتاجه مدرب أو جهة لتقديم المقررات الأربعة: المتطلبات، التقييم، التحضير.</span></a></li>
+      <li><a href="read.html?p=02-saudi-market-knowledge-framework/README.md"><span class="t">إطار المعرفة بالسوق السعودي</span><span class="d">اثنا عشر مجالاً: التأسيس، البيانات، الضرائب، التمويل، وغيرها، بمصدر لكل معلومة.</span></a></li>
+      <li><a href="read.html?p=04-entrepreneur-toolkit/README.md"><span class="t">حقيبة المؤسس</span><span class="d">ثلاثة عشر قالب أعمال ثنائي اللغة وثلاث حاسبات.</span></a></li>
+      <li><a href="read.html?p=05-agentic-ai-lab/README.md"><span class="t">مختبر الذكاء الاصطناعي الوكيلي</span><span class="d">مهارات، قوالب وكلاء، قالب تقييم، وسبعة عشر تمريناً.</span></a></li>
       <li><a href="workbook/index.html"><span class="t">دفتر المشروع</span><span class="d">بوابات المقررات الأربعة في صفحة واحدة: لكل بند دليل. يُحفظ في متصفحك ويُصدَّر ملفاً نصياً.</span></a></li>
-      <li><a href="{G}/blob/main/CONTRIBUTING.md"><span class="t">ساهم</span><span class="d">كل مساهمة مرحّب بها، ولا تحتاج أن تكون مبرمجاً.</span></a></li>
+      <li><a href="read.html?p=CONTRIBUTING.md"><span class="t">ساهم</span><span class="d">كل مساهمة مرحّب بها، ولا تحتاج أن تكون مبرمجاً.</span></a></li>
     </ul>
   </section>
 
@@ -184,15 +185,46 @@ def build():
     return PAGE.replace("{G}", REPO).replace("{C1}", cards("1")).replace("{C2}", cards("2")).replace("{C3}", cards("3")).replace("{C4}", cards("4")).replace("{CG}", cards("G"))
 
 
+SKIP = {".git", ".github", "node_modules", "__pycache__"}
+
+
+def clean(heading):
+    """A heading as a reader sees it: no link targets, no emphasis marks, no HTML."""
+    heading = re.sub(r"<[^>]+>", "", heading)
+    heading = re.sub(r"\[([^\]]+)\]\([^)]*\)", r"\1", heading)
+    return re.sub(r"[*`]", "", heading).strip()
+
+
+def site_index():
+    """Titles and section headings of every Markdown page, for the reader's search box (read.html)."""
+    pages = []
+    for path in sorted(ROOT.rglob("*.md")):
+        rel = path.relative_to(ROOT)
+        if SKIP.intersection(rel.parts):
+            continue
+        title, headings, fenced = "", [], False
+        for line in path.read_text(encoding="utf-8").splitlines():
+            if line.startswith("```"):
+                fenced = not fenced
+            if fenced:
+                continue
+            if line.startswith("# ") and not title:
+                title = clean(line[2:])
+            elif line.startswith("## "):
+                headings.append(clean(line[3:]))
+        pages.append({"p": rel.as_posix(), "t": title or rel.name, "h": headings})
+    return json.dumps({"pages": pages}, ensure_ascii=False, separators=(",", ":")) + "\n"
+
+
 def main(argv):
-    out = ROOT / "index.html"
-    page = build()
+    targets = [(ROOT / "index.html", build()), (ROOT / "site-index.json", site_index())]
     if "--check" in argv:
-        ok = out.exists() and out.read_text(encoding="utf-8") == page
-        print("index.html is %s" % ("up to date" if ok else "out of date"))
-        return 0 if ok else 1
-    out.write_text(page, encoding="utf-8")
-    print("built index.html")
+        stale = [out.name for out, text in targets if not out.exists() or out.read_text(encoding="utf-8") != text]
+        print("index.html and site-index.json are up to date" if not stale else "out of date: " + ", ".join(stale))
+        return 1 if stale else 0
+    for out, text in targets:
+        out.write_text(text, encoding="utf-8")
+        print("built", out.name)
     return 0
 
 
