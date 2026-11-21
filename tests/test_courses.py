@@ -8,6 +8,7 @@ course shares (supporting files, syllabus hours, lesson parts, instructor guides
 """
 
 import glob
+import json
 import os
 import re
 import subprocess
@@ -63,8 +64,22 @@ class LandingPage(unittest.TestCase):
         for deck in glob.glob(os.path.join(COURSES, "*", "slides", "*.html")):
             self.assertIn(os.path.relpath(deck, ROOT).replace(os.sep, "/"), page)
         for href in re.findall(r'href="([^"#]+)"', page):
+            if href.startswith("read.html?p="):
+                href = href[len("read.html?p="):]  # the reader shows a Markdown file of the repository
             if not href.startswith("http"):
                 self.assertTrue(os.path.exists(os.path.join(ROOT, href)), href)
+
+    def test_the_reader_is_self_contained_and_its_search_index_covers_every_page(self):
+        reader = read(os.path.join(ROOT, "read.html"))
+        self.assertIn('src="assets/vendor/marked.min.js"', reader)
+        self.assertEqual(re.findall(r'<script[^>]+src="(?!assets/)', reader), [], "the reader loads no script from another site")
+        for href in re.findall(r'href="read\.html\?p=([^"#]+)"', reader):
+            self.assertTrue(os.path.exists(os.path.join(ROOT, href)), href)
+        with open(os.path.join(ROOT, "site-index.json"), encoding="utf-8") as f:
+            pages = {page["p"] for page in json.load(f)["pages"]}
+        on_disk = {os.path.relpath(path, ROOT).replace(os.sep, "/")
+                   for path in glob.glob(os.path.join(ROOT, "**", "*.md"), recursive=True)}
+        self.assertEqual(pages, on_disk)
 
 
 class Workbook(unittest.TestCase):

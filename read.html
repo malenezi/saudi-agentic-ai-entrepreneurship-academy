@@ -1,0 +1,293 @@
+<!doctype html>
+<!--
+  SAAEA · the reader. One page that shows any Markdown file of the repository as a web page.
+  It fetches the file from this same site and renders it in the browser (marked, MIT, in assets/vendor).
+  Nothing is generated per page, so the site cannot drift from the repository.
+  Address: read.html?p=<path to a .md file from the repository root>
+  Licence: Apache-2.0 (this page), CC BY 4.0 (the content it shows).
+-->
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>الأكاديمية السعودية لريادة الأعمال بالذكاء الاصطناعي الوكيلي</title>
+<meta name="description" content="قارئ محتوى الأكاديمية السعودية لريادة الأعمال بالذكاء الاصطناعي الوكيلي: المقررات، إطار المعرفة بالسوق السعودي، حقيبة المؤسس، والمختبر.">
+<link rel="icon" href="data:,">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@500;700&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root { --bg: #f8fafc; --ink: #1e293b; --muted: #475569; --line: #e2e8f0; --card: #ffffff; --accent: #d97706; --accent-ink: #b45309; --accent-soft: #fef3c7;
+  --font-ar: "IBM Plex Sans Arabic", "Noto Sans Arabic", "Segoe UI", Tahoma, sans-serif; --font-en: "IBM Plex Sans", "Segoe UI", system-ui, sans-serif;
+  --display-ar: "Noto Kufi Arabic", "IBM Plex Sans Arabic", "Segoe UI", Tahoma, sans-serif; --mono: "IBM Plex Mono", ui-monospace, Consolas, monospace; }
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-block-start: 84px; }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 18px/1.9 var(--font-ar); }
+a { color: var(--accent-ink); text-underline-offset: 4px; }
+a:focus-visible, button:focus-visible, input:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; border-radius: 6px; }
+.wrap { max-inline-size: 920px; margin-inline: auto; padding-inline: 24px; }
+.skip { position: absolute; inset-inline-start: -9999px; }
+.skip:focus { inset-inline-start: 12px; inset-block-start: 12px; background: var(--card); padding: 8px 14px; z-index: 30; }
+
+.top { position: sticky; inset-block-start: 0; z-index: 20; background: var(--ink); color: #f8fafc; }
+.top .wrap { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 18px; padding-block: 10px; max-inline-size: 1180px; }
+.brand { font-family: var(--display-ar); font-weight: 700; font-size: 17px; color: #f8fafc; text-decoration: none; margin-inline-end: auto; }
+.top nav { display: flex; flex-wrap: wrap; gap: 4px 14px; font-size: 15px; }
+.top nav a { color: #cbd5e1; text-decoration: none; padding-block: 4px; }
+.top nav a:hover, .top nav a[aria-current="true"] { color: #fff; box-shadow: 0 2px 0 var(--accent); }
+.search { position: relative; flex: 1 1 220px; max-inline-size: 320px; }
+.search input { inline-size: 100%; font: inherit; font-size: 15px; padding: 6px 14px; border-radius: 999px; border: 1px solid #475569; background: #0f172a; color: #f8fafc; }
+.search input::placeholder { color: #94a3b8; }
+.results { position: absolute; inset-inline: 0; inset-block-start: calc(100% + 6px); background: var(--card); color: var(--ink); border: 1px solid var(--line); border-radius: 12px;
+  box-shadow: 0 12px 30px rgba(15, 23, 42, .18); max-block-size: 60vh; overflow: auto; margin: 0; padding: 6px; list-style: none; }
+.results[hidden] { display: none; }
+.results a { display: block; padding: 8px 12px; border-radius: 8px; text-decoration: none; color: var(--ink); line-height: 1.6; }
+.results a:hover, .results a:focus { background: var(--accent-soft); }
+.results small { display: block; color: var(--muted); font-size: 13px; }
+.results .none { padding: 8px 12px; color: var(--muted); }
+
+.crumbs { font-size: 14px; color: var(--muted); padding-block: 18px 0; display: flex; flex-wrap: wrap; gap: 4px 8px; align-items: center; }
+.crumbs a { color: var(--muted); }
+.crumbs .sep { color: #94a3b8; }
+.crumbs .gh { margin-inline-start: auto; }
+
+main { padding-block: 8px 72px; min-block-size: 60vh; }
+.doc h1, .doc h2, .doc h3, .doc h4 { font-family: var(--display-ar); line-height: 1.55; margin: 1.6em 0 .5em; }
+.doc h1 { font-size: clamp(24px, 3.6vw, 34px); margin-block-start: .6em; }
+.doc h2 { font-size: 24px; padding-block-end: 6px; border-block-end: 2px solid var(--line); }
+.doc h3 { font-size: 20px; }
+.doc h4 { font-size: 18px; }
+.doc p, .doc ul, .doc ol, .doc blockquote, .doc table, .doc pre { margin-block: 0 1.1em; }
+.doc ul, .doc ol { padding-inline-start: 1.5em; }
+.doc li { margin-block: .25em; }
+.doc blockquote { margin-inline: 0; padding: 12px 18px; background: var(--accent-soft); border-inline-start: 4px solid var(--accent); border-radius: 8px; }
+.doc blockquote > :last-child { margin-block-end: 0; }
+.doc hr { border: 0; border-block-start: 1px solid var(--line); margin-block: 2em; }
+.doc img { max-inline-size: 100%; block-size: auto; border-radius: 10px; }
+.doc code { font-family: var(--mono); font-size: .88em; background: #eef2f7; padding: 1px 6px; border-radius: 5px; }
+.doc pre { text-align: start; background: #0f172a; color: #e2e8f0; padding: 16px 18px; border-radius: 12px; overflow: auto; line-height: 1.7; }
+.doc pre code { background: none; padding: 0; font-size: 14.5px; color: inherit; white-space: pre; }
+.doc pre[data-rtl] { font-family: var(--font-ar); }
+.doc pre[data-rtl] code { font-family: inherit; white-space: pre-wrap; font-size: 16px; }
+.scroll { overflow-x: auto; margin-block: 0 1.1em; border: 1px solid var(--line); border-radius: 12px; background: var(--card); }
+.doc table { border-collapse: collapse; inline-size: 100%; margin: 0; font-size: 16px; line-height: 1.7; }
+.doc th, .doc td { padding: 9px 14px; border-block-end: 1px solid var(--line); text-align: start; vertical-align: top; }
+.doc th { background: #f1f5f9; font-weight: 600; white-space: nowrap; }
+.doc tr:last-child td { border-block-end: 0; }
+.doc [dir="ltr"] { font-family: var(--font-en); }
+.doc :is(h1, h2, h3, h4, p, li, td, th)[dir="auto"] { text-align: start; }
+.state { padding-block: 60px; color: var(--muted); text-align: center; }
+.state a { font-weight: 600; }
+
+footer { border-block-start: 1px solid var(--line); background: var(--card); color: var(--muted); font-size: 14.5px; padding-block: 22px; }
+@media (max-width: 720px) { .top { position: static; } html { scroll-padding-block-start: 12px; } body { font-size: 17px; } }
+@media print { .top, .crumbs, footer { display: none; } body { background: #fff; } }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+</style>
+</head>
+<body>
+<a class="skip" href="#doc">انتقل إلى المحتوى</a>
+<div class="top">
+  <div class="wrap">
+    <a class="brand" href="index.html">الأكاديمية السعودية لريادة الأعمال بالذكاء الاصطناعي الوكيلي</a>
+    <nav aria-label="أقسام الأكاديمية">
+      <a href="read.html?p=START-HERE.md" data-root="START-HERE.md">ابدأ من هنا</a>
+      <a href="read.html?p=03-courses/README.md" data-root="03-courses/">المقررات</a>
+      <a href="read.html?p=02-saudi-market-knowledge-framework/README.md" data-root="02-saudi-market-knowledge-framework/">إطار المعرفة</a>
+      <a href="read.html?p=04-entrepreneur-toolkit/README.md" data-root="04-entrepreneur-toolkit/">حقيبة المؤسس</a>
+      <a href="read.html?p=05-agentic-ai-lab/README.md" data-root="05-agentic-ai-lab/">المختبر</a>
+      <a href="read.html?p=06-case-studies/README.md" data-root="06-case-studies/">الحالات</a>
+      <a href="read.html?p=08-community/README.md" data-root="08-community/">المجتمع</a>
+    </nav>
+    <div class="search" role="search">
+      <input id="q" type="search" dir="auto" autocomplete="off" placeholder="ابحث في العناوين" aria-label="ابحث في عناوين الصفحات" aria-controls="results">
+      <ul class="results" id="results" hidden></ul>
+    </div>
+  </div>
+</div>
+
+<div class="wrap">
+  <div class="crumbs" id="crumbs" aria-label="موضع الصفحة"></div>
+  <main>
+    <article class="doc" id="doc" tabindex="-1"><p class="state">جارٍ فتح الصفحة…</p></article>
+  </main>
+</div>
+
+<footer>
+  <div class="wrap">المحتوى برخصة <bdi dir="ltr" lang="en">CC BY 4.0</bdi>، والبرامج برخصة <bdi dir="ltr" lang="en">Apache-2.0</bdi>. مبادرة شخصية مستقلة. المحتوى تعليمي وليس مشورة قانونية ولا ضريبية ولا مالية. هذه الصفحة تعرض ملفات المستودع كما هي، وكل صفحة تذكر حالتها وما لم يُراجَع فيها.</div>
+</footer>
+
+<script src="assets/vendor/marked.min.js"></script>
+<script>
+(function () {
+  "use strict";
+  var REPO = "https://github.com/malenezi/saudi-agentic-ai-entrepreneurship-academy";
+  var doc = document.getElementById("doc");
+  var crumbs = document.getElementById("crumbs");
+  var params = new URLSearchParams(location.search);
+  var path = (params.get("p") || "README.md").replace(/^\/+/, "");
+
+  // Only Markdown files of this site, by a plain relative path. Anything else is refused.
+  var safe = /^[A-Za-z0-9][A-Za-z0-9._\/-]*\.md$/.test(path) && path.indexOf("..") === -1;
+
+  function el(tag, text, attrs) {
+    var node = document.createElement(tag);
+    if (text) node.textContent = text;
+    Object.keys(attrs || {}).forEach(function (k) { node.setAttribute(k, attrs[k]); });
+    return node;
+  }
+  function reader(p, hash) { return "read.html?p=" + encodeURI(p) + (hash || ""); }
+  function fail(message) {
+    doc.textContent = "";
+    var box = el("div", "", { "class": "state" });
+    box.appendChild(el("p", message));
+    var p = el("p"); p.appendChild(el("a", "العودة إلى الصفحة الرئيسية", { href: "index.html" }));
+    box.appendChild(p); doc.appendChild(box);
+  }
+  // GitHub's heading anchors: lower case, keep letters, marks, digits, spaces, hyphens and underscores, spaces to hyphens.
+  function slug(text) {
+    return text.trim().toLowerCase().replace(/[^\p{L}\p{M}\p{N} _-]/gu, "").replace(/ /g, "-");
+  }
+  // Where a link written in the Markdown file points, seen from the repository root.
+  function resolve(href) {
+    var url = new URL(href, "https://repo.invalid/" + path);
+    if (url.host !== "repo.invalid") return null;
+    return { path: decodeURIComponent(url.pathname.slice(1)), hash: url.hash };
+  }
+  var known = {};
+  function rewrite(root) {
+    root.querySelectorAll("a[href]").forEach(function (a) {
+      var href = a.getAttribute("href");
+      if (/^[a-z][a-z0-9+.-]*:/i.test(href)) { if (/^https?:/i.test(href)) a.setAttribute("rel", "noopener"); return; }
+      if (href.charAt(0) === "#") return;
+      var to = resolve(href);
+      if (!to) return;
+      if (/\.md$/i.test(to.path)) a.setAttribute("href", reader(to.path, to.hash));
+      else if (to.path === "" || /\/$/.test(to.path) || !/\.[A-Za-z0-9]+$/.test(to.path)) {
+        // A folder: its README if it has one, otherwise the folder (or the file without an extension) on GitHub.
+        var folder = to.path.replace(/\/+$/, ""), readme = (folder ? folder + "/" : "") + "README.md";
+        if (known[readme]) a.setAttribute("href", reader(readme, to.hash));
+        else { a.setAttribute("href", REPO + "/tree/main/" + encodeURI(folder)); a.setAttribute("rel", "noopener"); }
+      }
+      else if (/\.(html?|png|jpe?g|svg|gif|webp|pdf)$/i.test(to.path)) a.setAttribute("href", encodeURI(to.path) + to.hash);
+      else { a.setAttribute("href", REPO + "/blob/main/" + encodeURI(to.path)); a.setAttribute("rel", "noopener"); }
+    });
+    root.querySelectorAll("img[src]").forEach(function (img) {
+      var src = img.getAttribute("src");
+      if (/^[a-z][a-z0-9+.-]*:/i.test(src)) return;
+      var to = resolve(src);
+      if (to) img.setAttribute("src", encodeURI(to.path));
+      img.setAttribute("loading", "lazy");
+    });
+  }
+  function dress(root) {
+    var used = {};
+    root.querySelectorAll("h1, h2, h3, h4, h5, h6").forEach(function (h) {
+      if (h.id) return;
+      var base = slug(h.textContent), n = used[base] || 0;
+      h.id = n ? base + "-" + n : base;
+      used[base] = n + 1;
+    });
+    // Each block takes its direction from its own first strong character, so English paragraphs read left to right.
+    root.querySelectorAll("h1, h2, h3, h4, h5, h6, p, li, td, th, blockquote, dt, dd").forEach(function (b) {
+      if (!b.hasAttribute("dir")) b.setAttribute("dir", "auto");
+    });
+    root.querySelectorAll("table").forEach(function (t) {
+      var box = el("div", "", { "class": "scroll", tabindex: "0", role: "region", "aria-label": "جدول" });
+      t.parentNode.insertBefore(box, t); box.appendChild(t);
+    });
+    // A code block that is Arabic prose (an agent definition, a recorded reply) reads right to left and wraps.
+    root.querySelectorAll("pre").forEach(function (pre) {
+      var text = pre.textContent, arabic = (text.match(/[؀-ۿ]/g) || []).length;
+      if (arabic > text.length * 0.3) { pre.setAttribute("data-rtl", ""); pre.setAttribute("dir", "rtl"); }
+      else pre.setAttribute("dir", "ltr");
+    });
+    root.querySelectorAll("code").forEach(function (code) {
+      if (!code.closest("pre")) code.setAttribute("dir", "ltr");
+    });
+    root.querySelectorAll("script, iframe, object, embed, form").forEach(function (n) { n.remove(); });
+    root.querySelectorAll("*").forEach(function (n) {
+      Array.prototype.slice.call(n.attributes).forEach(function (at) { if (/^on/i.test(at.name)) n.removeAttribute(at.name); });
+    });
+  }
+  function trail() {
+    crumbs.textContent = "";
+    crumbs.appendChild(el("a", "الرئيسية", { href: "index.html" }));
+    var parts = path.split("/"), sofar = "";
+    parts.forEach(function (part, i) {
+      crumbs.appendChild(el("span", "‹", { "class": "sep", "aria-hidden": "true" }));
+      if (i < parts.length - 1) {
+        sofar += part + "/";
+        crumbs.appendChild(el("a", part, { href: reader(sofar + "README.md"), dir: "ltr" }));
+      } else crumbs.appendChild(el("span", part, { dir: "ltr" }));
+    });
+    crumbs.appendChild(el("a", "الملف على GitHub", { "class": "gh", href: REPO + "/blob/main/" + encodeURI(path), rel: "noopener" }));
+    document.querySelectorAll(".top nav a").forEach(function (a) {
+      if (path.indexOf(a.getAttribute("data-root")) === 0) a.setAttribute("aria-current", "true");
+    });
+  }
+
+  // The list of pages (site-index.json, built by tools/build_site.py): used to resolve folder links and to search.
+  var pages = fetch("site-index.json").then(function (r) { return r.json(); }).then(function (data) { return data.pages; }).catch(function () { return []; });
+
+  if (!safe) fail("عنوان الصفحة غير صالح.");
+  else {
+    trail();
+    Promise.all([
+      fetch(encodeURI(path), { cache: "no-cache" }).then(function (response) {
+        if (!response.ok) throw new Error(response.status);
+        return response.text();
+      }),
+      pages
+    ]).then(function (both) {
+      var text = both[0];
+      both[1].forEach(function (page) { known[page.p] = true; });
+      doc.innerHTML = marked.parse(text, { gfm: true });
+      rewrite(doc); dress(doc);
+      var first = doc.querySelector("h1");
+      if (first) document.title = first.textContent + " · SAAEA";
+      // A page written mostly in English is laid out left to right.
+      var sample = doc.textContent.slice(0, 1200), arabic = (sample.match(/[؀-ۿ]/g) || []).length, latin = (sample.match(/[A-Za-z]/g) || []).length;
+      if (latin > arabic * 1.5) { doc.setAttribute("dir", "ltr"); doc.setAttribute("lang", "en"); }
+      if (location.hash) {
+        var target = document.getElementById(decodeURIComponent(location.hash.slice(1)));
+        if (target) target.scrollIntoView();
+      }
+    }).catch(function () {
+      fail("تعذّر فتح هذه الصفحة. قد يكون الملف نُقل أو حُذف.");
+    });
+  }
+
+  // Search over page titles and section headings (site-index.json, built by tools/build_site.py).
+  var q = document.getElementById("q"), results = document.getElementById("results"), index = null;
+  function fold(s) { return s.toLowerCase().replace(/[ً-ْـ]/g, "").replace(/[أإآ]/g, "ا").replace(/ى/g, "ي").replace(/ة/g, "ه"); }
+  function show(items, term) {
+    results.textContent = "";
+    if (!items.length) results.appendChild(el("li", term ? "لا نتائج." : "", { "class": "none" }));
+    items.forEach(function (it) {
+      var li = el("li"), a = el("a", "", { href: reader(it.p, it.h ? "#" + slug(it.h) : "") });
+      a.appendChild(el("span", it.h || it.t, { dir: "auto" }));
+      a.appendChild(el("small", it.h ? it.t : it.p, { dir: "auto" }));
+      li.appendChild(a); results.appendChild(li);
+    });
+    results.hidden = !term;
+  }
+  function search() {
+    var term = fold(q.value.trim());
+    if (term.length < 2 || !index) { results.hidden = true; return; }
+    var hits = [];
+    index.some(function (page) {
+      if (fold(page.t).indexOf(term) !== -1) hits.push({ p: page.p, t: page.t });
+      page.h.forEach(function (h) { if (fold(h).indexOf(term) !== -1) hits.push({ p: page.p, t: page.t, h: h }); });
+      return hits.length >= 40;
+    });
+    show(hits.slice(0, 40), term);
+  }
+  pages.then(function (list) { index = list; search(); });
+  q.addEventListener("input", search);
+  q.addEventListener("keydown", function (e) { if (e.key === "Escape") { results.hidden = true; q.blur(); } });
+  document.addEventListener("click", function (e) { if (!e.target.closest(".search")) results.hidden = true; });
+})();
+</script>
+</body>
+</html>

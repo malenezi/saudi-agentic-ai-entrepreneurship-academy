@@ -11,6 +11,7 @@ What this repository uses that it did not write, and under what terms. The repos
 | Component | Where | Origin and licence |
 |---|---|---|
 | Slide deck engine and page template | `tools/slides/template.html`, and every built deck in `03-courses/*/slides/*.html` | From [Bayan](https://github.com/malenezi/bayan) (`arabic-html-slides`), by the same author, MIT |
+| Markdown renderer for the site's reader | `assets/vendor/marked.min.js`, loaded by `read.html` | [marked](https://github.com/markedjs/marked) 15.0.12, copied unchanged from the npm package, MIT; its copyright notice is kept at the top of the file |
 | Academy brand assets | `assets/brand/` | Made for this repository; CC BY 4.0 with the rest of the content |
 
 ## Loaded at view time, not bundled
@@ -26,7 +27,7 @@ Opening a deck online therefore contacts Google's font servers. Offline, or wher
 | Component | Where | Terms |
 |---|---|---|
 | `actions/checkout`, `actions/setup-python` | `.github/workflows/` | GitHub's own actions, under their repository licences |
-| Bayan `bidi_lint.py` | Optional local check of Arabic text direction; not required by CI | MIT |
+| Bayan `bidi_lint.py` | Optional local check of Arabic text direction; not required by CI. Run on `read.html` and `index.html` on 21 November 2026: no errors, no warnings | MIT |
 | Headless Chrome with Playwright | Used by the authors to render decks and check for overflow; not required to build, test or teach | Their own licences; nothing from them is in the repository |
 
 ## Optional services named in the labs

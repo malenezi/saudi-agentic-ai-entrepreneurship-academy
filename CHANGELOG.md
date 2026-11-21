@@ -2,6 +2,15 @@
 
 ## Unreleased
 
+### The website: every page readable on the site
+
+- [`read.html`](read.html), a reader: one page that shows any Markdown file of the repository as a web page on the GitHub Pages site, in the Academy's identity. Arabic pages read right to left and English pages left to right; each block takes its own direction; tables scroll; Arabic text in code blocks (agent definitions, recorded replies) wraps and reads right to left. Links between pages stay inside the site; links to code go to GitHub.
+- Nothing is generated per page: the reader fetches the file from the same site and renders it in the browser, so the site cannot drift from the repository. The renderer is marked 15.0.12 (MIT), bundled in `assets/vendor/`; no script is loaded from another site.
+- Section navigation, a breadcrumb, a link to the file on GitHub, and a search box over the titles and section headings of all pages (`site-index.json`, built by `tools/build_site.py` and checked by a test).
+- The landing page now opens the courses, the framework, the toolkit and the lab in the reader instead of sending the visitor to GitHub.
+- **Checked** in headless Chrome at 1280 and 390 pixels on a lesson, the planning guide (with an anchor), a founder agent page, the English README and the toolkit; 268 links on six pages resolved; Bayan's `bidi_lint` reports no errors and no warnings on `read.html` and `index.html`.
+- **Limits.** Pages are rendered in the browser, so a visitor without JavaScript sees nothing, and search engines that do not run scripts index only the landing page. Search covers titles and headings, not body text. Not checked on the live Pages site (it deploys on merge), nor in Safari or Firefox. The showcase has no project yet.
+
 ### First run of the agent templates with a real language model
 
 - [Results](05-agentic-ai-lab/agent-templates/workflows/real-model-runs/README.md): the instructions of the five templates and of the Course 2 lab agent were given to Claude Fable 5.2 on 21 November 2026, one prompt per test case exactly as the Prepare node builds it, and the outputs were replayed through each workflow's Decide node.
