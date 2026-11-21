@@ -125,7 +125,7 @@ We describe what exists as it is. The status of every item and the results of ev
 | Founder Toolkit, lab and case studies | Saudi cases written by their owners | The exercises, the workbook and the instructor kit have not been tried with learners |
 | Course 2 labs with a tested reference implementation | English versions of the lessons: lessons are in Arabic with English terms and an English summary | The completion standard has not been applied to a cohort |
 | The twelve founder agents and the five runnable agent templates | An evaluation set from real Saudi-dialect messages | The test conversations of agents 2 to 12 were recorded once with one assistant (21 November 2026); no founder has used one |
-| Automated link checks and tests on every change | Connecting the runnable templates to real channels and systems | The templates and the low-code lab have not been run with a real language model |
+| Automated link checks and tests on every change | Connecting the runnable templates to real channels and systems | The instructions of the templates and the low-code lab were run once with a real language model outside n8n (21 November 2026); no local model and no run through the HTTP node yet |
 
 What comes next, and in what order, is in the [roadmap](ROADMAP.md).
 

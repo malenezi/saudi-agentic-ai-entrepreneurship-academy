@@ -169,5 +169,36 @@ class LabMatchesThePythonReference(unittest.TestCase):
         self.assertFalse(got[3]["ok"])
 
 
+@unittest.skipUnless(NODE, "Node.js is not installed: the recorded model runs are not replayed")
+class RecordedRealModelRuns(unittest.TestCase):
+    """The recorded outputs of a real language model still give the recorded results (real-model-runs/README.md)."""
+
+    def test_recorded_runs_replay_to_the_published_results(self):
+        import n8n_replay_model as replay
+        seen = {}
+        for name in sorted(os.listdir(replay.RUNS)):
+            if name.endswith(".json"):
+                run = replay.read(os.path.join(replay.RUNS, name))
+                seen[run["workflow"]] = run
+                self.assertTrue(run["model"] and run["date"], name)
+        self.assertEqual(len(seen), 6)
+        model_cases = 0
+        for workflow, run in seen.items():
+            if workflow == "lab-order-agent":
+                self.assertEqual(replay.replay_lab(run), ((32, 35), (8, 8), ["26", "28", "34"]))
+            else:
+                passed, total, failed = replay.replay_template(workflow, run)
+                self.assertEqual((passed, failed), (total, []), workflow)
+                model_cases += total
+        self.assertEqual(model_cases, 47)
+
+    def test_the_instructions_name_the_business_and_carry_the_service_list(self):
+        import n8n_replay_model as replay
+        workflow, cases = replay.template_inputs("02-booking-assistant")
+        system = replay.prompts(workflow, [{"message": cases[0]["message"]}], {})[0]["system"]
+        self.assertNotIn("(اسم المنشأة)", system)
+        self.assertIn("- تنظيف أسنان", system)
+
+
 if __name__ == "__main__":
     unittest.main()

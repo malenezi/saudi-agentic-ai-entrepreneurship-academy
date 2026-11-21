@@ -6,7 +6,13 @@ const body = $('Webhook').first().json.body || {};
 let message = String(body.message ?? '');
 if (cfg.normalise_digits) message = westernDigits(message);
 const glossary = Object.entries(cfg.glossary || {}).map(([term, meaning]) => `- ${term}: ${meaning}`);
-const system = cfg.instructions + (glossary.length ? '\n\nمصطلحات العملاء:\n' + glossary.join('\n') : '');
+// The instructions name the business and, where the model must pick from a list, carry that list.
+// Found on the first run with a real model (21 November 2026): the placeholder reached the model as written,
+// and the booking instructions said "the approved list" without giving it.
+const services = Array.isArray(cfg.services) ? cfg.services.map((name) => `- ${name}`) : [];
+const system = String(cfg.instructions).split('(اسم المنشأة)').join(cfg.business_name || 'المنشأة')
+  + (services.length ? '\n\nالقائمة المعتمدة للخدمات (اكتب الاسم كما هو هنا):\n' + services.join('\n') : '')
+  + (glossary.length ? '\n\nمصطلحات العملاء:\n' + glossary.join('\n') : '');
 const stopped = Boolean(cfg.stopped);
 return [{
   json: {

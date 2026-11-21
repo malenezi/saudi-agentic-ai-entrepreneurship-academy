@@ -2,6 +2,14 @@
 
 ## Unreleased
 
+### First run of the agent templates with a real language model
+
+- [Results](05-agentic-ai-lab/agent-templates/workflows/real-model-runs/README.md): the instructions of the five templates and of the Course 2 lab agent were given to Claude Fable 5.2 on 21 November 2026, one prompt per test case exactly as the Prepare node builds it, and the outputs were replayed through each workflow's Decide node.
+- **Two defects found and fixed** in `src/common/prepare.js`: the booking instructions asked for a service "from the approved list" without giving the list (11 of 12 as shipped, 12 of 12 after), and the placeholder for the business name reached the model as written.
+- After the fix: 47 of 47 model cases across the five templates. Lab at stage 3: 32 of 35 on the working set and 8 of 8 held out (the simulator: 30 and 6). The two lab cases the real model fails and the simulator passes are described and left for learners.
+- `tools/n8n_replay_model.py` writes the prompts out and replays any recorded run; two new tests replay the recorded outputs on every change (`make check` now runs 92 tests).
+- **Limits.** The model was not called through n8n's HTTP node; one sub-agent answered a workflow's cases in one session rather than in separate calls; one capable model, one run, temperature not controlled; invented cases. No local or small model was tried: none was available in the build environment or on the owner's machine.
+
 ### Recorded runs of the founder agents
 
 - [Recorded runs](02-saudi-market-knowledge-framework/founder-agents/recorded-runs/README.md): the three test conversations of agents 2 to 12, 33 in all, run on 21 November 2026 with Claude Fable 5.2. The assistant saw each agent's definition and the pages it reads, and not the expected behaviour. Replies are kept verbatim, one file per agent.
