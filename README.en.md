@@ -8,7 +8,7 @@
 
 An open-source, Arabic-first knowledge initiative for anyone who wants to start, run or grow a business in Saudi Arabia built on agentic AI. It takes a founder from a real problem inside a Saudi business to a working agent and a paying customer, brings entrepreneurship, engineering, operations and governance into one pathway, and grounds its content in the Kingdom's regulatory and economic context. Founded and maintained by **Prof. Mamdouh Alenezi** as an independent personal initiative, and developed with community contributions.
 
-**Status:** v0.10 ([changelog](CHANGELOG.md) · [roadmap](ROADMAP.md) · [release readiness](RELEASE-READINESS.md)) · Last reviewed: 21 November 2026
+**Status:** v0.10.1 ([changelog](CHANGELOG.md) · [roadmap](ROADMAP.md) · [release readiness](RELEASE-READINESS.md)) · Last reviewed: 21 November 2026
 
 | First visit? | Want to see the slides? | Want to contribute? |
 |---|---|---|

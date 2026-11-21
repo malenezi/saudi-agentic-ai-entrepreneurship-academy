@@ -1,6 +1,8 @@
 # Changelog
 
-## Unreleased
+## v0.10.1 (2026-11-21)
+
+Two corrections after v0.10, no new material.
 
 - Funding directory, TAQADAM (issue #43, raised by [@a-majrashi](https://github.com/a-majrashi)): the row now says that the USD 40,000 goes to the teams selected after the bootcamp, not to every accepted team, and that KAUST's help centre calls it non-dilutive; the entry conditions are listed in full (working MVP, one founder full-time, a plan to enter the Saudi market within a year for teams from abroad); and the ninth cohort's result is recorded from KAUST's announcement of 3 May 2026. The announcement says the top ten "secured an additional $100,000" without saying per startup or in total, so the directory does not say "each". Sources A61, A108 and C46 updated; pages opened 21 November 2026.
 - AskBaba case study: restored the learner question on the purchase-order value at which execution should wait for the buyer's approval, and the thesis clause that approval of anything with financial effect stays with the authorised person. Both had been dropped in the edit of pull request #42; the contributor's corrections and additions are kept.
