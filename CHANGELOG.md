@@ -2,6 +2,12 @@
 
 ## Unreleased
 
+Nothing yet.
+
+## v0.10 (2026-11-21)
+
+A planning guide for founders, the first runs with a real assistant and a real model, and a website that shows the repository's pages itself. **Still true: no course has been piloted, no founder has used the agents, and the regulatory, tax and security content has had no specialist review.**
+
 ### The website: every page readable on the site
 
 - [`read.html`](read.html), a reader: one page that shows any Markdown file of the repository as a web page on the GitHub Pages site, in the Academy's identity. Arabic pages read right to left and English pages left to right; each block takes its own direction; tables scroll; Arabic text in code blocks (agent definitions, recorded replies) wraps and reads right to left. Links between pages stay inside the site; links to code go to GitHub.
