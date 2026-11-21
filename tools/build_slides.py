@@ -61,6 +61,10 @@ COURSES = {
         ("4-5.html", "4-5-growth-paths-and-funding.html", "الوحدة 4.5 | مسارات النمو والتمويل والتخارج", "Module 4.5 Growth paths, funding and exits"),
         ("4-6.html", "4-6-pitch-and-demo-day.html", "الوحدة 4.6 | العرض ويوم العروض", "Module 4.6 Pitch and Demo Day"),
     ]),
+    # A companion deck for all four courses, not a module.
+    "G": ("03-courses/planning/slides", [
+        ("planning.html", "founder-planning-guide.html", "دليل | دليل المؤسس للتخطيط", "Companion guide Founder planning guide"),
+    ]),
 }
 
 
