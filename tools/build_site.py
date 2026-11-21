@@ -141,6 +141,14 @@ footer { margin-block-start: 56px; border-block-start: 1px solid var(--line); pa
     </ul>
   </section>
 
+  <section aria-labelledby="h-cg">
+    <h2 id="h-cg">عرض مرافق: دليل المؤسس للتخطيط</h2>
+    <p>عرض واحد للمقررات الأربعة: ما يُخطَّط له وما يُجرَّب. ليس وحدة في مقرر.</p>
+    <ul class="grid">
+{CG}
+    </ul>
+  </section>
+
   <section class="start" aria-labelledby="h-co">
     <h2 id="h-co">المستودعان المرافقان</h2>
     <p>يعمل كل منهما وحده. نربط ولا ننسخ.</p>
@@ -173,7 +181,7 @@ def cards(course):
 
 
 def build():
-    return PAGE.replace("{G}", REPO).replace("{C1}", cards("1")).replace("{C2}", cards("2")).replace("{C3}", cards("3")).replace("{C4}", cards("4"))
+    return PAGE.replace("{G}", REPO).replace("{C1}", cards("1")).replace("{C2}", cards("2")).replace("{C3}", cards("3")).replace("{C4}", cards("4")).replace("{CG}", cards("G"))
 
 
 def main(argv):
