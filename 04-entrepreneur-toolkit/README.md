@@ -2,7 +2,7 @@
 
 <div dir="rtl">
 
-اثنا عشر قالباً ثنائي اللغة تغطي الرحلة من الفكرة إلى العرض الاستثماري. انسخ القالب، املأه، وعُد إليه كلما تعلّمت شيئاً جديداً من عملائك.
+ثلاثة عشر قالباً ثنائي اللغة تغطي الرحلة من الفكرة إلى العرض الاستثماري. انسخ القالب، املأه، وعُد إليه كلما تعلّمت شيئاً جديداً من عملائك.
 
 | # | القالب | الغرض | المقرر |
 |---|---|---|---|
@@ -18,14 +18,15 @@
 | 10 | [قالب سياق المؤسس](10-founder-context-template.md) | ملف سياق لمساعدك الذكي ووكلائك | الكل |
 | 11 | [خطة أول عشرة عملاء](11-first-ten-customers-plan.md) + [حاسبة القمع](first_customers_funnel.py) | قائمة بأسماء، ورسالة أولى، وقمع أسبوعي، وقاعدة قرار | 3 |
 | 12 | [ملف الفحص التقني لمشروع وكيلي](12-agentic-due-diligence-pack.md) + [حاسبة التخفيف](round_dilution.py) | ما يفحصه مستثمر أو مشترٍ في منتج وكيلي، ودليل كل بند | 4 |
+| 13 | [ورقة التخطيط الهجين](13-hybrid-planning-sheet.md) | ما الثابت وما يُجرَّب: خريطة الافتراضات، وفرز القرارات، والبوابات، وثلاثة أسطر لكل اتفاق. شرحها في [دليل المؤسس للتخطيط](../03-courses/founder-planning-guide.md) | الكل |
 
 </div>
 
-Twelve bilingual templates covering the journey from idea to investor pitch, with three small calculators (cost per resolved task, first-customers funnel, dilution across rounds; Python standard library, no installation). Copy, fill in and revisit each time you learn something from customers.
+Thirteen bilingual templates covering the journey from idea to investor pitch, with three small calculators (cost per resolved task, first-customers funnel, dilution across rounds; Python standard library, no installation). Copy, fill in and revisit each time you learn something from customers.
 
 **How to use them with an AI assistant.** Fill in template 10 first and give it to your assistant. Then ask it to interview you through any other template, one question at a time, and to challenge weak answers. The [skills](../05-agentic-ai-lab/skills/README.md) do this for you.
 
-**Legal note.** Template 9 is an outline for discussion and has not been reviewed by a lawyer. Have a licensed Saudi lawyer review any document before you sign it.
+**Legal note.** Template 9 and section 6 of template 13 are outlines for discussion and have not been reviewed by a lawyer. Have a licensed Saudi lawyer review any document before you sign it.
 
 ## Related templates in Riyada · قوالب ذات صلة في «ريادة»
 
