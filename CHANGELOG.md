@@ -6,6 +6,8 @@ Nothing yet.
 
 ## v0.10 (2026-11-21)
 
+**First outside contribution.** [@a-majrashi](https://github.com/a-majrashi) clarified the performance and availability evidence in the [AskBaba case study](06-case-studies/saudi/tamimi-markets-askbaba.md) (pull request #42): what the vendor's response-time and round-the-clock claims do and do not measure, that the TIPS platform creates the purchase orders and AskBaba reviews them, and a measurement exercise for learners. The change was read against search-result excerpts of the vendor's page, not the full page.
+
 A planning guide for founders, the first runs with a real assistant and a real model, and a website that shows the repository's pages itself. **Still true: no course has been piloted, no founder has used the agents, and the regulatory, tax and security content has had no specialist review.**
 
 ### The website: every page readable on the site
