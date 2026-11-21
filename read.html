@@ -247,8 +247,8 @@ footer { border-block-start: 1px solid var(--line); background: var(--card); col
       var first = doc.querySelector("h1");
       if (first) document.title = first.textContent + " · SAAEA";
       // A page written mostly in English is laid out left to right.
-      var sample = doc.textContent.slice(0, 4000), arabic = (sample.match(/[؀-ۿ]/g) || []).length, latin = (sample.match(/[A-Za-z]/g) || []).length;
-      if (latin > arabic * 2) { doc.setAttribute("dir", "ltr"); doc.setAttribute("lang", "en"); }
+      var sample = doc.textContent.slice(0, 1200), arabic = (sample.match(/[؀-ۿ]/g) || []).length, latin = (sample.match(/[A-Za-z]/g) || []).length;
+      if (latin > arabic * 1.5) { doc.setAttribute("dir", "ltr"); doc.setAttribute("lang", "en"); }
       if (location.hash) {
         var target = document.getElementById(decodeURIComponent(location.hash.slice(1)));
         if (target) target.scrollIntoView();
