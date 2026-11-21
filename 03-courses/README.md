@@ -18,6 +18,7 @@
 | أنت | ابدأ من |
 |---|---|
 | متعلم ذاتي | [دليل المتعلم](LEARNER-GUIDE.md)، ثم خطة المقرر 1. كل درس ينتهي برابط الدرس التالي |
+| مؤسس يسأل: أكتب خطة كاملة أم أبدأ وأعدّل؟ | [دليل المؤسس للتخطيط](founder-planning-guide.md): ما يُثبَّت وما يُجرَّب، والبوابات، والاتفاق مع العميل |
 | عندك فكرة موثقة أو وكيل يعمل | راجع «المتطلب السابق» في الجدول، وابدأ من المقرر الذي تحققه |
 | مدرب أو جهة تريد تقديم المقررات | [دليل المدرب للبرنامج](TRAINER-GUIDE.md)، ثم دليل المدرب في كل مقرر |
 | مدرّس جامعي أو برنامج من 15 أسبوعاً | [حقيبة المدرّس](../01-academy/instructor-kit/README.md): المقررات الأربعة في ثلاثين جلسة، أو في فصلين |
@@ -60,6 +61,7 @@ Four courses, 76 contact hours, two tracks (a low-code core track and a code dee
 | You are | Start at |
 |---|---|
 | A self-paced learner | The [learner guide](LEARNER-GUIDE.md), then the Course 1 [syllabus](01-opportunity/syllabus.md). Every lesson ends with a link to the next |
+| A founder asking whether to write a full plan or start and adjust | The [founder planning guide](founder-planning-guide.md): what to fix, what to test, gates, and the customer agreement |
 | A founder with a documented idea or a working agent | The entry requirements in the [trainer guide](TRAINER-GUIDE.md), section 2 |
 | A trainer or an organisation running a cohort | The [programme trainer guide](TRAINER-GUIDE.md), then each course's instructor guide |
 | A university instructor or a 15-week programme | The [instructor kit](../01-academy/instructor-kit/README.md): all four courses in thirty sessions, or in two semesters |

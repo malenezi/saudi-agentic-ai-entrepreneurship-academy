@@ -2,7 +2,12 @@
 
 ## Unreleased
 
-Nothing yet.
+### Founder planning guide
+
+- [Founder planning guide](03-courses/founder-planning-guide.md): a companion page for all four courses on when to plan and when to experiment (Agile, waterfall and hybrid planning). It is not a module and changes no hours or deliverables. Covers the four kinds of uncertainty mapped to the courses, four questions that sort every decision, fixed and open tracks in a Saudi agentic venture, stage-gated money, and the three lines of a customer agreement (what is fixed, what is variable, how the variable is swapped).
+- Toolkit template 13, the [Hybrid planning sheet](04-entrepreneur-toolkit/13-hybrid-planning-sheet.md): assumption map, decision sort, the two tracks, gates, and the three lines. The toolkit now has thirteen templates.
+- Built from four drafts supplied by the author, by the standing rule. Source register: A143 to A151 added; five draft claims corrected (B64 to B68), among them a success-rate table that mixed editions of the CHAOS report and "water-Scrum-fall" presented as a recommended method; two groups of unsourced anecdotes and rules of thumb left out (C50, C51).
+- **Limits.** The studies were read from abstracts and summaries, not in full. The contract section has had no legal review. Not tried with learners. No lesson, deck or quiz links to the guide yet.
 
 ## v0.9 (2026-11-20)
 
