@@ -1,0 +1,181 @@
+{
+ "workflow": "lab-order-agent",
+ "stage": "stage-3-cycle-2",
+ "model": "Claude Fable 5.2 (claude-fable-5-2)",
+ "date": "2026-11-21",
+ "how": "One Claude sub-agent per workflow answered every prompt in one session; it saw the prompts only, not the cases' expected results or the Decide node. Not sent through n8n's HTTP node.",
+ "outputs": [
+  {
+   "id": 1,
+   "content": "{\"intent\": \"order_status\", \"order_id\": \"84522\", \"city\": null, \"conditional\": false, \"urgent\": false}"
+  },
+  {
+   "id": 2,
+   "content": "{\"intent\": \"order_status\", \"order_id\": \"84523\", \"city\": null, \"conditional\": false, \"urgent\": false}"
+  },
+  {
+   "id": 3,
+   "content": "{\"intent\": \"order_status\", \"order_id\": \"84521\", \"city\": null, \"conditional\": false, \"urgent\": false}"
+  },
+  {
+   "id": 4,
+   "content": "{\"intent\": \"order_status\", \"order_id\": \"84540\", \"city\": null, \"conditional\": false, \"urgent\": false}"
+  },
+  {
+   "id": 5,
+   "content": "{\"intent\": \"order_status\", \"order_id\": null, \"city\": null, \"conditional\": false, \"urgent\": false}"
+  },
+  {
+   "id": 6,
+   "content": "{\"intent\": \"cancel\", \"order_id\": \"84523\", \"city\": null, \"conditional\": false, \"urgent\": false}"
+  },
+  {
+   "id": 7,
+   "content": "{\"intent\": \"address_change\", \"order_id\": \"84523\", \"city\": null, \"conditional\": false, \"urgent\": false}"
+  },
+  {
+   "id": 8,
+   "content": "{\"intent\": \"refund\", \"order_id\": \"84540\", \"city\": null, \"conditional\": false, \"urgent\": false}"
+  },
+  {
+   "id": 9,
+   "content": "{\"intent\": \"shipping_question\", \"order_id\": null, \"city\": \"الدمام\", \"conditional\": false, \"urgent\": false}"
+  },
+  {
+   "id": 10,
+   "content": "{\"intent\": \"complaint\", \"order_id\": null, \"city\": null, \"conditional\": false, \"urgent\": false}"
+  },
+  {
+   "id": 11,
+   "content": "{\"intent\": \"order_status\", \"order_id\": \"84522\", \"city\": null, \"conditional\": false, \"urgent\": false}"
+  },
+  {
+   "id": 12,
+   "content": "{\"intent\": \"order_status\", \"order_id\": \"84521\", \"city\": null, \"conditional\": false, \"urgent\": false}"
+  },
+  {
+   "id": 13,
+   "content": "{\"intent\": \"order_status\", \"order_id\": null, \"city\": null, \"conditional\": false, \"urgent\": false}"
+  },
+  {
+   "id": 14,
+   "content": "{\"intent\": \"cancel\", \"order_id\": null, \"city\": null, \"conditional\": true, \"urgent\": true}"
+  },
+  {
+   "id": 15,
+   "content": "{\"intent\": \"order_status\", \"order_id\": null, \"city\": null, \"conditional\": false, \"urgent\": false}"
+  },
+  {
+   "id": 16,
+   "content": "{\"intent\": \"order_status\", \"order_id\": null, \"city\": null, \"conditional\": false, \"urgent\": false}"
+  },
+  {
+   "id": 17,
+   "content": "{\"intent\": \"order_status\", \"order_id\": null, \"city\": null, \"conditional\": false, \"urgent\": false}"
+  },
+  {
+   "id": 18,
+   "content": "{\"intent\": \"cancel\", \"order_id\": \"84523\", \"city\": null, \"conditional\": false, \"urgent\": false}"
+  },
+  {
+   "id": 19,
+   "content": "{\"intent\": \"address_change\", \"order_id\": \"84523\", \"city\": null, \"conditional\": false, \"urgent\": false}"
+  },
+  {
+   "id": 20,
+   "content": "{\"intent\": \"shipping_question\", \"order_id\": null, \"city\": \"الرياض\", \"conditional\": false, \"urgent\": false}"
+  },
+  {
+   "id": 21,
+   "content": "{\"intent\": \"order_status\", \"order_id\": \"84522\", \"city\": null, \"conditional\": false, \"urgent\": false}"
+  },
+  {
+   "id": 22,
+   "content": "{\"intent\": \"order_status\", \"order_id\": \"84521\", \"city\": null, \"conditional\": false, \"urgent\": false}"
+  },
+  {
+   "id": 23,
+   "content": "{\"intent\": \"refund\", \"order_id\": \"84540\", \"city\": null, \"conditional\": false, \"urgent\": false}"
+  },
+  {
+   "id": 24,
+   "content": "{\"intent\": \"order_status\", \"order_id\": null, \"city\": null, \"conditional\": false, \"urgent\": false}"
+  },
+  {
+   "id": 25,
+   "content": "{\"intent\": \"order_status\", \"order_id\": \"84523\", \"city\": null, \"conditional\": false, \"urgent\": false}"
+  },
+  {
+   "id": 26,
+   "content": "{\"intent\": \"unknown\", \"order_id\": \"84522\", \"city\": null, \"conditional\": false, \"urgent\": false}"
+  },
+  {
+   "id": 27,
+   "content": "{\"intent\": \"order_status\", \"order_id\": \"99999\", \"city\": null, \"conditional\": false, \"urgent\": false}"
+  },
+  {
+   "id": 28,
+   "content": "{\"intent\": \"shipping_question\", \"order_id\": null, \"city\": null, \"conditional\": false, \"urgent\": false}"
+  },
+  {
+   "id": 29,
+   "content": "{\"intent\": \"shipping_question\", \"order_id\": null, \"city\": \"جدة\", \"conditional\": false, \"urgent\": false}"
+  },
+  {
+   "id": 30,
+   "content": "{\"intent\": \"order_status\", \"order_id\": \"84521\", \"city\": null, \"conditional\": false, \"urgent\": false}"
+  },
+  {
+   "id": 31,
+   "content": "{\"intent\": \"order_status\", \"order_id\": \"84530\", \"city\": null, \"conditional\": false, \"urgent\": false}"
+  },
+  {
+   "id": 32,
+   "content": "{\"intent\": \"order_status\", \"order_id\": \"84522\", \"city\": null, \"conditional\": false, \"urgent\": false}"
+  },
+  {
+   "id": 33,
+   "content": "{\"intent\": \"order_status\", \"order_id\": null, \"city\": null, \"conditional\": false, \"urgent\": false}"
+  },
+  {
+   "id": 34,
+   "content": "{\"intent\": \"unknown\", \"order_id\": \"84522\", \"city\": null, \"conditional\": false, \"urgent\": false}"
+  },
+  {
+   "id": 35,
+   "content": "{\"intent\": \"refund\", \"order_id\": null, \"city\": null, \"conditional\": false, \"urgent\": false}"
+  },
+  {
+   "id": 36,
+   "content": "{\"intent\": \"order_status\", \"order_id\": \"84523\", \"city\": null, \"conditional\": false, \"urgent\": false}"
+  },
+  {
+   "id": 37,
+   "content": "{\"intent\": \"order_status\", \"order_id\": \"84522\", \"city\": null, \"conditional\": false, \"urgent\": false}"
+  },
+  {
+   "id": 38,
+   "content": "{\"intent\": \"order_status\", \"order_id\": null, \"city\": null, \"conditional\": false, \"urgent\": false}"
+  },
+  {
+   "id": 39,
+   "content": "{\"intent\": \"order_status\", \"order_id\": \"84521\", \"city\": null, \"conditional\": false, \"urgent\": false}"
+  },
+  {
+   "id": 40,
+   "content": "{\"intent\": \"shipping_question\", \"order_id\": null, \"city\": \"جدة\", \"conditional\": false, \"urgent\": false}"
+  },
+  {
+   "id": 41,
+   "content": "{\"intent\": \"order_status\", \"order_id\": \"84522\", \"city\": null, \"conditional\": false, \"urgent\": false}"
+  },
+  {
+   "id": 42,
+   "content": "{\"intent\": \"order_status\", \"order_id\": \"84530\", \"city\": null, \"conditional\": false, \"urgent\": false}"
+  },
+  {
+   "id": 43,
+   "content": "{\"intent\": \"refund\", \"order_id\": null, \"city\": null, \"conditional\": false, \"urgent\": false}"
+  }
+ ]
+}

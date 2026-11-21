@@ -1,6 +1,6 @@
 # القوالب القابلة للتشغيل · Runnable agent templates (n8n)
 
-**Status:** Published in v0.9 (20 November 2026) · Imported and run in n8n 2.35.7 with the simulated model · **Not run with a real language model, not connected to any real channel or system, not tried with founders** · Invented sample data · Educational
+**Status:** Published in v0.9 (20 November 2026) · Imported and run in n8n 2.35.7 with the simulated model · Instructions run once with a real language model outside n8n on 21 November 2026 ([results](real-model-runs/README.md)) · **Not connected to any real channel or system, not tried with founders** · Invented sample data · Educational
 
 <div dir="rtl">
 

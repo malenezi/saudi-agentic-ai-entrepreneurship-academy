@@ -1,0 +1,56 @@
+{
+ "workflow": "02-booking-assistant",
+ "model": "Claude Fable 5.2 (claude-fable-5-2)",
+ "date": "2026-11-21",
+ "how": "One Claude sub-agent per workflow answered every prompt in one session; it saw the prompts only, not the cases' expected results or the Decide node. Not sent through n8n's HTTP node.",
+ "outputs": [
+  {
+   "id": 1,
+   "content": "{\"intent\": \"book\", \"service\": \"تنظيف أسنان\", \"choice\": null, \"booking_ref\": null}"
+  },
+  {
+   "id": 2,
+   "content": "{\"intent\": \"confirm\", \"service\": null, \"choice\": 2, \"booking_ref\": null}"
+  },
+  {
+   "id": 3,
+   "content": "{\"intent\": \"confirm\", \"service\": null, \"choice\": 2, \"booking_ref\": null}"
+  },
+  {
+   "id": 4,
+   "content": "{\"intent\": \"confirm\", \"service\": null, \"choice\": 1, \"booking_ref\": null}"
+  },
+  {
+   "id": 5,
+   "content": "{\"intent\": \"reschedule\", \"service\": null, \"choice\": null, \"booking_ref\": \"B-1003\"}"
+  },
+  {
+   "id": 6,
+   "content": "{\"intent\": \"confirm\", \"service\": null, \"choice\": 2, \"booking_ref\": null}"
+  },
+  {
+   "id": 7,
+   "content": "{\"intent\": \"cancel\", \"service\": null, \"choice\": null, \"booking_ref\": \"B-1001\"}"
+  },
+  {
+   "id": 8,
+   "content": "{\"intent\": \"cancel\", \"service\": null, \"choice\": null, \"booking_ref\": \"B-1002\"}"
+  },
+  {
+   "id": 9,
+   "content": "{\"intent\": \"cancel\", \"service\": null, \"choice\": null, \"booking_ref\": \"B-1004\"}"
+  },
+  {
+   "id": 10,
+   "content": "{\"intent\": \"symptoms\", \"service\": null, \"choice\": null, \"booking_ref\": null}"
+  },
+  {
+   "id": 11,
+   "content": "{\"intent\": \"book\", \"service\": null, \"choice\": null, \"booking_ref\": null}"
+  },
+  {
+   "id": 12,
+   "content": "{\"intent\": \"unknown\", \"service\": null, \"choice\": null, \"booking_ref\": null}"
+  }
+ ]
+}

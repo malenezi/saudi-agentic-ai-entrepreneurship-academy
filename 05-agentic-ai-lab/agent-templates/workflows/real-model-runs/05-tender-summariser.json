@@ -1,0 +1,20 @@
+{
+ "workflow": "05-tender-summariser",
+ "model": "Claude Fable 5.2 (claude-fable-5-2)",
+ "date": "2026-11-21",
+ "how": "One Claude sub-agent per workflow answered every prompt in one session; it saw the prompts only, not the cases' expected results or the Decide node. Not sent through n8n's HTTP node.",
+ "outputs": [
+  {
+   "id": 1,
+   "content": "{\"facts\": {\"issuer\": {\"value\": \"هيئة مثال للخدمات (جهة مختلقة)\", \"page\": 1}, \"scope\": {\"value\": \"تطوير مساعد آلي للرد على استفسارات المستفيدين\", \"page\": 1}, \"location\": {\"value\": \"الرياض\", \"page\": 1}, \"duration\": {\"value\": \"12 شهراً من تاريخ الترسية\", \"page\": 2}, \"deadline\": {\"value\": \"2027-01-15 الساعة 10:00 صباحاً\", \"page\": 2}, \"guarantee\": {\"value\": \"\", \"page\": 0}, \"payment_terms\": {\"value\": \"\", \"page\": 0}, \"penalties\": {\"value\": \"بحسب ما ورد في نموذج العقد المرفق\", \"page\": 3}}, \"requirements\": [{\"text\": \"سجل تجاري ساري المفعول\", \"key\": null, \"page\": 2}, {\"text\": \"مشاريع مماثلة خلال السنوات الثلاث الماضية\", \"key\": null, \"page\": 2}, {\"text\": \"شهادة ISO 27001\", \"key\": null, \"page\": 2}, {\"text\": \"خطة لنقل المعرفة إلى فريق الجهة\", \"key\": null, \"page\": 2}], \"criteria\": [{\"text\": \"العرض الفني 70%\", \"page\": 3}, {\"text\": \"العرض المالي 30%\", \"page\": 3}]}"
+  },
+  {
+   "id": 2,
+   "content": "{\"facts\": {\"issuer\": {\"value\": \"\", \"page\": 0}, \"scope\": {\"value\": \"\", \"page\": 0}, \"location\": {\"value\": \"\", \"page\": 0}, \"duration\": {\"value\": \"\", \"page\": 0}, \"deadline\": {\"value\": \"\", \"page\": 0}, \"guarantee\": {\"value\": \"\", \"page\": 0}, \"payment_terms\": {\"value\": \"\", \"page\": 0}, \"penalties\": {\"value\": \"\", \"page\": 0}}, \"requirements\": [], \"criteria\": []}"
+  },
+  {
+   "id": 3,
+   "content": "{\"facts\": {\"issuer\": {\"value\": \"هيئة مثال للخدمات (جهة مختلقة)\", \"page\": 1}, \"scope\": {\"value\": \"تطوير مساعد آلي للرد على استفسارات المستفيدين\", \"page\": 1}, \"location\": {\"value\": \"الرياض\", \"page\": 1}, \"duration\": {\"value\": \"12 شهراً من تاريخ الترسية\", \"page\": 2}, \"deadline\": {\"value\": \"2027-01-15 الساعة 10:00 صباحاً\", \"page\": 2}, \"guarantee\": {\"value\": \"\", \"page\": 0}, \"payment_terms\": {\"value\": \"\", \"page\": 0}, \"penalties\": {\"value\": \"بحسب ما ورد في نموذج العقد المرفق\", \"page\": 3}}, \"requirements\": [{\"text\": \"سجل تجاري ساري المفعول\", \"key\": null, \"page\": 2}, {\"text\": \"مشاريع مماثلة خلال السنوات الثلاث الماضية\", \"key\": null, \"page\": 2}, {\"text\": \"شهادة ISO 27001\", \"key\": null, \"page\": 2}, {\"text\": \"خطة لنقل المعرفة إلى فريق الجهة\", \"key\": null, \"page\": 2}], \"criteria\": [{\"text\": \"العرض الفني 70%\", \"page\": 3}, {\"text\": \"العرض المالي 30%\", \"page\": 3}]}"
+  }
+ ]
+}
