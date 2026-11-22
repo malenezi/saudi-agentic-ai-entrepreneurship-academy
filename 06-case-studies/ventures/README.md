@@ -2,11 +2,11 @@
 
 <div dir="rtl">
 
-آخر مراجعة للمصادر: **19 نوفمبر 2026**
+آخر مراجعة للمصادر: **19 نوفمبر 2026**؛ وأُضيفت عشر صفحات في **22 نوفمبر 2026**
 
 ## الغرض
 
-اثنتا عشرة صفحة في مجموعتين.
+اثنتان وعشرون صفحة في ثلاث مجموعات: سبع عن شركات تقنية بُنيت في هذه السوق، وعشر عن شركات سعودية تبني للوكلاء، وخمس عن شركات عالمية تبني الوكلاء.
 
 [الحالات](../README.md) في هذه المكتبة تسأل: أين الفرصة الوكيلية؟ أما هذه الصفحات فتسأل سؤالاً آخر: **كيف تُبنى شركة تقنية في هذه السوق، وتُموَّل، وتتخارج؟** هي مادة المقررين 3 و4، وليست أدلة على عائد الوكلاء. لا تزعم أي منها أن الشركة تستخدم وكلاء في عملياتها ما لم يذكر المصدر ذلك.
 
@@ -45,6 +45,35 @@
 | [Lucidya](lucidya.md) | من برمجيات تعرض إلى وكيل ينفّذ | 1.2، 3.2 | إعلان الشركة، صحافة |
 | [MOZN](mozn.md) | وكيل متخصص لقطاع منظَّم، وقناة توزيع وطنية | 3.5، 4.5 | إعلان الشركة، صحافة |
 | [Think](think.md) | تكلفة الاستدلال ومكان المعالجة | 2.4، 4.5 | إعلان الشركة، صحافة |
+| [Shaffra](shaffra.md) | «موظفون» من الوكلاء، وأرقام من بيان الشركة | 3.2، 3.3 | إعلان الشركة، صحافة |
+| [RIME](rime.md) | وكلاء في الموقع، على كاميرات موجودة أصلاً | 1.3، 2.3 | إعلان الشركة، صحافة |
+| [Gaia](gaia.md) | الصلاحيات والموافقة البشرية جزء من المنتج | 2.6، 4.3 | إعلان الشركة، صحافة |
+| [TabSense](tabsense.md) | الوكيل داخل نظام يستخدمه العميل كل يوم | 3.2، 3.5 | إعلان الشركة، صحافة |
+| [Velents.ai](velents.md) | من أداة توظيف إلى «موظف» عربي | 1.2، 2.2 | إعلان الشركة، صحافة |
+
+الخمس الأخيرة أُضيفت في 22 نوفمبر 2026 من مسودة لصاحب الأكاديمية، بعد التحقق من كل منها.
+
+### شركات عالمية تبني الوكلاء
+
+خمس شركات من المسودة نفسها. أربع منها إعلانات تمويل بأرقام من الشركة، وواحدة درس في فحص الادعاءات. تُقرأ لمعرفة حجم الرهان العالمي وأين لا يصل، لا لتقليدها.
+
+| الحالة | الزاوية | المقرر | المصدر |
+|---|---|---|---|
+| [Sierra](sierra.md) | وكلاء خدمة العملاء، وسرعة إيراد معلنة من الشركة | 3.2، 4.5 | إعلان الشركة، صحافة |
+| [Wonderful](wonderful.md) | مهندسون عند العميل حتى أول حالة في الإنتاج | 3.5، 3.6 | إعلان الشركة، صحافة |
+| [Harvey](harvey.md) | وكيل لمهنة واحدة، يُباع لأكبر مكاتبها | 1.3، 3.2 | إعلان الشركة، صحافة |
+| [Rocketlane](rocketlane.md) | من برنامج يتابع العمل إلى وكلاء ينفّذونه | 3.1، 3.2 | إعلان الشركة، صحافة |
+| [11x](eleven-x.md) | حين تسبق الأرقامُ المنتج | 3.3، 4.6 | صحافة |
+
+### شركات نتابعها
+
+ثلاث شركات سعودية تحققنا من وجودها وتمويلها، وليس فيها ما يكفي لصفحة ([A179](../../SOURCES.md)). من يعرف عنها نتيجة تشغيل موثّقة فليفتح طلب دمج.
+
+| الشركة | ما هو موثّق | ما ينقص |
+|---|---|---|
+| Cycls | الرياض، تأسست 2021. جولة ما قبل البذرة بمليون دولار من مستثمرين ملائكيين (أكتوبر 2023). أطلقت في أكتوبر 2026 أربعة وكلاء: «سوبر» للمهام العامة، و«حصيف» للأنظمة السعودية، و«بديع» للتسويق، و«نماء» لسوق الأسهم السعودية، على بنية سحابية داخل المملكة | عملاء، ونتائج، وتقييم لدقة «حصيف» في النصوص النظامية |
+| Operater (QPioneers سابقاً) | الرياض، تأسست 2025 على يد Hicham Almamlouk وAdel Alsaadi. جولة أولى من Q Fund، ذراع الاستثمار لدى Qewam Holding (ديسمبر 2025)، بقيمة غير معلنة. مساعدها اسمه QP Agent | قيمة الجولة، وعملاء، ونتائج |
+| Nommas.ai | الرياض، مؤسسها Abdulaziz Alsebaie. ذكاء اصطناعي صناعي للمصانع. اختارها المنتدى الاقتصادي العالمي ضمن «رواد التقنية» لعام 2026 (يونيو 2026) | أرقام العملاء والمشاريع وأثرها وردت في مسودة ولم نجد مصدرها (C53) |
 
 ## كيف تُستخدم
 
@@ -56,4 +85,4 @@
 
 ## In English
 
-Twelve short, sourced accounts. Seven show how technology companies in this market were built, funded and exited. Five more (Wittify.ai, DEEP.SA, Lucidya, MOZN, Think) are Saudi companies building for agents in 2025 and 2026; they are funding and partnership announcements that show where money is being bet, and none documents an operating result. They serve Courses 3 and 4 and are **not** evidence about agents: none claims the company uses agents in its operations unless a source says so. The company list comes from the author's earlier university course on software entrepreneurship (2024); those texts carried no sources and some contained factual errors, so every case was rewritten from open sources and what could not be confirmed is recorded in [not adopted](../not-adopted.md). Each case lists what is documented, what the sources do not say, the lesson, questions for an agentic founder, and learner questions.
+Twenty-two short, sourced accounts in three groups. Seven show how technology companies in this market were built, funded and exited. Ten are Saudi companies building for agents (Wittify.ai, DEEP.SA, Lucidya, MOZN, Think, and, added on 22 November 2026, Shaffra, RIME, Gaia, TabSense and Velents.ai). Five are international companies building agents (Sierra, Wonderful, Harvey, Rocketlane, 11x), also added on 22 November 2026: four are funding announcements with the company's own figures, and 11x is a lesson in checking revenue and customer claims. They are funding and partnership announcements that show where money is being bet; none documents an independently verified operating result. They serve Courses 3 and 4 and are **not** evidence about agents. A short watch list (Cycls, Operater, Nommas.ai) records three companies whose existence and funding were confirmed and for which no operating result was found. Every page follows one format, checked by `05-agentic-ai-lab/exercises/a3-sourced-case/case_lint.py`: what is documented, what the sources do not say, the lesson, an angle for an agentic founder, and learner questions.

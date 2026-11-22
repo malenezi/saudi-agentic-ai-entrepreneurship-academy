@@ -51,8 +51,35 @@
 | أرقام Aqar: عدد الإعلانات والزيارات الشهرية | صيغة قديمة منشورة عن الشركة؛ اعتمدنا ما في صفحتها اليوم مع وسم «معلن ذاتياً» (A93) |
 | حالات مختلقة قُدّمت بأسماء (HajjGuide، SmartRide، EventX، SmartProject) وفيها أرقام سوق | تبقى تمارين موسومة «مختلقة»، بلا أرقام السوق التي لا مصدر لها |
 
+## مسودة 22 نوفمبر 2026: ما لم يُعتمد وما صُحّح
+
+قدّم صاحب الأكاديمية مسودة فيها نحو ثلاثين حالة. اعتُمدت ست عشرة صفحة منها بعد التحقق، وهذا ما لم يُعتمد أو دخل بعد تصحيح. التفاصيل في [SOURCES.md](../SOURCES.md): من B69 إلى B74، وC53.
+
+| الوارد في المسودة | ما وجدناه | القرار |
+|---|---|---|
+| مستشفى الملك فيصل التخصصي يوظّف «وكلاء» مرتبطين بالسجلات الصحية للفرز والجدولة، ملتزمين بضوابط سدايا | بيانات المستشفى تصف مركز تحكم يتنبأ وينبّه والقرار للفريق، ولا تستخدم كلمة «وكيل»، ولا تذكر الامتثال | نُشرت [حالةَ مقارنة](saudi/kfsh-patient-flow.md) بأرقام المستشفى، لا حالة وكيل (B72) |
+| «سال» و«موانئ» تستخدمان وكلاء متعددين لمطابقة مستندات التخليص مع «فسح» | لم نجده | لم تُعتمد. ووجدنا في القطاع نفسه [حالة Saudia Cargo](saudi/saudia-cargo.md) (B73) |
+| مصرف الراجحي وstc bank يشغّلان وكلاء يوقفون البطاقات ويفتحون النزاعات ويعالجون التمويل المصغّر ضمن صلاحيات البنك المركزي | لم نجده. الموجود اتفاقية للراجحي مع ServiceNow وejada (نوفمبر 2025)، وهي إعلان | لم تُعتمد حالةً حقيقية (C53) |
+| «تشريح» حالة القطاع المالي: معمارية من أربع طبقات، ومصطلحات، وحدّ 5,000 ريال، ومتطلب بتوطين النماذج داخل المملكة منسوب إلى البنك المركزي | تصميم معقول، لكنه مكتوب كأنه وصف لما تطبّقه بنوك مسمّاة، وبلا مصدر | صار [السيناريو 6](illustrative-scenarios.md) بمنشأة متخيَّلة، والمتطلبات التنظيمية فيه أسئلة لا أحكام |
+| روبوتات المحادثة التقليدية تفشل في 60 إلى 70% من الحالات المصرفية | بلا مصدر | حُذف (C53) |
+| Klarna: توفير 40 مليون دولار سنوياً، دون ذكر التراجع | الرقم توقّع لأرباح 2024 أُعلن بعد شهر من الإطلاق، وتلاه تراجع في 2025 | [الحالة القائمة](global/klarna.md) تعرض الفصلين (B70) |
+| Cognition (Devin) | وصف منتج بلا عميل ولا نتيجة، ورُفض سابقاً للسبب نفسه | لم تُعتمد |
+| 11x.ai نموذجاً لنمو سريع في الإيراد | تقرير صحفي في مارس 2025 عن عملاء وإيراد معلنين بغير ما هم عليه، ثم ترك المؤسس منصبه | نُشرت [درساً في فحص الادعاءات](ventures/eleven-x.md) (B74) |
+| Sierra: «أول ربع بإيراد 50 مليون دولار، وثمانية أرباع متتالية فوق 150 مليوناً»، وقائمة عملاء، وعبارة منسوبة | ما قالته الشركة أنها بلغت 150 مليون دولار من الإيراد السنوي المتكرر خلال ثمانية أرباع | صُحّح (B69)؛ والقائمة والعبارة لم تُستخدما (C53) |
+| Lucidya: مبيعات الربع الرابع 2025، وخفض 60 إلى 70%، وحل 90% من أول اتصال، و15 لهجة، ونشر في 4 إلى 6 أسابيع | لم نجد مصادرها | لم تُضف إلى [الصفحة القائمة](ventures/lucidya.md) (C53) |
+| Shaffra: أرقام «قابلة للتحقق» | الأرقام من بيان الشركة وبلا عميل مسمّى | نُشرت منسوبة إلى الشركة (B71) |
+| Gaia: نشر داخل مقر العميل أو سحابته، وعربية وإنجليزية أصليتان | لم يرد في ما قرأناه | ذُكر تحت «ما لا تقوله المصادر» (C53) |
+| Wonderful: نحو 80 مليون دولار إيراداً سنوياً وأكثر من 100 عميل | لم نقرأه من مصدر أولي | لم يُستخدم (C53) |
+| Nexus: خلفية المؤسسَين، و4,000 تكامل | في ملخصات ثانوية فقط | لم يُستخدم (C53) |
+| HUMAIN وReplit «أنشأتا موطناً لمبرمجي الذكاء الاصطناعي» | الإعلان بصيغة النية، ولا شيء موصوف بأنه أُطلق | نُشرت [بوسم «ج»](saudi/humain-replit.md) |
+| Dovera.ai | لم نجد شيئاً بهذا الاسم | لم تُعتمد (C53) |
+| Nommas.ai: 50 عميلاً، 150 مشروعاً، خفض التوقفات 35% | وجدنا اختيارها ضمن رواد التقنية لدى المنتدى الاقتصادي العالمي فقط | في قائمة «شركات نتابعها» بما ثبت (A179) |
+| مصادر عامة مثل «تقارير Sequoia» و«a16z» و«Harvard Business Review» و«بيانات LEAP» | لا رابط ولا عنوان | استُبدل بكل منها مصدر مسمّى ومؤرَّخ، أو حُذف الادعاء |
+
 </div>
 
 ## In English
 
 Claims from the drafts that were removed (no source found), corrected (the source says something different) or reclassified (product descriptions, not cases). The most important: "Sitmaai" and three unnamed Saudi sector examples could not be traced; the Klarna case omitted the company's 2025 reversal; Aramco Digital and OrbitronAI is an announced partnership with no deployment yet; several cases were attributed to secondary sources and are now linked to the original publisher.
+
+On 22 November 2026 the owner supplied a draft of about thirty cases; sixteen pages were adopted after checking. Not adopted or corrected: a King Faisal Specialist Hospital "agent" deployment (the hospital's releases describe forecasting and alerting, so it is published as a comparison case); multi-agent customs clearance at two logistics bodies and action-taking agents at two banks (not found); the banking "anatomy", now an invented scenario; 11x as a growth model (published as a lesson in checking claims); and unsourced figures for Lucidya, Sierra, Wonderful, Nexus, Gaia and Nommas.ai. See SOURCES.md, B69 to B74 and C53.
