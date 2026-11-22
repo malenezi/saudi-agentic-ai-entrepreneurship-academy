@@ -60,14 +60,22 @@ class LandingPage(unittest.TestCase):
         result = subprocess.run([sys.executable, os.path.join(ROOT, "tools", "build_site.py"), "--check"],
                                 cwd=ROOT, capture_output=True, text=True)
         self.assertEqual(result.returncode, 0, result.stdout)
-        page = read(os.path.join(ROOT, "index.html"))
-        for deck in glob.glob(os.path.join(COURSES, "*", "slides", "*.html")):
-            self.assertIn(os.path.relpath(deck, ROOT).replace(os.sep, "/"), page)
-        for href in re.findall(r'href="([^"#]+)"', page):
-            if href.startswith("read.html?p="):
-                href = href[len("read.html?p="):]  # the reader shows a Markdown file of the repository
-            if not href.startswith("http"):
-                self.assertTrue(os.path.exists(os.path.join(ROOT, href)), href)
+        for name in ("index.html", "index.en.html"):  # the Arabic page and the English page
+            page = read(os.path.join(ROOT, name))
+            for deck in glob.glob(os.path.join(COURSES, "*", "slides", "*.html")):
+                self.assertIn(os.path.relpath(deck, ROOT).replace(os.sep, "/"), page, name)
+            for href in re.findall(r'href="([^"#]+)"', page):
+                if href.startswith("read.html?p="):
+                    href = href[len("read.html?p="):]  # the reader shows a Markdown file of the repository
+                if not href.startswith("http"):
+                    self.assertTrue(os.path.exists(os.path.join(ROOT, href)), "%s: %s" % (name, href))
+
+    def test_the_two_landing_pages_link_each_other_and_declare_their_language(self):
+        arabic, english = read(os.path.join(ROOT, "index.html")), read(os.path.join(ROOT, "index.en.html"))
+        self.assertIn('<html lang="ar" dir="rtl">', arabic)
+        self.assertIn('<html lang="en" dir="ltr">', english)
+        self.assertIn('href="index.en.html"', arabic)
+        self.assertIn('href="index.html"', english)
 
     def test_the_reader_is_self_contained_and_its_search_index_covers_every_page(self):
         reader = read(os.path.join(ROOT, "read.html"))

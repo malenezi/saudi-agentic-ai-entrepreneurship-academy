@@ -1,6 +1,6 @@
 # المجال 10: التنظيمات القطاعية · Domain 10: Sector-specific regulations
 
-**Status:** First guide published · Last reviewed 19 November 2026 · Educational, not legal advice
+**Status:** First guide published · Last reviewed 19 November 2026; the two financial sandboxes added 22 November 2026 · Educational, not legal advice
 
 **Guide · الدليل:** [هل نشاطي منظَّم؟ طريقة من خمسة أسئلة وأربعة أمثلة](am-i-regulated.md) · Am I regulated?. Sources read and what remains unverified are stated at the top of the guide; it awaits a lawyer's review.
 
@@ -25,7 +25,7 @@ Two distinctions that decide the pathway:
 
 | Sector | Authorities | Topics to investigate | Verification |
 |---|---|---|---|
-| Financial technology | SAMA, CMA | Licensing for payments, lending and securities; SAMA's Cyber Security Framework | ✔ the framework is in force (A132); both authorities' sites opened (A142). Licensing routes not read |
+| Financial technology | SAMA, CMA | Licensing for payments, lending and securities; SAMA's Cyber Security Framework | ✔ the framework is in force (A132); both authorities' sites opened (A142); each runs a sandbox, listed below (A159, A160). Licensing routes not read |
 | Insurance | Insurance Authority | Distribution, underwriting, claims | ✔ the authority's site was opened on 20 November 2026 (A142). The topics are questions to investigate, not confirmed rules |
 | Healthcare | Ministry of Health, SFDA | Health data; software as a medical device; clinical software | ✔ SFDA guidance MDS-G010 on AI and machine-learning devices (A133); both sites opened (A142). Health data rules not read |
 | Telecommunications and cloud | CST | Cloud, communications, digital content platforms | ✔ content platform rules |
@@ -42,8 +42,10 @@ A sandbox lets a company test a product under supervision with adapted requireme
 | Sandbox | Regulator | Focus | Verification |
 |---|---|---|---|
 | Emerging Technologies Regulatory Sandbox | CST | AI, Internet of Things, digital twin, space and other emerging technologies | ✔ Fifteen products completed the second cohort; registration for the third ran from 3 July to 3 October 2025 |
+| Regulatory Sandbox | SAMA | New financial products and services tested with real consumers for a defined period. Open to SAMA-licensed firms, to non-licensed local fintechs and start-ups (with a Letter of Acceptance, or in partnership with a licensed firm that answers to SAMA), and to non-licensed international fintechs | ✔ framework published 2018, modified August 2022; applications throughout the year; application stage 60 days, operational readiness 120 days, testing 6 to 12 months, then exit (A159) |
+| FinTech Lab (Financial Technology Experimental Permit) | CMA | Fintech products and services that involve securities activity | ✔ launched 2018; applications throughout the year, assessed in batches; a two-year testing period; an approved applicant must establish a legal entity in the Kingdom before it starts (A160). Fees and capital not read |
 
-Early drafts quoted typical sandbox durations and participant counts. They could not be confirmed and are omitted. Check each regulator's current call for applications.
+The durations above are each regulator's own. Participant counts quoted in early drafts could not be confirmed and are omitted. A sandbox is permission to test under supervision: it is not a licence and not funding. Check each regulator's page on the day you apply.
 
 For an agentic product that fits no licensed sector, the CST sandbox is a natural place to look first, because it accepts emerging-technology products that are not yet specifically regulated.
 

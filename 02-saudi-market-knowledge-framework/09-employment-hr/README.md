@@ -1,6 +1,6 @@
 # المجال 09: الموارد البشرية والتوظيف · Domain 09: Employment and workforce
 
-**Status:** First guide published · Last reviewed 19 November 2026 · Educational, not legal advice
+**Status:** First guide published · Last reviewed 19 November 2026; wage protection, work permit and freelance rows added 22 November 2026 · Educational, not legal advice
 
 **Guide · الدليل:** [التوظيف الأول في منشأة يعمل فيها الوكلاء](first-hire-in-an-agent-native-company.md) · The first hire in an agent-native company. Sources read and what remains unverified are stated at the top of the guide; it awaits a lawyer's review.
 
@@ -14,7 +14,7 @@
 
 ## Authorities and platforms
 
-Ministry of Human Resources and Social Development (HRSD), General Organization for Social Insurance (GOSI), Qiwa (contracts and labour services), Mudad (payroll and wage protection).
+Ministry of Human Resources and Social Development (HRSD), General Organization for Social Insurance (GOSI), Qiwa (contracts and labour services), Mudad (payroll and wage protection), the freelance portal at freelance.sa (the freelance document).
 
 ## Instruments
 
@@ -22,6 +22,9 @@ Ministry of Human Resources and Social Development (HRSD), General Organization 
 |---|---|---|---|
 | Labor Law and its Executive Regulations | HRSD | Binding | ✔ Royal Decree M/51 of 23/8/1426H; amendments under Royal Decree M/44 took effect on 19 February 2025 with new Executive Regulations (A130). Provisions not summarised here |
 | Saudization (Nitaqat) programme | HRSD | Binding | ✔ referred to in the Executive Regulations of the Labor Law (A130). Quotas and bands not read |
+| Wage Protection Program (برنامج حماية الأجور) | HRSD, through Mudad | Binding on private-sector establishments | ✔ establishments upload their wage files through Mudad, free of charge; since 1 March 2025 the file is due within 30 days, reduced from 60; Mudad checks payment against the documented contract (A154). Penalties not read |
+| Work permit for expatriate workers (رخصة العمل) | HRSD, through Qiwa | Binding | ✔ issued and renewed through Qiwa for a service fee of SAR 100, and a condition for issuing or renewing the worker's residency (A155). The levy on expatriate workers, visas and quotas not read |
+| Freelance document (وثيقة العمل الحر) | HRSD, through freelance.sa | Programme | ✔ issued free of charge to Saudi nationals aged 18 or over with an active Absher account, in activities the Ministry has approved; a person in employment may apply (A156). The list of activities, the validity period and the benefits not read |
 | Social Insurance Law (1445H) | GOSI | Binding | ✔ the text is on GOSI's site (A131). Contribution rates not read |
 
 ## Founder decisions
@@ -33,7 +36,7 @@ Ministry of Human Resources and Social Development (HRSD), General Organization 
 | Founder status | Am I an employee of my own company for insurance purposes? |
 | IP in contracts | Does every contract assign work product to the company? See [domain 07](../07-intellectual-property/README.md) |
 | Outsourcing development | Who owns the code, who holds the credentials, and what happens when the contract ends? |
-| Freelancing | If I work alone, do I need a company yet, or a freelance document? |
+| Freelancing | If I work alone, do I need a company yet, or a freelance document? The document is for Saudi nationals (A156), so it is not a route for a non-Saudi founder |
 
 ## Building an agent-native workforce
 
@@ -54,7 +57,7 @@ If you use AI in recruitment or performance evaluation, test for consistent trea
 
 - [ ] Register the establishment with GOSI and the labour platforms before the first hire
 - [ ] Use documented contracts through the official platform
-- [ ] Pay wages through the wage protection route
+- [ ] Pay wages through the wage protection route, and upload the wage file on Mudad within 30 days (A154)
 - [ ] Include confidentiality and IP assignment in every contract
 - [ ] Know your Saudization position before hiring non-Saudi staff
 - [ ] Write down which human is accountable for each agent

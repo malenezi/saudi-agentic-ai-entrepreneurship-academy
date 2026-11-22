@@ -109,9 +109,24 @@
 
 وصُحّحت أربعة عناوين في دليل الجهات: البرنامج الوطني لتنمية تقنية المعلومات، وهيئة السوق المالية، وكفالة، والمركز السعودي للأعمال.
 
+## ما أُعيد في 22 نوفمبر 2026 من مصدره الرسمي
+
+دفعة أولى من خمسة مواضيع. قُرئ كل بند من صفحة الجهة المصدِرة أو من موقع هيئة الخبراء، وسُجّل في [سجل المصادر](../SOURCES.md) بطريقة قراءته وما لم يُقرأ منه. ما لم يتأكد بقي خارجاً، وهو في البند C52.
+
+| ما أُعيد | أين صار | المصدر | ما بقي خارجاً |
+|---|---|---|---|
+| الزكاة وضريبة الدخل وقاعدتهما بحسب الملكية | [المجال 05](05-tax-accounting-finance/README.md)، و[أساسيات الضريبة](05-tax-accounting-finance/tax-basics-for-founders.md) القسم 3، والسجل التنظيمي | A152، A153 | حساب الوعاءين، وتسعير المعاملات |
+| حماية الأجور، ورخص العمل، ووثيقة العمل الحر | [المجال 09](09-employment-hr/README.md)، و[دليل التوظيف الأول](09-employment-hr/first-hire-in-an-agent-native-company.md) القسم 7، والسجل التنظيمي | A154، A155، A156 | الإقامة، والمقابل المالي على العمالة الوافدة، والعمل عن بعد والمرن |
+| مواد نظام التجارة الإلكترونية، ومنها حق الفسخ؛ ونظام مكافحة الغش التجاري | [المجال 08](08-ecommerce-digital-business/README.md)، و[دليل المتجر والوكيل](08-ecommerce-digital-business/selling-online-with-an-agent.md) القسم 6، والسجل التنظيمي | A157، A158 | اللائحة التنفيذية، ومدد الضمان، والتعاملات الإلكترونية، وخدمات المدفوعات، وترخيص الإعلان للأفراد، وشروط التسويق المباشر |
+| البيئة التجريبية لدى البنك المركزي، ومختبر التقنية المالية لدى هيئة السوق المالية | [المجال 10](10-sector-regulations/README.md)، و[هل نشاطي منظَّم؟](10-sector-regulations/am-i-regulated.md)، والسجل التنظيمي | A159، A160 | إطار الخدمات المصرفية المفتوحة، وقطاع التعليم، وبيئات تجريبية أخرى |
+| بيبان وليب | [منظومة ريادة الأعمال](06-funding-investment/startup-ecosystem.ar.md)، القسم 3 | A161، A162 | موعد بيبان 2026، وأسابيع منشآت، والهاكاثونات، وفعاليات الغرف |
+
 </div>
 
 ## Removed on 20 November 2026 because it could not be verified
 
 At the owner's direction, the funding directory and the regulatory register now keep only what was confirmed. Official pages were opened in a browser; what could not be read there was removed. Removal does not mean an item is wrong or that an organisation does not exist. It means we did not read it at its source. The tables above list every removed item and the reason. The same rule was then applied to the twelve domain pages, the official directory and the two funding guides; the third table lists what left them. Programmes searched for and not added: stc's inspireU (its site did not open), Blossom Accelerator's DominAite (the announced page shows a hosting placeholder) and GAIA (no current official page found).
 
+## Restored on 22 November 2026 from official sources
+
+A first batch of five subjects went back into the framework, each read from its issuer's page or the Bureau of Experts' site and recorded in [SOURCES.md](../SOURCES.md) with how it was read and what was not read: zakat and income tax (A152, A153); wage protection, work permits and the freelance document (A154 to A156); the articles of the E-Commerce Law and the Anti-Commercial Fraud Law (A157, A158); the central bank's sandbox and the capital market regulator's FinTech Lab (A159, A160); Biban and LEAP (A161, A162). The Arabic table above says where each went and what stayed out. What could not be confirmed on that day is listed in SOURCES.md, C52.
