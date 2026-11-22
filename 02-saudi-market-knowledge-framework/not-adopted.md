@@ -121,6 +121,20 @@
 | البيئة التجريبية لدى البنك المركزي، ومختبر التقنية المالية لدى هيئة السوق المالية | [المجال 10](10-sector-regulations/README.md)، و[هل نشاطي منظَّم؟](10-sector-regulations/am-i-regulated.md)، والسجل التنظيمي | A159، A160 | إطار الخدمات المصرفية المفتوحة، وقطاع التعليم، وبيئات تجريبية أخرى |
 | بيبان وليب | [منظومة ريادة الأعمال](06-funding-investment/startup-ecosystem.ar.md)، القسم 3 | A161، A162 | موعد بيبان 2026، وأسابيع منشآت، والهاكاثونات، وفعاليات الغرف |
 
+## ما أُعيد في الدفعة الثانية (22 نوفمبر 2026)
+
+فُتحت الصفحات في متصفح صاحب المبادرة، ومنها مواقع كانت ترفض القراءة الآلية. ورُفعت بذلك ثلاثة بنود من الدفعة الأولى كانت تستند إلى مقتطفات البحث (A156، A158، A161).
+
+| ما أُعيد | أين صار | المصدر | ما بقي خارجاً |
+|---|---|---|---|
+| مواد نظام مكافحة الغش التجاري وعقوباته | [المجال 08](08-ecommerce-digital-business/README.md) والسجل التنظيمي | A158 | اللائحة التنفيذية، وصفحات وزارة التجارة |
+| العمل المرن، وخدمة عقد العمل عن بعد | [المجال 09](09-employment-hr/README.md) والسجل التنظيمي | A180، A181 | نصّا القرارين الوزاريين، وشروط العمل عن بعد واحتسابه في نطاقات |
+| إطار المصرفية المفتوحة لدى البنك المركزي | [المجال 10](10-sector-regulations/README.md) والسجل التنظيمي | A182 | نص الإطار، وترخيص مزوّدي الطرف الثالث |
+| قطاع التعليم: تراخيص التعليم والتدريب الإلكتروني | [المجال 10](10-sector-regulations/README.md) والسجل التنظيمي | A183 | اللائحة والمعايير والرسوم، وبقية قطاع التعليم |
+| برامج وثيقة العمل الحر ومميزاتها | [المجال 09](09-employment-hr/README.md) | A156 | الأنشطة داخل كل برنامج، ومدة الوثيقة |
+
+بحثنا عن موعد بيبان 2026 ولم نُعده: موقع الملتقى لا يعرض موعداً، ولم نجد صفحة لدى «منشآت» تذكره.
+
 </div>
 
 ## Removed on 20 November 2026 because it could not be verified
@@ -130,3 +144,7 @@ At the owner's direction, the funding directory and the regulatory register now 
 ## Restored on 22 November 2026 from official sources
 
 A first batch of five subjects went back into the framework, each read from its issuer's page or the Bureau of Experts' site and recorded in [SOURCES.md](../SOURCES.md) with how it was read and what was not read: zakat and income tax (A152, A153); wage protection, work permits and the freelance document (A154 to A156); the articles of the E-Commerce Law and the Anti-Commercial Fraud Law (A157, A158); the central bank's sandbox and the capital market regulator's FinTech Lab (A159, A160); Biban and LEAP (A161, A162). The Arabic table above says where each went and what stayed out. What could not be confirmed on that day is listed in SOURCES.md, C52.
+
+## Second batch restored on 22 November 2026
+
+Pages were opened in the owner's browser, including sites that refuse automated reading. Four subjects went back: the articles and penalties of the Anti-Commercial Fraud Law (A158), flexible work and the remote work contract service (A180, A181), SAMA's Open Banking Framework (A182), and e-learning licensing as the first entry of an education row (A183). Three first-batch entries that had rested on search extracts were upgraded after being read in the browser (A156, A158, A161). The dates of Biban 2026 were searched for and not found on Monsha'at's pages, so they stay out. The Arabic table above says where each item went and what is still out.

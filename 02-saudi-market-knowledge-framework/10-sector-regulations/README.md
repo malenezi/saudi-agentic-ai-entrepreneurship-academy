@@ -25,7 +25,8 @@ Two distinctions that decide the pathway:
 
 | Sector | Authorities | Topics to investigate | Verification |
 |---|---|---|---|
-| Financial technology | SAMA, CMA | Licensing for payments, lending and securities; SAMA's Cyber Security Framework | ✔ the framework is in force (A132); both authorities' sites opened (A142); each runs a sandbox, listed below (A159, A160). Licensing routes not read |
+| Financial technology | SAMA, CMA | Licensing for payments, lending and securities; SAMA's Cyber Security Framework | ✔ the framework is in force (A132); both authorities' sites opened (A142); each runs a sandbox, listed below (A159, A160). ✔ SAMA's Open Banking Framework: first release November 2022 for account information services, second release September 2024 for payment initiation; an agent that reads a customer's bank data or starts a payment through a third party falls under it (A182). Licensing routes and the framework's text not read |
+| Education and training | National eLearning Center; Ministry of Education; TVTC | Licences for e-learning and e-training providers and programmes; minors' data | ✔ NeLC licenses entities and programmes delivered electronically, and required licensed entities to update their data by 17 July 2025 (A183). Criteria and fees not read; whether a software supplier to a licensed provider needs a licence is a question to put to NeLC |
 | Insurance | Insurance Authority | Distribution, underwriting, claims | ✔ the authority's site was opened on 20 November 2026 (A142). The topics are questions to investigate, not confirmed rules |
 | Healthcare | Ministry of Health, SFDA | Health data; software as a medical device; clinical software | ✔ SFDA guidance MDS-G010 on AI and machine-learning devices (A133); both sites opened (A142). Health data rules not read |
 | Telecommunications and cloud | CST | Cloud, communications, digital content platforms | ✔ content platform rules |

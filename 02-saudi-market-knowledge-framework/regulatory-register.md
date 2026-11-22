@@ -65,7 +65,7 @@ Last full review: **16 November 2026** · Data protection and tax rows updated *
 | Companies Law; Commercial Register Law | Ministry of Commerce | Binding | ✔ company forms, capital rules for the simplified company and the single-person company read in the English text of the Companies Law (A69); incorporation, register and trade-name services read on the Ministry's pages, with fees as printed (A65 to A68). ✔ the Commercial Register Law and the Trade Names Law took effect on 3 April 2025, with annual confirmation of register data in place of renewal, from the Ministry's announcement (A139) | 01 |
 | Registration of foreign investment with the Ministry of Investment | MISA | Binding | ✔ the Investor Guide, 13th edition, issue 04 of 2026, describes registration, including a category for entrepreneurial establishments backed by a Saudi university or accredited incubator (A64). The Ministry's FAQ adds the document list for entrepreneur registration (A70) | 01 |
 | E-Commerce Law and Implementing Regulations | Ministry of Commerce | Binding | ✔ Royal Decree M/126 of 7/11/1440H (10 July 2019), status "in force" on the Bureau of Experts' site; applied from 20 October 2019; the implementing regulation and a compliance list for online stores are on the Ministry's page (A128). ✔ articles read on 22 November 2026: scope, disclosure, advertising, the seven-day termination right and its exceptions, the 15-day delivery rule and the penalties (A157). The implementing regulation was not read | 08 |
-| Anti-Commercial Fraud Law | Ministry of Commerce | Binding | ✔ Royal Decree M/19 of 23/4/1429H on the Bureau of Experts' site and among the Ministry's laws; discounts and commercial contests need a licence from the Ministry (A158, from search extracts). Texts not read here | 08 |
+| Anti-Commercial Fraud Law | Ministry of Commerce | Binding | ✔ Royal Decree M/19 of 23/4/1429H on the Bureau of Experts' site and among the Ministry's laws; in force on the Bureau of Experts' site, read in full there; discounts and commercial contests need a licence from the Ministry (Art. 4); fines up to SAR 500,000 or two years for fraud, up to SAR 1,000,000 or three years in aggravated cases (A158). Implementing regulation not read | 08 |
 
 ## 5. Intellectual property (SAIP)
 
@@ -82,6 +82,8 @@ Last full review: **16 November 2026** · Data protection and tax rows updated *
 | Social Insurance Law (1445H) | GOSI | Binding | ✔ the text is on GOSI's site (A131). Provisions not summarised here | 09 |
 | Wage Protection Program | HRSD, through Mudad | Binding on private-sector establishments | ✔ wage files uploaded through Mudad, free of charge; due within 30 days since 1 March 2025 (A154). Penalties not read | 09 |
 | Work permits for expatriate workers | HRSD, through Qiwa | Binding | ✔ issued and renewed through Qiwa; service fee SAR 100; a condition for the worker's residency (A155). The levy, visas and quotas not read | 09 |
+| Flexible work rules (Ministerial Decisions 146481 and 153307) | HRSD, through the flexible work platform | Binding on those who use it | ✔ procedural guide in the official gazette, 21 May 2024: hourly contracts for Saudis only, documented on the platform; hour limits, a one-year limit with one employer, and Nitaqat counting (A180). The decisions themselves not read | 09 |
+| Remote work contract service | HRSD, through the remote work platform | Programme | ✔ free electronic documentation of a remote work contract (A181). Conditions not read | 09 |
 
 ## 7. Sector instruments
 
@@ -91,6 +93,8 @@ Last full review: **16 November 2026** · Data protection and tax rows updated *
 | Guidance on AI and machine-learning based medical devices (MDS-G010) | SFDA | Official guidance within a binding authorisation regime | ✔ version 1.0, dated 29 November 2022, on SFDA's site; it sets out what is required for marketing authorisation of AI and ML based medical devices (A133) | 10 |
 | Regulatory Sandbox Framework (published 2018, modified August 2022) | SAMA | Programme | ✔ open for applications throughout the year to licensed firms, non-licensed local fintechs and start-ups, and non-licensed international fintechs; testing 6 to 12 months under a Letter of Acceptance (A159) | 10 |
 | Financial Technology Experimental Permit Instructions (FinTech Lab) | CMA | Programme | ✔ for fintech products that involve securities activity; applications throughout the year, assessed in batches; two-year testing period (A160). The Instructions themselves were not read | 10 |
+| Open Banking Framework (first release November 2022, second release September 2024) | SAMA | Binding on participants | ✔ account information services, then payment initiation services; announcements read on SAMA's site (A182). The framework's text and the licence for third-party providers not read | 10 |
+| E-learning and e-training licences | National eLearning Center | Binding on providers | ✔ entity and programme licences through NeLC's digital service; corrective phase to 17 July 2025 (A183). The regulation, criteria and fees not read | 10 |
 | A specific SAMA circular number on AI quoted in an early draft | SAMA | — | ✖ not confirmed; removed | — |
 
 ## 8. Procurement

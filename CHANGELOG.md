@@ -1,5 +1,19 @@
 # Changelog
 
+## Unreleased
+
+### Knowledge framework: a second batch restored, and three entries upgraded (22 November 2026)
+
+Official pages were opened in the owner's browser, including sites that refuse automated reading.
+
+- **Anti-Commercial Fraud Law** (domain 08, both registers): the thirty articles were read on the Bureau of Experts' site. The page now gives the violations, the licence rule for discounts and contests, who answers for a violation, and the penalties (A158, no longer from search extracts).
+- **Flexible work and remote work** (domain 09, both registers): hourly contracts for Saudis on the Ministry's platform with their hour limits, one-year limit and Nitaqat counting (A180); the remote work contract service (A181).
+- **Open Banking Framework** (domain 10, both registers): SAMA's two releases, account information then payment initiation (A182).
+- **Education** (domain 10, both registers): a first entry, the National eLearning Center's licences for e-learning providers and programmes (A183).
+- **Upgraded after reading in a browser:** the freelance platform's programmes and benefits, with two dead links removed (A156); the dates and venue of Biban 2025 (A161).
+- **Saudia Cargo case:** the vendor is now named from the joint announcement (A184); the vendor's general figures are quoted as such and the evidence level stays C.
+- Not restored: the dates of Biban 2026 (not on the organiser's pages), and what C52 still lists.
+
 ## v0.11 (2026-11-22)
 
 A first batch of the knowledge framework restored from official sources, the case-study section restructured with sixteen new pages, and an English landing page.
