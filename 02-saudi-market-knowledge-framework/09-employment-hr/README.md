@@ -24,7 +24,9 @@ Ministry of Human Resources and Social Development (HRSD), General Organization 
 | Saudization (Nitaqat) programme | HRSD | Binding | ✔ referred to in the Executive Regulations of the Labor Law (A130). Quotas and bands not read |
 | Wage Protection Program (برنامج حماية الأجور) | HRSD, through Mudad | Binding on private-sector establishments | ✔ establishments upload their wage files through Mudad, free of charge; since 1 March 2025 the file is due within 30 days, reduced from 60; Mudad checks payment against the documented contract (A154). Penalties not read |
 | Work permit for expatriate workers (رخصة العمل) | HRSD, through Qiwa | Binding | ✔ issued and renewed through Qiwa for a service fee of SAR 100, and a condition for issuing or renewing the worker's residency (A155). The levy on expatriate workers, visas and quotas not read |
-| Freelance document (وثيقة العمل الحر) | HRSD, through freelance.sa | Programme | ✔ issued free of charge to Saudi nationals aged 18 or over with an active Absher account, in activities the Ministry has approved; a person in employment may apply (A156). The list of activities, the validity period and the benefits not read |
+| Freelance document (وثيقة العمل الحر) | HRSD, through freelance.sa | Programme | ✔ issued free of charge to Saudi nationals aged 18 or over with an active Absher account, in activities the Ministry has approved; a person in employment may apply; the platform lists ten programmes, among them specialised services and accounting services, and benefits that include a bank account linked to the activity (A156). The activities inside each programme and the validity period not read |
+| Flexible work (العمل المرن) | HRSD, through the flexible work platform | Binding on those who use it | ✔ hourly-paid contracts for Saudis only, electronic and documented on the platform; no paid leave, end-of-service award or probation; overtime above 95 hours a month and no more than 160 with one employer; at most one year with one employer before renewal or an ordinary contract; counted in Nitaqat at one point per 160 hours, up to 20% of Saudi employees (A180). The two ministerial decisions were not read |
+| Remote work (العمل عن بعد) | HRSD, through the remote work platform | Programme | ✔ a free electronic service to create and document a remote work contract, with social insurance verified as a step (A181). Conditions and Nitaqat treatment not read |
 | Social Insurance Law (1445H) | GOSI | Binding | ✔ the text is on GOSI's site (A131). Contribution rates not read |
 
 ## Founder decisions
@@ -58,6 +60,7 @@ If you use AI in recruitment or performance evaluation, test for consistent trea
 - [ ] Register the establishment with GOSI and the labour platforms before the first hire
 - [ ] Use documented contracts through the official platform
 - [ ] Pay wages through the wage protection route, and upload the wage file on Mudad within 30 days (A154)
+- [ ] For part-time Saudi help paid by the hour, document a flexible work contract on the Ministry's platform and keep within its hour limits (A180)
 - [ ] Include confidentiality and IP assignment in every contract
 - [ ] Know your Saudization position before hiring non-Saudi staff
 - [ ] Write down which human is accountable for each agent

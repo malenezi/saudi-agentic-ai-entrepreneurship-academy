@@ -21,7 +21,7 @@ Ministry of Commerce (e-commerce and consumer protection), ZATCA (VAT and invoic
 | Instrument | Authority | Status | Verification |
 |---|---|---|---|
 | E-Commerce Law and Implementing Regulations | Ministry of Commerce | Binding | ✔ Royal Decree M/126 of 7/11/1440H, in force; applied from 20 October 2019; the regulation and a compliance list for online stores are on the Ministry's page (A128). ✔ the articles on scope, disclosure, advertising, termination, late delivery and penalties were read on the Bureau of Experts' site (A157). The implementing regulation was not read |
-| Anti-Commercial Fraud Law | Ministry of Commerce | Binding | ✔ Royal Decree M/19 of 23/4/1429H, on the Bureau of Experts' site and among the Ministry's laws; price discounts and commercial contests need a licence from the Ministry (A158, from search extracts). Articles and penalties not read |
+| Anti-Commercial Fraud Law | Ministry of Commerce | Binding | ✔ Royal Decree M/19 of 23/4/1429H, on the Bureau of Experts' site and among the Ministry's laws; in force on the Bureau of Experts' site, where the thirty articles were read (A158). Deceiving a buyer about a product's nature, characteristics, source or quantity is a violation (Art. 2); price discounts and commercial contests by any means need a licence from the Ministry (Art. 4); the seller and the company's managers answer for violations (Art. 15); fines run up to SAR 500,000 or two years' imprisonment for fraud, and up to SAR 50,000 or six months for an unlicensed discount or contest (Arts. 16, 17). The implementing regulation was not read |
 | Regulations for Providing Digital Content Platform Services | CST | Binding for content platforms | ✔ in force 8 October 2024 |
 
 ## What the E-Commerce Law says
