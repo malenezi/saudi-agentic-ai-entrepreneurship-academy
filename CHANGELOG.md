@@ -1,6 +1,8 @@
 # Changelog
 
-## Unreleased
+## v0.11 (2026-11-22)
+
+A first batch of the knowledge framework restored from official sources, the case-study section restructured with sixteen new pages, and an English landing page.
 
 **Still true: no course has been piloted, and no lawyer or tax adviser has reviewed the framework.** What is below was read from official pages; it was not reviewed by a specialist.
 
