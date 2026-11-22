@@ -1,6 +1,6 @@
 # تشغيل القوالب بنموذج لغوي حقيقي · Runs with a real language model
 
-**Status:** first run recorded on 21 November 2026 · one model (Claude Fable 5.2) · one run per case · invented test cases · **not sent through n8n's HTTP node, no real channel, not tried with founders**
+**Status:** first run recorded on 21 November 2026 (Claude Fable 5.2) · second run on 22 November 2026 with a small local model (qwen2.5:3b on a laptop) · one run per case · invented test cases · **not sent through n8n's HTTP node, no real channel, not tried with founders**
 
 <div dir="rtl">
 
@@ -35,7 +35,35 @@ For comparison, the simulated model scores 30 of 35 and 6 of 8 on the lab at the
 
 Findings 3 and 4 are left in the lab as they are: the lab's published numbers come from the simulated model, and a learner who connects a real model should meet these two cases and decide what to do.
 
-## How the run was made
+## Second run: a small local model (22 November 2026)
+
+The same prompts were answered by **qwen2.5:3b** (a 1.9 GB download) served by Ollama 0.40.17 on the owner's laptop: Intel Core i5-1135G7, 8 GB of memory, no dedicated graphics card, Windows 11. One separate call per prompt to Ollama's OpenAI-compatible endpoint, temperature 0. The outputs and the seconds each call took are in [`local-qwen2.5-3b/`](local-qwen2.5-3b/).
+
+| Workflow | Model cases | qwen2.5:3b, local | Claude Fable 5.2 (first run, after the fix) | Time for all cases |
+|---|---|---|---|---|
+| 1. Customer service | 9 | 8 of 9 | 9 of 9 | 35 s |
+| 2. Booking assistant | 12 | **9 of 12** | 12 of 12 | 34 s |
+| 3. Lead qualification | 12 | **8 of 12** | 12 of 12 | 19 s |
+| 4. Invoice reconciliation | 12 | 11 of 12 | 12 of 12 | 133 s |
+| 5. Tender summariser | 2 | 2 of 2 | 2 of 2 | 63 s |
+| Templates together | 47 | **38 of 47** | 47 of 47 | |
+| Course 2 lab, stage 3 | 35 and 8 held out | 31 of 35, 7 of 8 | 32 of 35, 8 of 8 | 162 s |
+
+The times include the first call of each file, when the model may still be loading. The slowest single call took 32 seconds (the tender text).
+
+### What the local run found
+
+1. **Invalid JSON is the first failure of a small model.** In lead qualification the model returned `{ "intent": yes }`, `{ "intent": negotiate }` and `{ "intent": stop }`, without quotation marks, in three of twelve cases. The intent was right each time; Decide could not parse the answer, and the customer got the fallback. A founder who uses a small model should ask the server for JSON output where it offers that, or repair and retry once before falling back.
+2. **It filled in a value the instructions told it to leave empty.** Invoice case 11 has no total on the document. The model wrote `1150.00`, the sum of the two amounts, against the rule "copy the numbers as they are; do not calculate". The reconciliation step then compared a number that was never on the invoice.
+3. **It lost the customer's choice.** Booking case 4 is the single message «1» after one slot was offered: the model returned `confirm` with `choice: null`. In case 5 («ابي اغير موعدي B-1003») it read the booking reference's last digit as a choice and answered `confirm` in place of `reschedule`; in case 11 («ابي موعد») it answered `confirm` in place of `book`.
+4. **Near-miss labels.** «كم فرع عندكم؟» was labelled `human` with the right topic; «لا شكرا» as an answer to a consent question was labelled `stop` in place of `no`.
+5. **Code fences.** Two booking answers arrived wrapped in a Markdown code fence. Decide read them; this is noted because not every parser will.
+6. **The planted instruction in the tender text was again treated as data,** and both tender cases passed.
+7. **Lab:** it failed cases 15, 28, 30, 34 and held-out H8. Cases 28 and 34 also fail with the first model; case 26, which the first model failed, passed here.
+
+What this says for a founder: on this laptop a 3-billion-parameter model answers a short classification in two to eight seconds and is right about four times in five on these invented cases, and its errors are of the kind a guard catches (unparseable or out-of-list answers) more often than the kind that slips through (a computed total). It is a floor, not a recommendation: one small model, one run.
+
+## How the first run was made
 
 - **Model:** Claude Fable 5.2 (`claude-fable-5-2`), on 21 November 2026.
 - **Prompts:** exactly what each workflow's Prepare node builds, written out with `python3 tools/n8n_replay_model.py --prompts <folder>`.
@@ -52,10 +80,10 @@ python3 tools/n8n_replay_model.py
 - **Not through n8n.** The model was not called by the HTTP node. That path was exercised in n8n against a stub only (v0.9). Connecting a real endpoint in n8n is still untested.
 - **Not isolated calls.** One sub-agent answered a workflow's cases one after another in one session, with the instruction to treat each as a separate call. A real deployment makes separate calls.
 - One model, one run, at whatever settings the sub-agent ran with; the workflows ask for temperature 0, which was not controlled here.
-- One capable model. A smaller or local model may fail where this one passed, above all on dialect and on returning clean JSON.
+- The first run used one capable model. The second run, above, shows where a small local model fails: clean JSON first.
 - Invented cases. Nothing here is evidence about real customer messages, latency or cost.
 - The model belongs to the family that drafted the instructions.
 
 ## Add a run
 
-Write the prompts out, answer them with your model (one call per prompt), save the outputs in the format of the files here with the model and the date, and open a pull request. A local model's run is the one most worth having.
+Write the prompts out, answer them with your model (one call per prompt), save the outputs in the format of the files here with the model and the date, and open a pull request. A first local run is recorded above; a run with a larger local model, or one tuned for Arabic, is the one most worth having next. Keep each run in its own folder, as `local-qwen2.5-3b/` is.

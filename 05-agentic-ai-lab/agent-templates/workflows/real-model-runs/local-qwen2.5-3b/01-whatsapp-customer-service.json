@@ -1,0 +1,58 @@
+{
+ "workflow": "01-whatsapp-customer-service",
+ "model": "qwen2.5:3b (Ollama, local)",
+ "date": "2026-11-22",
+ "how": "Ollama 0.40.17 on a laptop (Intel Core i5-1135G7, 8 GB RAM, no dedicated GPU, Windows 11). One separate call per prompt to http://localhost:11434/v1/chat/completions with temperature 0; the model saw the prompt only. Not sent through n8n's HTTP node.",
+ "outputs": [
+  {
+   "id": 1,
+   "content": "{\n  \"intent\": \"faq\",\n  \"topic\": \"hours\",\n  \"order_ref\": null\n}",
+   "seconds": 15.8
+  },
+  {
+   "id": 2,
+   "content": "{\n  \"intent\": \"order_status\",\n  \"topic\": \"delivery\",\n  \"order_ref\": \"A-1001\"\n}",
+   "seconds": 2.5
+  },
+  {
+   "id": 3,
+   "content": "{\n  \"intent\": \"order_status\",\n  \"topic\": \"delivery\",\n  \"order_ref\": \"A-1002\"\n}",
+   "seconds": 2.4
+  },
+  {
+   "id": 4,
+   "content": "{\n  \"intent\": \"refund\",\n  \"topic\": \"returns\",\n  \"order_ref\": \"A-1001\"\n}",
+   "seconds": 2.6
+  },
+  {
+   "id": 5,
+   "content": "{\n  \"intent\": \"discount\",\n  \"topic\": null,\n  \"order_ref\": null\n}",
+   "seconds": 2.1
+  },
+  {
+   "id": 6,
+   "content": "{\n  \"intent\": \"advice\",\n  \"topic\": null,\n  \"order_ref\": null\n}",
+   "seconds": 1.9
+  },
+  {
+   "id": 7,
+   "content": "{\n  \"intent\": \"human\",\n  \"topic\": \"branches\",\n  \"order_ref\": null\n}",
+   "seconds": 1.8
+  },
+  {
+   "id": 8,
+   "content": "{\n  \"intent\": \"unknown\",\n  \"topic\": null,\n  \"order_ref\": null\n}",
+   "seconds": 2.6
+  },
+  {
+   "id": 9,
+   "content": "{\n  \"intent\": \"faq\",\n  \"topic\": \"hours\"\n}",
+   "seconds": 1.7
+  },
+  {
+   "id": 10,
+   "content": "{\n  \"intent\": \"faq\",\n  \"topic\": \"hours\",\n  \"order_ref\": null\n}",
+   "seconds": 1.8
+  }
+ ]
+}
