@@ -192,6 +192,20 @@ class RecordedRealModelRuns(unittest.TestCase):
                 model_cases += total
         self.assertEqual(model_cases, 47)
 
+    def test_local_model_run_replays_to_the_published_results(self):
+        import n8n_replay_model as replay
+        folder = os.path.join(replay.RUNS, "local-qwen2.5-3b")
+        expected = {"01-whatsapp-customer-service": (8, [7]), "02-booking-assistant": (9, [4, 5, 11]),
+                    "03-lead-qualification": (8, [6, 8, 10, 11]), "04-invoice-reconciliation": (11, [11]),
+                    "05-tender-summariser": (2, [])}
+        for name in sorted(os.listdir(folder)):
+            run = replay.read(os.path.join(folder, name))
+            if run["workflow"] == "lab-order-agent":
+                self.assertEqual(replay.replay_lab(run), ((31, 35), (7, 8), ["15", "28", "30", "34", "H8"]))
+            else:
+                passed, total, failed = replay.replay_template(run["workflow"], run)
+                self.assertEqual((passed, failed), expected[run["workflow"]], run["workflow"])
+
     def test_the_instructions_name_the_business_and_carry_the_service_list(self):
         import n8n_replay_model as replay
         workflow, cases = replay.template_inputs("02-booking-assistant")

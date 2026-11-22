@@ -1,6 +1,14 @@
 # Changelog
 
-## Unreleased
+## v0.12 (2026-11-22)
+
+A second batch of the knowledge framework restored from pages opened in a browser, and the first run of the agent templates with a local model.
+
+**Still true: no course has been piloted, and no lawyer or tax adviser has reviewed the framework.**
+
+### Agent templates: first run with a local model (22 November 2026)
+
+The prompts of the five templates and the Course 2 lab were answered by qwen2.5:3b, served by Ollama on a laptop with 8 GB of memory and no graphics card, one call per prompt at temperature 0. Result: 38 of 47 template cases (47 of 47 with the first, hosted model) and 31 of 35 with 7 of 8 held out on the lab. The failures are recorded case by case in [`real-model-runs`](05-agentic-ai-lab/agent-templates/workflows/real-model-runs/README.md): unquoted JSON values, a total the model computed against the instructions, and a lost choice in the booking flow. The outputs are in the repository and a test replays them. The answers were not sent through n8n's HTTP node.
 
 ### Knowledge framework: a second batch restored, and three entries upgraded (22 November 2026)
 

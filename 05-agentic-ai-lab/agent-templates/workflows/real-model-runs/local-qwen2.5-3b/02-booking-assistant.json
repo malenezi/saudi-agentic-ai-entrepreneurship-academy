@@ -1,0 +1,68 @@
+{
+ "workflow": "02-booking-assistant",
+ "model": "qwen2.5:3b (Ollama, local)",
+ "date": "2026-11-22",
+ "how": "Ollama 0.40.17 on a laptop (Intel Core i5-1135G7, 8 GB RAM, no dedicated GPU, Windows 11). One separate call per prompt to http://localhost:11434/v1/chat/completions with temperature 0; the model saw the prompt only. Not sent through n8n's HTTP node.",
+ "outputs": [
+  {
+   "id": 1,
+   "content": "```json\n{\n  \"intent\": \"book\",\n  \"service\": \"تنظيف أسنان\",\n  \"choice\": null,\n  \"booking_ref\": null\n}\n```",
+   "seconds": 7.4
+  },
+  {
+   "id": 2,
+   "content": "```json\n{\n  \"intent\": \"confirm\",\n  \"service\": null,\n  \"choice\": \"2\",\n  \"booking_ref\": null\n}\n```",
+   "seconds": 2.5
+  },
+  {
+   "id": 3,
+   "content": "```json\n{\n  \"intent\": \"confirm\",\n  \"service\": null,\n  \"choice\": \"2\",\n  \"booking_ref\": null\n}\n```",
+   "seconds": 2.6
+  },
+  {
+   "id": 4,
+   "content": "```json\n{\n  \"intent\": \"confirm\",\n  \"service\": null,\n  \"choice\": null,\n  \"booking_ref\": null\n}\n```",
+   "seconds": 2.6
+  },
+  {
+   "id": 5,
+   "content": "```json\n{\n  \"intent\": \"confirm\",\n  \"choice\": \"3\",\n  \"booking_ref\": \"B-1003\"\n}\n```",
+   "seconds": 2.7
+  },
+  {
+   "id": 6,
+   "content": "```json\n{\n  \"intent\": \"confirm\",\n  \"service\": null,\n  \"choice\": \"2\",\n  \"booking_ref\": null\n}\n```",
+   "seconds": 2.5
+  },
+  {
+   "id": 7,
+   "content": "```json\n{\n  \"intent\": \"cancel\",\n  \"booking_ref\": \"B-1001\"\n}\n```",
+   "seconds": 2.3
+  },
+  {
+   "id": 8,
+   "content": "```json\n{\n  \"intent\": \"cancel\",\n  \"choice\": \"B-1002\"\n}\n```",
+   "seconds": 2.1
+  },
+  {
+   "id": 9,
+   "content": "```json\n{\n  \"intent\": \"cancel\",\n  \"booking_ref\": \"B-1004\"\n}\n```",
+   "seconds": 2.2
+  },
+  {
+   "id": 10,
+   "content": "{\n  \"intent\": \"symptoms\",\n  \"service\": \"كشف\",\n  \"choice\": null,\n  \"booking_ref\": null\n}",
+   "seconds": 2.6
+  },
+  {
+   "id": 11,
+   "content": "{\n  \"intent\": \"confirm\",\n  \"service\": null,\n  \"choice\": null,\n  \"booking_ref\": null\n}",
+   "seconds": 2.3
+  },
+  {
+   "id": 12,
+   "content": "{\n  \"intent\": \"unknown\",\n  \"service\": null,\n  \"choice\": null,\n  \"booking_ref\": null\n}",
+   "seconds": 2.3
+  }
+ ]
+}
