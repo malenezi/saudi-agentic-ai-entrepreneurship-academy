@@ -15,6 +15,17 @@ Five subjects removed on 20 November as unverified went back, each read from its
 - **Biban and LEAP** (the ecosystem directory, Arabic and English): the events section is back with two events.
 - The framework's [removal record](02-saudi-market-knowledge-framework/not-adopted.md) lists what went back and what stayed out; `SOURCES.md` C52 lists what could not be confirmed, including the dates of Biban 2026.
 
+### Case studies: restructured, and sixteen pages added (22 November 2026)
+
+From the owner's draft of about thirty cases, each checked against a named, dated source before use.
+
+- **One index, three parts** ([`06-case-studies/README.md`](06-case-studies/README.md)): operating cases by place, with what the agent does and the evidence level; venture pages by group; and a table that picks cases by topic and course module. No file moved, so existing links hold.
+- **Six operating cases.** Saudi: [Panda](06-case-studies/saudi/panda.md) (a shopping assistant in dialect, with its engineering decisions), [Nana](06-case-studies/saudi/nana.md) (a support agent in the app), [Saudia Cargo](06-case-studies/saudi/saudia-cargo.md) (quoting agents, with the tourism agents from the same report), [King Faisal Specialist Hospital](06-case-studies/saudi/kfsh-patient-flow.md) (published as a comparison case: its own releases describe forecasting and alerting, not an agent), [HUMAIN and Replit](06-case-studies/saudi/humain-replit.md) (an announcement). International: [Orange and Nexus](06-case-studies/global/orange-nexus.md).
+- **Ten venture pages**, all passing the case linter: Shaffra, RIME, Gaia, TabSense, Velents.ai (Saudi); Sierra, Wonderful, Harvey, Rocketlane, and 11x, the last as a lesson in checking revenue and customer claims. A watch list records Cycls, Operater and Nommas.ai.
+- **A sixth illustrative scenario**: a card dispute agent in an invented bank, with a build exercise and a refusal test. It came from the draft's banking "anatomy", for which no source was found.
+- **Not adopted**, with reasons, in [`06-case-studies/not-adopted.md`](06-case-studies/not-adopted.md): agent deployments attributed to two banks and two logistics bodies, and unsourced figures for six companies. `SOURCES.md`: A163 to A179, B69 to B74, C53.
+- **Limits.** Sources were read by automated fetch or as returned by search, not in a browser; every figure is the company's or its vendor's; no case is independently verified, and no company was contacted.
+
 ### English landing page
 
 - [`index.en.html`](index.en.html): the landing page in English, left to right, with the same links, a "where it stands" section, and every deck listed by its English title with the Arabic title under it. `tools/build_site.py` generates both pages from the same deck list, and the Arabic page's "English" button now opens it. Two tests cover it (94 in all).

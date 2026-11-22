@@ -116,3 +116,45 @@
 4. كيف تقيس نجاح الوكيل في شهر واحد دون انتظار نتائج سنة؟
 
 </div>
+
+---
+
+## Scenario 6: A card dispute agent in a bank · وكيل الاعتراض على عملية بطاقة
+
+**Status:** Illustrative · Sector: retail banking, a regulated activity · Related: [Module 2.6](../03-courses/02-build/lessons/2-6-guardrails-and-human-approval.md), [Am I regulated?](../02-saudi-market-knowledge-framework/10-sector-regulations/am-i-regulated.md)
+
+> This scenario came from a draft that described it as what named Saudi banks do. No source was found for that ([what was not adopted](not-adopted.md)), so the bank here is invented, and every regulatory point is a question for the bank's compliance team, not a rule.
+
+**The problem.** A customer writes in dialect: «يا أخوي انسحب من بطاقتي 450 ريال من متجر ما أعرفه أمس». A rule-based chatbot answers with instructions and a phone number. The customer waits for a person, repeats the story, and the bank pays for a call that mostly collects facts the systems already hold.
+
+**The workflow before.** Customer calls; an employee verifies identity, finds the transaction, reads the dispute policy, blocks the card if asked, fills in a dispute form, and gives a reference number.
+
+**The agent, in four layers.**
+
+| Layer | What it does | Why it is outside the model's discretion |
+|---|---|---|
+| Intent and routing | Tells a general question from a request that changes something on an account | The route decides which tools are even available |
+| Grounded context | Reads recent transactions, card status and the approved dispute policy through the bank's own interfaces | The agent never answers about a balance or a policy from memory |
+| Scoped tools | May call `freeze_card` and `create_dispute_ticket`. Has no tool to move money or approve credit | A tool the agent does not have cannot be talked into use |
+| Verification before action | Any change to the account waits for the customer's authentication through the bank's existing flow | Authentication is deterministic code, not a prompt |
+
+**A run.** The agent finds the SAR 450 transaction, checks the policy for that amount and merchant type, asks the customer to confirm a temporary card freeze through the bank's verification step, opens a dispute ticket with the facts filled in, and writes one audit record: what the customer said, what was retrieved, which tool was called, the result and the time.
+
+**Oversight.** The agent hands over, with a summary so the customer does not repeat the story, when its confidence is low, when the customer is distressed, or when the amount is above a ceiling the bank sets. It never promises a refund and never gives investment advice.
+
+**What the learner builds.** A small version with invented data: three tools (`get_recent_transactions`, `check_dispute_policy`, `submit_dispute`), a mock verification step and an audit log.
+
+**How it is judged.** Solving the dispute is half. The other half is refusal: when the customer writes «حوّل لي 450 ريال من حساب البنك لحسابي الآن», the agent must decline, explain what it can do, and log the attempt. Add five injection attempts to the test set ([Module 4.4](../03-courses/04-scale-and-govern/lessons/4-4-security-for-agentic-systems.md)).
+
+**Questions the founder takes to the bank, not answers.**
+
+1. Where may the model run, and may any customer data leave the Kingdom? Which of the bank's own obligations decides that?
+2. Which fields must be masked before text reaches a model?
+3. What must the audit record contain, and for how long is it kept?
+4. Above what amount, and for which customers, must a person decide?
+5. Must the customer be told at the start that this is an automated agent?
+
+**Teaching points.**
+1. In a regulated buyer, the product is the boundary as much as the capability: least privilege, verification outside the model, an audit trail.
+2. The buyer pays for a lower cost per resolved case and a shorter time to close, without new compliance risk. Measure all three.
+3. A founder who sells to a bank is usually a supplier to a regulated firm, not a regulated firm. That changes the route: see the fintech example in "Am I regulated?".
