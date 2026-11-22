@@ -1,5 +1,28 @@
 # Changelog
 
+## Unreleased
+
+**Still true: no course has been piloted, and no lawyer or tax adviser has reviewed the framework.** What is below was read from official pages; it was not reviewed by a specialist.
+
+### Knowledge framework: a first batch restored from official sources (22 November 2026)
+
+Five subjects removed on 20 November as unverified went back, each read from its issuer's page or the Bureau of Experts' site. Every addition cites a new entry in `SOURCES.md` (A152 to A162) that says how the page was read and what was not read.
+
+- **Zakat and income tax** (domain 05, the tax guide's section 3, both registers): who is subject by ownership, 2.5% and 20%, registration before the end of the first fiscal year, return within 120 days. The computation of each base is not summarised.
+- **Wage protection, work permits and the freelance document** (domain 09, a new section 7 in the first-hire guide, both registers): wage files through Mudad within 30 days; work permits through Qiwa; the freelance document is for Saudi nationals.
+- **The E-Commerce Law's articles** (domain 08, a new section 6 in the store guide, both registers): scope, disclosure, advertising as a binding document, the seven-day termination right and its exceptions, the 15-day delivery rule, penalties. The Anti-Commercial Fraud Law is recorded from search extracts only.
+- **Two financial sandboxes** (domain 10, both registers): SAMA's Regulatory Sandbox and CMA's FinTech Lab, with each regulator's own stages and durations.
+- **Biban and LEAP** (the ecosystem directory, Arabic and English): the events section is back with two events.
+- The framework's [removal record](02-saudi-market-knowledge-framework/not-adopted.md) lists what went back and what stayed out; `SOURCES.md` C52 lists what could not be confirmed, including the dates of Biban 2026.
+
+### English landing page
+
+- [`index.en.html`](index.en.html): the landing page in English, left to right, with the same links, a "where it stands" section, and every deck listed by its English title with the Arabic title under it. `tools/build_site.py` generates both pages from the same deck list, and the Arabic page's "English" button now opens it. Two tests cover it (94 in all).
+
+### Corrections
+
+- `ROADMAP.md`, Arabic section: the current release was still given as 0.9; it now describes 0.10.1.
+
 ## v0.10.1 (2026-11-21)
 
 Two corrections after v0.10, no new material.

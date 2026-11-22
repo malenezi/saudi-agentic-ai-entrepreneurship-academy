@@ -1,7 +1,7 @@
 # أساسيات الضريبة والزكاة لمؤسس مشروع وكيلي
 # Tax and zakat basics for an agentic founder
 
-Last checked: 18 November 2026 · **Status: sources checked, awaiting a tax adviser's review** · Educational, not tax advice
+Last checked: 18 November 2026; section 3 (zakat and income tax) 22 November 2026 · **Status: sources checked, awaiting a tax adviser's review** · Educational, not tax advice
 
 **In English, briefly.** Four things a founder should understand before the first invoice: when VAT registration becomes mandatory, how e-invoicing reaches small businesses, how ownership decides between zakat and income tax, and why a monthly bill from a foreign model provider raises a withholding-tax question. Figures come from ZATCA's own pages where we could open them and are marked where they come from secondary sources. No tax adviser has reviewed this page. It does not tell you how any of your own transactions is taxed.
 
@@ -14,7 +14,8 @@ Last checked: 18 November 2026 · **Status: sources checked, awaiting a tax advi
 | حدّا التسجيل في ضريبة القيمة المضافة | صفحات هيئة الزكاة والضريبة والجمارك ([A53](../../SOURCES.md)) |
 | الموجة الخامسة والعشرون من الفوترة الإلكترونية | خبر الهيئة بتاريخ 24 يوليو 2026 ([A54](../../SOURCES.md)) |
 | نسب ضريبة الاستقطاع ومواعيدها | الدليل الإرشادي العام لضريبة الاستقطاع، الإصدار الثاني، مايو 2026 ([A55](../../SOURCES.md)). قُرئ من النسخة الإنجليزية، والنص العربي هو المعتمد عند الاختلاف |
-| **ما لم يتم** | مراجعة مستشار ضريبي مرخّص. [حزمة المراجعة](adviser-review-pack.md) جاهزة له |
+| من يخضع للزكاة ومن يخضع لضريبة الدخل، والنسبتان، والتسجيل، وموعد الإقرار | اللائحة التنفيذية لجباية الزكاة في موقع الهيئة ([A152](../../SOURCES.md))، قُرئت من النسخة الإنجليزية والنص العربي هو المعتمد؛ ونظام ضريبة الدخل في موقع هيئة الخبراء ([A153](../../SOURCES.md)). تحقّقنا منها في 22 نوفمبر 2026 |
+| **ما لم يتم** | طريقة حساب الوعاء الزكوي والوعاء الضريبي، وتسعير المعاملات: لم تُقرأ. مراجعة مستشار ضريبي مرخّص. [حزمة المراجعة](adviser-review-pack.md) جاهزة له |
 
 **لا تعامل ما هنا على أنه حكم في معاملتك.** الصفحة تعلّمك ما تسأل عنه ومتى. الجواب عند مستشارك وعند الهيئة.
 
@@ -63,7 +64,14 @@ Last checked: 18 November 2026 · **Status: sources checked, awaiting a tax advi
 
 ## 3. الزكاة أم ضريبة الدخل؟
 
-القاعدة العامة المتداولة، **وتأكيدها عند مستشارك:** حصص السعوديين ومواطني دول مجلس التعاون تخضع للزكاة، وحصص غيرهم تخضع لضريبة الدخل، والملكية المختلطة تُقسَم بحسب الحصص.
+القاعدة كما قرأناها في النصين، **وتطبيقها على شركتك عند مستشارك:**
+
+- **الزكاة:** تخضع لها الشركة المؤسسة في المملكة عن حصص الشركاء السعوديين. وتعرّف اللائحة «السعودي» بأنه من يحمل الجنسية السعودية ومن يُعامل معاملته من مواطني دول مجلس التعاون. نسبتها 2.5% من الوعاء الزكوي للسنة الهجرية، وتُحتسب بعدد الأيام إن اختلفت سنتك المالية عن السنة الهجرية ([A152](../../SOURCES.md)).
+- **ضريبة الدخل:** تخضع لها شركة الأموال المقيمة عن الحصص التي يملكها غير السعوديين، بشكل مباشر أو غير مباشر. سعرها 20% من الوعاء الضريبي ([A153](../../SOURCES.md)).
+- **الملكية المختلطة:** يسري كل من النصين على حصته.
+- **في الحالتين:** التسجيل لدى الهيئة قبل نهاية السنة المالية الأولى، وتقديم الإقرار والسداد خلال 120 يوماً من نهاية السنة (A152، A153).
+
+ما لم نقرأه: طريقة حساب الوعاء الزكوي والوعاء الضريبي، وتعريف «شركة الأموال» في النظام. اسأل مستشارك هل تدخل شركتك فيه، وكيف يُحسب وعاؤها.
 
 | هيكل الملكية | ما تسأل عنه مستشارك |
 |---|---|

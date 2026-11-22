@@ -35,9 +35,9 @@ One central directory, so links are maintained in one place. Listing an authorit
 
 | الجهة · Authority | الموقع · Site | يهمّك في · Why you need it | المجال · Domain |
 |---|---|---|---|
-| هيئة الزكاة والضريبة والجمارك · ZATCA | zatca.gov.sa | VAT, withholding tax, e-invoicing | 05 |
-| البنك المركزي السعودي · SAMA | sama.gov.sa; rulebook at rulebook.sama.gov.sa | Rules for payments, banking and finance, including the Cyber Security Framework | 10 |
-| هيئة السوق المالية · CMA | cma.gov.sa (cma.org.sa redirects to it) | Securities | 06, 10 |
+| هيئة الزكاة والضريبة والجمارك · ZATCA | zatca.gov.sa | VAT, zakat, income tax, withholding tax, e-invoicing | 05 |
+| البنك المركزي السعودي · SAMA | sama.gov.sa; rulebook at rulebook.sama.gov.sa | Rules for payments, banking and finance, including the Cyber Security Framework; the Regulatory Sandbox (A159) | 10 |
+| هيئة السوق المالية · CMA | cma.gov.sa (cma.org.sa redirects to it) | Securities; the FinTech Lab (A160) | 06, 10 |
 | الشركة السعودية للاستثمار الجريء · SVC | svc.com.sa | Venture market reports | 06, 11 |
 | بنك التنمية الاجتماعية · Social Development Bank | sdb.gov.sa | Financing for small businesses and freelancers | 06 |
 | برنامج كفالة · Kafalah, with the SME Bank | smebank.gov.sa (kafalah.gov.sa redirects to it) | SME financing guarantees | 06 |
@@ -49,7 +49,9 @@ One central directory, so links are maintained in one place. Listing an authorit
 | الهيئة السعودية للملكية الفكرية · SAIP | saip.gov.sa | Trademarks, patents, copyright | 07 |
 | وزارة الموارد البشرية والتنمية الاجتماعية · HRSD | hrsd.gov.sa | Labor Law and its regulations, Saudization | 09 |
 | التأمينات الاجتماعية · GOSI | gosi.gov.sa | Social Insurance Law | 09 |
-| منصة قوى · Qiwa | qiwa.sa | Labour services platform | 09 |
+| منصة قوى · Qiwa | qiwa.sa | Labour services platform, including work permits (A155) | 09 |
+| منصة مدد · Mudad | mudad.com.sa, the address HRSD's service page gives (A154, 22 November 2026) | Wage protection files and payroll | 09 |
+| بوابة العمل الحر · Freelance portal | freelance.sa (A156, 22 November 2026) | The freelance document, for Saudi nationals | 09 |
 | الهيئة العامة للإحصاء · GASTAT | stats.gov.sa | Official statistics, ICT surveys | 11 |
 
 ## Sector regulators

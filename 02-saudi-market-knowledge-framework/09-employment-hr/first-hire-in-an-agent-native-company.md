@@ -1,9 +1,9 @@
 # التوظيف الأول في منشأة يعمل فيها الوكلاء
 # The first hire in an agent-native company
 
-Last checked: 19 November 2026 · **Status: legal commentary read; the law's text and the official platforms not opened; awaiting a lawyer's review** · Educational, not legal advice
+Last checked: 19 November 2026; section 7 (three points from the Ministry's pages) 22 November 2026 · **Status: legal commentary read; the Ministry's pages on wage protection, work permits and the freelance document read; the law's text not opened; awaiting a lawyer's review** · Educational, not legal advice
 
-**In English, briefly.** Whom to engage first and in what form (employee, contractor, freelancer, outsourced firm), what the 2025 Labor Law amendments changed for a small employer according to consistent law-firm commentary (A97), and how to write down which person is accountable for each agent. Contribution rates, Saudization percentages, fees and permit rules were not verified and are not printed (C43).
+**In English, briefly.** Whom to engage first and in what form (employee, contractor, freelancer, outsourced firm), what the 2025 Labor Law amendments changed for a small employer according to consistent law-firm commentary (A97), and how to write down which person is accountable for each agent. Section 7 gives what the Ministry's own pages say on wage protection, the work permit service and the freelance document (A154 to A156). Contribution rates, Saudization percentages and the levy on expatriate workers were not verified and are not printed (C43).
 
 <div dir="rtl">
 
@@ -12,7 +12,8 @@ Last checked: 19 November 2026 · **Status: legal commentary read; the law's tex
 | ما تحقّقنا منه | من أين |
 |---|---|
 | تعديلات نظام العمل النافذة من فبراير 2025: توثيق العقود إلكترونياً، وفترة التجربة، ومدد الإشعار | تعليقات مكاتب محاماة متطابقة ([A97](../../SOURCES.md)). **ليست نص النظام** |
-| **ما لم يتم** | قراءة نص النظام ولائحته. نسب الاشتراك في التأمينات، ونسب التوطين لنشاطك وحجمك، ورسوم رخص العمل، وشروط وثيقة العمل الحر ([C43](../../SOURCES.md)): تُقرأ من المنصات الرسمية يوم تحتاجها. مراجعة محامٍ |
+| حماية الأجور، وخدمة رخصة العمل، وشروط وثيقة العمل الحر | صفحات وزارة الموارد البشرية والتنمية الاجتماعية، 22 نوفمبر 2026 ([A154](../../SOURCES.md)، [A155](../../SOURCES.md)، [A156](../../SOURCES.md)). انظر القسم 7 |
+| **ما لم يتم** | قراءة نص النظام ولائحته. نسب الاشتراك في التأمينات، ونسب التوطين لنشاطك وحجمك، والمقابل المالي على العمالة الوافدة ([C43](../../SOURCES.md)): تُقرأ من المنصات الرسمية يوم تحتاجها. مراجعة محامٍ |
 
 ## 1. قبل أن توظّف: هل تحتاج موظفاً؟
 
@@ -76,6 +77,16 @@ Last checked: 19 November 2026 · **Status: legal commentary read; the law's tex
 - اختبر الاتساق: السيرة نفسها باسمين مختلفين وجنسين مختلفين تأخذ التقييم نفسه؟
 - بيانات المتقدمين بيانات شخصية: غرض محدد، ومدة حفظ، وإشعار ([المجال 03](../03-data-protection-pdpl/README.md)).
 - لا تلصق سيرة ذاتية في مساعد لا تسمح شروطه بذلك.
+
+## 7. ثلاثة أمور من صفحات الوزارة
+
+قُرئت من صفحات وزارة الموارد البشرية والتنمية الاجتماعية في 22 نوفمبر 2026. الصفحات تتغير، فافتحها يوم تحتاجها.
+
+| الموضوع | ما تقوله الصفحة الرسمية | المصدر |
+|---|---|---|
+| **حماية الأجور** | برنامج للوزارة منذ 2013 يتابع صرف أجور العاملين في منشآت القطاع الخاص، سعوديين ووافدين. ترفع المنشأة ملف الأجور عبر منصة «مدد»، والخدمة مجانية. منذ 1 مارس 2025 يُرفع الملف خلال 30 يوماً بدل 60. وتتحقق المنصة من أن الأجر صُرف في موعده وبالمبلغ المتفق عليه في العقد الموثّق. لم نقرأ العقوبات | [A154](../../SOURCES.md) |
+| **رخصة العمل للعامل الوافد** | تصدرها المنشأة وتجدّدها عبر منصة «قوى»، برسم خدمة 100 ريال، وهي شرط لإصدار إقامة العامل أو تجديدها. لم نقرأ المقابل المالي على العمالة الوافدة ولا أحكام التأشيرات | [A155](../../SOURCES.md) |
+| **وثيقة العمل الحر** | تصدرها الوزارة عبر بوابة العمل الحر، مجاناً، لمن كان سعودي الجنسية، عمره 18 سنة فأكثر، وله حساب «أبشر» مفعّل، في الأنشطة التي أقرّتها الوزارة. يجوز للموظف على رأس العمل أن يتقدم. فهي ليست طريقاً للمؤسس غير السعودي. لم نقرأ قائمة الأنشطة ولا مدة الوثيقة | [A156](../../SOURCES.md) |
 
 ## قائمة قبل أول عقد
 

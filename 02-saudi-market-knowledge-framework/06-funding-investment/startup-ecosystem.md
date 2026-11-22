@@ -1,6 +1,6 @@
 # منظومة ريادة الأعمال · Startup ecosystem directory
 
-Last reviewed: **20 November 2026**. Since that date this page names only organisations whose own sites were opened; the rest were removed ([what was removed](../not-adopted.md)). Confirm current programmes on each official site.
+Last reviewed: **20 November 2026**; the events section was restored on **22 November 2026** from the organisers' pages. Since that date this page names only organisations whose own sites were opened; the rest were removed ([what was removed](../not-adopted.md)). Confirm current programmes on each official site.
 
 النسخة العربية: [startup-ecosystem.ar.md](startup-ecosystem.ar.md)
 
@@ -34,7 +34,14 @@ Last reviewed: **20 November 2026**. Since that date this page names only organi
 
 ## 3. Communities and events
 
-Events and communities change every year, and none was verified from its organiser's page, so none is listed here. Ask the incubator or support centre you work with which events matter for your sector this year.
+Two events are listed, each from its organiser's or founding ministry's pages. Dates change every year: open the event's site before you plan around it.
+
+| Event | Organiser | What a founder finds there | Verification |
+|---|---|---|---|
+| **Biban Forum** (ملتقى بيبان) · bibanglobal.sa | Monsha'at | The SME authority's entrepreneurship forum in Riyadh, built around themed "doors" (seven in 2025, one of them for e-commerce), with consultation and mentoring sessions, workshops, an Investors Arena and the finals of the Entrepreneurship World Cup. The 2025 edition ran from 5 to 8 November 2025; Monsha'at reported 1,021 startups from 66 countries and SAR 22.2 million of Investors Arena deals for 55 startups | ✔ A161. The dates of the 2026 edition were not confirmed on Monsha'at's pages |
+| **LEAP** · onegiantleap.com | MCIT, the Saudi Federation for Cybersecurity, Programming and Drones, and Tahaluf | An annual technology event in Riyadh. The fifth edition ran from 31 August to 3 September 2026 at the Riyadh Exhibition and Convention Center in Malham; MCIT's opening announcement listed 600 startups and 1,900 investors, and its closing announcement gives 12 to 15 April 2027 for the sixth | ✔ A162. How a startup applies to exhibit was not read |
+
+Monsha'at's business weeks, hackathons and chamber events are not listed: none was verified from its organiser's page. Ask the incubator or support centre you work with which events matter for your sector this year.
 
 ## 4. Where the academy fits
 

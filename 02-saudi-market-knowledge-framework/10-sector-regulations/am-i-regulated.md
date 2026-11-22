@@ -3,7 +3,7 @@
 
 Last checked: 19 November 2026 · **Status: a decision method built on entries already in the source register; no regulator's licensing list was opened; awaiting a lawyer's review** · Educational, not legal advice
 
-**In English, briefly.** The same agent is unregulated in one use and licensed activity in another. This page gives a founder five questions to place a product, a way to write the answer down so a regulator, a licensed partner or an investor can read it, and four worked examples (fintech, health, real estate, retail). It adds no new legal fact: it uses what the register already holds (A15, A16, A31, A32, A62) and says where a regulator's own page must be opened (C33).
+**In English, briefly.** The same agent is unregulated in one use and licensed activity in another. This page gives a founder five questions to place a product, a way to write the answer down so a regulator, a licensed partner or an investor can read it, and four worked examples (fintech, health, real estate, retail). It adds no new legal fact: it uses what the register already holds (A15, A16, A31, A32, A62, and since 22 November 2026 the two financial sandboxes, A159 and A160) and says where a regulator's own page must be opened (C33).
 
 <div dir="rtl">
 
@@ -12,7 +12,7 @@ Last checked: 19 November 2026 · **Status: a decision method built on entries a
 | ما فيها | مصدره |
 |---|---|
 | طريقة قرار، وأمثلة توضيحية | تحليل، لا نص نظامي |
-| ما ورد من وقائع عن الجهات والبيئات التجريبية | بنود سابقة في [سجل المصادر](../../SOURCES.md): A15، A16، A31، A32، A62 |
+| ما ورد من وقائع عن الجهات والبيئات التجريبية | بنود سابقة في [سجل المصادر](../../SOURCES.md): A15، A16، A31، A32، A62، ومنذ 22 نوفمبر 2026: A159 وA160 |
 | **ما لم يتم** | فتح قائمة الأنشطة المرخّصة لدى أي جهة ([C33](../../SOURCES.md)). الأمثلة تصف **أين تسأل**، لا ما هو الحكم. مراجعة محامٍ |
 
 ## 1. الأسئلة الخمسة
@@ -58,7 +58,7 @@ Last checked: 19 November 2026 · **Status: a decision method built on entries a
 | القرار | لا يوافق ولا يرفض ولا يعيد الجدولة: يحوّل |
 | المنظِّم الأساسي | البنك المركزي، **عبر عميلك**: ستُسأل عن متطلبات الإسناد والأمن التي عليه |
 | ما يغيّر الجواب | إن صار الوكيل يقترح منتجاً مالياً لعميل بعينه، أو يوافق على طلب، أو يحصّل |
-| أين تسأل | عميلك أولاً: ما الذي تشترطه إدارة الالتزام لديه على المورّدين؟ وللبنك المركزي إطار منشور للبيئة التجريبية (A62) إن كان منتجك هو الخدمة المالية نفسها |
+| أين تسأل | عميلك أولاً: ما الذي تشترطه إدارة الالتزام لديه على المورّدين؟ وللبنك المركزي إطار منشور للبيئة التجريبية (A159) إن كان منتجك هو الخدمة المالية نفسها |
 
 ### ب. وكيل لعيادة
 
@@ -93,7 +93,7 @@ Last checked: 19 November 2026 · **Status: a decision method built on entries a
 | المسار | متى | ثمنه |
 |---|---|---|
 | **عبر شريك مرخّص** | هو يؤدي النشاط وأنت تورّد الأداة | تعتمد على شريك واحد، وتستوفي شروط الإسناد عنده |
-| **بيئة تجريبية تنظيمية** | منتجك جديد ولا إطار واضحاً له، أو تحتاج إلى اختبار تحت إشراف | وقت، وقيود على الحجم، وبلا ضمان ترخيص بعدها. بيئة التقنيات الناشئة لدى هيئة الاتصالات والفضاء والتقنية تقبل منتجات الذكاء الاصطناعي (A15) |
+| **بيئة تجريبية تنظيمية** | منتجك جديد ولا إطار واضحاً له، أو تحتاج إلى اختبار تحت إشراف | وقت، وقيود على الحجم، وبلا ضمان ترخيص بعدها. بيئة التقنيات الناشئة لدى هيئة الاتصالات والفضاء والتقنية تقبل منتجات الذكاء الاصطناعي (A15). وللبنك المركزي بيئة تجريبية تشريعية مفتوحة للتقديم طوال العام، يدخلها غير المرخَّص بخطاب قبول أو عبر شريك مرخَّص، واختبارها من 6 إلى 12 شهراً ([A159](../../SOURCES.md)). ولهيئة السوق المالية مختبر التقنية المالية لما يتصل بأعمال الأوراق المالية، بتصريح تجربة مدته سنتان ([A160](../../SOURCES.md)) |
 | **ترخيص** | أنت من يقدّم الخدمة المنظَّمة للجمهور | رأس مال، وحوكمة، وأشهر أو سنوات. [حالة Tamara](../../06-case-studies/ventures/tamara.md) مثال على شركة بُنيت حول ترخيص |
 
 مواعيد الدفعات وشروط القبول تتغير: افتح صفحة الجهة يوم تتقدم ([دليل البرامج](../06-funding-investment/funding-directory.md)، القسم ج).
