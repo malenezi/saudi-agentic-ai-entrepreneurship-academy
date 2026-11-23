@@ -248,6 +248,46 @@ class ShadowMode(unittest.TestCase):
                 report.read_log(log)
 
 
+class InventedDataset(unittest.TestCase):
+    """05-agentic-ai-lab/datasets/ecommerce-store: consistent, built, and scored as its README says."""
+
+    PACK = os.path.join(ROOT, "05-agentic-ai-lab", "datasets", "ecommerce-store")
+
+    def test_the_data_is_consistent_and_the_built_files_are_fresh(self):
+        done = subprocess.run([sys.executable, os.path.join(ROOT, "tools", "dataset_pack.py"), "check"], capture_output=True, text=True)
+        self.assertEqual(done.returncode, 0, done.stdout)
+        self.assertIn("85 messages, 24 orders, 12 products", done.stdout)
+
+    def test_an_inconsistent_message_is_reported(self):
+        import dataset_pack as pack
+        store, orders, products, messages, staff, _ = pack.load()
+        messages[0] = dict(messages[0], expected={"outcome": "answered", "accept": ["answer_order_status"]})
+        self.assertTrue(any("cites no order of this account" in p for p in pack.problems(store, orders, products, messages, staff)))
+
+    @unittest.skipUnless(NODE, "Node.js is not installed: the simulator baseline is not reproduced")
+    def test_the_simulator_baseline_is_the_one_the_readme_quotes(self):
+        import dataset_pack as pack
+        import shadow_report as report
+        with open(os.path.join(self.PACK, "requests.json"), encoding="utf-8") as f:
+            requests = json.load(f)
+        with open(os.path.join(self.PACK, "template-1-config.json"), encoding="utf-8") as f:
+            config = json.load(f)
+        workflow = os.path.join(TEMPLATES, "01-whatsapp-customer-service.n8n.json")
+        messages = pack.load()[3]
+        rows = pack.score(messages, harness(workflow, requests, config))
+        self.assertEqual((sum(r["passed"] for r in rows), len(rows)), (73, 85))
+        self.assertEqual([r["ref"] for r in rows if r["acted_alone"]], ["D-009", "D-053", "D-067", "D-083"])
+        shadow = harness(workflow, requests, dict(config, shadow_mode=True))
+        self.assertEqual([r["passed"] for r in pack.score(messages, shadow)], [r["passed"] for r in rows])
+        with tempfile.TemporaryDirectory() as tmp:
+            log = os.path.join(tmp, "shadow-log.json")
+            with open(log, "w", encoding="utf-8") as f:
+                json.dump(shadow, f, ensure_ascii=False)  # the JSON list the harness prints
+            result = report.compare(report.read_log(log), report.read_staff(os.path.join(self.PACK, "staff-record.csv")))
+        self.assertEqual((result["recorded"], result["agree"]), (85, 72))
+        self.assertEqual(result["would"], {"answered": 40, "handed": 39, "refused": 6})
+
+
 @unittest.skipUnless(NODE, "Node.js is not installed: the logic of the Code nodes is not exercised")
 class LabMatchesThePythonReference(unittest.TestCase):
     """The n8n lab is the same agent as labs/reference: same answer on every case, at every stage."""

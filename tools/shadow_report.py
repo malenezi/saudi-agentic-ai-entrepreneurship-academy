@@ -6,7 +6,7 @@
     python3 tools/shadow_report.py <shadow-log.jsonl> <staff-record.csv>
     python3 tools/shadow_report.py          # the invented sample in workflows/shadow-mode/
 
-The shadow log has one JSON object per line: the response of a template whose Config has
+The shadow log has one JSON object per line (or one JSON list): the response of a template whose Config has
 `shadow_mode: true` (it carries `shadow.ref` and `shadow.would`). The staff record is a CSV
 the customer's team fills for the same messages:
 
@@ -41,19 +41,19 @@ def would_outcome(would):
 def read_log(path):
     records = {}
     with open(path, encoding="utf-8") as f:
-        for number, line in enumerate(f, 1):
-            if not line.strip():
-                continue
-            item = json.loads(line)
-            shadow = item.get("shadow")
-            if item.get("mode") != "shadow" or not isinstance(shadow, dict):
-                raise ValueError("line %d is not a shadow-mode response" % number)
-            ref = str(shadow.get("ref") or "")
-            if not ref:
-                raise ValueError("line %d has no ref: send a `ref` with every message" % number)
-            if ref in records:
-                raise ValueError("ref %s appears twice in the shadow log" % ref)
-            records[ref] = shadow["would"]
+        text = f.read()
+    # One response per line, or the JSON list that tools/n8n_harness.js prints.
+    items = json.loads(text) if text.lstrip().startswith("[") else [json.loads(line) for line in text.splitlines() if line.strip()]
+    for number, item in enumerate(items, 1):
+        shadow = item.get("shadow")
+        if item.get("mode") != "shadow" or not isinstance(shadow, dict):
+            raise ValueError("response %d is not a shadow-mode response" % number)
+        ref = str(shadow.get("ref") or "")
+        if not ref:
+            raise ValueError("response %d has no ref: send a `ref` with every message" % number)
+        if ref in records:
+            raise ValueError("ref %s appears twice in the shadow log" % ref)
+        records[ref] = shadow["would"]
     return records
 
 
