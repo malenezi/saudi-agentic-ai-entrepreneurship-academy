@@ -33,7 +33,7 @@ Webhook -> Config -> Prepare -> Real model? -> Model (HTTP)      -> Decide -> Re
 
 | العقدة | عملها |
 |---|---|
-| **Config** | كل ما تغيّره أنت: اسم المنشأة، المحتوى المعتمد، البيانات التجريبية، `model_mode`، ومفتاح الإيقاف `stopped` |
+| **Config** | كل ما تغيّره أنت: اسم المنشأة، المحتوى المعتمد، البيانات التجريبية، `model_mode`، ومفتاح الإيقاف `stopped`، ومفتاح [وضع الظل](shadow-mode/README.md) `shadow_mode` |
 | **Prepare** | تجهّز طلب النموذج. رسالة العميل تُغلَّف بوسم وتُعامل بيانات، لا تعليمات |
 | **Simulated model** | محاكٍ بكلمات مفتاحية. ليس نموذجاً لغوياً، ويفهم أقل بكثير من نموذج حقيقي |
 | **Model (HTTP)** | أي خادم يتبع صيغة `chat/completions` المتوافقة مع OpenAI، محلياً كان أو مستضافاً |
@@ -71,6 +71,8 @@ curl -s -X POST http://localhost:5678/webhook/saaea-customer-service \
 
 **إيقاف الوكيل:** ضع `"stopped": true` في Config، فتُحال كل رسالة إلى إنسان ولا تُستدعى أداة. أو أوقف نشر سير العمل من n8n.
 
+**وضع الظل:** ضع `"shadow_mode": true` في Config، فيقرر القالب كعادته ولا يخرج منه شيء: ما كان سيفعله يُحفظ في `shadow.would` لتقارنه بما فعله الموظفون. يعالج بيانات حقيقية، فاتفاق البيانات يسبقه. التفصيل والبرنامج والعيّنة في [`shadow-mode`](shadow-mode/README.md).
+
 ## نموذج حقيقي (اختياري)
 
 في Config: اجعل `model_mode` يساوي `http`، واضبط `model_base_url` و`model_name`. الخادم المحلي لا يحتاج مفتاحاً. للمزوّد المستضاف أضف في عقدة **Model (HTTP)** اعتماداً من نوع Header Auth من داخل n8n؛ **لا تكتب المفتاح في Config ولا في أي ملف**، وضع حدّ إنفاق عند المزوّد قبل أول تشغيل. التعليمات المرسلة إلى النموذج في الحقل `instructions`، ومصدرها `src/<القالب>/instructions.md`.
@@ -93,8 +95,9 @@ curl -s -X POST http://localhost:5678/webhook/saaea-customer-service \
 | `tools/n8n_e2e.py` على نقاط الاستقبال الحية | 84 طلباً، ولا إخفاق: 47 حالة للقوالب، و35 حالة للمختبر طابقت الشيفرة المرجعية، وطلبا موافقة في المختبر |
 | مسار النموذج الحقيقي في n8n على خادم وهمي محلي | جواب سليم نُفّذ؛ جواب غير مقروء حُوّل إلى إنسان؛ خادم لا يردّ حُوّل إلى إنسان |
 | منطق العقد خارج n8n (`tests/test_n8n_workflows.py`، ضمن `make check`) | 50 حالة للقوالب، ومفتاح الإيقاف، ونموذج يهذي، ونموذج لا يردّ |
+| وضع الظل خارج n8n، 23 نوفمبر 2026 | في الحالات الخمسين لا يخرج رد ولا تحويل ولا موافقة ولا كتابة؛ حجز لا يُحفظ؛ مسودة قيد لا تُحفظ ولا تُعتمد |
 
-**ما لم نتحقق منه:** لم تُشغَّل مع نموذج لغوي حقيقي، فالتعليمات في `instructions.md` لم تُختبر. لم تُستورد من واجهة المحرر ولا على n8n Cloud ولا على إصدارات n8n 1.x. لم توصل بقناة أو تقويم أو نظام حقيقي. المحاكي لا يفهم إلا كلماته، وحالات الاختبار مختلقة وليست من رسائل عملاء. الحجوزات والمسودات تُحفظ في بيانات سير العمل للتجربة، وليست قاعدة بيانات. ولم يجرّبها مؤسس بعد.
+**ما لم نتحقق منه:** لم تُشغَّل مع نموذج لغوي حقيقي عبر عقدة HTTP في n8n (التشغيلان المسجّلان في [`real-model-runs`](real-model-runs/README.md) تمّا خارج n8n). وضع الظل لم يُشغَّل داخل n8n ولم يُجرَّب مع منشأة. لم تُستورد من واجهة المحرر ولا على n8n Cloud ولا على إصدارات n8n 1.x. لم توصل بقناة أو تقويم أو نظام حقيقي. المحاكي لا يفهم إلا كلماته، وحالات الاختبار مختلقة وليست من رسائل عملاء. الحجوزات والمسودات تُحفظ في بيانات سير العمل للتجربة، وليست قاعدة بيانات. ولم يجرّبها مؤسس بعد.
 
 ## التعديل
 
@@ -116,6 +119,7 @@ make check                               # runs every case (needs Node.js for th
 | `src/<القالب>/decide.js` | جدول الإشراف شيفرةً. وفي بعض القوالب `sim.js` و`approve.js` |
 | `src/<القالب>/instructions.md` | تعليمات النموذج الحقيقي |
 | `src/<القالب>/cases.json` | حالات الاختبار ونتيجتها المتوقعة |
+| `shadow-mode/` | دليل وضع الظل، وعيّنة مختلقة من سجل الظل وسجل الموظفين. البرنامج في `tools/shadow_report.py` |
 
 </div>
 
@@ -130,5 +134,7 @@ Five files you import into [n8n](https://docs.n8n.io) and run at once: a runnabl
 **One shape.** `Webhook -> Config -> Prepare -> Real model? -> Model (HTTP) or Simulated model -> Decide -> Respond`. The model proposes and **Decide** decides: the template's oversight table is written there as code, and model output that cannot be read does nothing. Set `model_mode` to `http` in Config to call any OpenAI-compatible endpoint; keep keys in an n8n credential, never in Config or a file.
 
 **Checked on 20 November 2026.** All six workflows (the five templates and the Course 2 lab) imported, published and ran in n8n 2.35.7 from the command line; `tools/n8n_e2e.py` sent 84 requests to the live webhooks with no failure; the HTTP model path was exercised in n8n against a local stub (a valid answer, an unreadable answer, an unreachable endpoint). **Not checked:** a real language model, the editor's import menu, n8n Cloud, n8n 1.x, any real channel or system, and use by founders.
+
+**Shadow mode (23 November 2026).** With `shadow_mode: true` in Config a template decides as usual and nothing leaves it; what it would have done is kept under `shadow.would` for comparison with the staff's record. It processes real data, so the data agreement comes first. Guide, report script and an invented sample: [`shadow-mode`](shadow-mode/README.md). Tested outside n8n only.
 
 **Changing them.** The `*.n8n.json` files are built. Edit the sources under `src/`, run `python3 tools/build_n8n_workflows.py`, then `make check`.

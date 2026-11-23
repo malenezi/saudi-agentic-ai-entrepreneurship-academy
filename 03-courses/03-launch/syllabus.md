@@ -34,7 +34,7 @@
 | 3.6 | [التجارب وخطابات النوايا](lessons/3-6-pilots-and-letters-of-intent.md) | 2 | عرض تجربة أُرسل إلى ثلاث منشآت، وسجل الردود |
 | 3.7 | [تأسيس العمل](lessons/3-7-setting-up-the-business.md) | 2 | قائمة التأسيس وأسئلتك للمحامي والمحاسب |
 
-**مواد المقرر:** [المثال المحلول](examples/worked-example-launch-pack.md) (مؤسِّسة ومتاجر وبيانات مختلقة) · [حزمة الإطلاق](templates/launch-pack-checklist.md) · [مذكرة التسعير](templates/pricing-memo.md) · [ملف أدلة المشتري](templates/buyer-evidence-pack.md) · [قائمة تأسيس العمل](templates/business-setup-checklist.md) · [المسرد](glossary.md) · [سلالم التقدير](rubrics.md) · [دليل المدرب](instructor-guide.md) · [العروض](slides/README.md) · [الاختبارات القصيرة](quizzes/README.md) · [ما لم يُعتمد ولماذا](not-adopted.md)
+**مواد المقرر:** [المثال المحلول](examples/worked-example-launch-pack.md) (مؤسِّسة ومتاجر وبيانات مختلقة) · [حزمة الإطلاق](templates/launch-pack-checklist.md) · [مذكرة التسعير](templates/pricing-memo.md) · [ملف أدلة المشتري](templates/buyer-evidence-pack.md) · [تقرير مرحلة الظل](templates/shadow-period-report.md) · [قائمة تأسيس العمل](templates/business-setup-checklist.md) · [المسرد](glossary.md) · [سلالم التقدير](rubrics.md) · [دليل المدرب](instructor-guide.md) · [العروض](slides/README.md) · [الاختبارات القصيرة](quizzes/README.md) · [ما لم يُعتمد ولماذا](not-adopted.md)
 
 **الوحدتان 3.4 و3.7 تثقيفيتان، وليستا استشارة قانونية ولا ضريبية.** ما فيهما مسنود في [سجل المصادر](../../SOURCES.md) ومعه حدوده، والنص الرسمي هو المرجع.
 
