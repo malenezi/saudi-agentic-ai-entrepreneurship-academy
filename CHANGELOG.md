@@ -10,7 +10,16 @@ Work towards v0.13. **Still true: no course has been piloted, and no lawyer or t
 - `tools/shadow_report.py` compares a shadow log with a record the customer's staff fill in (outcome, minutes, verdict on the agent's draft) and prints the counts, starting with the messages where the agent would have acted and the staff did not. It sets no threshold.
 - [`shadow-mode`](05-agentic-ai-lab/agent-templates/workflows/shadow-mode/README.md): a guide and an invented sample of twelve messages answered by the keyword simulator.
 - Lesson 3.6 has a new section 8 on a shadow period before a pilot, and Course 3 a [shadow-period report](03-courses/03-launch/templates/shadow-period-report.md) template. The lesson says that a shadow period still processes real personal data, so the data terms are signed before it starts.
-- Seven new tests. Not run inside n8n; not tried with a business.
+- Seven new tests. Not tried with a business. Run inside n8n 2.35.7 the same day on templates 1, 2 and 4: the twelve sample messages gave the published log, and a booking and an invoice draft asked for twice were not kept.
+
+### Agent templates: the webhooks ask for a token (23 November 2026)
+
+- Every Webhook node in the six workflows (the five templates and the Course 2 lab, with their two approval webhooks) now uses n8n's Header Auth and refers to one credential by name. The built files hold no secret. Until the credential exists a webhook answers 500 and runs nothing; a request with no token or a wrong one gets 403.
+- `tools/n8n_webhook_credential.py` writes a credential file with a new random token for `n8n import:credentials`; the file is in `.gitignore` and is meant to be deleted after the import. The credential can also be created in the editor.
+- `tools/n8n_e2e.py` and the lab's `evaluate_n8n.py` send the token (`--token`, or the `SAAEA_WEBHOOK_TOKEN` environment variable); the first also checks that every webhook refuses a request without it, and the second says why when it is refused.
+- **Checked inside n8n 2.35.7:** 100 requests, none failed (the 84 of v0.9 and 16 refusals); the lab's evaluator gave its baseline of 24 of 35 with the token and a plain message without it. Not checked: creating the credential in the editor, n8n Cloud, a reverse proxy or a tunnel.
+- **This changes the first run:** the workflows no longer answer straight after import. The README and the Course 2 lab give the two extra commands.
+- A token shows that the sender knows it, not that a message came from a given channel. Verifying a provider's signature belongs to the integration recipes of v0.14.
 
 ### Roadmap (23 November 2026)
 

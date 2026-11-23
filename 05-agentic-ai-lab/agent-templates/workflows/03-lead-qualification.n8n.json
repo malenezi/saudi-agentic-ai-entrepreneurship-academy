@@ -4,8 +4,8 @@
   "nodes": [
     {
       "parameters": {
-        "content": "## SAAEA agent template 3: lead qualification\n**Invented sample data. Educational. No CRM, calendar or messaging channel is connected: `tool_calls` shows what would be written.**\n\n1. **Config** holds the qualification questions, the scoring rules, the approved price range and the simulator's keywords. The sales lead writes them.\n2. `model_mode` is `simulated`: keyword matching, NOT a language model. Set `http` to call any OpenAI-compatible endpoint.\n3. **Decide** enforces the oversight table: one question at a time, approved ranges only, a specific quotation waits for a person, negotiation is refused, and \"stop\" ends contact at once.\n4. Send `{\"message\": \"...\", \"account\": \"0500000001\", \"state\": {}}` and pass back the `state` you receive: it carries the conversation. Guide: 05-agentic-ai-lab/agent-templates/workflows/README.md",
-        "height": 220,
+        "content": "## SAAEA agent template 3: lead qualification\n**Invented sample data. Educational. No CRM, calendar or messaging channel is connected: `tool_calls` shows what would be written.**\n\n1. **Config** holds the qualification questions, the scoring rules, the approved price range and the simulator's keywords. The sales lead writes them.\n2. `model_mode` is `simulated`: keyword matching, NOT a language model. Set `http` to call any OpenAI-compatible endpoint.\n3. **Decide** enforces the oversight table: one question at a time, approved ranges only, a specific quotation waits for a person, negotiation is refused, and \"stop\" ends contact at once.\n4. Send `{\"message\": \"...\", \"account\": \"0500000001\", \"state\": {}}` and pass back the `state` you receive: it carries the conversation. Guide: 05-agentic-ai-lab/agent-templates/workflows/README.md\n\n**The webhook needs a token.** It answers nothing until a Header Auth credential exists: open the Webhook node and create one (Name `X-SAAEA-Token`, Value a long random string), or run `python3 tools/n8n_webhook_credential.py`. Send the token in that header.",
+        "height": 280,
         "width": 1180
       },
       "id": "f82627eb-94ee-5e64-a4d3-ff51e4b6c301",
@@ -14,13 +14,14 @@
       "typeVersion": 1,
       "position": [
         -80,
-        -260
+        -320
       ]
     },
     {
       "parameters": {
         "httpMethod": "POST",
         "path": "saaea-lead-qualification",
+        "authentication": "headerAuth",
         "responseMode": "responseNode",
         "options": {}
       },
@@ -32,7 +33,13 @@
         0,
         0
       ],
-      "webhookId": "44c5b950-e7c5-5c1b-90dd-1bbf2b034a49"
+      "webhookId": "44c5b950-e7c5-5c1b-90dd-1bbf2b034a49",
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "saaeaWebhookTok1",
+          "name": "SAAEA webhook token"
+        }
+      }
     },
     {
       "parameters": {

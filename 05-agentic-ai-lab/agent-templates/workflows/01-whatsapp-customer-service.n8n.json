@@ -4,8 +4,8 @@
   "nodes": [
     {
       "parameters": {
-        "content": "## SAAEA agent template 1: customer service\n**Invented sample data. Educational. The messaging channel is not connected: the Webhook stands in for it.**\n\n1. **Config** holds the business name, the approved knowledge, the sample orders and the simulator's keywords. Replace them with your own approved content.\n2. `model_mode` is `simulated`: keyword matching, NOT a language model. Set `http` to call any OpenAI-compatible endpoint.\n3. **Decide** enforces the oversight table: answers only from approved knowledge, one order by its reference and only for its owner; refunds, cancellations, discounts and promises go to a person.\n4. Send `{\"message\": \"...\", \"account\": \"0500000001\", \"state\": {}}` and pass back the `state` you receive. Guide: 05-agentic-ai-lab/agent-templates/workflows/README.md",
-        "height": 220,
+        "content": "## SAAEA agent template 1: customer service\n**Invented sample data. Educational. The messaging channel is not connected: the Webhook stands in for it.**\n\n1. **Config** holds the business name, the approved knowledge, the sample orders and the simulator's keywords. Replace them with your own approved content.\n2. `model_mode` is `simulated`: keyword matching, NOT a language model. Set `http` to call any OpenAI-compatible endpoint.\n3. **Decide** enforces the oversight table: answers only from approved knowledge, one order by its reference and only for its owner; refunds, cancellations, discounts and promises go to a person.\n4. Send `{\"message\": \"...\", \"account\": \"0500000001\", \"state\": {}}` and pass back the `state` you receive. Guide: 05-agentic-ai-lab/agent-templates/workflows/README.md\n\n**The webhook needs a token.** It answers nothing until a Header Auth credential exists: open the Webhook node and create one (Name `X-SAAEA-Token`, Value a long random string), or run `python3 tools/n8n_webhook_credential.py`. Send the token in that header.",
+        "height": 280,
         "width": 1180
       },
       "id": "7aa6702e-2778-58a7-9de9-b33f511d2897",
@@ -14,13 +14,14 @@
       "typeVersion": 1,
       "position": [
         -80,
-        -260
+        -320
       ]
     },
     {
       "parameters": {
         "httpMethod": "POST",
         "path": "saaea-customer-service",
+        "authentication": "headerAuth",
         "responseMode": "responseNode",
         "options": {}
       },
@@ -32,7 +33,13 @@
         0,
         0
       ],
-      "webhookId": "abb0a057-48ef-5341-a885-603efd82365b"
+      "webhookId": "abb0a057-48ef-5341-a885-603efd82365b",
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "saaeaWebhookTok1",
+          "name": "SAAEA webhook token"
+        }
+      }
     },
     {
       "parameters": {

@@ -4,8 +4,8 @@
   "nodes": [
     {
       "parameters": {
-        "content": "## SAAEA Course 2 lab: the order-enquiry agent, low-code\n**Invented test data. Educational. Never connect this to a production system.**\n\n1. Open **Config**: it holds the stage settings, the test orders, the shipping policy and the glossary. Edit it to move between stages.\n2. `model_mode` is `simulated` by default: the **Simulated model** node matches keywords and is NOT a language model. Set it to `http` to call any OpenAI-compatible endpoint (`model_base_url`, `model_name`).\n3. The model only proposes. **Decide** enforces every limit in code: ownership, tool inputs, approval, the stop switch (`stopped`).\n4. Send `{\"message\": \"...\", \"account\": \"0500000001\"}` to the webhook. Guide: 03-courses/02-build/labs/lab-n8n-low-code.md",
-        "height": 220,
+        "content": "## SAAEA Course 2 lab: the order-enquiry agent, low-code\n**Invented test data. Educational. Never connect this to a production system.**\n\n1. Open **Config**: it holds the stage settings, the test orders, the shipping policy and the glossary. Edit it to move between stages.\n2. `model_mode` is `simulated` by default: the **Simulated model** node matches keywords and is NOT a language model. Set it to `http` to call any OpenAI-compatible endpoint (`model_base_url`, `model_name`).\n3. The model only proposes. **Decide** enforces every limit in code: ownership, tool inputs, approval, the stop switch (`stopped`).\n4. Send `{\"message\": \"...\", \"account\": \"0500000001\"}` to the webhook. Guide: 03-courses/02-build/labs/lab-n8n-low-code.md\n\n**The webhook needs a token.** It answers nothing until a Header Auth credential exists: open the Webhook node and create one (Name `X-SAAEA-Token`, Value a long random string), or run `python3 tools/n8n_webhook_credential.py`. Send the token in that header.",
+        "height": 280,
         "width": 1180
       },
       "id": "121ce045-6a29-5928-a97c-a0c061b496dc",
@@ -14,13 +14,14 @@
       "typeVersion": 1,
       "position": [
         -80,
-        -260
+        -320
       ]
     },
     {
       "parameters": {
         "httpMethod": "POST",
         "path": "saaea-order-agent",
+        "authentication": "headerAuth",
         "responseMode": "responseNode",
         "options": {}
       },
@@ -32,7 +33,13 @@
         0,
         0
       ],
-      "webhookId": "a7339b9b-a285-565d-9382-29f02c5868e5"
+      "webhookId": "a7339b9b-a285-565d-9382-29f02c5868e5",
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "saaeaWebhookTok1",
+          "name": "SAAEA webhook token"
+        }
+      }
     },
     {
       "parameters": {
@@ -160,6 +167,7 @@
       "parameters": {
         "httpMethod": "POST",
         "path": "saaea-order-agent-approve",
+        "authentication": "headerAuth",
         "responseMode": "responseNode",
         "options": {}
       },
@@ -171,7 +179,13 @@
         0,
         320
       ],
-      "webhookId": "8c537ad2-db74-5bc6-828e-aa12865795e4"
+      "webhookId": "8c537ad2-db74-5bc6-828e-aa12865795e4",
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "saaeaWebhookTok1",
+          "name": "SAAEA webhook token"
+        }
+      }
     },
     {
       "parameters": {

@@ -9,7 +9,8 @@
 
 It posts every case to the workflow's production webhook and checks the answer with the
 reference evaluator (labs/reference/order_agent/evaluate.py), so the numbers mean the same
-thing in both tracks. The workflow must be imported, published and running.
+thing in both tracks. The workflow must be imported, published and running, and its webhook
+asks for a token: pass it with --token, or set SAAEA_WEBHOOK_TOKEN once in the terminal.
 Standard library only.
 """
 import argparse
@@ -33,16 +34,27 @@ def main(argv=None):
     parser.add_argument("--cases", default="data/cases.json", help="relative to labs/reference")
     parser.add_argument("--name", default="n8n workflow, as configured")
     parser.add_argument("--failures", help="write failed cases to this CSV file")
+    parser.add_argument("--token", default=os.environ.get("SAAEA_WEBHOOK_TOKEN", ""),
+                        help="the webhook token; default: the SAAEA_WEBHOOK_TOKEN environment variable")
     args = parser.parse_args(argv)
+    if not args.token:
+        print("The webhook asks for a token. Pass --token, or set SAAEA_WEBHOOK_TOKEN (see the lab, step 1).")
+        return 2
     url = args.base.rstrip("/") + "/webhook/saaea-order-agent"
     store = Store(os.path.join(REFERENCE, "data", "orders.json"), os.path.join(REFERENCE, "data", "policy-v2-approved-only.json"))
     rows = []
     for case in load(args.cases)["cases"]:
         body = json.dumps({"message": case["message"], "account": case["account"]}).encode("utf-8")
-        request = urllib.request.Request(url, data=body, headers={"Content-Type": "application/json"})
+        request = urllib.request.Request(url, data=body, headers={"Content-Type": "application/json", "X-SAAEA-Token": args.token})
         try:
             with urllib.request.urlopen(request, timeout=60) as response:
                 result = json.load(response)
+        except urllib.error.HTTPError as error:
+            if error.code not in (403, 500):
+                raise
+            print("The workflow refused the request (HTTP %d). %s" % (error.code, "The token is not the one in n8n's credential."
+                  if error.code == 403 else "Has the Header Auth credential been created in n8n? (see the lab, step 1)"))
+            return 2
         except (urllib.error.URLError, ValueError) as error:
             print("Could not reach the workflow at %s (%s).\nIs n8n running, and is the workflow published?" % (url, error))
             return 2

@@ -3,10 +3,12 @@
 # Licensed under the Apache License, Version 2.0
 """End-to-end check of the built workflows inside a running n8n. Not part of `make check`.
 
-    python3 tools/n8n_e2e.py --base http://127.0.0.1:5678
+    python3 tools/n8n_e2e.py --base http://127.0.0.1:5678 --token <the webhook token>
 
-Before running: import the six workflows into a fresh n8n, publish them and start n8n
-(05-agentic-ai-lab/agent-templates/workflows/README.md has the commands). The script
+Before running: import the six workflows and a webhook credential into a fresh n8n, publish
+the workflows and start n8n (05-agentic-ai-lab/agent-templates/workflows/README.md has the
+commands). The script first checks that every webhook refuses a request with no token and
+one with a wrong token. The script
 posts every case of every template to its production webhook and compares the answer
 with the case's `expect`; for the Course 2 lab it compares all 35 working cases with the
 Python reference agent at the baseline stage. Cases that change Config or stand in for a
@@ -18,6 +20,7 @@ import argparse
 import json
 import os
 import sys
+import urllib.error
 import urllib.request
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -25,11 +28,27 @@ WORKFLOWS = os.path.join(ROOT, "05-agentic-ai-lab", "agent-templates", "workflow
 REFERENCE = os.path.join(ROOT, "03-courses", "02-build", "labs", "reference")
 
 
-def post(base, path, body):
-    request = urllib.request.Request("%s/webhook/%s" % (base, path), data=json.dumps(body).encode("utf-8"),
-                                     headers={"Content-Type": "application/json"})
+TOKEN = {"header": "X-SAAEA-Token", "value": ""}
+
+
+def post(base, path, body, token=None):
+    """Post with the run's token, or with `token` when one is given; an empty `token` sends no header."""
+    headers = {"Content-Type": "application/json"}
+    value = TOKEN["value"] if token is None else token
+    if value:
+        headers[TOKEN["header"]] = value
+    request = urllib.request.Request("%s/webhook/%s" % (base, path), data=json.dumps(body).encode("utf-8"), headers=headers)
     with urllib.request.urlopen(request, timeout=60) as response:
         return json.load(response)
+
+
+def status_for(base, path, token):
+    """The HTTP status a webhook gives to a request with this token ("" for none); 200 means it answered."""
+    try:
+        post(base, path, {"message": "متى تفتحون؟", "account": "0500000001"}, token=token)
+    except urllib.error.HTTPError as error:
+        return error.code
+    return 200
 
 
 def contains(expected, got):
@@ -44,8 +63,29 @@ def contains(expected, got):
 def main():
     parser = argparse.ArgumentParser(description=__doc__.split("\n")[0])
     parser.add_argument("--base", default="http://127.0.0.1:5678")
-    base = parser.parse_args().base.rstrip("/")
+    parser.add_argument("--token", default=os.environ.get("SAAEA_WEBHOOK_TOKEN", ""),
+                        help="the value of the Header Auth credential; default: SAAEA_WEBHOOK_TOKEN")
+    args = parser.parse_args()
+    if not args.token:
+        parser.error("pass --token or set SAAEA_WEBHOOK_TOKEN")
+    base = args.base.rstrip("/")
+    TOKEN["value"] = args.token
     failed = ran = skipped = 0
+    paths = ["saaea-order-agent", "saaea-order-agent-approve"]
+    for name in sorted(os.listdir(os.path.join(WORKFLOWS, "src"))):
+        folder = os.path.join(WORKFLOWS, "src", name)
+        if os.path.isfile(os.path.join(folder, "spec.json")):
+            with open(os.path.join(folder, "spec.json"), encoding="utf-8") as f:
+                paths.append(json.load(f)["webhook_path"])
+            if os.path.isfile(os.path.join(folder, "approve.js")):
+                paths.append(paths[-1] + "-approve")
+    for path in paths:
+        for token in ("", "not-the-token"):
+            ran += 1
+            status = status_for(base, path, token)
+            if status != 403:
+                failed += 1
+                print("FAIL %s answered %s to a request with %s" % (path, status, "a wrong token" if token else "no token"))
     for name in sorted(os.listdir(os.path.join(WORKFLOWS, "src"))):
         folder = os.path.join(WORKFLOWS, "src", name)
         if not os.path.isfile(os.path.join(folder, "cases.json")):

@@ -4,8 +4,8 @@
   "nodes": [
     {
       "parameters": {
-        "content": "## SAAEA agent template 5: tender summariser\n**Invented sample data. Educational, not procurement or legal advice. No document reader, portal or calendar is connected.**\n\n1. **Config** holds the company profile: the evidence you actually have for each requirement key, the gaps you know of, and `requirement_keys`: the words that tie a requirement to a profile entry, written by your bid team.\n2. `model_mode` is `simulated`: it reads labelled lines and is NOT a language model. Long, unlabelled or scanned documents need `http` and a real model, which this workflow has not been tested with.\n3. **Decide** keeps a fact only if its text is on the page it cites, marks the rest \"غير مذكور\", and never marks a requirement as met without evidence in the profile. The decision to bid is management's.\n4. Send `{\"message\": \"<document text with [[صفحة N]] markers>\"}`. Read only documents you have already obtained, under the portal's terms. Guide: 05-agentic-ai-lab/agent-templates/workflows/README.md",
-        "height": 220,
+        "content": "## SAAEA agent template 5: tender summariser\n**Invented sample data. Educational, not procurement or legal advice. No document reader, portal or calendar is connected.**\n\n1. **Config** holds the company profile: the evidence you actually have for each requirement key, the gaps you know of, and `requirement_keys`: the words that tie a requirement to a profile entry, written by your bid team.\n2. `model_mode` is `simulated`: it reads labelled lines and is NOT a language model. Long, unlabelled or scanned documents need `http` and a real model, which this workflow has not been tested with.\n3. **Decide** keeps a fact only if its text is on the page it cites, marks the rest \"غير مذكور\", and never marks a requirement as met without evidence in the profile. The decision to bid is management's.\n4. Send `{\"message\": \"<document text with [[صفحة N]] markers>\"}`. Read only documents you have already obtained, under the portal's terms. Guide: 05-agentic-ai-lab/agent-templates/workflows/README.md\n\n**The webhook needs a token.** It answers nothing until a Header Auth credential exists: open the Webhook node and create one (Name `X-SAAEA-Token`, Value a long random string), or run `python3 tools/n8n_webhook_credential.py`. Send the token in that header.",
+        "height": 280,
         "width": 1180
       },
       "id": "204b9255-b2a5-5ace-bc8f-e5a86e47ba21",
@@ -14,13 +14,14 @@
       "typeVersion": 1,
       "position": [
         -80,
-        -260
+        -320
       ]
     },
     {
       "parameters": {
         "httpMethod": "POST",
         "path": "saaea-tender-summariser",
+        "authentication": "headerAuth",
         "responseMode": "responseNode",
         "options": {}
       },
@@ -32,7 +33,13 @@
         0,
         0
       ],
-      "webhookId": "661e6b97-4bf2-5321-a654-4b1c5132f0b7"
+      "webhookId": "661e6b97-4bf2-5321-a654-4b1c5132f0b7",
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "saaeaWebhookTok1",
+          "name": "SAAEA webhook token"
+        }
+      }
     },
     {
       "parameters": {

@@ -4,8 +4,8 @@
   "nodes": [
     {
       "parameters": {
-        "content": "## SAAEA agent template 4: invoice reconciliation\n**Invented sample data. Educational, not accounting or tax advice. No ledger, bank or document reader is connected.**\n\n1. **Config** holds the supplier list with its Arabic and English spellings, sample bank lines, the tolerance and `vat_rate_set_by_accountant` (a sample value for the invented invoices: your accountant sets the rate and its exceptions).\n2. `model_mode` is `simulated`: it reads labelled lines and is NOT a language model. Set `http` to call any OpenAI-compatible endpoint for extraction.\n3. **Decide** does the arithmetic, duplicate, supplier and bank checks by rule and writes a draft. Posting waits for the accountant at the approval webhook. There is no tool to pay or to file.\n4. Send `{\"message\": \"<invoice text>\"}`; approve with `{\"draft\": \"D-001\", \"approved_by\": \"name\"}` at `/saaea-invoice-reconciliation-approve`. Guide: 05-agentic-ai-lab/agent-templates/workflows/README.md",
-        "height": 220,
+        "content": "## SAAEA agent template 4: invoice reconciliation\n**Invented sample data. Educational, not accounting or tax advice. No ledger, bank or document reader is connected.**\n\n1. **Config** holds the supplier list with its Arabic and English spellings, sample bank lines, the tolerance and `vat_rate_set_by_accountant` (a sample value for the invented invoices: your accountant sets the rate and its exceptions).\n2. `model_mode` is `simulated`: it reads labelled lines and is NOT a language model. Set `http` to call any OpenAI-compatible endpoint for extraction.\n3. **Decide** does the arithmetic, duplicate, supplier and bank checks by rule and writes a draft. Posting waits for the accountant at the approval webhook. There is no tool to pay or to file.\n4. Send `{\"message\": \"<invoice text>\"}`; approve with `{\"draft\": \"D-001\", \"approved_by\": \"name\"}` at `/saaea-invoice-reconciliation-approve`. Guide: 05-agentic-ai-lab/agent-templates/workflows/README.md\n\n**The webhook needs a token.** It answers nothing until a Header Auth credential exists: open the Webhook node and create one (Name `X-SAAEA-Token`, Value a long random string), or run `python3 tools/n8n_webhook_credential.py`. Send the token in that header.",
+        "height": 280,
         "width": 1180
       },
       "id": "30455671-058d-525f-92cb-79bab435a7f1",
@@ -14,13 +14,14 @@
       "typeVersion": 1,
       "position": [
         -80,
-        -260
+        -320
       ]
     },
     {
       "parameters": {
         "httpMethod": "POST",
         "path": "saaea-invoice-reconciliation",
+        "authentication": "headerAuth",
         "responseMode": "responseNode",
         "options": {}
       },
@@ -32,7 +33,13 @@
         0,
         0
       ],
-      "webhookId": "24fd9128-dc06-55f3-8f1d-3efe566a2389"
+      "webhookId": "24fd9128-dc06-55f3-8f1d-3efe566a2389",
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "saaeaWebhookTok1",
+          "name": "SAAEA webhook token"
+        }
+      }
     },
     {
       "parameters": {
@@ -160,6 +167,7 @@
       "parameters": {
         "httpMethod": "POST",
         "path": "saaea-invoice-reconciliation-approve",
+        "authentication": "headerAuth",
         "responseMode": "responseNode",
         "options": {}
       },
@@ -171,7 +179,13 @@
         0,
         320
       ],
-      "webhookId": "e0af94df-2c2a-54be-aa7b-bb525a7dc53a"
+      "webhookId": "e0af94df-2c2a-54be-aa7b-bb525a7dc53a",
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "saaeaWebhookTok1",
+          "name": "SAAEA webhook token"
+        }
+      }
     },
     {
       "parameters": {
