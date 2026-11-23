@@ -122,6 +122,30 @@
 
 **حين تتحول التجربة إلى عقد بسعر ثابت** ستحتاج إلى ثلاثة أسطر: ما الثابت، وما المتغير، وكيف يُستبدل المتغير. شرحها في [دليل المؤسس للتخطيط، البند 7](../../founder-planning-guide.md#7-الهجين-في-اتفاق-مع-عميل).
 
+## 8. وضع الظل: الوكيل يعمل ولا يرسل شيئاً
+
+عميل متردد لن يدع وكيلاً لم يره يردّ على عملائه. **وضع الظل (Shadow mode)** مرحلة قصيرة تسبق التشغيل أو تفتتح التجربة: يستقبل الوكيل الرسائل الحقيقية نفسها التي يستقبلها الموظفون، ويسجّل ما **كان سيفعله**، ولا يرسل رداً ولا يكتب في نظام ولا يطلب موافقة. الموظفون يعملون كعادتهم. وفي نهاية المدة يُقارن السجلّان.
+
+| ما يُظهره | ما لا يُظهره |
+|---|---|
+| كم رسالة كان الوكيل سيتولاها وحده، وكم كان سيحيلها | أن عملاء العميل سيقبلون رداً من وكيل: لم يصلهم رد |
+| أين كان سيتصرف حيث أحال الموظف أو رفض. هذا أهم صف في التقرير | أداءه في محادثة من عدة رسائل: كل رسالة تُحكم كما وردت |
+| حكم الموظف على مسوداته، رسالةً رسالة | وقتاً موفَّراً: وقت مراجعة ردود الوكيل لم يُطرح |
+
+**خمسة قرارات قبل أول رسالة:**
+
+1. **اتفاق البيانات أولاً.** وضع الظل يعالج بيانات عملاء حقيقيين وإن لم يرسل شيئاً: الوكيل يقرأ الرسالة ويبحث في الطلبات، وإن كان النموذج عند مزوّد فالرسائل تصل إليه. شروط البند 4 تُكتب وتُوقَّع قبل البدء، لا بعد نجاح المرحلة.
+2. **مدة لها نهاية.** قصيرة، بتاريخ انتهاء، وتشمل أيام الذروة وأيام الهدوء.
+3. **ما يسجّله الموظف.** لكل رسالة في العيّنة: ماذا فعل (أجاب، أحال، رفض)، وكم دقيقة أخذت، وحكمه على مسودة الوكيل. سطر واحد للرسالة، وإلا لن يُملأ السجل.
+4. **من يعدّ.** الأرقام تُحسب من السجلّين معاً، سجل الوكيل وسجل الموظفين، لا من جدولك وحده.
+5. **قاعدة القرار.** كما في البند 3: الرقم الذي تنتقلان عنده إلى المرحلة التالية، مكتوباً قبل أن يرى أحد النتائج.
+
+**وما بعد الظل ليس وكيلاً يعمل وحده.** المرحلة التالية تشغيل يوافق فيه موظف على كل رد، ثم عيّنة، كما في صف «الرقابة» من البند 2.
+
+في التقرير ابدأ بما كان الوكيل سيخطئ فيه. رسالة واحدة كان سيتصرف فيها حيث أحالها الموظف تهمّ العميل أكثر من نسبة التطابق كلها، وهي ما سيسألك عنه.
+
+**الأدوات:** مفتاح `shadow_mode` في [القوالب القابلة للتشغيل](../../../05-agentic-ai-lab/agent-templates/workflows/shadow-mode/README.md) مع برنامج يقارن السجلّين وعيّنة مختلقة، وقالب [تقرير مرحلة الظل](../templates/shadow-period-report.md). لم تُجرَّب بعد مع منشأة.
+
 ## النشاط (60 دقيقة)
 
 1. اكتب عرض تجربة كاملاً بعناصره كلها من [القالب](../../../04-entrepreneur-toolkit/09-pilot-and-loi-outline.md)، لمنشأة محددة من قائمتك في الوحدة 3.5.
@@ -153,6 +177,7 @@
 - عدّ خطاب النوايا إيراداً.
 - بيانات حقيقية قبل اتفاق مكتوب على معالجتها.
 - تمديد ثانٍ وثالث.
+- بدء وضع الظل على رسائل حقيقية قبل اتفاق البيانات، بحجة أن الوكيل لا يرسل شيئاً.
 - عدم تسجيل الرفض وسببه.
 
 ## اختبر فهمك
@@ -165,4 +190,4 @@
 
 ---
 
-**English summary.** A pilot is a short agreement with a start, an end and one number that judges it; a letter of intent records serious interest and is not revenue. Pilots should be paid, even modestly, so that the decision passes the person who holds the budget; three pricing forms are given with their traps. The offer is two pages and ten decisions: scope and what is out of scope, duration, measure and baseline, price, what each side provides, data terms, oversight, what follows, and exit. A good measure is one number with a baseline, an agreed source of truth, and meaning for the customer, with a decision rule written before the start. Data terms come ready from Module 3.4. An LOI is useful when it states conditions that turn into a purchase order, is signed by someone with authority and has a validity period; evidence for investors is ranked from a paying customer down to "they said they were interested". The weekly report is the strongest renewal document, and a pilot ends in conversion, one extension with one change, or a stop with the reason recorded. Not legal advice; binding wording belongs with a lawyer.
+**English summary.** A pilot is a short agreement with a start, an end and one number that judges it; a letter of intent records serious interest and is not revenue. Pilots should be paid, even modestly, so that the decision passes the person who holds the budget; three pricing forms are given with their traps. The offer is two pages and ten decisions: scope and what is out of scope, duration, measure and baseline, price, what each side provides, data terms, oversight, what follows, and exit. A good measure is one number with a baseline, an agreed source of truth, and meaning for the customer, with a decision rule written before the start. Data terms come ready from Module 3.4. An LOI is useful when it states conditions that turn into a purchase order, is signed by someone with authority and has a validity period; evidence for investors is ranked from a paying customer down to "they said they were interested". The weekly report is the strongest renewal document, and a pilot ends in conversion, one extension with one change, or a stop with the reason recorded. A cautious customer can be offered a shadow period first: the agent receives the same real messages as the staff, records what it would have done and sends nothing, and the two records are compared; it still processes real personal data, so the data terms are signed before it starts, and what follows it is a stage where a person approves every reply. Not legal advice; binding wording belongs with a lawyer.

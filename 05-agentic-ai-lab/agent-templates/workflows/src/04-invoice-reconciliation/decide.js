@@ -8,7 +8,7 @@ const prepared = $('Prepare').first().json;
 const understood = readModel($input.first().json);
 //#include result
 result.intent = 'reconcile';
-const store = $getWorkflowStaticData('global');
+const store = storedData(); // a discarded copy in shadow mode
 store.seen = store.seen || [];
 store.drafts = store.drafts || {};
 

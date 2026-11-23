@@ -8,6 +8,7 @@
   "model_base_url": "http://localhost:11434/v1",
   "model_name": "set-the-model-name-your-endpoint-expects",
   "stopped": false,
+  "shadow_mode": false,
   "normalise_digits": true,
   "vat_rate_set_by_accountant": 0.15,
   "tolerance_halalas": 1,

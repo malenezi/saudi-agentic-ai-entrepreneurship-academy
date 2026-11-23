@@ -18,6 +18,7 @@ return [{
   json: {
     message,
     account: String(body.account ?? ''),
+    ref: String(body.ref ?? ''), // the caller's own id for this message; used by the shadow record
     state: body.state && typeof body.state === 'object' ? body.state : {},
     stopped,
     route: !stopped && cfg.model_mode === 'http' ? 'http' : 'sim',

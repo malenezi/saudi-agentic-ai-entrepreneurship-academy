@@ -1,5 +1,21 @@
 # Changelog
 
+## Unreleased
+
+Work towards v0.13. **Still true: no course has been piloted, and no lawyer or tax adviser has reviewed the framework.**
+
+### Agent templates: shadow mode (23 November 2026)
+
+- A `shadow_mode` switch in the Config of the five runnable templates. When it is on, a template decides as usual and nothing leaves it: no reply draft, handover, approval request, staff notice or write. What it would have done is kept under `shadow.would`, with the caller's `ref` for the message. Templates 2 and 4 work on a discarded copy of their stored data, so no booking or draft is kept and nothing can be approved.
+- `tools/shadow_report.py` compares a shadow log with a record the customer's staff fill in (outcome, minutes, verdict on the agent's draft) and prints the counts, starting with the messages where the agent would have acted and the staff did not. It sets no threshold.
+- [`shadow-mode`](05-agentic-ai-lab/agent-templates/workflows/shadow-mode/README.md): a guide and an invented sample of twelve messages answered by the keyword simulator.
+- Lesson 3.6 has a new section 8 on a shadow period before a pilot, and Course 3 a [shadow-period report](03-courses/03-launch/templates/shadow-period-report.md) template. The lesson says that a shadow period still processes real personal data, so the data terms are signed before it starts.
+- Seven new tests. Not run inside n8n; not tried with a business.
+
+### Roadmap (23 November 2026)
+
+The next three iterations are set out in the [roadmap](ROADMAP.md): v0.13 (shadow mode, webhook authentication, output repair, an invented dataset pack, pilot terms), v0.14 (integration recipes), v0.15 (sector packs after a first cohort). Recruiting a first cohort and a legal reviewer runs beside them.
+
 ## v0.12 (2026-11-22)
 
 A second batch of the knowledge framework restored from pages opened in a browser, and the first run of the agent templates with a local model.

@@ -82,6 +82,8 @@ class BuiltFiles(unittest.TestCase):
             config = json.loads(next(n for n in workflow["nodes"] if n["name"] == "Config")["parameters"]["jsonOutput"])
             self.assertEqual(config["model_mode"], "simulated", path)
             self.assertFalse(config["stopped"], path)
+            if path != LAB:
+                self.assertIs(config["shadow_mode"], False, path)
             self.assertTrue(all("credentials" not in n for n in workflow["nodes"]), path)
             for marker in ("sk-", "Bearer ", "api_key", "apiKey"):
                 self.assertNotIn(marker, text, path)
@@ -126,6 +128,89 @@ class TemplateLogic(unittest.TestCase):
             got = harness(path, [{"message": "ما حالة طلبي رقم 84522؟", "account": "0500000001"}], {"model_mode": "http"})[0]
             self.assertEqual(got["pending_approval"], [], path)
             self.assertEqual(got["tool_calls"], [], path)
+
+
+@unittest.skipUnless(NODE, "Node.js is not installed: the logic of the Code nodes is not exercised")
+class ShadowMode(unittest.TestCase):
+    """With `shadow_mode` on, a template observes: nothing is sent, asked for, written or kept."""
+
+    SILENT = {"mode": "shadow", "action": "shadow_observed", "reply_draft": "", "handover": None,
+              "pending_approval": [], "notify_staff": [], "tool_calls": []}
+
+    def test_nothing_leaves_any_template_on_any_case(self):
+        total = 0
+        for path in BUILT[:-1]:
+            name = os.path.basename(path)[:-len(".n8n.json")]
+            with open(os.path.join(TEMPLATES, "src", name, "cases.json"), encoding="utf-8") as f:
+                cases = json.load(f)["cases"]
+            for case, got in zip(cases, harness(path, cases, {"shadow_mode": True})):
+                total += 1
+                if "_approve" in case:  # no draft was kept, so there is nothing to approve
+                    self.assertIs(got["ok"], False, name)
+                    continue
+                self.assertTrue(contains(self.SILENT, got), "%s: %s" % (name, got))
+                self.assertEqual(got["state"], case.get("state", {}), name)
+                self.assertTrue(got["shadow"]["would"]["action"], name)
+        self.assertEqual(total, 50)
+
+    def test_the_record_holds_what_the_template_would_have_done(self):
+        for name in ("01-whatsapp-customer-service", "05-tender-summariser"):  # the two that keep no data between requests
+            path = os.path.join(TEMPLATES, name + ".n8n.json")
+            with open(os.path.join(TEMPLATES, "src", name, "cases.json"), encoding="utf-8") as f:
+                cases = json.load(f)["cases"]
+            for case, got in zip(cases, harness(path, cases, {"shadow_mode": True})):
+                self.assertTrue(contains(case["expect"], got["shadow"]["would"]), "%s: %s\n%s" % (name, case["expect"], got))
+
+    def test_a_booking_is_not_kept(self):
+        path = os.path.join(TEMPLATES, "02-booking-assistant.n8n.json")
+        with open(path, encoding="utf-8") as f:
+            config = json.loads(next(n for n in json.load(f)["nodes"] if n["name"] == "Config")["parameters"]["jsonOutput"])
+        service = config["services"][0]
+        slot = next(s["id"] for s in config["slots"] if s["service"] == service)
+        choose = {"message": "1", "account": "0500000009", "state": {"greeted": True, "offered": [slot]}, "ref": "M-1",
+                  "_model_response": {"understanding": {"intent": "confirm", "choice": 1}}}
+        first, second = harness(path, [choose, choose], {"shadow_mode": True, "model_mode": "http"})
+        self.assertEqual(first["shadow"]["would"]["action"], "booked")
+        self.assertEqual(second["shadow"]["would"], first["shadow"]["would"])
+        self.assertEqual(first["shadow"]["ref"], "M-1")
+        live = harness(path, [choose, choose], {"model_mode": "http"})
+        self.assertEqual([r["action"] for r in live], ["booked", "slot_unavailable"])
+
+    def test_an_invoice_draft_is_not_kept_and_cannot_be_posted(self):
+        path = os.path.join(TEMPLATES, "04-invoice-reconciliation.n8n.json")
+        with open(os.path.join(TEMPLATES, "src", "04-invoice-reconciliation", "cases.json"), encoding="utf-8") as f:
+            cases = json.load(f)["cases"]
+        clean = next(c for c in cases if c["expect"].get("action") == "draft_entry")
+        got = harness(path, [clean, clean, {"_approve": {"draft": "D-001", "approved_by": "نورة"}}], {"shadow_mode": True})
+        self.assertEqual([g["shadow"]["would"]["action"] for g in got[:2]], ["draft_entry", "draft_entry"])
+        self.assertEqual(got[2], {"ok": False, "error": "unknown draft"})
+
+    def test_the_sample_report_gives_the_figures_the_guide_quotes(self):
+        import shadow_report as report
+        result = report.compare(report.read_log(os.path.join(TEMPLATES, "shadow-mode", "sample-shadow-log.jsonl")),
+                                report.read_staff(os.path.join(TEMPLATES, "shadow-mode", "sample-staff-record.csv")))
+        self.assertEqual((result["observed"], result["recorded"], result["agree"]), (12, 11, 9))
+        self.assertEqual(result["would"], {"answered": 5, "handed": 4, "refused": 2})
+        self.assertEqual((result["drafts_ok"], result["drafts_judged"]), (4, 5))
+        self.assertEqual(result["acted_where_staff_did_not"], [("M-012", "ask_order_ref", "handed")])
+        self.assertEqual((result["movable_messages"], result["movable_minutes"], result["staff_minutes"]), (4, 12, 39))
+
+    def test_the_sample_log_is_what_template_1_gives_today(self):
+        path = os.path.join(TEMPLATES, "shadow-mode", "sample-shadow-log.jsonl")
+        with open(path, encoding="utf-8") as f:
+            recorded = [json.loads(line) for line in f if line.strip()]
+        with open(os.path.join(TEMPLATES, "shadow-mode", "sample-messages.json"), encoding="utf-8") as f:
+            messages = json.load(f)
+        self.assertEqual(harness(os.path.join(TEMPLATES, "01-whatsapp-customer-service.n8n.json"), messages, {"shadow_mode": True}), recorded)
+
+    def test_a_log_that_is_not_from_shadow_mode_is_refused(self):
+        import shadow_report as report
+        with tempfile.TemporaryDirectory() as tmp:
+            log = os.path.join(tmp, "log.jsonl")
+            with open(log, "w", encoding="utf-8") as f:
+                f.write(json.dumps({"action": "answer", "reply_draft": "x"}) + "\n")
+            with self.assertRaises(ValueError):
+                report.read_log(log)
 
 
 @unittest.skipUnless(NODE, "Node.js is not installed: the logic of the Code nodes is not exercised")

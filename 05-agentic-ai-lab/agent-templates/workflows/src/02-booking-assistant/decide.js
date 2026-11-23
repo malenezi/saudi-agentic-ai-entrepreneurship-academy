@@ -17,7 +17,7 @@ const say = (text) => greeting + text;
 result.state = { greeted: true };
 
 // The calendar "tool". Bookings made in this workflow are kept in workflow static data.
-const store = $getWorkflowStaticData('global');
+const store = storedData(); // a discarded copy in shadow mode
 store.bookings = store.bookings || {};
 const now = Date.parse(cfg.now);
 const bookings = () => Object.assign({}, cfg.bookings, store.bookings);

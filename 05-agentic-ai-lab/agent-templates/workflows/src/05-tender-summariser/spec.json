@@ -8,6 +8,7 @@
   "model_base_url": "http://localhost:11434/v1",
   "model_name": "set-the-model-name-your-endpoint-expects",
   "stopped": false,
+  "shadow_mode": false,
   "normalise_digits": false,
   "company_profile": {
    "name": "شركة البيان للحلول الرقمية (اسم مختلق)",

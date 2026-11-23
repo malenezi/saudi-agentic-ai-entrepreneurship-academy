@@ -1,0 +1,12 @@
+ref,staff_outcome,staff_minutes,draft_ok,note
+M-001,answered,2,yes,
+M-002,answered,4,yes,
+M-003,refused,3,,
+M-004,handed,6,,
+M-005,handed,5,,
+M-006,refused,2,,
+M-007,answered,2,,الموظفة تعرف عدد الفروع والمحتوى المعتمد لا يذكره
+M-008,answered,3,yes,
+M-009,answered,3,yes,
+M-010,handed,1,,
+M-012,handed,8,no,شكوى عن طلب مكسور وليست سؤالاً عن حالة الطلب
