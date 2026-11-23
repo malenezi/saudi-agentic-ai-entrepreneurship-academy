@@ -22,6 +22,7 @@ npm install n8n                                   # n8n 2.35 needs Node.js 22.22
 npx n8n import:workflow --input=03-courses/02-build/labs/n8n/order-agent.n8n.json
 python3 tools/n8n_webhook_credential.py           # prints a new token once: keep it for the next steps
 npx n8n import:credentials --input=saaea-webhook-credential.json && rm saaea-webhook-credential.json
+export SAAEA_WEBHOOK_TOKEN='<the token>'          # in every terminal you use below; the evaluator reads it
 npx n8n list:workflow                             # shows the workflow id
 npx n8n publish:workflow --id=<the id>
 npx n8n start                                     # leave it running; the editor is at http://localhost:5678
@@ -52,7 +53,7 @@ Webhook -> Config -> Prepare -> Real model? -> Model (HTTP)      -> Decide -> Re
 
 ```bash
 curl -s -X POST http://localhost:5678/webhook/saaea-order-agent \
-  -H 'Content-Type: application/json' -H 'X-SAAEA-Token: <the token>' \
+  -H 'Content-Type: application/json' -H "X-SAAEA-Token: $SAAEA_WEBHOOK_TOKEN" \
   -d '{"message": "ما حالة طلبي رقم 84522؟", "account": "0500000001"}'
 ```
 
@@ -99,11 +100,11 @@ python3 03-courses/02-build/labs/n8n/evaluate_n8n.py --cases data/heldout.json
 
 ```bash
 curl -s -X POST http://localhost:5678/webhook/saaea-order-agent \
-  -H 'Content-Type: application/json' -H 'X-SAAEA-Token: <the token>' -d '{"message": "وين طلبي 84521", "account": "0500000001"}'
+  -H 'Content-Type: application/json' -H "X-SAAEA-Token: $SAAEA_WEBHOOK_TOKEN" -d '{"message": "وين طلبي 84521", "account": "0500000001"}'
 curl -s -X POST http://localhost:5678/webhook/saaea-order-agent-approve \
-  -H 'Content-Type: application/json' -H 'X-SAAEA-Token: <the token>' -d '{"order_id": "84521", "approved_by": ""}'
+  -H 'Content-Type: application/json' -H "X-SAAEA-Token: $SAAEA_WEBHOOK_TOKEN" -d '{"order_id": "84521", "approved_by": ""}'
 curl -s -X POST http://localhost:5678/webhook/saaea-order-agent-approve \
-  -H 'Content-Type: application/json' -H 'X-SAAEA-Token: <the token>' -d '{"order_id": "84521", "approved_by": "اسمك"}'
+  -H 'Content-Type: application/json' -H "X-SAAEA-Token: $SAAEA_WEBHOOK_TOKEN" -d '{"order_id": "84521", "approved_by": "اسمك"}'
 ```
 
 <div dir="rtl">

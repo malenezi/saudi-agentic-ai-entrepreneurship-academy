@@ -116,6 +116,13 @@ class BuiltFiles(unittest.TestCase):
         with open(os.path.join(ROOT, ".gitignore"), encoding="utf-8") as f:
             self.assertIn(maker.DEFAULT, f.read().split())
 
+    def test_the_lab_evaluator_asks_for_the_token_before_it_sends_anything(self):
+        env = {k: v for k, v in os.environ.items() if k != "SAAEA_WEBHOOK_TOKEN"}
+        done = subprocess.run([sys.executable, os.path.join(ROOT, "03-courses", "02-build", "labs", "n8n", "evaluate_n8n.py"),
+                               "--base", "http://127.0.0.1:9"], capture_output=True, text=True, env=env)
+        self.assertEqual(done.returncode, 2)
+        self.assertIn("SAAEA_WEBHOOK_TOKEN", done.stdout)
+
     def test_the_model_never_reaches_a_tool_except_through_decide(self):
         for path in BUILT:
             with open(path, encoding="utf-8") as f:

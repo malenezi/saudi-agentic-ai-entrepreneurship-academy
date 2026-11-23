@@ -32,6 +32,7 @@ TOKEN = {"header": "X-SAAEA-Token", "value": ""}
 
 
 def post(base, path, body, token=None):
+    """Post with the run's token, or with `token` when one is given; an empty `token` sends no header."""
     headers = {"Content-Type": "application/json"}
     value = TOKEN["value"] if token is None else token
     if value:
@@ -41,19 +42,10 @@ def post(base, path, body, token=None):
         return json.load(response)
 
 
-def refused(base, path, token):
-    """The HTTP status a webhook gives to a request with no token or a wrong one; 200 means it answered."""
+def status_for(base, path, token):
+    """The HTTP status a webhook gives to a request with this token ("" for none); 200 means it answered."""
     try:
         post(base, path, {"message": "متى تفتحون؟", "account": "0500000001"}, token=token)
-    except urllib.error.HTTPError as error:
-        return error.code
-    return 200
-
-
-def refused_without_token(base, path):
-    request = urllib.request.Request("%s/webhook/%s" % (base, path), data=b"{}", headers={"Content-Type": "application/json"})
-    try:
-        urllib.request.urlopen(request, timeout=60).close()
     except urllib.error.HTTPError as error:
         return error.code
     return 200
@@ -71,8 +63,11 @@ def contains(expected, got):
 def main():
     parser = argparse.ArgumentParser(description=__doc__.split("\n")[0])
     parser.add_argument("--base", default="http://127.0.0.1:5678")
-    parser.add_argument("--token", required=True, help="the value of the Header Auth credential")
+    parser.add_argument("--token", default=os.environ.get("SAAEA_WEBHOOK_TOKEN", ""),
+                        help="the value of the Header Auth credential; default: SAAEA_WEBHOOK_TOKEN")
     args = parser.parse_args()
+    if not args.token:
+        parser.error("pass --token or set SAAEA_WEBHOOK_TOKEN")
     base = args.base.rstrip("/")
     TOKEN["value"] = args.token
     failed = ran = skipped = 0
@@ -87,7 +82,7 @@ def main():
     for path in paths:
         for token in ("", "not-the-token"):
             ran += 1
-            status = refused(base, path, token) if token else refused_without_token(base, path)
+            status = status_for(base, path, token)
             if status != 403:
                 failed += 1
                 print("FAIL %s answered %s to a request with %s" % (path, status, "a wrong token" if token else "no token"))

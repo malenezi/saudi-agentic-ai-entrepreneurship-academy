@@ -16,8 +16,8 @@ Work towards v0.13. **Still true: no course has been piloted, and no lawyer or t
 
 - Every Webhook node in the six workflows (the five templates and the Course 2 lab, with their two approval webhooks) now uses n8n's Header Auth and refers to one credential by name. The built files hold no secret. Until the credential exists a webhook answers 500 and runs nothing; a request with no token or a wrong one gets 403.
 - `tools/n8n_webhook_credential.py` writes a credential file with a new random token for `n8n import:credentials`; the file is in `.gitignore` and is meant to be deleted after the import. The credential can also be created in the editor.
-- `tools/n8n_e2e.py` takes `--token` and first checks that every webhook refuses a request without the token.
-- **Checked inside n8n 2.35.7:** 100 requests, none failed (the 84 of v0.9 and 16 refusals). Not checked: creating the credential in the editor, n8n Cloud, a reverse proxy or a tunnel.
+- `tools/n8n_e2e.py` and the lab's `evaluate_n8n.py` send the token (`--token`, or the `SAAEA_WEBHOOK_TOKEN` environment variable); the first also checks that every webhook refuses a request without it, and the second says why when it is refused.
+- **Checked inside n8n 2.35.7:** 100 requests, none failed (the 84 of v0.9 and 16 refusals); the lab's evaluator gave its baseline of 24 of 35 with the token and a plain message without it. Not checked: creating the credential in the editor, n8n Cloud, a reverse proxy or a tunnel.
 - **This changes the first run:** the workflows no longer answer straight after import. The README and the Course 2 lab give the two extra commands.
 - A token shows that the sender knows it, not that a message came from a given channel. Verifying a provider's signature belongs to the integration recipes of v0.14.
 
