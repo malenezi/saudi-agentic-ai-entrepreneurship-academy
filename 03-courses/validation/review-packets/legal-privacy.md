@@ -9,7 +9,7 @@
 - Lesson 3.4 (compliance readiness) in full: the main item
 - Lesson 4.3, sections on the Saudi references and on disclosure
 - Lesson 1.3 section 7, lesson 1.4 sections 5 and 6 (personal data during observation, consent script), lesson 2.4 (transfer outside the Kingdom)
-- Lesson 3.6 (pilot offers and letters of intent) and the pilot and LOI outline in the Founder Toolkit
+- Lesson 3.6 (pilot offers and letters of intent, with section 8 on a shadow period), and in the Founder Toolkit the pilot and LOI outline (template 9) and the paid pilot terms sheet (template 14)
 - The PDPL founder guide and the compliance toolkit templates the lessons point to
 - Section D of SOURCES.md: eight regulatory statements marked as pending legal review
 
@@ -29,6 +29,8 @@ For each claim in section 4: **confirm**, **correct** (with the instrument and a
 8. Does the pilot and LOI outline create obligations a founder would not expect? What must be added before it is used as a template?
 9. Is anything in these lessons likely to be read as legal advice despite the disclaimers? Where should a "see a lawyer" line be added?
 10. What is missing that a first-time founder selling to Saudi businesses must be told?
+11. The paid pilot terms sheet (template 14) is meant as a record of a discussion and a brief for the founder's lawyer, with no position proposed on any item. Could two parties who fill and sign it be bound by it? What must its heading or its sign-off say? Are the questions in its section 4 (who answers for what) the right ones, and is any missing?
+12. Lesson 3.6 section 8 says a shadow period, in which the agent reads real customer messages and sends nothing, needs the data terms signed before it starts. Is that right, and does anything else have to be in place (notice to the end customer, a lawful basis for this processing)?
 
 ## 4. Claim register
 

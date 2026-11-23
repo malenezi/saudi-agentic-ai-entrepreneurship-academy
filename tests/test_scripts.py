@@ -43,6 +43,23 @@ class UnitEconomicsCalculator(unittest.TestCase):
 class FounderCalculators(unittest.TestCase):
     TOOLKIT = "04-entrepreneur-toolkit"
 
+    def test_buyer_return_prints_the_worked_example_of_course_3(self):
+        result = run(os.path.join(self.TOOLKIT, "buyer_return.py"))
+        self.assertEqual(result.returncode, 0, result.stderr)
+        for figure in ("2,700", "1,716", "1,200 (44%)", "984 (36%)"):
+            self.assertIn(figure, result.stdout)
+
+    def test_buyer_return_counts_approvals_and_set_up(self):
+        result = run(os.path.join(self.TOOLKIT, "buyer_return.py"), "--approvals", "680", "--approval-minutes", "1", "--setup", "1800")
+        self.assertIn("576 (21%)", result.stdout)
+        self.assertIn("3.1 months", result.stdout)
+
+    def test_buyer_return_warns_when_nothing_is_saved_and_rejects_bad_input(self):
+        result = run(os.path.join(self.TOOLKIT, "buyer_return.py"), "--fee", "2600")
+        self.assertIn("saves nothing", result.stdout)
+        result = run(os.path.join(self.TOOLKIT, "buyer_return.py"), "--returned-tasks", "2000")
+        self.assertEqual(result.returncode, 2)
+
     def test_funnel_default_run(self):
         result = run(os.path.join(self.TOOLKIT, "first_customers_funnel.py"))
         self.assertEqual(result.returncode, 0, result.stderr)

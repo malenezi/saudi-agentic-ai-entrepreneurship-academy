@@ -68,3 +68,5 @@ A letter of intent records a customer's serious interest. It is normally **not**
 | 2 | | | | | | |
 
 Send it every week without being asked. It is your strongest sales document at renewal.
+
+**When the customer says yes in principle,** fill the [paid pilot terms sheet](14-paid-pilot-terms-sheet.md) with them: it adds the agent's stages, limits, stop, data and decision rule, and it is what you hand the lawyer.
