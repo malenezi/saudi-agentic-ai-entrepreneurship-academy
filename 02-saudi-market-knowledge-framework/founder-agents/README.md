@@ -31,7 +31,7 @@ Independent, reusable agent definitions an entrepreneur can run on any AI assist
 | 11 | [Government Tender Assistant · مساعد المنافسات الحكومية](11-government-tender-assistant.md) | Analyses tender documents | 12 | **Published (v0.9).** Runnable core: [tender summariser workflow](../../05-agentic-ai-lab/agent-templates/workflows/README.md) |
 | 12 | [AI Startup Architect · معماري المشروع الوكيلي](12-ai-startup-architect.md) | Designs agent architectures and workflows | 02 | **Published (v0.9).** Quick version: [Agent Designer skill](../../05-agentic-ai-lab/skills/README.md#6-agent-designer) |
 
-Each agent is one page: the definition to paste, the pages it reads, and three test conversations (an ordinary case, a case where the right answer is "I do not know", and a case where the user pushes for a definitive answer). The agents are definitions for an assistant you already use; they are not programs, and they call no tool. For agents that run as workflows, see the [runnable templates](../../05-agentic-ai-lab/agent-templates/workflows/README.md).
+Each agent is one page: the definition to paste, the pages it reads, and three test conversations (an ordinary case, a case where the right answer is "I do not know", and a case where the user pushes for a definitive answer). The agents are definitions for an assistant you already use; they call no tool. A [runner](../../05-agentic-ai-lab/founder-agents/README.md) (Python, standard library) reads these pages, prints everything to paste for one agent, holds a conversation with a model you configure, runs the three test conversations and writes the record, and runs mechanical checks on each reply. It has not yet been run with a language model. For agents that run as workflows, see the [runnable templates](../../05-agentic-ai-lab/agent-templates/workflows/README.md).
 
 ## Operating standard (applies to every founder agent)
 
@@ -94,7 +94,7 @@ Paste your [Founder Context](../../04-entrepreneur-toolkit/10-founder-context-te
 
 ## Contributing an agent
 
-All twelve agents are published, and every one is open to improvement. Agents 2 to 12 each have one [recorded run](recorded-runs/README.md) with one assistant (21 November 2026); none has been tried with a founder. What they need most is **more recorded runs**, with other assistants and with real founder inputs: paste a definition into an assistant, run its three test conversations, and send what happened, with the assistant and the date. A new agent, or a change to one, needs:
+All twelve agents are published, and every one is open to improvement. Agents 2 to 12 each have one [recorded run](recorded-runs/README.md) with one assistant (21 November 2026); none has been tried with a founder. What they need most is **more recorded runs**, with other assistants and with real founder inputs: paste a definition into an assistant, run its three test conversations, and send what happened, with the assistant and the date. With a model endpoint, `python3 -m founder_agents test <number>` in the [runner](../../05-agentic-ai-lab/founder-agents/README.md) does this and writes the record in the layout of the recorded runs, leaving the assessment to you. A new agent, or a change to one, needs:
 
 - The definition, in Arabic (English welcome too)
 - Which domain pages it reads

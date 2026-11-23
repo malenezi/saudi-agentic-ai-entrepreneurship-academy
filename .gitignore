@@ -27,5 +27,10 @@ data/private/
 03-courses/02-build/labs/reference/data/my-*.json
 __pycache__/
 
+# Founder agents runner: records of local runs, and saved conversations, stay on the machine until reviewed
+05-agentic-ai-lab/founder-agents/runs/
+05-agentic-ai-lab/founder-agents/conversation.json
+05-agentic-ai-lab/founder-agents/prompt.txt
+
 # The webhook credential written by tools/n8n_webhook_credential.py holds a token in plain text
 saaea-webhook-credential.json
