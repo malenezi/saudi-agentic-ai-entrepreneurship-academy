@@ -35,6 +35,15 @@ Work towards v0.13. **Still true: no course has been piloted, and no lawyer or t
 - **Invented throughout.** The messages were written by an AI assistant in general Saudi colloquial Arabic and were not reviewed by native speakers of any one dialect. The set does not replace an evaluation set built from real customer messages.
 - `tools/shadow_report.py` also reads the JSON list that `tools/n8n_harness.js` prints.
 
+### Lab: the founder agents as runnable Python (23 November 2026)
+
+- [`05-agentic-ai-lab/founder-agents`](05-agentic-ai-lab/founder-agents/README.md): a package, standard library only, that runs the twelve founder agents from the command line. It reads each definition, the pages the agent reads and its test conversations from the published page, and keeps no copy of them.
+- `prompt` prints everything to paste for one agent and needs no model. `chat`, `ask` and `test` use any chat-completions endpoint, set with the Course 2 lab's environment variables. `test` runs the three test conversations and writes the record as JSON and in the layout of the recorded runs, with the assessment left to a person.
+- Mechanical checks on every reply: figures, web addresses and article numbers that are not in the agent's pages or the founder's messages, wording that reads as a ruling, a bare yes or no when the founder pushed for one. They are flags for a reader. A reply without a flag has not been approved.
+- Before a message is sent, the runner names what looks like personal data or a secret in it and asks; it says so when the model is not on the founder's machine.
+- **Run on the published recorded runs** (33 conversations, 50 replies): 13 flags, all figures, in four conversations of agents 5, 7 and 12. Each line was read: results of calculations and stated assumptions, a test example the assistant wrote, and one arithmetic extension it labelled as its own. The replies were compared with the pages as they are today.
+- 25 new tests. **No language model has been run through the package**: the tests use hand-written replies and a stand-in endpoint. Not tried with founders.
+
 ### Roadmap (23 November 2026)
 
 The next three iterations are set out in the [roadmap](ROADMAP.md): v0.13 (shadow mode, webhook authentication, output repair, an invented dataset pack, pilot terms), v0.14 (integration recipes), v0.15 (sector packs after a first cohort). Recruiting a first cohort and a legal reviewer runs beside them.

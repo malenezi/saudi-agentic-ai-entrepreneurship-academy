@@ -49,7 +49,7 @@ The courses teach what to do; the framework says how to do it in the Kingdom. Bu
 3. Entries for the funding directory from programme operators, with the amounts and eligibility their public pages leave out.
 4. Review of the Arabic versions by a lawyer and by native-speaking practitioners.
 5. Real case studies.
-6. More recorded runs of the [founder agents](02-saudi-market-knowledge-framework/founder-agents/README.md): the three test conversations of any agent, with the assistant and the date.
+6. More recorded runs of the [founder agents](02-saudi-market-knowledge-framework/founder-agents/README.md): the three test conversations of any agent, with the assistant and the date. The [runner](05-agentic-ai-lab/founder-agents/README.md) writes the record for you from any chat-completions endpoint; it has not yet been run with a language model, so the first such run is itself wanted.
 7. Anonymised real customer messages in Saudi dialect, with the owner's permission, for a shared evaluation set. And native speakers to review the [invented dataset](05-agentic-ai-lab/datasets/ecommerce-store/README.md)'s messages and label their dialects.
 8. Builders for a first four-week cohort on Courses 1 and 2, and a business willing to run one template in [shadow mode](05-agentic-ai-lab/agent-templates/workflows/shadow-mode/README.md) beside its staff.
 9. A Saudi lawyer to review the pilot and data terms before they are offered as templates.

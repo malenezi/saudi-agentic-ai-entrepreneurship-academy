@@ -10,6 +10,7 @@
 | [قوالب الوكلاء](agent-templates/README.md) | خمسة قوالب لوكلاء: خدمة العملاء عبر واتساب، مطابقة الفواتير، تلخيص المنافسات، تأهيل العملاء المحتملين، مساعد الحجوزات. لكل قالب مواصفة و[نسخة تعمل في n8n](agent-templates/workflows/README.md) | المواصفات جاهزة. النسخ القابلة للتشغيل تعمل بنموذج محاكٍ؛ لم تُشغَّل مع نموذج حقيقي ولم توصل بقناة |
 | [التقييم](evaluation/eval-template.md) | قالب مجموعة اختبار بالعربية ومعايير النجاح | جاهز للاستخدام |
 | [بيانات مختلقة](datasets/ecommerce-store/README.md) | متجر إلكتروني مختلق: محتوى معتمد، وطلبات، وخمس وثمانون رسالة عميل بسلوكها المتوقع، وسجل موظفين للتمرّن على وضع الظل | مختلقة كلها. لم يراجعها أهل لهجة، ولم تُشغَّل بنموذج لغوي بعد |
+| [مشغّل وكلاء المؤسس](founder-agents/README.md) | حزمة Python تشغّل وكلاء المؤسس الاثني عشر من صفحاتهم المنشورة: تجمع ما يُلصق في مساعدك، وتحاور نموذجاً تحدده، وتسجّل محادثات الاختبار، وتفحص كل ردّ فحصاً آلياً | تعمل. لم تُشغَّل بعد بنموذج لغوي، ولم تُجرَّب مع مؤسسين |
 | [تمارين المختبر](exercises/README.md) | سبعة عشر تمريناً: أربعة عشر تستخدم «ريادة» و«بيان»، وثلاثة بمهارات الأكاديمية نفسها: حزمة سياق تمر من مدقق، مصفوفة اعتماد، نموذج مالي، سجل ادعاءات السوق، تقييم الوكيل واختبار حدوده، رسائل وصفحات وعروض عربية مفحوصة، ولوحة قيادة ببيانات مصطنعة | الأوامر مجرَّبة؛ لم تُجرَّب مع متعلمين |
 | [دليل النماذج العربية](arabic-models.md) | كيف تختار نموذجاً، وما المتاح من نماذج عربية مفتوحة الأوزان | جاهز، يُراجع دورياً |
 
@@ -23,6 +24,7 @@ The lab is the hands-on side of the academy.
 | [Agent templates](agent-templates/README.md) | Five agent templates for common Saudi business jobs, each with a specification and a [runnable n8n workflow](agent-templates/workflows/README.md) | Specifications usable now. Runnable versions run with a simulated model; not run with a real model, no channel connected |
 | [Evaluation](evaluation/eval-template.md) | Arabic test-set template and pass criteria | Usable now |
 | [Invented dataset](datasets/ecommerce-store/README.md) | One invented online store: approved content, orders, eighty-five customer messages with expected behaviour, and a staff record for practising shadow mode | Invented throughout. Not reviewed by native speakers of any one dialect; not yet run with a language model |
+| [Founder agents runner](founder-agents/README.md) | A Python package that runs the twelve founder agents from their published pages: assembles what to paste, converses with a model you configure, records the test conversations, and checks each reply mechanically | Works. Not yet run with a language model; not tried with founders |
 | [Lab exercises](exercises/README.md) | Fourteen exercises using the companion repositories [Riyada](https://github.com/malenezi/riyada) and [Bayan](https://github.com/malenezi/bayan): a context pack that passes a linter, an approval matrix, a financial model, a market claim register, agent evaluation and red teaming, checked Arabic messages, pages and decks, and a venture dashboard built on synthetic data | Commands run; not yet tried with learners |
 | [Arabic model guide](arabic-models.md) | How to choose a model; open-weight Arabic options | Usable; reviewed periodically |
 
