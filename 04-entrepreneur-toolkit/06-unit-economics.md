@@ -83,6 +83,7 @@ Prefer a spreadsheet? Recreate the three formula lines above; they are all there
 2. **Check the floor.** Price must exceed cost per resolved task at your *current* success rate, not the one you hope for.
 3. **Stress it.** Recalculate with the success rate 15 points lower and model prices 50% higher. Still positive?
 4. **Compare alternatives.** What does the customer pay today for the person or tool doing this?
+5. **Compute the customer's side.** [`buyer_return.py`](buyer_return.py) takes the customer's own figures and prints the cost today, the cost with your service and the real saving, counting the tasks and approvals that stay with their staff. Its defaults are the invented store of the Course 3 worked example.
 
 ## Levers to improve margin
 

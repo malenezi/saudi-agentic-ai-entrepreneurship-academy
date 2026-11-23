@@ -21,6 +21,20 @@ Work towards v0.13. **Still true: no course has been piloted, and no lawyer or t
 - **This changes the first run:** the workflows no longer answer straight after import. The README and the Course 2 lab give the two extra commands.
 - A token shows that the sender knows it, not that a message came from a given channel. Verifying a provider's signature belongs to the integration recipes of v0.14.
 
+### Founder Toolkit: paid pilot terms sheet and the customer's return (23 November 2026)
+
+- Template 14, the [paid pilot terms sheet](04-entrepreneur-toolkit/14-paid-pilot-terms-sheet.md): filled with the customer after a yes in principle. It records the agent's stages (shadow, every reply approved, sampled review), its limits and who can stop it, who answers for what, the data terms, the measure and decision rule, the money and the exit, and ends with a list left to the lawyer. It proposes no position on any item. **Not a contract and not reviewed by a lawyer;** two questions about it were added to the legal review packet. The toolkit now has fourteen templates.
+- [`buyer_return.py`](04-entrepreneur-toolkit/buyer_return.py), a fourth calculator: the customer's cost of the task today and with the service, the apparent and the real saving, staff approvals and set-up payback. It uses the customer's own measured figures and carries no benchmark; its defaults print the Course 3 worked example (2,700; 1,716; 984, 36%).
+- Linked from templates 6 and 9 and from lessons 3.3 and 3.6.
+
+### Lab: an invented e-commerce dataset (23 November 2026)
+
+- [`05-agentic-ai-lab/datasets/ecommerce-store`](05-agentic-ai-lab/datasets/ecommerce-store/README.md): one invented online store with six approved answers, 12 products, 24 orders, 85 customer messages with expected behaviour (above every minimum of the evaluation template), and a staff record for practising shadow mode.
+- `tools/dataset_pack.py` builds the Config values and requests template 1 takes, checks the data for consistency, and scores a run.
+- **Baseline with the keyword simulator: 73 of 85**, acting alone on four messages where a person or a refusal was expected. The simulator is not a language model and its keywords were written by the author of the messages, so this is not a measure of anything but the exercise. No language model has been run on the set.
+- **Invented throughout.** The messages were written by an AI assistant in general Saudi colloquial Arabic and were not reviewed by native speakers of any one dialect. The set does not replace an evaluation set built from real customer messages.
+- `tools/shadow_report.py` also reads the JSON list that `tools/n8n_harness.js` prints.
+
 ### Roadmap (23 November 2026)
 
 The next three iterations are set out in the [roadmap](ROADMAP.md): v0.13 (shadow mode, webhook authentication, output repair, an invented dataset pack, pilot terms), v0.14 (integration recipes), v0.15 (sector packs after a first cohort). Recruiting a first cohort and a legal reviewer runs beside them.

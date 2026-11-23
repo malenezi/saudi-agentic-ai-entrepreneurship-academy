@@ -103,7 +103,7 @@ footer { margin-block-start: 56px; border-block-start: 1px solid var(--line); pa
       <li><a href="read.html?p=03-courses/04-scale-and-govern/syllabus.md"><span class="t">المقرر 4: التوسع والحوكمة</span><span class="d">ستة دروس تنتهي بمعمارية تشغيل وسجل مخاطر وعرض استثماري.</span></a></li>
       <li><a href="read.html?p=03-courses/TRAINER-GUIDE.md"><span class="t">دليل المدرب للبرنامج</span><span class="d">ما يحتاجه مدرب أو جهة لتقديم المقررات الأربعة: المتطلبات، التقييم، التحضير.</span></a></li>
       <li><a href="read.html?p=02-saudi-market-knowledge-framework/README.md"><span class="t">إطار المعرفة بالسوق السعودي</span><span class="d">اثنا عشر مجالاً: التأسيس، البيانات، الضرائب، التمويل، وغيرها، بمصدر لكل معلومة.</span></a></li>
-      <li><a href="read.html?p=04-entrepreneur-toolkit/README.md"><span class="t">حقيبة المؤسس</span><span class="d">ثلاثة عشر قالب أعمال ثنائي اللغة وثلاث حاسبات.</span></a></li>
+      <li><a href="read.html?p=04-entrepreneur-toolkit/README.md"><span class="t">حقيبة المؤسس</span><span class="d">أربعة عشر قالب أعمال ثنائي اللغة وأربع حاسبات.</span></a></li>
       <li><a href="read.html?p=05-agentic-ai-lab/README.md"><span class="t">مختبر الذكاء الاصطناعي الوكيلي</span><span class="d">مهارات، قوالب وكلاء، قالب تقييم، وسبعة عشر تمريناً.</span></a></li>
       <li><a href="workbook/index.html"><span class="t">دفتر المشروع</span><span class="d">بوابات المقررات الأربعة في صفحة واحدة: لكل بند دليل. يُحفظ في متصفحك ويُصدَّر ملفاً نصياً.</span></a></li>
       <li><a href="read.html?p=CONTRIBUTING.md"><span class="t">ساهم</span><span class="d">كل مساهمة مرحّب بها، ولا تحتاج أن تكون مبرمجاً.</span></a></li>
@@ -226,7 +226,7 @@ header .ar { color: #94a3b8; font-size: 17px; }
       <li><a href="read.html?p=03-courses/04-scale-and-govern/syllabus.md"><span class="t">Course 4: Scale and govern</span><span class="d">Six lessons that end in an operating architecture, a risk register and an investor pitch.</span></a></li>
       <li><a href="read.html?p=03-courses/TRAINER-GUIDE.md"><span class="t">Programme trainer guide</span><span class="d">What a trainer or an organisation needs to deliver the four courses: requirements, assessment, preparation.</span></a></li>
       <li><a href="read.html?p=02-saudi-market-knowledge-framework/README.md"><span class="t">Saudi market knowledge framework</span><span class="d">Twelve domains, among them establishment, data, tax and funding, with a source for every fact.</span></a></li>
-      <li><a href="read.html?p=04-entrepreneur-toolkit/README.md"><span class="t">Founder toolkit</span><span class="d">Thirteen bilingual business templates and three calculators.</span></a></li>
+      <li><a href="read.html?p=04-entrepreneur-toolkit/README.md"><span class="t">Founder toolkit</span><span class="d">Fourteen bilingual business templates and four calculators.</span></a></li>
       <li><a href="read.html?p=05-agentic-ai-lab/README.md"><span class="t">Agentic AI lab</span><span class="d">Skills, agent templates, an evaluation template and seventeen exercises.</span></a></li>
       <li><a href="workbook/index.html"><span class="t">Venture workbook</span><span class="lang">Arabic</span><span class="d">The gates of the four courses on one page, with evidence for each item. Saved in your browser and exported as a text file.</span></a></li>
       <li><a href="read.html?p=CONTRIBUTING.md"><span class="t">Contribute</span><span class="d">Every contribution is welcome, and you do not need to be a programmer.</span></a></li>
