@@ -84,9 +84,37 @@ class BuiltFiles(unittest.TestCase):
             self.assertFalse(config["stopped"], path)
             if path != LAB:
                 self.assertIs(config["shadow_mode"], False, path)
-            self.assertTrue(all("credentials" not in n for n in workflow["nodes"]), path)
+            for node in workflow["nodes"]:  # the only credential is the webhook token, by reference
+                if node["type"] == "n8n-nodes-base.webhook":
+                    self.assertEqual(node["parameters"]["authentication"], "headerAuth", path)
+                    self.assertEqual(node["credentials"], {"httpHeaderAuth": {"id": "saaeaWebhookTok1", "name": "SAAEA webhook token"}}, path)
+                else:
+                    self.assertNotIn("credentials", node, path)
             for marker in ("sk-", "Bearer ", "api_key", "apiKey"):
                 self.assertNotIn(marker, text, path)
+
+    def test_the_credential_maker_writes_a_fresh_token_for_the_named_credential(self):
+        import n8n_webhook_credential as maker
+        tokens = []
+        with tempfile.TemporaryDirectory() as tmp:
+            for name in ("a.json", "b.json"):
+                out = os.path.join(tmp, name)
+                done = subprocess.run([sys.executable, os.path.join(ROOT, "tools", "n8n_webhook_credential.py"), "--out", out],
+                                      capture_output=True, text=True)
+                self.assertEqual(done.returncode, 0, done.stdout + done.stderr)
+                with open(out, encoding="utf-8") as f:
+                    (item,) = json.load(f)
+                self.assertEqual((item["id"], item["type"], item["data"]["name"]), ("saaeaWebhookTok1", "httpHeaderAuth", "X-SAAEA-Token"))
+                self.assertGreaterEqual(len(item["data"]["value"]), 40)
+                self.assertIn(item["data"]["value"], done.stdout)
+                tokens.append(item["data"]["value"])
+            again = subprocess.run([sys.executable, os.path.join(ROOT, "tools", "n8n_webhook_credential.py"), "--out", out],
+                                   capture_output=True, text=True)
+            self.assertEqual(again.returncode, 1)  # never overwrites
+        self.assertNotEqual(tokens[0], tokens[1])
+        self.assertEqual(maker.DEFAULT, "saaea-webhook-credential.json")
+        with open(os.path.join(ROOT, ".gitignore"), encoding="utf-8") as f:
+            self.assertIn(maker.DEFAULT, f.read().split())
 
     def test_the_model_never_reaches_a_tool_except_through_decide(self):
         for path in BUILT:

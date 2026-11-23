@@ -26,3 +26,6 @@ data/private/
 03-courses/02-build/labs/reference/config/my-*.json
 03-courses/02-build/labs/reference/data/my-*.json
 __pycache__/
+
+# The webhook credential written by tools/n8n_webhook_credential.py holds a token in plain text
+saaea-webhook-credential.json

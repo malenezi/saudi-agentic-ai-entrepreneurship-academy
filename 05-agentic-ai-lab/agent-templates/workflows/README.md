@@ -1,12 +1,12 @@
 # القوالب القابلة للتشغيل · Runnable agent templates (n8n)
 
-**Status:** Published in v0.9 (20 November 2026) · Imported and run in n8n 2.35.7 with the simulated model · Instructions run once with a real language model outside n8n on 21 November 2026 ([results](real-model-runs/README.md)) · **Not connected to any real channel or system, not tried with founders** · Invented sample data · Educational
+**Status:** Published in v0.9 (20 November 2026) · Imported and run in n8n 2.35.7 with the simulated model · Webhooks ask for a header token since 23 November 2026 · Instructions run once with a real language model outside n8n on 21 November 2026 ([results](real-model-runs/README.md)) · **Not connected to any real channel or system, not tried with founders** · Invented sample data · Educational
 
 <div dir="rtl">
 
-خمسة ملفات تستوردها في [n8n](https://docs.n8n.io) فتعمل فوراً: نسخة قابلة للتشغيل من كل [قالب وكيل](../README.md). تعمل **دون مفتاح ودون تكلفة ودون اتصال بنموذج**، لأن «النموذج» الافتراضي فيها محاكٍ بكلمات مفتاحية، وليس نموذجاً لغوياً. ما تجرّبه هنا هو ما يحيط بالنموذج: الحدود، والموافقات، والتحويل إلى إنسان.
+خمسة ملفات تستوردها في [n8n](https://docs.n8n.io) فتعمل بعد خطوة واحدة، هي إنشاء رمز نقطة الاستقبال: نسخة قابلة للتشغيل من كل [قالب وكيل](../README.md). تعمل **دون مفتاح ودون تكلفة ودون اتصال بنموذج**، لأن «النموذج» الافتراضي فيها محاكٍ بكلمات مفتاحية، وليس نموذجاً لغوياً. ما تجرّبه هنا هو ما يحيط بالنموذج: الحدود، والموافقات، والتحويل إلى إنسان.
 
-> **ما هذه الملفات وما ليست.** هي **قلب الوكيل**: استقبال رسالة، فهمها، ثم قرار يُفرض بالشيفرة. ليست منتجاً جاهزاً: لا قناة واتساب، ولا تقويم، ولا نظام عملاء، ولا دفتر أستاذ موصول. البيانات كلها مختلقة. ونقاط الاستقبال (Webhook) **بلا توثيق**: لا تعرضها على الإنترنت قبل أن تضيف التوثيق من إعدادات n8n.
+> **ما هذه الملفات وما ليست.** هي **قلب الوكيل**: استقبال رسالة، فهمها، ثم قرار يُفرض بالشيفرة. ليست منتجاً جاهزاً: لا قناة واتساب، ولا تقويم، ولا نظام عملاء، ولا دفتر أستاذ موصول. البيانات كلها مختلقة. ونقاط الاستقبال (Webhook) **تطلب رمزاً في ترويسة الطلب** ولا تجيب قبل أن تنشئ اعتماده (انظر «رمز نقطة الاستقبال»). الرمز يثبت أن المرسل يعرفه، ولا يثبت أن الرسالة جاءت من قناتك: عند الربط بقناة حقيقية تحقق من توقيع مزوّدها أيضاً.
 
 ## الملفات
 
@@ -49,17 +49,37 @@ Webhook -> Config -> Prepare -> Real model? -> Model (HTTP)      -> Decide -> Re
 # 1. Install and import (n8n 2.35 needs Node.js 22.22 or newer; check n8n's own requirements). Or use the editor: Workflows -> Import from File.
 npm install n8n
 npx n8n import:workflow --input=05-agentic-ai-lab/agent-templates/workflows/01-whatsapp-customer-service.n8n.json
+python3 tools/n8n_webhook_credential.py    # writes a new token to saaea-webhook-credential.json and prints it once
+npx n8n import:credentials --input=saaea-webhook-credential.json && rm saaea-webhook-credential.json
 npx n8n list:workflow                      # shows the workflow id
 npx n8n publish:workflow --id=<the id>     # makes the production webhook live
 npx n8n start
 
 # 2. Send a message (another terminal)
 curl -s -X POST http://localhost:5678/webhook/saaea-customer-service \
-  -H 'Content-Type: application/json' \
+  -H 'Content-Type: application/json' -H 'X-SAAEA-Token: <the token>' \
   -d '{"message": "متى تفتحون؟", "account": "0500000001", "state": {}}'
 ```
 
 <div dir="rtl">
+
+### رمز نقطة الاستقبال
+
+كل عقدة Webhook في الملفات الستة مضبوطة على **Header Auth** في n8n، وتشير إلى اعتماد اسمه `SAAEA webhook token`. الملف يحمل **اسم الاعتماد لا قيمته**: لا سرّ في المستودع. والاعتماد يُحفظ مشفّراً داخل n8n.
+
+| الحالة | ما يجيب به n8n |
+|---|---|
+| لم تنشئ الاعتماد بعد | 500، ولا يُنفَّذ شيء |
+| طلب بلا رمز، أو برمز خاطئ | 403، ولا يُنفَّذ شيء |
+| طلب بالرمز الصحيح في الترويسة `X-SAAEA-Token` | يعمل سير العمل |
+
+**إنشاؤه من المحرر:** افتح عقدة Webhook، ومن Credential for Header Auth اختر Create New، واكتب في Name القيمة `X-SAAEA-Token` وفي Value نصاً عشوائياً طويلاً. في القالب 4 والمختبر عقدة ثانية، Approval webhook، تستخدم الاعتماد نفسه.
+
+**أو من سطر الأوامر:** الأمران في الأعلى. البرنامج يولّد رمزاً جديداً في كل مرة ويكتبه نصاً صريحاً في ملف: استورده ثم احذفه. الملف مستثنى من git.
+
+غيّر الرمز إن ظهر في سجل أو لقطة شاشة أو محادثة. ولا تضعه في Config ولا في أي ملف من المستودع.
+
+### جرّب
 
 | القالب | مسار الاستقبال | جرّب |
 |---|---|---|
@@ -92,12 +112,14 @@ curl -s -X POST http://localhost:5678/webhook/saaea-customer-service \
 | الفحص | النتيجة |
 |---|---|
 | الاستيراد والنشر والتشغيل في n8n 2.35.7 (Node.js 22)، من سطر الأوامر، 20 نوفمبر 2026 | الملفات الستة (القوالب الخمسة ومختبر المقرر 2) استُوردت ونُشرت بلا خطأ |
-| `tools/n8n_e2e.py` على نقاط الاستقبال الحية | 84 طلباً، ولا إخفاق: 47 حالة للقوالب، و35 حالة للمختبر طابقت الشيفرة المرجعية، وطلبا موافقة في المختبر |
+| `tools/n8n_e2e.py` على نقاط الاستقبال الحية | 84 طلباً، ولا إخفاق: 47 حالة للقوالب، و35 حالة للمختبر طابقت الشيفرة المرجعية، وطلبا موافقة في المختبر. أُعيد في 23 نوفمبر 2026 بعد إضافة الرمز: 100 طلب، ولا إخفاق |
+| رمز نقطة الاستقبال في n8n 2.35.7، 23 نوفمبر 2026 | النقاط الثماني رفضت طلباً بلا رمز وطلباً برمز خاطئ (403)؛ وقبل إنشاء الاعتماد أجابت 500 ولم تنفّذ شيئاً |
 | مسار النموذج الحقيقي في n8n على خادم وهمي محلي | جواب سليم نُفّذ؛ جواب غير مقروء حُوّل إلى إنسان؛ خادم لا يردّ حُوّل إلى إنسان |
 | منطق العقد خارج n8n (`tests/test_n8n_workflows.py`، ضمن `make check`) | 50 حالة للقوالب، ومفتاح الإيقاف، ونموذج يهذي، ونموذج لا يردّ |
 | وضع الظل خارج n8n، 23 نوفمبر 2026 | في الحالات الخمسين لا يخرج رد ولا تحويل ولا موافقة ولا كتابة؛ حجز لا يُحفظ؛ مسودة قيد لا تُحفظ ولا تُعتمد |
+| وضع الظل داخل n8n 2.35.7، 23 نوفمبر 2026، على القوالب 1 و2 و4 | رسائل العيّنة الاثنتا عشرة أعطت السجل المنشور نفسه؛ حجز طُلب مرتين لم يُحفظ؛ مسودة قيد لم تُحفظ ولم تُعتمد |
 
-**ما لم نتحقق منه:** لم تُشغَّل مع نموذج لغوي حقيقي عبر عقدة HTTP في n8n (التشغيلان المسجّلان في [`real-model-runs`](real-model-runs/README.md) تمّا خارج n8n). وضع الظل لم يُشغَّل داخل n8n ولم يُجرَّب مع منشأة. لم تُستورد من واجهة المحرر ولا على n8n Cloud ولا على إصدارات n8n 1.x. لم توصل بقناة أو تقويم أو نظام حقيقي. المحاكي لا يفهم إلا كلماته، وحالات الاختبار مختلقة وليست من رسائل عملاء. الحجوزات والمسودات تُحفظ في بيانات سير العمل للتجربة، وليست قاعدة بيانات. ولم يجرّبها مؤسس بعد.
+**ما لم نتحقق منه:** لم تُشغَّل مع نموذج لغوي حقيقي عبر عقدة HTTP في n8n (التشغيلان المسجّلان في [`real-model-runs`](real-model-runs/README.md) تمّا خارج n8n). وضع الظل لم يُجرَّب مع منشأة، ولم يُشغَّل داخل n8n على القالبين 3 و5. الرمز لم يُجرَّب من واجهة المحرر، ولا خلف وسيط عكسي أو نفق. لم تُستورد من واجهة المحرر ولا على n8n Cloud ولا على إصدارات n8n 1.x. لم توصل بقناة أو تقويم أو نظام حقيقي. المحاكي لا يفهم إلا كلماته، وحالات الاختبار مختلقة وليست من رسائل عملاء. الحجوزات والمسودات تُحفظ في بيانات سير العمل للتجربة، وليست قاعدة بيانات. ولم يجرّبها مؤسس بعد.
 
 ## التعديل
 
@@ -127,14 +149,14 @@ make check                               # runs every case (needs Node.js for th
 
 ## English
 
-Five files you import into [n8n](https://docs.n8n.io) and run at once: a runnable version of each [agent template](../README.md). They need **no key, no cost and no model connection**, because the default "model" is a keyword simulator, not a language model. What you exercise is what surrounds the model: limits, approvals and handover.
+Five files you import into [n8n](https://docs.n8n.io) and run after one step, creating the webhook token: a runnable version of each [agent template](../README.md). They need **no model key, no cost and no model connection**, because the default "model" is a keyword simulator, not a language model. What you exercise is what surrounds the model: limits, approvals and handover.
 
-**What they are not.** They are the core of an agent (receive a message, understand it, decide in code), not a product: no messaging channel, calendar, CRM or ledger is connected, and all data is invented. The webhooks have **no authentication**: do not expose them to the internet before you add it in n8n.
+**What they are not.** They are the core of an agent (receive a message, understand it, decide in code), not a product: no messaging channel, calendar, CRM or ledger is connected, and all data is invented. The webhooks ask for a **header token** (n8n's Header Auth) and answer nothing until you create its credential: in the editor (Webhook node, Credential for Header Auth, Name `X-SAAEA-Token`, Value a long random string), or with `python3 tools/n8n_webhook_credential.py` and `npx n8n import:credentials`. The built files name the credential and hold no secret. A token shows that the sender knows it, not that a message came from your channel: when you connect a real channel, verify the provider's signature as well.
 
 **One shape.** `Webhook -> Config -> Prepare -> Real model? -> Model (HTTP) or Simulated model -> Decide -> Respond`. The model proposes and **Decide** decides: the template's oversight table is written there as code, and model output that cannot be read does nothing. Set `model_mode` to `http` in Config to call any OpenAI-compatible endpoint; keep keys in an n8n credential, never in Config or a file.
 
-**Checked on 20 November 2026.** All six workflows (the five templates and the Course 2 lab) imported, published and ran in n8n 2.35.7 from the command line; `tools/n8n_e2e.py` sent 84 requests to the live webhooks with no failure; the HTTP model path was exercised in n8n against a local stub (a valid answer, an unreadable answer, an unreachable endpoint). **Not checked:** a real language model, the editor's import menu, n8n Cloud, n8n 1.x, any real channel or system, and use by founders.
+**Checked on 20 November 2026.** All six workflows (the five templates and the Course 2 lab) imported, published and ran in n8n 2.35.7 from the command line; `tools/n8n_e2e.py` sent 84 requests to the live webhooks with no failure (run again on 23 November 2026 with the token: 100 requests, no failure; all eight webhooks answered 403 to a request with no token or a wrong one, and 500 before the credential existed); the HTTP model path was exercised in n8n against a local stub (a valid answer, an unreadable answer, an unreachable endpoint). **Not checked:** a real language model, the editor's import menu, n8n Cloud, n8n 1.x, any real channel or system, and use by founders.
 
-**Shadow mode (23 November 2026).** With `shadow_mode: true` in Config a template decides as usual and nothing leaves it; what it would have done is kept under `shadow.would` for comparison with the staff's record. It processes real data, so the data agreement comes first. Guide, report script and an invented sample: [`shadow-mode`](shadow-mode/README.md). Tested outside n8n only.
+**Shadow mode (23 November 2026).** With `shadow_mode: true` in Config a template decides as usual and nothing leaves it; what it would have done is kept under `shadow.would` for comparison with the staff's record. It processes real data, so the data agreement comes first. Guide, report script and an invented sample: [`shadow-mode`](shadow-mode/README.md). Run inside n8n 2.35.7 on templates 1, 2 and 4; not tried with a business.
 
 **Changing them.** The `*.n8n.json` files are built. Edit the sources under `src/`, run `python3 tools/build_n8n_workflows.py`, then `make check`.

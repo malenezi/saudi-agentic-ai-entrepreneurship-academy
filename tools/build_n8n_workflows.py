@@ -14,6 +14,9 @@ the same shape:
     Webhook -> Config -> Prepare -> Real model? -> Model (HTTP) or Simulated model -> Decide -> Respond
 
 The model proposes and the Decide node decides: every limit is enforced there, in code.
+Every Webhook node asks for a header token (n8n's Header Auth). The built file names the credential
+and holds no secret: until a credential with that id exists in n8n, the webhook answers nothing.
+`tools/n8n_webhook_credential.py` makes one.
 Standard library only. Node and n8n are not needed to build.
 """
 import json
@@ -29,6 +32,11 @@ SOURCES = [os.path.join(ROOT, "03-courses", "02-build", "labs", "n8n", "src")] +
     os.path.join(TEMPLATES, "src", d) for d in os.listdir(os.path.join(TEMPLATES, "src"))
     if d != "common" and os.path.isfile(os.path.join(TEMPLATES, "src", d, "spec.json")))
 NAMESPACE = uuid.UUID("5aaea000-0000-4000-8000-000000000009")
+# The Header Auth credential every Webhook node refers to. A reference, not a secret.
+CREDENTIAL = {"httpHeaderAuth": {"id": "saaeaWebhookTok1", "name": "SAAEA webhook token"}}
+TOKEN_HEADER = "X-SAAEA-Token"
+AUTH_NOTE = ("\n\n**The webhook needs a token.** It answers nothing until a Header Auth credential exists: open the Webhook node and create one "
+             "(Name `%s`, Value a long random string), or run `python3 tools/n8n_webhook_credential.py`. Send the token in that header." % TOKEN_HEADER)
 LICENCE = "// Copyright 2026 Saudi Agentic AI Entrepreneurship Academy contributors. Apache-2.0.\n"
 
 
@@ -72,10 +80,11 @@ def build(folder):
         outputs[output].append({"node": target, "type": "main", "index": 0})
 
     js = lambda name, file, pos: node(name, "n8n-nodes-base.code", 2, pos, {"jsCode": code(folder, file)})
-    node("Read me first", "n8n-nodes-base.stickyNote", 1, [-80, -260],
-         {"content": spec["note"], "height": 220, "width": 1180})
+    node("Read me first", "n8n-nodes-base.stickyNote", 1, [-80, -320],
+         {"content": spec["note"] + AUTH_NOTE, "height": 280, "width": 1180})
     node("Webhook", "n8n-nodes-base.webhook", 2, [0, 0],
-         {"httpMethod": "POST", "path": key, "responseMode": "responseNode", "options": {}}, webhookId=uid("webhook-id"))
+         {"httpMethod": "POST", "path": key, "authentication": "headerAuth", "responseMode": "responseNode", "options": {}},
+         webhookId=uid("webhook-id"), credentials=CREDENTIAL)
     node("Config", "n8n-nodes-base.set", 3.4, [220, 0],
          {"mode": "raw", "jsonOutput": json.dumps(config_of(folder, spec), ensure_ascii=False, indent=2), "options": {}})
     js("Prepare", "prepare.js", [440, 0])
@@ -99,8 +108,8 @@ def build(folder):
     connect("Real model?", "Simulated model", 1)
     if os.path.exists(os.path.join(folder, "approve.js")):
         node("Approval webhook", "n8n-nodes-base.webhook", 2, [0, 320],
-             {"httpMethod": "POST", "path": key + "-approve", "responseMode": "responseNode", "options": {}},
-             webhookId=uid("approve-webhook-id"))
+             {"httpMethod": "POST", "path": key + "-approve", "authentication": "headerAuth", "responseMode": "responseNode", "options": {}},
+             webhookId=uid("approve-webhook-id"), credentials=CREDENTIAL)
         js("Approve", "approve.js", [440, 320])
         node("Respond to approver", "n8n-nodes-base.respondToWebhook", 1.1, [660, 320],
              {"respondWith": "firstIncomingItem", "options": {}})

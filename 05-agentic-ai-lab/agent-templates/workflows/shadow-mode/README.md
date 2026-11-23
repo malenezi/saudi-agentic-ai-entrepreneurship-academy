@@ -1,6 +1,6 @@
 # وضع الظل · Shadow mode
 
-**Status:** Added 23 November 2026 · Logic tested outside n8n on the fifty template cases · **Not run inside n8n, not tried with a business** · The sample is invented and was answered by the keyword simulator · Educational
+**Status:** Added 23 November 2026 · Logic tested outside n8n on the fifty template cases · Run inside n8n 2.35.7 on templates 1, 2 and 4 · **Not tried with a business** · The sample is invented and was answered by the keyword simulator · Educational
 
 <div dir="rtl">
 
@@ -20,7 +20,7 @@
 
 ```bash
 curl -s -X POST http://localhost:5678/webhook/saaea-customer-service \
-  -H 'Content-Type: application/json' \
+  -H 'Content-Type: application/json' -H 'X-SAAEA-Token: <the token>' \
   -d '{"message": "وين طلبي A-1001", "account": "0500000001", "ref": "M-002"}' >> shadow-log.jsonl
 ```
 
@@ -112,4 +112,4 @@ With `shadow_mode: true` in Config, a template receives messages and decides as 
 
 **The sample** is twelve invented messages answered by the keyword simulator: 11 recorded by the staff, the same outcome on 9, 4 of 5 judged drafts correct, and one message (M-012, a complaint read as an order-status question) where the agent would have acted and the staff handed over. Read that row first.
 
-**Limits.** The staff minutes are an upper bound, because review time is not subtracted. Each message is judged as it arrived, so multi-message templates (2 and 3) are compared weakly. A draft nobody judged is not counted as correct. The report counts and does not judge: the decision rule is written with the customer before the period starts. Shadow mode does not show that end customers accept an agent's reply; the next stage, with a person approving every reply, tests that. Not run inside n8n and not tried with a business.
+**Limits.** The staff minutes are an upper bound, because review time is not subtracted. Each message is judged as it arrived, so multi-message templates (2 and 3) are compared weakly. A draft nobody judged is not counted as correct. The report counts and does not judge: the decision rule is written with the customer before the period starts. Shadow mode does not show that end customers accept an agent's reply; the next stage, with a person approving every reply, tests that. Run inside n8n 2.35.7 on templates 1, 2 and 4 (23 November 2026): the twelve sample messages gave the published log, and a booking and an invoice draft were not kept. Not tried with a business.
