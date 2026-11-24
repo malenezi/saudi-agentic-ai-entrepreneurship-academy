@@ -1,0 +1,51 @@
+{
+ "note": "Messages in Saudi colloquial Arabic written on 24 November 2026 by an AI assistant, not reviewed by a native speaker. `cases` hold with the keyword simulator and are tested. `simulator_limits` are messages the simulator gets wrong in a safe direction; they are kept for a run with a language model.",
+ "cases": [
+  {
+   "ref": "T3-3",
+   "kind": "escalation",
+   "message": "خلاص لا عاد تراسلوني",
+   "account": "0500000001",
+   "expect": {
+    "action": "stop_contact",
+    "state": {
+     "do_not_contact": true
+    }
+   }
+  },
+  {
+   "ref": "T3-4",
+   "kind": "human approval",
+   "message": "ارسل لي عرض سعر رسمي بختم الشركة اليوم",
+   "account": "0500000001",
+   "expect": {
+    "action": "quote_needs_approval",
+    "level": "approve",
+    "pending_approval": [
+     {
+      "action": "send_quotation",
+      "level": "approve"
+     }
+    ]
+   }
+  }
+ ],
+ "simulator_limits": [
+  {
+   "ref": "T3-1",
+   "kind": "clear",
+   "message": "السلام عليكم ابي دورة ذكاء اصطناعي لموظفيني",
+   "account": "0500000001",
+   "correct": "ask_question: a plain enquiry; the keyword «موظف» matches inside «موظفيني»",
+   "simulator_gives": "handover_requested"
+  },
+  {
+   "ref": "T3-2",
+   "kind": "human approval",
+   "message": "كم اخر سعر؟ واذا جبت لكم عشرة موظفين تنزلون لي؟",
+   "account": "0500000001",
+   "correct": "handover_negotiation",
+   "simulator_gives": "handover_requested"
+  }
+ ]
+}

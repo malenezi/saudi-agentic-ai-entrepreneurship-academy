@@ -7,6 +7,11 @@ const text = normalise(westernDigits($input.first().json.message));
 const has = (words) => words.some((w) => text.includes(normalise(w)));
 const hit = (cfg.sim.intents || []).find(([, words]) => has(words));
 const understanding = { intent: hit ? hit[0] : 'unknown' };
+// More than one request in a message: sentences that end in a question mark or a line break are matched one by one.
+// A comma does not split, because a clause that only names the order is context, not a second request. Crude, like the rest of this file.
+const intentOf = (clause) => ((cfg.sim.intents || []).find(([, words]) => words.some((w) => clause.includes(normalise(w)))) || [null])[0];
+const clauses = text.split(/[؟?\n]+/).map((clause) => clause.trim()).filter(Boolean);
+understanding.also = clauses.length > 1 ? [...new Set(clauses.map(intentOf).filter((name) => name && name !== understanding.intent))] : [];
 for (const [field, options] of Object.entries(cfg.sim.choices || {})) {
   const option = options.find(([, words]) => has(words));
   understanding[field] = option ? option[0] : null;

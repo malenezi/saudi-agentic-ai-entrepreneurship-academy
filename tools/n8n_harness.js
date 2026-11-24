@@ -7,7 +7,7 @@
 //   node tools/n8n_harness.js <workflow.n8n.json> <requests.json> [config-overrides.json]
 //
 // requests.json: a list of request bodies, or an object with a "cases" list. A body may
-// carry "_model_response" to stand in for what the HTTP model node would return, "_config" to
+// carry "_model_response" to stand in for what the HTTP model node would return, "_model_retry_response" for its second answer when the first cannot be read, "_config" to
 // change Config values for that request, and "_approve" to call the approval flow instead. Prints one result per request as JSON.
 // This follows the workflow's fixed shape (see tools/build_n8n_workflows.py). It is not n8n:
 // it proves the logic of the nodes, and the import itself is tested in n8n separately.
@@ -32,13 +32,16 @@ function run(name, input, outputs) {
 }
 
 const results = requests.map((request) => {
-  const { _model_response: modelResponse, _approve: approve, _config: caseConfig, expect, ...body } = request;
+  const { _model_response: modelResponse, _model_retry_response: retryResponse, _approve: approve, _config: caseConfig, expect, ...body } = request;
   const outputs = { Webhook: { body }, Config: Object.assign({}, config, caseConfig || {}) };
   if (approve) return run('Approve', { body: approve }, {}); // its own flow: no other node has run
   outputs.Prepare = run('Prepare', outputs.Config, outputs);
   const model = outputs.Prepare.route === 'http'
     ? (modelResponse === undefined ? { error: { message: 'no endpoint in the harness' } } : modelResponse)
     : run('Simulated model', outputs.Prepare, outputs);
-  return run('Decide', model, outputs);
+  if (outputs.Prepare.route !== 'http') return run('Decide', model, outputs);
+  outputs['Check model output'] = run('Check model output', model, outputs);
+  if (!outputs['Check model output'].retry) return run('Decide', outputs['Check model output'], outputs);
+  return run('Decide', retryResponse === undefined ? { error: { message: 'no endpoint in the harness' } } : retryResponse, outputs);
 });
 process.stdout.write(JSON.stringify(results, null, 1) + '\n');

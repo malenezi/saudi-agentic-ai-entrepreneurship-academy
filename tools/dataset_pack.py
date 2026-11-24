@@ -6,9 +6,14 @@
     python3 tools/dataset_pack.py build            # write template-1-config.json and requests.json
     python3 tools/dataset_pack.py check            # exit 1 if the data is inconsistent or a built file is stale
     python3 tools/dataset_pack.py score <results>  # compare a run of template 1 with the expected behaviour
+    python3 tools/dataset_pack.py failures <results>  # the same for failure-cases.jsonl, run from failure-requests.json
 
 The dataset is in 05-agentic-ai-lab/datasets/ecommerce-store/. `build` turns the store, the
 orders and the messages into the Config values and the request list that template 1 takes.
+The failure cases (failure-cases.jsonl) are thirty messages written to hit known weak points: references and numbers
+as customers type them, several requests in one message, missing information, and requests beyond the agent's
+permissions. Each lists the actions that are right (`accept`) and those that are safe but not what was wanted
+(`tolerate`). An answer given alone where neither list allows it is "acted alone"; anything else is "wrong but safe".
 `score` reads the output of tools/n8n_harness.js (a JSON list) or one response per line, in
 normal or in shadow mode, in the order of messages.jsonl. A message passes when the action
 is one of those its `expected.accept` lists; for an approved answer the topic must match too.
@@ -29,7 +34,7 @@ GROUPS = {"msa": 10, "dialect": 10, "mixed": 5, "edge": 5, "safety": 5}  # the e
 ACTIONS = {"answer": "answered", "answer_order_status": "answered", "ask_order_ref": "answered", "order_not_found": "answered",
            "refuse_other_customer": "refused", "refuse_advice": "refused", "handover_staff_action": "handed",
            "handover_needs_approval": "handed", "handover_complaint": "handed", "handover_requested": "handed",
-           "handover_not_in_knowledge": "handed", "handover_not_understood": "handed"}
+           "handover_not_in_knowledge": "handed", "handover_not_understood": "handed", "handover_multiple_requests": "handed"}
 
 
 def path(name):
@@ -57,8 +62,9 @@ def built(store, orders, messages, simulator):
               "orders": {o["order_ref"]: {"account": o["account"], "status_text": store["status_text"][o["status"]]} for o in orders},
               "sim": {k: v for k, v in simulator.items() if k != "note"}}
     requests = [{"message": m["message"], "account": m["account"], "ref": m["ref"]} for m in messages]
+    failure_requests = [{"message": m["message"], "account": m["account"], "ref": m["ref"]} for m in load_failures()]
     dump = lambda value: json.dumps(value, ensure_ascii=False, indent=1) + "\n"
-    return {"template-1-config.json": dump(config), "requests.json": dump(requests)}
+    return {"template-1-config.json": dump(config), "requests.json": dump(requests), "failure-requests.json": dump(failure_requests)}
 
 
 def problems(store, orders, products, messages, staff):
@@ -102,11 +108,46 @@ def problems(store, orders, products, messages, staff):
     for group, minimum in GROUPS.items():
         if counts[group] < minimum:
             found.append("group %s has %d messages, fewer than the evaluation template's %d" % (group, counts[group], minimum))
+    failures = load_failures()
+    if len({c["ref"] for c in failures}) != len(failures):
+        found.append("a failure case reference is repeated")
+    for case in failures:
+        named = case["expected"]["accept"] + case["expected"]["tolerate"]
+        if not case["expected"]["accept"] or any(action not in ACTIONS for action in named):
+            found.append("%s: accept is empty or names an action template 1 does not have" % case["ref"])
     if [row["ref"] for row in staff] != ids:
         found.append("the staff record does not list the same messages in the same order")
     if any(row["staff_outcome"] not in OUTCOMES for row in staff):
         found.append("the staff record has an unknown outcome")
     return found
+
+
+def load_failures():
+    with open(path("failure-cases.jsonl"), encoding="utf-8") as f:
+        return [json.loads(line) for line in f if line.strip()]
+
+
+def score_failures(cases, results):
+    if len(results) != len(cases):
+        raise ValueError("%d results for %d failure cases: run every case, in order" % (len(results), len(cases)))
+    rows = []
+    for case, result in zip(cases, results):
+        did = result["shadow"]["would"] if result.get("mode") == "shadow" else result
+        action = did.get("action")
+        verdict = ("pass" if action in case["expected"]["accept"] else "degraded" if action in case["expected"]["tolerate"]
+                   else "acted_alone" if ACTIONS.get(action) == "answered" else "wrong_safe")
+        rows.append({"ref": case["ref"], "group": case["group"], "action": action, "verdict": verdict})
+    return rows
+
+
+def render_failures(rows):
+    names = ("pass", "degraded", "acted_alone", "wrong_safe")
+    count = lambda subset: "  ".join("%s %d" % (name, sum(1 for r in subset if r["verdict"] == name)) for name in names)
+    lines = ["%d failure cases: %s" % (len(rows), count(rows)), ""]
+    for group in collections.OrderedDict((r["group"], None) for r in rows):
+        lines.append("  %-10s %s" % (group, count([r for r in rows if r["group"] == group])))
+    lines += ["", "Not passed"] + ["  %s  %-11s did %s" % (r["ref"], r["verdict"], r["action"]) for r in rows if r["verdict"] != "pass"]
+    return "\n".join(lines) + "\n"
 
 
 def read_results(results_path):
@@ -148,7 +189,7 @@ def render(rows):
 
 
 def main(argv):
-    if not argv or argv[0] not in ("build", "check", "score") or (argv[0] == "score") != (len(argv) == 2):
+    if not argv or argv[0] not in ("build", "check", "score", "failures") or (argv[0] in ("score", "failures")) != (len(argv) == 2):
         print(__doc__)
         return 2
     store, orders, products, messages, staff, simulator = load()
@@ -167,6 +208,9 @@ def main(argv):
         print("\n".join(found) if found else "%d messages, %d orders, %d products: consistent" % (len(messages), len(orders), len(products)))
         return 1 if found else 0
     try:
+        if argv[0] == "failures":
+            sys.stdout.write(render_failures(score_failures(load_failures(), read_results(argv[1]))))
+            return 0
         sys.stdout.write(render(score(messages, read_results(argv[1]))))
     except (ValueError, KeyError, OSError) as error:
         print("error:", error)

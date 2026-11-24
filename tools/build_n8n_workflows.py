@@ -11,7 +11,12 @@ values) and the JavaScript of its Code nodes. The JavaScript is kept in files so
 read, reviewed and tested without n8n (`node tools/n8n_harness.js`). Every workflow has
 the same shape:
 
-    Webhook -> Config -> Prepare -> Real model? -> Model (HTTP) or Simulated model -> Decide -> Respond
+    Webhook -> Config -> Prepare -> Real model? -> Simulated model ------------------------------------------> Decide -> Respond
+                                                -> Model (HTTP) -> Check model output -> Retry model? -> Decide
+                                                                                                      -> Model retry (HTTP) -> Decide
+
+An answer from the HTTP model that cannot be read as one JSON object is repaired where that changes no meaning, and
+otherwise asked for once more. Decide reads whatever comes back and decides; an unreadable answer never acts.
 
 The model proposes and the Decide node decides: every limit is enforced there, in code.
 Every Webhook node asks for a header token (n8n's Header Auth). The built file names the credential
@@ -98,14 +103,28 @@ def build(folder):
          {"method": "POST", "url": "={{ $json.model_url }}", "sendBody": True, "specifyBody": "json",
           "jsonBody": "={{ JSON.stringify($json.request_body) }}", "options": {"timeout": 60000}},
          onError="continueRegularOutput")
-    js("Simulated model", "sim.js", [880, 100])
-    js("Decide", "decide.js", [1100, 0])
-    node("Respond", "n8n-nodes-base.respondToWebhook", 1.1, [1320, 0], {"respondWith": "firstIncomingItem", "options": {}})
+    js("Simulated model", "sim.js", [880, 140])
+    js("Check model output", "check_model.js", [1100, -100])
+    node("Retry model?", "n8n-nodes-base.if", 2.2, [1320, -100], {
+        "conditions": {"options": {"caseSensitive": True, "leftValue": "", "typeValidation": "strict", "version": 2},
+                       "conditions": [{"id": uid("retry-condition"), "leftValue": "={{ $json.retry }}", "rightValue": "",
+                                       "operator": {"type": "boolean", "operation": "true", "singleValue": True}}],
+                       "combinator": "and"},
+        "options": {}})
+    node("Model retry (HTTP)", "n8n-nodes-base.httpRequest", 4.2, [1540, -200],
+         {"method": "POST", "url": "={{ $json.model_url }}", "sendBody": True, "specifyBody": "json",
+          "jsonBody": "={{ JSON.stringify($json.request_body) }}", "options": {"timeout": 60000}},
+         onError="continueRegularOutput")
+    js("Decide", "decide.js", [1760, 0])
+    node("Respond", "n8n-nodes-base.respondToWebhook", 1.1, [1980, 0], {"respondWith": "firstIncomingItem", "options": {}})
     for source, target in [("Webhook", "Config"), ("Config", "Prepare"), ("Prepare", "Real model?"),
-                           ("Model (HTTP)", "Decide"), ("Simulated model", "Decide"), ("Decide", "Respond")]:
+                           ("Model (HTTP)", "Check model output"), ("Check model output", "Retry model?"),
+                           ("Model retry (HTTP)", "Decide"), ("Simulated model", "Decide"), ("Decide", "Respond")]:
         connect(source, target)
     connect("Real model?", "Model (HTTP)", 0)
     connect("Real model?", "Simulated model", 1)
+    connect("Retry model?", "Model retry (HTTP)", 0)
+    connect("Retry model?", "Decide", 1)
     if os.path.exists(os.path.join(folder, "approve.js")):
         node("Approval webhook", "n8n-nodes-base.webhook", 2, [0, 320],
              {"httpMethod": "POST", "path": key + "-approve", "authentication": "headerAuth", "responseMode": "responseNode", "options": {}},

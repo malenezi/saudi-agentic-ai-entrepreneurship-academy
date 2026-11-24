@@ -45,6 +45,7 @@ Approved, dated documents only: products or services, prices, opening hours, bra
 | Refund, cancel or change an order | Forbidden for the agent; staff action |
 | Give medical, legal or religious advice | Forbidden |
 | Share another customer's information | Forbidden |
+| Answer a message that carries more than one request | Not answered in part: the whole message is handed over at the strictest level among its requests (runnable workflow, since 24 November 2026) |
 
 ## 6. Instruction skeleton
 

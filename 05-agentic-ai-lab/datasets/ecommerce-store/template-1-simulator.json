@@ -157,6 +157,6 @@
   ]
  },
  "patterns": {
-  "order_ref": "s-\\d{4}"
+  "order_ref": "s[\\s#_-]*\\d{4}"
  }
 }
