@@ -45,7 +45,7 @@ Founded and maintained by **Prof. Mamdouh Alenezi** as an independent personal i
 - **Four disciplines in one pathway.** Entrepreneurship, engineering, operations and governance.
 - **Measured by outcomes.** Opportunities validated and products launched, not certificates issued.
 
-**Why now?** GASTAT reports that 33.1% of establishments in the Kingdom used AI technologies in 2025, up from 27.6% in 2024, which leaves roughly two thirds yet to start.
+**Why now?** GASTAT reports that 33.1% of establishments in the Kingdom used AI technologies in 2025, up from 27.6% in 2024, which leaves roughly two thirds yet to start. The 2024 figure is Arab News' report of that year's edition; the 2025 publication does not print it.
 
 <sub>Source: GASTAT, Establishments ICT Access and Usage Statistics 2025; entry A1 in the [source register](SOURCES.md). Reference year: 2025.</sub>
 
@@ -109,7 +109,7 @@ Every course has a glossary and an instructor guide. Details are in the [courses
 | [Founder Toolkit](04-entrepreneur-toolkit/README.md) | Fourteen bilingual business templates and four calculators: cost per resolved task, the customer's return, first-customers funnel, dilution | Available |
 | [Agentic AI Lab](05-agentic-ai-lab/README.md) | Twelve [entrepreneurial skills](05-agentic-ai-lab/skills/README.md), five agent templates, an evaluation template, an Arabic model guide | Available |
 | [Founder agents](02-saudi-market-knowledge-framework/founder-agents/README.md) | Twelve agents: a definition to paste into any assistant, the pages it reads, and three test conversations each | Available; eleven agents have one recorded run each with one assistant, not tried with founders |
-| [Runnable agent templates](05-agentic-ai-lab/agent-templates/workflows/README.md) | Five files that import into n8n and run with a simulated model and no key, enforcing the oversight table in code | Available; not run with a real model, no channel connected |
+| [Runnable agent templates](05-agentic-ai-lab/agent-templates/workflows/README.md) | Five files that import into n8n and run with a simulated model and no key, enforcing the oversight table in code | Available; their instructions were run twice with a language model outside n8n ([results](05-agentic-ai-lab/agent-templates/workflows/real-model-runs/README.md)); not run through the HTTP node, no channel connected |
 | [Lab exercises](05-agentic-ai-lab/exercises/README.md) | Seventeen hands-on exercises: fourteen use the two companion repositories, three use the Academy's own skills | Available; not yet tried with learners |
 | [Case studies](06-case-studies/README.md) | Fifteen operating cases from public sources (eight Saudi) with evidence levels, an index by topic and course module, six scenarios and a learner worksheet; plus twenty-two sourced venture pages: funding, platforms, exits, ten Saudi companies building for agents and five international ones | Available; owner-written cases wanted |
 | [Learning pathways](01-academy/learning-pathways.md) | A route for each kind of learner, an [instructor kit](01-academy/instructor-kit/README.md) for a 15-week course, and a [venture workbook](workbook/index.html) | Available; not yet tried with learners |
