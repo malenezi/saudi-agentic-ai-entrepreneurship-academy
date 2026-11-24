@@ -4,6 +4,14 @@
 
 Work towards v0.13. **Still true: no course has been piloted, and no lawyer or tax adviser has reviewed the framework.**
 
+### Arabic landing page: editorial, RTL and SEO revision (24 November 2026)
+
+- **Arabic landing page (`index.html`, from `tools/build_site.py`) rewritten.** The opening says what the Academy is, whom it serves, the problem (GASTAT 2025, entry A1, with its check date) and what a learner builds. New sections: the four courses with hours, level and deliverable; a starting point for six kinds of reader; readiness in three columns (available, in development, not yet tested); one "contribute" section. The decks are now under one heading with a sub-heading per course. Every figure was already in the repository; none is new.
+- **Arabic wording revised** in `README.md`, the Arabic half of `START-HERE.md` and the reader (`read.html`). The Academy's name, the course titles and the lab's name are unchanged. In running text: «الذكاء الاصطناعي القائم على الوكلاء», «منشأة في المملكة», «التطوير منخفض البرمجة (Low-Code)», «جارٍ تطويره», «لم يخضع للاختبار حتى الآن», «الجاهزية والشفافية», and principle 5 reads «لا معلومة رقمية دون مصدر موثوق وتاريخ تحقق». All disclosures about piloting and legal review are kept. The README section "مستوى الجاهزية" is now "الجاهزية والشفافية"; no other anchor changed.
+- **RTL and layout:** the hero puts the text first and the banner beside it (below it on a phone); card grids no longer overflow under 350 px; a skip link; slide counts follow Arabic number agreement (10 شرائح, 11 شريحة); primary buttons meet AA contrast. The English page takes the same layout with its text unchanged.
+- **Discoverability:** Arabic title, description and Open Graph text; canonical address, `hreflang` pairs, absolute preview image with dimensions and alternative text, and a `WebSite` JSON-LD block on both landing pages.
+- Not changed: lessons, decks, framework pages, `README.en.md`. The older wordings («منخفض الكود», «لا رقم بلا مصدر») remain in those pages.
+
 ### README: a new opening (24 November 2026)
 
 - Both READMEs now open with the problem (GASTAT 2025, entry A1), what the Academy contains in six lines, its status, and three commands that run the Course 2 reference agent with no key. The commands were run on 24 November 2026 and returned `reply_status`.
