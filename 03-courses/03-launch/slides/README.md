@@ -13,7 +13,7 @@
 | 3.3 | [اقتصاديات الوحدة](3-3-unit-economics.html) | 12 |
 | 3.4 | [جاهزية الامتثال](3-4-compliance-readiness.html) | 13 |
 | 3.5 | [الوصول إلى السوق في المملكة](3-5-going-to-market-in-the-kingdom.html) | 12 |
-| 3.6 | [التجارب وخطابات النوايا](3-6-pilots-and-letters-of-intent.html) | 12 |
+| 3.6 | [التجارب وخطابات النوايا](3-6-pilots-and-letters-of-intent.html) | 13 |
 | 3.7 | [تأسيس العمل](3-7-setting-up-the-business.html) | 12 |
 
 **للمشاهدة:** افتح [صفحة العروض](https://malenezi.github.io/saudi-agentic-ai-entrepreneurship-academy/) في المتصفح. الروابط في الجدول أعلاه تعرض شيفرة الملف داخل GitHub لا العرض نفسه. وللعمل دون اتصال: نزّل المستودع وافتح [`index.html`](../../../index.html).
