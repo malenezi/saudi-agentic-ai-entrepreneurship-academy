@@ -1,0 +1,34 @@
+{
+ "workflow": "03-lead-qualification.dialect",
+ "model": "qwen2.5:3b (Ollama, local)",
+ "date": "2026-11-24",
+ "how": "Ollama on the owner's laptop (Intel Core i5-1135G7, 8 GB RAM, no dedicated GPU, Windows 11). One separate call per prompt to http://localhost:11434/v1/chat/completions with temperature 0; the model saw the prompt only. When an answer was not one JSON object the script asked once more with the workflows' fixed instruction and recorded retry_content. Not sent through n8n's HTTP node. Prompts built by the code of pull request #67.",
+ "outputs": [
+  {
+   "id": 1,
+   "content": "{\n  \"intent\": stop\n}",
+   "seconds": 7.1,
+   "ref": "T3-3",
+   "retry_content": "{\"intent\": \"stop\"}",
+   "retry_seconds": 2
+  },
+  {
+   "id": 2,
+   "content": "{\n  \"intent\": \"quote_request\",\n  \"value\": \"within_range\"\n}",
+   "seconds": 1.9,
+   "ref": "T3-4"
+  },
+  {
+   "id": 3,
+   "content": "{\n  \"intent\": \"answer\",\n  \"value\": null\n}",
+   "seconds": 1.7,
+   "ref": "T3-1"
+  },
+  {
+   "id": 4,
+   "content": "{\n  \"intent\": \"quote_request\",\n  \"value\": \"within_range\"\n}",
+   "seconds": 2.1,
+   "ref": "T3-2"
+  }
+ ]
+}

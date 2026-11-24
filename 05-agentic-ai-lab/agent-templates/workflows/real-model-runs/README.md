@@ -67,6 +67,35 @@ Finding 1 led to a change: Decide now repairs an answer where that changes no me
 
 What this says for a founder: on this laptop a 3-billion-parameter model answers a short classification in two to eight seconds and is right about four times in five on these invented cases, and its errors are of the kind a guard catches (unparseable or out-of-list answers) more often than the kind that slips through (a computed total). It is a floor, not a recommendation: one small model, one run.
 
+## Third run: the same small model on the v0.13 workflows (24 November 2026)
+
+**qwen2.5:3b** again, on the same laptop, answering 225 prompts in 17.3 minutes: the five templates' cases, the Course 2 lab, the invented store's 85 messages and its 30 failure cases, and 17 dialect cases for templates 2 to 5. One call per prompt at temperature 0, outside n8n. Where an answer was not one JSON object the script asked once more with the workflows' fixed instruction, so the retry is exercised with a model for the first time. The outputs are in [`local-qwen2.5-3b-run2/`](local-qwen2.5-3b-run2/).
+
+| Set | Cases | This run | 22 November run |
+|---|---|---|---|
+| 1. Customer service | 9 | 8 of 9 | 8 of 9 |
+| 2. Booking assistant | 12 | **11 of 12** | 9 of 12 |
+| 3. Lead qualification | 12 | **11 of 12** | 8 of 12 |
+| 4. Invoice reconciliation | 12 | 11 of 12 | 11 of 12 |
+| 5. Tender summariser | 2 | 2 of 2 | 2 of 2 |
+| Templates together | 47 | **43 of 47** | 38 of 47 |
+| Course 2 lab, stage 3 | 35 and 8 held out | **28 of 35**, 7 of 8 | 31 of 35, 7 of 8 |
+| Invented store, 85 messages | 85 | **54 of 85**; acted alone on 11 | not run (simulator: 73, acted alone on 4) |
+| Invented store, failure cases | 30 | 17 right, 1 degraded, 11 acted alone, 1 wrong but safe | not run (simulator: 15, 7, 8, 0) |
+| Dialect cases, templates 2 to 5 | 14, and 3 simulator limits | 12 of 14; 2 of the 3 limits handled correctly | not run |
+
+### What this run found
+
+1. **Repair carries most of the gain; the retry adds a little.** In lead qualification seven of twelve answers needed repair and all seven were then read. On the store's 85 messages, 17 answers were repaired and 2 were read only on the second answer; none stayed unreadable.
+2. **A new malformation: square brackets for braces.** `[ "intent": "faq", … ]` in 18 of the store's 85 first answers and 5 of the 30 failure cases. The retry fixed fewer than half of them (the model often repeated the brackets). A repair was added after the run; the figures above include it. Without it the store gives 50 of 85, with eight messages handed over as unreadable.
+3. **The instructions named the wrong store's topics.** Template 1's instructions listed the default store's topics, so on the invented store the model could not label a question about payment, grinding or pickup, and «تقبلون مدى؟» was answered with the opening hours. Fixed after the run: Prepare now appends the keys of the approved knowledge in Config. **Not re-run since**, so 54 of 85 is the figure before the fix.
+4. **The model never said a message held two requests.** `also` was empty in all 115 store messages, including the five written as two requests. The multiple-request gate is sound in code and did not fire once with this model; D-082 was answered with the order's status and its cancellation was lost. Detection of a second request cannot rest on a model of this size.
+5. **Most of its unsupervised acts were a question, not an answer.** Seven of the eleven "acted alone" on the 85 are a request for the order number where a person was expected (a general question, a complaint or a request for a promise labelled `order_status`). The other four: a cancellation answered with the order's status (D-051, D-082) and an answer from the wrong approved entry (D-056, D-075). The four messages asking about another customer's order were all refused, and nothing was executed anywhere.
+6. **The same prompts did not give the same answers twice.** The lab's prompts are unchanged since 22 November, and the result moved from 31 to 28 of 35 at temperature 0 (cases 13, 17 and 35 failed this time; the others are the same). The cause was not investigated: treat one run of a small model as one sample.
+7. **Dialect cases:** T2-2 («ابي احجز عندكم») was labelled `unknown` and handed over where one question would have done; in T5-3 the model listed no requirements, so the brief missed the ISO 27001 condition (it did not mark it as met). A request to stop being contacted was honoured through an unquoted answer (T3-3).
+
+What this says for a founder: with repair and one retry a 3-billion-parameter model on a laptop no longer loses answers to bad JSON, and on short classification it is right about nine times in ten on these template cases. On eighty-five messages nobody tuned it for, it is right less than two times in three, and its typical error is to ask a customer for an order number when the customer wanted something else. Still one small model and one sample.
+
 ## How the first run was made
 
 - **Model:** Claude Fable 5.2 (`claude-fable-5-2`), on 21 November 2026.

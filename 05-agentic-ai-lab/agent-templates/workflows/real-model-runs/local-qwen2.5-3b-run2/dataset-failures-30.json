@@ -1,0 +1,204 @@
+{
+ "workflow": "dataset-failures-30",
+ "model": "qwen2.5:3b (Ollama, local)",
+ "date": "2026-11-24",
+ "how": "Ollama on the owner's laptop (Intel Core i5-1135G7, 8 GB RAM, no dedicated GPU, Windows 11). One separate call per prompt to http://localhost:11434/v1/chat/completions with temperature 0; the model saw the prompt only. When an answer was not one JSON object the script asked once more with the workflows' fixed instruction and recorded retry_content. Not sent through n8n's HTTP node. Prompts built by the code of pull request #67.",
+ "outputs": [
+  {
+   "id": 1,
+   "content": "[\n  \"intent\": \"order_status\",\n  \"topic\": \"delivery\",\n  \"order_ref\": \"S 2001\",\n  \"also\": []\n]",
+   "seconds": 3.3,
+   "ref": "F-001",
+   "retry_content": "[\n  \"intent\": \"order_status\",\n  \"topic\": \"delivery\",\n  \"order_ref\": \"S 2001\",\n  \"also\": []\n]",
+   "retry_seconds": 4.1
+  },
+  {
+   "id": 2,
+   "content": "{\n  \"intent\": \"order_status\",\n  \"topic\": \"delivery\",\n  \"order_ref\": \"2003\"\n}",
+   "seconds": 2.4,
+   "ref": "F-002"
+  },
+  {
+   "id": 3,
+   "content": "{\n  \"intent\": \"order_status\",\n  \"topic\": \"delivery\",\n  \"order_ref\": \"S2005\"\n}",
+   "seconds": 2.6,
+   "ref": "F-003"
+  },
+  {
+   "id": 4,
+   "content": "{\n  \"intent\": \"order_status\",\n  \"topic\": \"delivery\",\n  \"order_ref\": \"S-2004\"\n}",
+   "seconds": 2.8,
+   "ref": "F-004"
+  },
+  {
+   "id": 5,
+   "content": "{\n  \"intent\": \"order_status\",\n  \"topic\": \"delivery\",\n  \"order_ref\": \"S-2001\"\n}",
+   "seconds": 2.8,
+   "ref": "F-005"
+  },
+  {
+   "id": 6,
+   "content": "```json\n{\n  \"intent\": \"order_status\",\n  \"topic\": \"delivery\",\n  \"order_ref\": \"S-2006 / S-2012\",\n  \"also\": []\n}\n```",
+   "seconds": 4.4,
+   "ref": "F-006",
+   "retry_content": "```json\n{\n  \"intent\": \"order_status\",\n  \"topic\": \"delivery\",\n  \"order_ref\": \"S-2006 / S-2012\",\n  \"also\": []\n}\n```",
+   "retry_seconds": 5.5
+  },
+  {
+   "id": 7,
+   "content": "[\n  \"intent\": \"unknown\",\n  \"topic\": null,\n  \"order_ref\": \"S-2007,S-2022\",\n  \"also\": []\n]",
+   "seconds": 3.9,
+   "ref": "F-007",
+   "retry_content": "[\n  \"intent\": \"unknown\",\n  \"topic\": null,\n  \"order_ref\": \"S-2007,S-2022\",\n  \"also\": []\n]",
+   "retry_seconds": 4.2
+  },
+  {
+   "id": 8,
+   "content": "{\n  \"intent\": \"cancel\",\n  \"topic\": null,\n  \"order_ref\": \"2009\",\n  \"also\": []\n}",
+   "seconds": 3,
+   "ref": "F-008"
+  },
+  {
+   "id": 9,
+   "content": "{\n  \"intent\": \"refund\",\n  \"topic\": \"returns\",\n  \"order_ref\": \"s2010\",\n  \"also\": []\n}",
+   "seconds": 3.6,
+   "ref": "F-009"
+  },
+  {
+   "id": 10,
+   "content": "{\n  \"intent\": \"order_status\",\n  \"topic\": \"delivery\",\n  \"order_ref\": null,\n  \"also\": []\n}",
+   "seconds": 4.2,
+   "ref": "F-010"
+  },
+  {
+   "id": 11,
+   "content": "{\n  \"intent\": \"faq\",\n  \"topic\": \"hours\",\n  \"order_ref\": \"S-2002\",\n  \"also\": []\n}",
+   "seconds": 3.4,
+   "ref": "F-011"
+  },
+  {
+   "id": 12,
+   "content": "```json\n{\n  \"intent\": \"discount\",\n  \"topic\": null,\n  \"order_ref\": \"S-2008\",\n  \"also\": []\n}\n```",
+   "seconds": 3.9,
+   "ref": "F-012",
+   "retry_content": "```json\n{\n  \"intent\": \"discount\",\n  \"topic\": null,\n  \"order_ref\": \"S-2008\",\n  \"also\": []\n}\n```",
+   "retry_seconds": 4.6
+  },
+  {
+   "id": 13,
+   "content": "{\n  \"intent\": \"order_status\",\n  \"topic\": \"delivery\",\n  \"order_ref\": \"S-2014\",\n  \"also\": []\n}",
+   "seconds": 3.6,
+   "ref": "F-013"
+  },
+  {
+   "id": 14,
+   "content": "{\n  \"intent\": \"order_status\",\n  \"topic\": \"delivery\",\n  \"order_ref\": null,\n  \"also\": []\n}",
+   "seconds": 3.1,
+   "ref": "F-014"
+  },
+  {
+   "id": 15,
+   "content": "{\n  \"intent\": \"order_status\",\n  \"topic\": \"delivery\",\n  \"order_ref\": \"S-2016\",\n  \"also\": []\n}",
+   "seconds": 3.3,
+   "ref": "F-015"
+  },
+  {
+   "id": 16,
+   "content": "{\n  \"intent\": \"order_status\",\n  \"topic\": \"delivery\",\n  \"order_ref\": null,\n  \"also\": []\n}",
+   "seconds": 2.4,
+   "ref": "F-016"
+  },
+  {
+   "id": 17,
+   "content": "```json\n{\n  \"intent\": \"order_status\",\n  \"topic\": null,\n  \"order_ref\": null,\n  \"also\": []\n}\n```",
+   "seconds": 3,
+   "ref": "F-017",
+   "retry_content": "```json\n{\n  \"intent\": \"order_status\",\n  \"topic\": null,\n  \"order_ref\": null,\n  \"also\": []\n}\n```",
+   "retry_seconds": 3.8
+  },
+  {
+   "id": 18,
+   "content": "{\n  \"intent\": \"order_status\",\n  \"topic\": \"delivery\",\n  \"order_ref\": null,\n  \"also\": []\n}",
+   "seconds": 2.4,
+   "ref": "F-018"
+  },
+  {
+   "id": 19,
+   "content": "{\n  \"intent\": \"refund\",\n  \"topic\": \"returns\",\n  \"order_ref\": null,\n  \"also\": []\n}",
+   "seconds": 2.5,
+   "ref": "F-019"
+  },
+  {
+   "id": 20,
+   "content": "{\"intent\": \"unknown\", \"topic\": null, \"order_ref\": null, \"also\": []}",
+   "seconds": 2,
+   "ref": "F-020"
+  },
+  {
+   "id": 21,
+   "content": "{\n  \"intent\": \"order_status\",\n  \"topic\": \"delivery\",\n  \"order_ref\": \"S-2019\"\n}",
+   "seconds": 3,
+   "ref": "F-021"
+  },
+  {
+   "id": 22,
+   "content": "{\n  \"intent\": \"order_status\",\n  \"topic\": \"delivery\",\n  \"order_ref\": \"S-2018\",\n  \"also\": []\n}",
+   "seconds": 3.3,
+   "ref": "F-022"
+  },
+  {
+   "id": 23,
+   "content": "{\n  \"intent\": \"refund\",\n  \"topic\": null,\n  \"order_ref\": null,\n  \"also\": []\n}",
+   "seconds": 3,
+   "ref": "F-023"
+  },
+  {
+   "id": 24,
+   "content": "{\n  \"intent\": \"order_status\",\n  \"topic\": null,\n  \"order_ref\": null,\n  \"also\": []\n}",
+   "seconds": 2.6,
+   "ref": "F-024"
+  },
+  {
+   "id": 25,
+   "content": "[\n  \"intent\": \"human\",\n  \"topic\": null,\n  \"order_ref\": null,\n  \"also\": []\n]",
+   "seconds": 2.5,
+   "ref": "F-025",
+   "retry_content": "{\"intent\":\"human\",\"topic\":null,\"order_ref\":null,\"also\":[]}",
+   "retry_seconds": 2.5
+  },
+  {
+   "id": 26,
+   "content": "{\n  \"intent\": \"refund\",\n  \"topic\": null,\n  \"order_ref\": \"S-2023\",\n  \"also\": []\n}",
+   "seconds": 3.1,
+   "ref": "F-026"
+  },
+  {
+   "id": 27,
+   "content": "{\n  \"intent\": \"order_status\",\n  \"topic\": \"delivery\",\n  \"order_ref\": \"S-2015\"\n}",
+   "seconds": 2.6,
+   "ref": "F-027"
+  },
+  {
+   "id": 28,
+   "content": "[\n  \"intent\": \"complaint\",\n  \"topic\": null,\n  \"order_ref\": null,\n  \"also\": []\n]",
+   "seconds": 2.5,
+   "ref": "F-028",
+   "retry_content": "{\"intent\":\"complaint\",\"topic\":null,\"order_ref\":null,\"also\":[]}",
+   "retry_seconds": 2.5
+  },
+  {
+   "id": 29,
+   "content": "{\n  \"intent\": \"discount\",\n  \"topic\": null,\n  \"order_ref\": null,\n  \"also\": []\n}",
+   "seconds": 2.8,
+   "ref": "F-029"
+  },
+  {
+   "id": 30,
+   "content": "[\n  \"intent\": \"order_status\",\n  \"topic\": null,\n  \"order_ref\": \"S-2002\",\n  \"also\": []\n]",
+   "seconds": 3.1,
+   "ref": "F-030",
+   "retry_content": "{\"intent\":\"order_status\",\"topic\":null,\"order_ref\":\"S-2002\",\"also\":[]}",
+   "retry_seconds": 3.3
+  }
+ ]
+}

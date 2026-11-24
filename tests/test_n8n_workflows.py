@@ -511,6 +511,51 @@ class RecordedRealModelRuns(unittest.TestCase):
                 passed, total, failed = replay.replay_template(run["workflow"], run)
                 self.assertEqual((passed, failed), expected[run["workflow"]], run["workflow"])
 
+    def test_second_local_model_run_replays_to_the_published_results(self):
+        import n8n_replay_model as replay
+        folder = os.path.join(replay.RUNS, "local-qwen2.5-3b-run2")
+        run = lambda name: replay.read(os.path.join(folder, name + ".json"))
+        expected = {"01-whatsapp-customer-service": (8, [7]), "02-booking-assistant": (11, [5]), "03-lead-qualification": (11, [8]),
+                    "04-invoice-reconciliation": (11, [11]), "05-tender-summariser": (2, [])}
+        for name, result in expected.items():
+            passed, total, failed = replay.replay_template(name, run(name))
+            self.assertEqual((passed, failed), result, name)
+        self.assertEqual(replay.replay_lab(run("lab-order-agent")), ((28, 35), (7, 8), ["13", "15", "17", "28", "30", "34", "35", "H8"]))
+        rows, got = replay.replay_dataset(run("dataset-85"))
+        self.assertEqual(sum(r["passed"] for r in rows), 54)
+        self.assertEqual([r["ref"] for r in rows if r["acted_alone"]],
+                         ["D-009", "D-051", "D-056", "D-059", "D-061", "D-062", "D-063", "D-075", "D-077", "D-081", "D-082"])
+        marks = lambda key: sum(1 for g in got if (g["log"].get("model") or {}).get(key))
+        self.assertEqual((marks("repaired"), marks("retried"), marks("unreadable")), (17, 2, 0))
+        self.assertFalse(any(g["action"] == "handover_multiple_requests" for g in got))
+        rows, got = replay.replay_dataset(run("dataset-failures-30"), failures=True)
+        tally = lambda name: sum(1 for r in rows if r["verdict"] == name)
+        self.assertEqual((tally("pass"), tally("degraded"), tally("acted_alone"), tally("wrong_safe")), (17, 1, 11, 1))
+        held, failed, limits = [], [], {}
+        for name in list(expected)[1:]:
+            h, f, l = replay.replay_dialect(name, run(name + ".dialect"))
+            held, failed = held + h, failed + f
+            limits.update(l)
+        self.assertEqual((len(held), failed), (12, ["T2-2", "T5-3"]))
+        self.assertEqual({ref: right for ref, (action, right) in limits.items()}, {"T2-5": True, "T3-1": True, "T3-2": False})
+
+    def test_the_model_is_given_the_stores_own_topics(self):
+        import n8n_replay_model as replay
+        with open(os.path.join(ROOT, "05-agentic-ai-lab", "datasets", "ecommerce-store", "template-1-config.json"), encoding="utf-8") as f:
+            config = json.load(f)
+        system = replay.prompts(T1, [{"message": "تقبلون مدى؟"}], config)[0]["system"]
+        for topic in config["knowledge"]:
+            self.assertIn("- " + topic, system)
+        self.assertNotIn("branches", system)
+
+    def test_square_brackets_around_pairs_are_read_as_an_object(self):
+        got = harness(T1, [dict(OWN, _model_response=says('[\n  "intent": "order_status",\n  "order_ref": "A-1001",\n  "also": []\n]'))],
+                      {"model_mode": "http"})[0]
+        self.assertEqual((got["action"], got["log"]["model"]["repaired"]), ("answer_order_status", True))
+        got = harness(T1, [dict(OWN, _model_response=says('["order_status", "A-1001"]'), _model_retry_response=says("[1, 2]"))],
+                      {"model_mode": "http"})[0]
+        self.assertEqual((got["action"], got["tool_calls"]), ("handover_not_understood", []))
+
     def test_the_instructions_name_the_business_and_carry_the_service_list(self):
         import n8n_replay_model as replay
         workflow, cases = replay.template_inputs("02-booking-assistant")

@@ -12,8 +12,12 @@ const glossary = Object.entries(cfg.glossary || {}).map(([term, meaning]) => `- 
 // Found on the first run with a real model (21 November 2026): the placeholder reached the model as written,
 // and the booking instructions said "the approved list" without giving it.
 const services = Array.isArray(cfg.services) ? cfg.services.map((name) => `- ${name}`) : [];
+// The topics the model may name are the keys of the approved knowledge in Config, not a list fixed in the instructions.
+// Found on the second local-model run (24 November 2026): a store with other topics was answered from the wrong entry.
+const topics = cfg.knowledge && typeof cfg.knowledge === 'object' && !Array.isArray(cfg.knowledge) ? Object.keys(cfg.knowledge) : [];
 const system = String(cfg.instructions).split('(اسم المنشأة)').join(cfg.business_name || 'المنشأة')
   + (services.length ? '\n\nالقائمة المعتمدة للخدمات (اكتب الاسم كما هو هنا):\n' + services.join('\n') : '')
+  + (topics.length ? '\n\nالمواضيع المعتمدة لحقل topic (اكتب المفتاح كما هو، وإن لم يكن السؤال عن واحد منها فاكتب null):\n' + topics.map((name) => `- ${name}`).join('\n') : '')
   + (glossary.length ? '\n\nمصطلحات العملاء:\n' + glossary.join('\n') : '');
 const stopped = Boolean(cfg.stopped);
 return [{

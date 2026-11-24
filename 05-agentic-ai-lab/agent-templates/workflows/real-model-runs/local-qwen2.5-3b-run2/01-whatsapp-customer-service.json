@@ -1,0 +1,60 @@
+{
+ "workflow": "01-whatsapp-customer-service",
+ "model": "qwen2.5:3b (Ollama, local)",
+ "date": "2026-11-24",
+ "how": "Ollama on the owner's laptop (Intel Core i5-1135G7, 8 GB RAM, no dedicated GPU, Windows 11). One separate call per prompt to http://localhost:11434/v1/chat/completions with temperature 0; the model saw the prompt only. When an answer was not one JSON object the script asked once more with the workflows' fixed instruction and recorded retry_content. Not sent through n8n's HTTP node. Prompts built by the code of pull request #67.",
+ "outputs": [
+  {
+   "id": 1,
+   "content": "{\n  \"intent\": \"faq\",\n  \"topic\": \"hours\",\n  \"order_ref\": null,\n  \"also\": []\n}",
+   "seconds": 7.6
+  },
+  {
+   "id": 2,
+   "content": "{\n  \"intent\": \"order_status\",\n  \"topic\": \"delivery\",\n  \"order_ref\": \"A-1001\",\n  \"also\": []\n}",
+   "seconds": 3.6
+  },
+  {
+   "id": 3,
+   "content": "{\n  \"intent\": \"order_status\",\n  \"topic\": \"delivery\",\n  \"order_ref\": \"A-1002\",\n  \"also\": []\n}",
+   "seconds": 3
+  },
+  {
+   "id": 4,
+   "content": "```json\n{\n  \"intent\": \"refund\",\n  \"topic\": \"returns\",\n  \"order_ref\": \"A-1001\",\n  \"also\": []\n}\n```",
+   "seconds": 2.9,
+   "retry_content": "```json\n{\n  \"intent\": \"refund\",\n  \"topic\": \"returns\",\n  \"order_ref\": \"A-1001\",\n  \"also\": []\n}\n```",
+   "retry_seconds": 3.4
+  },
+  {
+   "id": 5,
+   "content": "{\n  \"intent\": \"discount\",\n  \"topic\": null,\n  \"order_ref\": null,\n  \"also\": []\n}",
+   "seconds": 2.1
+  },
+  {
+   "id": 6,
+   "content": "{\n  \"intent\": \"advice\",\n  \"topic\": null,\n  \"order_ref\": null,\n  \"also\": []\n}",
+   "seconds": 2.3
+  },
+  {
+   "id": 7,
+   "content": "{\n  \"intent\": \"promise\",\n  \"topic\": \"branches\",\n  \"order_ref\": null,\n  \"also\": []\n}",
+   "seconds": 2.1
+  },
+  {
+   "id": 8,
+   "content": "{\n  \"intent\": \"unknown\",\n  \"topic\": null,\n  \"order_ref\": null,\n  \"also\": []\n}",
+   "seconds": 2.1
+  },
+  {
+   "id": 9,
+   "content": "{\n  \"intent\": \"faq\",\n  \"topic\": \"hours\",\n  \"order_ref\": null,\n  \"also\": []\n}",
+   "seconds": 2.2
+  },
+  {
+   "id": 10,
+   "content": "{\n  \"intent\": \"faq\",\n  \"topic\": \"hours\",\n  \"order_ref\": null,\n  \"also\": []\n}",
+   "seconds": 2.4
+  }
+ ]
+}
