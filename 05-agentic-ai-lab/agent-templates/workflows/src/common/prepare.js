@@ -3,8 +3,10 @@
 //#include text
 const cfg = $('Config').first().json;
 const body = $('Webhook').first().json.body || {};
-let message = String(body.message ?? '');
+let message = stripHidden(String(body.message ?? ''));
 if (cfg.normalise_digits) message = westernDigits(message);
+// The wrapper's own tag, typed by a customer, must not close the wrapper.
+message = message.replace(/<\s*\/?\s*customer_message\s*>/gi, '[customer_message]');
 const glossary = Object.entries(cfg.glossary || {}).map(([term, meaning]) => `- ${term}: ${meaning}`);
 // The instructions name the business and, where the model must pick from a list, carry that list.
 // Found on the first run with a real model (21 November 2026): the placeholder reached the model as written,
@@ -17,7 +19,7 @@ const stopped = Boolean(cfg.stopped);
 return [{
   json: {
     message,
-    account: String(body.account ?? ''),
+    account: cfg.normalise_account === false ? String(body.account ?? '') : normaliseAccount(body.account ?? ''),
     ref: String(body.ref ?? ''), // the caller's own id for this message; used by the shadow record
     state: body.state && typeof body.state === 'object' ? body.state : {},
     stopped,

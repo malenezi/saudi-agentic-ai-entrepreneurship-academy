@@ -13,7 +13,7 @@
 | 3.3 | [اقتصاديات الوحدة](3-3-quiz.md) | 10 | 2 | 20 دقيقة |
 | 3.4 | [جاهزية الامتثال](3-4-quiz.md) | 10 | 4 | 20 دقيقة |
 | 3.5 | [الوصول إلى السوق في المملكة](3-5-quiz.md) | 10 | 3 | 15 دقيقة |
-| 3.6 | [التجارب وخطابات النوايا](3-6-quiz.md) | 10 | 5 | 15 دقيقة |
+| 3.6 | [التجارب وخطابات النوايا](3-6-quiz.md) | 11 | 5 | 15 دقيقة |
 | 3.7 | [تأسيس العمل](3-7-quiz.md) | 10 | 4 | 15 دقيقة |
 
 ## أنواع الأسئلة
@@ -44,4 +44,4 @@
 
 ---
 
-**English summary.** Seven formative quizzes of ten questions, one per module, built from each lesson's Quick Review and Common Mistakes. Three question types: understanding, application and spot the mistake. Answer keys with explanations sit in a collapsed section at the end of each quiz. The quizzes carry no weight in the launch pack rubric. The quizzes for Modules 3.4 and 3.7 test what the lesson says, not the law; neither lesson has been reviewed by a lawyer or a tax adviser.
+**English summary.** Seven formative quizzes of ten questions (eleven in 3.6, which adds one on shadow mode), one per module, built from each lesson's Quick Review and Common Mistakes. Three question types: understanding, application and spot the mistake. Answer keys with explanations sit in a collapsed section at the end of each quiz. The quizzes carry no weight in the launch pack rubric. The quizzes for Modules 3.4 and 3.7 test what the lesson says, not the law; neither lesson has been reviewed by a lawyer or a tax adviser.

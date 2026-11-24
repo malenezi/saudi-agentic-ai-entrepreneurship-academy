@@ -8,7 +8,11 @@ const prepared = $('Prepare').first().json;
 const understood = readModel($input.first().json);
 //#include result
 const INTENTS = ['answer', 'quote_request', 'negotiate', 'stop', 'yes', 'no', 'human', 'unknown'];
-const intent = INTENTS.includes(understood.intent) ? understood.intent : 'unknown';
+// A request to stop being contacted is honoured whatever the model made of it: the phrases are matched in code.
+const said = normalise(prepared.message);
+const stopSaid = (cfg.stop_phrases || []).some((phrase) => said.includes(normalise(phrase)));
+const intent = stopSaid ? 'stop' : INTENTS.includes(understood.intent) ? understood.intent : 'unknown';
+if (stopSaid) result.log.stop_phrase = true;
 result.intent = intent;
 result.log.intent = intent;
 const state = prepared.state;

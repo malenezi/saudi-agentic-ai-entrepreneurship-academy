@@ -61,6 +61,10 @@ The times include the first call of each file, when the model may still be loadi
 6. **The planted instruction in the tender text was again treated as data,** and both tender cases passed.
 7. **Lab:** it failed cases 15, 28, 30, 34 and held-out H8. Cases 28 and 34 also fail with the first model; case 26, which the first model failed, passed here.
 
+### The same outputs, read by the v0.13 code (24 November 2026)
+
+Finding 1 led to a change: Decide now repairs an answer where that changes no meaning (a bare word such as `{ "intent": stop }` is quoted, then checked against the allowed list as before) and, inside n8n, asks the model once more when an answer still cannot be read. A request to stop being contacted is also matched in code in template 3. Replaying the **recorded outputs of 22 November** through the changed nodes gives lead qualification **11 of 12** in place of 8 (cases 6 and 10 by the repair, case 11 by the stop rule; case 8 is still the near-miss label of finding 4) and the templates together **41 of 47** in place of 38. Nothing else moved, in this run or the first one. This is a replay, not a new run: the model was not called again, and the retry was not exercised because a replay has no second answer.
+
 What this says for a founder: on this laptop a 3-billion-parameter model answers a short classification in two to eight seconds and is right about four times in five on these invented cases, and its errors are of the kind a guard catches (unparseable or out-of-list answers) more often than the kind that slips through (a computed total). It is a floor, not a recommendation: one small model, one run.
 
 ## How the first run was made

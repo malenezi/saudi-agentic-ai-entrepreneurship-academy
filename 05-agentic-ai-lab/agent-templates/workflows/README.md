@@ -25,8 +25,9 @@
 </div>
 
 ```
-Webhook -> Config -> Prepare -> Real model? -> Model (HTTP)      -> Decide -> Respond
-                                            -> Simulated model  ->
+Webhook -> Config -> Prepare -> Real model? -> Simulated model ---------------------------------------> Decide -> Respond
+                                            -> Model (HTTP) -> Check model output -> Retry model? -> Decide
+                                                                                                  -> Model retry (HTTP) -> Decide
 ```
 
 <div dir="rtl">
@@ -34,9 +35,10 @@ Webhook -> Config -> Prepare -> Real model? -> Model (HTTP)      -> Decide -> Re
 | العقدة | عملها |
 |---|---|
 | **Config** | كل ما تغيّره أنت: اسم المنشأة، المحتوى المعتمد، البيانات التجريبية، `model_mode`، ومفتاح الإيقاف `stopped`، ومفتاح [وضع الظل](shadow-mode/README.md) `shadow_mode` |
-| **Prepare** | تجهّز طلب النموذج. رسالة العميل تُغلَّف بوسم وتُعامل بيانات، لا تعليمات |
+| **Prepare** | تجهّز طلب النموذج. رسالة العميل تُغلَّف بوسم وتُعامل بيانات، لا تعليمات، ولا يغلق الوسمَ نصٌّ كتبه العميل. تُحذف علامات الاتجاه المخفية، ويُكتب رقم الجوال بصيغة واحدة (`9665…` و`+9665…` و`5…` تصير `05…`؛ يُعطَّل بـ`normalise_account: false`) |
 | **Simulated model** | محاكٍ بكلمات مفتاحية. ليس نموذجاً لغوياً، ويفهم أقل بكثير من نموذج حقيقي |
 | **Model (HTTP)** | أي خادم يتبع صيغة `chat/completions` المتوافقة مع OpenAI، محلياً كان أو مستضافاً |
+| **Check model output** و**Model retry (HTTP)** | جواب النموذج إن لم يكن كائن JSON واحداً يُصلَح حيث لا يتغير المعنى (نص أو علامات تنسيق حول الكائن، علامات اقتباس مائلة، فاصلة زائدة، كلمة بلا علامتي اقتباس)، وإلا يُطلب من النموذج مرة واحدة أخرى بتعليمة ثابتة دون إعادة نص العميل. ما بقي غير مقروء لا ينفّذ شيئاً. يُعطَّل الطلب الثاني بـ`retry_unreadable: false`. وما حدث يُكتب في `log.model` حين يحدث فقط |
 | **Decide** | **النموذج يقترح، وهذه العقدة تقرر.** جدول الإشراف في القالب مكتوب هنا شيفرةً. مخرج النموذج غير موثوق: ما لا يُقرأ منه لا ينفّذ شيئاً |
 
 كل رد يحمل الحقول نفسها: `action` (ما تقرر)، `level` (صف جدول الإشراف الذي طُبّق)، `reply_draft` (مسودة الرد)، `handover` (ملخص التحويل)، `pending_approval` (ما ينتظر إنساناً)، `tool_calls` (ما كان سيُكتب في نظامك)، و`state` (حالة المحادثة، تعيدها مع الرسالة التالية).
@@ -107,6 +109,13 @@ curl -s -X POST http://localhost:5678/webhook/saaea-customer-service \
 4. ابنِ [مجموعة تقييمك](../../evaluation/eval-template.md) من رسائل عملائك قبل أن يراه أحد. ملفات `cases.json` هنا مثال على الشكل، وليست بديلاً. وللتمرّن قبل ذلك: [متجر مختلق](../../datasets/ecommerce-store/README.md) بخمس وثمانين رسالة وسلوكها المتوقع، يشغّل القالب 1 كما هو.
 5. أبقِ كل حدٍّ في **Decide**. حدٌّ مكتوب في التعليمات وحدها ليس حداً.
 
+**قاعدتان أُضيفتا في 24 نوفمبر 2026 بعد ثلاثين رسالة كُتبت لتكسر القالب 1** ([حالات الفشل](../../datasets/ecommerce-store/README.md#حالات-الفشل-ثلاثون-رسالة-كتبت-لتكسر-القالب)):
+
+- **رسالة فيها أكثر من طلب** (القالب 1): النموذج يسمّي النية الرئيسة ويضع غيرها في الحقل `also`. إن لم يكن فارغاً فلا يُجاب عن شيء، وتُحال الرسالة كاملة بالإجراء `handover_multiple_requests` وبأشد مستوى بين طلباتها. قبل ذلك كان الجزء السهل يُجاب ويضيع الباقي. القاعدة متحفظة عمداً: سؤالان مسموحان في رسالة واحدة يذهبان إلى موظف أيضاً.
+- **طلب إيقاف المراسلة** (القالب 3): عبارات الإيقاف في `stop_phrases` تُطابَق في الشيفرة قبل الأخذ بجواب النموذج، فلا يتوقف تنفيذ الطلب على فهم النموذج له. القائمة تُكمَل بعبارات عملائك، وقد توقف المراسلة في رسالة لم تقصد ذلك؛ ومن كتب من جديد يُجاب.
+
+كشف الطلب الثاني يبقى عمل النموذج. المحاكي لا يلتقطه إلا حين تفصل بين الطلبين علامة استفهام أو سطر جديد.
+
 ## ما تحققنا منه، وما لم نتحقق منه
 
 | الفحص | النتيجة |
@@ -116,10 +125,12 @@ curl -s -X POST http://localhost:5678/webhook/saaea-customer-service \
 | رمز نقطة الاستقبال في n8n 2.35.7، 23 نوفمبر 2026 | النقاط الثماني رفضت طلباً بلا رمز وطلباً برمز خاطئ (403)؛ وقبل إنشاء الاعتماد أجابت 500 ولم تنفّذ شيئاً |
 | مسار النموذج الحقيقي في n8n على خادم وهمي محلي | جواب سليم نُفّذ؛ جواب غير مقروء حُوّل إلى إنسان؛ خادم لا يردّ حُوّل إلى إنسان |
 | منطق العقد خارج n8n (`tests/test_n8n_workflows.py`، ضمن `make check`) | 50 حالة للقوالب، ومفتاح الإيقاف، ونموذج يهذي، ونموذج لا يردّ |
+| الإصلاح والطلب الثاني وما يكتبه العملاء فعلاً، خارج n8n، 24 نوفمبر 2026 | جواب بنص حوله أو بفاصلة زائدة أو بكلمة بلا اقتباس يُقرأ؛ جواب غير مقروء يُطلب مرة ثانية؛ جوابان غير مقروءين لا ينفّذان شيئاً في أي من الملفات الستة. القالب 1: رقم الجوال بخمس صيغ هو الحساب نفسه؛ رقم الطلب بأربع صيغ يُحَل إلى مفتاحه؛ رقم لم يكتبه العميل يُسقط؛ رسالة بأكثر من طلب تُحال كاملة. القالب 3: طلب إيقاف المراسلة يُنفَّذ أياً كان جواب النموذج. و14 حالة باللهجة للقوالب 2 إلى 5 (`src/<القالب>/dialect-cases.json`) |
+| العقد والقواعد المضافة، داخل n8n 2.35.7، 24 نوفمبر 2026 | الملفات الستة استُوردت بالعقد الثلاث الجديدة، و`tools/n8n_e2e.py` أعطى 100 طلب بلا إخفاق. ثم القالبان 1 و3 بوضع `http` على خادم وهمي محلي: جواب بكلمة بلا اقتباس وفاصلة زائدة قُرئ بعد الإصلاح؛ جواب غير مقروء طُلب مرة ثانية فنُفّذ الجواب الثاني، والطلب الثاني حمل أربع رسائل ونص العميل مرة واحدة؛ جوابان غير مقروءين حُوّلا إلى إنسان؛ `also` أحال الرسالة كاملة؛ رقم الجوال بصيغة `9665…` عُرف صاحبه؛ طلب الإيقاف نُفّذ والنموذج لا يُقرأ |
 | وضع الظل خارج n8n، 23 نوفمبر 2026 | في الحالات الخمسين لا يخرج رد ولا تحويل ولا موافقة ولا كتابة؛ حجز لا يُحفظ؛ مسودة قيد لا تُحفظ ولا تُعتمد |
 | وضع الظل داخل n8n 2.35.7، 23 نوفمبر 2026، على القوالب 1 و2 و4 | رسائل العيّنة الاثنتا عشرة أعطت السجل المنشور نفسه؛ حجز طُلب مرتين لم يُحفظ؛ مسودة قيد لم تُحفظ ولم تُعتمد |
 
-**ما لم نتحقق منه:** لم تُشغَّل مع نموذج لغوي حقيقي عبر عقدة HTTP في n8n (التشغيلان المسجّلان في [`real-model-runs`](real-model-runs/README.md) تمّا خارج n8n). وضع الظل لم يُجرَّب مع منشأة، ولم يُشغَّل داخل n8n على القالبين 3 و5. الرمز لم يُجرَّب من واجهة المحرر، ولا خلف وسيط عكسي أو نفق. لم تُستورد من واجهة المحرر ولا على n8n Cloud ولا على إصدارات n8n 1.x. لم توصل بقناة أو تقويم أو نظام حقيقي. المحاكي لا يفهم إلا كلماته، وحالات الاختبار مختلقة وليست من رسائل عملاء. الحجوزات والمسودات تُحفظ في بيانات سير العمل للتجربة، وليست قاعدة بيانات. ولم يجرّبها مؤسس بعد.
+**ما لم نتحقق منه:** عقدتا الإصلاح والطلب الثاني والقواعد المضافة في 24 نوفمبر 2026 لم تُجرَّب بنموذج لغوي، ورسائلها كتبها مساعد ذكاء اصطناعي ولم يراجعها متحدث أصلي. لم تُشغَّل مع نموذج لغوي حقيقي عبر عقدة HTTP في n8n (التشغيلان المسجّلان في [`real-model-runs`](real-model-runs/README.md) تمّا خارج n8n). وضع الظل لم يُجرَّب مع منشأة، ولم يُشغَّل داخل n8n على القالبين 3 و5. الرمز لم يُجرَّب من واجهة المحرر، ولا خلف وسيط عكسي أو نفق. لم تُستورد من واجهة المحرر ولا على n8n Cloud ولا على إصدارات n8n 1.x. لم توصل بقناة أو تقويم أو نظام حقيقي. المحاكي لا يفهم إلا كلماته، وحالات الاختبار مختلقة وليست من رسائل عملاء. الحجوزات والمسودات تُحفظ في بيانات سير العمل للتجربة، وليست قاعدة بيانات. ولم يجرّبها مؤسس بعد.
 
 ## التعديل
 
@@ -156,6 +167,8 @@ Five files you import into [n8n](https://docs.n8n.io) and run after one step, cr
 **One shape.** `Webhook -> Config -> Prepare -> Real model? -> Model (HTTP) or Simulated model -> Decide -> Respond`. The model proposes and **Decide** decides: the template's oversight table is written there as code, and model output that cannot be read does nothing. Set `model_mode` to `http` in Config to call any OpenAI-compatible endpoint; keep keys in an n8n credential, never in Config or a file.
 
 **Checked on 20 November 2026.** All six workflows (the five templates and the Course 2 lab) imported, published and ran in n8n 2.35.7 from the command line; `tools/n8n_e2e.py` sent 84 requests to the live webhooks with no failure (run again on 23 November 2026 with the token: 100 requests, no failure; all eight webhooks answered 403 to a request with no token or a wrong one, and 500 before the credential existed); the HTTP model path was exercised in n8n against a local stub (a valid answer, an unreadable answer, an unreachable endpoint). **Not checked:** a real language model, the editor's import menu, n8n Cloud, n8n 1.x, any real channel or system, and use by founders.
+
+**Added on 24 November 2026.** Between the HTTP model node and Decide there are now two more nodes: an answer that is not one JSON object is repaired where that changes no meaning (text or a code fence around the object, curly quotes, a trailing comma, a bare word where a string was meant) and otherwise asked for once more with a fixed instruction; what is still unreadable never acts, and `log.model` records what happened only when something did. Prepare strips hidden direction marks, keeps a customer from closing the wrapper tag, and writes a Saudi mobile number in one form. In template 1 an order reference is resolved to its stored key however it is typed, a reference whose digits are not in the customer's message is dropped, and a message with more than one request (the model's `also` field) is handed over whole as `handover_multiple_requests`. In template 3 a request to stop being contacted is matched in code (`stop_phrases`) whatever the model returns. Tested outside n8n with canned model answers and with messages written by an AI assistant, and on the same day inside n8n 2.35.7: all six workflows imported with the new nodes, `tools/n8n_e2e.py` gave 100 requests with no failure, and templates 1 and 3 in `http` mode against a local stub showed the repair, the single retry (four messages, the customer's text once), the handover after two unreadable answers, the `also` gate, the mobile-number spelling and the stop rule; not yet tried with a language model, and the thirty failure cases and the dialect cases were not reviewed by a native speaker.
 
 **Shadow mode (23 November 2026).** With `shadow_mode: true` in Config a template decides as usual and nothing leaves it; what it would have done is kept under `shadow.would` for comparison with the staff's record. It processes real data, so the data agreement comes first. Guide, report script and an invented sample: [`shadow-mode`](shadow-mode/README.md). Run inside n8n 2.35.7 on templates 1, 2 and 4; not tried with a business.
 

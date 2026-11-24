@@ -8,8 +8,13 @@ const result = { action: null, level: null, intent: 'unknown', reply_draft: '', 
 // data is processed all the same. The caller files the shadow record; `ref` ties it to the staff's record.
 const shadowMode = cfg.shadow_mode === true;
 const storedData = () => (shadowMode ? JSON.parse(JSON.stringify($getWorkflowStaticData('global'))) : $getWorkflowStaticData('global'));
+// What happened to the model's answer on the way here is logged only when something did.
+try {
+  if ($('Check model output').first().json.retry === true) modelRead.retried = true;
+} catch (error) { /* the simulated route: that node did not run */ }
 const done = (fields) => {
   Object.assign(result, fields);
+  if (modelRead.repaired || modelRead.retried || modelRead.unreadable) result.log.model = Object.assign({}, modelRead);
   if (!shadowMode) return [{ json: result }];
   const { intent, log, ...would } = result;
   return [{ json: { mode: 'shadow', action: 'shadow_observed', level: 'shadow', intent, reply_draft: '', handover: null,

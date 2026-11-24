@@ -58,6 +58,25 @@
 - **أضفت صفحة أو غيّرت عنواناً فيها؟** شغّل `python3 tools/build_site.py` ليتحدّث فهرس البحث في الموقع (`site-index.json`). إن لم تستطع فأرسل طلب الدمج كما هو واذكر ذلك، وسنحدّثه نحن.
 - **تعدّل معيار الإتمام أو سلّماً؟** غيّر رقم إصدار المعيار، وحدّث `tools/score_submission.py` واختباراته معه.
 
+## قبل فتح طلب الدمج
+
+`make check` يفحص الروابط الداخلية والمراسي والجداول ويشغّل الاختبارات. ما بعد البند 5 لا يفحصه برنامج، فافحصه أنت. وإن تعذّر عليك بند فأرسل طلبك واذكره، ونكمله معك.
+
+1. `make check` ينتهي بلا مشكلة، وكل الاختبارات ناجحة.
+2. `python3 tools/build_site.py` بعد أي صفحة جديدة أو عنوان تغيّر، و`site-index.json` ضمن التغيير.
+3. الملفات المبنية لا تُعدَّل باليد: `index.html`، `index.en.html`، ملفات `.n8n.json`، العروض المبنية، وما يبنيه `tools/dataset_pack.py`. عدّل المصدر ثم ابنِ.
+4. إن غيّرت القوالب القابلة للتشغيل: `python3 tools/build_n8n_workflows.py`، وأي رقم تغيّر (خط أساس المحاكي، عدد الحالات) يُحدَّث حيث يُذكر.
+5. إن غيّرت دليل التمويل: `python3 tools/check_funding_directory.py`.
+6. كل رقم أو حكم جديد له معرّف في [`SOURCES.md`](SOURCES.md): المعلومة كما قُرئت، ورابط صفحة الجهة المصدِرة نفسها، وتاريخ التحقق وطريقة القراءة، وما لم يُقرأ.
+7. ما قُرئ من مقتطف بحث أو ملخص ثانوي يُكتب أنه كذلك. وما لم يثبت يُسجَّل في سلسلة C ولا يدخل إطار المعرفة.
+8. النسختان متطابقتان: السجل التنظيمي بلغتيه، ودليل التمويل وملف `funding-directory.json`، والصفحتان العربية والإنجليزية لكل دليل له نسختان.
+9. إن أعدت بنداً محذوفاً أو تركت بنداً خارجاً: حدّث [سجل ما لم يُعتمد](02-saudi-market-knowledge-framework/not-adopted.md).
+10. سطر «حالة التحقق» في أي درس تغيّرت مصادره يطابق العدد الجديد. وعبارة «لم يراجعه مختص» لا تُحذف إلا بتوقيع مسمّى في [حزمة المراجعة](03-courses/validation/README.md).
+11. النص العربي: `bidi_lint` بلا أخطاء جديدة، والصفحة داخل وسم الاتجاه `dir="rtl"` كما في بقية الصفحات.
+12. لا مفتاح ولا رمز ولا بيانات حقيقية في أي ملف.
+13. مدخل في [`CHANGELOG.md`](CHANGELOG.md) تحت «Unreleased» يذكر ما لم يُجرَّب وما لم يُراجَع.
+14. وصف طلب الدمج يفصل ثلاثة: ما أُنجز، وكيف تُحقّق منه، وما ينتظر مختصاً.
+
 ## إن كنت تستخدم Git
 
 1. افتح Issue تصف فيه اقتراحك (اختياري للتعديلات الصغيرة).
@@ -130,6 +149,25 @@ These are not barriers. If you cannot meet one, send your contribution anyway an
 - **Added a page or changed a heading?** Run `python3 tools/build_site.py` so the site's search index (`site-index.json`) is updated. If you cannot, send the pull request as it is and say so; a maintainer will update it.
 - **Changing the completion standard or a rubric?** Bump the standard's version, and update `tools/score_submission.py` and its tests with it.
 - Third-party components and their terms are listed in [THIRD-PARTY.md](THIRD-PARTY.md).
+
+## Before you open a pull request
+
+`make check` covers internal links, anchors, tables and the tests. Nothing after item 5 is checked by a program. If you cannot meet an item, send the pull request anyway and say which.
+
+1. `make check` ends with no problem and every test passing.
+2. `python3 tools/build_site.py` after any new page or changed heading; `site-index.json` is part of the change.
+3. Built files are not edited by hand: `index.html`, `index.en.html`, the `.n8n.json` files, the built decks and what `tools/dataset_pack.py` builds. Edit the source, then build.
+4. If the runnable templates changed: `python3 tools/build_n8n_workflows.py`, and any figure that moved (simulator baseline, case counts) is updated wherever it is quoted.
+5. If the funding directory changed: `python3 tools/check_funding_directory.py`.
+6. Every new figure or rule has an entry in [`SOURCES.md`](SOURCES.md): the claim as read, the issuer's own page, the date and the way it was read, and what was not read.
+7. What was read from a search extract or a secondary summary says so. What could not be confirmed goes in the C series and stays out of the framework.
+8. Paired files agree: the regulatory register in both languages, the funding directory and `funding-directory.json`, and the Arabic and English page of each guide that has both.
+9. If you restored a removed item or left one out, update the [not-adopted record](02-saudi-market-knowledge-framework/not-adopted.md).
+10. The verification-status line of a lesson whose sources changed gives the new count. "Not reviewed by a specialist" is removed only with a named sign-off in the [review packet](03-courses/validation/README.md).
+11. Arabic text: no new `bidi_lint` error, and the page sits inside the `dir="rtl"` wrapper the other pages use.
+12. No key, token or real data in any file.
+13. An entry in [`CHANGELOG.md`](CHANGELOG.md) under "Unreleased" that says what was not tried and not reviewed.
+14. The pull request description separates three things: what was done, how it was checked, and what waits for a specialist.
 
 ## If you do use Git
 

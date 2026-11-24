@@ -16,6 +16,18 @@ const say = (text) => greeting + text;
 
 if (prepared.stopped) return handover('stopped', 'stopped', 'المساعد موقوف. كل الرسائل تُحال إلى الفريق.', say('حوّلنا رسالتك إلى أحد الفريق.'));
 
+// More than one request in one message: nothing is answered and nothing is dropped. The whole message goes to a person,
+// at the strictest level among its requests. Found on 24 November 2026: the easy part was answered and the rest was lost.
+const also = Array.isArray(understood.also) ? [...new Set(understood.also.filter((name) => INTENTS.includes(name) && name !== intent && name !== 'unknown'))] : [];
+if (also.length && intent !== 'unknown') {
+  const all = [intent].concat(also);
+  const level = all.some((name) => name === 'refund' || name === 'cancel') ? 'forbidden_for_agent'
+    : all.some((name) => name === 'discount' || name === 'promise') ? 'approve' : 'autonomous';
+  result.log.also = also;
+  return handover('handover_multiple_requests', level, `في الرسالة أكثر من طلب (${all.join('، ')}). لم يُجب عن أي منها ولم يُنفَّذ شيء. تُقرأ كاملة.`,
+    say('في رسالتك أكثر من طلب. حوّلناها كاملة إلى أحد الفريق حتى لا يفوتنا شيء منها.'), all.includes('complaint') ? 'high' : 'normal');
+}
+
 if (intent === 'faq') {
   const entry = own(cfg.knowledge, understood.topic);
   if (!entry) return handover('handover_not_in_knowledge', 'autonomous', 'سؤال لا جواب له في المحتوى المعتمد.', say('لا أجد جواباً مؤكداً لسؤالك. حوّلته إلى أحد الفريق.'));
@@ -24,7 +36,7 @@ if (intent === 'faq') {
     reply_draft: say(`${entry.text}\nهل تحتاج شيئاً آخر؟`) });
 }
 if (intent === 'order_status') {
-  const ref = typeof understood.order_ref === 'string' ? understood.order_ref.trim().toUpperCase() : null; // tool input is normalised in code
+  const ref = resolveRef(understood.order_ref, Object.keys(cfg.orders), prepared.message); // tool input is normalised in code, and must have been said by the customer
   if (!ref) return done({ action: 'ask_order_ref', level: 'autonomous', reply_draft: say('فضلاً أرسل رقم الطلب لنتحقق من حالته.') });
   const order = own(cfg.orders, ref);
   if (order && order.account !== prepared.account) { // another customer's order: refused before anything is read
