@@ -2,7 +2,22 @@
 
 ## Unreleased
 
-Work towards v0.13. **Still true: no course has been piloted, and no lawyer or tax adviser has reviewed the framework.**
+Nothing yet.
+
+## v0.13 (2026-11-24)
+
+From template to a first paid pilot: shadow mode, a token on the webhooks, repair and one retry of unreadable model output, an invented store to practise on, a pilot terms sheet, and a second run with a small local model.
+
+**Still true: no course has been piloted, and no lawyer or tax adviser has reviewed the framework. Nothing in this release was tried with a business or with learners.**
+
+### Second local-model run, and what it changed (24 November 2026)
+
+- **The run.** qwen2.5:3b on the owner's laptop answered 225 prompts in 17.3 minutes, outside n8n, with the workflows' retry: templates 43 of 47 (38 on 22 November), Course 2 lab 28 of 35 and 7 of 8 (31 and 7), the invented store 54 of 85 with 11 acted alone (simulator: 73 and 4), its failure cases 17 right, 1 degraded, 11 acted alone and 1 wrong but safe, dialect cases 12 of 14. Recorded under `real-model-runs/local-qwen2.5-3b-run2/` and replayed by a test.
+- **Found and fixed after the run, not re-run:** template 1's instructions named the default store's topics, so another store's questions could not be labelled; Prepare now appends the keys of the approved knowledge in Config. Square brackets written around key and value pairs (one answer in five) are now read as an object.
+- **Found and not fixed:** the model never filled `also`, so the multiple-request gate did not fire once with it; the same lab prompts gave 28 where they gave 31 two days earlier.
+- **The 85 messages of the invented store** were read and approved without change by the Academy's owner, a native Arabic speaker, on 24 November 2026. No dialect labels and no second reader; the thirty failure cases and the dialect cases are not reviewed.
+- **`.gitattributes`:** the built decks, the two landing pages, the site index and the built workflow files are marked as generated, so GitHub's language bar counts hand-written files. GitHub folds marked files in a pull request's diff.
+- `tools/n8n_replay_model.py` passes a recorded second answer to the harness and replays the store and the dialect cases. 153 tests.
 
 ### Agent templates: unreadable model output, and what customers actually type (24 November 2026)
 

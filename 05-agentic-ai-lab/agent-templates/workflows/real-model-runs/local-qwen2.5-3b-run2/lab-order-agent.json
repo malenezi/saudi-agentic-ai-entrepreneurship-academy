@@ -1,0 +1,223 @@
+{
+ "workflow": "lab-order-agent",
+ "model": "qwen2.5:3b (Ollama, local)",
+ "date": "2026-11-24",
+ "how": "Ollama on the owner's laptop (Intel Core i5-1135G7, 8 GB RAM, no dedicated GPU, Windows 11). One separate call per prompt to http://localhost:11434/v1/chat/completions with temperature 0; the model saw the prompt only. When an answer was not one JSON object the script asked once more with the workflows' fixed instruction and recorded retry_content. Not sent through n8n's HTTP node. Prompts built by the code of pull request #67.",
+ "outputs": [
+  {
+   "id": 1,
+   "content": "{\n  \"intent\": \"order_status\",\n  \"order_id\": \"84522\",\n  \"city\": null,\n  \"conditional\": false,\n  \"urgent\": false\n}",
+   "seconds": 10.4
+  },
+  {
+   "id": 2,
+   "content": "{\n  \"intent\": \"order_status\",\n  \"order_id\": \"84523\",\n  \"city\": null,\n  \"conditional\": false,\n  \"urgent\": false\n}",
+   "seconds": 3.3
+  },
+  {
+   "id": 3,
+   "content": "{\n  \"intent\": \"order_status\",\n  \"order_id\": \"84521\",\n  \"city\": null,\n  \"conditional\": false,\n  \"urgent\": false\n}",
+   "seconds": 3.7
+  },
+  {
+   "id": 4,
+   "content": "{\n  \"intent\": \"order_status\",\n  \"order_id\": \"84540\",\n  \"city\": null,\n  \"conditional\": false,\n  \"urgent\": false\n}",
+   "seconds": 4.3
+  },
+  {
+   "id": 5,
+   "content": "{\n  \"intent\": \"order_status\",\n  \"order_id\": null,\n  \"city\": null,\n  \"conditional\": false,\n  \"urgent\": false\n}",
+   "seconds": 3
+  },
+  {
+   "id": 6,
+   "content": "{\n  \"intent\": \"cancel\",\n  \"order_id\": \"84523\",\n  \"city\": null,\n  \"conditional\": false,\n  \"urgent\": false\n}",
+   "seconds": 3.4
+  },
+  {
+   "id": 7,
+   "content": "{\n  \"intent\": \"address_change\",\n  \"order_id\": \"84523\",\n  \"city\": null,\n  \"conditional\": false,\n  \"urgent\": false\n}",
+   "seconds": 3.7
+  },
+  {
+   "id": 8,
+   "content": "{\n  \"intent\": \"refund\",\n  \"order_id\": \"84540\",\n  \"city\": null,\n  \"conditional\": false,\n  \"urgent\": false\n}",
+   "seconds": 3.4
+  },
+  {
+   "id": 9,
+   "content": "{\n  \"intent\": \"shipping_question\",\n  \"order_id\": null,\n  \"city\": \"الدمام\",\n  \"conditional\": false,\n  \"urgent\": false\n}",
+   "seconds": 3.3
+  },
+  {
+   "id": 10,
+   "content": "{\n  \"intent\": \"complaint\",\n  \"order_id\": null,\n  \"city\": null,\n  \"conditional\": false,\n  \"urgent\": false\n}",
+   "seconds": 3.1
+  },
+  {
+   "id": 11,
+   "content": "{\n  \"intent\": \"order_status\",\n  \"order_id\": \"84522\",\n  \"city\": null,\n  \"conditional\": false,\n  \"urgent\": false\n}",
+   "seconds": 3.6
+  },
+  {
+   "id": 12,
+   "content": "{\n  \"intent\": \"order_status\",\n  \"order_id\": \"84521\",\n  \"city\": null,\n  \"conditional\": false,\n  \"urgent\": false\n}",
+   "seconds": 4.2
+  },
+  {
+   "id": 13,
+   "content": "{\n  \"intent\": \"order_status\",\n  \"order_id\": \"null\",\n  \"city\": \"null\",\n  \"conditional\": false,\n  \"urgent\": false\n}",
+   "seconds": 3.4
+  },
+  {
+   "id": 14,
+   "content": "{\n  \"intent\": \"cancel\",\n  \"order_id\": null,\n  \"city\": null,\n  \"conditional\": true,\n  \"urgent\": true\n}",
+   "seconds": 3.2
+  },
+  {
+   "id": 15,
+   "content": "{\n  \"intent\": \"order_status\",\n  \"order_id\": \"null\",\n  \"city\": \"null\",\n  \"conditional\": false,\n  \"urgent\": false\n}",
+   "seconds": 3.3
+  },
+  {
+   "id": 16,
+   "content": "{\n  \"intent\": \"order_status\",\n  \"order_id\": null,\n  \"city\": null,\n  \"conditional\": false,\n  \"urgent\": false\n}",
+   "seconds": 3.1
+  },
+  {
+   "id": 17,
+   "content": "{\n  \"intent\": \"order_status\",\n  \"order_id\": \"null\",\n  \"city\": \"null\",\n  \"conditional\": false,\n  \"urgent\": false\n}",
+   "seconds": 3.1
+  },
+  {
+   "id": 18,
+   "content": "{\n  \"intent\": \"cancel\",\n  \"order_id\": \"84523\",\n  \"city\": null,\n  \"conditional\": false,\n  \"urgent\": false\n}",
+   "seconds": 3.3
+  },
+  {
+   "id": 19,
+   "content": "{\n  \"intent\": \"address_change\",\n  \"order_id\": \"84523\",\n  \"city\": null,\n  \"conditional\": false,\n  \"urgent\": false\n}",
+   "seconds": 3.4
+  },
+  {
+   "id": 20,
+   "content": "{\n  \"intent\": \"shipping_question\",\n  \"order_id\": null,\n  \"city\": \"الرياض\",\n  \"conditional\": false,\n  \"urgent\": false\n}",
+   "seconds": 3.2
+  },
+  {
+   "id": 21,
+   "content": "{\n  \"intent\": \"order_status\",\n  \"order_id\": \"84522\",\n  \"city\": null,\n  \"conditional\": false,\n  \"urgent\": false\n}",
+   "seconds": 3.6
+  },
+  {
+   "id": 22,
+   "content": "{\n  \"intent\": \"order_status\",\n  \"order_id\": \"84521\",\n  \"city\": null,\n  \"conditional\": false,\n  \"urgent\": false\n}",
+   "seconds": 3.5
+  },
+  {
+   "id": 23,
+   "content": "{\n  \"intent\": \"refund\",\n  \"order_id\": \"84540\",\n  \"city\": null,\n  \"conditional\": false,\n  \"urgent\": false\n}",
+   "seconds": 3.3
+  },
+  {
+   "id": 24,
+   "content": "{\n  \"intent\": \"order_status\"\n}",
+   "seconds": 1.2
+  },
+  {
+   "id": 25,
+   "content": "{\n  \"intent\": \"order_status\",\n  \"order_id\": \"84523\",\n  \"city\": null,\n  \"conditional\": false,\n  \"urgent\": false\n}",
+   "seconds": 3.4
+  },
+  {
+   "id": 26,
+   "content": "{\n  \"intent\": \"order_status\",\n  \"order_id\": \"84522\",\n  \"city\": null,\n  \"conditional\": false,\n  \"urgent\": false\n}",
+   "seconds": 3.3
+  },
+  {
+   "id": 27,
+   "content": "{\n  \"intent\": \"order_status\",\n  \"order_id\": \"99999\",\n  \"city\": null,\n  \"conditional\": false,\n  \"urgent\": false\n}",
+   "seconds": 3.3
+  },
+  {
+   "id": 28,
+   "content": "{\n  \"intent\": \"unknown\",\n  \"order_id\": null,\n  \"city\": null,\n  \"conditional\": false,\n  \"urgent\": false\n}",
+   "seconds": 2.8
+  },
+  {
+   "id": 29,
+   "content": "{\n  \"intent\": \"shipping_question\",\n  \"order_id\": null,\n  \"city\": \"جدة\",\n  \"conditional\": false,\n  \"urgent\": false\n}",
+   "seconds": 3.1
+  },
+  {
+   "id": 30,
+   "content": "{\n  \"intent\": \"order_status\",\n  \"order_id\": \"84-521\",\n  \"city\": null,\n  \"conditional\": false,\n  \"urgent\": false\n}",
+   "seconds": 3.5
+  },
+  {
+   "id": 31,
+   "content": "{\n  \"intent\": \"order_status\",\n  \"order_id\": \"84530\",\n  \"city\": null,\n  \"conditional\": false,\n  \"urgent\": false\n}",
+   "seconds": 3.3
+  },
+  {
+   "id": 32,
+   "content": "{\n  \"intent\": \"order_status\",\n  \"order_id\": \"84522\",\n  \"city\": null,\n  \"conditional\": false,\n  \"urgent\": false\n}",
+   "seconds": 3.7
+  },
+  {
+   "id": 33,
+   "content": "{\n  \"intent\": \"order_status\",\n  \"order_id\": null,\n  \"city\": null,\n  \"conditional\": false,\n  \"urgent\": false\n}",
+   "seconds": 3.9
+  },
+  {
+   "id": 34,
+   "content": "{\n  \"intent\": \"order_status\",\n  \"order_id\": \"84522\",\n  \"city\": null,\n  \"conditional\": false,\n  \"urgent\": false\n}",
+   "seconds": 6
+  },
+  {
+   "id": 35,
+   "content": "{\n  \"intent\": \"order_status\",\n  \"order_id\": \"null\",\n  \"city\": \"null\",\n  \"conditional\": false,\n  \"urgent\": false\n}",
+   "seconds": 3.3
+  },
+  {
+   "id": 36,
+   "content": "{\n  \"intent\": \"order_status\",\n  \"order_id\": \"84523\",\n  \"city\": null,\n  \"conditional\": false,\n  \"urgent\": false\n}",
+   "seconds": 3.5
+  },
+  {
+   "id": 37,
+   "content": "{\n  \"intent\": \"order_status\",\n  \"order_id\": \"84522\",\n  \"city\": null,\n  \"conditional\": false,\n  \"urgent\": false\n}",
+   "seconds": 3.5
+  },
+  {
+   "id": 38,
+   "content": "{\n  \"intent\": \"order_status\",\n  \"order_id\": null,\n  \"city\": null,\n  \"conditional\": false,\n  \"urgent\": false\n}",
+   "seconds": 3
+  },
+  {
+   "id": 39,
+   "content": "{\n  \"intent\": \"order_status\",\n  \"order_id\": \"84521\",\n  \"city\": null,\n  \"conditional\": false,\n  \"urgent\": false\n}",
+   "seconds": 3.3
+  },
+  {
+   "id": 40,
+   "content": "{\n  \"intent\": \"shipping_question\",\n  \"order_id\": null,\n  \"city\": \"جدة\",\n  \"conditional\": false,\n  \"urgent\": false\n}",
+   "seconds": 3
+  },
+  {
+   "id": 41,
+   "content": "{\n  \"intent\": \"order_status\",\n  \"order_id\": \"84522\",\n  \"city\": null,\n  \"conditional\": false,\n  \"urgent\": false\n}",
+   "seconds": 3.3
+  },
+  {
+   "id": 42,
+   "content": "{\n  \"intent\": \"order_status\",\n  \"order_id\": \"84530\",\n  \"city\": null,\n  \"conditional\": false,\n  \"urgent\": false\n}",
+   "seconds": 3.3
+  },
+  {
+   "id": 43,
+   "content": "{\n  \"intent\": \"unknown\",\n  \"order_id\": null,\n  \"city\": null,\n  \"conditional\": false,\n  \"urgent\": false\n}",
+   "seconds": 2.9
+  }
+ ]
+}

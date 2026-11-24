@@ -1,6 +1,7 @@
 // The model's answer is untrusted: take one JSON object out of it, or nothing.
 // Repair is limited to what changes no meaning: text or code fences around the object, curly quotes,
-// trailing commas, Python's None, True and False, and a bare word where a string was meant. Anything else stays unreadable, and an unreadable answer never acts.
+// trailing commas, Python's None, True and False, a bare word where a string was meant, and square brackets
+// written around key and value pairs. Anything else stays unreadable, and an unreadable answer never acts.
 const modelRead = { unreadable: false, repaired: false, retried: false };
 function firstObject(text) { // the first balanced {...}, strings respected
   const start = text.indexOf('{');
@@ -35,7 +36,12 @@ function parseModelContent(content) {
   const text = String(content);
   const strict = asObject(text.slice(text.indexOf('{'), text.lastIndexOf('}') + 1));
   if (strict) return { value: strict, repaired: false };
-  const candidate = firstObject(text.replace(/[\u201C\u201D\u201E\u201F]/g, '"'));
+  let tidy = text.replace(/[\u201C\u201D\u201E\u201F]/g, '"');
+  // Square brackets around key and value pairs ([ "intent": "faq" ]): seen in one answer in five from a small local
+  // model on 24 November 2026. A list cannot hold "key": value, so the brackets can only have been meant as braces.
+  const bracketed = tidy.match(/\[(\s*"[^"]+"\s*:[\s\S]*)\]/);
+  if (bracketed && tidy.indexOf('{') < 0) tidy = '{' + bracketed[1] + '}';
+  const candidate = firstObject(tidy);
   if (!candidate) return null;
   // A bare word as a value ({ "intent": stop }) is quoted: the first failure of a small local model (run of 22 November 2026).
   // The value is still checked against the allowed list in Decide.

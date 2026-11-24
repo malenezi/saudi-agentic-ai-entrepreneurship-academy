@@ -1,0 +1,23 @@
+{
+ "workflow": "05-tender-summariser",
+ "model": "qwen2.5:3b (Ollama, local)",
+ "date": "2026-11-24",
+ "how": "Ollama on the owner's laptop (Intel Core i5-1135G7, 8 GB RAM, no dedicated GPU, Windows 11). One separate call per prompt to http://localhost:11434/v1/chat/completions with temperature 0; the model saw the prompt only. When an answer was not one JSON object the script asked once more with the workflows' fixed instruction and recorded retry_content. Not sent through n8n's HTTP node. Prompts built by the code of pull request #67.",
+ "outputs": [
+  {
+   "id": 1,
+   "content": "{\"facts\": {\"issuer\": {\"value\": \"هيئة مثال للخدمات\", \"page\": 1}, \"scope\": {}, \"location\": {\"value\": \"الرياض\", \"page\": 1}, \"duration\": {\"value\": \"12 شهراً\", \"page\": 2}, \"deadline\": {\"value\": \"2027-01-15 الساعة 10:00 صباحاً\", \"page\": 2}, \"guarantee\": {}, \"payment_terms\": {}, \"penalties\": {\"value\": \"بحسب ما ورد في نموذج العقد المرفق\", \"page\": 3}}, \"requirements\": [{\"text\": \"سجل تجاري ساري المفعول\", \"page\": 2}, {\"text\": \"مشاريع مماثلة خلال السنوات الثلاث الماضية\", \"page\": 2}, {\"text\": \"شهادة ISO 27001\", \"page\": 2}, {\"text\": \"خطة لنقل المعرفة إلى فريق الجهة\", \"page\": 2}], \"criteria\": [{\"text\": \"معيار: العرض الفني 70%\", \"page\": 3}, {\"text\": \"معيار: العرض المالي 30%\", \"page\": 3}]}",
+   "seconds": 24.8
+  },
+  {
+   "id": 2,
+   "content": "{\"facts\": {\"issuer\": {\"value\": \"\", \"page\": 0}, \"scope\": {}, \"location\": {}, \"duration\": {}, \"deadline\": {}, \"guarantee\": {}, \"payment_terms\": {}, \"penalties\": {}},\n \"requirements\": [{\"text\": \"\", \"key\": null, \"page\": 0}],\n \"criteria\": [{\"text\": \"\", \"page\": 0}]}",
+   "seconds": 8.4
+  },
+  {
+   "id": 3,
+   "content": "{\"facts\": {\"issuer\": {\"value\": \"هيئة مثال للخدمات\", \"page\": 1}, \"scope\": {}, \"location\": {\"value\": \"الرياض\", \"page\": 1}, \"duration\": {\"value\": \"12 شهراً\", \"page\": 2}, \"deadline\": {\"value\": \"2027-01-15 الساعة 10:00 صباحاً\", \"page\": 2}, \"guarantee\": {}, \"payment_terms\": {}, \"penalties\": {\"value\": \"بحسب ما ورد في نموذج العقد المرفق\", \"page\": 3}}, \"requirements\": [{\"text\": \"سجل تجاري ساري المفعول\", \"page\": 2}, {\"text\": \"مشاريع مماثلة خلال السنوات الثلاث الماضية\", \"page\": 2}, {\"text\": \"شهادة ISO 27001\", \"page\": 2}, {\"text\": \"خطة لنقل المعرفة إلى فريق الجهة\", \"page\": 2}], \"criteria\": [{\"text\": \"معيار: العرض الفني 70%\", \"page\": 3}, {\"text\": \"معيار: العرض المالي 30%\", \"page\": 3}]}",
+   "seconds": 25.8
+  }
+ ]
+}

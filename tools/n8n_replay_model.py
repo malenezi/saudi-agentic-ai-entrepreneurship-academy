@@ -86,6 +86,14 @@ def as_response(text):
     return {"choices": [{"message": {"content": text}}]}
 
 
+def answers(item):
+    """A recorded output as the harness takes it. A run made since v0.13 may hold the model's second answer too."""
+    fields = {"_model_response": as_response(item["content"])}
+    if "retry_content" in item:
+        fields["_model_retry_response"] = as_response(item["retry_content"])
+    return fields
+
+
 def lab_overrides():
     config = load("config/%s.json" % LAB_STAGE)
     return {"ownership_check": config.get("ownership_check", "app"), "normalise_digits": config.get("normalise_digits", False),
@@ -106,9 +114,9 @@ def template_inputs(name):
 def replay_template(name, run):
     """(passed, model cases, failed case numbers) for one template."""
     workflow, cases = template_inputs(name)
-    outputs = {item["id"]: item["content"] for item in run["outputs"]}
+    outputs = {item["id"]: item for item in run["outputs"]}
     chosen = [(i, case) for i, case in enumerate(cases, 1) if "_model_response" not in case]
-    requests = [dict(case, _model_response=as_response(outputs[i])) for i, case in chosen]
+    requests = [dict(case, **answers(outputs[i])) for i, case in chosen]
     got = harness(workflow, requests, {"model_mode": "http"})
     failed = [i for (i, case), result in zip(chosen, got) if not contains(case["expect"], result)]
     return len(chosen) - len(failed), len(chosen), failed
@@ -117,15 +125,39 @@ def replay_template(name, run):
 def replay_lab(run):
     """((passed, total) on the working set, the same on the held-out set, failed case ids)."""
     cases = lab_cases()
-    outputs = {item["id"]: item["content"] for item in run["outputs"]}
+    outputs = {item["id"]: item for item in run["outputs"]}
     store = Store(os.path.join(REFERENCE, "data", "orders.json"), os.path.join(REFERENCE, "data", "policy-v2-approved-only.json"))
-    requests = [{"message": c["message"], "account": c["account"], "_model_response": as_response(outputs[i])}
-                for i, c in enumerate(cases, 1)]
+    requests = [dict({"message": c["message"], "account": c["account"]}, **answers(outputs[i])) for i, c in enumerate(cases, 1)]
     got = harness(LAB, requests, dict(lab_overrides(), model_mode="http"))
     wrong = [first_wrong_step(case, result, store) for case, result in zip(cases, got)]
     work, held = wrong[:35], wrong[35:]
     failed = [str(case["id"]) for case, step in zip(cases, wrong) if step]
     return (sum(1 for s in work if not s), len(work)), (sum(1 for s in held if not s), len(held)), failed
+
+
+def replay_dataset(run, failures=False):
+    """A run of template 1 on the invented store: the 85 messages, or its thirty failure cases. Returns dataset_pack's rows."""
+    import dataset_pack as pack
+    with open(pack.path("failure-requests.json" if failures else "requests.json"), encoding="utf-8") as f:
+        requests = json.load(f)
+    with open(pack.path("template-1-config.json"), encoding="utf-8") as f:
+        config = dict(json.load(f), model_mode="http")
+    by_ref = {item["ref"]: item for item in run["outputs"]}
+    got = harness(os.path.join(WORKFLOWS, "01-whatsapp-customer-service.n8n.json"), [dict(q, **answers(by_ref[q["ref"]])) for q in requests], config)
+    return pack.score_failures(pack.load_failures(), got) if failures else pack.score(pack.load()[3], got), got
+
+
+def replay_dialect(name, run):
+    """The dialect cases of one template: (refs that hold, refs that do not, {limit ref: (action, is it the correct one)})."""
+    pack = read(os.path.join(WORKFLOWS, "src", name, "dialect-cases.json"))
+    items = pack["cases"] + pack["simulator_limits"]
+    by_ref = {item["ref"]: item for item in run["outputs"]}
+    got = harness(os.path.join(WORKFLOWS, name + ".n8n.json"),
+                  [dict({k: c[k] for k in ("message", "account") if k in c}, **answers(by_ref[c["ref"]])) for c in items], {"model_mode": "http"})
+    held = [c["ref"] for c, g in zip(items, got) if "expect" in c and contains(c["expect"], g)]
+    failed = [c["ref"] for c, g in zip(items, got) if "expect" in c and not contains(c["expect"], g)]
+    limits = {c["ref"]: (g["action"], g["action"].startswith(c["correct"].split(":")[0])) for c, g in zip(items, got) if "expect" not in c}
+    return held, failed, limits
 
 
 def main(argv):

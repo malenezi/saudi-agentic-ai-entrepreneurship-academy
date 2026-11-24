@@ -1,0 +1,8 @@
+# Build output: written by tools/build_slides.py, tools/build_site.py and tools/build_n8n_workflows.py
+# from sources in this repository, and checked against them by `make check`. Marked so that GitHub's
+# language bar counts what is written by hand. GitHub also folds these files in a pull request's diff.
+03-courses/*/slides/*.html linguist-generated=true
+index.html linguist-generated=true
+index.en.html linguist-generated=true
+site-index.json linguist-generated=true
+*.n8n.json linguist-generated=true
