@@ -44,7 +44,7 @@ Then complete the [Human Oversight Matrix](../02-saudi-market-knowledge-framewor
 | القرار · Decision | الخيار · Choice | السبب · Reason |
 |---|---|---|
 | أتمتة عادية، سير عمل بخطوة نموذج، وكيل واحد، أم عدة وكلاء؟ · Plain automation, workflow with a model step, one agent or several? | | |
-| منخفض الكود أم برمجي؟ · Low-code or code? | | |
+| تطوير منخفض البرمجة أم برمجة كاملة؟ · Low-code or code? | | |
 | النموذج: مستضاف أم مفتوح الأوزان ذاتي الاستضافة؟ · Hosted model or self-hosted open weights? | | |
 | أين تُعالَج البيانات؟ · Where is data processed? | | |
 | القناة: واتساب، ويب، بريد؟ · Channel? | | |
