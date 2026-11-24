@@ -6,7 +6,26 @@
 
 > Think like an entrepreneur, build like an AI engineer, operate like an agent-native company.
 
-An open-source, Arabic-first knowledge initiative for anyone who wants to start, run or grow a business in Saudi Arabia built on agentic AI. It takes a founder from a real problem inside a Saudi business to a working agent and a paying customer, brings entrepreneurship, engineering, operations and governance into one pathway, and grounds its content in the Kingdom's regulatory and economic context. Founded and maintained by **Prof. Mamdouh Alenezi** as an independent personal initiative, and developed with community contributions.
+Two thirds of Saudi establishments have not started using AI (GASTAT, 2025). Founders who want to serve them find guidance that is generic, in English, and silent on Saudi regulation. SAAEA is a free, Arabic-first path from a real problem inside a Saudi business to a working agent and a paying customer.
+
+- **4 courses, 28 lessons, 76 hours**, each lesson with a deck and a quiz, on a low-code track and a coding track
+- **Saudi Market Knowledge Framework:** 12 domains, every fact sourced and dated
+- **12 founder agents** you paste into any AI assistant
+- **14 bilingual templates and 4 calculators**
+- **8 labs** that run with no key and no cost
+- **Honest status:** not yet piloted with a cohort, no legal review ([readiness](RELEASE-READINESS.md))
+
+**Try it in a minute** (Python 3.9 or newer, nothing to install):
+
+```bash
+git clone https://github.com/malenezi/saudi-agentic-ai-entrepreneurship-academy.git
+cd saudi-agentic-ai-entrepreneurship-academy/03-courses/02-build/labs/reference
+python3 -m order_agent.cli "ما حالة طلبي رقم 84522؟"
+```
+
+The agent looks up the order and drafts the reply. Not a coder? [Start in an hour](#start-in-an-hour) or [open the decks](https://malenezi.github.io/saudi-agentic-ai-entrepreneurship-academy/index.en.html).
+
+Founded and maintained by **Prof. Mamdouh Alenezi** as an independent personal initiative, and developed with community contributions.
 
 **Status:** v0.12 ([changelog](CHANGELOG.md) · [roadmap](ROADMAP.md) · [release readiness](RELEASE-READINESS.md)) · Last reviewed: 22 November 2026
 
@@ -15,23 +34,6 @@ An open-source, Arabic-first knowledge initiative for anyone who wants to start,
 | [Start here](START-HERE.md#english): one page that points you to your route and answers the common questions | [Slide decks in the browser](https://malenezi.github.io/saudi-agentic-ai-entrepreneurship-academy/index.en.html), and [every page on the site](https://malenezi.github.io/saudi-agentic-ai-entrepreneurship-academy/read.html?p=README.en.md) | [Contribute](#contribute): every contribution is welcome, and you do not need Git |
 
 **Language.** Arabic is the Academy's primary language. Lessons are in Arabic with English terms and an English summary; syllabi, trainer guides, the completion standard and the labs' code are in English or in both.
-
----
-
-## Contents
-
-1. [Why this academy](#why-this-academy)
-2. [Choose your route](#choose-your-route)
-3. [Start in an hour](#start-in-an-hour)
-4. [The four courses](#the-four-courses)
-5. [What is available now](#what-is-available-now)
-6. [Readiness](#readiness)
-7. [Companion repositories](#companion-repositories)
-8. [Contribute](#contribute)
-9. [Principles](#principles)
-10. [Repository structure](#repository-structure)
-11. [Licence and citation](#licence-and-citation)
-12. [Disclaimer](#disclaimer)
 
 ---
 

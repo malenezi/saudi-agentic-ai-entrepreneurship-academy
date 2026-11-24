@@ -4,6 +4,11 @@
 
 Work towards v0.13. **Still true: no course has been piloted, and no lawyer or tax adviser has reviewed the framework.**
 
+### README: a new opening (24 November 2026)
+
+- Both READMEs now open with the problem (GASTAT 2025, entry A1), what the Academy contains in six lines, its status, and three commands that run the Course 2 reference agent with no key. The commands were run on 24 November 2026 and returned `reply_status`.
+- The twelve-item contents list is removed from both; GitHub generates one. No section or anchor changed.
+
 ### Agent templates: shadow mode (23 November 2026)
 
 - A `shadow_mode` switch in the Config of the five runnable templates. When it is on, a template decides as usual and nothing leaves it: no reply draft, handover, approval request, staff notice or write. What it would have done is kept under `shadow.would`, with the caller's `ref` for the message. Templates 2 and 4 work on a discarded copy of their stored data, so no booking or draft is kept and nothing can be approved.
