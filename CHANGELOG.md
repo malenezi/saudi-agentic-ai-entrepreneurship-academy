@@ -4,6 +4,11 @@
 
 Work towards v0.13. **Still true: no course has been piloted, and no lawyer or tax adviser has reviewed the framework.**
 
+### README: two statements brought in line with the record (24 November 2026)
+
+- "What is available now" said the runnable templates had not been run with a real model. Their instructions were run twice outside n8n (21 and 22 November 2026), as the readiness table of the same page says; the row now says so and links the results. Still not run through the HTTP node, and no channel connected.
+- "Why now" gave 27.6% for 2024 as GASTAT's own figure. The 2025 publication does not print it; it is Arab News' report of the 2024 edition (entry A1). Both READMEs now say so.
+
 ### Arabic landing page: editorial, RTL and SEO revision (24 November 2026)
 
 - **Arabic landing page (`index.html`, from `tools/build_site.py`) rewritten.** The opening says what the Academy is, whom it serves, the problem (GASTAT 2025, entry A1, with its check date) and what a learner builds. New sections: the four courses with hours, level and deliverable; a starting point for six kinds of reader; readiness in three columns (available, in development, not yet tested); one "contribute" section. The decks are now under one heading with a sub-heading per course. Every figure was already in the repository; none is new.
