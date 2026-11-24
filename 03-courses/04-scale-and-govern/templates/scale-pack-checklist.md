@@ -13,7 +13,7 @@ The Course 4 deliverable in one place: the six parts, the validation gates check
 | 3 | سجل المخاطر وتقييم الأمن · Risk register and security assessment | [سجل المخاطر](../../../02-saudi-market-knowledge-framework/compliance-toolkit/ai-risk-register.md) و[تقييم أمن الوكيل](../../../02-saudi-market-knowledge-framework/compliance-toolkit/agent-security-assessment.md) | 4.3، 4.4 | |
 | 4 | خارطة التوسع · Scaling roadmap | [القالب](scaling-roadmap.md) ومذكرة المسار · Template and path memo | 4.5 | |
 | 5 | العرض والعرض الحي · Pitch and live demo | الشرائح و[ورقة التشغيل](demo-day-run-sheet.md) · Slides and run sheet | 4.6 | |
-| 6 | دليل التخرج · Graduation evidence | خطاب نوايا موقّع من منشأة سعودية، أو عميل يدفع، أو مؤشرات استخدام حقيقي مستمر · Signed LOI from a Saudi business, a paying customer, or sustained real usage | | |
+| 6 | دليل التخرج · Graduation evidence | خطاب نوايا موقّع من منشأة في المملكة، أو عميل يدفع، أو مؤشرات استخدام حقيقي مستمر · Signed LOI from a Saudi business, a paying customer, or sustained real usage | | |
 
 وأرفق [ملف الفحص التقني](../../../04-entrepreneur-toolkit/12-agentic-due-diligence-pack.md) (الوحدة 4.5). · Attach the due-diligence pack.
 

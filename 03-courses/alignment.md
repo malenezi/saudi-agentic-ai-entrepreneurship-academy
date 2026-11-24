@@ -9,7 +9,7 @@ For each course: every learning outcome, the modules that teach it, the quizzes 
 | # | Learning outcome | Taught in | Checked formatively by | Assessed by criterion |
 |---|---|---|---|---|
 | 1 | <span dir="rtl">يفرّق بين المحادث الآلي والوكيل، ويحدد ما يستطيعه الوكيل وما لا يستطيعه اليوم.</span> | 1.1, 1.2 | Quizzes 1.1, 1.2 | Agent fit |
-| 2 | <span dir="rtl">يرصد سير عمل متكرراً ومكلفاً في منشأة سعودية حقيقية ويوثّقه خطوة بخطوة.</span> | 1.3, 1.4 | Quizzes 1.3, 1.4 | Workflow clarity |
+| 2 | <span dir="rtl">يرصد سير عمل متكرراً ومكلفاً في منشأة حقيقية في المملكة ويوثّقه خطوة بخطوة.</span> | 1.3, 1.4 | Quizzes 1.3, 1.4 | Workflow clarity |
 | 3 | <span dir="rtl">يقيّم الفرص المرشحة بمعايير واضحة ويختار واحدة.</span> | 1.2, 1.3, 1.6 | Quizzes 1.2, 1.3, 1.6 | Agent fit, Economics |
 | 4 | <span dir="rtl">يجري مقابلات عملاء تكشف السلوك الفعلي لا الآراء المجاملة.</span> | 1.5 | Quizzes 1.5 | Customer evidence |
 | 5 | <span dir="rtl">يكتب أطروحة فرصة مقنعة بالعربية.</span> | 1.7 | Quizzes 1.7 | Writing |

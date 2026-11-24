@@ -10,7 +10,12 @@ Work towards v0.13. **Still true: no course has been piloted, and no lawyer or t
 - **Arabic wording revised** in `README.md`, the Arabic half of `START-HERE.md` and the reader (`read.html`). The Academy's name, the course titles and the lab's name are unchanged. In running text: «الذكاء الاصطناعي القائم على الوكلاء», «منشأة في المملكة», «التطوير منخفض البرمجة (Low-Code)», «جارٍ تطويره», «لم يخضع للاختبار حتى الآن», «الجاهزية والشفافية», and principle 5 reads «لا معلومة رقمية دون مصدر موثوق وتاريخ تحقق». All disclosures about piloting and legal review are kept. The README section "مستوى الجاهزية" is now "الجاهزية والشفافية"; no other anchor changed.
 - **RTL and layout:** the hero puts the text first and the banner beside it (below it on a phone); card grids no longer overflow under 350 px; a skip link; slide counts follow Arabic number agreement (10 شرائح, 11 شريحة); primary buttons meet AA contrast. The English page takes the same layout with its text unchanged.
 - **Discoverability:** Arabic title, description and Open Graph text; canonical address, `hreflang` pairs, absolute preview image with dimensions and alternative text, and a `WebSite` JSON-LD block on both landing pages.
-- Not changed: lessons, decks, framework pages, `README.en.md`. The older wordings («منخفض الكود», «لا رقم بلا مصدر») remain in those pages.
+- Not changed: `README.en.md` and the English page's text.
+
+### Arabic terminology carried through the repository (24 November 2026)
+
+- The wording of the landing page now holds in 48 pages and three decks (2.1, 2.3, 4.6): «منخفض البرمجة» for «منخفض الكود», «منشأة في المملكة» for «منشأة سعودية», «لا معلومة رقمية دون مصدر» (with «موثوق وتاريخ تحقق» where the rule is stated in full) for «لا رقم بلا مصدر», and «العربية أساساً» for «عربي أولاً» where it named the principle.
+- Left as written: the recorded runs of the founder agents (they are transcripts), earlier changelog entries, «بالعربية أولاً» where it means "write the Arabic before the English", and «عميل يدفع» where it is the graduation criterion. No figure, link, heading or anchor changed.
 
 ### README: a new opening (24 November 2026)
 
