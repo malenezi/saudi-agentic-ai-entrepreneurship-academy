@@ -9,88 +9,236 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>الأكاديمية السعودية لريادة الأعمال بالذكاء الاصطناعي الوكيلي (SAAEA)</title>
-<meta name="description" content="مرجع مفتوح المصدر، عربي أولاً، لتأسيس وتشغيل مشروع في المملكة يعتمد على الذكاء الاصطناعي الوكيلي. مبادرة شخصية مستقلة.">
-<meta property="og:title" content="Saudi Agentic AI Entrepreneurship Academy (SAAEA)">
-<meta property="og:description" content="Open-source, Arabic-first academy and Saudi market knowledge framework for entrepreneurs building with agentic AI.">
-<meta property="og:image" content="assets/brand/saaea-banner.jpg">
+<meta name="description" content="أكاديمية سعودية مفتوحة المصدر لريادة الأعمال بالذكاء الاصطناعي: اكتشاف الفرص التجارية، وبناء الوكلاء الأذكياء، وتأسيس الشركات التقنية في السعودية. مبادرة شخصية مستقلة.">
+<link rel="canonical" href="https://malenezi.github.io/saudi-agentic-ai-entrepreneurship-academy/">
+<link rel="alternate" hreflang="ar" href="https://malenezi.github.io/saudi-agentic-ai-entrepreneurship-academy/">
+<link rel="alternate" hreflang="en" href="https://malenezi.github.io/saudi-agentic-ai-entrepreneurship-academy/index.en.html">
+<link rel="alternate" hreflang="x-default" href="https://malenezi.github.io/saudi-agentic-ai-entrepreneurship-academy/">
 <meta property="og:type" content="website">
+<meta property="og:site_name" content="الأكاديمية السعودية لريادة الأعمال بالذكاء الاصطناعي الوكيلي">
+<meta property="og:locale" content="ar_SA">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:url" content="https://malenezi.github.io/saudi-agentic-ai-entrepreneurship-academy/">
+<meta property="og:title" content="الأكاديمية السعودية لريادة الأعمال بالذكاء الاصطناعي الوكيلي (SAAEA)">
+<meta property="og:description" content="أكاديمية سعودية مفتوحة لتمكين رواد الأعمال والمطورين من اكتشاف الفرص التجارية، وبناء الوكلاء الأذكياء، وإطلاق منتجات قابلة للتشغيل والتوسع في السوق السعودي.">
+<meta property="og:image" content="https://malenezi.github.io/saudi-agentic-ai-entrepreneurship-academy/assets/brand/saaea-banner.jpg">
+<meta property="og:image:width" content="1024">
+<meta property="og:image:height" content="576">
+<meta property="og:image:alt" content="شعار الأكاديمية السعودية لريادة الأعمال بالذكاء الاصطناعي الوكيلي (SAAEA): تعلّم، ابنِ، انطلق">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@500;700&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@500;700&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
-:root { --bg: #f8fafc; --ink: #1e293b; --muted: #475569; --line: #e2e8f0; --card: #ffffff; --accent: #d97706; --accent-ink: #b45309; --accent-soft: #fef3c7;
+:root { --bg: #f8fafc; --ink: #1e293b; --deep: #0f172a; --muted: #475569; --line: #e2e8f0; --card: #ffffff; --accent: #d97706; --accent-ink: #b45309; --accent-soft: #fef3c7;
+  --ok: #15803d; --wait: #475569;
   --font-ar: "IBM Plex Sans Arabic", "Noto Sans Arabic", "Segoe UI", Tahoma, sans-serif; --font-en: "IBM Plex Sans", "Segoe UI", system-ui, sans-serif;
   --display-ar: "Noto Kufi Arabic", "IBM Plex Sans Arabic", "Segoe UI", Tahoma, sans-serif; }
 *, *::before, *::after { box-sizing: border-box; }
-html { scroll-behavior: smooth; }
-body { margin: 0; background: var(--bg); color: var(--ink); font: 18px/1.9 var(--font-ar); }
+html { scroll-behavior: smooth; scroll-padding-block-start: 16px; }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 18px/1.9 var(--font-ar); overflow-wrap: break-word; }
 [lang="en"] { font-family: var(--font-en); line-height: 1.6; }
 a { color: var(--accent-ink); text-underline-offset: 4px; }
 a:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; border-radius: 6px; }
+.skip { position: absolute; inset-inline-start: -9999px; }
+.skip:focus { inset-inline-start: 12px; inset-block-start: 12px; background: var(--card); padding: 8px 14px; z-index: 30; }
 .wrap { max-inline-size: 1080px; margin-inline: auto; padding-inline: 24px; }
-header { background: var(--ink); color: #f8fafc; padding-block: 0 44px; }
-header img { display: block; inline-size: 100%; block-size: auto; }
-header .wrap { padding-block-start: 36px; }
-h1, h2, h3 { font-family: var(--display-ar); line-height: 1.5; margin: 0; }
-h1 { font-size: clamp(26px, 4.4vw, 42px); }
+header { background: var(--ink); color: #f8fafc; }
+.hero { display: grid; grid-template-columns: minmax(0, 1fr); gap: 32px; align-items: center; padding-block: 44px 36px; }
+.hero img { display: block; inline-size: 100%; block-size: auto; border-radius: 16px; box-shadow: 0 18px 40px rgb(2 6 23 / .45); }
+h1, h2, h3 { font-family: var(--display-ar); line-height: 1.5; margin: 0; text-wrap: balance; }
+h1 { font-size: clamp(26px, 3.6vw, 40px); }
 header p { color: #cbd5e1; margin: 12px 0 0; max-inline-size: 62ch; }
-header .en { color: #94a3b8; font-size: 16px; }
+header .eyebrow { color: #fcd34d; font-weight: 600; font-size: 15px; margin: 0 0 10px; }
+header .lead { color: #f1f5f9; font-size: clamp(18px, 1.7vw, 20px); margin-block-start: 16px; }
+header .en, header .ar { color: #94a3b8; font-size: 16px; }
 .actions { display: flex; flex-wrap: wrap; gap: 12px; margin-block-start: 26px; }
-.btn { display: inline-block; padding: 10px 22px; border-radius: 999px; background: var(--accent); color: #fff; font-weight: 600; text-decoration: none; }
-.btn.ghost { background: transparent; border: 2px solid #64748b; color: #f8fafc; }
+.btn { display: inline-block; padding: 10px 22px; border-radius: 999px; border: 2px solid var(--accent-ink); background: var(--accent-ink); color: #fff; font-weight: 600; text-decoration: none; }
+.btn.ghost { background: transparent; border-color: #64748b; color: #f8fafc; }
+.btn.line { background: transparent; color: var(--accent-ink); }
+.stats { list-style: none; margin: 0; padding: 0 0 40px; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 150px), 1fr)); gap: 12px; }
+.stats li { background: rgb(255 255 255 / .06); border: 1px solid rgb(255 255 255 / .12); border-radius: 14px; padding: 12px 16px; display: grid; }
+.stats b { font: 700 30px/1.3 var(--font-en); color: #fff; }
+.stats span { font-size: 15px; line-height: 1.6; color: #cbd5e1; }
+.subnav { background: var(--deep); }
+.subnav .wrap { display: flex; gap: 6px 22px; flex-wrap: wrap; padding-block: 10px; font-size: 15.5px; }
+.subnav a { color: #e2e8f0; text-decoration: none; padding-block: 4px; }
+.subnav a:hover { color: #fff; box-shadow: 0 2px 0 var(--accent); }
 .note { background: var(--accent-soft); border-inline-start: 5px solid var(--accent); padding: 14px 20px; border-radius: 12px; margin-block: 32px 0; font-size: 16px; }
 section { padding-block: 44px 8px; }
-h2 { font-size: 28px; }
-h2 + p { color: var(--muted); margin: 6px 0 0; }
-.grid { list-style: none; padding: 0; margin: 24px 0 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 16px; }
-.grid a { display: grid; gap: 2px; block-size: 100%; background: var(--card); border: 1px solid var(--line); border-block-start: 5px solid var(--accent); border-radius: 16px; padding: 18px 20px; text-decoration: none; color: var(--ink); transition: transform .15s, box-shadow .15s; }
+h2 { font-size: clamp(24px, 3vw, 28px); }
+h2 + p, h3 + p { color: var(--muted); margin: 6px 0 0; max-inline-size: 75ch; }
+h3 { font-size: 21px; margin-block-start: 36px; }
+.src { font-size: 14.5px; color: var(--muted); margin: 10px 0 0; }
+.grid { list-style: none; padding: 0; margin: 24px 0 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr)); gap: 16px; }
+.grid a, .grid .card { display: grid; gap: 2px; align-content: start; block-size: 100%; background: var(--card); border: 1px solid var(--line); border-block-start: 5px solid var(--accent); border-radius: 16px; padding: 18px 20px; text-decoration: none; color: var(--ink); }
+.grid a { transition: transform .15s, box-shadow .15s; }
 .grid a:hover { transform: translateY(-2px); box-shadow: 0 10px 24px rgb(15 23 42 / .10); }
 .grid .num { font: 600 15px var(--font-en); color: var(--accent-ink); }
+.grid .meta { font-size: 15px; font-weight: 600; color: var(--accent-ink); }
 .grid .t { font: 700 20px/1.6 var(--display-ar); }
 .grid .en, .grid .n, .grid .d { font-size: 15px; color: var(--muted); }
+.grid .d { font-size: 16px; line-height: 1.8; }
 .grid .en { text-align: end; }
-.start a { border-block-start-color: var(--ink); }
+.grid.four { grid-template-columns: repeat(auto-fill, minmax(min(100%, 230px), 1fr)); }
+.start a, .start .card { border-block-start-color: var(--ink); }
+.state .card { gap: 8px; }
+.state .ok { border-block-start-color: var(--ok); }
+.state .wait { border-block-start-color: var(--wait); }
+.state ul { margin: 0; padding-inline-start: 1.2em; font-size: 16px; line-height: 1.8; color: var(--muted); }
+.state li + li { margin-block-start: 6px; }
+.more { margin: 20px 0 0; display: flex; flex-wrap: wrap; gap: 8px 24px; font-size: 16px; }
 footer { margin-block-start: 56px; border-block-start: 1px solid var(--line); padding-block: 28px 48px; color: var(--muted); font-size: 15px; }
+@media (min-width: 900px) { .hero { grid-template-columns: minmax(0, 1.2fr) minmax(0, .8fr); gap: 44px; padding-block: 56px 40px; } }
+@media (max-width: 520px) { body { font-size: 17px; } .wrap { padding-inline: 18px; } .actions .btn { flex: 1 1 auto; text-align: center; } }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } .grid a { transition: none; } }
+@media print { .subnav, .actions, .skip { display: none; } header { background: none; color: var(--ink); } header p, header .lead, .stats b, .stats span { color: var(--ink); } }
 </style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "الأكاديمية السعودية لريادة الأعمال بالذكاء الاصطناعي الوكيلي",
+  "alternateName": ["SAAEA", "Saudi Agentic AI Entrepreneurship Academy"],
+  "url": "https://malenezi.github.io/saudi-agentic-ai-entrepreneurship-academy/",
+  "inLanguage": ["ar", "en"],
+  "description": "أكاديمية سعودية مفتوحة المصدر لريادة الأعمال بالذكاء الاصطناعي: اكتشاف الفرص التجارية، وبناء الوكلاء الأذكياء، وتأسيس الشركات التقنية في السعودية. مبادرة شخصية مستقلة.",
+  "isAccessibleForFree": true,
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "author": { "@type": "Person", "name": "ممدوح العنزي", "alternateName": "Mamdouh Alenezi" },
+  "keywords": ["الذكاء الاصطناعي الوكيلي", "الذكاء الاصطناعي القائم على الوكلاء", "ريادة الأعمال بالذكاء الاصطناعي", "بناء الوكلاء الأذكياء", "تأسيس الشركات التقنية", "الذكاء الاصطناعي في السعودية", "Agentic AI", "AI agents", "Saudi Arabia"]
+}
+</script>
 </head>
 <body>
+<a class="skip" href="#main">انتقل إلى المحتوى</a>
 <header>
-  <img src="assets/brand/saaea-banner.jpg" alt="الأكاديمية السعودية لريادة الأعمال بالذكاء الاصطناعي الوكيلي (SAAEA): تعلّم، ابنِ، انطلق" width="1024" height="576">
-  <div class="wrap">
-    <h1>الأكاديمية السعودية لريادة الأعمال بالذكاء الاصطناعي الوكيلي</h1>
-    <p>مرجع مفتوح المصدر، عربي أولاً، لكل من يريد تأسيس أو تشغيل أو تنمية مشروع في المملكة العربية السعودية يعتمد على الذكاء الاصطناعي الوكيلي.</p>
-    <p class="en" lang="en" dir="ltr">Saudi Agentic AI Entrepreneurship Academy (SAAEA): an open-source, Arabic-first academy and Saudi market knowledge framework for entrepreneurs building with agentic AI.</p>
-    <div class="actions">
-      <a class="btn" href="read.html?p=START-HERE.md">ابدأ من هنا</a>
-      <a class="btn ghost" href="https://github.com/malenezi/saudi-agentic-ai-entrepreneurship-academy">المستودع على <bdi dir="ltr" lang="en">GitHub</bdi></a>
-      <a class="btn ghost" href="index.en.html" lang="en" dir="ltr">English</a>
+  <div class="wrap hero">
+    <div>
+      <p class="eyebrow">مبادرة معرفية مفتوحة المصدر · محتوى عربي في سياق المملكة</p>
+      <h1>الأكاديمية السعودية لريادة الأعمال بالذكاء الاصطناعي الوكيلي</h1>
+      <p class="lead">أكاديمية سعودية مفتوحة لتمكين رواد الأعمال والمطورين من اكتشاف الفرص التجارية، وتصميم حلول الذكاء الاصطناعي القائمة على الوكلاء <bdi dir="ltr" lang="en">(Agentic AI)</bdi> وبنائها، وإطلاق منتجات قابلة للتشغيل والتوسع في السوق السعودي.</p>
+      <p>تبدأ من مشكلة حقيقية لدى منشأة في المملكة، وتنتهي بوكيل ذكي قابل للتشغيل ومنتج ذي قيمة تجارية. محتواها باللغة العربية أساساً، مع المصطلحات الإنجليزية عند الحاجة، ويستند إلى أنظمة المملكة وسوقها.</p>
+      <div class="actions">
+        <a class="btn" href="read.html?p=START-HERE.md">ابدأ من هنا</a>
+        <a class="btn ghost" href="#h-courses">استعرض المقررات</a>
+        <a class="btn ghost" href="https://github.com/malenezi/saudi-agentic-ai-entrepreneurship-academy">المستودع على <bdi dir="ltr" lang="en">GitHub</bdi></a>
+        <a class="btn ghost" href="index.en.html" lang="en" dir="ltr" hreflang="en">English</a>
+      </div>
     </div>
+    <img src="assets/brand/saaea-banner.jpg" alt="شعار الأكاديمية السعودية لريادة الأعمال بالذكاء الاصطناعي الوكيلي (SAAEA): تعلّم، ابنِ، انطلق" width="1024" height="576">
   </div>
+  <div class="wrap">
+    <ul class="stats" aria-label="الأكاديمية في أرقام">
+      <li><b><bdi dir="ltr">4</bdi></b><span>مقررات متتابعة</span></li>
+      <li><b><bdi dir="ltr">28</bdi></b><span>درساً، لكل درس عرض واختبار قصير</span></li>
+      <li><b><bdi dir="ltr">76</bdi></b><span>ساعة تدريبية</span></li>
+      <li><b><bdi dir="ltr">12</bdi></b><span>مجالاً في إطار المعرفة بالسوق السعودي</span></li>
+      <li><b><bdi dir="ltr">12</bdi></b><span>وكيلاً ذكياً مساعداً للمؤسس</span></li>
+      <li><b><bdi dir="ltr">8</bdi></b><span>مختبرات تعمل دون مفتاح <bdi dir="ltr" lang="en">API</bdi></span></li>
+    </ul>
+  </div>
+  <nav class="subnav" aria-label="أقسام الصفحة">
+    <div class="wrap">
+      <a href="#h-why">لماذا الأكاديمية</a>
+      <a href="#h-courses">المقررات</a>
+      <a href="#h-paths">اختر مسارك</a>
+      <a href="#h-start">المحتويات</a>
+      <a href="#h-state">الجاهزية والشفافية</a>
+      <a href="#h-decks">العروض التقديمية</a>
+      <a href="#h-join">ساهم معنا</a>
+    </div>
+  </nav>
 </header>
-<main class="wrap">
-  <p class="note">مبادرة شخصية مستقلة أسّسها ويشرف عليها أ.د. ممدوح العنزي، وليست جهة حكومية ولا تمثل أي جهة. المحتوى تعليمي، وليس استشارة نظامية أو ضريبية أو مالية.</p>
+<main class="wrap" id="main">
+  <p class="note">مبادرة شخصية مستقلة أسّسها ويشرف عليها أ.د. ممدوح العنزي. ليست جهة حكومية، ولا تمثل أي جهة، ولا تحمل اعتماد أي جهة. المحتوى تعليمي، وليس استشارة نظامية أو ضريبية أو مالية.</p>
 
-  <section class="start" aria-labelledby="h-start">
-    <h2 id="h-start">ما الذي تجده في الأكاديمية؟</h2>
-    <p>المحتوى كله في المستودع. هذه الروابط تأخذك إلى أقسامه.</p>
-    <ul class="grid">
-      <li><a href="read.html?p=03-courses/01-opportunity/syllabus.md"><span class="t">المقرر 1: اكتشاف الفرصة الوكيلية</span><span class="d">سبعة دروس تنتهي بأطروحة فرصة مدعومة بمقابلات عملاء.</span></a></li>
-      <li><a href="read.html?p=03-courses/02-build/syllabus.md"><span class="t">المقرر 2: بناء الوكلاء الأذكياء</span><span class="d">ثمانية دروس تنتهي بوكيل يعمل ومعه دليل على أنه يعمل.</span></a></li>
-      <li><a href="read.html?p=03-courses/03-launch/syllabus.md"><span class="t">المقرر 3: الإطلاق وبناء النموذج التجاري</span><span class="d">سبعة دروس تنتهي بمنتج أولي يستخدمه عميل حقيقي وسعر محسوب من السجل.</span></a></li>
-      <li><a href="read.html?p=03-courses/04-scale-and-govern/syllabus.md"><span class="t">المقرر 4: التوسع والحوكمة</span><span class="d">ستة دروس تنتهي بمعمارية تشغيل وسجل مخاطر وعرض استثماري.</span></a></li>
-      <li><a href="read.html?p=03-courses/TRAINER-GUIDE.md"><span class="t">دليل المدرب للبرنامج</span><span class="d">ما يحتاجه مدرب أو جهة لتقديم المقررات الأربعة: المتطلبات، التقييم، التحضير.</span></a></li>
-      <li><a href="read.html?p=02-saudi-market-knowledge-framework/README.md"><span class="t">إطار المعرفة بالسوق السعودي</span><span class="d">اثنا عشر مجالاً: التأسيس، البيانات، الضرائب، التمويل، وغيرها، بمصدر لكل معلومة.</span></a></li>
-      <li><a href="read.html?p=04-entrepreneur-toolkit/README.md"><span class="t">حقيبة المؤسس</span><span class="d">أربعة عشر قالب أعمال ثنائي اللغة وأربع حاسبات.</span></a></li>
-      <li><a href="read.html?p=05-agentic-ai-lab/README.md"><span class="t">مختبر الذكاء الاصطناعي الوكيلي</span><span class="d">مهارات، قوالب وكلاء، قالب تقييم، وسبعة عشر تمريناً.</span></a></li>
-      <li><a href="workbook/index.html"><span class="t">دفتر المشروع</span><span class="d">بوابات المقررات الأربعة في صفحة واحدة: لكل بند دليل. يُحفظ في متصفحك ويُصدَّر ملفاً نصياً.</span></a></li>
-      <li><a href="read.html?p=CONTRIBUTING.md"><span class="t">ساهم</span><span class="d">كل مساهمة مرحّب بها، ولا تحتاج أن تكون مبرمجاً.</span></a></li>
+  <section class="start" aria-labelledby="h-why">
+    <h2 id="h-why">لماذا هذه الأكاديمية؟</h2>
+    <p>تفيد الهيئة العامة للإحصاء بأن <bdi dir="ltr">33.1%</bdi> من المنشآت في المملكة استخدمت تقنيات الذكاء الاصطناعي في عام 2025؛ أي أن نحو ثلثي المنشآت لم تبدأ بعد. وفي المقابل، يغلب على المحتوى المتاح لمن يسعى إلى بناء حلول لهذه المنشآت الطابع العام واللغة الإنجليزية، دون مراعاة كافية لأنظمة المملكة وسياقها.</p>
+    <p class="src">المصدر: «إحصاءات نفاذ واستخدام تقنية المعلومات والاتصالات للمنشآت 2025»، الهيئة العامة للإحصاء. تاريخ التحقق: 20 نوفمبر 2026 (البند <bdi dir="ltr">A1</bdi> في <a href="read.html?p=SOURCES.md">سجل المصادر</a>).</p>
+    <ul class="grid four">
+      <li><div class="card"><span class="t">من الفرصة إلى المنتج</span><span class="d">مسار واحد يجمع ريادة الأعمال والهندسة والتشغيل والحوكمة. غايته تأسيس المشاريع وإطلاق المنتجات، لا التدريب النظري وحده.</span></div></li>
+      <li><div class="card"><span class="t">المحتوى باللغة العربية أساساً</span><span class="d">دروس وأمثلة ونماذج بالعربية الفصحى واللهجة السعودية، مع المصطلحات الإنجليزية عند الحاجة.</span></div></li>
+      <li><div class="card"><span class="t">سياق المملكة</span><span class="d">الأنظمة والتمويل والقطاعات كما هي في المملكة، لا أمثلة مترجمة من أسواق أخرى.</span></div></li>
+      <li><div class="card"><span class="t">لا معلومة رقمية دون مصدر</span><span class="d">لكل معلومة خارجية مصدر موثوق وتاريخ تحقق، مقيَّدان في سجل المصادر.</span></div></li>
     </ul>
   </section>
 
-  <section aria-labelledby="h-c1">
-    <h2 id="h-c1">عروض المقرر 1: اكتشاف الفرصة الوكيلية</h2>
-    <p>سبعة عروض بالعربية. داخل العرض: السهم الأيسر أو المسافة للتقدم، <bdi dir="ltr">N</bdi> لملاحظات المتحدث، <bdi dir="ltr">F</bdi> لملء الشاشة، <bdi dir="ltr">P</bdi> للطباعة.</p>
+  <section aria-labelledby="h-courses">
+    <h2 id="h-courses">المقررات الأربعة: ما الذي ستنجزه؟</h2>
+    <p>أربعة مقررات متتابعة في 76 ساعة تدريبية، بمسارين: مسار أساسي للتطوير منخفض البرمجة <bdi dir="ltr" lang="en">(Low-Code)</bdi>، ومسار عميق لمن يبرمج. ينتهي كل مقرر بمُخرَج تجاري يُقيَّم بالدليل.</p>
+    <ul class="grid four">
+      <li><a href="read.html?p=03-courses/01-opportunity/syllabus.md"><span class="meta">المقرر 1 · 16 ساعة · مبتدئ</span><span class="t">اكتشاف الفرصة الوكيلية</span><span class="d">سبعة دروس تجيب عن سؤال: أي مشكلة تستحق الحل؟ وتنتهي بأطروحة فرصة مدعومة بمقابلات عملاء.</span></a></li>
+      <li><a href="read.html?p=03-courses/02-build/syllabus.md"><span class="meta">المقرر 2 · 24 ساعة · مبتدئ إلى متوسط</span><span class="t">بناء الوكلاء الأذكياء</span><span class="d">ثمانية دروس تجيب عن سؤال: هل يعمل الوكيل؟ وتنتهي بوكيل ذكي قابل للتشغيل، ومعه دليل تقييمه.</span></a></li>
+      <li><a href="read.html?p=03-courses/03-launch/syllabus.md"><span class="meta">المقرر 3 · 20 ساعة · متوسط</span><span class="t">الإطلاق وبناء النموذج التجاري</span><span class="d">سبعة دروس تجيب عن سؤال: هل يدفع العميل؟ وتنتهي بمنتج أولي يستخدمه عميل حقيقي، وسعر محسوب من سجل التشغيل.</span></a></li>
+      <li><a href="read.html?p=03-courses/04-scale-and-govern/syllabus.md"><span class="meta">المقرر 4 · 16 ساعة · متقدم</span><span class="t">التوسع والحوكمة</span><span class="d">ستة دروس تجيب عن سؤال: هل ينمو المشروع بأمان؟ وتنتهي بمعمارية تشغيل وسجل مخاطر وعرض استثماري.</span></a></li>
+    </ul>
+    <p class="src">الإصدار الأول من محتوى المقررات الأربعة متاح، ولم يخضع أي مقرر منها لتجربة تدريبية مع فوج حتى الآن.</p>
+  </section>
+
+  <section class="start" aria-labelledby="h-paths">
+    <h2 id="h-paths">اختر مسارك</h2>
+    <p>نقطة بداية لكل فئة. والمسار الكامل في <a href="read.html?p=01-academy/learning-pathways.md">مسارات التعلّم</a>.</p>
+    <ul class="grid">
+      <li><a href="read.html?p=04-entrepreneur-toolkit/10-founder-context-template.md"><span class="t">رائد أعمال غير تقني</span><span class="d">ابدأ بقالب سياق المؤسس، ثم المقرر 1 بالمسار الأساسي.</span></a></li>
+      <li><a href="read.html?p=04-entrepreneur-toolkit/02-ai-opportunity-assessment.md"><span class="t">صاحب منشأة صغيرة أو متوسطة</span><span class="d">طبّق تقييم فرص الوكلاء على عمليات منشأتك، ثم راجع قائمة الامتثال للمؤسس.</span></a></li>
+      <li><a href="read.html?p=03-courses/01-opportunity/syllabus.md"><span class="t">مؤسس تقني</span><span class="d">ادرس المقرر 1 مكثفاً، ثم المقرر 2 بالمسار العميق.</span></a></li>
+      <li><a href="read.html?p=04-entrepreneur-toolkit/README.md"><span class="t">طالب أو مستقل</span><span class="d">ابدأ بحقيبة المؤسس، ثم المقررات بالترتيب ودراسات الحالة.</span></a></li>
+      <li><a href="read.html?p=03-courses/TRAINER-GUIDE.md"><span class="t">مدرب، أو جهة تشغّل فوجاً</span><span class="d">دليل المدرب للبرنامج: المتطلبات والتقييم والتحضير لتقديم المقررات الأربعة.</span></a></li>
+      <li><a href="read.html?p=02-saudi-market-knowledge-framework/README.md"><span class="t">باحث عن الأنظمة والمتطلبات</span><span class="d">إطار المعرفة بالسوق السعودي، ثم السجل التنظيمي.</span></a></li>
+    </ul>
+  </section>
+
+  <section aria-labelledby="h-start">
+    <h2 id="h-start">محتويات الأكاديمية</h2>
+    <p>المحتوى كله في المستودع، ويُفتح صفحاتٍ على هذا الموقع.</p>
+    <ul class="grid">
+      <li><a href="read.html?p=02-saudi-market-knowledge-framework/README.md"><span class="t">إطار المعرفة بالسوق السعودي</span><span class="d">اثنا عشر مجالاً، منها التأسيس والبيانات والضرائب والتمويل، مع مصدر لكل معلومة وتاريخ التحقق منها.</span></a></li>
+      <li><a href="read.html?p=04-entrepreneur-toolkit/README.md"><span class="t">حقيبة المؤسس</span><span class="d">أربعة عشر قالب أعمال ثنائي اللغة، وأربع حاسبات.</span></a></li>
+      <li><a href="read.html?p=05-agentic-ai-lab/README.md"><span class="t">مختبر الذكاء الاصطناعي الوكيلي</span><span class="d">مهارات ريادية، وقوالب وكلاء، وقالب تقييم، وسبعة عشر تمريناً.</span></a></li>
+      <li><a href="read.html?p=02-saudi-market-knowledge-framework/founder-agents/README.md"><span class="t">وكلاء المؤسس</span><span class="d">اثنا عشر وكيلاً ذكياً، يُضاف تعريف كل منها إلى أي مساعد ذكي. لم يستخدمها مؤسسون حتى الآن.</span></a></li>
+      <li><a href="read.html?p=06-case-studies/README.md"><span class="t">دراسات الحالة</span><span class="d">خمس عشرة حالة تشغيل من مصادر منشورة، ثمانٍ منها سعودية، مع مستوى الدليل في كل حالة.</span></a></li>
+      <li><a href="workbook/index.html"><span class="t">دفتر المشروع</span><span class="d">بوابات المقررات الأربعة في صفحة واحدة، ولكل بند دليله. يُحفظ في متصفحك، ويُصدَّر ملفاً نصياً.</span></a></li>
+      <li><a href="read.html?p=03-courses/TRAINER-GUIDE.md"><span class="t">دليل المدرب للبرنامج</span><span class="d">ما يحتاج إليه مدرب أو جهة لتقديم المقررات الأربعة: المتطلبات، والتقييم، والتحضير.</span></a></li>
+      <li><a href="read.html?p=START-HERE.md"><span class="t">ابدأ من هنا</span><span class="d">صفحة واحدة للزائر الجديد: ما الأكاديمية، ومن أين تبدأ، وإجابات الأسئلة الشائعة.</span></a></li>
+    </ul>
+  </section>
+
+  <section class="state" aria-labelledby="h-state">
+    <h2 id="h-state">الجاهزية والشفافية</h2>
+    <p>نعرض ما أُنجز كما هو، دون زيادة، ونفصل بين المتاح وما هو جارٍ تطويره وما لم يخضع للاختبار حتى الآن.</p>
+    <ul class="grid">
+      <li><div class="card ok"><span class="t">متاح للاستخدام</span>
+        <ul>
+          <li>الإصدار الأول من محتوى المقررات الأربعة.</li>
+          <li>إطار المعرفة: دليل منشور واحد على الأقل لكل مجال.</li>
+          <li>حقيبة المؤسس، والمختبر، ودراسات الحالة.</li>
+          <li>وكلاء المؤسس الاثنا عشر، وقوالب الوكلاء الخمسة القابلة للتشغيل.</li>
+        </ul></div></li>
+      <li><div class="card"><span class="t">جارٍ تطويره</span>
+        <ul>
+          <li>إعادة ما حُذف من السجل التنظيمي ودليل التمويل بعد توثيقه من مصدره.</li>
+          <li>حالات سعودية يكتبها أصحابها.</li>
+          <li>نسخ إنجليزية من الدروس.</li>
+          <li>ربط القوالب القابلة للتشغيل بقنوات وأنظمة حقيقية.</li>
+        </ul></div></li>
+      <li><div class="card wait"><span class="t">لم يخضع للاختبار حتى الآن</span>
+        <ul>
+          <li>لم يُجرَّب أي مقرر مع فوج من المتدربين.</li>
+          <li>لم يراجع المحتوى التنظيمي محامٍ ولا مستشار ضريبي ولا مختص أمني.</li>
+          <li>لم يستخدم مؤسسون وكلاء المؤسس.</li>
+          <li>لم تُجرَّب التمارين ولا دفتر المشروع ولا حقيبة المدرّس مع متعلمين.</li>
+        </ul></div></li>
+    </ul>
+    <p class="more"><a href="read.html?p=RELEASE-READINESS.md">تقرير جاهزية الإصدار</a><a href="read.html?p=ROADMAP.md">خارطة الطريق</a><a href="read.html?p=SOURCES.md">سجل المصادر</a></p>
+  </section>
+
+  <section aria-labelledby="h-decks">
+    <h2 id="h-decks">العروض التقديمية</h2>
+    <p><bdi dir="ltr">28</bdi> عرضاً بالعربية للمقررات الأربعة، وعرض مرافق، تعمل كلها في المتصفح مباشرة. داخل العرض: السهم الأيسر أو مفتاح المسافة للتقدم، و<bdi dir="ltr">N</bdi> لملاحظات المتحدث، و<bdi dir="ltr">F</bdi> لملء الشاشة، و<bdi dir="ltr">P</bdi> للطباعة. الأمثلة والأرقام المختلقة معلَّمة على شرائحها.</p>
+
+    <h3 id="h-c1">المقرر 1: اكتشاف الفرصة الوكيلية</h3>
     <ul class="grid">
         <li><a href="03-courses/01-opportunity/slides/1-1-from-chatbots-to-agents.html"><span class="num"><bdi dir="ltr">1.1</bdi></span><span class="t">من المحادث الآلي إلى الوكيل</span><span class="en" lang="en" dir="ltr">From chatbots to agents</span><span class="n"><bdi dir="ltr">28</bdi> شريحة</span></a></li>
         <li><a href="03-courses/01-opportunity/slides/1-2-agent-native-business.html"><span class="num"><bdi dir="ltr">1.2</bdi></span><span class="t">المنشأة القائمة على الوكلاء</span><span class="en" lang="en" dir="ltr">The agent-native business</span><span class="n"><bdi dir="ltr">19</bdi> شريحة</span></a></li>
@@ -100,11 +248,8 @@ footer { margin-block-start: 56px; border-block-start: 1px solid var(--line); pa
         <li><a href="03-courses/01-opportunity/slides/1-6-scoring-and-economics.html"><span class="num"><bdi dir="ltr">1.6</bdi></span><span class="t">التقييم والاقتصاديات الأولى</span><span class="en" lang="en" dir="ltr">Scoring and first economics</span><span class="n"><bdi dir="ltr">19</bdi> شريحة</span></a></li>
         <li><a href="03-courses/01-opportunity/slides/1-7-writing-the-thesis.html"><span class="num"><bdi dir="ltr">1.7</bdi></span><span class="t">كتابة أطروحة الفرصة</span><span class="en" lang="en" dir="ltr">Writing the opportunity thesis</span><span class="n"><bdi dir="ltr">16</bdi> شريحة</span></a></li>
     </ul>
-  </section>
 
-  <section aria-labelledby="h-c2">
-    <h2 id="h-c2">عروض المقرر 2: بناء الوكلاء الأذكياء</h2>
-    <p>ثمانية عروض بالعربية. الأمثلة والأرقام المختلقة معلَّمة على كل شريحة.</p>
+    <h3 id="h-c2">المقرر 2: بناء الوكلاء الأذكياء</h3>
     <ul class="grid">
         <li><a href="03-courses/02-build/slides/2-1-agent-anatomy.html"><span class="num"><bdi dir="ltr">2.1</bdi></span><span class="t">تشريح الوكيل</span><span class="en" lang="en" dir="ltr">Agent anatomy</span><span class="n"><bdi dir="ltr">18</bdi> شريحة</span></a></li>
         <li><a href="03-courses/02-build/slides/2-2-context-engineering-in-arabic.html"><span class="num"><bdi dir="ltr">2.2</bdi></span><span class="t">هندسة السياق بالعربية</span><span class="en" lang="en" dir="ltr">Context engineering in Arabic</span><span class="n"><bdi dir="ltr">15</bdi> شريحة</span></a></li>
@@ -115,11 +260,8 @@ footer { margin-block-start: 56px; border-block-start: 1px solid var(--line); pa
         <li><a href="03-courses/02-build/slides/2-7-from-one-agent-to-several.html"><span class="num"><bdi dir="ltr">2.7</bdi></span><span class="t">من وكيل واحد إلى عدة وكلاء</span><span class="en" lang="en" dir="ltr">From one agent to several</span><span class="n"><bdi dir="ltr">14</bdi> شريحة</span></a></li>
         <li><a href="03-courses/02-build/slides/2-8-failure-analysis-and-iteration.html"><span class="num"><bdi dir="ltr">2.8</bdi></span><span class="t">تحليل الإخفاق والتحسين</span><span class="en" lang="en" dir="ltr">Failure analysis and iteration</span><span class="n"><bdi dir="ltr">14</bdi> شريحة</span></a></li>
     </ul>
-  </section>
 
-  <section aria-labelledby="h-c3">
-    <h2 id="h-c3">عروض المقرر 3: الإطلاق وبناء النموذج التجاري</h2>
-    <p>سبعة عروض بالعربية. الأمثلة والأرقام المختلقة معلَّمة على شرائحها.</p>
+    <h3 id="h-c3">المقرر 3: الإطلاق وبناء النموذج التجاري</h3>
     <ul class="grid">
         <li><a href="03-courses/03-launch/slides/3-1-from-prototype-to-mvp.html"><span class="num"><bdi dir="ltr">3.1</bdi></span><span class="t">من النموذج الأولي إلى المنتج الأولي</span><span class="en" lang="en" dir="ltr">From prototype to MVP</span><span class="n"><bdi dir="ltr">12</bdi> شريحة</span></a></li>
         <li><a href="03-courses/03-launch/slides/3-2-business-models-for-agentic-ventures.html"><span class="num"><bdi dir="ltr">3.2</bdi></span><span class="t">نماذج الأعمال للمشاريع الوكيلية</span><span class="en" lang="en" dir="ltr">Business models for agentic ventures</span><span class="n"><bdi dir="ltr">13</bdi> شريحة</span></a></li>
@@ -129,40 +271,44 @@ footer { margin-block-start: 56px; border-block-start: 1px solid var(--line); pa
         <li><a href="03-courses/03-launch/slides/3-6-pilots-and-letters-of-intent.html"><span class="num"><bdi dir="ltr">3.6</bdi></span><span class="t">التجارب وخطابات النوايا</span><span class="en" lang="en" dir="ltr">Pilots and letters of intent</span><span class="n"><bdi dir="ltr">12</bdi> شريحة</span></a></li>
         <li><a href="03-courses/03-launch/slides/3-7-setting-up-the-business.html"><span class="num"><bdi dir="ltr">3.7</bdi></span><span class="t">تأسيس العمل</span><span class="en" lang="en" dir="ltr">Setting up the business</span><span class="n"><bdi dir="ltr">12</bdi> شريحة</span></a></li>
     </ul>
-  </section>
 
-  <section aria-labelledby="h-c4">
-    <h2 id="h-c4">عروض المقرر 4: التوسع والحوكمة</h2>
-    <p>ستة عروض بالعربية. الأمثلة والأرقام المختلقة معلَّمة على شرائحها.</p>
+    <h3 id="h-c4">المقرر 4: التوسع والحوكمة</h3>
     <ul class="grid">
         <li><a href="03-courses/04-scale-and-govern/slides/4-1-the-agent-operated-company.html"><span class="num"><bdi dir="ltr">4.1</bdi></span><span class="t">المنشأة التي يشغّلها الوكلاء</span><span class="en" lang="en" dir="ltr">The agent-operated company</span><span class="n"><bdi dir="ltr">11</bdi> شريحة</span></a></li>
         <li><a href="03-courses/04-scale-and-govern/slides/4-2-monitoring-quality-and-cost.html"><span class="num"><bdi dir="ltr">4.2</bdi></span><span class="t">مراقبة الجودة والتكلفة</span><span class="en" lang="en" dir="ltr">Monitoring quality and cost</span><span class="n"><bdi dir="ltr">12</bdi> شريحة</span></a></li>
         <li><a href="03-courses/04-scale-and-govern/slides/4-3-governance-and-risk.html"><span class="num"><bdi dir="ltr">4.3</bdi></span><span class="t">الحوكمة والمخاطر</span><span class="en" lang="en" dir="ltr">Governance and risk</span><span class="n"><bdi dir="ltr">12</bdi> شريحة</span></a></li>
         <li><a href="03-courses/04-scale-and-govern/slides/4-4-security-for-agentic-systems.html"><span class="num"><bdi dir="ltr">4.4</bdi></span><span class="t">أمن الأنظمة الوكيلية</span><span class="en" lang="en" dir="ltr">Security for agentic systems</span><span class="n"><bdi dir="ltr">12</bdi> شريحة</span></a></li>
-        <li><a href="03-courses/04-scale-and-govern/slides/4-5-growth-paths-and-funding.html"><span class="num"><bdi dir="ltr">4.5</bdi></span><span class="t">مسارات النمو والتمويل والتخارج</span><span class="en" lang="en" dir="ltr">Growth paths, funding and exits</span><span class="n"><bdi dir="ltr">10</bdi> شريحة</span></a></li>
+        <li><a href="03-courses/04-scale-and-govern/slides/4-5-growth-paths-and-funding.html"><span class="num"><bdi dir="ltr">4.5</bdi></span><span class="t">مسارات النمو والتمويل والتخارج</span><span class="en" lang="en" dir="ltr">Growth paths, funding and exits</span><span class="n"><bdi dir="ltr">10</bdi> شرائح</span></a></li>
         <li><a href="03-courses/04-scale-and-govern/slides/4-6-pitch-and-demo-day.html"><span class="num"><bdi dir="ltr">4.6</bdi></span><span class="t">العرض ويوم العروض</span><span class="en" lang="en" dir="ltr">Pitch and Demo Day</span><span class="n"><bdi dir="ltr">11</bdi> شريحة</span></a></li>
     </ul>
-  </section>
 
-  <section aria-labelledby="h-cg">
-    <h2 id="h-cg">عرض مرافق: دليل المؤسس للتخطيط</h2>
+    <h3 id="h-cg">عرض مرافق: دليل المؤسس للتخطيط</h3>
     <p>عرض واحد للمقررات الأربعة: ما يُخطَّط له وما يُجرَّب. ليس وحدة في مقرر.</p>
     <ul class="grid">
         <li><a href="03-courses/planning/slides/founder-planning-guide.html"><span class="num"><bdi dir="ltr">دليل</bdi></span><span class="t">دليل المؤسس للتخطيط</span><span class="en" lang="en" dir="ltr">Founder planning guide</span><span class="n"><bdi dir="ltr">16</bdi> شريحة</span></a></li>
     </ul>
   </section>
 
+  <section aria-labelledby="h-join">
+    <h2 id="h-join">ساهم معنا</h2>
+    <p>تُبنى الأكاديمية علناً وعلى مراحل، وكل مساهمة مرحَّب بها: تصحيح خطأ، أو تحديث رابط، أو تجربة من عملك، أو دليل كامل. ولا يُشترط أن تكون مبرمجاً.</p>
+    <div class="actions">
+      <a class="btn" href="read.html?p=CONTRIBUTING.md">دليل المساهمة</a>
+      <a class="btn line" href="https://github.com/malenezi/saudi-agentic-ai-entrepreneurship-academy/issues/new/choose">أرسل ملاحظة عبر <bdi dir="ltr" lang="en">GitHub</bdi></a>
+    </div>
+  </section>
+
   <section class="start" aria-labelledby="h-co">
     <h2 id="h-co">المستودعان المرافقان</h2>
-    <p>يعمل كل منهما وحده. نربط ولا ننسخ.</p>
+    <p>يعمل كل منهما مستقلاً، وتكتمل المقررات بدونهما. نربط ولا ننسخ.</p>
     <ul class="grid">
-      <li><a href="https://github.com/malenezi/riyada"><span class="t">ريادة</span><span class="d">مهارات وملفات سياق وقوالب لمؤسس يبني ويشغّل منشأة بالوكلاء.</span></a></li>
-      <li><a href="https://github.com/malenezi/bayan"><span class="t">بيان</span><span class="d">مهارات ومدققات لواجهات وعروض ونصوص عربية صحيحة.</span></a></li>
+      <li><a href="https://github.com/malenezi/riyada"><span class="t">ريادة</span><span class="d">مهارات وملفات سياق وقوالب لمؤسس يبني منشأته ويشغّلها بالوكلاء.</span></a></li>
+      <li><a href="https://github.com/malenezi/bayan"><span class="t">بيان</span><span class="d">مهارات ومدققات لواجهات وعروض ونصوص عربية سليمة.</span></a></li>
     </ul>
   </section>
 </main>
 <footer>
-  <div class="wrap">المحتوى برخصة <bdi dir="ltr" lang="en">CC BY 4.0</bdi>، والبرامج برخصة <bdi dir="ltr" lang="en">Apache-2.0</bdi>. محرك العروض من «بيان» برخصة <bdi dir="ltr" lang="en">MIT</bdi>. لم تُجرَّب المقررات مع فوج بعد، ولم يراجع المحتوى التنظيمي محامٍ ولا مستشار ضريبي ولا مختص أمني.</div>
+  <div class="wrap">المحتوى برخصة <bdi dir="ltr" lang="en">CC BY 4.0</bdi>، والبرامج برخصة <bdi dir="ltr" lang="en">Apache-2.0</bdi>، ومحرك العروض من «بيان» برخصة <bdi dir="ltr" lang="en">MIT</bdi>. مبادرة شخصية مستقلة. لم تُجرَّب المقررات مع فوج حتى الآن، ولم يراجع المحتوى التنظيمي محامٍ ولا مستشار ضريبي ولا مختص أمني.</div>
 </footer>
 </body>
 </html>

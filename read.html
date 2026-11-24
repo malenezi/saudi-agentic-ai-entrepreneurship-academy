@@ -11,7 +11,11 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>الأكاديمية السعودية لريادة الأعمال بالذكاء الاصطناعي الوكيلي</title>
-<meta name="description" content="قارئ محتوى الأكاديمية السعودية لريادة الأعمال بالذكاء الاصطناعي الوكيلي: المقررات، إطار المعرفة بالسوق السعودي، حقيبة المؤسس، والمختبر.">
+<meta name="description" content="محتوى الأكاديمية السعودية لريادة الأعمال بالذكاء الاصطناعي الوكيلي: المقررات، وإطار المعرفة بالسوق السعودي، وحقيبة المؤسس، والمختبر، ودراسات الحالة.">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="الأكاديمية السعودية لريادة الأعمال بالذكاء الاصطناعي الوكيلي">
+<meta property="og:locale" content="ar_SA">
+<meta property="og:image" content="https://malenezi.github.io/saudi-agentic-ai-entrepreneurship-academy/assets/brand/saaea-banner.jpg">
 <link rel="icon" href="data:,">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,7 +26,7 @@
   --display-ar: "Noto Kufi Arabic", "IBM Plex Sans Arabic", "Segoe UI", Tahoma, sans-serif; --mono: "IBM Plex Mono", ui-monospace, Consolas, monospace; }
 *, *::before, *::after { box-sizing: border-box; }
 html { scroll-behavior: smooth; scroll-padding-block-start: 84px; }
-body { margin: 0; background: var(--bg); color: var(--ink); font: 18px/1.9 var(--font-ar); }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 18px/1.9 var(--font-ar); overflow-wrap: break-word; }
 a { color: var(--accent-ink); text-underline-offset: 4px; }
 a:focus-visible, button:focus-visible, input:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; border-radius: 6px; }
 .wrap { max-inline-size: 920px; margin-inline: auto; padding-inline: 24px; }
@@ -91,16 +95,17 @@ footer { border-block-start: 1px solid var(--line); background: var(--card); col
   <div class="wrap">
     <a class="brand" href="index.html">الأكاديمية السعودية لريادة الأعمال بالذكاء الاصطناعي الوكيلي</a>
     <nav aria-label="أقسام الأكاديمية">
+      <a href="index.html">الرئيسية</a>
       <a href="read.html?p=START-HERE.md" data-root="START-HERE.md">ابدأ من هنا</a>
       <a href="read.html?p=03-courses/README.md" data-root="03-courses/">المقررات</a>
       <a href="read.html?p=02-saudi-market-knowledge-framework/README.md" data-root="02-saudi-market-knowledge-framework/">إطار المعرفة</a>
       <a href="read.html?p=04-entrepreneur-toolkit/README.md" data-root="04-entrepreneur-toolkit/">حقيبة المؤسس</a>
       <a href="read.html?p=05-agentic-ai-lab/README.md" data-root="05-agentic-ai-lab/">المختبر</a>
-      <a href="read.html?p=06-case-studies/README.md" data-root="06-case-studies/">الحالات</a>
+      <a href="read.html?p=06-case-studies/README.md" data-root="06-case-studies/">دراسات الحالة</a>
       <a href="read.html?p=08-community/README.md" data-root="08-community/">المجتمع</a>
     </nav>
     <div class="search" role="search">
-      <input id="q" type="search" dir="auto" autocomplete="off" placeholder="ابحث في العناوين" aria-label="ابحث في عناوين الصفحات" aria-controls="results">
+      <input id="q" type="search" dir="auto" autocomplete="off" placeholder="ابحث في عناوين الصفحات" aria-label="ابحث في عناوين الصفحات" aria-controls="results">
       <ul class="results" id="results" hidden></ul>
     </div>
   </div>
@@ -114,7 +119,7 @@ footer { border-block-start: 1px solid var(--line); background: var(--card); col
 </div>
 
 <footer>
-  <div class="wrap">المحتوى برخصة <bdi dir="ltr" lang="en">CC BY 4.0</bdi>، والبرامج برخصة <bdi dir="ltr" lang="en">Apache-2.0</bdi>. مبادرة شخصية مستقلة. المحتوى تعليمي وليس مشورة قانونية ولا ضريبية ولا مالية. هذه الصفحة تعرض ملفات المستودع كما هي، وكل صفحة تذكر حالتها وما لم يُراجَع فيها.</div>
+  <div class="wrap">المحتوى برخصة <bdi dir="ltr" lang="en">CC BY 4.0</bdi>، والبرامج برخصة <bdi dir="ltr" lang="en">Apache-2.0</bdi>. مبادرة شخصية مستقلة، لا تمثل أي جهة. المحتوى تعليمي، وليس استشارة نظامية أو ضريبية أو مالية. تعرض هذه الصفحة ملفات المستودع كما هي، وتذكر كل صفحة حالتها وما لم يخضع للمراجعة فيها.</div>
 </footer>
 
 <script src="assets/vendor/marked.min.js"></script>
@@ -193,7 +198,7 @@ footer { border-block-start: 1px solid var(--line); background: var(--card); col
       if (!b.hasAttribute("dir")) b.setAttribute("dir", "auto");
     });
     root.querySelectorAll("table").forEach(function (t) {
-      var box = el("div", "", { "class": "scroll", tabindex: "0", role: "region", "aria-label": "جدول" });
+      var box = el("div", "", { "class": "scroll", tabindex: "0", role: "region", "aria-label": "جدول قابل للتمرير" });
       t.parentNode.insertBefore(box, t); box.appendChild(t);
     });
     // A code block that is Arabic prose (an agent definition, a recorded reply) reads right to left and wraps.
@@ -254,7 +259,7 @@ footer { border-block-start: 1px solid var(--line); background: var(--card); col
         if (target) target.scrollIntoView();
       }
     }).catch(function () {
-      fail("تعذّر فتح هذه الصفحة. قد يكون الملف نُقل أو حُذف.");
+      fail("تعذّر فتح هذه الصفحة؛ فقد يكون الملف نُقل أو حُذف.");
     });
   }
 
@@ -263,7 +268,7 @@ footer { border-block-start: 1px solid var(--line); background: var(--card); col
   function fold(s) { return s.toLowerCase().replace(/[ً-ْـ]/g, "").replace(/[أإآ]/g, "ا").replace(/ى/g, "ي").replace(/ة/g, "ه"); }
   function show(items, term) {
     results.textContent = "";
-    if (!items.length) results.appendChild(el("li", term ? "لا نتائج." : "", { "class": "none" }));
+    if (!items.length) results.appendChild(el("li", term ? "لا توجد نتائج مطابقة." : "", { "class": "none" }));
     items.forEach(function (it) {
       var li = el("li"), a = el("a", "", { href: reader(it.p, it.h ? "#" + slug(it.h) : "") });
       a.appendChild(el("span", it.h || it.t, { dir: "auto" }));
