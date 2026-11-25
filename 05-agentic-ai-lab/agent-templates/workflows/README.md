@@ -95,6 +95,31 @@ curl -s -X POST http://localhost:5678/webhook/saaea-customer-service \
 
 **وضع الظل:** ضع `"shadow_mode": true` في Config، فيقرر القالب كعادته ولا يخرج منه شيء: ما كان سيفعله يُحفظ في `shadow.would` لتقارنه بما فعله الموظفون. يعالج بيانات حقيقية، فاتفاق البيانات يسبقه. التفصيل والبرنامج والعيّنة في [`shadow-mode`](shadow-mode/README.md).
 
+## تشغيل عبر HTTP مع سجل تدقيق
+
+`tools/reality_run.py` يرسل قائمة رسائل إلى نقطة الاستقبال وهي تعمل، رسالةً رسالة، ويكتب سطراً لكل رسالة: متى أُرسلت، وكم استغرق الجواب، وما الذي فعله الوكيل، وأي قاعدة في الكود حسمت، وبصمة للرسالة وبصمة للرد. أُضيف في 25 نوفمبر 2026.
+
+</div>
+
+```bash
+D=05-agentic-ai-lab/datasets/ecommerce-store
+# The invented store's 85 messages against a running n8n, with a verdict for each
+python3 tools/reality_run.py run http://localhost:5678/webhook/saaea-customer-service \
+  --requests $D/requests.json --expect store --config-file $D/template-1-config.json --token <the token> --log run.jsonl
+python3 tools/reality_run.py report run.jsonl    # the figures again, from the log
+
+# No n8n yet? A stand-in that answers with the workflow's own Code nodes (Node.js needed). It is not n8n.
+python3 tools/reality_run.py serve 05-agentic-ai-lab/agent-templates/workflows/01-whatsapp-customer-service.n8n.json --config $D/template-1-config.json
+```
+
+<div dir="rtl">
+
+- **نص العميل لا يُكتب في السجل.** السطر يحمل بصمة الرسالة وطولها، وبصمة الرد وطوله. سجل فيه رسائل العملاء بيانات شخصية؛ والبصمة تكفي لربط السطر برسالته. `--keep-text` يكتب النصين، وهو للبيانات المختلقة فقط.
+- **أثر القواعد** في الحقل `gates`: إصلاح جواب النموذج أو إعادة طلبه، والقراءة الأشد، والطلب الثاني، وأكثر من طلب مسجّل، والرفض، والحاجة إلى موافقة، والإحالة. يُقرأ من جواب سير العمل نفسه.
+- **الحكم** مع `--expect store` (الرسائل الخمس والثمانون) أو `--expect failures` (حالات الفشل الثلاثون). الأمر يخرج بالرمز 1 إن تصرّف الوكيل وحده في أي رسالة، أو تعذّر طلب.
+- **ما لا يظهره السجل:** عدد الرموز والتكلفة (نقطة الاستقبال لا تعيدهما)، وكل ما لم يضعه سير العمل في جوابه، وهل كان العميل الحقيقي سيرضى.
+- **الخادم البديل** يشغّل عقد Code نفسها خارج n8n: لا عقدة HTTP للنموذج، ولا يُحفظ شيء بين الطلبات. تشغيلٌ عليه يختبر الأداة والسجل؛ وتشغيلٌ على n8n يختبر سير العمل.
+
 ## نموذج حقيقي (اختياري)
 
 في Config: اجعل `model_mode` يساوي `http`، واضبط `model_base_url` و`model_name`. الخادم المحلي لا يحتاج مفتاحاً. للمزوّد المستضاف أضف في عقدة **Model (HTTP)** اعتماداً من نوع Header Auth من داخل n8n؛ **لا تكتب المفتاح في Config ولا في أي ملف**، وضع حدّ إنفاق عند المزوّد قبل أول تشغيل. التعليمات المرسلة إلى النموذج في الحقل `instructions`، ومصدرها `src/<القالب>/instructions.md`.
@@ -182,6 +207,8 @@ Five files you import into [n8n](https://docs.n8n.io) and run after one step, cr
 **Added on 24 November 2026.** Between the HTTP model node and Decide there are now two more nodes: an answer that is not one JSON object is repaired where that changes no meaning (text or a code fence around the object, curly quotes, a trailing comma, a bare word where a string was meant) and otherwise asked for once more with a fixed instruction; what is still unreadable never acts, and `log.model` records what happened only when something did. Prepare strips hidden direction marks, keeps a customer from closing the wrapper tag, and writes a Saudi mobile number in one form. In template 1 an order reference is resolved to its stored key however it is typed, a reference whose digits are not in the customer's message is dropped, and a message with more than one request (the model's `also` field) is handed over whole as `handover_multiple_requests`. In template 3 a request to stop being contacted is matched in code (`stop_phrases`) whatever the model returns. Tested outside n8n with canned model answers and with messages written by an AI assistant, and on the same day inside n8n 2.35.7: all six workflows imported with the new nodes, `tools/n8n_e2e.py` gave 100 requests with no failure, and templates 1 and 3 in `http` mode against a local stub showed the repair, the single retry (four messages, the customer's text once), the handover after two unreadable answers, the `also` gate, the mobile-number spelling and the stop rule; a small local model was then run on all of it the same day (43 of 47 template cases, 54 of the invented store's 85 messages; it never filled `also`, so the multiple-request gate did not fire with it: see [the run record](real-model-runs/README.md)). The thirty failure cases and the dialect cases were not reviewed by a native speaker.
 
 **Added on 25 November 2026.** In template 1, Decide now looks in the customer's own message for a request the model did not name, whatever the model returned: the words listed in Config (`sim.intents`) for requests that need a person, and more than one stored order in one message. Where the model saw only a question and one such request is found, the stricter reading replaces the model's (an order question of one sentence or naming no stored order; a general question whose topic is not approved); anything else is a second request and the whole message is handed over. A one-sentence question tied to an approved topic is still answered, on purpose. `second_request_check: false` switches it off. The recorded answers of the local model of 24 November, replayed through it: 60 of the store's 85 messages in place of 54, acting alone on 5 in place of 11; failure cases 18 right and 10 acted alone in place of 17 and 11. A replay, not a new run, outside n8n. The check knows only the words in Config. A fresh run of the same model the same day, through the check: 58 of 85, acting alone on 4; failure cases 22 right and 6 acted alone; `also` still never filled, and in 10 messages the model wrote a topic key where the intent belongs ([run record](real-model-runs/README.md)).
+
+**HTTP runner with an audit log (25 November 2026).** `tools/reality_run.py run <webhook> --requests <file> --log run.jsonl` posts a list of messages to a running workflow and writes one line per message: time sent, latency, action, level, the rule in code that decided (`gates`), and fingerprints of the message and the reply. Customer text is not written unless `--keep-text` is passed. `--expect store` or `--expect failures` adds a verdict against the invented store, and the command exits 1 if the agent acted alone anywhere. `serve` is a stand-in that answers with the workflow's own Code nodes; it is not n8n. The log cannot show token counts or cost.
 
 **Shadow mode (23 November 2026).** With `shadow_mode: true` in Config a template decides as usual and nothing leaves it; what it would have done is kept under `shadow.would` for comparison with the staff's record. It processes real data, so the data agreement comes first. Guide, report script and an invented sample: [`shadow-mode`](shadow-mode/README.md). Run inside n8n 2.35.7 on templates 1, 2 and 4; not tried with a business.
 

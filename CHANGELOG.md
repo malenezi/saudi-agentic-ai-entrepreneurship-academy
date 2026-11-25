@@ -2,6 +2,11 @@
 
 ## Unreleased
 
+### An HTTP runner with an audit log (25 November 2026)
+
+- **`tools/reality_run.py`**, the first piece of v0.14. `run` posts a list of messages to a running webhook and writes one line per message: time sent, latency, action, level, outcome, the rule in code that decided (`gates`), and fingerprints of the message and of the reply. The customer's text is not written unless `--keep-text` is passed. `--expect store` or `--expect failures` adds a verdict against the invented store; the command exits 1 if the agent acted alone anywhere or a request failed. `report` prints the figures of a log. `serve` is a stand-in for n8n that answers with the workflow's own Code nodes.
+- **Limits.** The log holds what the workflow puts in its answer: no token counts, no cost. The stand-in is not n8n: no HTTP model node, nothing kept between requests.
+
 ### Third local-model run of the store, after the topic list and the code-side check (25 November 2026)
 
 - **The run.** qwen2.5:3b on the owner's laptop, 225 prompts in 16.3 minutes, outside n8n: the store's 85 messages **58** with **4** acted alone (54 and 11 on 24 November), its failure cases 22 right, 0 degraded, 6 acted alone, 2 wrong but safe (17, 1, 11, 1), templates 39 of 47 (43), lab 30 of 35 and 7 of 8, dialect cases 13 of 14. Recorded under `real-model-runs/local-qwen2.5-3b-run3/` and replayed by a test.
