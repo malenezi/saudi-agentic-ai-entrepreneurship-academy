@@ -105,3 +105,19 @@ class GateTrace(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class RecordedLiveRuns(unittest.TestCase):
+    """The audit logs kept in the repository give the figures their README quotes. No n8n and no Node.js needed."""
+    LOGS = os.path.join(ROOT, "05-agentic-ai-lab", "agent-templates", "workflows", "audit-logs")
+
+    def test_the_logs_of_the_run_inside_n8n(self):
+        header, lines = reality_run.read_log(os.path.join(self.LOGS, "n8n-simulator-store-85.jsonl"))
+        figures = reality_run.summary(lines)
+        self.assertEqual((figures["verdicts"], figures["acted_alone"]), ({"pass": 73, "safe_miss": 8, "acted_alone": 4}, ["D-009", "D-053", "D-067", "D-083"]))
+        self.assertEqual((figures["latency_ms"]["p50"], figures["latency_ms"]["p95"], header["text_kept"]), (105, 146, False))
+        header, lines = reality_run.read_log(os.path.join(self.LOGS, "n8n-simulator-failures-30.jsonl"))
+        figures = reality_run.summary(lines)
+        self.assertEqual(figures["verdicts"], {"pass": 16, "degraded": 6, "acted_alone": 8})
+        self.assertEqual((figures["latency_ms"]["p50"], figures["latency_ms"]["p95"]), (108, 124))
+        self.assertTrue(all("message" not in line and "reply" not in line for line in lines))
