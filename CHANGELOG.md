@@ -2,6 +2,13 @@
 
 ## Unreleased
 
+### Template 1: a request the model did not name is looked for in code (25 November 2026)
+
+- **Why.** In the local-model run of 24 November the model never filled `also`, so the multiple-request gate did not fire once, and it labelled cancellations, promises and complaints as order questions.
+- **What.** Decide now checks the customer's own message, whatever the model returned: the words listed in Config for requests that need a person, and more than one stored order in one message. Where the model saw only a question and one such request is found, the stricter reading replaces the model's; anything else goes through the gate and the whole message is handed over. A one-sentence question tied to an approved topic is still answered. Logged as `intent_by_code`, `also_by_code` or `orders_named`. `second_request_check: false` in Config switches it off.
+- **Measured by replay of the recorded answers, not by a new run:** the store's 85 messages 60 in place of 54, acted alone 5 in place of 11; failure cases 18, 1, 10, 1 in place of 17, 1, 11, 1. Simulator: 73 of 85 unchanged; failure cases 16, 6, 8, 0 in place of 15, 7, 8, 0. The run record keeps the figures as run.
+- **Limits.** The check knows only the words in Config: ten failure cases still end with the agent acting alone, four of them compound messages worded outside the list. A refund request the model calls a policy question is answered with the policy text. Tested outside n8n only; not imported into n8n and not run with a model since the change. 161 tests.
+
 ### Video series: from opportunity to venture (25 November 2026)
 
 - **Four short Arabic videos** in `assets/videos/` (1:36, 1:31, 1:35, 1:48; 720p, about 12 MB together), with poster frames and the spoken text in `transcripts.md`: the opportunity, chatbot against agent, checking demand before building, and the Saudi market. Scripts by the Academy's owner; he watched the four videos and approved them.
