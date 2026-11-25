@@ -1,0 +1,32 @@
+{
+ "workflow": "05-tender-summariser.dialect",
+ "model": "qwen2.5:3b (Ollama, local)",
+ "date": "2026-11-25",
+ "how": "One separate call per prompt to http://localhost:11434/v1/chat/completions with temperature 0; the model saw the prompt only. When an answer was not one JSON object the script asked once more with the workflows' fixed instruction and recorded retry_content. Not sent through n8n's HTTP node. Prompts built by tools/local_run_pack.py at commit 03eb914.",
+ "outputs": [
+  {
+   "id": 1,
+   "content": "{\"facts\": {\"page\": 0}, \"requirements\": [{\"page\": 0, \"text\": \"\"}], \"criteria\": [{\"page\": 0, \"text\": \"\"}]}",
+   "seconds": 10.3,
+   "ref": "T5-1"
+  },
+  {
+   "id": 2,
+   "content": "{\"facts\": {\"issuer\": {\"value\": \"هيئة مثال للخدمات\", \"page\": 1}, \"scope\": {}, \"location\": {}, \"duration\": {}, \"deadline\": {\"value\": \"٢٠٢٧-٠١-١٥ الساعة ١٠:٠٠ صباحاً\", \"page\": 2}, \"guarantee\": {}, \"payment_terms\": {}, \"penalties\": {}},\n \"requirements\": [{\"text\": \"سجل تجاري ساري المفعول\", \"page\": 2}, {\"text\": \"شهادة ايزو 27001\", \"page\": 2}],\n \"criteria\": []}",
+   "seconds": 17.4,
+   "ref": "T5-2"
+  },
+  {
+   "id": 3,
+   "content": "{\"facts\": {\"issuer\": {\"value\": \"هيئة مثال للخدمات\", \"page\": 1}, \"scope\": {}, \"location\": {}, \"duration\": {}, \"deadline\": {\"value\": \"2027-01-15\", \"page\": 1}, \"guarantee\": {}, \"payment_terms\": {}, \"penalties\": {}},\n \"requirements\": [{\"text\": \"شهادة ISO 27001\", \"key\": null, \"page\": 1}],\n \"criteria\": [{\"text\": \"أكدت الشركة أن she has ISO 27001 certificate\", \"page\": 1}]}",
+   "seconds": 11.9,
+   "ref": "T5-3"
+  },
+  {
+   "id": 4,
+   "content": "{\"facts\": {\"issuer\": {\"value\": \"هيئة مثال للخدمات (جهة مختلفة)\", \"page\": 1}, \"scope\": {}, \"location\": {}, \"duration\": {}, \"deadline\": {}, \"guarantee\": {}, \"payment_terms\": {}, \"penalties\": {}},\n \"requirements\": [{\"text\": \"سجل تجاري ساري المفعول\", \"page\": 1}, {\"text\": \"مشاريع مماثلة خلال السنوات الثلاث الماضية\", \"page\": 1}],\n \"criteria\": [{ \"text\": \"\", \"page\": 0}]}",
+   "seconds": 11.5,
+   "ref": "T5-4"
+  }
+ ]
+}

@@ -1,0 +1,38 @@
+{
+ "workflow": "02-booking-assistant.dialect",
+ "model": "qwen2.5:3b (Ollama, local)",
+ "date": "2026-11-25",
+ "how": "One separate call per prompt to http://localhost:11434/v1/chat/completions with temperature 0; the model saw the prompt only. When an answer was not one JSON object the script asked once more with the workflows' fixed instruction and recorded retry_content. Not sent through n8n's HTTP node. Prompts built by tools/local_run_pack.py at commit 03eb914.",
+ "outputs": [
+  {
+   "id": 1,
+   "content": "{\n  \"intent\": \"book\",\n  \"service\": \"تنظيف أسنان\",\n  \"choice\": null,\n  \"booking_ref\": null\n}",
+   "seconds": 9.4,
+   "ref": "T2-1"
+  },
+  {
+   "id": 2,
+   "content": "{\n  \"intent\": \"unknown\",\n  \"service\": null,\n  \"choice\": null,\n  \"booking_ref\": null\n}",
+   "seconds": 2.7,
+   "ref": "T2-2"
+  },
+  {
+   "id": 3,
+   "content": "{\n  \"intent\": \"symptoms\",\n  \"service\": \"كشف\",\n  \"choice\": null,\n  \"booking_ref\": null\n}",
+   "seconds": 3.7,
+   "ref": "T2-3"
+  },
+  {
+   "id": 4,
+   "content": "{\n  \"intent\": \"cancel\",\n  \"service\": null,\n  \"choice\": null,\n  \"booking_ref\": \"B-1002\"\n}",
+   "seconds": 3.9,
+   "ref": "T2-4"
+  },
+  {
+   "id": 5,
+   "content": "{\n  \"intent\": \"unknown\",\n  \"service\": null,\n  \"choice\": null,\n  \"booking_ref\": null\n}",
+   "seconds": 3.1,
+   "ref": "T2-5"
+  }
+ ]
+}

@@ -9,6 +9,7 @@ and the webhooks are checked inside n8n with tools/n8n_e2e.py, by hand, before a
 import glob
 import json
 import os
+import re
 import shutil
 import subprocess
 import sys
@@ -557,6 +558,34 @@ class RecordedRealModelRuns(unittest.TestCase):
             else:
                 passed, total, failed = replay.replay_template(run["workflow"], run)
                 self.assertEqual((passed, failed), expected[run["workflow"]], run["workflow"])
+
+    def test_third_local_model_run_replays_to_the_published_results(self):
+        import n8n_replay_model as replay
+        folder = os.path.join(replay.RUNS, "local-qwen2.5-3b-run3")
+        run = lambda name: replay.read(os.path.join(folder, name + ".json"))
+        expected = {"01-whatsapp-customer-service": (7, [1, 7]), "02-booking-assistant": (9, [4, 5, 9]), "03-lead-qualification": (11, [8]),
+                    "04-invoice-reconciliation": (11, [11]), "05-tender-summariser": (1, [1])}
+        for name, result in expected.items():
+            passed, total, failed = replay.replay_template(name, run(name))
+            self.assertEqual((passed, failed), result, name)
+        self.assertEqual(replay.replay_lab(run("lab-order-agent")), ((30, 35), (7, 8), ["13", "15", "28", "30", "34", "H8"]))
+        rows, got = replay.replay_dataset(run("dataset-85"))
+        self.assertEqual(sum(r["passed"] for r in rows), 58)
+        self.assertEqual([r["ref"] for r in rows if r["acted_alone"]], ["D-056", "D-063", "D-075", "D-077"])
+        self.assertEqual([r["ref"] for r, g in zip(rows, got) if g["log"].get("intent_by_code")], ["D-051", "D-059", "D-061", "D-062"])
+        self.assertEqual([r["ref"] for r, g in zip(rows, got) if g["action"] == "handover_multiple_requests"], ["D-060", "D-066", "D-082"])
+        self.assertFalse(any(g["log"].get("also") and not g["log"].get("also_by_code") for g in got))  # the model named no second request
+        topic_keys = {"hours", "delivery", "payment", "grinding", "pickup", "returns"}
+        self.assertEqual(sum(1 for item in run("dataset-85")["outputs"] if re.search(r'"intent":\s*"(%s)"' % "|".join(topic_keys), item["content"])), 10)
+        rows, got = replay.replay_dataset(run("dataset-failures-30"), failures=True)
+        tally = lambda name: sum(1 for r in rows if r["verdict"] == name)
+        self.assertEqual((tally("pass"), tally("degraded"), tally("acted_alone"), tally("wrong_safe")), (22, 0, 6, 2))
+        self.assertEqual([r["ref"] for r in rows if r["verdict"] == "acted_alone"], ["F-010", "F-011", "F-013", "F-015", "F-027", "F-030"])
+        held, failed = [], []
+        for name in list(expected)[1:]:
+            h, f, l = replay.replay_dialect(name, run(name + ".dialect"))
+            held, failed = held + h, failed + f
+        self.assertEqual((len(held), failed), (13, ["T2-2"]))
 
     def test_second_local_model_run_replays_to_the_published_results(self):
         import n8n_replay_model as replay

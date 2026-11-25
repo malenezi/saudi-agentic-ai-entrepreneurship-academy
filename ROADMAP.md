@@ -29,7 +29,7 @@ The courses teach what to do; the framework says how to do it in the Kingdom. Bu
 
 ## Known gaps in v0.13
 
-- The runnable templates have met one small local model, outside n8n, on invented messages. No larger model, no run through n8n's HTTP node with a real model, no channel, no business. Since 25 November 2026 template 1 also looks for a second request in code, from the words listed in its Config; a request worded outside that list still depends on the model, and the model tried did not name one.
+- The runnable templates have met one small local model, outside n8n, on invented messages. No larger model, no run through n8n's HTTP node with a real model, no channel, no business. Since 25 November 2026 template 1 also looks for a second request in code, from the words listed in its Config; a request worded outside that list still depends on the model, and the model tried did not name one in either of two runs.
 
 - Every domain now has at least one guide, but the five added in v0.7 each rest on one or two sources (a foreign government overview for IP, a press report for e-commerce, law-firm commentary for employment, an automated reading of the gazette text for procurement, and no new source for sector regulation). Each says so at its top. (The tax guide awaits an adviser's review and the establishment walkthrough a lawyer's.)
 - The procurement guide found a law text on the gazette site that repeals the 2019 law; its decree number and effective date are not confirmed (C44).

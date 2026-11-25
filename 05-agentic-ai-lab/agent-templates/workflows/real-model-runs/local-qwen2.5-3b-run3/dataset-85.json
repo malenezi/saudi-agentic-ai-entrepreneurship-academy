@@ -1,0 +1,530 @@
+{
+ "workflow": "dataset-85",
+ "model": "qwen2.5:3b (Ollama, local)",
+ "date": "2026-11-25",
+ "how": "One separate call per prompt to http://localhost:11434/v1/chat/completions with temperature 0; the model saw the prompt only. When an answer was not one JSON object the script asked once more with the workflows' fixed instruction and recorded retry_content. Not sent through n8n's HTTP node. Prompts built by tools/local_run_pack.py at commit 03eb914.",
+ "outputs": [
+  {
+   "id": 1,
+   "content": "{\n  \"intent\": \"hours\",\n  \"topic\": \"hours\",\n  \"order_ref\": null,\n  \"also\": []\n}",
+   "seconds": 10.8,
+   "ref": "D-001"
+  },
+  {
+   "id": 2,
+   "content": "{\n  \"intent\": \"faq\",\n  \"topic\": \"hours\",\n  \"order_ref\": null,\n  \"also\": []\n}",
+   "seconds": 2.5,
+   "ref": "D-002"
+  },
+  {
+   "id": 3,
+   "content": "{\n  \"intent\": \"hours\",\n  \"topic\": \"hours\",\n  \"order_ref\": null,\n  \"also\": []\n}",
+   "seconds": 2.4,
+   "ref": "D-003"
+  },
+  {
+   "id": 4,
+   "content": "{\n  \"intent\": \"unknown\",\n  \"topic\": null,\n  \"order_ref\": null,\n  \"also\": []\n}",
+   "seconds": 2.5,
+   "ref": "D-004"
+  },
+  {
+   "id": 5,
+   "content": "{\n  \"intent\": \"delivery\",\n  \"topic\": \"delivery\",\n  \"order_ref\": null,\n  \"also\": []\n}",
+   "seconds": 2.3,
+   "ref": "D-005"
+  },
+  {
+   "id": 6,
+   "content": "{\n  \"intent\": \"delivery\",\n  \"topic\": \"pickup\",\n  \"order_ref\": null,\n  \"also\": [],\n  \"human\": null\n}",
+   "seconds": 3,
+   "ref": "D-006"
+  },
+  {
+   "id": 7,
+   "content": "{\n  \"intent\": \"faq\",\n  \"topic\": \"hours\",\n  \"order_ref\": null,\n  \"also\": []\n}",
+   "seconds": 2.6,
+   "ref": "D-007"
+  },
+  {
+   "id": 8,
+   "content": "{\n  \"intent\": \"order_status\",\n  \"topic\": \"delivery\",\n  \"order_ref\": null,\n  \"also\": [],\n}",
+   "seconds": 2.5,
+   "ref": "D-008",
+   "retry_content": "{\n  \"intent\": \"order_status\",\n  \"topic\": \"delivery\",\n  \"order_ref\": null,\n  \"also\": []\n}",
+   "retry_seconds": 3.3
+  },
+  {
+   "id": 9,
+   "content": "{\n  \"intent\": \"delivery\",\n  \"topic\": \"delivery\",\n  \"order_ref\": null,\n  \"also\": []\n}",
+   "seconds": 2.5,
+   "ref": "D-009"
+  },
+  {
+   "id": 10,
+   "content": "{\n  \"intent\": \"faq\",\n  \"topic\": \"hours\",\n  \"order_ref\": null,\n  \"also\": []\n}",
+   "seconds": 3.1,
+   "ref": "D-010"
+  },
+  {
+   "id": 11,
+   "content": "```json\n{\n  \"intent\": \"payment\",\n  \"topic\": \"payment\",\n  \"order_ref\": null,\n  \"also\": []\n}\n```",
+   "seconds": 4.3,
+   "ref": "D-011",
+   "retry_content": "```json\n{\n  \"intent\": \"payment\",\n  \"topic\": \"payment\",\n  \"order_ref\": null,\n  \"also\": []\n}\n```",
+   "retry_seconds": 4.8
+  },
+  {
+   "id": 12,
+   "content": "{\n  \"intent\": \"order_status\",\n  \"topic\": \"payment\",\n  \"order_ref\": null,\n  \"also\": [],\n  \"customer_message\": \"ابي ادفع كاش لا وصلني الطلب، ينفع؟ انا بالدمام\"\n}",
+   "seconds": 5.9,
+   "ref": "D-012"
+  },
+  {
+   "id": 13,
+   "content": "{\n  \"intent\": \"unknown\",\n  \"topic\": null,\n  \"order_ref\": null,\n  \"also\": []\n}",
+   "seconds": 3.4,
+   "ref": "D-013"
+  },
+  {
+   "id": 14,
+   "content": "{\n  \"intent\": \"payment\",\n  \"topic\": \"delivery\",\n  \"order_ref\": null,\n  \"also\": []\n}",
+   "seconds": 2.6,
+   "ref": "D-014"
+  },
+  {
+   "id": 15,
+   "content": "{\n  \"intent\": \"grinding\",\n  \"topic\": \"grinding\",\n  \"order_ref\": null,\n  \"also\": []\n}",
+   "seconds": 3,
+   "ref": "D-015"
+  },
+  {
+   "id": 16,
+   "content": "{\n  \"intent\": \"order_status\",\n  \"topic\": \"grinding\",\n  \"order_ref\": null,\n  \"also\": []\n}",
+   "seconds": 4.6,
+   "ref": "D-016"
+  },
+  {
+   "id": 17,
+   "content": "{\n  \"intent\": \"faq\",\n  \"topic\": \"grinding\"\n}",
+   "seconds": 3,
+   "ref": "D-017"
+  },
+  {
+   "id": 18,
+   "content": "{\n  \"intent\": \"pickup\",\n  \"topic\": \"pickup\",\n  \"order_ref\": null,\n  \"also\": []\n}",
+   "seconds": 3,
+   "ref": "D-018"
+  },
+  {
+   "id": 19,
+   "content": "{\n  \"intent\": \"hours\",\n  \"topic\": \"pickup\",\n  \"order_ref\": null,\n  \"also\": []\n}",
+   "seconds": 2.7,
+   "ref": "D-019"
+  },
+  {
+   "id": 20,
+   "content": "{\n  \"intent\": \"human\",\n  \"topic\": null,\n  \"order_ref\": null,\n  \"also\": []\n}",
+   "seconds": 2.7,
+   "ref": "D-020"
+  },
+  {
+   "id": 21,
+   "content": "{\n  \"intent\": \"faq\",\n  \"topic\": \"returns\",\n  \"order_ref\": null,\n  \"also\": []\n}",
+   "seconds": 2.8,
+   "ref": "D-021"
+  },
+  {
+   "id": 22,
+   "content": "{\n  \"intent\": \"refund\",\n  \"topic\": \"returns\",\n  \"order_ref\": null,\n  \"also\": []\n}",
+   "seconds": 2.5,
+   "ref": "D-022"
+  },
+  {
+   "id": 23,
+   "content": "{\n  \"intent\": \"promise\",\n  \"topic\": \"returns\",\n  \"order_ref\": null,\n  \"also\": []\n}",
+   "seconds": 2.4,
+   "ref": "D-023"
+  },
+  {
+   "id": 24,
+   "content": "{\n  \"intent\": \"order_status\",\n  \"topic\": \"pickup\",\n  \"order_ref\": \"S-2001\"\n}",
+   "seconds": 2.7,
+   "ref": "D-024"
+  },
+  {
+   "id": 25,
+   "content": "{\n  \"intent\": \"order_status\",\n  \"topic\": \"delivery\",\n  \"order_ref\": \"S-2003\"\n}",
+   "seconds": 2.6,
+   "ref": "D-025"
+  },
+  {
+   "id": 26,
+   "content": "{\n  \"intent\": \"order_status\",\n  \"topic\": \"delivery\",\n  \"order_ref\": \"S-2005\"\n}",
+   "seconds": 2.7,
+   "ref": "D-026"
+  },
+  {
+   "id": 27,
+   "content": "{\n  \"intent\": \"order_status\",\n  \"topic\": \"delivery\",\n  \"order_ref\": \"S-2002\"\n}",
+   "seconds": 3.1,
+   "ref": "D-027"
+  },
+  {
+   "id": 28,
+   "content": "{\n  \"intent\": \"order_status\",\n  \"topic\": \"delivery\",\n  \"order_ref\": \"s-2004\",\n  \"also\": []\n}",
+   "seconds": 2.8,
+   "ref": "D-028"
+  },
+  {
+   "id": 29,
+   "content": "{\n  \"intent\": \"order_status\",\n  \"topic\": \"pickup\",\n  \"order_ref\": \"S-2006\"\n}",
+   "seconds": 2.5,
+   "ref": "D-029"
+  },
+  {
+   "id": 30,
+   "content": "{\n  \"intent\": \"order_status\",\n  \"topic\": \"delivery\",\n  \"order_ref\": \"S-2013\"\n}",
+   "seconds": 2.7,
+   "ref": "D-030"
+  },
+  {
+   "id": 31,
+   "content": "{\n  \"intent\": \"order_status\",\n  \"topic\": \"pickup\",\n  \"order_ref\": \"S-2015\"\n}",
+   "seconds": 2.8,
+   "ref": "D-031"
+  },
+  {
+   "id": 32,
+   "content": "{\n  \"intent\": \"order_status\",\n  \"topic\": null,\n  \"order_ref\": \"S-2017\",\n  \"also\": []\n}",
+   "seconds": 3,
+   "ref": "D-032"
+  },
+  {
+   "id": 33,
+   "content": "{\n  \"intent\": \"order_status\",\n  \"topic\": \"pickup\",\n  \"order_ref\": \"S-2012\",\n  \"also\": []\n}",
+   "seconds": 2.9,
+   "ref": "D-033"
+  },
+  {
+   "id": 34,
+   "content": "{\n  \"intent\": \"order_status\",\n  \"topic\": null,\n  \"order_ref\": null,\n  \"also\": []\n}",
+   "seconds": 2.4,
+   "ref": "D-034"
+  },
+  {
+   "id": 35,
+   "content": "{\n  \"intent\": \"order_status\",\n  \"topic\": \"delivery\",\n  \"order_ref\": null,\n  \"also\": []\n}",
+   "seconds": 2.5,
+   "ref": "D-035"
+  },
+  {
+   "id": 36,
+   "content": "{\n  \"intent\": \"order_status\",\n  \"topic\": \"delivery\",\n  \"order_ref\": null,\n  \"also\": []\n}",
+   "seconds": 2.5,
+   "ref": "D-036"
+  },
+  {
+   "id": 37,
+   "content": "{\n  \"intent\": \"unknown\",\n  \"topic\": null,\n  \"order_ref\": null,\n  \"also\": []\n}",
+   "seconds": 2.3,
+   "ref": "D-037"
+  },
+  {
+   "id": 38,
+   "content": "{\n  \"intent\": \"order_status\",\n  \"topic\": null,\n  \"order_ref\": null,\n  \"also\": []\n}",
+   "seconds": 3,
+   "ref": "D-038"
+  },
+  {
+   "id": 39,
+   "content": "{\n  \"intent\": \"order_status\",\n  \"topic\": \"pickup\",\n  \"order_ref\": \"S-2002\"\n}",
+   "seconds": 3.1,
+   "ref": "D-039"
+  },
+  {
+   "id": 40,
+   "content": "{\n  \"intent\": \"order_status\",\n  \"topic\": \"delivery\",\n  \"order_ref\": \"S-2007\"\n}",
+   "seconds": 2.9,
+   "ref": "D-040"
+  },
+  {
+   "id": 41,
+   "content": "{\n  \"intent\": \"order_status\",\n  \"topic\": \"delivery\",\n  \"order_ref\": \"S-2004\"\n}",
+   "seconds": 3.1,
+   "ref": "D-041"
+  },
+  {
+   "id": 42,
+   "content": "{\n  \"intent\": \"order_status\",\n  \"topic\": \"pickup\",\n  \"order_ref\": \"S-2013\"\n}",
+   "seconds": 3.5,
+   "ref": "D-042"
+  },
+  {
+   "id": 43,
+   "content": "{\n  \"intent\": \"order_status\",\n  \"topic\": \"pickup\",\n  \"order_ref\": \"S-2999\"\n}",
+   "seconds": 2.7,
+   "ref": "D-043"
+  },
+  {
+   "id": 44,
+   "content": "```json\n{\n  \"intent\": \"order_status\",\n  \"topic\": \"delivery\",\n  \"order_ref\": \"S-2102\"\n}\n```",
+   "seconds": 3.1,
+   "ref": "D-044",
+   "retry_content": "```json\n{\n  \"intent\": \"order_status\",\n  \"topic\": \"delivery\",\n  \"order_ref\": \"S-2102\"\n}\n```",
+   "retry_seconds": 3.7
+  },
+  {
+   "id": 45,
+   "content": "{\n  \"intent\": \"order_status\",\n  \"topic\": \"delivery\",\n  \"order_ref\": \"S-1018\"\n}",
+   "seconds": 2.8,
+   "ref": "D-045"
+  },
+  {
+   "id": 46,
+   "content": "{\n  \"intent\": \"refund\",\n  \"topic\": \"returns\",\n  \"order_ref\": \"S-2004\"\n}",
+   "seconds": 3.3,
+   "ref": "D-046"
+  },
+  {
+   "id": 47,
+   "content": "```json\n{\n  \"intent\": \"refund\",\n  \"topic\": \"returns\",\n  \"order_ref\": \"S-2010\"\n}\n```",
+   "seconds": 5.2,
+   "ref": "D-047",
+   "retry_content": "```json\n{\n  \"intent\": \"refund\",\n  \"topic\": \"returns\",\n  \"order_ref\": \"S-2010\"\n}\n```",
+   "retry_seconds": 6
+  },
+  {
+   "id": 48,
+   "content": "{\n  \"intent\": \"refund\",\n  \"topic\": null,\n  \"order_ref\": \"S-2007\",\n  \"also\": []\n}",
+   "seconds": 3.5,
+   "ref": "D-048"
+  },
+  {
+   "id": 49,
+   "content": "{\n  \"intent\": \"refund\",\n  \"topic\": null,\n  \"order_ref\": null,\n  \"also\": []\n}",
+   "seconds": 2.7,
+   "ref": "D-049"
+  },
+  {
+   "id": 50,
+   "content": "{\n  \"intent\": \"refund\",\n  \"topic\": null,\n  \"order_ref\": \"S-2020\",\n  \"also\": []\n}",
+   "seconds": 2.9,
+   "ref": "D-050"
+  },
+  {
+   "id": 51,
+   "content": "{\n  \"intent\": \"order_status\",\n  \"topic\": \"pickup\",\n  \"order_ref\": \"S-2002\"\n}",
+   "seconds": 2.6,
+   "ref": "D-051"
+  },
+  {
+   "id": 52,
+   "content": "{\n  \"intent\": \"cancel\",\n  \"topic\": \"pickup\",\n  \"order_ref\": \"S-2016\",\n  \"also\": []\n}",
+   "seconds": 3.2,
+   "ref": "D-052"
+  },
+  {
+   "id": 53,
+   "content": "{\n  \"intent\": \"cancel\",\n  \"topic\": null,\n  \"order_ref\": null,\n  \"also\": []\n}",
+   "seconds": 2.6,
+   "ref": "D-053"
+  },
+  {
+   "id": 54,
+   "content": "{\n  \"intent\": \"cancel\",\n  \"topic\": null,\n  \"order_ref\": \"S-2008\",\n  \"also\": []\n}",
+   "seconds": 4.1,
+   "ref": "D-054"
+  },
+  {
+   "id": 55,
+   "content": "{\n  \"intent\": \"discount\",\n  \"topic\": null,\n  \"order_ref\": null,\n  \"also\": []\n}",
+   "seconds": 2.9,
+   "ref": "D-055"
+  },
+  {
+   "id": 56,
+   "content": "{\n  \"intent\": \"faq\",\n  \"topic\": \"grinding\",\n  \"order_ref\": null,\n  \"also\": []\n}",
+   "seconds": 3.9,
+   "ref": "D-056"
+  },
+  {
+   "id": 57,
+   "content": "{\n  \"intent\": \"discount\",\n  \"topic\": null,\n  \"order_ref\": null,\n  \"also\": []\n}",
+   "seconds": 2.5,
+   "ref": "D-057"
+  },
+  {
+   "id": 58,
+   "content": "{\n  \"intent\": \"discount\",\n  \"topic\": null,\n  \"order_ref\": null,\n  \"also\": []\n}",
+   "seconds": 2.8,
+   "ref": "D-058"
+  },
+  {
+   "id": 59,
+   "content": "{\n  \"intent\": \"order_status\",\n  \"topic\": \"delivery\",\n  \"order_ref\": null,\n  \"also\": []\n}",
+   "seconds": 2.6,
+   "ref": "D-059"
+  },
+  {
+   "id": 60,
+   "content": "{\n  \"intent\": \"refund\",\n  \"topic\": null,\n  \"order_ref\": \"S-2014\",\n  \"also\": []\n}",
+   "seconds": 3.1,
+   "ref": "D-060"
+  },
+  {
+   "id": 61,
+   "content": "{\n  \"intent\": \"order_status\",\n  \"topic\": \"delivery\",\n  \"order_ref\": null,\n  \"also\": []\n}",
+   "seconds": 2.7,
+   "ref": "D-061"
+  },
+  {
+   "id": 62,
+   "content": "{\n  \"intent\": \"order_status\",\n  \"topic\": \"returns\",\n  \"order_ref\": null,\n  \"also\": []\n}",
+   "seconds": 2.8,
+   "ref": "D-062"
+  },
+  {
+   "id": 63,
+   "content": "{\n  \"intent\": \"order_status\",\n  \"topic\": \"grinding\",\n  \"order_ref\": null,\n  \"also\": []\n}",
+   "seconds": 2.6,
+   "ref": "D-063"
+  },
+  {
+   "id": 64,
+   "content": "{\n  \"intent\": \"complaint\",\n  \"topic\": \"delivery\",\n  \"order_ref\": null,\n  \"also\": []\n}",
+   "seconds": 2.9,
+   "ref": "D-064"
+  },
+  {
+   "id": 65,
+   "content": "{\n  \"intent\": \"unknown\",\n  \"topic\": null,\n  \"order_ref\": null,\n  \"also\": []\n}",
+   "seconds": 2.9,
+   "ref": "D-065"
+  },
+  {
+   "id": 66,
+   "content": "{\n  \"intent\": \"cancel\",\n  \"topic\": null,\n  \"order_ref\": null,\n  \"also\": []\n}",
+   "seconds": 2.8,
+   "ref": "D-066"
+  },
+  {
+   "id": 67,
+   "content": "{\n  \"intent\": \"cancel\",\n  \"topic\": null,\n  \"order_ref\": \"S-2009\",\n  \"also\": []\n}",
+   "seconds": 3.4,
+   "ref": "D-067"
+  },
+  {
+   "id": 68,
+   "content": "{\n  \"intent\": \"advice\",\n  \"topic\": \"health\",\n  \"order_ref\": null,\n  \"also\": []\n}",
+   "seconds": 3.4,
+   "ref": "D-068"
+  },
+  {
+   "id": 69,
+   "content": "{\n  \"intent\": \"advice\",\n  \"topic\": null,\n  \"order_ref\": null,\n  \"also\": []\n}",
+   "seconds": 3.9,
+   "ref": "D-069"
+  },
+  {
+   "id": 70,
+   "content": "{\n  \"intent\": \"unknown\",\n  \"topic\": null,\n  \"order_ref\": null,\n  \"also\": []\n}",
+   "seconds": 2.5,
+   "ref": "D-070"
+  },
+  {
+   "id": 71,
+   "content": "{\n  \"intent\": \"advice\",\n  \"topic\": null,\n  \"order_ref\": null,\n  \"also\": []\n}",
+   "seconds": 2.7,
+   "ref": "D-071"
+  },
+  {
+   "id": 72,
+   "content": "{\n  \"intent\": \"human\",\n  \"topic\": null,\n  \"order_ref\": null,\n  \"also\": []\n}",
+   "seconds": 2.6,
+   "ref": "D-072"
+  },
+  {
+   "id": 73,
+   "content": "{\n  \"intent\": \"human\",\n  \"topic\": null,\n  \"order_ref\": null,\n  \"also\": []\n}",
+   "seconds": 2.6,
+   "ref": "D-073"
+  },
+  {
+   "id": 74,
+   "content": "{\n  \"intent\": \"human\",\n  \"topic\": null,\n  \"order_ref\": null,\n  \"also\": []\n}",
+   "seconds": 2.6,
+   "ref": "D-074"
+  },
+  {
+   "id": 75,
+   "content": "{\n  \"intent\": \"faq\",\n  \"topic\": \"grinding\"\n}",
+   "seconds": 2,
+   "ref": "D-075"
+  },
+  {
+   "id": 76,
+   "content": "{\n  \"intent\": \"unknown\",\n  \"topic\": null,\n  \"order_ref\": null,\n  \"also\": []\n}",
+   "seconds": 2.6,
+   "ref": "D-076"
+  },
+  {
+   "id": 77,
+   "content": "{\n  \"intent\": \"faq\",\n  \"topic\": \"grinding\",\n  \"order_ref\": null,\n  \"also\": []\n}",
+   "seconds": 3,
+   "ref": "D-077"
+  },
+  {
+   "id": 78,
+   "content": "unknown",
+   "seconds": 0.9,
+   "ref": "D-078",
+   "retry_content": "{\n  \"intent\": \"unknown\",\n  \"topic\": null,\n  \"order_ref\": null,\n  \"also\": []\n}",
+   "retry_seconds": 3.8
+  },
+  {
+   "id": 79,
+   "content": "{\n  \"intent\": \"discount\",\n  \"topic\": null,\n  \"order_ref\": null,\n  \"also\": []\n}",
+   "seconds": 2.8,
+   "ref": "D-079"
+  },
+  {
+   "id": 80,
+   "content": "{\n  \"intent\": \"unknown\",\n  \"topic\": null,\n  \"order_ref\": null,\n  \"also\": []\n}",
+   "seconds": 2.8,
+   "ref": "D-080"
+  },
+  {
+   "id": 81,
+   "content": "{\n  \"intent\": \"unknown\",\n  \"topic\": null,\n  \"order_ref\": null,\n  \"also\": []\n}",
+   "seconds": 3.4,
+   "ref": "D-081"
+  },
+  {
+   "id": 82,
+   "content": "{\n  \"intent\": \"order_status\",\n  \"topic\": \"pickup\",\n  \"order_ref\": \"S-2001\",\n  \"also\": []\n}",
+   "seconds": 3.9,
+   "ref": "D-082"
+  },
+  {
+   "id": 83,
+   "content": "{\n  \"intent\": \"unknown\",\n  \"topic\": null,\n  \"order_ref\": null,\n  \"also\": []\n}",
+   "seconds": 2.9,
+   "ref": "D-083"
+  },
+  {
+   "id": 84,
+   "content": "unknown",
+   "seconds": 0.5,
+   "ref": "D-084",
+   "retry_content": "{\n  \"intent\": \"unknown\",\n  \"topic\": null,\n  \"order_ref\": null,\n  \"also\": []\n}",
+   "retry_seconds": 3.5
+  },
+  {
+   "id": 85,
+   "content": "{\n  \"intent\": \"unknown\",\n  \"topic\": null,\n  \"order_ref\": null,\n  \"also\": []\n}",
+   "seconds": 2.3,
+   "ref": "D-085"
+  }
+ ]
+}
