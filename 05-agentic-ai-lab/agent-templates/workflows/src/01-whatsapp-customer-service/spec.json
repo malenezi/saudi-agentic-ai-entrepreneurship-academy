@@ -10,6 +10,7 @@
   "stopped": false,
   "shadow_mode": false,
   "normalise_digits": true,
+  "second_request_check": true,
   "business_name": "متجر الواحة (اسم مختلق)",
   "knowledge": {
    "hours": {
