@@ -2,12 +2,18 @@
 
 ## Unreleased
 
+### Third local-model run of the store, after the topic list and the code-side check (25 November 2026)
+
+- **The run.** qwen2.5:3b on the owner's laptop, 225 prompts in 16.3 minutes, outside n8n: the store's 85 messages **58** with **4** acted alone (54 and 11 on 24 November), its failure cases 22 right, 0 degraded, 6 acted alone, 2 wrong but safe (17, 1, 11, 1), templates 39 of 47 (43), lab 30 of 35 and 7 of 8, dialect cases 13 of 14. Recorded under `real-model-runs/local-qwen2.5-3b-run3/` and replayed by a test.
+- **Found.** The code-side check fired on fresh answers as it did on the replay. `also` was again never filled. Listing the store's topics in the instructions did not improve the reading and added an error: a topic key written as the intent in 10 of 85 messages, handed over as not understood. A repair for it was tried by replay and not adopted, because one more message was acted on alone in each set. Templates 2 to 5 moved between runs on unchanged prompts.
+- **`tools/local_run_pack.py`** writes the folder that runs every prompt against a local model on Windows (prompts from the workflows' own Prepare nodes, a PowerShell script, a file to double-click). The earlier package was never in the repository.
+
 ### Template 1: a request the model did not name is looked for in code (25 November 2026)
 
 - **Why.** In the local-model run of 24 November the model never filled `also`, so the multiple-request gate did not fire once, and it labelled cancellations, promises and complaints as order questions.
 - **What.** Decide now checks the customer's own message, whatever the model returned: the words listed in Config for requests that need a person, and more than one stored order in one message. Where the model saw only a question and one such request is found, the stricter reading replaces the model's; anything else goes through the gate and the whole message is handed over. A one-sentence question tied to an approved topic is still answered. Logged as `intent_by_code`, `also_by_code` or `orders_named`. `second_request_check: false` in Config switches it off.
 - **Measured by replay of the recorded answers, not by a new run:** the store's 85 messages 60 in place of 54, acted alone 5 in place of 11; failure cases 18, 1, 10, 1 in place of 17, 1, 11, 1. Simulator: 73 of 85 unchanged; failure cases 16, 6, 8, 0 in place of 15, 7, 8, 0. The run record keeps the figures as run.
-- **Limits.** The check knows only the words in Config: ten failure cases still end with the agent acting alone, four of them compound messages worded outside the list. A refund request the model calls a policy question is answered with the policy text. Tested outside n8n only; not imported into n8n and not run with a model since the change. 161 tests.
+- **Limits.** The check knows only the words in Config: ten failure cases still end with the agent acting alone, four of them compound messages worded outside the list. A refund request the model calls a policy question is answered with the policy text. Tested outside n8n only; not imported into n8n since the change. Run with a model the same day: see the entry above. 161 tests then.
 
 ### Video series: from opportunity to venture (25 November 2026)
 

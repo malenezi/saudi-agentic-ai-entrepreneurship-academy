@@ -1,0 +1,82 @@
+{
+ "workflow": "03-lead-qualification",
+ "model": "qwen2.5:3b (Ollama, local)",
+ "date": "2026-11-25",
+ "how": "One separate call per prompt to http://localhost:11434/v1/chat/completions with temperature 0; the model saw the prompt only. When an answer was not one JSON object the script asked once more with the workflows' fixed instruction and recorded retry_content. Not sent through n8n's HTTP node. Prompts built by tools/local_run_pack.py at commit 03eb914.",
+ "outputs": [
+  {
+   "id": 1,
+   "content": "{\n  \"intent\": \"unknown\"\n}",
+   "seconds": 1.4
+  },
+  {
+   "id": 2,
+   "content": "{\n  \"intent\": \"answer\",\n  \"value\": null\n}",
+   "seconds": 1.6
+  },
+  {
+   "id": 3,
+   "content": "{\n  \"intent\": \"yes\",\n  \"value\": \"this_month\"\n}",
+   "seconds": 1.8
+  },
+  {
+   "id": 4,
+   "content": "{\n  \"intent\": unknown\n}",
+   "seconds": 0.9,
+   "retry_content": "{\n  \"intent\": unknown\n}",
+   "retry_seconds": 1.7
+  },
+  {
+   "id": 5,
+   "content": "{\n  \"intent\": unknown,\n  \"value\": null\n}",
+   "seconds": 1.8,
+   "retry_content": "{\n  \"intent\": unknown,\n  \"value\": null\n}",
+   "retry_seconds": 2.1
+  },
+  {
+   "id": 6,
+   "content": "{\n  \"intent\": yes\n}",
+   "seconds": 0.9,
+   "retry_content": "{\"intent\": yes}",
+   "retry_seconds": 1.4
+  },
+  {
+   "id": 7,
+   "content": "{\n  \"intent\": unknown\n}",
+   "seconds": 0.9,
+   "retry_content": "{\n  \"intent\": unknown\n}",
+   "retry_seconds": 1.6
+  },
+  {
+   "id": 8,
+   "content": "{\n  \"intent\": \"stop\"\n}",
+   "seconds": 0.9
+  },
+  {
+   "id": 9,
+   "content": "{\n  \"intent\": \"quote_request\",\n  \"value\": \"within_range\"\n}",
+   "seconds": 1.6
+  },
+  {
+   "id": 10,
+   "content": "{\n  \"intent\": negotiate\n}",
+   "seconds": 1.1,
+   "retry_content": "{\"intent\":\"negotiate\"}",
+   "retry_seconds": 1.6
+  },
+  {
+   "id": 11,
+   "content": "{\n  \"intent\": stop\n}",
+   "seconds": 1,
+   "retry_content": "{\"intent\": stop}",
+   "retry_seconds": 1.4
+  },
+  {
+   "id": 12,
+   "content": "{\n  \"intent\": unknown\n}",
+   "seconds": 1,
+   "retry_content": "{\n  \"intent\": unknown\n}",
+   "retry_seconds": 1.6
+  }
+ ]
+}

@@ -98,6 +98,32 @@ What this says for a founder: on this laptop a 3-billion-parameter model answers
 
 What this says for a founder: with repair and one retry a 3-billion-parameter model on a laptop no longer loses answers to bad JSON, and on short classification it is right about nine times in ten on these template cases. On eighty-five messages nobody tuned it for, it is right less than two times in three, and its typical error is to ask a customer for an order number when the customer wanted something else. Still one small model and one sample.
 
+## Fourth run: the same model after the topic list and the code-side check (25 November 2026)
+
+**qwen2.5:3b** on the same laptop, 225 prompts in 16.3 minutes, one call per prompt at temperature 0, outside n8n. The prompts were built by `tools/local_run_pack.py` from `main` at `03eb914`, so they carry the two changes made since the last run: the store's own topics listed in template 1's instructions, and nothing else. The answers pass through today's nodes, which include the code-side check of 25 November. Outputs are in [`local-qwen2.5-3b-run3/`](local-qwen2.5-3b-run3/) and replayed by a test.
+
+| Set | Cases | This run | 24 November run, as run |
+|---|---|---|---|
+| 1. Customer service | 9 | 7 of 9 | 8 of 9 |
+| 2. Booking assistant | 12 | 9 of 12 | 11 of 12 |
+| 3. Lead qualification | 12 | 11 of 12 | 11 of 12 |
+| 4. Invoice reconciliation | 12 | 11 of 12 | 11 of 12 |
+| 5. Tender summariser | 2 | 1 of 2 | 2 of 2 |
+| Templates together | 47 | **39 of 47** | 43 of 47 |
+| Course 2 lab, stage 3 | 35 and 8 held out | 30 of 35, 7 of 8 | 28 of 35, 7 of 8 |
+| Invented store, 85 messages | 85 | **58 of 85**; acted alone on **4** | 54 of 85; acted alone on 11 (60 and 5 when replayed through the check) |
+| Invented store, failure cases | 30 | **22 right, 0 degraded, 6 acted alone, 2 wrong but safe** | 17, 1, 11, 1 |
+| Dialect cases, templates 2 to 5 | 14, and 3 simulator limits | 13 of 14; 2 of the 3 limits handled correctly | 12 of 14; 2 of 3 |
+
+### What this run found
+
+1. **The code-side check works on fresh answers.** It took the stricter reading in D-051, D-059, D-061 and D-062, and handed D-060, D-066, D-082 and F-006 over whole. The model again named no second request: `also` was empty in all 115 store messages. The four messages still acted on alone (D-056, D-063, D-075, D-077) carry none of the store's listed words; three are answers from the wrong approved entry.
+2. **Listing the store's topics did not help, and it added a new error.** In 10 of the 85 the model wrote a topic key where the intent belongs (`{ "intent": "hours", "topic": "hours" }`), which is not an allowed intent, so the message was handed over as not understood: safe, and a general question lost. «تقبلون مدى؟» was still answered with the opening hours. A reading of such an answer as a general question on that topic was tried by replay and **not adopted**: it gives 63 of 85, and one more message acted on alone in each set (D-009, F-014).
+3. **The 58 is not better than the 60 of the replay.** The gain over the 54 of 24 November comes from the code-side check, not from the model reading the store better.
+4. **No square brackets this time.** None of the store's 85 first answers used them (18 on 24 November); 6 were asked for a second time and none stayed unreadable.
+5. **Run-to-run variation again.** Templates 43, then 39, with the same prompts for templates 2 to 5: booking lost cases 4 and 9, the tender summariser case 1. The lab gave 31, 28 and now 30 of 35. One run of a model this size is one sample.
+6. **Failure cases still acted on alone:** F-010, F-011, F-013, F-015, F-027, F-030. Four are compound messages or requests beyond the agent's authority worded outside the store's list.
+
 ## How the first run was made
 
 - **Model:** Claude Fable 5.2 (`claude-fable-5-2`), on 21 November 2026.

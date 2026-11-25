@@ -1,0 +1,80 @@
+{
+ "workflow": "02-booking-assistant",
+ "model": "qwen2.5:3b (Ollama, local)",
+ "date": "2026-11-25",
+ "how": "One separate call per prompt to http://localhost:11434/v1/chat/completions with temperature 0; the model saw the prompt only. When an answer was not one JSON object the script asked once more with the workflows' fixed instruction and recorded retry_content. Not sent through n8n's HTTP node. Prompts built by tools/local_run_pack.py at commit 03eb914.",
+ "outputs": [
+  {
+   "id": 1,
+   "content": "{\n  \"intent\": \"book\",\n  \"service\": \"تنظيف أسنان\",\n  \"choice\": null,\n  \"booking_ref\": null\n}",
+   "seconds": 2.9
+  },
+  {
+   "id": 2,
+   "content": "```json\n{\n  \"intent\": \"confirm\",\n  \"service\": null,\n  \"choice\": 2,\n  \"booking_ref\": null\n}\n```",
+   "seconds": 2.7,
+   "retry_content": "```json\n{\n  \"intent\": \"confirm\",\n  \"service\": null,\n  \"choice\": 2,\n  \"booking_ref\": null\n}\n```",
+   "retry_seconds": 3.4
+  },
+  {
+   "id": 3,
+   "content": "```json\n{\n  \"intent\": \"confirm\",\n  \"choice\": \"2\",\n  \"booking_ref\": null,\n  \"service\": null\n}\n```",
+   "seconds": 2.6,
+   "retry_content": "```json\n{\n  \"intent\": \"confirm\",\n  \"choice\": \"2\",\n  \"booking_ref\": null,\n  \"service\": null\n}\n```",
+   "retry_seconds": 4.2
+  },
+  {
+   "id": 4,
+   "content": "{\n  \"intent\": \"confirm\",\n  \"service\": null,\n  \"choice\": null,\n  \"booking_ref\": null\n}",
+   "seconds": 2.3
+  },
+  {
+   "id": 5,
+   "content": "{\n  \"intent\": \"confirm\",\n  \"choice\": \"3\",\n  \"booking_ref\": \"B-1003\"\n}",
+   "seconds": 2.8
+  },
+  {
+   "id": 6,
+   "content": "```json\n{\n  \"intent\": \"confirm\",\n  \"service\": null,\n  \"choice\": 2,\n  \"booking_ref\": null\n}\n```",
+   "seconds": 2.7,
+   "retry_content": "```json\n{\n  \"intent\": \"confirm\",\n  \"service\": null,\n  \"choice\": 2,\n  \"booking_ref\": null\n}\n```",
+   "retry_seconds": 3.5
+  },
+  {
+   "id": 7,
+   "content": "```json\n{\n  \"intent\": \"cancel\",\n  \"booking_ref\": \"B-1001\"\n}\n```",
+   "seconds": 2.4,
+   "retry_content": "{\n  \"intent\": \"cancel\",\n  \"booking_ref\": \"B-1001\"\n}",
+   "retry_seconds": 2.7
+  },
+  {
+   "id": 8,
+   "content": "```json\n{\n  \"intent\": \"cancel\",\n  \"choice\": \"B-1002\"\n}\n```",
+   "seconds": 2.5,
+   "retry_content": "```json\n{\n  \"intent\": \"cancel\",\n  \"choice\": \"B-1002\"\n}\n```",
+   "retry_seconds": 4.6
+  },
+  {
+   "id": 9,
+   "content": "```json\n{\n  \"intent\": \"cancel\",\n  \"choice\": \"B-1004\"\n}\n```",
+   "seconds": 2.6,
+   "retry_content": "{\n  \"intent\": \"cancel\",\n  \"choice\": \"B-1004\"\n}",
+   "retry_seconds": 2.6
+  },
+  {
+   "id": 10,
+   "content": "{\n  \"intent\": \"symptoms\",\n  \"service\": \"كشف\",\n  \"choice\": null,\n  \"booking_ref\": null\n}",
+   "seconds": 2.7
+  },
+  {
+   "id": 11,
+   "content": "{\n  \"intent\": \"book\",\n  \"service\": null,\n  \"choice\": null,\n  \"booking_ref\": null\n}",
+   "seconds": 3.1
+  },
+  {
+   "id": 12,
+   "content": "{\n  \"intent\": \"unknown\",\n  \"service\": null,\n  \"choice\": null,\n  \"booking_ref\": null\n}",
+   "seconds": 2.5
+  }
+ ]
+}
