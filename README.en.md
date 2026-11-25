@@ -37,6 +37,16 @@ Founded and maintained by **Prof. Mamdouh Alenezi** as an independent personal i
 
 ---
 
+## Watch: from opportunity to venture
+
+Four short videos in Arabic. Select a picture to watch, or [see all four on the Academy's page](https://malenezi.github.io/saudi-agentic-ai-entrepreneurship-academy/index.en.html#h-videos).
+
+| [<img src="assets/videos/01-opportunity.jpg" alt="Video 1: The biggest business opportunity may be in front of you now" width="100%">](https://malenezi.github.io/saudi-agentic-ai-entrepreneurship-academy/assets/videos/01-opportunity.mp4) | [<img src="assets/videos/02-chatbot-vs-agent.jpg" alt="Video 2: What separates a chatbot from an AI agent?" width="100%">](https://malenezi.github.io/saudi-agentic-ai-entrepreneurship-academy/assets/videos/02-chatbot-vs-agent.mp4) | [<img src="assets/videos/03-validate-before-build.jpg" alt="Video 3: Do not build before you have shown that someone will buy" width="100%">](https://malenezi.github.io/saudi-agentic-ai-entrepreneurship-academy/assets/videos/03-validate-before-build.mp4) | [<img src="assets/videos/04-saudi-market.jpg" alt="Video 4: How to build an AI company in the Saudi market" width="100%">](https://malenezi.github.io/saudi-agentic-ai-entrepreneurship-academy/assets/videos/04-saudi-market.mp4) |
+|---|---|---|---|
+| **1. The biggest business opportunity may be in front of you now** · 1:36 | **2. What separates a chatbot from an AI agent?** · 1:31 | **3. Do not build before you have shown that someone will buy** · 1:35 | **4. How to build an AI company in the Saudi market** · 1:48 |
+
+Motion graphics with a synthetic voice and generated music; no filmed footage. [How they were made, and their limits](assets/videos/README.md#english).
+
 ## Why this academy
 
 - **From opportunity to revenue.** A pathway from a real problem inside a Saudi business to a working agent and a paying customer. The aim is ventures founded, products launched and revenue earned, not classroom training alone.
@@ -209,6 +219,7 @@ Details and conditions are in [CONTRIBUTING.md](CONTRIBUTING.md) and the [code o
 | [`07-resources/`](07-resources/README.md) | References, and the companion repositories |
 | [`08-community/`](08-community/README.md) | Participation and the project showcase |
 | [`workbook/`](workbook/index.html) | The venture workbook |
+| [`assets/videos/`](assets/videos/README.md) | The video series "From opportunity to venture" and its transcripts |
 | `tools/` · `tests/` | Build and checking tools and their tests; `make check` runs them all |
 | [`SOURCES.md`](SOURCES.md) | The source register: every external fact with its source and the date it was checked |
 

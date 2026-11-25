@@ -104,6 +104,13 @@ h3 { font-size: 21px; margin-block-start: 36px; }
 .grid .d { font-size: 16px; line-height: 1.8; }
 .grid .en { text-align: end; }
 .grid.four { grid-template-columns: repeat(auto-fill, minmax(min(100%, 230px), 1fr)); }
+.videos { list-style: none; padding: 0; margin: 24px 0 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 420px), 1fr)); gap: 20px; }
+.videos li { background: var(--card); border: 1px solid var(--line); border-radius: 16px; overflow: hidden; }
+.videos video { display: block; inline-size: 100%; aspect-ratio: 16 / 9; background: #061b36; }
+.videos .cap { display: grid; gap: 2px; padding: 14px 20px 18px; }
+.videos .meta { font-size: 15px; font-weight: 600; color: var(--accent-ink); }
+.videos .t { font: 700 20px/1.6 var(--display-ar); }
+.videos .d { font-size: 16px; line-height: 1.8; color: var(--muted); }
 .start a, .start .card { border-block-start-color: var(--ink); }
 .state .card { gap: 8px; }
 .state .ok { border-block-start-color: var(--ok); }
@@ -164,6 +171,7 @@ footer { margin-block-start: 56px; border-block-start: 1px solid var(--line); pa
   <nav class="subnav" aria-label="أقسام الصفحة">
     <div class="wrap">
       <a href="#h-why">لماذا الأكاديمية</a>
+      <a href="#h-videos">الفيديوهات</a>
       <a href="#h-courses">المقررات</a>
       <a href="#h-paths">اختر مسارك</a>
       <a href="#h-start">المحتويات</a>
@@ -186,6 +194,18 @@ footer { margin-block-start: 56px; border-block-start: 1px solid var(--line); pa
       <li><div class="card"><span class="t">سياق المملكة</span><span class="d">الأنظمة والتمويل والقطاعات كما هي في المملكة، لا أمثلة مترجمة من أسواق أخرى.</span></div></li>
       <li><div class="card"><span class="t">لا معلومة رقمية دون مصدر</span><span class="d">لكل معلومة خارجية مصدر موثوق وتاريخ تحقق، مقيَّدان في سجل المصادر.</span></div></li>
     </ul>
+  </section>
+
+  <section aria-labelledby="h-videos">
+    <h2 id="h-videos">شاهد: من الفرصة إلى المشروع</h2>
+    <p>أربعة فيديوهات قصيرة، في كل منها معرفة قابلة للتطبيق: الفرصة، ثم التقنية، ثم التحقق من الطلب، ثم السوق السعودي.</p>
+    <ul class="videos">
+      <li><video controls preload="none" poster="assets/videos/01-opportunity.jpg" aria-label="الفيديو 1: أكبر فرصة تجارية قد تكون أمامك الآن"><source src="assets/videos/01-opportunity.mp4" type="video/mp4"><a href="assets/videos/01-opportunity.mp4">نزّل الفيديو</a></video><div class="cap"><span class="meta">الفيديو 1 · <bdi dir="ltr">1:36</bdi></span><span class="t">أكبر فرصة تجارية قد تكون أمامك الآن</span><span class="d">ثلثا المنشآت في المملكة لم تبدأ بعد: أين الفرصة، وكيف تتحول عملية متكررة إلى منتج؟</span></div></li>
+      <li><video controls preload="none" poster="assets/videos/02-chatbot-vs-agent.jpg" aria-label="الفيديو 2: ما الفرق بين Chatbot والوكيل الذكي؟"><source src="assets/videos/02-chatbot-vs-agent.mp4" type="video/mp4"><a href="assets/videos/02-chatbot-vs-agent.mp4">نزّل الفيديو</a></video><div class="cap"><span class="meta">الفيديو 2 · <bdi dir="ltr">1:31</bdi></span><span class="t">ما الفرق بين <bdi dir="ltr" lang="en">Chatbot</bdi> والوكيل الذكي؟</span><span class="d">الفرق بين نموذج يجيب ووكيل ينفّذ، وعناصر الوكيل الأربعة، وحدود استقلاليته.</span></div></li>
+      <li><video controls preload="none" poster="assets/videos/03-validate-before-build.jpg" aria-label="الفيديو 3: لا تبنِ منتجاً قبل أن تثبت أن أحداً يريد شراءه"><source src="assets/videos/03-validate-before-build.mp4" type="video/mp4"><a href="assets/videos/03-validate-before-build.mp4">نزّل الفيديو</a></video><div class="cap"><span class="meta">الفيديو 3 · <bdi dir="ltr">1:35</bdi></span><span class="t">لا تبنِ منتجاً قبل أن تثبت أن أحداً يريد شراءه</span><span class="d">ثلاثة أسئلة قبل أول سطر برمجي، ومثال متجر إلكتروني من المقابلة إلى القياس.</span></div></li>
+      <li><video controls preload="none" poster="assets/videos/04-saudi-market.jpg" aria-label="الفيديو 4: كيف تبني شركة ذكاء اصطناعي في السوق السعودي؟"><source src="assets/videos/04-saudi-market.mp4" type="video/mp4"><a href="assets/videos/04-saudi-market.mp4">نزّل الفيديو</a></video><div class="cap"><span class="meta">الفيديو 4 · <bdi dir="ltr">1:48</bdi></span><span class="t">كيف تبني شركة ذكاء اصطناعي في السوق السعودي؟</span><span class="d">أربعة أبعاد لا يستغني عنها مشروع وكلاء في المملكة، وما تتيحه الأكاديمية.</span></div></li>
+    </ul>
+    <p class="src">رسوم حركية وتعليق بصوت اصطناعي وموسيقى مولّدة؛ لا مشاهد مصوّرة. <a href="read.html?p=assets/videos/transcripts.md">نصوص التعليق</a> · <a href="read.html?p=assets/videos/README.md">كيف صُنعت وما حدودها</a></p>
   </section>
 
   <section aria-labelledby="h-courses">
@@ -391,6 +411,17 @@ header .ar { font-size: 17px; }
       <li><a href="read.html?p=05-agentic-ai-lab/README.md"><span class="t">Agentic AI lab</span><span class="d">Skills, agent templates, an evaluation template and seventeen exercises.</span></a></li>
       <li><a href="workbook/index.html"><span class="t">Venture workbook</span><span class="lang">Arabic</span><span class="d">The gates of the four courses on one page, with evidence for each item. Saved in your browser and exported as a text file.</span></a></li>
       <li><a href="read.html?p=CONTRIBUTING.md"><span class="t">Contribute</span><span class="d">Every contribution is welcome, and you do not need to be a programmer.</span></a></li>
+    </ul>
+  </section>
+
+  <section aria-labelledby="h-videos">
+    <h2 id="h-videos">Watch: from opportunity to venture</h2>
+    <p>Four short videos in Arabic: the opportunity, the technology, checking demand before building, and the Saudi market. Motion graphics with a synthetic voice and generated music; no filmed footage. <a href="read.html?p=assets/videos/README.md">How they were made, and their limits</a>.</p>
+    <ul class="videos">
+      <li><video controls preload="none" poster="assets/videos/01-opportunity.jpg" lang="ar" aria-label="Video 1: The biggest business opportunity may be in front of you now"><source src="assets/videos/01-opportunity.mp4" type="video/mp4"><a href="assets/videos/01-opportunity.mp4">Download the video</a></video><div class="cap"><span class="meta">Video 1 · 1:36 · Arabic</span><span class="t">The biggest business opportunity may be in front of you now</span></div></li>
+      <li><video controls preload="none" poster="assets/videos/02-chatbot-vs-agent.jpg" lang="ar" aria-label="Video 2: What separates a chatbot from an AI agent?"><source src="assets/videos/02-chatbot-vs-agent.mp4" type="video/mp4"><a href="assets/videos/02-chatbot-vs-agent.mp4">Download the video</a></video><div class="cap"><span class="meta">Video 2 · 1:31 · Arabic</span><span class="t">What separates a chatbot from an AI agent?</span></div></li>
+      <li><video controls preload="none" poster="assets/videos/03-validate-before-build.jpg" lang="ar" aria-label="Video 3: Do not build before you have shown that someone will buy"><source src="assets/videos/03-validate-before-build.mp4" type="video/mp4"><a href="assets/videos/03-validate-before-build.mp4">Download the video</a></video><div class="cap"><span class="meta">Video 3 · 1:35 · Arabic</span><span class="t">Do not build before you have shown that someone will buy</span></div></li>
+      <li><video controls preload="none" poster="assets/videos/04-saudi-market.jpg" lang="ar" aria-label="Video 4: How to build an AI company in the Saudi market"><source src="assets/videos/04-saudi-market.mp4" type="video/mp4"><a href="assets/videos/04-saudi-market.mp4">Download the video</a></video><div class="cap"><span class="meta">Video 4 · 1:48 · Arabic</span><span class="t">How to build an AI company in the Saudi market</span></div></li>
     </ul>
   </section>
 

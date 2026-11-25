@@ -2,7 +2,12 @@
 
 ## Unreleased
 
-Nothing yet.
+### Video series: from opportunity to venture (25 November 2026)
+
+- **Four short Arabic videos** in `assets/videos/` (1:36, 1:31, 1:35, 1:48; 720p, about 12 MB together), with poster frames and the spoken text in `transcripts.md`: the opportunity, chatbot against agent, checking demand before building, and the Saudi market. Scripts by the Academy's owner; he watched the four videos and approved them.
+- **Shown on both landing pages** in a new section under the opening, and linked from both READMEs.
+- **`tools/video_series/`** builds them from text: narration and scenes in `content.py`, a page template, speech from an open Piper voice, a generated music bed, filming with headless Chrome. It needs packages outside the standard library and is not run by `make check` or CI; `THIRD-PARTY.md` says so.
+- **Limits.** Synthetic voice with some weak consonants, checked by machine transcription and by the owner's ear, not by a language editor. Motion graphics only. Longer than the 65 to 80 seconds first planned. The licence of the voice's training data is not established, and `THIRD-PARTY.md` records that. Figures are those of v0.13. No change to readiness: no course has been piloted.
 
 ## v0.13 (2026-11-24)
 

@@ -46,6 +46,16 @@ python3 -m order_agent.cli "ما حالة طلبي رقم 84522؟"
 
 ---
 
+## شاهد: من الفرصة إلى المشروع
+
+أربعة فيديوهات قصيرة، في كل منها معرفة قابلة للتطبيق. اضغط الصورة للمشاهدة، أو [شاهدها كلها في صفحة الأكاديمية](https://malenezi.github.io/saudi-agentic-ai-entrepreneurship-academy/#h-videos).
+
+| [<img src="assets/videos/01-opportunity.jpg" alt="الفيديو 1: أكبر فرصة تجارية قد تكون أمامك الآن" width="100%">](https://malenezi.github.io/saudi-agentic-ai-entrepreneurship-academy/assets/videos/01-opportunity.mp4) | [<img src="assets/videos/02-chatbot-vs-agent.jpg" alt="الفيديو 2: ما الفرق بين Chatbot والوكيل الذكي؟" width="100%">](https://malenezi.github.io/saudi-agentic-ai-entrepreneurship-academy/assets/videos/02-chatbot-vs-agent.mp4) | [<img src="assets/videos/03-validate-before-build.jpg" alt="الفيديو 3: لا تبنِ منتجاً قبل أن تثبت أن أحداً يريد شراءه" width="100%">](https://malenezi.github.io/saudi-agentic-ai-entrepreneurship-academy/assets/videos/03-validate-before-build.mp4) | [<img src="assets/videos/04-saudi-market.jpg" alt="الفيديو 4: كيف تبني شركة ذكاء اصطناعي في السوق السعودي؟" width="100%">](https://malenezi.github.io/saudi-agentic-ai-entrepreneurship-academy/assets/videos/04-saudi-market.mp4) |
+|---|---|---|---|
+| **1. أكبر فرصة تجارية قد تكون أمامك الآن** · <bdi dir="ltr">1:36</bdi> | **2. ما الفرق بين Chatbot والوكيل الذكي؟** · <bdi dir="ltr">1:31</bdi> | **3. لا تبنِ منتجاً قبل أن تثبت أن أحداً يريد شراءه** · <bdi dir="ltr">1:35</bdi> | **4. كيف تبني شركة ذكاء اصطناعي في السوق السعودي؟** · <bdi dir="ltr">1:48</bdi> |
+
+رسوم حركية وتعليق بصوت اصطناعي وموسيقى مولّدة؛ لا مشاهد مصوّرة. [نصوص التعليق](assets/videos/transcripts.md) · [كيف صُنعت وما حدودها](assets/videos/README.md)
+
 ## لماذا هذه الأكاديمية
 
 - **من الفرصة إلى الإيراد:** مسار يبدأ بمشكلة حقيقية لدى منشأة في المملكة، وينتهي بوكيل ذكي قابل للتشغيل ومنتج ذي قيمة تجارية. الغاية تأسيس المشاريع وإطلاق المنتجات وتحقيق الإيرادات، لا التدريب النظري وحده.
@@ -218,6 +228,7 @@ flowchart LR
 | [`07-resources/`](07-resources/README.md) | المراجع، والمستودعات المرافقة |
 | [`08-community/`](08-community/README.md) | المشاركة ومعرض المشاريع |
 | [`workbook/`](workbook/index.html) | دفتر المشروع |
+| [`assets/videos/`](assets/videos/README.md) | سلسلة الفيديوهات «من الفرصة إلى المشروع» ونصوص تعليقها |
 | `tools/` · `tests/` | أدوات البناء والفحص واختباراتها؛ تُشغَّل كلها بالأمر `make check` |
 | [`SOURCES.md`](SOURCES.md) | سجل المصادر: كل معلومة خارجية بمصدرها وتاريخ التحقق منها |
 

@@ -34,3 +34,4 @@ __pycache__/
 
 # The webhook credential written by tools/n8n_webhook_credential.py holds a token in plain text
 saaea-webhook-credential.json
+tools/video_series/build/
