@@ -57,7 +57,7 @@ def source_ids():
 
 
 def problems(registry=None):
-    """Everything wrong with the registry and the card files, as a list of sentences."""
+    """Everything wrong with the registry, the card files and the templates, as a list of sentences."""
     registry = registry or load()
     found, known, seen = [], source_ids(), set()
     for card in registry["cards"]:
@@ -102,6 +102,12 @@ def problems(registry=None):
                 found.append("%s: the card does not link to %s" % (cid, rel))
         if card["origin"] == "academy" and "من تطوير الأكاديمية" not in text:
             found.append("%s: an Academy model must say so in its card" % cid)
+    for path in sorted((LIB / "templates").glob("*.md")) if (LIB / "templates").exists() else []:
+        text = path.read_text(encoding="utf-8")
+        if "من تطوير الأكاديمية" not in text or "Developed by the Academy" not in text:
+            found.append("templates/%s: a library template must say, in Arabic and English, that the Academy developed it" % path.name)
+        if not any("templates/" + path.name in used for card in registry["cards"] for used in card.get("used_in", [])):
+            found.append("templates/%s: no card uses this template" % path.name)
     on_disk = {p.stem for p in (LIB / "cards").glob("*.md")}
     for extra in sorted(on_disk - seen):
         found.append("%s: card file with no entry in library.json" % extra)
@@ -144,10 +150,18 @@ def readme(registry):
         out.append("")
     out += ["المرحلة برقم المقرر: 1 اكتشاف الفرصة، 2 بناء الوكيل، 3 الإطلاق والنموذج التجاري، 4 التوسع والحوكمة.", "",
             "## ما يُكتب تباعاً", "",
-            "أسماء فقط حتى تُكتب البطاقة ويُتحقق من مصدرها. ترتيب الكتابة: نماذج الأكاديمية، ثم المستوى التطبيقي والمخططات، ثم بقية المجالات، ثم المستوى المتقدم.", ""]
+            "أسماء فقط حتى تُكتب البطاقة ويُتحقق من مصدرها. ترتيب الكتابة: المستوى التطبيقي والمخططات، ثم بقية المجالات، ثم المستوى المتقدم.", ""]
     for domain, (domain_ar, _) in DOMAINS.items():
         if planned.get(domain):
             out += ["**%s:** %s" % (domain_ar, " · ".join(planned[domain])), ""]
+    templates = sorted((LIB / "templates").glob("*.md")) if (LIB / "templates").exists() else []
+    if templates:
+        out += ["## قوالب المكتبة", "", "قوالب من تطوير الأكاديمية، بالعربية والإنجليزية، لما لم يكن له قالب في حقيبة المؤسس أو المختبر. "
+                "بقية القوالب في مواضعها، وكل بطاقة تحيل إلى قالبها.", ""]
+        for path in templates:
+            title = path.read_text(encoding="utf-8").split("\n", 1)[0].lstrip("# ").strip()
+            out.append("- [%s](templates/%s)" % (title, path.name))
+        out.append("")
     out += ["## كيف تُضاف بطاقة", "",
             "انسخ [قالب البطاقة](card-template.md) إلى `cards/` باسم المعرّف، وأضف مدخلها في `library.json`، ثم شغّل `python3 tools/build_library.py`. "
             "الفحص `make check` يرفض بطاقة بلا مصدر، أو بقسم ناقص، أو برابط إلى ملف غير موجود. ما لم يُعتمد من المقترح الأصلي وسببه في [سجل ما لم يُعتمد](not-adopted.md).", "",

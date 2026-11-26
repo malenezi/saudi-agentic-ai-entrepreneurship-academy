@@ -14,8 +14,12 @@
 | دورة الإدراك والتخطيط والتنفيذ، وحلقة الوكيل | بطاقة Agent Loop | وصفان لشيء واحد |
 | مخطط تدفق البيانات الوكيلي | مثال داخل بطاقة مخطط تدفق البيانات | ليس نموذجاً معروفاً بهذا الاسم |
 | Agent Cost Modeling و Agent Unit Economics Model | بطاقة اقتصاديات الوحدة، وفيها تكلفة المهمة المنجزة | موجودان في حقيبة المؤسس باسم آخر |
-| مصفوفة الفرص و Agent Opportunity Canvas | بطاقة تقييم فرص الوكلاء (قالب الحقيبة رقم 2) | القالب قائم بتسعة معايير |
-| Agent Autonomy Matrix و Agent-Human Responsibility Matrix | بطاقة واحدة على مستويات الإشراف الثلاثة ومصفوفة الاعتماد | انظر «ما لم يُعَد فتحه» |
+| مصفوفة الفرص و Agent Opportunity Canvas | [بطاقة تقييم فرص الوكلاء](cards/agent-opportunity-assessment.md) (قالب الحقيبة رقم 2) | القالب قائم بتسعة معايير |
+| Agent Autonomy Matrix و Agent-Human Responsibility Matrix | [بطاقة الإشراف البشري](cards/human-in-the-loop.md)، وقالبها مصفوفة الإشراف البشري في عدّة الامتثال | القالب قائم بمستوياته الأربعة؛ انظر «ما لم يُعَد فتحه» |
+| Agent Architecture Canvas | [بطاقة معمارية الوكيل](cards/agent-architecture.md)، وقالبها مخطط المنتج الأولي | بطاقة ثانية للقالب نفسه تكرار |
+| Agent Evaluation Canvas | [بطاقة تقييم الوكيل](cards/agent-evaluation.md)، وقالبها قالب التقييم في المختبر | بطاقة ثانية للقالب نفسه تكرار |
+| Agent ROI Calculator | [بطاقة العائد عند العميل](cards/buyer-return.md) | الحاسبة قائمة باسم آخر |
+| Agent Risk Register | [بطاقة سجل مخاطر الوكيل](cards/agent-risk-register.md)، وقالبها في عدّة الامتثال | القالب قائم |
 
 ## ما حُذف
 
@@ -39,11 +43,15 @@
 
 ## ما لم يُعَد فتحه
 
-استُبعد في الوحدة 1.4 مقياس للاستقلالية من 0 إلى 4، و«بطاقة فرصة» من عشرة حقول ([سجل المقرر الأول](../03-courses/01-opportunity/not-adopted.md)). المقترح يعيدهما باسمين جديدين. القرار باقٍ: مستويات الإشراف الثلاثة في [بطاقة الإشراف البشري](cards/human-in-the-loop.md)، وتقييم الفرص بالمعايير التسعة في قالب الحقيبة.
+استُبعد في الوحدة 1.4 مقياس للاستقلالية من 0 إلى 4، و«بطاقة فرصة» من عشرة حقول ([سجل المقرر الأول](../03-courses/01-opportunity/not-adopted.md)). المقترح يعيدهما باسمين جديدين. القرار باقٍ: للاستقلالية [سلّم الوحدة 1.1](../03-courses/01-opportunity/lessons/1-1-from-chatbots-to-agents.md) من 0 إلى 5، ولكل فعل مستوى إشراف من A إلى D في [مصفوفة الإشراف البشري](../02-saudi-market-knowledge-framework/compliance-toolkit/human-oversight-matrix.md)، ولتقييم الفرص المعايير التسعة في قالب الحقيبة. البطاقات تحيل إلى هذه الثلاثة ولا تضيف مقياساً رابعاً.
+
+## نماذج الأكاديمية: ما كان قائماً وما هو جديد
+
+اقترح المقترح اثني عشر نموذجاً خاصاً بالوكلاء. تسعة منها كانت قائمة في الأكاديمية بأسماء أخرى، فصارت بطاقاتٍ تحيل إلى القائم أو دُمجت في بطاقة قائمة (الجدول أعلاه). ثلاثة لم يكن لها قالب، فكُتب لكل منها قالب بالعربية والإنجليزية في [`templates/`](templates/agent-capability-matrix.md): مصفوفة قدرات الوكيل، ومصفوفة وصول الوكيل إلى الأدوات، وتقييم جاهزية المنشأة للوكيل. وأضيفت بطاقة لوضع الظل، وهو من صياغة الأكاديمية ولم يرد في المقترح. لا يُقدَّم أي منها معياراً عالمياً، ولم يُجرَّب أي منها مع متدربين أو منشأة.
 
 ## ما أُضيف
 
-نحو عشرين اسماً لم ترد في المقترح، أضيفت إلى قائمة «ما يُكتب تباعاً» لأنها تسد فجوات ظاهرة: AARRR، North Star Metric، RICE، Kano، The Mom Test، Assumption Mapping، Pre-mortem، Value Stream Mapping، Five Whys، Service Blueprint، BPMN، C4، Cohort Analysis، Ansoff، Crossing the Chasm، OWASP Top 10 for LLM Applications، ISO/IEC 42001، تقييم أثر حماية البيانات، Golden Dataset، Guardrails، Agent2Agent Protocol، ووضع الظل. لا تُكتب بطاقة أي منها قبل فتح مصدرها.
+نحو عشرين اسماً لم ترد في المقترح، أضيفت إلى قائمة «ما يُكتب تباعاً» لأنها تسد فجوات ظاهرة: AARRR، North Star Metric، RICE، Kano، The Mom Test، Assumption Mapping، Pre-mortem، Value Stream Mapping، Five Whys، Service Blueprint، BPMN، C4، Cohort Analysis، Ansoff، Crossing the Chasm، OWASP Top 10 for LLM Applications، ISO/IEC 42001، تقييم أثر حماية البيانات، Golden Dataset، Guardrails، وAgent2Agent Protocol. لا تُكتب بطاقة أي منها قبل فتح مصدرها.
 
 </div>
 

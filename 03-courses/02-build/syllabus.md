@@ -110,7 +110,7 @@ Four performance levels per criterion, the validation gates and a checkpoint for
 
 ## Methodology cards
 
-The frameworks this course leans on, each on one standard card in the [methodology library](../../09-methodology-library/README.md): [AI Agent Architecture](../../09-methodology-library/cards/agent-architecture.md) · [Agent Workflow](../../09-methodology-library/cards/agent-workflow.md) · [Human-in-the-Loop (HITL)](../../09-methodology-library/cards/human-in-the-loop.md) · [Agent Evaluation](../../09-methodology-library/cards/agent-evaluation.md) · [Kanban](../../09-methodology-library/cards/kanban.md). The cards explain a model and point back here; deliverables are still graded with this course's templates and rubric.
+The frameworks this course leans on, each on one standard card in the [methodology library](../../09-methodology-library/README.md): [AI Agent Architecture](../../09-methodology-library/cards/agent-architecture.md) · [Agent Workflow](../../09-methodology-library/cards/agent-workflow.md) · [Human-in-the-Loop (HITL)](../../09-methodology-library/cards/human-in-the-loop.md) · [Agent Evaluation](../../09-methodology-library/cards/agent-evaluation.md) · [Kanban](../../09-methodology-library/cards/kanban.md) · [Agent Capability Matrix](../../09-methodology-library/cards/agent-capability-matrix.md) · [Agent Tool-Access Matrix](../../09-methodology-library/cards/agent-tool-access-matrix.md). The cards explain a model and point back here; deliverables are still graded with this course's templates and rubric.
 
 ## Companion tools (optional)
 

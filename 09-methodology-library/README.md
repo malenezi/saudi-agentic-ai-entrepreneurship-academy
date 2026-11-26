@@ -6,7 +6,7 @@
 
 بطاقة موحّدة لكل نموذج أو منهجية يحتاج إليها رائد الأعمال في رحلته: ما غرضه، ومتى يُستخدم ومتى لا يُستخدم، وخطواته، وقالبه، ومثال توضيحي، وكيف يعين الوكيل الذكي على تطبيقه، وأين يرد في مقررات الأكاديمية وأدواتها.
 
-**في المكتبة الآن 14 بطاقة، و126 نموذجاً تُكتب بطاقاتها تباعاً.** تصفّحها في [صفحة المكتبة](../library.html) بحسب المرحلة والمجال والمستوى.
+**في المكتبة الآن 22 بطاقة، و116 نموذجاً تُكتب بطاقاتها تباعاً.** تصفّحها في [صفحة المكتبة](../library.html) بحسب المرحلة والمجال والمستوى.
 
 **ثلاث قواعد:**
 
@@ -34,18 +34,36 @@
 | [تقييم الوكيل](cards/agent-evaluation.md) (Agent Evaluation) | منهجية | 2، 4 | معروف عالمياً | مجموعة حالات لها نتيجة صحيحة معروفة، يُشغَّل عليها الوكيل بعد كل تغيير، ليُعرف بالأرقام هل تحسّن أم تراجع. |
 | [اقتصاديات الوحدة](cards/unit-economics.md) (Unit Economics) | نموذج | 1، 3 | معروف عالمياً | هل يربح المشروع من الوحدة الواحدة؟ وفي المشاريع القائمة على الوكلاء الوحدة هي المهمة المنجزة. |
 | [استراتيجية دخول السوق](cards/go-to-market.md) (Go-to-Market Strategy (GTM)) | إطار عمل | 3، 4 | معروف عالمياً | خطة الوصول إلى العملاء وإقناعهم بالشراء: مَن أولاً، وعبر أي قناة، وبأي عرض، وكيف يُقاس التقدم. |
+| [تقييم فرص الوكلاء](cards/agent-opportunity-assessment.md) (Agent Opportunity Assessment) | أداة أو قالب | 1 | من تطوير الأكاديمية | مفاضلة بين مهام مرشحة بتسعة معايير موزونة وأربعة أسئلة إيقاف، ثم سؤال: هل تحتاج وكيلاً أصلاً؟ |
+| [نموذج العمل للمشاريع القائمة على الوكلاء](cards/agent-business-model-canvas.md) (Agent Business Model Canvas) | أداة أو قالب | 3 | من تطوير الأكاديمية | قالب نموذج العمل بما يخص المشاريع القائمة على الوكلاء: تقسيم العمل، واقتصاديات المهمة، والثقة والحوكمة، ونموذج التسعير. |
+
+## المستوى: تطبيقي
+
+| النموذج | النوع | المرحلة | المنشأ | خلاصته |
+|---|---|---|---|---|
+| [مصفوفة قدرات الوكيل](cards/agent-capability-matrix.md) (Agent Capability Matrix) | أداة أو قالب | 2 | من تطوير الأكاديمية | ما الذي يجب أن يُحسنه الوكيل ليؤدي المهمة، ومن أين تأتي كل قدرة، وما الدليل على أنها تعمل. |
+| [مصفوفة وصول الوكيل إلى الأدوات](cards/agent-tool-access-matrix.md) (Agent Tool-Access Matrix) | أداة أو قالب | 2، 4 | من تطوير الأكاديمية | صفحة واحدة بكل ما يصل إليه الوكيل: أي نظام، وبأي حساب، قراءة أم كتابة، وبأي مستوى إشراف. |
+| [العائد عند العميل](cards/buyer-return.md) (Agent ROI Calculator) | أداة أو قالب | 3 | من تطوير الأكاديمية | ما يوفّره العميل فعلاً بعد حساب ما يبقى على موظفيه: التوفير الحقيقي لا الظاهر. |
+| [تقييم جاهزية المنشأة للوكيل](cards/agent-readiness-assessment.md) (Agent Readiness Assessment) | أداة أو قالب | 1، 3 | من تطوير الأكاديمية | سبعة أسئلة تُجاب بنعم أو لا مع دليل: هل هذه المنشأة، في هذه المهمة، جاهزة لوكيل ذكي؟ ومن أين تبدأ؟ |
+| [وضع الظل](cards/shadow-mode.md) (Shadow Mode) | منهجية | 3 | من تطوير الأكاديمية | الوكيل يستقبل الرسائل الحقيقية ويسجّل ما كان سيفعله ولا يرسل شيئاً، ثم يُقارَن بما فعله الموظفون. |
+
+## المستوى: متقدم
+
+| النموذج | النوع | المرحلة | المنشأ | خلاصته |
+|---|---|---|---|---|
+| [سجل مخاطر الوكيل](cards/agent-risk-register.md) (Agent Risk Register) | أداة أو قالب | 4 | من تطوير الأكاديمية | سجل بمخاطر هذا المنتج بعينه: الخطر، واحتماله وأثره، والضابط القائم اليوم، ومالكه، وحالته، ودليله. |
 
 المرحلة برقم المقرر: 1 اكتشاف الفرصة، 2 بناء الوكيل، 3 الإطلاق والنموذج التجاري، 4 التوسع والحوكمة.
 
 ## ما يُكتب تباعاً
 
-أسماء فقط حتى تُكتب البطاقة ويُتحقق من مصدرها. ترتيب الكتابة: نماذج الأكاديمية، ثم المستوى التطبيقي والمخططات، ثم بقية المجالات، ثم المستوى المتقدم.
+أسماء فقط حتى تُكتب البطاقة ويُتحقق من مصدرها. ترتيب الكتابة: المستوى التطبيقي والمخططات، ثم بقية المجالات، ثم المستوى المتقدم.
 
 **اكتشاف الفرص وفهم السوق:** Empathy Map · PESTEL Analysis · Porter's Five Forces · SWOT Analysis · TAM / SAM / SOM · The Mom Test · Assumption Mapping · Value Stream Mapping · Five Whys and Fishbone Diagram · Service Blueprint
 
-**نموذج العمل والقيمة:** Lean Canvas · Unique Value Proposition · Blue Ocean Strategy · Revenue Models · Pricing Models · Competitive Advantage · Product-Market Fit · Kano Model · Agent Business Model Canvas (Academy)
+**نموذج العمل والقيمة:** Lean Canvas · Unique Value Proposition · Blue Ocean Strategy · Revenue Models · Pricing Models · Competitive Advantage · Product-Market Fit · Kano Model
 
-**تأسيس المشروع وإدارته:** Disciplined Entrepreneurship · Customer Development · Effectuation · Build-Measure-Learn · Hypothesis-Driven Development · Impact-Effort Matrix · OKRs · Balanced Scorecard · Pre-mortem · North Star Metric · AARRR Funnel · Agent Opportunity Assessment (Academy) · Agent Readiness Assessment (Academy)
+**تأسيس المشروع وإدارته:** Disciplined Entrepreneurship · Customer Development · Effectuation · Build-Measure-Learn · Hypothesis-Driven Development · Impact-Effort Matrix · OKRs · Balanced Scorecard · Pre-mortem · North Star Metric · AARRR Funnel
 
 **إدارة المنتجات والمشاريع:** Scrum · Swimlane Diagram · Work Breakdown Structure · Product Roadmap · User Stories and Acceptance Criteria · RACI Matrix · MoSCoW Prioritization · RICE Scoring · Risk Matrix · Critical Path Method · Technical Debt Management · BPMN
 
@@ -53,13 +71,21 @@
 
 **هندسة البيانات وتصميمها:** Entity Relationship Diagram · Data Flow Diagram · Data Pipeline Diagram · Data Modeling · Database Schema · Modern Data Architecture · Dimensional Modeling · Data Lifecycle · Data Governance Framework · Data Classification · Data Protection Impact Assessment
 
-**هندسة الأنظمة القائمة على الوكلاء:** Agent Loop · Tool Calling · Retrieval-Augmented Generation · Model Context Protocol · Multi-Agent Architecture · Agent Orchestration · Agent Memory Design · Context Engineering · Agent Design Patterns · Agent Permission Model · Agent Reliability Engineering · Agent2Agent Protocol · Guardrails · Agent Architecture Canvas (Academy) · Agent Capability Matrix (Academy) · Agent Autonomy and Responsibility Matrix (Academy) · Agent Tool-Access Matrix (Academy)
+**هندسة الأنظمة القائمة على الوكلاء:** Agent Loop · Tool Calling · Retrieval-Augmented Generation · Model Context Protocol · Multi-Agent Architecture · Agent Orchestration · Agent Memory Design · Context Engineering · Agent Design Patterns · Agent Permission Model · Agent Reliability Engineering · Agent2Agent Protocol · Guardrails
 
 **تطوير البرمجيات والتشغيل:** Spec-Driven Development · Test-Driven Development · CI/CD · Agentic Coding · Prompt Engineering · Code Review · Semantic Versioning · Observability · Site Reliability Engineering · MLOps / LLMOps
 
-**الاختبار والتقييم وضمان الجودة:** Functional Testing · Integration Testing · End-to-End Testing · Performance Testing · Security Testing · Scenario-Based Testing · LLM Evaluation · RAG Evaluation · Regression Testing · Adversarial Testing · Human Evaluation · Golden Dataset · Shadow Mode (Academy) · Agent Evaluation Plan (Academy)
+**الاختبار والتقييم وضمان الجودة:** Functional Testing · Integration Testing · End-to-End Testing · Performance Testing · Security Testing · Scenario-Based Testing · LLM Evaluation · RAG Evaluation · Regression Testing · Adversarial Testing · Human Evaluation · Golden Dataset
 
-**الحوكمة والأمن والتوسع التجاري:** AI Governance Framework · NIST AI RMF · ISO/IEC 42001 · Threat Modeling · STRIDE · OWASP Top 10 for LLM Applications · Principle of Least Privilege · Zero Trust Architecture · Agent Lifecycle Governance · Agent Risk Register (Academy) · Total Cost of Ownership · Return on Investment · Customer Acquisition Cost · Customer Lifetime Value · Cohort and Retention Analysis · SaaS Financial Modeling · Ansoff Matrix · Crossing the Chasm
+**الحوكمة والأمن والتوسع التجاري:** AI Governance Framework · NIST AI RMF · ISO/IEC 42001 · Threat Modeling · STRIDE · OWASP Top 10 for LLM Applications · Principle of Least Privilege · Zero Trust Architecture · Agent Lifecycle Governance · Total Cost of Ownership · Return on Investment · Customer Acquisition Cost · Customer Lifetime Value · Cohort and Retention Analysis · SaaS Financial Modeling · Ansoff Matrix · Crossing the Chasm
+
+## قوالب المكتبة
+
+قوالب من تطوير الأكاديمية، بالعربية والإنجليزية، لما لم يكن له قالب في حقيبة المؤسس أو المختبر. بقية القوالب في مواضعها، وكل بطاقة تحيل إلى قالبها.
+
+- [مصفوفة قدرات الوكيل · Agent capability matrix](templates/agent-capability-matrix.md)
+- [تقييم جاهزية المنشأة للوكيل · Agent readiness assessment](templates/agent-readiness-assessment.md)
+- [مصفوفة وصول الوكيل إلى الأدوات · Agent tool-access matrix](templates/agent-tool-access-matrix.md)
 
 ## كيف تُضاف بطاقة
 
@@ -71,7 +97,7 @@
 
 One standard card per framework, method or model a founder needs on the way from an opportunity to a growing venture: purpose, when to use it and when not to, steps, a blank template, an illustrative example, how an AI agent helps apply it, and where the Academy's courses and tools use it. Cards are written in Arabic with English terms.
 
-**14 cards so far; 126 more are listed by name and are written in batches.** Browse them on the [library page](../library.html).
+**22 cards so far; 116 more are listed by name and are written in batches.** Browse them on the [library page](../library.html).
 
 Three rules: no card for a known model without a source in the [source register](../SOURCES.md); other people's canvases are described and linked, never copied; a model developed by the Academy is labelled as such and is not presented as a standard. No card has been tried with learners. What was left out of the original proposal is in [not-adopted.md](not-adopted.md).
 
@@ -91,3 +117,11 @@ Three rules: no card for a known model without a source in the [source register]
 | [Agent Evaluation](cards/agent-evaluation.md) | Method | Essential | 2, 4 | A set of cases with known right outcomes, run after every change, so that improvement or regression shows in numbers. |
 | [Unit Economics](cards/unit-economics.md) | Model | Essential | 1, 3 | Does the venture earn on one unit? In an agentic venture the unit is the resolved task. |
 | [Go-to-Market Strategy (GTM)](cards/go-to-market.md) | Framework | Essential | 3, 4 | The plan for reaching customers and convincing them to buy: who first, through which channel, with what offer, measured how. |
+| [Agent Opportunity Assessment](cards/agent-opportunity-assessment.md) | Tool or template | Essential | 1 | Compare candidate tasks on nine weighted criteria and four stop checks, then ask whether an agent is needed at all. |
+| [Agent Business Model Canvas](cards/agent-business-model-canvas.md) | Tool or template | Essential | 3 | A business model template with what is specific to agentic ventures: division of labour, task economics, trust and governance, pricing model. |
+| [Agent Capability Matrix](cards/agent-capability-matrix.md) | Tool or template | Practitioner | 2 | What the agent must be able to do for the task, where each capability comes from, and the evidence that it works. |
+| [Agent Tool-Access Matrix](cards/agent-tool-access-matrix.md) | Tool or template | Practitioner | 2, 4 | One page listing everything the agent can reach: which system, which account, read or write, at what oversight level. |
+| [Agent Risk Register](cards/agent-risk-register.md) | Tool or template | Advanced | 4 | A register of this product's own risks: the risk, likelihood and impact, the control in place today, its owner, status and evidence. |
+| [Agent ROI Calculator](cards/buyer-return.md) | Tool or template | Practitioner | 3 | What the customer really saves once the work left with their own staff is counted: the real saving, not the apparent one. |
+| [Agent Readiness Assessment](cards/agent-readiness-assessment.md) | Tool or template | Practitioner | 1, 3 | Seven yes-or-no questions with evidence: is this business, for this task, ready for an agent, and where should it start? |
+| [Shadow Mode](cards/shadow-mode.md) | Method | Practitioner | 3 | The agent receives the real messages, records what it would have done and sends nothing; then it is compared with what staff did. |
