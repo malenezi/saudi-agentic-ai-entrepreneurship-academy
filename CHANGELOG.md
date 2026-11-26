@@ -2,6 +2,12 @@
 
 ## Unreleased
 
+### An HTTP runner with an audit log (25 November 2026)
+
+- **`tools/reality_run.py`**, the first piece of v0.14. `run` posts a list of messages to a running webhook and writes one line per message: time sent, latency, action, level, outcome, the rule in code that decided (`gates`), and fingerprints of the message and of the reply. The customer's text is not written unless `--keep-text` is passed. `--expect store` or `--expect failures` adds a verdict against the invented store; the command exits 1 if the agent acted alone anywhere or a request failed. `report` prints the figures of a log. `serve` is a stand-in for n8n that answers with the workflow's own Code nodes.
+- **Run inside n8n 2.35.7** (keyword simulator, no language model): template 1 with the invented store's Config gave over HTTP what its nodes give outside n8n, 73 of 85 with 4 acted alone and failure cases 16, 6, 8; median latency 105 ms with no model call. The two logs are kept in `agent-templates/workflows/audit-logs/` and read by a test. The same day, on a fresh import of all six workflows after the change to template 1, `tools/n8n_e2e.py` gave 100 requests with no failure.
+- **Limits.** The log holds what the workflow puts in its answer: no token counts, no cost. The stand-in is not n8n: no HTTP model node, nothing kept between requests.
+
 ### Third local-model run of the store, after the topic list and the code-side check (25 November 2026)
 
 - **The run.** qwen2.5:3b on the owner's laptop, 225 prompts in 16.3 minutes, outside n8n: the store's 85 messages **58** with **4** acted alone (54 and 11 on 24 November), its failure cases 22 right, 0 degraded, 6 acted alone, 2 wrong but safe (17, 1, 11, 1), templates 39 of 47 (43), lab 30 of 35 and 7 of 8, dialect cases 13 of 14. Recorded under `real-model-runs/local-qwen2.5-3b-run3/` and replayed by a test.
@@ -13,7 +19,7 @@
 - **Why.** In the local-model run of 24 November the model never filled `also`, so the multiple-request gate did not fire once, and it labelled cancellations, promises and complaints as order questions.
 - **What.** Decide now checks the customer's own message, whatever the model returned: the words listed in Config for requests that need a person, and more than one stored order in one message. Where the model saw only a question and one such request is found, the stricter reading replaces the model's; anything else goes through the gate and the whole message is handed over. A one-sentence question tied to an approved topic is still answered. Logged as `intent_by_code`, `also_by_code` or `orders_named`. `second_request_check: false` in Config switches it off.
 - **Measured by replay of the recorded answers, not by a new run:** the store's 85 messages 60 in place of 54, acted alone 5 in place of 11; failure cases 18, 1, 10, 1 in place of 17, 1, 11, 1. Simulator: 73 of 85 unchanged; failure cases 16, 6, 8, 0 in place of 15, 7, 8, 0. The run record keeps the figures as run.
-- **Limits.** The check knows only the words in Config: ten failure cases still end with the agent acting alone, four of them compound messages worded outside the list. A refund request the model calls a policy question is answered with the policy text. Tested outside n8n only; not imported into n8n since the change. Run with a model the same day: see the entry above. 161 tests then.
+- **Limits.** The check knows only the words in Config: ten failure cases still end with the agent acting alone, four of them compound messages worded outside the list. A refund request the model calls a policy question is answered with the policy text. Tested outside n8n when it was made; imported into n8n later the same day (see the runner's entry above). Run with a model the same day: see the entry above. 161 tests then.
 
 ### Video series: from opportunity to venture (25 November 2026)
 
