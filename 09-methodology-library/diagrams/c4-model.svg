@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 788 360" width="788" height="360" role="img" aria-labelledby="t d">
+<title id="t">نموذج C4: مخطط سياق النظام · C4 model: a system context diagram (illustrative)</title>
+<desc id="d">مخطط سياق توضيحي: وكيل خدمة العملاء في الوسط، يسأله العميل، ويعتمد موظف الخدمة ما يحيله إليه، ويقرأ الطلبات من منصة المتجر، ويرسل نص الرسالة إلى مزوّد النموذج اللغوي، ويرسل الرد عبر قناة المراسلة.</desc>
+<defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#475569"/></marker></defs>
+<rect width="788" height="360" fill="#ffffff"/>
+<text x="394.0" y="26.0" font-family="'IBM Plex Sans Arabic','Noto Sans Arabic','Segoe UI',Tahoma,sans-serif" font-size="17" font-weight="700" fill="#1e293b" text-anchor="middle" direction="rtl" unicode-bidi="plaintext">نموذج C4: مخطط سياق النظام</text>
+<text x="394.0" y="46.0" font-family="'IBM Plex Sans Arabic','Noto Sans Arabic','Segoe UI',Tahoma,sans-serif" font-size="12" font-weight="500" fill="#475569" text-anchor="middle">C4 model: a system context diagram (illustrative)</text>
+<line x1="560.0" y1="92.0" x2="482.0" y2="92.0" stroke="#475569" stroke-width="1.6" marker-end="url(#a)"/>
+<line x1="394.0" y1="116.0" x2="394.0" y2="168.0" stroke="#475569" stroke-width="1.6" marker-end="url(#a)" marker-start="url(#a)"/>
+<line x1="394.0" y1="238.0" x2="394.0" y2="290.0" stroke="#475569" stroke-width="1.6" marker-end="url(#a)"/>
+<line x1="308.0" y1="204.0" x2="230.0" y2="204.0" stroke="#475569" stroke-width="1.6" marker-end="url(#a)" marker-start="url(#a)"/>
+<line x1="592.0" y1="292.0" x2="475.0" y2="240.0" stroke="#475569" stroke-width="1.6" marker-end="url(#a)"/>
+<rect x="562.0" y="70.0" width="168" height="44.0" fill="#1e293b" stroke="#1e293b" stroke-width="1.6"/>
+<text x="646.0" y="97.0" font-family="'IBM Plex Sans Arabic','Noto Sans Arabic','Segoe UI',Tahoma,sans-serif" font-size="14" font-weight="700" fill="#ffffff" text-anchor="middle" direction="rtl" unicode-bidi="plaintext">العميل</text>
+<rect x="562.0" y="294.0" width="168" height="44.0" fill="#1e293b" stroke="#1e293b" stroke-width="1.6"/>
+<text x="646.0" y="321.0" font-family="'IBM Plex Sans Arabic','Noto Sans Arabic','Segoe UI',Tahoma,sans-serif" font-size="14" font-weight="700" fill="#ffffff" text-anchor="middle" direction="rtl" unicode-bidi="plaintext">موظف الخدمة</text>
+<rect x="310.0" y="172.0" width="168" height="64.0" rx="8" fill="#ffffff" stroke="#1e293b" stroke-width="1.6"/>
+<text x="394.0" y="199.0" font-family="'IBM Plex Sans Arabic','Noto Sans Arabic','Segoe UI',Tahoma,sans-serif" font-size="14" font-weight="700" fill="#1e293b" text-anchor="middle" direction="rtl" unicode-bidi="plaintext">وكيل خدمة العملاء</text>
+<text x="394.0" y="219.0" font-family="'IBM Plex Sans Arabic','Noto Sans Arabic','Segoe UI',Tahoma,sans-serif" font-size="14" font-weight="400" fill="#1e293b" text-anchor="middle" direction="rtl" unicode-bidi="plaintext">(النظام)</text>
+<rect x="310.0" y="70.0" width="168" height="44.0" fill="#1e293b" stroke="#1e293b" stroke-width="1.6"/>
+<text x="394.0" y="97.0" font-family="'IBM Plex Sans Arabic','Noto Sans Arabic','Segoe UI',Tahoma,sans-serif" font-size="14" font-weight="700" fill="#ffffff" text-anchor="middle" direction="rtl" unicode-bidi="plaintext">قناة المراسلة</text>
+<rect x="310.0" y="294.0" width="168" height="44.0" fill="#1e293b" stroke="#1e293b" stroke-width="1.6"/>
+<text x="394.0" y="321.0" font-family="'IBM Plex Sans Arabic','Noto Sans Arabic','Segoe UI',Tahoma,sans-serif" font-size="14" font-weight="700" fill="#ffffff" text-anchor="middle" direction="rtl" unicode-bidi="plaintext">منصة المتجر</text>
+<rect x="58.0" y="172.0" width="168" height="64.0" fill="#1e293b" stroke="#1e293b" stroke-width="1.6"/>
+<text x="142.0" y="199.0" font-family="'IBM Plex Sans Arabic','Noto Sans Arabic','Segoe UI',Tahoma,sans-serif" font-size="14" font-weight="700" fill="#ffffff" text-anchor="middle" direction="rtl" unicode-bidi="plaintext">مزوّد النموذج</text>
+<text x="142.0" y="219.0" font-family="'IBM Plex Sans Arabic','Noto Sans Arabic','Segoe UI',Tahoma,sans-serif" font-size="14" font-weight="400" fill="#ffffff" text-anchor="middle" direction="rtl" unicode-bidi="plaintext">اللغوي</text>
+<rect x="502.1" y="81.0" width="37.8" height="20" rx="6" fill="#ffffff" fill-opacity="0.92"/>
+<text x="521.0" y="96.0" font-family="'IBM Plex Sans Arabic','Noto Sans Arabic','Segoe UI',Tahoma,sans-serif" font-size="12" font-weight="500" fill="#475569" text-anchor="middle" direction="rtl" unicode-bidi="plaintext">يسأل</text>
+<rect x="364.3" y="131.0" width="59.4" height="20" rx="6" fill="#ffffff" fill-opacity="0.92"/>
+<text x="394.0" y="146.0" font-family="'IBM Plex Sans Arabic','Noto Sans Arabic','Segoe UI',Tahoma,sans-serif" font-size="12" font-weight="500" fill="#475569" text-anchor="middle" direction="rtl" unicode-bidi="plaintext">الرسالة</text>
+<rect x="346.3" y="253.0" width="95.4" height="20" rx="6" fill="#ffffff" fill-opacity="0.92"/>
+<text x="394.0" y="268.0" font-family="'IBM Plex Sans Arabic','Noto Sans Arabic','Segoe UI',Tahoma,sans-serif" font-size="12" font-weight="500" fill="#475569" text-anchor="middle" direction="rtl" unicode-bidi="plaintext">يقرأ الطلبات</text>
+<rect x="239.3" y="193.0" width="59.4" height="20" rx="6" fill="#ffffff" fill-opacity="0.92"/>
+<text x="269.0" y="208.0" font-family="'IBM Plex Sans Arabic','Noto Sans Arabic','Segoe UI',Tahoma,sans-serif" font-size="12" font-weight="500" fill="#475569" text-anchor="middle" direction="rtl" unicode-bidi="plaintext">الرسالة</text>
+<rect x="511.0" y="255.0" width="45.0" height="20" rx="6" fill="#ffffff" fill-opacity="0.92"/>
+<text x="533.5" y="270.0" font-family="'IBM Plex Sans Arabic','Noto Sans Arabic','Segoe UI',Tahoma,sans-serif" font-size="12" font-weight="500" fill="#475569" text-anchor="middle" direction="rtl" unicode-bidi="plaintext">يعتمد</text>
+</svg>

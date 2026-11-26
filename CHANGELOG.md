@@ -2,6 +2,15 @@
 
 ## Unreleased
 
+### Methodology library, sixth batch: requirements, data and software engineering (26 November 2026)
+
+- **Nineteen cards.** Requirements and design: Use Case Diagram, Activity Diagram, State Machine Diagram, Component and Deployment Diagrams, C4 Model, Software Requirements Specification, Architecture Decision Records. Data: Dimensional Modeling, Data Governance Framework, Data Classification, Data Protection Impact Assessment. Software engineering: Test-Driven Development, Agentic Coding, Prompt Engineering, Code Review, Semantic Versioning, Observability, Site Reliability Engineering, MLOps / LLMOps. The library has 85 cards and lists 40 more by name.
+- **Four diagrams**, drawn by `tools/build_diagrams.py` from the same specification file: a use case diagram, an activity diagram, a state machine and a C4 system context diagram. Fourteen in all; each is the library's own drawing.
+- **Merged.** System Context Diagram into the C4 card; Component and Deployment diagrams into one card; Software Architecture into the decision-records and C4 cards; Data Modeling and Database Schema into the existing entity-relationship card; Data Pipeline Diagram into the existing data flow card. **Dropped:** "Modern Data Architecture", a general label with no source of its own.
+- **Held back for want of a source.** Data Lifecycle: the page opened says the national standards describe five stages and names them only in an image.
+- **Sources A234 to A252, each from the fetched page, with what the page did not say.** The three Saudi data cards are the weakest-sourced: the NDMO standards and the classification policy were **not opened**; the fifteen domains and the assessment steps come from a software vendor's explainer, the four levels from Saudipedia and a public university's policy page, and the impact-assessment cases from a law firm's 2023 reading of the regulation (A244, with A50 for the article). Each card says so and tells the reader to read the official text. The state machine card rests on a Wikipedia article because the teaching page could not be opened. The requirements card names ISO/IEC/IEEE 29148:2018 from its catalogue page; the standard was not read.
+- **Limits.** Three cards cite a vendor on its own subject (Anthropic twice, Google Cloud), marked as such; the Academy recommends no tool. The "LLMOps" half of the MLOps card and the idea of versioning prompts and models with code are the Academy's, labelled so. The impact-assessment template is not an official form and the card is not legal advice. No card tried with a learner.
+
 ### Methodology library, fifth batch: venture formation and product management (26 November 2026)
 
 - **Sixteen cards.** Venture: Disciplined Entrepreneurship, Customer Development, Effectuation, OKRs, Balanced Scorecard, Pre-mortem, North Star Metric. Product and project: Scrum, Work Breakdown Structure, Product Roadmap, User Stories and Acceptance Criteria, RACI Matrix, MoSCoW Prioritization, RICE Scoring, Critical Path Method, BPMN. The library has 66 cards and lists 66 more by name.

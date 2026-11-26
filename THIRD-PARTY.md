@@ -38,6 +38,10 @@ The [methodology library](09-methodology-library/README.md) explains frameworks 
 | Lean Canvas, Ash Maurya | CC BY-SA 3.0 (A188) | No card yet; will be described and linked |
 | The Kanban Guide | CC BY-SA 4.0 (A192) | Described in the Academy's words and linked |
 | UML and BPMN, Object Management Group | Published specifications (A197, A200, A44) | Described in the Academy's words. The library's diagrams are its own drawings and reproduce no figure from either specification |
+| C4 model, Simon Brown | CC BY 4.0 (A238) | Described in the Academy's words; the library's context diagram is its own drawing |
+| Semantic Versioning 2.0.0 | CC BY 3.0 (A249) | Described and linked |
+| Google, *Site Reliability Engineering* | CC BY-NC-ND 4.0 (A251) | Described and linked only. No derivative, and nothing from it bundled |
+| ISO/IEC/IEEE 29148:2018 | Paid standard (A239) | Named and linked; not read, not reproduced |
 | GitHub Spec Kit | A vendor's open-source toolkit (A204) | Named as the source of the method's four phases; not bundled, not tried |
 | OpenStax *Entrepreneurship* | CC BY-NC-SA 4.0 on its live pages (A196) | Cited and linked only |
 
