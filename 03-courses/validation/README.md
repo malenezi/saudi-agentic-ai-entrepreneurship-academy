@@ -9,6 +9,7 @@ What has been checked, by what means, and what has not. Five layers, in increasi
 | 2b. [Source re-check, Courses 1 and 2](source-recheck-c1-c2.md) | Every cited source page re-opened and compared with the register | **Done by automated fetch.** Three entries corrected. Not repeated by a human reader |
 | 3. [Specialist review packets](review-packets/) | Claim registers, questions and sign-off forms for a lawyer, a tax adviser, a security practitioner and an investor | **Prepared, not reviewed.** No sign-off exists. [Invitation messages](review-packets/invitations.md) are ready to send |
 | 4. [Pilot protocol](pilot-protocol.md) | What a first cohort should collect and how to report it | **Not run** |
+| 5. [Pilot zero protocol](pilot-zero.md) | One template in shadow mode in one real online store: test scenarios, acceptance criteria, evidence logs, stop and roll-back | **Not run.** Eleven of its test cases run locally in `tests/test_store_adapter.py`; none of its provider cases has been run |
 
 ## How regulatory content is labelled
 

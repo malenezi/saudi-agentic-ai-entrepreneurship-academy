@@ -422,7 +422,7 @@ header .ar { font-size: 17px; }
       <li><a href="read.html?p=impact/README.md#english"><span class="t">Impact ledger</span><span class="d">How the Academy is measured: by what participants achieve. Every number is zero today; no cohort has started.</span></a></li>
       <li><a href="read.html?p=journey/gates.md#english"><span class="t">The three gates</span><span class="d">Criteria and evidence for each gate, and the day-180 follow-up.</span></a></li>
     </ul>
-    <p>The journey has not been tested. A first cohort is planned after Eid al-Fitr 2027, and content is frozen until it has run (<a href="read.html?p=ROADMAP.md">roadmap</a>).</p>
+    <p>No paying customers yet: no cohort has started. The journey has not been tested; a first cohort is planned after Eid al-Fitr 2027, and content is frozen until it has run. <a href="read.html?p=journey/session-plan.md">Session plan</a> · <a href="read.html?p=ROADMAP.md">Why content is frozen</a></p>
   </section>
 
   <section class="start" aria-labelledby="h-start">

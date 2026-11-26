@@ -1,5 +1,7 @@
 # بروتوكول التجربة الأولى · Protocol for a first pilot
 
+> **Before a cohort, one store:** the [pilot zero protocol](pilot-zero.md) tests the agent and the integration in a single real online store in shadow mode. This file tests the teaching.
+
 > **No pilot has been run.** This file is the plan for one. It says what a delivering organisation should collect so that a first cohort produces evidence the Academy can act on, and how to send it back. The [desk walkthrough](desk-walkthrough.md) is not a substitute.
 
 ## 1. What a pilot must answer
