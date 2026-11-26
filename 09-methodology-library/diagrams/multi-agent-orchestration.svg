@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 788 400" width="788" height="400" role="img" aria-labelledby="t d">
+<title id="t">تنسيق عدة وكلاء: منسّق ووكلاء متخصصون · Multi-agent orchestration: an orchestrator and specialised workers</title>
+<desc id="d">مخطط تنسيق عدة وكلاء: المنسّق يقسّم المهمة على ثلاثة وكلاء متخصصين، لكل منهم أدواته وسياقه، ثم يجمع نتائجهم ويتحقق منها قبل تسليم المخرج.</desc>
+<defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#475569"/></marker></defs>
+<rect width="788" height="400" fill="#ffffff"/>
+<text x="394.0" y="26.0" font-family="'IBM Plex Sans Arabic','Noto Sans Arabic','Segoe UI',Tahoma,sans-serif" font-size="17" font-weight="700" fill="#1e293b" text-anchor="middle" direction="rtl" unicode-bidi="plaintext">تنسيق عدة وكلاء: منسّق ووكلاء متخصصون</text>
+<text x="394.0" y="46.0" font-family="'IBM Plex Sans Arabic','Noto Sans Arabic','Segoe UI',Tahoma,sans-serif" font-size="12" font-weight="500" fill="#475569" text-anchor="middle">Multi-agent orchestration: an orchestrator and specialised workers</text>
+<line x1="560.0" y1="224.0" x2="482.0" y2="224.0" stroke="#475569" stroke-width="1.6" marker-end="url(#a)"/>
+<line x1="323.8" y1="190.0" x2="216.4" y2="138.0" stroke="#475569" stroke-width="1.6" marker-end="url(#a)" marker-start="url(#a)"/>
+<line x1="308.0" y1="224.0" x2="230.0" y2="224.0" stroke="#475569" stroke-width="1.6" marker-end="url(#a)" marker-start="url(#a)"/>
+<line x1="323.8" y1="258.0" x2="216.4" y2="310.0" stroke="#475569" stroke-width="1.6" marker-end="url(#a)" marker-start="url(#a)"/>
+<line x1="464.2" y1="258.0" x2="571.6" y2="310.0" stroke="#475569" stroke-width="1.6" marker-end="url(#a)"/>
+<line x1="394.0" y1="190.0" x2="394.0" y2="138.0" stroke="#475569" stroke-width="1.6" marker-end="url(#a)" stroke-dasharray="6 5"/>
+<rect x="562.0" y="202.0" width="168" height="44.0" fill="#1e293b" stroke="#1e293b" stroke-width="1.6"/>
+<text x="646.0" y="229.0" font-family="'IBM Plex Sans Arabic','Noto Sans Arabic','Segoe UI',Tahoma,sans-serif" font-size="14" font-weight="700" fill="#ffffff" text-anchor="middle" direction="rtl" unicode-bidi="plaintext">المهمة</text>
+<rect x="310.0" y="192.0" width="168" height="64.0" rx="26.0" fill="#fef3c7" stroke="#b45309" stroke-width="1.6"/>
+<text x="394.0" y="219.0" font-family="'IBM Plex Sans Arabic','Noto Sans Arabic','Segoe UI',Tahoma,sans-serif" font-size="14" font-weight="700" fill="#1e293b" text-anchor="middle" direction="rtl" unicode-bidi="plaintext">المنسّق</text>
+<text x="394.0" y="239.0" font-family="'IBM Plex Sans Arabic','Noto Sans Arabic','Segoe UI',Tahoma,sans-serif" font-size="14" font-weight="400" fill="#1e293b" text-anchor="middle" direction="rtl" unicode-bidi="plaintext">يقسّم ويجمع</text>
+<rect x="58.0" y="70.0" width="168" height="64.0" rx="8" fill="#ffffff" stroke="#1e293b" stroke-width="1.6"/>
+<text x="142.0" y="97.0" font-family="'IBM Plex Sans Arabic','Noto Sans Arabic','Segoe UI',Tahoma,sans-serif" font-size="14" font-weight="700" fill="#1e293b" text-anchor="middle" direction="rtl" unicode-bidi="plaintext">وكيل البحث</text>
+<text x="142.0" y="117.0" font-family="'IBM Plex Sans Arabic','Noto Sans Arabic','Segoe UI',Tahoma,sans-serif" font-size="14" font-weight="400" fill="#1e293b" text-anchor="middle" direction="rtl" unicode-bidi="plaintext">أدوات قراءة</text>
+<rect x="58.0" y="192.0" width="168" height="64.0" rx="8" fill="#ffffff" stroke="#1e293b" stroke-width="1.6"/>
+<text x="142.0" y="219.0" font-family="'IBM Plex Sans Arabic','Noto Sans Arabic','Segoe UI',Tahoma,sans-serif" font-size="14" font-weight="700" fill="#1e293b" text-anchor="middle" direction="rtl" unicode-bidi="plaintext">وكيل الحساب</text>
+<text x="142.0" y="239.0" font-family="'IBM Plex Sans Arabic','Noto Sans Arabic','Segoe UI',Tahoma,sans-serif" font-size="14" font-weight="400" fill="#1e293b" text-anchor="middle" direction="rtl" unicode-bidi="plaintext">أداة حاسبة</text>
+<rect x="58.0" y="314.0" width="168" height="64.0" rx="8" fill="#ffffff" stroke="#1e293b" stroke-width="1.6"/>
+<text x="142.0" y="341.0" font-family="'IBM Plex Sans Arabic','Noto Sans Arabic','Segoe UI',Tahoma,sans-serif" font-size="14" font-weight="700" fill="#1e293b" text-anchor="middle" direction="rtl" unicode-bidi="plaintext">وكيل الصياغة</text>
+<text x="142.0" y="361.0" font-family="'IBM Plex Sans Arabic','Noto Sans Arabic','Segoe UI',Tahoma,sans-serif" font-size="14" font-weight="400" fill="#1e293b" text-anchor="middle" direction="rtl" unicode-bidi="plaintext">بلا أدوات</text>
+<rect x="562.0" y="314.0" width="168" height="64.0" fill="#1e293b" stroke="#1e293b" stroke-width="1.6"/>
+<text x="646.0" y="341.0" font-family="'IBM Plex Sans Arabic','Noto Sans Arabic','Segoe UI',Tahoma,sans-serif" font-size="14" font-weight="700" fill="#ffffff" text-anchor="middle" direction="rtl" unicode-bidi="plaintext">المخرج</text>
+<text x="646.0" y="361.0" font-family="'IBM Plex Sans Arabic','Noto Sans Arabic','Segoe UI',Tahoma,sans-serif" font-size="14" font-weight="400" fill="#ffffff" text-anchor="middle" direction="rtl" unicode-bidi="plaintext">بعد التحقق</text>
+<rect x="310.0" y="70.0" width="168" height="64.0" fill="#f1f5f9" stroke="none"/>
+<line x1="310.0" y1="70.0" x2="478.0" y2="70.0" stroke="#1e293b" stroke-width="1.8"/>
+<line x1="310.0" y1="134.0" x2="478.0" y2="134.0" stroke="#1e293b" stroke-width="1.8"/>
+<text x="394.0" y="97.0" font-family="'IBM Plex Sans Arabic','Noto Sans Arabic','Segoe UI',Tahoma,sans-serif" font-size="14" font-weight="700" fill="#1e293b" text-anchor="middle" direction="rtl" unicode-bidi="plaintext">التكلفة:</text>
+<text x="394.0" y="117.0" font-family="'IBM Plex Sans Arabic','Noto Sans Arabic','Segoe UI',Tahoma,sans-serif" font-size="14" font-weight="400" fill="#1e293b" text-anchor="middle" direction="rtl" unicode-bidi="plaintext">رموز كل وكيل تُجمع</text>
+</svg>

@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 788 522" width="788" height="522" role="img" aria-labelledby="t d">
+<title id="t">الإشراف البشري: أربعة مستويات لكل فعل · Human oversight: four levels for every action</title>
+<desc id="d">مخطط الإشراف البشري: كل فعل يقترحه الوكيل يمر بقاعدة في الشيفرة تحدد مستواه: A ينفّذ ويسجّل، B ينفّذ ثم يُبلّغ إنساناً، C ينتظر موافقة إنسان مسمّى، D لا ينفّذه الوكيل ويحيله.</desc>
+<defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#475569"/></marker></defs>
+<rect width="788" height="522" fill="#ffffff"/>
+<text x="394.0" y="26.0" font-family="'IBM Plex Sans Arabic','Noto Sans Arabic','Segoe UI',Tahoma,sans-serif" font-size="17" font-weight="700" fill="#1e293b" text-anchor="middle" direction="rtl" unicode-bidi="plaintext">الإشراف البشري: أربعة مستويات لكل فعل</text>
+<text x="394.0" y="46.0" font-family="'IBM Plex Sans Arabic','Noto Sans Arabic','Segoe UI',Tahoma,sans-serif" font-size="12" font-weight="500" fill="#475569" text-anchor="middle">Human oversight: four levels for every action</text>
+<line x1="560.0" y1="224.0" x2="482.0" y2="224.0" stroke="#475569" stroke-width="1.6" marker-end="url(#a)"/>
+<line x1="323.8" y1="190.0" x2="216.4" y2="138.0" stroke="#475569" stroke-width="1.6" marker-end="url(#a)"/>
+<line x1="308.0" y1="224.0" x2="230.0" y2="224.0" stroke="#475569" stroke-width="1.6" marker-end="url(#a)"/>
+<line x1="323.8" y1="258.0" x2="216.4" y2="310.0" stroke="#475569" stroke-width="1.6" marker-end="url(#a)"/>
+<line x1="394.0" y1="258.0" x2="394.0" y2="310.0" stroke="#475569" stroke-width="1.6" marker-end="url(#a)"/>
+<line x1="142.0" y1="380.0" x2="142.0" y2="432.0" stroke="#475569" stroke-width="1.6" marker-end="url(#a)" stroke-dasharray="6 5"/>
+<rect x="562.0" y="192.0" width="168" height="64.0" rx="26.0" fill="#fef3c7" stroke="#b45309" stroke-width="1.6"/>
+<text x="646.0" y="219.0" font-family="'IBM Plex Sans Arabic','Noto Sans Arabic','Segoe UI',Tahoma,sans-serif" font-size="14" font-weight="700" fill="#1e293b" text-anchor="middle" direction="rtl" unicode-bidi="plaintext">فعل يقترحه</text>
+<text x="646.0" y="239.0" font-family="'IBM Plex Sans Arabic','Noto Sans Arabic','Segoe UI',Tahoma,sans-serif" font-size="14" font-weight="400" fill="#1e293b" text-anchor="middle" direction="rtl" unicode-bidi="plaintext">الوكيل</text>
+<rect x="310.0" y="192.0" width="168" height="64.0" rx="6" fill="#ffffff" stroke="#b45309" stroke-width="1.8" stroke-dasharray="7 4"/>
+<text x="394.0" y="219.0" font-family="'IBM Plex Sans Arabic','Noto Sans Arabic','Segoe UI',Tahoma,sans-serif" font-size="14" font-weight="700" fill="#1e293b" text-anchor="middle" direction="rtl" unicode-bidi="plaintext">ما مستوى</text>
+<text x="394.0" y="239.0" font-family="'IBM Plex Sans Arabic','Noto Sans Arabic','Segoe UI',Tahoma,sans-serif" font-size="14" font-weight="400" fill="#1e293b" text-anchor="middle" direction="rtl" unicode-bidi="plaintext">هذا الفعل؟</text>
+<rect x="58.0" y="70.0" width="168" height="64.0" rx="8" fill="#ffffff" stroke="#1e293b" stroke-width="1.6"/>
+<text x="142.0" y="97.0" font-family="'IBM Plex Sans Arabic','Noto Sans Arabic','Segoe UI',Tahoma,sans-serif" font-size="14" font-weight="700" fill="#1e293b" text-anchor="middle" direction="rtl" unicode-bidi="plaintext">A مستقل</text>
+<text x="142.0" y="117.0" font-family="'IBM Plex Sans Arabic','Noto Sans Arabic','Segoe UI',Tahoma,sans-serif" font-size="14" font-weight="400" fill="#1e293b" text-anchor="middle" direction="rtl" unicode-bidi="plaintext">ينفّذ ويسجّل</text>
+<rect x="58.0" y="192.0" width="168" height="64.0" rx="8" fill="#ffffff" stroke="#1e293b" stroke-width="1.6"/>
+<text x="142.0" y="219.0" font-family="'IBM Plex Sans Arabic','Noto Sans Arabic','Segoe UI',Tahoma,sans-serif" font-size="14" font-weight="700" fill="#1e293b" text-anchor="middle" direction="rtl" unicode-bidi="plaintext">B إشعار</text>
+<text x="142.0" y="239.0" font-family="'IBM Plex Sans Arabic','Noto Sans Arabic','Segoe UI',Tahoma,sans-serif" font-size="14" font-weight="400" fill="#1e293b" text-anchor="middle" direction="rtl" unicode-bidi="plaintext">ينفّذ ثم يُبلّغ</text>
+<rect x="58.0" y="314.0" width="168" height="64.0" rx="8" fill="#ffffff" stroke="#1e293b" stroke-width="1.6"/>
+<text x="142.0" y="341.0" font-family="'IBM Plex Sans Arabic','Noto Sans Arabic','Segoe UI',Tahoma,sans-serif" font-size="14" font-weight="700" fill="#1e293b" text-anchor="middle" direction="rtl" unicode-bidi="plaintext">C موافقة</text>
+<text x="142.0" y="361.0" font-family="'IBM Plex Sans Arabic','Noto Sans Arabic','Segoe UI',Tahoma,sans-serif" font-size="14" font-weight="400" fill="#1e293b" text-anchor="middle" direction="rtl" unicode-bidi="plaintext">ينتظر إنساناً مسمّى</text>
+<rect x="310.0" y="314.0" width="168" height="64.0" rx="8" fill="#ffffff" stroke="#1e293b" stroke-width="1.6"/>
+<text x="394.0" y="341.0" font-family="'IBM Plex Sans Arabic','Noto Sans Arabic','Segoe UI',Tahoma,sans-serif" font-size="14" font-weight="700" fill="#1e293b" text-anchor="middle" direction="rtl" unicode-bidi="plaintext">D محظور</text>
+<text x="394.0" y="361.0" font-family="'IBM Plex Sans Arabic','Noto Sans Arabic','Segoe UI',Tahoma,sans-serif" font-size="14" font-weight="400" fill="#1e293b" text-anchor="middle" direction="rtl" unicode-bidi="plaintext">لا ينفّذ، يحيل</text>
+<rect x="58.0" y="436.0" width="168" height="64.0" fill="#f1f5f9" stroke="none"/>
+<line x1="58.0" y1="436.0" x2="226.0" y2="436.0" stroke="#1e293b" stroke-width="1.8"/>
+<line x1="58.0" y1="500.0" x2="226.0" y2="500.0" stroke="#1e293b" stroke-width="1.8"/>
+<text x="142.0" y="463.0" font-family="'IBM Plex Sans Arabic','Noto Sans Arabic','Segoe UI',Tahoma,sans-serif" font-size="14" font-weight="700" fill="#1e293b" text-anchor="middle" direction="rtl" unicode-bidi="plaintext">بلا رد في المدة؟</text>
+<text x="142.0" y="483.0" font-family="'IBM Plex Sans Arabic','Noto Sans Arabic','Segoe UI',Tahoma,sans-serif" font-size="14" font-weight="400" fill="#1e293b" text-anchor="middle" direction="rtl" unicode-bidi="plaintext">لا تنفيذ</text>
+</svg>

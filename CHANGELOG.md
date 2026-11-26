@@ -2,6 +2,21 @@
 
 ## Unreleased
 
+### Methodology library, fourth batch: opportunity discovery and the business model (26 November 2026)
+
+- **Fifteen cards.** Opportunity: Empathy Map, The Mom Test, Assumption Mapping, TAM / SAM / SOM, PESTEL Analysis, Porter's Five Forces, SWOT Analysis, Value Stream Mapping, Five Whys and Fishbone Diagram, Service Blueprint. Business model: Lean Canvas, Pricing and Revenue Models, Product-Market Fit, Kano Model, Blue Ocean Strategy. The library has 50 cards and lists 85 more by name; the opportunity domain is complete.
+- **Merged.** Unique Value Proposition is a section of the Lean Canvas card; Revenue Model and Pricing Models are one card, labelled as the Academy's own classification because its five-model table already lived in toolkit template 5.
+- **Sources A206 to A217, each from the opened page** (fetched, not search extracts). Where a page did not say what the proposal assumed, the card says so: The Mom Test's site states no rules and the book was not read, so the card names the book and uses the Academy's own interview questions; CIPD's SWOT factsheet does not label internal and external; Andreessen's essay sets no numeric threshold for product-market fit. Two definitions rest on Wikipedia and are marked as vocabulary only.
+- **Limits.** No card tried with a learner. Porter's article was read only as far as the open page shows. Blue Ocean's own tools are not reproduced. Competitive Advantage has no card yet.
+
+### Methodology library, third batch: the practitioner tier and diagrams (26 November 2026)
+
+- **Thirteen cards:** UML Class Diagram, Sequence Diagram, Entity Relationship Diagram, Data Flow Diagram, Swimlane Diagram, Retrieval-Augmented Generation, Model Context Protocol, Multi-Agent Orchestration, Spec-Driven Development, Technical Debt Management, CI/CD, LLM Evaluation, Threat Modeling. The library has 35 cards and lists 102 more by name. Multi-Agent Architecture and Agent Orchestration became one card.
+- **`tools/build_diagrams.py`** draws the library's diagrams as SVG from one text specification (`09-methodology-library/diagrams/diagrams.json`): boxes on a grid with arrows and optional lanes, or a sequence of messages; right-to-left layout; a title, a description and Arabic alternative text in every file; standard library only. **Ten diagrams**, all illustrative: class, sequence, entity-relationship, data flow, swimlane, agent architecture, human oversight, multi-agent orchestration, RAG and MCP. The agent-architecture and human-oversight cards of the first batch now show theirs.
+- **Why not Mermaid.** The site's reader loads no script from outside the repository, so a Mermaid block would show as text there. SVG files show on GitHub and on the site alike. Recorded in the library's `not-adopted.md`.
+- **Checks.** The build refuses a diagram no card shows; the diagram tool refuses two nodes in one cell, an edge to a node that does not exist, and a label too long to fit between two boxes. `tests/test_library.py`: thirteen tests. Sources A197 to A205.
+- **Limits.** All nine new sources were read from search extracts, not from the opened page; the UML and BPMN specifications themselves were not opened, and the cards use them for what a diagram is, not for notation rules. The diagrams are simplified teaching drawings, not standard-conformant UML or BPMN. Edges are straight lines and can cross a box in a dense layout; each diagram was looked at once in headless Chrome. GitHub's Spec Kit was not tried. No card tried with a learner.
+
 ### Methodology library, second batch: the Academy's own agent models (26 November 2026)
 
 - **Eight cards**, each labelled as developed by the Academy and not as a standard: Agent Opportunity Assessment, Agent Business Model Canvas, Agent Capability Matrix, Agent Tool-Access Matrix, Agent Risk Register, Agent ROI Calculator (the customer's return), Agent Readiness Assessment, Shadow Mode. Five point at tools that already existed (toolkit templates 2 and 5, `buyer_return.py`, the compliance toolkit's risk register, the shadow-mode switch and report); the library now has 22 cards and lists 116 more by name.

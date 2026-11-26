@@ -77,7 +77,8 @@ class LibraryTests(unittest.TestCase):
         folder = os.path.join(ROOT, "09-methodology-library")
         for base, _, files in os.walk(folder):
             for name in files:
-                self.assertTrue(name.endswith((".md", ".json")), "unexpected file in the library: " + name)
+                drawn = os.path.basename(base) == "diagrams" and name.endswith(".svg")
+                self.assertTrue(drawn or name.endswith((".md", ".json")), "unexpected file in the library: " + name)
         nine = ["Key Partners", "Key Activities", "Key Resources", "Customer Relationships", "Revenue Streams"]
         for card in self.registry["cards"]:
             text = read("09-methodology-library", "cards", card["id"] + ".md")
@@ -103,6 +104,32 @@ class LibraryTests(unittest.TestCase):
         for card in broken["cards"]:
             card["used_in"] = [used for used in card["used_in"] if "templates/agent-capability-matrix.md" not in used] or card["used_in"]
         self.assertTrue(any("no card uses this template" in line for line in library.problems(broken)))
+
+    def test_diagrams_are_up_to_date_and_each_is_shown_by_a_card(self):
+        result = subprocess.run([sys.executable, os.path.join(ROOT, "tools", "build_diagrams.py"), "--check"],
+                                cwd=ROOT, capture_output=True, text=True)
+        self.assertEqual(result.returncode, 0, result.stdout)
+        import json
+        spec = json.loads(read("09-methodology-library", "diagrams", "diagrams.json"))
+        cards = "".join(read("09-methodology-library", "cards", c["id"] + ".md") for c in self.registry["cards"])
+        self.assertGreaterEqual(len(spec["diagrams"]), 10)
+        for diagram in spec["diagrams"]:
+            svg = read("09-methodology-library", "diagrams", diagram["id"] + ".svg")
+            self.assertIn("<title", svg)
+            self.assertIn("<desc", svg)
+            self.assertNotIn("<script", svg)
+            self.assertNotIn("href=", svg, "a diagram loads nothing from outside")
+            self.assertIn("![%s](../diagrams/%s.svg)" % (diagram["alt"], diagram["id"]), cards, diagram["id"])
+
+    def test_the_diagram_tool_rejects_a_bad_specification(self):
+        import build_diagrams
+        bad = {"diagrams": [{"id": "x", "kind": "grid", "title_ar": "ع", "title_en": "x", "alt": "ع", "cols": 1, "rows": 1,
+                             "nodes": [{"id": "a", "col": 0, "row": 0, "text": ["a"]}, {"id": "b", "col": 0, "row": 0, "text": ["b"]}],
+                             "edges": [{"from": "a", "to": "zz", "label": "a label that is far too long"}]}]}
+        found = "\n".join(build_diagrams.problems(bad))
+        self.assertIn("two nodes share cell", found)
+        self.assertIn("does not exist", found)
+        self.assertIn("longer than 12 characters", found)
 
     def test_planned_names_are_unique(self):
         names = [name for group in self.registry["planned"].values() for name in group]

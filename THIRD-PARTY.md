@@ -37,6 +37,8 @@ The [methodology library](09-methodology-library/README.md) explains frameworks 
 | Value Proposition Canvas, Strategyzer AG | Copyright; use with credit; adaptations and inclusion in software reserved (A187) | Described and linked. No adapted canvas, and none inside an agent or tool |
 | Lean Canvas, Ash Maurya | CC BY-SA 3.0 (A188) | No card yet; will be described and linked |
 | The Kanban Guide | CC BY-SA 4.0 (A192) | Described in the Academy's words and linked |
+| UML and BPMN, Object Management Group | Published specifications (A197, A200, A44) | Described in the Academy's words. The library's diagrams are its own drawings and reproduce no figure from either specification |
+| GitHub Spec Kit | A vendor's open-source toolkit (A204) | Named as the source of the method's four phases; not bundled, not tried |
 | OpenStax *Entrepreneurship* | CC BY-NC-SA 4.0 on its live pages (A196) | Cited and linked only |
 
 ## Loaded at view time, not bundled
