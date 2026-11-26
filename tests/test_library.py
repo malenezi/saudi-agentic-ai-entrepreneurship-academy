@@ -83,6 +83,27 @@ class LibraryTests(unittest.TestCase):
             text = read("09-methodology-library", "cards", card["id"] + ".md")
             self.assertLess(sum(block in text for block in nine), 3, card["id"] + " looks like a copy of a canvas")
 
+    def test_library_templates_are_bilingual_labelled_and_used(self):
+        folder = os.path.join(ROOT, "09-methodology-library", "templates")
+        names = sorted(os.listdir(folder))
+        self.assertGreaterEqual(len(names), 3)
+        index = read("09-methodology-library", "README.md")
+        for name in names:
+            text = read("09-methodology-library", "templates", name)
+            self.assertIn("من تطوير الأكاديمية", text, name)
+            self.assertIn("Developed by the Academy", text, name)
+            self.assertIn("**Not tried with", text, name)
+            self.assertIn("templates/" + name, index, name)
+            card = name[:-3]
+            self.assertIn("../cards/%s.md" % card, text, name + " links its card")
+            self.assertIn("../templates/" + name, read("09-methodology-library", "cards", card + ".md"))
+
+    def test_a_template_without_the_label_or_without_a_card_is_rejected(self):
+        broken = copy.deepcopy(self.registry)
+        for card in broken["cards"]:
+            card["used_in"] = [used for used in card["used_in"] if "templates/agent-capability-matrix.md" not in used] or card["used_in"]
+        self.assertTrue(any("no card uses this template" in line for line in library.problems(broken)))
+
     def test_planned_names_are_unique(self):
         names = [name for group in self.registry["planned"].values() for name in group]
         self.assertEqual(len(names), len(set(names)))
