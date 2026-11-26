@@ -1143,6 +1143,375 @@
       ],
       "summary_ar": "بدل منافسة الجميع على العملاء أنفسهم، ابحث عن طلب لم يخدمه أحد، بتميّز أعلى وتكلفة أدنى معاً.",
       "summary_en": "Rather than fight everyone for the same customers, look for demand nobody serves, with higher differentiation and lower cost at once."
+    },
+    {
+      "id": "disciplined-entrepreneurship",
+      "ar": "ريادة الأعمال المنضبطة",
+      "en": "Disciplined Entrepreneurship",
+      "domain": "venture",
+      "type": "framework",
+      "tier": "advanced",
+      "origin": "global",
+      "stages": [
+        1,
+        3,
+        4
+      ],
+      "sources": [
+        "A218"
+      ],
+      "licence": "A book and toolbox by Bill Aulet (MIT); named and cited, its steps are not reproduced.",
+      "used_in": [
+        "03-courses/README.md",
+        "01-academy/learning-framework.md"
+      ],
+      "summary_ar": "مسار منظّم من أربع وعشرين خطوة لتحويل فكرة أو تقنية إلى شركة، من MIT؛ يُعرَّف به هنا ويُقارَن بمسار الأكاديمية.",
+      "summary_en": "A structured 24-step path from an idea or a technology to a company, from MIT; introduced here and set beside the Academy's own path."
+    },
+    {
+      "id": "customer-development",
+      "ar": "تطوير العملاء",
+      "en": "Customer Development",
+      "domain": "venture",
+      "type": "method",
+      "tier": "practitioner",
+      "origin": "global",
+      "stages": [
+        1
+      ],
+      "sources": [
+        "A219",
+        "A189"
+      ],
+      "licence": "Described in the Academy's words; Blank's article and the academic review are cited.",
+      "used_in": [
+        "03-courses/01-opportunity/lessons/1-5-customer-discovery.md",
+        "04-entrepreneur-toolkit/03-customer-discovery.md"
+      ],
+      "summary_ar": "المشروع الناشئ يبحث عن نموذج عمل، ولا ينفّذ خطة: يكتب فرضياته، ويخرج إلى العملاء ليختبرها، ويعدّل.",
+      "summary_en": "A startup searches for a business model rather than executing a plan: it writes its hypotheses, goes to customers to test them, and adjusts."
+    },
+    {
+      "id": "effectuation",
+      "ar": "منطق التأثير",
+      "en": "Effectuation",
+      "domain": "venture",
+      "type": "framework",
+      "tier": "advanced",
+      "origin": "global",
+      "stages": [
+        1,
+        3
+      ],
+      "sources": [
+        "A220"
+      ],
+      "licence": "Described in the Academy's words; the Society for Effectual Action's page is cited.",
+      "used_in": [
+        "04-entrepreneur-toolkit/10-founder-context-template.md",
+        "04-entrepreneur-toolkit/11-first-ten-customers-plan.md"
+      ],
+      "summary_ar": "ابدأ بما في يدك لا بتوقّع المستقبل: من أنت، وماذا تعرف، ومن تعرف؛ وخاطر بما تحتمل خسارته، وابنِ مع من يلتزم.",
+      "summary_en": "Start from what you have rather than from a forecast: who you are, what you know, whom you know; risk what you can afford to lose, and build with those who commit."
+    },
+    {
+      "id": "okrs",
+      "ar": "الأهداف والنتائج الرئيسية",
+      "en": "OKRs",
+      "domain": "venture",
+      "type": "framework",
+      "tier": "practitioner",
+      "origin": "global",
+      "stages": [
+        4
+      ],
+      "sources": [
+        "A221"
+      ],
+      "licence": "Described in the Academy's words; the What Matters page is cited.",
+      "used_in": [
+        "03-courses/04-scale-and-govern/templates/weekly-kpi-sheet-and-change-log.md",
+        "03-courses/04-scale-and-govern/templates/scaling-roadmap.md"
+      ],
+      "summary_ar": "هدف واحد واضح، وثلاث نتائج إلى خمس تُقاس وتدل على بلوغه؛ النتيجة رقم يتغير، لا مهمة تُنجز.",
+      "summary_en": "One clear objective and three to five measurable results that show it was reached; a result is a number that moves, not a task done."
+    },
+    {
+      "id": "balanced-scorecard",
+      "ar": "بطاقة الأداء المتوازن",
+      "en": "Balanced Scorecard",
+      "domain": "venture",
+      "type": "framework",
+      "tier": "advanced",
+      "origin": "global",
+      "stages": [
+        4
+      ],
+      "sources": [
+        "A222"
+      ],
+      "licence": "Described in the Academy's words; the Balanced Scorecard Institute's page and the 1992 article are cited.",
+      "used_in": [
+        "03-courses/04-scale-and-govern/templates/weekly-kpi-sheet-and-change-log.md",
+        "05-agentic-ai-lab/exercises/b5-venture-dashboard.md"
+      ],
+      "summary_ar": "أربع زوايا للأداء بدل زاوية المال وحدها: المالية، والعملاء، والعمليات الداخلية، والتعلّم والنمو.",
+      "summary_en": "Four views of performance instead of money alone: financial, customer, internal process, learning and growth."
+    },
+    {
+      "id": "pre-mortem",
+      "ar": "تشريح الفشل قبل وقوعه",
+      "en": "Pre-mortem",
+      "domain": "venture",
+      "type": "method",
+      "tier": "practitioner",
+      "origin": "global",
+      "stages": [
+        3,
+        4
+      ],
+      "sources": [
+        "A223"
+      ],
+      "licence": "Described in the Academy's words; Klein's article is cited.",
+      "used_in": [
+        "04-entrepreneur-toolkit/13-hybrid-planning-sheet.md",
+        "02-saudi-market-knowledge-framework/compliance-toolkit/ai-risk-register.md",
+        "03-courses/04-scale-and-govern/lessons/4-3-governance-and-risk.md"
+      ],
+      "summary_ar": "قبل البدء، تخيّل أن المشروع فشل، واسأل الفريق: لماذا؟ ثم قوِّ الخطة بما قيل.",
+      "summary_en": "Before starting, imagine the project has failed and ask the team why; then strengthen the plan with what was said."
+    },
+    {
+      "id": "north-star-metric",
+      "ar": "مؤشر النجم القطبي",
+      "en": "North Star Metric",
+      "domain": "venture",
+      "type": "model",
+      "tier": "practitioner",
+      "origin": "global",
+      "stages": [
+        3,
+        4
+      ],
+      "sources": [
+        "A224"
+      ],
+      "licence": "Described in the Academy's words; a vendor's article is cited.",
+      "used_in": [
+        "05-agentic-ai-lab/exercises/b5-venture-dashboard.md",
+        "03-courses/04-scale-and-govern/templates/weekly-kpi-sheet-and-change-log.md",
+        "03-courses/04-scale-and-govern/lessons/4-2-monitoring-quality-and-cost.md"
+      ],
+      "summary_ar": "رقم واحد يقيس القيمة التي يحصل عليها العميل من المنتج، ويتّجه إليه الفريق كله.",
+      "summary_en": "One number that measures the value customers get from the product and that the whole team steers by."
+    },
+    {
+      "id": "scrum",
+      "ar": "سكرم",
+      "en": "Scrum",
+      "domain": "product-project",
+      "type": "framework",
+      "tier": "practitioner",
+      "origin": "global",
+      "stages": [
+        2,
+        3
+      ],
+      "sources": [
+        "A225"
+      ],
+      "licence": "The Scrum Guide is CC BY-SA 4.0; described in the Academy's words and linked, not copied.",
+      "used_in": [
+        "03-courses/founder-planning-guide.md",
+        "04-entrepreneur-toolkit/13-hybrid-planning-sheet.md"
+      ],
+      "summary_ar": "إطار خفيف للعمل في دورات قصيرة ثابتة المدة، بثلاث مسؤوليات وخمسة أحداث وثلاثة مخرجات.",
+      "summary_en": "A lightweight framework for working in short fixed-length cycles, with three accountabilities, five events and three artifacts."
+    },
+    {
+      "id": "work-breakdown-structure",
+      "ar": "هيكل تقسيم العمل",
+      "en": "Work Breakdown Structure (WBS)",
+      "domain": "product-project",
+      "type": "tool",
+      "tier": "practitioner",
+      "origin": "global",
+      "stages": [
+        2,
+        3
+      ],
+      "sources": [
+        "A226"
+      ],
+      "licence": "Described in the Academy's words; a PMI paper is cited.",
+      "used_in": [
+        "03-courses/founder-planning-guide.md",
+        "04-entrepreneur-toolkit/13-hybrid-planning-sheet.md"
+      ],
+      "summary_ar": "شجرة تقسّم المشروع إلى مخرجات، ثم إلى أجزاء أصغر، حتى يصير كل جزء مما يُقدَّر ويُسند ويُتحقق من إنجازه.",
+      "summary_en": "A tree that splits the project into deliverables and then into smaller parts, until each part can be estimated, assigned and checked."
+    },
+    {
+      "id": "product-roadmap",
+      "ar": "خارطة طريق المنتج",
+      "en": "Product Roadmap",
+      "domain": "product-project",
+      "type": "tool",
+      "tier": "practitioner",
+      "origin": "global",
+      "stages": [
+        3,
+        4
+      ],
+      "sources": [
+        "A227"
+      ],
+      "licence": "Described in the Academy's words; a vendor's guide is cited.",
+      "used_in": [
+        "03-courses/04-scale-and-govern/templates/scaling-roadmap.md",
+        "ROADMAP.md"
+      ],
+      "summary_ar": "مرجع مشترك يبيّن وجهة المنتج وأولوياته وما تقدّم فيه عبر الزمن، بلغة يفهمها كل من يهمه.",
+      "summary_en": "A shared reference showing the product's direction, priorities and progress over time, in words every audience understands."
+    },
+    {
+      "id": "user-stories-and-acceptance-criteria",
+      "ar": "قصص المستخدم ومعايير القبول",
+      "en": "User Stories and Acceptance Criteria",
+      "domain": "product-project",
+      "type": "tool",
+      "tier": "practitioner",
+      "origin": "global",
+      "stages": [
+        2
+      ],
+      "sources": [
+        "A228"
+      ],
+      "licence": "Described in the Academy's words; the Agile Alliance glossary is cited.",
+      "used_in": [
+        "04-entrepreneur-toolkit/07-ai-mvp-blueprint.md",
+        "03-courses/02-build/templates/readiness-checklist.md",
+        "05-agentic-ai-lab/evaluation/eval-template.md"
+      ],
+      "summary_ar": "كل متطلب جملة بلسان المستخدم: من، وماذا يريد، ولماذا؛ ومعها شروط محددة يُعرف بها أنه تحقق.",
+      "summary_en": "Each requirement is a sentence in the user's voice: who, what they want and why; with specific conditions that show it is met."
+    },
+    {
+      "id": "raci-matrix",
+      "ar": "مصفوفة RACI",
+      "en": "RACI Matrix",
+      "domain": "product-project",
+      "type": "tool",
+      "tier": "practitioner",
+      "origin": "global",
+      "stages": [
+        2,
+        4
+      ],
+      "sources": [
+        "A229"
+      ],
+      "licence": "Described in the Academy's words; a vendor's guide is cited.",
+      "used_in": [
+        "05-agentic-ai-lab/exercises/r3-role-card-and-approval-matrix.md",
+        "02-saudi-market-knowledge-framework/compliance-toolkit/human-oversight-matrix.md",
+        "03-courses/04-scale-and-govern/templates/operating-architecture.md"
+      ],
+      "summary_ar": "لكل مهمة: من ينفّذ، ومن يُحاسَب، ومن يُستشار، ومن يُبلَّغ. والمحاسَب واحد، وإنسان.",
+      "summary_en": "For every task: who does it, who answers for it, who is consulted, who is informed. One person answers, and that person is human."
+    },
+    {
+      "id": "moscow-prioritization",
+      "ar": "ترتيب الأولويات بطريقة MoSCoW",
+      "en": "MoSCoW Prioritization",
+      "domain": "product-project",
+      "type": "method",
+      "tier": "practitioner",
+      "origin": "global",
+      "stages": [
+        3
+      ],
+      "sources": [
+        "A230"
+      ],
+      "licence": "Described in the Academy's words; the Agile Business Consortium's page is cited.",
+      "used_in": [
+        "04-entrepreneur-toolkit/07-ai-mvp-blueprint.md",
+        "03-courses/03-launch/lessons/3-1-from-prototype-to-mvp.md"
+      ],
+      "summary_ar": "أربع فئات للمتطلبات: لا بد منه، ينبغي، يمكن، ولن يكون هذه المرة؛ والأخيرة أهمها.",
+      "summary_en": "Four classes of requirement: must have, should have, could have, and won't have this time; the last one matters most."
+    },
+    {
+      "id": "rice-scoring",
+      "ar": "ترتيب الأولويات بطريقة RICE",
+      "en": "RICE Scoring",
+      "domain": "product-project",
+      "type": "method",
+      "tier": "practitioner",
+      "origin": "global",
+      "stages": [
+        2,
+        3
+      ],
+      "sources": [
+        "A231"
+      ],
+      "licence": "Described in the Academy's words; Intercom's post is cited.",
+      "used_in": [
+        "03-courses/02-build/templates/failure-and-improvement-log.md",
+        "03-courses/02-build/lessons/2-8-failure-analysis-and-iteration.md"
+      ],
+      "summary_ar": "درجة لكل مبادرة: الوصول × الأثر × الثقة ÷ الجهد؛ تجعل المفاضلة حديثاً عن أرقام لا عن أصوات.",
+      "summary_en": "A score per initiative: reach × impact × confidence ÷ effort; it turns prioritisation into a talk about numbers rather than voices."
+    },
+    {
+      "id": "critical-path-method",
+      "ar": "طريقة المسار الحرج",
+      "en": "Critical Path Method (CPM)",
+      "domain": "product-project",
+      "type": "method",
+      "tier": "advanced",
+      "origin": "global",
+      "stages": [
+        3
+      ],
+      "sources": [
+        "A232"
+      ],
+      "licence": "Described in the Academy's words; a PMI paper is cited.",
+      "used_in": [
+        "03-courses/founder-planning-guide.md",
+        "04-entrepreneur-toolkit/13-hybrid-planning-sheet.md"
+      ],
+      "summary_ar": "سلسلة الأنشطة التي لا تحتمل تأخيراً: كل يوم تتأخره يؤخر المشروع كله؛ وما عداها له هامش.",
+      "summary_en": "The chain of activities with no slack: each day they slip delays the whole project; everything else has float."
+    },
+    {
+      "id": "bpmn",
+      "ar": "ترميز نمذجة إجراءات العمل",
+      "en": "BPMN",
+      "domain": "product-project",
+      "type": "model",
+      "tier": "advanced",
+      "origin": "global",
+      "stages": [
+        1
+      ],
+      "sources": [
+        "A233",
+        "A44",
+        "A200"
+      ],
+      "licence": "An OMG specification; described in the Academy's words. No figure from the specification is reproduced.",
+      "used_in": [
+        "03-courses/01-opportunity/templates/workflow-map.md",
+        "03-courses/01-opportunity/lessons/1-4-workflow-shadowing.md"
+      ],
+      "summary_ar": "المعيار الرسمي لرسم إجراءات العمل، من Object Management Group؛ يلزمك حين يطلبه العميل أو تتبادل المخططات مع أنظمته.",
+      "summary_en": "The formal standard for drawing business processes, from the Object Management Group; needed when the customer asks for it or diagrams are exchanged with their systems."
     }
   ],
   "planned": {
@@ -1151,30 +1520,10 @@
       "Competitive Advantage"
     ],
     "venture": [
-      "Disciplined Entrepreneurship",
-      "Customer Development",
-      "Effectuation",
-      "Build-Measure-Learn",
-      "Hypothesis-Driven Development",
       "Impact-Effort Matrix",
-      "OKRs",
-      "Balanced Scorecard",
-      "Pre-mortem",
-      "North Star Metric",
       "AARRR Funnel"
     ],
-    "product-project": [
-      "Scrum",
-      "Work Breakdown Structure",
-      "Product Roadmap",
-      "User Stories and Acceptance Criteria",
-      "RACI Matrix",
-      "MoSCoW Prioritization",
-      "RICE Scoring",
-      "Risk Matrix",
-      "Critical Path Method",
-      "BPMN"
-    ],
+    "product-project": [],
     "requirements-design": [
       "Use Case Diagram",
       "Activity Diagram",
