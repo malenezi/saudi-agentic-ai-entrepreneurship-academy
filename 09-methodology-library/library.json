@@ -1512,6 +1512,443 @@
       ],
       "summary_ar": "المعيار الرسمي لرسم إجراءات العمل، من Object Management Group؛ يلزمك حين يطلبه العميل أو تتبادل المخططات مع أنظمته.",
       "summary_en": "The formal standard for drawing business processes, from the Object Management Group; needed when the customer asks for it or diagrams are exchanged with their systems."
+    },
+    {
+      "id": "use-case-diagram",
+      "ar": "مخطط حالات الاستخدام",
+      "en": "Use Case Diagram",
+      "domain": "requirements-design",
+      "type": "tool",
+      "tier": "practitioner",
+      "origin": "global",
+      "stages": [
+        2
+      ],
+      "sources": [
+        "A234",
+        "A197"
+      ],
+      "licence": "UML is an OMG specification, described in the Academy's words. The library's diagram is its own drawing and reproduces no figure from the specification.",
+      "used_in": [
+        "03-courses/02-build/lessons/2-1-agent-anatomy.md",
+        "04-entrepreneur-toolkit/07-ai-mvp-blueprint.md"
+      ],
+      "summary_ar": "من يستخدم النظام، وماذا يريد منه: فاعلون خارج النظام، وحالات استخدام داخله، وحدّ يفصل بينهما.",
+      "summary_en": "Who uses the system and what they want from it: actors outside, use cases inside, and a boundary between them."
+    },
+    {
+      "id": "activity-diagram",
+      "ar": "مخطط النشاط",
+      "en": "Activity Diagram",
+      "domain": "requirements-design",
+      "type": "tool",
+      "tier": "practitioner",
+      "origin": "global",
+      "stages": [
+        1,
+        2
+      ],
+      "sources": [
+        "A235",
+        "A197"
+      ],
+      "licence": "UML is an OMG specification, described in the Academy's words. The library's diagram is its own drawing and reproduces no figure from the specification.",
+      "used_in": [
+        "03-courses/01-opportunity/templates/workflow-map.md",
+        "03-courses/01-opportunity/lessons/1-4-workflow-shadowing.md"
+      ],
+      "summary_ar": "سير العمل خطوةً خطوة: أفعال، وأسهم ترتّبها، وشروط تحدد أي الطريقين يُسلك.",
+      "summary_en": "A workflow step by step: actions, arrows that order them, and conditions that choose the path."
+    },
+    {
+      "id": "state-machine-diagram",
+      "ar": "مخطط آلة الحالات",
+      "en": "State Machine Diagram",
+      "domain": "requirements-design",
+      "type": "tool",
+      "tier": "practitioner",
+      "origin": "global",
+      "stages": [
+        2
+      ],
+      "sources": [
+        "A236",
+        "A197"
+      ],
+      "licence": "UML is an OMG specification, described in the Academy's words. The library's diagram is its own drawing and reproduces no figure from the specification.",
+      "used_in": [
+        "03-courses/02-build/lessons/2-6-guardrails-and-human-approval.md",
+        "05-agentic-ai-lab/agent-templates/04-invoice-reconciliation.md"
+      ],
+      "summary_ar": "الحالات التي يمر بها شيء واحد (طلب، فاتورة، محادثة) وما ينقله من حالة إلى أخرى: حدث، وشرط، وفعل.",
+      "summary_en": "The states one thing passes through (an order, an invoice, a conversation) and what moves it between them: an event, a guard, an action."
+    },
+    {
+      "id": "component-and-deployment-diagrams",
+      "ar": "مخططا المكوّنات والنشر",
+      "en": "Component and Deployment Diagrams",
+      "domain": "requirements-design",
+      "type": "tool",
+      "tier": "advanced",
+      "origin": "global",
+      "stages": [
+        2,
+        4
+      ],
+      "sources": [
+        "A237",
+        "A197"
+      ],
+      "licence": "UML is an OMG specification, described in the Academy's words; no figure from it is reproduced.",
+      "used_in": [
+        "03-courses/04-scale-and-govern/templates/operating-architecture.md",
+        "03-courses/02-build/lessons/2-3-tools-and-integrations.md"
+      ],
+      "summary_ar": "مخططان متلازمان: الأول يبيّن أجزاء النظام وما يقدمه كل جزء وما يحتاجه، والثاني يبيّن أين يعمل كل جزء.",
+      "summary_en": "Two companion diagrams: one shows the parts of a system and what each provides and requires, the other shows where each part runs."
+    },
+    {
+      "id": "c4-model",
+      "ar": "نموذج C4",
+      "en": "C4 Model",
+      "domain": "requirements-design",
+      "type": "model",
+      "tier": "practitioner",
+      "origin": "global",
+      "stages": [
+        2,
+        4
+      ],
+      "sources": [
+        "A238"
+      ],
+      "licence": "The C4 model site and its example diagrams are CC BY 4.0 (Simon Brown). Described in the Academy's words; the library's diagram is its own drawing.",
+      "used_in": [
+        "03-courses/04-scale-and-govern/templates/operating-architecture.md",
+        "03-courses/02-build/templates/architecture-decision.md"
+      ],
+      "summary_ar": "أربعة مستويات لرسم بنية البرمجيات، من الأبعد إلى الأقرب: سياق النظام، ثم الحاويات، ثم المكوّنات، ثم الشيفرة. والأولان يكفيان أغلب الفرق.",
+      "summary_en": "Four zoom levels for drawing software architecture: system context, containers, components, code. The first two are enough for most teams."
+    },
+    {
+      "id": "software-requirements-specification",
+      "ar": "وثيقة مواصفات المتطلبات",
+      "en": "Software Requirements Specification",
+      "domain": "requirements-design",
+      "type": "tool",
+      "tier": "practitioner",
+      "origin": "global",
+      "stages": [
+        2,
+        3
+      ],
+      "sources": [
+        "A239"
+      ],
+      "licence": "ISO/IEC/IEEE 29148:2018 is a paid standard; it is named and linked, and its text was not read or reproduced.",
+      "used_in": [
+        "04-entrepreneur-toolkit/07-ai-mvp-blueprint.md",
+        "03-courses/02-build/templates/tool-contract.md"
+      ],
+      "summary_ar": "وثيقة واحدة تقول ما يجب أن يفعله النظام وبأي جودة، بعبارات يمكن اختبارها؛ للمشروع الناشئ صفحات قليلة، لا مجلد.",
+      "summary_en": "One document that says what the system must do and how well, in statements that can be tested; a few pages for a startup, not a binder."
+    },
+    {
+      "id": "architecture-decision-records",
+      "ar": "سجلات القرارات المعمارية",
+      "en": "Architecture Decision Records",
+      "domain": "requirements-design",
+      "type": "tool",
+      "tier": "practitioner",
+      "origin": "global",
+      "stages": [
+        2
+      ],
+      "sources": [
+        "A240"
+      ],
+      "licence": "Described in the Academy's words; the ADR organization's site is cited. The template is the Academy's own.",
+      "used_in": [
+        "03-courses/02-build/templates/architecture-decision.md",
+        "03-courses/02-build/templates/model-selection-memo.md"
+      ],
+      "summary_ar": "صفحة قصيرة لكل قرار معماري مهم: السياق، والقرار، والبدائل التي رُدّت، وما يترتب عليه؛ ومجموعها سجل قرارات المشروع.",
+      "summary_en": "One short page per significant architectural decision: context, decision, rejected alternatives, consequences; together they form the project's decision log."
+    },
+    {
+      "id": "dimensional-modeling",
+      "ar": "النمذجة البُعدية",
+      "en": "Dimensional Modeling",
+      "domain": "data",
+      "type": "method",
+      "tier": "advanced",
+      "origin": "global",
+      "stages": [
+        4
+      ],
+      "sources": [
+        "A241"
+      ],
+      "licence": "Described in the Academy's words; the Kimball Group's pages are cited.",
+      "used_in": [
+        "05-agentic-ai-lab/exercises/b5-venture-dashboard.md",
+        "03-courses/04-scale-and-govern/templates/weekly-kpi-sheet-and-change-log.md"
+      ],
+      "summary_ar": "تنظيم بيانات التحليل حول الوقائع المقيسة وسياقها: جدول وقائع فيه الأرقام، وجداول أبعاد تجيب عمّن وماذا ومتى وأين.",
+      "summary_en": "Organizing analytical data around measured events and their context: a fact table of numbers and dimension tables that answer who, what, when and where."
+    },
+    {
+      "id": "data-governance-framework",
+      "ar": "إطار حوكمة البيانات",
+      "en": "Data Governance Framework",
+      "domain": "data",
+      "type": "framework",
+      "tier": "practitioner",
+      "origin": "global",
+      "stages": [
+        3,
+        4
+      ],
+      "sources": [
+        "A242"
+      ],
+      "licence": "NDMO's Data Management and Personal Data Protection Standards (Version 1.5) are cited by page; described in the Academy's words, not reproduced.",
+      "used_in": [
+        "05-agentic-ai-lab/exercises/r8-data-governance.md",
+        "03-courses/04-scale-and-govern/lessons/4-3-governance-and-risk.md"
+      ],
+      "summary_ar": "من يملك كل مجموعة بيانات، ومن يحق له استعمالها، وبأي قواعد؛ والمرجع الوطني ضوابط مكتب إدارة البيانات الوطنية: خمسة عشر مجالاً، و77 ضابطاً، و191 مواصفة.",
+      "summary_en": "Who owns each dataset, who may use it and under what rules; the national reference is NDMO's standards: 15 domains, 77 controls, 191 specifications."
+    },
+    {
+      "id": "data-classification",
+      "ar": "تصنيف البيانات",
+      "en": "Data Classification",
+      "domain": "data",
+      "type": "method",
+      "tier": "practitioner",
+      "origin": "global",
+      "stages": [
+        2,
+        3
+      ],
+      "sources": [
+        "A243"
+      ],
+      "licence": "SDAIA's Data Classification Policy (National Data Governance Policies, Version 1, 5 May 2020) is cited by section; described in the Academy's words, not reproduced.",
+      "used_in": [
+        "05-agentic-ai-lab/exercises/r8-data-governance.md",
+        "03-courses/03-launch/lessons/3-4-compliance-readiness.md"
+      ],
+      "summary_ar": "وضع كل مجموعة بيانات في مستوى بحسب أثر كشفها؛ والمستويات الوطنية أربعة: سري للغاية، وسري، ومقيّد، وعام.",
+      "summary_en": "Placing each dataset at a level according to the impact of its disclosure; the national policy sets four levels: Top Secret, Secret, Restricted, Public."
+    },
+    {
+      "id": "data-protection-impact-assessment",
+      "ar": "تقويم أثر معالجة البيانات الشخصية",
+      "en": "Data Protection Impact Assessment",
+      "domain": "data",
+      "type": "method",
+      "tier": "practitioner",
+      "origin": "global",
+      "stages": [
+        3,
+        4
+      ],
+      "sources": [
+        "A50",
+        "A244"
+      ],
+      "licence": "The Personal Data Protection Law (Art. 22) and its Implementing Regulation (Art. 25) are cited by article and summarized, not reproduced. The template is the Academy's own and is not an official form.",
+      "used_in": [
+        "03-courses/03-launch/lessons/3-4-compliance-readiness.md",
+        "02-saudi-market-knowledge-framework/compliance-toolkit/pdpl-self-assessment.md"
+      ],
+      "summary_ar": "دراسة مكتوبة موثقة للآثار والمخاطر على صاحب البيانات، يوجبها النظام ولائحته في أحوال محددة، ولها ثمانية عناصر حدّاً أدنى.",
+      "summary_en": "A written, documented study of effects and risks to the data subject, required by the law and its regulation in defined cases, with eight minimum elements."
+    },
+    {
+      "id": "test-driven-development",
+      "ar": "التطوير الموجَّه بالاختبار",
+      "en": "Test-Driven Development",
+      "domain": "software-engineering",
+      "type": "method",
+      "tier": "practitioner",
+      "origin": "global",
+      "stages": [
+        2
+      ],
+      "sources": [
+        "A245"
+      ],
+      "licence": "Described in the Academy's words; Martin Fowler's article is cited.",
+      "used_in": [
+        "03-courses/02-build/lessons/2-5-evaluation.md",
+        "05-agentic-ai-lab/evaluation/eval-template.md"
+      ],
+      "summary_ar": "اكتب الاختبار أولاً، ثم الشيفرة التي تُنجحه، ثم نظّف: أحمر، أخضر، إعادة هيكلة.",
+      "summary_en": "Write the test first, then the code that passes it, then clean up: red, green, refactor."
+    },
+    {
+      "id": "agentic-coding",
+      "ar": "البرمجة بالوكلاء",
+      "en": "Agentic Coding",
+      "domain": "software-engineering",
+      "type": "method",
+      "tier": "practitioner",
+      "origin": "global",
+      "stages": [
+        2,
+        3
+      ],
+      "sources": [
+        "A246",
+        "A204"
+      ],
+      "licence": "Described in the Academy's words; one vendor's guidance on its own tool is cited. The Academy recommends no particular tool.",
+      "used_in": [
+        "03-courses/02-build/lessons/2-8-failure-analysis-and-iteration.md",
+        "04-entrepreneur-toolkit/07-ai-mvp-blueprint.md"
+      ],
+      "summary_ar": "وكيل يقرأ الملفات وينفّذ الأوامر ويعدّل الشيفرة، وأنت تحدد الهدف وتتحقق: استكشف، ثم خطّط، ثم نفّذ، ثم تحقق.",
+      "summary_en": "An agent reads files, runs commands and edits code while you set the goal and verify: explore, plan, implement, verify."
+    },
+    {
+      "id": "prompt-engineering",
+      "ar": "هندسة التعليمات",
+      "en": "Prompt Engineering",
+      "domain": "software-engineering",
+      "type": "method",
+      "tier": "practitioner",
+      "origin": "global",
+      "stages": [
+        2
+      ],
+      "sources": [
+        "A247",
+        "A82"
+      ],
+      "licence": "Described in the Academy's words; one vendor's documentation is cited.",
+      "used_in": [
+        "03-courses/02-build/lessons/2-2-context-engineering-in-arabic.md",
+        "05-agentic-ai-lab/exercises/r2-context-pack.md"
+      ],
+      "summary_ar": "تحسين التعليمات المكتوبة للنموذج تحسيناً يُقاس: معايير نجاح أولاً، ثم طريقة اختبار، ثم مسودة تُعدَّل وتُعاد.",
+      "summary_en": "Improving a model's written instructions in a way that is measured: success criteria first, then a way to test, then a draft that is revised and re-run."
+    },
+    {
+      "id": "code-review",
+      "ar": "مراجعة الشيفرة",
+      "en": "Code Review",
+      "domain": "software-engineering",
+      "type": "method",
+      "tier": "practitioner",
+      "origin": "global",
+      "stages": [
+        2,
+        4
+      ],
+      "sources": [
+        "A248"
+      ],
+      "licence": "Described in the Academy's words; Google's engineering practices documentation is cited.",
+      "used_in": [
+        "CONTRIBUTING.md",
+        "03-courses/02-build/templates/readiness-checklist.md"
+      ],
+      "summary_ar": "عين ثانية على كل تغيير قبل دمجه؛ والمعيار: هل يحسّن التغيير صحة الشيفرة إجمالاً، لا هل هو كامل.",
+      "summary_en": "A second pair of eyes on every change before it merges; the standard is whether the change improves overall code health, not whether it is perfect."
+    },
+    {
+      "id": "semantic-versioning",
+      "ar": "الترقيم الدلالي للإصدارات",
+      "en": "Semantic Versioning",
+      "domain": "software-engineering",
+      "type": "tool",
+      "tier": "essential",
+      "origin": "global",
+      "stages": [
+        3,
+        4
+      ],
+      "sources": [
+        "A249"
+      ],
+      "licence": "The Semantic Versioning specification is CC BY 3.0 (Tom Preston-Werner). Described in the Academy's words and linked.",
+      "used_in": [
+        "CHANGELOG.md",
+        "03-courses/04-scale-and-govern/templates/weekly-kpi-sheet-and-change-log.md"
+      ],
+      "summary_ar": "ثلاثة أرقام تقول ما تغيّر: الأول لتغيير يكسر التوافق، والثاني لإضافة متوافقة، والثالث لإصلاح.",
+      "summary_en": "Three numbers that say what changed: the first for a breaking change, the second for a compatible addition, the third for a fix."
+    },
+    {
+      "id": "observability",
+      "ar": "قابلية الملاحظة",
+      "en": "Observability",
+      "domain": "software-engineering",
+      "type": "framework",
+      "tier": "practitioner",
+      "origin": "global",
+      "stages": [
+        4
+      ],
+      "sources": [
+        "A250"
+      ],
+      "licence": "Described in the Academy's words; the OpenTelemetry documentation is cited.",
+      "used_in": [
+        "03-courses/04-scale-and-govern/lessons/4-2-monitoring-quality-and-cost.md",
+        "03-courses/04-scale-and-govern/templates/weekly-kpi-sheet-and-change-log.md"
+      ],
+      "summary_ar": "أن تفهم ما يجري داخل النظام مما يُصدره: آثار تتبع الطلب، ومقاييس تُجمع عبر الزمن، وسجلات موقوتة.",
+      "summary_en": "Understanding what happens inside a system from what it emits: traces that follow a request, metrics aggregated over time, timestamped logs."
+    },
+    {
+      "id": "site-reliability-engineering",
+      "ar": "هندسة موثوقية الأنظمة",
+      "en": "Site Reliability Engineering",
+      "domain": "software-engineering",
+      "type": "framework",
+      "tier": "advanced",
+      "origin": "global",
+      "stages": [
+        4
+      ],
+      "sources": [
+        "A251",
+        "A250"
+      ],
+      "licence": "Google's SRE book is CC BY-NC-ND 4.0; it is described in the Academy's words and linked, and no text from it is bundled.",
+      "used_in": [
+        "03-courses/04-scale-and-govern/lessons/4-2-monitoring-quality-and-cost.md",
+        "03-courses/04-scale-and-govern/lessons/4-1-the-agent-operated-company.md"
+      ],
+      "summary_ar": "موثوقية تُقاس وتُدار: مؤشر لمستوى الخدمة، وهدف له، وميزانية أخطاء تحكم متى تُصدر ومتى تتوقف.",
+      "summary_en": "Reliability that is measured and managed: a service level indicator, an objective for it, and an error budget that governs when to ship and when to stop."
+    },
+    {
+      "id": "mlops-llmops",
+      "ar": "عمليات تعلّم الآلة والنماذج اللغوية",
+      "en": "MLOps / LLMOps",
+      "domain": "software-engineering",
+      "type": "framework",
+      "tier": "advanced",
+      "origin": "global",
+      "stages": [
+        2,
+        4
+      ],
+      "sources": [
+        "A252"
+      ],
+      "licence": "Described in the Academy's words; Google Cloud's architecture document is cited.",
+      "used_in": [
+        "03-courses/04-scale-and-govern/lessons/4-2-monitoring-quality-and-cost.md",
+        "03-courses/02-build/lessons/2-8-failure-analysis-and-iteration.md"
+      ],
+      "summary_ar": "تشغيل الأنظمة المبنية على النماذج بانضباط تشغيل البرمجيات: أتمتة ومراقبة على امتداد الدورة، من البيانات إلى النشر إلى إعادة التقييم.",
+      "summary_en": "Running model-based systems with the discipline of software operations: automation and monitoring across the cycle, from data to deployment to re-evaluation."
     }
   ],
   "planned": {
@@ -1524,28 +1961,9 @@
       "AARRR Funnel"
     ],
     "product-project": [],
-    "requirements-design": [
-      "Use Case Diagram",
-      "Activity Diagram",
-      "State Machine Diagram",
-      "Component Diagram",
-      "Deployment Diagram",
-      "System Context Diagram",
-      "C4 Model",
-      "Software Requirements Specification",
-      "Software Architecture",
-      "Architecture Decision Records"
-    ],
+    "requirements-design": [],
     "data": [
-      "Data Pipeline Diagram",
-      "Data Modeling",
-      "Database Schema",
-      "Modern Data Architecture",
-      "Dimensional Modeling",
-      "Data Lifecycle",
-      "Data Governance Framework",
-      "Data Classification",
-      "Data Protection Impact Assessment"
+      "Data Lifecycle"
     ],
     "agentic-engineering": [
       "Agent Loop",
@@ -1558,16 +1976,7 @@
       "Agent2Agent Protocol",
       "Guardrails"
     ],
-    "software-engineering": [
-      "Test-Driven Development",
-      "Agentic Coding",
-      "Prompt Engineering",
-      "Code Review",
-      "Semantic Versioning",
-      "Observability",
-      "Site Reliability Engineering",
-      "MLOps / LLMOps"
-    ],
+    "software-engineering": [],
     "testing-evaluation": [
       "Functional Testing",
       "Integration Testing",

@@ -1144,6 +1144,386 @@
      "dashed": true
     }
    ]
+  },
+  {
+   "id": "use-case-diagram",
+   "kind": "grid",
+   "rtl": true,
+   "title_ar": "مخطط حالات الاستخدام: وكيل خدمة العملاء",
+   "title_en": "Use case diagram: a customer service agent (illustrative)",
+   "alt": "مخطط حالات استخدام توضيحي: العميل يستعلم عن طلبه ويطلب استرجاعاً، وموظف الخدمة يراجع طلبات الاسترجاع، وحالة الاستعلام تقرأ من نظام الطلبات.",
+   "cols": 3,
+   "rows": 3,
+   "nodes": [
+    {
+     "id": "cust",
+     "col": 0,
+     "row": 1,
+     "text": [
+      "العميل"
+     ],
+     "shape": "actor"
+    },
+    {
+     "id": "u1",
+     "col": 1,
+     "row": 0,
+     "text": [
+      "يستعلم",
+      "عن طلبه"
+     ],
+     "shape": "round"
+    },
+    {
+     "id": "u2",
+     "col": 1,
+     "row": 1,
+     "text": [
+      "يطلب",
+      "استرجاعاً"
+     ],
+     "shape": "round"
+    },
+    {
+     "id": "u3",
+     "col": 1,
+     "row": 2,
+     "text": [
+      "يراجع طلبات",
+      "الاسترجاع"
+     ],
+     "shape": "round"
+    },
+    {
+     "id": "orders",
+     "col": 2,
+     "row": 0,
+     "text": [
+      "نظام الطلبات"
+     ],
+     "shape": "actor"
+    },
+    {
+     "id": "staff",
+     "col": 2,
+     "row": 2,
+     "text": [
+      "موظف الخدمة"
+     ],
+     "shape": "actor"
+    }
+   ],
+   "edges": [
+    {
+     "from": "cust",
+     "to": "u1"
+    },
+    {
+     "from": "cust",
+     "to": "u2"
+    },
+    {
+     "from": "u1",
+     "to": "orders",
+     "label": "يقرأ"
+    },
+    {
+     "from": "staff",
+     "to": "u3"
+    }
+   ]
+  },
+  {
+   "id": "activity-diagram",
+   "kind": "grid",
+   "rtl": true,
+   "title_ar": "مخطط النشاط: طلب استرجاع",
+   "title_en": "Activity diagram: a refund request (illustrative)",
+   "alt": "مخطط نشاط توضيحي: يُستلم طلب الاسترجاع، ثم يُتحقق من الطلب، ثم يُسأل هل المبلغ ضمن الحدّ؛ فإن كان نفّذ الوكيل الاسترجاع، وإلا أحاله إلى الموظف، وفي الحالين يُبلَّغ العميل ويُسجَّل.",
+   "cols": 3,
+   "rows": 3,
+   "nodes": [
+    {
+     "id": "a1",
+     "col": 0,
+     "row": 0,
+     "text": [
+      "استلام طلب",
+      "الاسترجاع"
+     ],
+     "shape": "round"
+    },
+    {
+     "id": "a2",
+     "col": 1,
+     "row": 0,
+     "text": [
+      "التحقق",
+      "من الطلب"
+     ]
+    },
+    {
+     "id": "d",
+     "col": 2,
+     "row": 0,
+     "text": [
+      "المبلغ",
+      "ضمن الحدّ؟"
+     ],
+     "shape": "decision"
+    },
+    {
+     "id": "a3",
+     "col": 2,
+     "row": 1,
+     "text": [
+      "الوكيل ينفّذ",
+      "الاسترجاع"
+     ]
+    },
+    {
+     "id": "a4",
+     "col": 1,
+     "row": 1,
+     "text": [
+      "يحيل",
+      "إلى الموظف"
+     ]
+    },
+    {
+     "id": "a5",
+     "col": 2,
+     "row": 2,
+     "text": [
+      "إبلاغ العميل",
+      "وتسجيل ما جرى"
+     ],
+     "shape": "round"
+    }
+   ],
+   "edges": [
+    {
+     "from": "a1",
+     "to": "a2"
+    },
+    {
+     "from": "a2",
+     "to": "d"
+    },
+    {
+     "from": "d",
+     "to": "a3",
+     "label": "نعم"
+    },
+    {
+     "from": "d",
+     "to": "a4",
+     "label": "لا"
+    },
+    {
+     "from": "a3",
+     "to": "a5"
+    },
+    {
+     "from": "a4",
+     "to": "a5"
+    }
+   ]
+  },
+  {
+   "id": "state-machine-diagram",
+   "kind": "grid",
+   "rtl": true,
+   "title_ar": "مخطط آلة الحالات: فاتورة مورّد",
+   "title_en": "State machine diagram: a supplier invoice (illustrative)",
+   "alt": "مخطط حالات توضيحي لفاتورة مورّد: مستلَمة، ثم قيد المطابقة، ثم مطابَقة إن لم يكن فرق أو بانتظار المحاسب إن كان فرق؛ والمحاسب يقبل فتصير مطابَقة أو يرفض فتصير مرفوضة؛ والمطابَقة تصير مدفوعة بعد الاعتماد.",
+   "cols": 3,
+   "rows": 2,
+   "nodes": [
+    {
+     "id": "s1",
+     "col": 0,
+     "row": 0,
+     "text": [
+      "مستلَمة"
+     ],
+     "shape": "round"
+    },
+    {
+     "id": "s2",
+     "col": 1,
+     "row": 0,
+     "text": [
+      "قيد المطابقة"
+     ],
+     "shape": "round"
+    },
+    {
+     "id": "s3",
+     "col": 2,
+     "row": 0,
+     "text": [
+      "مطابَقة"
+     ],
+     "shape": "round"
+    },
+    {
+     "id": "s6",
+     "col": 0,
+     "row": 1,
+     "text": [
+      "مرفوضة"
+     ],
+     "shape": "round"
+    },
+    {
+     "id": "s4",
+     "col": 1,
+     "row": 1,
+     "text": [
+      "بانتظار",
+      "المحاسب"
+     ],
+     "shape": "round"
+    },
+    {
+     "id": "s5",
+     "col": 2,
+     "row": 1,
+     "text": [
+      "مدفوعة"
+     ],
+     "shape": "round"
+    }
+   ],
+   "edges": [
+    {
+     "from": "s1",
+     "to": "s2",
+     "label": "استخراج"
+    },
+    {
+     "from": "s2",
+     "to": "s3",
+     "label": "لا فرق"
+    },
+    {
+     "from": "s2",
+     "to": "s4",
+     "label": "فرق"
+    },
+    {
+     "from": "s4",
+     "to": "s3",
+     "label": "قبول"
+    },
+    {
+     "from": "s4",
+     "to": "s6",
+     "label": "رفض"
+    },
+    {
+     "from": "s3",
+     "to": "s5",
+     "label": "اعتماد"
+    }
+   ]
+  },
+  {
+   "id": "c4-model",
+   "kind": "grid",
+   "rtl": true,
+   "title_ar": "نموذج C4: مخطط سياق النظام",
+   "title_en": "C4 model: a system context diagram (illustrative)",
+   "alt": "مخطط سياق توضيحي: وكيل خدمة العملاء في الوسط، يسأله العميل، ويعتمد موظف الخدمة ما يحيله إليه، ويقرأ الطلبات من منصة المتجر، ويرسل نص الرسالة إلى مزوّد النموذج اللغوي، ويرسل الرد عبر قناة المراسلة.",
+   "cols": 3,
+   "rows": 3,
+   "nodes": [
+    {
+     "id": "cust",
+     "col": 0,
+     "row": 0,
+     "text": [
+      "العميل"
+     ],
+     "shape": "actor"
+    },
+    {
+     "id": "staff",
+     "col": 0,
+     "row": 2,
+     "text": [
+      "موظف الخدمة"
+     ],
+     "shape": "actor"
+    },
+    {
+     "id": "sys",
+     "col": 1,
+     "row": 1,
+     "text": [
+      "وكيل خدمة العملاء",
+      "(النظام)"
+     ]
+    },
+    {
+     "id": "chan",
+     "col": 1,
+     "row": 0,
+     "text": [
+      "قناة المراسلة"
+     ],
+     "shape": "actor"
+    },
+    {
+     "id": "store",
+     "col": 1,
+     "row": 2,
+     "text": [
+      "منصة المتجر"
+     ],
+     "shape": "actor"
+    },
+    {
+     "id": "prov",
+     "col": 2,
+     "row": 1,
+     "text": [
+      "مزوّد النموذج",
+      "اللغوي"
+     ],
+     "shape": "actor"
+    }
+   ],
+   "edges": [
+    {
+     "from": "cust",
+     "to": "chan",
+     "label": "يسأل"
+    },
+    {
+     "from": "chan",
+     "to": "sys",
+     "label": "الرسالة",
+     "both": true
+    },
+    {
+     "from": "sys",
+     "to": "store",
+     "label": "يقرأ الطلبات"
+    },
+    {
+     "from": "sys",
+     "to": "prov",
+     "label": "الرسالة",
+     "both": true
+    },
+    {
+     "from": "staff",
+     "to": "sys",
+     "label": "يعتمد"
+    }
+   ]
   }
  ]
 }

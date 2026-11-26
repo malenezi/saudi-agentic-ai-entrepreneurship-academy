@@ -6,7 +6,7 @@
 
 بطاقة موحّدة لكل نموذج أو منهجية يحتاج إليها رائد الأعمال في رحلته: ما غرضه، ومتى يُستخدم ومتى لا يُستخدم، وخطواته، وقالبه، ومثال توضيحي، وكيف يعين الوكيل الذكي على تطبيقه، وأين يرد في مقررات الأكاديمية وأدواتها.
 
-**في المكتبة الآن 66 بطاقة، و66 نموذجاً تُكتب بطاقاتها تباعاً.** تصفّحها في [صفحة المكتبة](../library.html) بحسب المرحلة والمجال والمستوى.
+**في المكتبة الآن 85 بطاقة، و40 نموذجاً تُكتب بطاقاتها تباعاً.** تصفّحها في [صفحة المكتبة](../library.html) بحسب المرحلة والمجال والمستوى.
 
 **ثلاث قواعد:**
 
@@ -36,6 +36,7 @@
 | [استراتيجية دخول السوق](cards/go-to-market.md) (Go-to-Market Strategy (GTM)) | إطار عمل | 3، 4 | معروف عالمياً | خطة الوصول إلى العملاء وإقناعهم بالشراء: مَن أولاً، وعبر أي قناة، وبأي عرض، وكيف يُقاس التقدم. |
 | [تقييم فرص الوكلاء](cards/agent-opportunity-assessment.md) (Agent Opportunity Assessment) | أداة أو قالب | 1 | من تطوير الأكاديمية | مفاضلة بين مهام مرشحة بتسعة معايير موزونة وأربعة أسئلة إيقاف، ثم سؤال: هل تحتاج وكيلاً أصلاً؟ |
 | [نموذج العمل للمشاريع القائمة على الوكلاء](cards/agent-business-model-canvas.md) (Agent Business Model Canvas) | أداة أو قالب | 3 | من تطوير الأكاديمية | قالب نموذج العمل بما يخص المشاريع القائمة على الوكلاء: تقسيم العمل، واقتصاديات المهمة، والثقة والحوكمة، ونموذج التسعير. |
+| [الترقيم الدلالي للإصدارات](cards/semantic-versioning.md) (Semantic Versioning) | أداة أو قالب | 3، 4 | معروف عالمياً | ثلاثة أرقام تقول ما تغيّر: الأول لتغيير يكسر التوافق، والثاني لإضافة متوافقة، والثالث لإصلاح. |
 
 ## المستوى: تطبيقي
 
@@ -84,6 +85,20 @@
 | [مصفوفة RACI](cards/raci-matrix.md) (RACI Matrix) | أداة أو قالب | 2، 4 | معروف عالمياً | لكل مهمة: من ينفّذ، ومن يُحاسَب، ومن يُستشار، ومن يُبلَّغ. والمحاسَب واحد، وإنسان. |
 | [ترتيب الأولويات بطريقة MoSCoW](cards/moscow-prioritization.md) (MoSCoW Prioritization) | منهجية | 3 | معروف عالمياً | أربع فئات للمتطلبات: لا بد منه، ينبغي، يمكن، ولن يكون هذه المرة؛ والأخيرة أهمها. |
 | [ترتيب الأولويات بطريقة RICE](cards/rice-scoring.md) (RICE Scoring) | منهجية | 2، 3 | معروف عالمياً | درجة لكل مبادرة: الوصول × الأثر × الثقة ÷ الجهد؛ تجعل المفاضلة حديثاً عن أرقام لا عن أصوات. |
+| [مخطط حالات الاستخدام](cards/use-case-diagram.md) (Use Case Diagram) | أداة أو قالب | 2 | معروف عالمياً | من يستخدم النظام، وماذا يريد منه: فاعلون خارج النظام، وحالات استخدام داخله، وحدّ يفصل بينهما. |
+| [مخطط النشاط](cards/activity-diagram.md) (Activity Diagram) | أداة أو قالب | 1، 2 | معروف عالمياً | سير العمل خطوةً خطوة: أفعال، وأسهم ترتّبها، وشروط تحدد أي الطريقين يُسلك. |
+| [مخطط آلة الحالات](cards/state-machine-diagram.md) (State Machine Diagram) | أداة أو قالب | 2 | معروف عالمياً | الحالات التي يمر بها شيء واحد (طلب، فاتورة، محادثة) وما ينقله من حالة إلى أخرى: حدث، وشرط، وفعل. |
+| [نموذج C4](cards/c4-model.md) (C4 Model) | نموذج | 2، 4 | معروف عالمياً | أربعة مستويات لرسم بنية البرمجيات، من الأبعد إلى الأقرب: سياق النظام، ثم الحاويات، ثم المكوّنات، ثم الشيفرة. والأولان يكفيان أغلب الفرق. |
+| [وثيقة مواصفات المتطلبات](cards/software-requirements-specification.md) (Software Requirements Specification) | أداة أو قالب | 2، 3 | معروف عالمياً | وثيقة واحدة تقول ما يجب أن يفعله النظام وبأي جودة، بعبارات يمكن اختبارها؛ للمشروع الناشئ صفحات قليلة، لا مجلد. |
+| [سجلات القرارات المعمارية](cards/architecture-decision-records.md) (Architecture Decision Records) | أداة أو قالب | 2 | معروف عالمياً | صفحة قصيرة لكل قرار معماري مهم: السياق، والقرار، والبدائل التي رُدّت، وما يترتب عليه؛ ومجموعها سجل قرارات المشروع. |
+| [إطار حوكمة البيانات](cards/data-governance-framework.md) (Data Governance Framework) | إطار عمل | 3، 4 | معروف عالمياً | من يملك كل مجموعة بيانات، ومن يحق له استعمالها، وبأي قواعد؛ والمرجع الوطني ضوابط مكتب إدارة البيانات الوطنية: خمسة عشر مجالاً، و77 ضابطاً، و191 مواصفة. |
+| [تصنيف البيانات](cards/data-classification.md) (Data Classification) | منهجية | 2، 3 | معروف عالمياً | وضع كل مجموعة بيانات في مستوى بحسب أثر كشفها؛ والمستويات الوطنية أربعة: سري للغاية، وسري، ومقيّد، وعام. |
+| [تقويم أثر معالجة البيانات الشخصية](cards/data-protection-impact-assessment.md) (Data Protection Impact Assessment) | منهجية | 3، 4 | معروف عالمياً | دراسة مكتوبة موثقة للآثار والمخاطر على صاحب البيانات، يوجبها النظام ولائحته في أحوال محددة، ولها ثمانية عناصر حدّاً أدنى. |
+| [التطوير الموجَّه بالاختبار](cards/test-driven-development.md) (Test-Driven Development) | منهجية | 2 | معروف عالمياً | اكتب الاختبار أولاً، ثم الشيفرة التي تُنجحه، ثم نظّف: أحمر، أخضر، إعادة هيكلة. |
+| [البرمجة بالوكلاء](cards/agentic-coding.md) (Agentic Coding) | منهجية | 2، 3 | معروف عالمياً | وكيل يقرأ الملفات وينفّذ الأوامر ويعدّل الشيفرة، وأنت تحدد الهدف وتتحقق: استكشف، ثم خطّط، ثم نفّذ، ثم تحقق. |
+| [هندسة التعليمات](cards/prompt-engineering.md) (Prompt Engineering) | منهجية | 2 | معروف عالمياً | تحسين التعليمات المكتوبة للنموذج تحسيناً يُقاس: معايير نجاح أولاً، ثم طريقة اختبار، ثم مسودة تُعدَّل وتُعاد. |
+| [مراجعة الشيفرة](cards/code-review.md) (Code Review) | منهجية | 2، 4 | معروف عالمياً | عين ثانية على كل تغيير قبل دمجه؛ والمعيار: هل يحسّن التغيير صحة الشيفرة إجمالاً، لا هل هو كامل. |
+| [قابلية الملاحظة](cards/observability.md) (Observability) | إطار عمل | 4 | معروف عالمياً | أن تفهم ما يجري داخل النظام مما يُصدره: آثار تتبع الطلب، ومقاييس تُجمع عبر الزمن، وسجلات موقوتة. |
 
 ## المستوى: متقدم
 
@@ -96,6 +111,10 @@
 | [بطاقة الأداء المتوازن](cards/balanced-scorecard.md) (Balanced Scorecard) | إطار عمل | 4 | معروف عالمياً | أربع زوايا للأداء بدل زاوية المال وحدها: المالية، والعملاء، والعمليات الداخلية، والتعلّم والنمو. |
 | [طريقة المسار الحرج](cards/critical-path-method.md) (Critical Path Method (CPM)) | منهجية | 3 | معروف عالمياً | سلسلة الأنشطة التي لا تحتمل تأخيراً: كل يوم تتأخره يؤخر المشروع كله؛ وما عداها له هامش. |
 | [ترميز نمذجة إجراءات العمل](cards/bpmn.md) (BPMN) | نموذج | 1 | معروف عالمياً | المعيار الرسمي لرسم إجراءات العمل، من Object Management Group؛ يلزمك حين يطلبه العميل أو تتبادل المخططات مع أنظمته. |
+| [مخططا المكوّنات والنشر](cards/component-and-deployment-diagrams.md) (Component and Deployment Diagrams) | أداة أو قالب | 2، 4 | معروف عالمياً | مخططان متلازمان: الأول يبيّن أجزاء النظام وما يقدمه كل جزء وما يحتاجه، والثاني يبيّن أين يعمل كل جزء. |
+| [النمذجة البُعدية](cards/dimensional-modeling.md) (Dimensional Modeling) | منهجية | 4 | معروف عالمياً | تنظيم بيانات التحليل حول الوقائع المقيسة وسياقها: جدول وقائع فيه الأرقام، وجداول أبعاد تجيب عمّن وماذا ومتى وأين. |
+| [هندسة موثوقية الأنظمة](cards/site-reliability-engineering.md) (Site Reliability Engineering) | إطار عمل | 4 | معروف عالمياً | موثوقية تُقاس وتُدار: مؤشر لمستوى الخدمة، وهدف له، وميزانية أخطاء تحكم متى تُصدر ومتى تتوقف. |
+| [عمليات تعلّم الآلة والنماذج اللغوية](cards/mlops-llmops.md) (MLOps / LLMOps) | إطار عمل | 2، 4 | معروف عالمياً | تشغيل الأنظمة المبنية على النماذج بانضباط تشغيل البرمجيات: أتمتة ومراقبة على امتداد الدورة، من البيانات إلى النشر إلى إعادة التقييم. |
 
 المرحلة برقم المقرر: 1 اكتشاف الفرصة، 2 بناء الوكيل، 3 الإطلاق والنموذج التجاري، 4 التوسع والحوكمة.
 
@@ -107,13 +126,9 @@
 
 **تأسيس المشروع وإدارته:** Impact-Effort Matrix · AARRR Funnel
 
-**تحليل المتطلبات وتصميم الأنظمة:** Use Case Diagram · Activity Diagram · State Machine Diagram · Component Diagram · Deployment Diagram · System Context Diagram · C4 Model · Software Requirements Specification · Software Architecture · Architecture Decision Records
-
-**هندسة البيانات وتصميمها:** Data Pipeline Diagram · Data Modeling · Database Schema · Modern Data Architecture · Dimensional Modeling · Data Lifecycle · Data Governance Framework · Data Classification · Data Protection Impact Assessment
+**هندسة البيانات وتصميمها:** Data Lifecycle
 
 **هندسة الأنظمة القائمة على الوكلاء:** Agent Loop · Tool Calling · Agent Memory Design · Context Engineering · Agent Design Patterns · Agent Permission Model · Agent Reliability Engineering · Agent2Agent Protocol · Guardrails
-
-**تطوير البرمجيات والتشغيل:** Test-Driven Development · Agentic Coding · Prompt Engineering · Code Review · Semantic Versioning · Observability · Site Reliability Engineering · MLOps / LLMOps
 
 **الاختبار والتقييم وضمان الجودة:** Functional Testing · Integration Testing · End-to-End Testing · Performance Testing · Security Testing · Scenario-Based Testing · RAG Evaluation · Regression Testing · Adversarial Testing · Human Evaluation · Golden Dataset
 
@@ -129,7 +144,7 @@
 
 ## مخططات المكتبة
 
-10 مخططات من رسم الأكاديمية، بأمثلة توضيحية. تُرسم بأداة `tools/build_diagrams.py` من ملف نصي واحد ([diagrams.json](diagrams/diagrams.json))، فيُعدَّل المخطط بتعديل النص، ولا صورة منقولة من موقع آخر.
+14 مخططات من رسم الأكاديمية، بأمثلة توضيحية. تُرسم بأداة `tools/build_diagrams.py` من ملف نصي واحد ([diagrams.json](diagrams/diagrams.json))، فيُعدَّل المخطط بتعديل النص، ولا صورة منقولة من موقع آخر.
 
 - [مخطط الفئات: مطابقة فواتير الموردين](diagrams/class-diagram.svg)
 - [مخطط التسلسل: سؤال عن حالة طلب](diagrams/sequence-diagram.svg)
@@ -141,6 +156,10 @@
 - [تنسيق عدة وكلاء: منسّق ووكلاء متخصصون](diagrams/multi-agent-orchestration.svg)
 - [التوليد المعزَّز بالاسترجاع](diagrams/retrieval-augmented-generation.svg)
 - [بروتوكول سياق النموذج](diagrams/model-context-protocol.svg)
+- [مخطط حالات الاستخدام: وكيل خدمة العملاء](diagrams/use-case-diagram.svg)
+- [مخطط النشاط: طلب استرجاع](diagrams/activity-diagram.svg)
+- [مخطط آلة الحالات: فاتورة مورّد](diagrams/state-machine-diagram.svg)
+- [نموذج C4: مخطط سياق النظام](diagrams/c4-model.svg)
 
 ## كيف تُضاف بطاقة
 
@@ -152,7 +171,7 @@
 
 One standard card per framework, method or model a founder needs on the way from an opportunity to a growing venture: purpose, when to use it and when not to, steps, a blank template, an illustrative example, how an AI agent helps apply it, and where the Academy's courses and tools use it. Cards are written in Arabic with English terms.
 
-**66 cards so far; 66 more are listed by name and are written in batches.** Browse them on the [library page](../library.html).
+**85 cards so far; 40 more are listed by name and are written in batches.** Browse them on the [library page](../library.html).
 
 Three rules: no card for a known model without a source in the [source register](../SOURCES.md); other people's canvases are described and linked, never copied; a model developed by the Academy is labelled as such and is not presented as a standard. No card has been tried with learners. What was left out of the original proposal is in [not-adopted.md](not-adopted.md).
 
@@ -224,3 +243,22 @@ Three rules: no card for a known model without a source in the [source register]
 | [RICE Scoring](cards/rice-scoring.md) | Method | Practitioner | 2, 3 | A score per initiative: reach × impact × confidence ÷ effort; it turns prioritisation into a talk about numbers rather than voices. |
 | [Critical Path Method (CPM)](cards/critical-path-method.md) | Method | Advanced | 3 | The chain of activities with no slack: each day they slip delays the whole project; everything else has float. |
 | [BPMN](cards/bpmn.md) | Model | Advanced | 1 | The formal standard for drawing business processes, from the Object Management Group; needed when the customer asks for it or diagrams are exchanged with their systems. |
+| [Use Case Diagram](cards/use-case-diagram.md) | Tool or template | Practitioner | 2 | Who uses the system and what they want from it: actors outside, use cases inside, and a boundary between them. |
+| [Activity Diagram](cards/activity-diagram.md) | Tool or template | Practitioner | 1, 2 | A workflow step by step: actions, arrows that order them, and conditions that choose the path. |
+| [State Machine Diagram](cards/state-machine-diagram.md) | Tool or template | Practitioner | 2 | The states one thing passes through (an order, an invoice, a conversation) and what moves it between them: an event, a guard, an action. |
+| [Component and Deployment Diagrams](cards/component-and-deployment-diagrams.md) | Tool or template | Advanced | 2, 4 | Two companion diagrams: one shows the parts of a system and what each provides and requires, the other shows where each part runs. |
+| [C4 Model](cards/c4-model.md) | Model | Practitioner | 2, 4 | Four zoom levels for drawing software architecture: system context, containers, components, code. The first two are enough for most teams. |
+| [Software Requirements Specification](cards/software-requirements-specification.md) | Tool or template | Practitioner | 2, 3 | One document that says what the system must do and how well, in statements that can be tested; a few pages for a startup, not a binder. |
+| [Architecture Decision Records](cards/architecture-decision-records.md) | Tool or template | Practitioner | 2 | One short page per significant architectural decision: context, decision, rejected alternatives, consequences; together they form the project's decision log. |
+| [Dimensional Modeling](cards/dimensional-modeling.md) | Method | Advanced | 4 | Organizing analytical data around measured events and their context: a fact table of numbers and dimension tables that answer who, what, when and where. |
+| [Data Governance Framework](cards/data-governance-framework.md) | Framework | Practitioner | 3, 4 | Who owns each dataset, who may use it and under what rules; the national reference is NDMO's standards: 15 domains, 77 controls, 191 specifications. |
+| [Data Classification](cards/data-classification.md) | Method | Practitioner | 2, 3 | Placing each dataset at a level according to the impact of its disclosure; the national policy sets four levels: Top Secret, Secret, Restricted, Public. |
+| [Data Protection Impact Assessment](cards/data-protection-impact-assessment.md) | Method | Practitioner | 3, 4 | A written, documented study of effects and risks to the data subject, required by the law and its regulation in defined cases, with eight minimum elements. |
+| [Test-Driven Development](cards/test-driven-development.md) | Method | Practitioner | 2 | Write the test first, then the code that passes it, then clean up: red, green, refactor. |
+| [Agentic Coding](cards/agentic-coding.md) | Method | Practitioner | 2, 3 | An agent reads files, runs commands and edits code while you set the goal and verify: explore, plan, implement, verify. |
+| [Prompt Engineering](cards/prompt-engineering.md) | Method | Practitioner | 2 | Improving a model's written instructions in a way that is measured: success criteria first, then a way to test, then a draft that is revised and re-run. |
+| [Code Review](cards/code-review.md) | Method | Practitioner | 2, 4 | A second pair of eyes on every change before it merges; the standard is whether the change improves overall code health, not whether it is perfect. |
+| [Semantic Versioning](cards/semantic-versioning.md) | Tool or template | Essential | 3, 4 | Three numbers that say what changed: the first for a breaking change, the second for a compatible addition, the third for a fix. |
+| [Observability](cards/observability.md) | Framework | Practitioner | 4 | Understanding what happens inside a system from what it emits: traces that follow a request, metrics aggregated over time, timestamped logs. |
+| [Site Reliability Engineering](cards/site-reliability-engineering.md) | Framework | Advanced | 4 | Reliability that is measured and managed: a service level indicator, an objective for it, and an error budget that governs when to ship and when to stop. |
+| [MLOps / LLMOps](cards/mlops-llmops.md) | Framework | Advanced | 2, 4 | Running model-based systems with the discipline of software operations: automation and monitoring across the cycle, from data to deployment to re-evaluation. |
