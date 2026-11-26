@@ -2,7 +2,15 @@
 
 ## Unreleased
 
-Nothing yet. Content is frozen: see the [roadmap](ROADMAP.md#content-freeze-26-november-2026).
+Content is frozen: see the [roadmap](ROADMAP.md#content-freeze-26-november-2026).
+
+### The venture journey and the impact ledger (26 November 2026)
+
+- **New section `journey/`**: the Academy's main path. Twelve weeks in four stages (find, build, sell, operate), with three gates passed on evidence and a day-180 follow-up; three routes (founder low-code, founder developer, adopter); four graduation levels, one of them a documented no-go. Six pages: the journey, one per stage with its week-by-week table, and the gates with their criteria and evidence. **No lesson, lab or template was moved or rewritten:** each week links to the existing material.
+- **What is new in substance:** a price question in the week 3 interviews, so that willingness to pay is tested before anything is built; pricing and the paid pilot (lessons 3.2, 3.3, 3.6) read in stage 1; lessons 3.4 and 3.7 used as questions for a session with a lawyer and an accountant; funding and the pitch (4.5, 4.6) left to ventures that have a paying customer; lesson 2.7 optional.
+- **New section `impact/`**: the ledger the Academy is now measured by, with its rules (evidence or "claimed", dropouts published, revenue in bands, no names without consent) and `ledger.csv`, which has its columns and no rows. **Every number is zero.** The planning targets for a first cohort of twelve are hypotheses, from no benchmark.
+- **Both READMEs and the start page lead with the journey and the ledger**; the content counts follow as what the journey draws on. The methodology library, the case studies and the knowledge framework each open with "reference, not the main path". Three issue templates: friction report, host a pilot, outcome report.
+- **Limits.** No participant has taken the journey, and no gate has been applied to anyone; the gate numbers (eight interviews, five working days in shadow mode) are a starting point. The first sector, online stores, rests on templates that have not yet met a real channel or a real business. The Pages landing pages are not changed in this entry.
 
 ## v0.14 (2026-11-26)
 
