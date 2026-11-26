@@ -1949,6 +1949,30 @@
       ],
       "summary_ar": "تشغيل الأنظمة المبنية على النماذج بانضباط تشغيل البرمجيات: أتمتة ومراقبة على امتداد الدورة، من البيانات إلى النشر إلى إعادة التقييم.",
       "summary_en": "Running model-based systems with the discipline of software operations: automation and monitoring across the cycle, from data to deployment to re-evaluation."
+    },
+    {
+      "id": "data-lifecycle",
+      "ar": "دورة حياة البيانات",
+      "en": "Data Lifecycle",
+      "domain": "data",
+      "type": "framework",
+      "tier": "practitioner",
+      "origin": "global",
+      "stages": [
+        3,
+        4
+      ],
+      "sources": [
+        "A253",
+        "A50"
+      ],
+      "licence": "NDMO's standards (Version 1.5) are cited by page; described in the Academy's words, not reproduced. The diagram is the library's own drawing.",
+      "used_in": [
+        "03-courses/03-launch/lessons/3-4-compliance-readiness.md",
+        "02-saudi-market-knowledge-framework/compliance-toolkit/pdpl-self-assessment.md"
+      ],
+      "summary_ar": "خمس مراحل تمر بها كل بيانات: الإنشاء، فالتخزين، فالنقل، فالاستخدام، حتى الإتلاف؛ ولكل مرحلة سؤال يُجاب عنه قبل أن تبدأ.",
+      "summary_en": "Five stages every dataset passes through: creation, storage, movement, usage, retirement; each with a question to answer before it begins."
     }
   ],
   "planned": {
@@ -1962,9 +1986,7 @@
     ],
     "product-project": [],
     "requirements-design": [],
-    "data": [
-      "Data Lifecycle"
-    ],
+    "data": [],
     "agentic-engineering": [
       "Agent Loop",
       "Tool Calling",

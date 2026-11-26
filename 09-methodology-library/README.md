@@ -6,7 +6,7 @@
 
 بطاقة موحّدة لكل نموذج أو منهجية يحتاج إليها رائد الأعمال في رحلته: ما غرضه، ومتى يُستخدم ومتى لا يُستخدم، وخطواته، وقالبه، ومثال توضيحي، وكيف يعين الوكيل الذكي على تطبيقه، وأين يرد في مقررات الأكاديمية وأدواتها.
 
-**في المكتبة الآن 85 بطاقة، و40 نموذجاً تُكتب بطاقاتها تباعاً.** تصفّحها في [صفحة المكتبة](../library.html) بحسب المرحلة والمجال والمستوى.
+**في المكتبة الآن 86 بطاقة، و39 نموذجاً تُكتب بطاقاتها تباعاً.** تصفّحها في [صفحة المكتبة](../library.html) بحسب المرحلة والمجال والمستوى.
 
 **ثلاث قواعد:**
 
@@ -99,6 +99,7 @@
 | [هندسة التعليمات](cards/prompt-engineering.md) (Prompt Engineering) | منهجية | 2 | معروف عالمياً | تحسين التعليمات المكتوبة للنموذج تحسيناً يُقاس: معايير نجاح أولاً، ثم طريقة اختبار، ثم مسودة تُعدَّل وتُعاد. |
 | [مراجعة الشيفرة](cards/code-review.md) (Code Review) | منهجية | 2، 4 | معروف عالمياً | عين ثانية على كل تغيير قبل دمجه؛ والمعيار: هل يحسّن التغيير صحة الشيفرة إجمالاً، لا هل هو كامل. |
 | [قابلية الملاحظة](cards/observability.md) (Observability) | إطار عمل | 4 | معروف عالمياً | أن تفهم ما يجري داخل النظام مما يُصدره: آثار تتبع الطلب، ومقاييس تُجمع عبر الزمن، وسجلات موقوتة. |
+| [دورة حياة البيانات](cards/data-lifecycle.md) (Data Lifecycle) | إطار عمل | 3، 4 | معروف عالمياً | خمس مراحل تمر بها كل بيانات: الإنشاء، فالتخزين، فالنقل، فالاستخدام، حتى الإتلاف؛ ولكل مرحلة سؤال يُجاب عنه قبل أن تبدأ. |
 
 ## المستوى: متقدم
 
@@ -126,8 +127,6 @@
 
 **تأسيس المشروع وإدارته:** Impact-Effort Matrix · AARRR Funnel
 
-**هندسة البيانات وتصميمها:** Data Lifecycle
-
 **هندسة الأنظمة القائمة على الوكلاء:** Agent Loop · Tool Calling · Agent Memory Design · Context Engineering · Agent Design Patterns · Agent Permission Model · Agent Reliability Engineering · Agent2Agent Protocol · Guardrails
 
 **الاختبار والتقييم وضمان الجودة:** Functional Testing · Integration Testing · End-to-End Testing · Performance Testing · Security Testing · Scenario-Based Testing · RAG Evaluation · Regression Testing · Adversarial Testing · Human Evaluation · Golden Dataset
@@ -144,7 +143,7 @@
 
 ## مخططات المكتبة
 
-14 مخططات من رسم الأكاديمية، بأمثلة توضيحية. تُرسم بأداة `tools/build_diagrams.py` من ملف نصي واحد ([diagrams.json](diagrams/diagrams.json))، فيُعدَّل المخطط بتعديل النص، ولا صورة منقولة من موقع آخر.
+15 مخططات من رسم الأكاديمية، بأمثلة توضيحية. تُرسم بأداة `tools/build_diagrams.py` من ملف نصي واحد ([diagrams.json](diagrams/diagrams.json))، فيُعدَّل المخطط بتعديل النص، ولا صورة منقولة من موقع آخر.
 
 - [مخطط الفئات: مطابقة فواتير الموردين](diagrams/class-diagram.svg)
 - [مخطط التسلسل: سؤال عن حالة طلب](diagrams/sequence-diagram.svg)
@@ -160,6 +159,7 @@
 - [مخطط النشاط: طلب استرجاع](diagrams/activity-diagram.svg)
 - [مخطط آلة الحالات: فاتورة مورّد](diagrams/state-machine-diagram.svg)
 - [نموذج C4: مخطط سياق النظام](diagrams/c4-model.svg)
+- [دورة حياة البيانات: خمس مراحل وسؤال لكل مرحلة](diagrams/data-lifecycle.svg)
 
 ## كيف تُضاف بطاقة
 
@@ -171,7 +171,7 @@
 
 One standard card per framework, method or model a founder needs on the way from an opportunity to a growing venture: purpose, when to use it and when not to, steps, a blank template, an illustrative example, how an AI agent helps apply it, and where the Academy's courses and tools use it. Cards are written in Arabic with English terms.
 
-**85 cards so far; 40 more are listed by name and are written in batches.** Browse them on the [library page](../library.html).
+**86 cards so far; 39 more are listed by name and are written in batches.** Browse them on the [library page](../library.html).
 
 Three rules: no card for a known model without a source in the [source register](../SOURCES.md); other people's canvases are described and linked, never copied; a model developed by the Academy is labelled as such and is not presented as a standard. No card has been tried with learners. What was left out of the original proposal is in [not-adopted.md](not-adopted.md).
 
@@ -262,3 +262,4 @@ Three rules: no card for a known model without a source in the [source register]
 | [Observability](cards/observability.md) | Framework | Practitioner | 4 | Understanding what happens inside a system from what it emits: traces that follow a request, metrics aggregated over time, timestamped logs. |
 | [Site Reliability Engineering](cards/site-reliability-engineering.md) | Framework | Advanced | 4 | Reliability that is measured and managed: a service level indicator, an objective for it, and an error budget that governs when to ship and when to stop. |
 | [MLOps / LLMOps](cards/mlops-llmops.md) | Framework | Advanced | 2, 4 | Running model-based systems with the discipline of software operations: automation and monitoring across the cycle, from data to deployment to re-evaluation. |
+| [Data Lifecycle](cards/data-lifecycle.md) | Framework | Practitioner | 3, 4 | Five stages every dataset passes through: creation, storage, movement, usage, retirement; each with a question to answer before it begins. |
