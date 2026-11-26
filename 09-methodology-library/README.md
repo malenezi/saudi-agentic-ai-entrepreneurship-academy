@@ -6,7 +6,7 @@
 
 بطاقة موحّدة لكل نموذج أو منهجية يحتاج إليها رائد الأعمال في رحلته: ما غرضه، ومتى يُستخدم ومتى لا يُستخدم، وخطواته، وقالبه، ومثال توضيحي، وكيف يعين الوكيل الذكي على تطبيقه، وأين يرد في مقررات الأكاديمية وأدواتها.
 
-**في المكتبة الآن 35 بطاقة، و102 نموذجاً تُكتب بطاقاتها تباعاً.** تصفّحها في [صفحة المكتبة](../library.html) بحسب المرحلة والمجال والمستوى.
+**في المكتبة الآن 50 بطاقة، و85 نموذجاً تُكتب بطاقاتها تباعاً.** تصفّحها في [صفحة المكتبة](../library.html) بحسب المرحلة والمجال والمستوى.
 
 **ثلاث قواعد:**
 
@@ -59,12 +59,27 @@
 | [التكامل المستمر والتسليم المستمر](cards/ci-cd.md) (CI/CD) | منهجية | 2، 4 | معروف عالمياً | كل تغيير يُدمج بسرعة ويُفحص آلياً قبل أن يصل إلى أحد؛ ولوكيل ذكي يعني ذلك تشغيل مجموعة التقييم مع كل تغيير. |
 | [تقييم مخرجات النموذج اللغوي](cards/llm-evaluation.md) (LLM Evaluation) | منهجية | 2، 4 | معروف عالمياً | من يحكم على الناتج وكيف: مطابقة بالشيفرة حيث أمكن، ومراجع بشري للحساس، ونموذج حَكَم للحجم الكبير بعد اختباره. |
 | [نمذجة التهديدات](cards/threat-modeling.md) (Threat Modeling) | منهجية | 4 | معروف عالمياً | أربعة أسئلة على رسم النظام: على ماذا نعمل؟ ما الذي قد يسوء؟ ماذا سنفعل حياله؟ وهل أحسنّا؟ |
+| [خريطة التعاطف](cards/empathy-map.md) (Empathy Map) | أداة أو قالب | 1 | معروف عالمياً | أربعة أرباع عن مستخدم واحد: ما يقوله، وما يفكر فيه، وما يفعله، وما يشعر به؛ والمهم ما يتناقض بينها. |
+| [اختبار الأم في مقابلات العملاء](cards/the-mom-test.md) (The Mom Test) | منهجية | 1 | معروف عالمياً | اسأل عن حياة العميل وما فعله، لا عن رأيه في فكرتك؛ المجاملة لا تُشترى بها منتجات. |
+| [خريطة الافتراضات](cards/assumption-mapping.md) (Assumption Mapping) | أداة أو قالب | 1، 3 | معروف عالمياً | ترتيب ما تقوم عليه خطتك بحسب أهميته وما عندك من دليل عليه؛ ما كان مهماً بلا دليل يُختبر أولاً. |
+| [تقدير حجم السوق](cards/tam-sam-som.md) (TAM / SAM / SOM) | نموذج | 1، 4 | معروف عالمياً | ثلاث دوائر: السوق كله، وما تصل إليه قنواتك، وما تستطيع كسبه فعلاً؛ والرقم الذي يُصدَّق يُبنى من أسفل. |
+| [تحليل البيئة الخارجية](cards/pestel-analysis.md) (PESTEL Analysis) | إطار عمل | 1، 4 | معروف عالمياً | ستة أبواب لما يؤثر في المشروع من خارجه: السياسي، والاقتصادي، والاجتماعي، والتقني، والنظامي، والبيئي. |
+| [قوى بورتر الخمس](cards/porters-five-forces.md) (Porter's Five Forces) | إطار عمل | 1، 4 | معروف عالمياً | خمس قوى تحدد أين يذهب الربح في قطاع: المنافسون، والموردون، والعملاء، والداخلون الجدد، والبدائل. |
+| [تحليل SWOT](cards/swot-analysis.md) (SWOT Analysis) | أداة أو قالب | 1، 4 | معروف عالمياً | أربع خانات: نقاط القوة والضعف، والفرص والتهديدات؛ نافع حين ينتهي بقرارات، وعديم النفع حين ينتهي بقائمة. |
+| [خريطة تدفق القيمة](cards/value-stream-mapping.md) (Value Stream Mapping) | نموذج | 1 | معروف عالمياً | رسم كل ما يجري على المعاملة من أولها إلى آخرها، ما يضيف قيمة وما هو هدر، مع الزمن عند كل خطوة وبين الخطوات. |
+| [الأسئلة الخمسة ومخطط عظم السمكة](cards/five-whys-and-fishbone.md) (Five Whys and Fishbone Diagram) | منهجية | 1، 2 | معروف عالمياً | طريقتان للوصول إلى السبب الجذري: سؤال «لماذا؟» مرة بعد مرة، وتصنيف الأسباب المحتملة في فروع. |
+| [مخطط الخدمة](cards/service-blueprint.md) (Service Blueprint) | نموذج | 1، 3 | معروف عالمياً | ربط رحلة العميل بما يجري خلفها: ما يراه العميل، وما يفعله الموظف أمامه، وما يجري خلف الستار، والأنظمة. |
+| [لوحة النموذج الرشيق](cards/lean-canvas.md) (Lean Canvas) | أداة أو قالب | 1، 3 | معروف عالمياً | صيغة من لوحة نموذج العمل للمشاريع في بدايتها: تبدأ بالمشكلة والحل وعرض القيمة الفريد، وتسأل عن المقاييس والميزة. |
+| [نماذج التسعير والإيراد](cards/pricing-and-revenue-models.md) (Pricing and Revenue Models) | نموذج | 3 | من تطوير الأكاديمية | خمسة نماذج لتسعير عمل ينجزه وكيل: لكل مهمة منجزة، لكل نتيجة، اشتراك بحد استخدام، لكل مقعد، إعداد مع تشغيل. |
+| [ملاءمة المنتج للسوق](cards/product-market-fit.md) (Product-Market Fit) | نموذج | 3، 4 | معروف عالمياً | أن يكون المنتج في سوق يريده بما يكفي ليسبق الطلبُ قدرتك على التلبية؛ يُعرف من سلوك العملاء، لا من شعور الفريق. |
+| [نموذج كانو](cards/kano-model.md) (Kano Model) | نموذج | 3 | معروف عالمياً | ليست كل الخصائص سواء: أساسية غيابها يُغضب ووجودها لا يُفرح، وخصائص كلما زادت زاد الرضا، وخصائص تُبهج. |
 
 ## المستوى: متقدم
 
 | النموذج | النوع | المرحلة | المنشأ | خلاصته |
 |---|---|---|---|---|
 | [سجل مخاطر الوكيل](cards/agent-risk-register.md) (Agent Risk Register) | أداة أو قالب | 4 | من تطوير الأكاديمية | سجل بمخاطر هذا المنتج بعينه: الخطر، واحتماله وأثره، والضابط القائم اليوم، ومالكه، وحالته، ودليله. |
+| [استراتيجية المحيط الأزرق](cards/blue-ocean-strategy.md) (Blue Ocean Strategy) | إطار عمل | 1، 4 | معروف عالمياً | بدل منافسة الجميع على العملاء أنفسهم، ابحث عن طلب لم يخدمه أحد، بتميّز أعلى وتكلفة أدنى معاً. |
 
 المرحلة برقم المقرر: 1 اكتشاف الفرصة، 2 بناء الوكيل، 3 الإطلاق والنموذج التجاري، 4 التوسع والحوكمة.
 
@@ -72,9 +87,7 @@
 
 أسماء فقط حتى تُكتب البطاقة ويُتحقق من مصدرها. ترتيب الكتابة: بقية المجالات، ثم المستوى المتقدم.
 
-**اكتشاف الفرص وفهم السوق:** Empathy Map · PESTEL Analysis · Porter's Five Forces · SWOT Analysis · TAM / SAM / SOM · The Mom Test · Assumption Mapping · Value Stream Mapping · Five Whys and Fishbone Diagram · Service Blueprint
-
-**نموذج العمل والقيمة:** Lean Canvas · Unique Value Proposition · Blue Ocean Strategy · Revenue Models · Pricing Models · Competitive Advantage · Product-Market Fit · Kano Model
+**نموذج العمل والقيمة:** Competitive Advantage
 
 **تأسيس المشروع وإدارته:** Disciplined Entrepreneurship · Customer Development · Effectuation · Build-Measure-Learn · Hypothesis-Driven Development · Impact-Effort Matrix · OKRs · Balanced Scorecard · Pre-mortem · North Star Metric · AARRR Funnel
 
@@ -125,7 +138,7 @@
 
 One standard card per framework, method or model a founder needs on the way from an opportunity to a growing venture: purpose, when to use it and when not to, steps, a blank template, an illustrative example, how an AI agent helps apply it, and where the Academy's courses and tools use it. Cards are written in Arabic with English terms.
 
-**35 cards so far; 102 more are listed by name and are written in batches.** Browse them on the [library page](../library.html).
+**50 cards so far; 85 more are listed by name and are written in batches.** Browse them on the [library page](../library.html).
 
 Three rules: no card for a known model without a source in the [source register](../SOURCES.md); other people's canvases are described and linked, never copied; a model developed by the Academy is labelled as such and is not presented as a standard. No card has been tried with learners. What was left out of the original proposal is in [not-adopted.md](not-adopted.md).
 
@@ -166,3 +179,18 @@ Three rules: no card for a known model without a source in the [source register]
 | [CI/CD](cards/ci-cd.md) | Method | Practitioner | 2, 4 | Every change is merged quickly and checked automatically before it reaches anyone; for an agent, that means running the evaluation set on every change. |
 | [LLM Evaluation](cards/llm-evaluation.md) | Method | Practitioner | 2, 4 | Who judges the output and how: code checks where possible, a human for what is sensitive, a judge model for volume once the judge itself is tested. |
 | [Threat Modeling](cards/threat-modeling.md) | Method | Practitioner | 4 | Four questions asked over a drawing of the system: what are we working on, what can go wrong, what will we do about it, did we do a good enough job. |
+| [Empathy Map](cards/empathy-map.md) | Tool or template | Practitioner | 1 | Four quadrants about one user: says, thinks, does, feels. The useful part is where they contradict each other. |
+| [The Mom Test](cards/the-mom-test.md) | Method | Practitioner | 1 | Ask about the customer's life and what they did, not what they think of your idea; compliments do not buy products. |
+| [Assumption Mapping](cards/assumption-mapping.md) | Tool or template | Practitioner | 1, 3 | Rank what the plan rests on by importance and by the evidence you hold; what is important and unproven is tested first. |
+| [TAM / SAM / SOM](cards/tam-sam-som.md) | Model | Practitioner | 1, 4 | Three circles: the whole market, what your channels reach, what you can really win. The figure people believe is built bottom-up. |
+| [PESTEL Analysis](cards/pestel-analysis.md) | Framework | Practitioner | 1, 4 | Six headings for what affects the venture from outside: political, economic, social, technological, legal, environmental. |
+| [Porter's Five Forces](cards/porters-five-forces.md) | Framework | Practitioner | 1, 4 | Five forces that decide where profit goes in an industry: rivals, suppliers, customers, new entrants, substitutes. |
+| [SWOT Analysis](cards/swot-analysis.md) | Tool or template | Practitioner | 1, 4 | Four boxes: strengths, weaknesses, opportunities, threats. Useful when it ends in decisions, useless when it ends in a list. |
+| [Value Stream Mapping](cards/value-stream-mapping.md) | Model | Practitioner | 1 | Draw everything that happens to one transaction end to end, value-adding and waste, with the time at and between steps. |
+| [Five Whys and Fishbone Diagram](cards/five-whys-and-fishbone.md) | Method | Practitioner | 1, 2 | Two ways to reach a root cause: asking why again and again, and sorting the possible causes into branches. |
+| [Service Blueprint](cards/service-blueprint.md) | Model | Practitioner | 1, 3 | Tie the customer's journey to what happens behind it: what the customer sees, frontstage actions, backstage actions, and processes. |
+| [Lean Canvas](cards/lean-canvas.md) | Tool or template | Practitioner | 1, 3 | A variant of the business model canvas for early ventures: it starts from the problem, the solution and the unique value proposition, and asks for metrics and advantage. |
+| [Pricing and Revenue Models](cards/pricing-and-revenue-models.md) | Model | Practitioner | 3 | Five ways to price work an agent does: per resolved task, per outcome, subscription with a usage cap, per seat, setup plus running fee. |
+| [Product-Market Fit](cards/product-market-fit.md) | Model | Practitioner | 3, 4 | Being in a market that wants the product enough for demand to outrun your ability to serve it; read from customer behaviour, not the team's feeling. |
+| [Kano Model](cards/kano-model.md) | Model | Practitioner | 3 | Features are not equal: must-be ones whose absence angers and presence goes unnoticed, ones where more is better, and ones that delight. |
+| [Blue Ocean Strategy](cards/blue-ocean-strategy.md) | Framework | Advanced | 1, 4 | Rather than fight everyone for the same customers, look for demand nobody serves, with higher differentiation and lower cost at once. |

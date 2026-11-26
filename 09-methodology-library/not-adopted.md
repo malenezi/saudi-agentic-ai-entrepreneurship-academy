@@ -19,6 +19,8 @@
 | Agent Architecture Canvas | [بطاقة معمارية الوكيل](cards/agent-architecture.md)، وقالبها مخطط المنتج الأولي | بطاقة ثانية للقالب نفسه تكرار |
 | Agent Evaluation Canvas | [بطاقة تقييم الوكيل](cards/agent-evaluation.md)، وقالبها قالب التقييم في المختبر | بطاقة ثانية للقالب نفسه تكرار |
 | Multi-Agent Architecture، Agent Orchestration، Multi-Agent Systems Design | [بطاقة تنسيق عدة وكلاء](cards/multi-agent-orchestration.md) | ثلاثة أسماء لموضوع واحد |
+| Unique Value Proposition | [بطاقة لوحة النموذج الرشيق](cards/lean-canvas.md) | خانة من خانات اللوحة |
+| Revenue Model و Pricing Models | [بطاقة نماذج التسعير والإيراد](cards/pricing-and-revenue-models.md) | موضوع واحد، وجدوله قائم في الحقيبة |
 | Agent ROI Calculator | [بطاقة العائد عند العميل](cards/buyer-return.md) | الحاسبة قائمة باسم آخر |
 | Agent Risk Register | [بطاقة سجل مخاطر الوكيل](cards/agent-risk-register.md)، وقالبها في عدّة الامتثال | القالب قائم |
 

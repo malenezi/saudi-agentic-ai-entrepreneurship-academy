@@ -2,6 +2,13 @@
 
 ## Unreleased
 
+### Methodology library, fourth batch: opportunity discovery and the business model (26 November 2026)
+
+- **Fifteen cards.** Opportunity: Empathy Map, The Mom Test, Assumption Mapping, TAM / SAM / SOM, PESTEL Analysis, Porter's Five Forces, SWOT Analysis, Value Stream Mapping, Five Whys and Fishbone Diagram, Service Blueprint. Business model: Lean Canvas, Pricing and Revenue Models, Product-Market Fit, Kano Model, Blue Ocean Strategy. The library has 50 cards and lists 85 more by name; the opportunity domain is complete.
+- **Merged.** Unique Value Proposition is a section of the Lean Canvas card; Revenue Model and Pricing Models are one card, labelled as the Academy's own classification because its five-model table already lived in toolkit template 5.
+- **Sources A206 to A217, each from the opened page** (fetched, not search extracts). Where a page did not say what the proposal assumed, the card says so: The Mom Test's site states no rules and the book was not read, so the card names the book and uses the Academy's own interview questions; CIPD's SWOT factsheet does not label internal and external; Andreessen's essay sets no numeric threshold for product-market fit. Two definitions rest on Wikipedia and are marked as vocabulary only.
+- **Limits.** No card tried with a learner. Porter's article was read only as far as the open page shows. Blue Ocean's own tools are not reproduced. Competitive Advantage has no card yet.
+
 ### Methodology library, third batch: the practitioner tier and diagrams (26 November 2026)
 
 - **Thirteen cards:** UML Class Diagram, Sequence Diagram, Entity Relationship Diagram, Data Flow Diagram, Swimlane Diagram, Retrieval-Augmented Generation, Model Context Protocol, Multi-Agent Orchestration, Spec-Driven Development, Technical Debt Management, CI/CD, LLM Evaluation, Threat Modeling. The library has 35 cards and lists 102 more by name. Multi-Agent Architecture and Agent Orchestration became one card.
