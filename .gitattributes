@@ -4,6 +4,6 @@
 03-courses/*/slides/*.html linguist-generated=true
 index.html linguist-generated=true
 index.en.html linguist-generated=true
-library.html linguist-generated
+library.html linguist-generated=true
 site-index.json linguist-generated=true
 *.n8n.json linguist-generated=true
