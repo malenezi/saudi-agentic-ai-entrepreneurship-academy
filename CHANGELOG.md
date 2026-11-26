@@ -2,6 +2,21 @@
 
 ## Unreleased
 
+Nothing yet. Content is frozen: see the [roadmap](ROADMAP.md#content-freeze-26-november-2026).
+
+## v0.14 (2026-11-26)
+
+An HTTP runner with an audit log, a code-side check for a second request in template 1, a third local-model run, a four-video series, and a methodology library of 86 cards. **This is the last content release before a first cohort.**
+
+**Still true: no course has been piloted, and no lawyer or tax adviser has reviewed the framework. Nothing in this release was tried with a business or with learners.**
+
+### Content freeze (26 November 2026)
+
+- **Decided by the owner after a strategic review of the whole repository.** In eleven days the Academy reached four written courses, twelve framework domains, twelve founder agents, five runnable templates and 86 library cards. It has not yet been used by one founder. What it lacks is people, not pages.
+- **What stops.** New lessons, decks, quizzes, library cards, methodology agents, case and venture pages, framework restorations, funding-directory entries and synthetic model runs. The methodology library closes at 86 cards; the 39 names still waiting stay listed and unwritten.
+- **What continues.** Corrections to anything wrong; the pieces a first cohort needs (a one-page journey, three evidence gates, an impact ledger, one integration recipe); and changes that a real participant or a real business shows to be needed.
+- **What comes next.** One template run in shadow mode in a real online store, then a cohort of twelve builders after Eid al-Fitr 2027. Details in the [roadmap](ROADMAP.md).
+
 ### Methodology library: Data Lifecycle card (26 November 2026)
 
 - **One card and one diagram.** Data Lifecycle, held back in the sixth batch because a secondary explainer named the stages only in an image. NDMO's standards (v1.5) were then read and name them in their text: creation, storage, movement, usage, retirement (p. 9). The card adds a question for each stage and a per-dataset table; the diagram is the library's fifteenth. 86 cards; 39 names wait.

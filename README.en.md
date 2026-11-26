@@ -27,7 +27,7 @@ The agent looks up the order and drafts the reply. Not a coder? [Start in an hou
 
 Founded and maintained by **Prof. Mamdouh Alenezi** as an independent personal initiative, and developed with community contributions.
 
-**Status:** v0.13 ([changelog](CHANGELOG.md) · [roadmap](ROADMAP.md) · [release readiness](RELEASE-READINESS.md)) · Last reviewed: 24 November 2026
+**Status:** v0.14, content frozen until a first cohort has run ([why](ROADMAP.md#content-freeze-26-november-2026)) ([changelog](CHANGELOG.md) · [roadmap](ROADMAP.md) · [release readiness](RELEASE-READINESS.md)) · Last reviewed: 26 November 2026
 
 | First visit? | Want to see the slides? | Want to contribute? |
 |---|---|---|
