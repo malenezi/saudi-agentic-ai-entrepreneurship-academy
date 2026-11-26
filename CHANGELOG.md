@@ -2,6 +2,14 @@
 
 ## Unreleased
 
+### Methodology library, fifth batch: venture formation and product management (26 November 2026)
+
+- **Sixteen cards.** Venture: Disciplined Entrepreneurship, Customer Development, Effectuation, OKRs, Balanced Scorecard, Pre-mortem, North Star Metric. Product and project: Scrum, Work Breakdown Structure, Product Roadmap, User Stories and Acceptance Criteria, RACI Matrix, MoSCoW Prioritization, RICE Scoring, Critical Path Method, BPMN. The library has 66 cards and lists 66 more by name.
+- **Merged.** Build-Measure-Learn and Hypothesis-Driven Development are covered by the Lean Startup card; Risk Matrix by the agent risk register card.
+- **Held back for want of a source.** Impact-Effort Matrix and AARRR Funnel stay on the waiting list: the page opened for each did not state what a card would need (NN/g's article does not define the matrix or name its quadrants; the 2007 post does not list the five stages). Recorded in the library's `not-adopted.md`.
+- **Sources A218 to A233, each from the fetched page.** Where a page stopped short, the card says so and claims no more: the Disciplined Entrepreneurship card names the framework and does not list its 24 steps (the site does not, and the book was not read); the Customer Development card rests on the open introduction of Blank's article plus A189 for the term; the WBS card does not attribute the "100% rule"; the effectuation card does not name the theory's originator because the page does not. The draft's Arabic rendering of Effectuation as «التفكير الاحتمالي» is replaced by «منطق التأثير».
+- **Limits.** Four definitions come from vendors writing about their own field (Atlassian twice, Amplitude, Intercom), marked as such. No card tried with a learner.
+
 ### Methodology library, fourth batch: opportunity discovery and the business model (26 November 2026)
 
 - **Fifteen cards.** Opportunity: Empathy Map, The Mom Test, Assumption Mapping, TAM / SAM / SOM, PESTEL Analysis, Porter's Five Forces, SWOT Analysis, Value Stream Mapping, Five Whys and Fishbone Diagram, Service Blueprint. Business model: Lean Canvas, Pricing and Revenue Models, Product-Market Fit, Kano Model, Blue Ocean Strategy. The library has 50 cards and lists 85 more by name; the opportunity domain is complete.

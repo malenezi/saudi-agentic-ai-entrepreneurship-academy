@@ -6,7 +6,7 @@
 
 بطاقة موحّدة لكل نموذج أو منهجية يحتاج إليها رائد الأعمال في رحلته: ما غرضه، ومتى يُستخدم ومتى لا يُستخدم، وخطواته، وقالبه، ومثال توضيحي، وكيف يعين الوكيل الذكي على تطبيقه، وأين يرد في مقررات الأكاديمية وأدواتها.
 
-**في المكتبة الآن 50 بطاقة، و85 نموذجاً تُكتب بطاقاتها تباعاً.** تصفّحها في [صفحة المكتبة](../library.html) بحسب المرحلة والمجال والمستوى.
+**في المكتبة الآن 66 بطاقة، و66 نموذجاً تُكتب بطاقاتها تباعاً.** تصفّحها في [صفحة المكتبة](../library.html) بحسب المرحلة والمجال والمستوى.
 
 **ثلاث قواعد:**
 
@@ -73,6 +73,17 @@
 | [نماذج التسعير والإيراد](cards/pricing-and-revenue-models.md) (Pricing and Revenue Models) | نموذج | 3 | من تطوير الأكاديمية | خمسة نماذج لتسعير عمل ينجزه وكيل: لكل مهمة منجزة، لكل نتيجة، اشتراك بحد استخدام، لكل مقعد، إعداد مع تشغيل. |
 | [ملاءمة المنتج للسوق](cards/product-market-fit.md) (Product-Market Fit) | نموذج | 3، 4 | معروف عالمياً | أن يكون المنتج في سوق يريده بما يكفي ليسبق الطلبُ قدرتك على التلبية؛ يُعرف من سلوك العملاء، لا من شعور الفريق. |
 | [نموذج كانو](cards/kano-model.md) (Kano Model) | نموذج | 3 | معروف عالمياً | ليست كل الخصائص سواء: أساسية غيابها يُغضب ووجودها لا يُفرح، وخصائص كلما زادت زاد الرضا، وخصائص تُبهج. |
+| [تطوير العملاء](cards/customer-development.md) (Customer Development) | منهجية | 1 | معروف عالمياً | المشروع الناشئ يبحث عن نموذج عمل، ولا ينفّذ خطة: يكتب فرضياته، ويخرج إلى العملاء ليختبرها، ويعدّل. |
+| [الأهداف والنتائج الرئيسية](cards/okrs.md) (OKRs) | إطار عمل | 4 | معروف عالمياً | هدف واحد واضح، وثلاث نتائج إلى خمس تُقاس وتدل على بلوغه؛ النتيجة رقم يتغير، لا مهمة تُنجز. |
+| [تشريح الفشل قبل وقوعه](cards/pre-mortem.md) (Pre-mortem) | منهجية | 3، 4 | معروف عالمياً | قبل البدء، تخيّل أن المشروع فشل، واسأل الفريق: لماذا؟ ثم قوِّ الخطة بما قيل. |
+| [مؤشر النجم القطبي](cards/north-star-metric.md) (North Star Metric) | نموذج | 3، 4 | معروف عالمياً | رقم واحد يقيس القيمة التي يحصل عليها العميل من المنتج، ويتّجه إليه الفريق كله. |
+| [سكرم](cards/scrum.md) (Scrum) | إطار عمل | 2، 3 | معروف عالمياً | إطار خفيف للعمل في دورات قصيرة ثابتة المدة، بثلاث مسؤوليات وخمسة أحداث وثلاثة مخرجات. |
+| [هيكل تقسيم العمل](cards/work-breakdown-structure.md) (Work Breakdown Structure (WBS)) | أداة أو قالب | 2، 3 | معروف عالمياً | شجرة تقسّم المشروع إلى مخرجات، ثم إلى أجزاء أصغر، حتى يصير كل جزء مما يُقدَّر ويُسند ويُتحقق من إنجازه. |
+| [خارطة طريق المنتج](cards/product-roadmap.md) (Product Roadmap) | أداة أو قالب | 3، 4 | معروف عالمياً | مرجع مشترك يبيّن وجهة المنتج وأولوياته وما تقدّم فيه عبر الزمن، بلغة يفهمها كل من يهمه. |
+| [قصص المستخدم ومعايير القبول](cards/user-stories-and-acceptance-criteria.md) (User Stories and Acceptance Criteria) | أداة أو قالب | 2 | معروف عالمياً | كل متطلب جملة بلسان المستخدم: من، وماذا يريد، ولماذا؛ ومعها شروط محددة يُعرف بها أنه تحقق. |
+| [مصفوفة RACI](cards/raci-matrix.md) (RACI Matrix) | أداة أو قالب | 2، 4 | معروف عالمياً | لكل مهمة: من ينفّذ، ومن يُحاسَب، ومن يُستشار، ومن يُبلَّغ. والمحاسَب واحد، وإنسان. |
+| [ترتيب الأولويات بطريقة MoSCoW](cards/moscow-prioritization.md) (MoSCoW Prioritization) | منهجية | 3 | معروف عالمياً | أربع فئات للمتطلبات: لا بد منه، ينبغي، يمكن، ولن يكون هذه المرة؛ والأخيرة أهمها. |
+| [ترتيب الأولويات بطريقة RICE](cards/rice-scoring.md) (RICE Scoring) | منهجية | 2، 3 | معروف عالمياً | درجة لكل مبادرة: الوصول × الأثر × الثقة ÷ الجهد؛ تجعل المفاضلة حديثاً عن أرقام لا عن أصوات. |
 
 ## المستوى: متقدم
 
@@ -80,6 +91,11 @@
 |---|---|---|---|---|
 | [سجل مخاطر الوكيل](cards/agent-risk-register.md) (Agent Risk Register) | أداة أو قالب | 4 | من تطوير الأكاديمية | سجل بمخاطر هذا المنتج بعينه: الخطر، واحتماله وأثره، والضابط القائم اليوم، ومالكه، وحالته، ودليله. |
 | [استراتيجية المحيط الأزرق](cards/blue-ocean-strategy.md) (Blue Ocean Strategy) | إطار عمل | 1، 4 | معروف عالمياً | بدل منافسة الجميع على العملاء أنفسهم، ابحث عن طلب لم يخدمه أحد، بتميّز أعلى وتكلفة أدنى معاً. |
+| [ريادة الأعمال المنضبطة](cards/disciplined-entrepreneurship.md) (Disciplined Entrepreneurship) | إطار عمل | 1، 3، 4 | معروف عالمياً | مسار منظّم من أربع وعشرين خطوة لتحويل فكرة أو تقنية إلى شركة، من MIT؛ يُعرَّف به هنا ويُقارَن بمسار الأكاديمية. |
+| [منطق التأثير](cards/effectuation.md) (Effectuation) | إطار عمل | 1، 3 | معروف عالمياً | ابدأ بما في يدك لا بتوقّع المستقبل: من أنت، وماذا تعرف، ومن تعرف؛ وخاطر بما تحتمل خسارته، وابنِ مع من يلتزم. |
+| [بطاقة الأداء المتوازن](cards/balanced-scorecard.md) (Balanced Scorecard) | إطار عمل | 4 | معروف عالمياً | أربع زوايا للأداء بدل زاوية المال وحدها: المالية، والعملاء، والعمليات الداخلية، والتعلّم والنمو. |
+| [طريقة المسار الحرج](cards/critical-path-method.md) (Critical Path Method (CPM)) | منهجية | 3 | معروف عالمياً | سلسلة الأنشطة التي لا تحتمل تأخيراً: كل يوم تتأخره يؤخر المشروع كله؛ وما عداها له هامش. |
+| [ترميز نمذجة إجراءات العمل](cards/bpmn.md) (BPMN) | نموذج | 1 | معروف عالمياً | المعيار الرسمي لرسم إجراءات العمل، من Object Management Group؛ يلزمك حين يطلبه العميل أو تتبادل المخططات مع أنظمته. |
 
 المرحلة برقم المقرر: 1 اكتشاف الفرصة، 2 بناء الوكيل، 3 الإطلاق والنموذج التجاري، 4 التوسع والحوكمة.
 
@@ -89,9 +105,7 @@
 
 **نموذج العمل والقيمة:** Competitive Advantage
 
-**تأسيس المشروع وإدارته:** Disciplined Entrepreneurship · Customer Development · Effectuation · Build-Measure-Learn · Hypothesis-Driven Development · Impact-Effort Matrix · OKRs · Balanced Scorecard · Pre-mortem · North Star Metric · AARRR Funnel
-
-**إدارة المنتجات والمشاريع:** Scrum · Work Breakdown Structure · Product Roadmap · User Stories and Acceptance Criteria · RACI Matrix · MoSCoW Prioritization · RICE Scoring · Risk Matrix · Critical Path Method · BPMN
+**تأسيس المشروع وإدارته:** Impact-Effort Matrix · AARRR Funnel
 
 **تحليل المتطلبات وتصميم الأنظمة:** Use Case Diagram · Activity Diagram · State Machine Diagram · Component Diagram · Deployment Diagram · System Context Diagram · C4 Model · Software Requirements Specification · Software Architecture · Architecture Decision Records
 
@@ -138,7 +152,7 @@
 
 One standard card per framework, method or model a founder needs on the way from an opportunity to a growing venture: purpose, when to use it and when not to, steps, a blank template, an illustrative example, how an AI agent helps apply it, and where the Academy's courses and tools use it. Cards are written in Arabic with English terms.
 
-**50 cards so far; 85 more are listed by name and are written in batches.** Browse them on the [library page](../library.html).
+**66 cards so far; 66 more are listed by name and are written in batches.** Browse them on the [library page](../library.html).
 
 Three rules: no card for a known model without a source in the [source register](../SOURCES.md); other people's canvases are described and linked, never copied; a model developed by the Academy is labelled as such and is not presented as a standard. No card has been tried with learners. What was left out of the original proposal is in [not-adopted.md](not-adopted.md).
 
@@ -194,3 +208,19 @@ Three rules: no card for a known model without a source in the [source register]
 | [Product-Market Fit](cards/product-market-fit.md) | Model | Practitioner | 3, 4 | Being in a market that wants the product enough for demand to outrun your ability to serve it; read from customer behaviour, not the team's feeling. |
 | [Kano Model](cards/kano-model.md) | Model | Practitioner | 3 | Features are not equal: must-be ones whose absence angers and presence goes unnoticed, ones where more is better, and ones that delight. |
 | [Blue Ocean Strategy](cards/blue-ocean-strategy.md) | Framework | Advanced | 1, 4 | Rather than fight everyone for the same customers, look for demand nobody serves, with higher differentiation and lower cost at once. |
+| [Disciplined Entrepreneurship](cards/disciplined-entrepreneurship.md) | Framework | Advanced | 1, 3, 4 | A structured 24-step path from an idea or a technology to a company, from MIT; introduced here and set beside the Academy's own path. |
+| [Customer Development](cards/customer-development.md) | Method | Practitioner | 1 | A startup searches for a business model rather than executing a plan: it writes its hypotheses, goes to customers to test them, and adjusts. |
+| [Effectuation](cards/effectuation.md) | Framework | Advanced | 1, 3 | Start from what you have rather than from a forecast: who you are, what you know, whom you know; risk what you can afford to lose, and build with those who commit. |
+| [OKRs](cards/okrs.md) | Framework | Practitioner | 4 | One clear objective and three to five measurable results that show it was reached; a result is a number that moves, not a task done. |
+| [Balanced Scorecard](cards/balanced-scorecard.md) | Framework | Advanced | 4 | Four views of performance instead of money alone: financial, customer, internal process, learning and growth. |
+| [Pre-mortem](cards/pre-mortem.md) | Method | Practitioner | 3, 4 | Before starting, imagine the project has failed and ask the team why; then strengthen the plan with what was said. |
+| [North Star Metric](cards/north-star-metric.md) | Model | Practitioner | 3, 4 | One number that measures the value customers get from the product and that the whole team steers by. |
+| [Scrum](cards/scrum.md) | Framework | Practitioner | 2, 3 | A lightweight framework for working in short fixed-length cycles, with three accountabilities, five events and three artifacts. |
+| [Work Breakdown Structure (WBS)](cards/work-breakdown-structure.md) | Tool or template | Practitioner | 2, 3 | A tree that splits the project into deliverables and then into smaller parts, until each part can be estimated, assigned and checked. |
+| [Product Roadmap](cards/product-roadmap.md) | Tool or template | Practitioner | 3, 4 | A shared reference showing the product's direction, priorities and progress over time, in words every audience understands. |
+| [User Stories and Acceptance Criteria](cards/user-stories-and-acceptance-criteria.md) | Tool or template | Practitioner | 2 | Each requirement is a sentence in the user's voice: who, what they want and why; with specific conditions that show it is met. |
+| [RACI Matrix](cards/raci-matrix.md) | Tool or template | Practitioner | 2, 4 | For every task: who does it, who answers for it, who is consulted, who is informed. One person answers, and that person is human. |
+| [MoSCoW Prioritization](cards/moscow-prioritization.md) | Method | Practitioner | 3 | Four classes of requirement: must have, should have, could have, and won't have this time; the last one matters most. |
+| [RICE Scoring](cards/rice-scoring.md) | Method | Practitioner | 2, 3 | A score per initiative: reach × impact × confidence ÷ effort; it turns prioritisation into a talk about numbers rather than voices. |
+| [Critical Path Method (CPM)](cards/critical-path-method.md) | Method | Advanced | 3 | The chain of activities with no slack: each day they slip delays the whole project; everything else has float. |
+| [BPMN](cards/bpmn.md) | Model | Advanced | 1 | The formal standard for drawing business processes, from the Object Management Group; needed when the customer asks for it or diagrams are exchanged with their systems. |

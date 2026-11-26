@@ -21,6 +21,8 @@
 | Multi-Agent Architecture، Agent Orchestration، Multi-Agent Systems Design | [بطاقة تنسيق عدة وكلاء](cards/multi-agent-orchestration.md) | ثلاثة أسماء لموضوع واحد |
 | Unique Value Proposition | [بطاقة لوحة النموذج الرشيق](cards/lean-canvas.md) | خانة من خانات اللوحة |
 | Revenue Model و Pricing Models | [بطاقة نماذج التسعير والإيراد](cards/pricing-and-revenue-models.md) | موضوع واحد، وجدوله قائم في الحقيبة |
+| Build-Measure-Learn و Hypothesis-Driven Development | [بطاقة الشركة الناشئة الرشيقة](cards/lean-startup.md) | الحلقة وبطاقة الاختبار جزآن من المنهجية نفسها |
+| Risk Matrix | [بطاقة سجل مخاطر الوكيل](cards/agent-risk-register.md) | مقياس الاحتمال والأثر قائم فيه |
 | Agent ROI Calculator | [بطاقة العائد عند العميل](cards/buyer-return.md) | الحاسبة قائمة باسم آخر |
 | Agent Risk Register | [بطاقة سجل مخاطر الوكيل](cards/agent-risk-register.md)، وقالبها في عدّة الامتثال | القالب قائم |
 
@@ -47,6 +49,10 @@
 ## ما لم يُعَد فتحه
 
 استُبعد في الوحدة 1.4 مقياس للاستقلالية من 0 إلى 4، و«بطاقة فرصة» من عشرة حقول ([سجل المقرر الأول](../03-courses/01-opportunity/not-adopted.md)). المقترح يعيدهما باسمين جديدين. القرار باقٍ: للاستقلالية [سلّم الوحدة 1.1](../03-courses/01-opportunity/lessons/1-1-from-chatbots-to-agents.md) من 0 إلى 5، ولكل فعل مستوى إشراف من A إلى D في [مصفوفة الإشراف البشري](../02-saudi-market-knowledge-framework/compliance-toolkit/human-oversight-matrix.md)، ولتقييم الفرص المعايير التسعة في قالب الحقيبة. البطاقات تحيل إلى هذه الثلاثة ولا تضيف مقياساً رابعاً.
+
+## ما ينتظر مصدراً
+
+اسمان باقيان في قائمة الانتظار لأن الصفحة التي فُتحت لكل منهما لم تقل ما يلزم للبطاقة: **Impact-Effort Matrix** (مقالة Nielsen Norman Group عن مصفوفات الأولويات لا تعرّفها ولا تسمّي أرباعها)، و**AARRR Funnel** (تدوينة 2007 المفتوحة لا تسرد مراحله الخمس). لا تُكتب بطاقة أي منهما حتى يُفتح مصدر يقول ذلك صراحةً.
 
 ## نماذج الأكاديمية: ما كان قائماً وما هو جديد
 
