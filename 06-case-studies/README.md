@@ -2,6 +2,8 @@
 
 <div dir="rtl">
 
+> **مرجع، لا مسار.** المسار الرئيس في الأكاديمية هو [رحلة المشروع](../journey/README.md). هذا القسم يُرجع إليه عند الحاجة، وهو مجمَّد عند محتواه الحالي إلى أن يُنجَز أول فوج. · *Reference, not the main path: see the [venture journey](../journey/README.md). Frozen until a first cohort has run.*
+
 آخر مراجعة للمصادر: **22 نوفمبر 2026** · أُعيدت هيكلة الفهرس وأُضيفت ست عشرة صفحة في هذا التاريخ
 
 ## الغرض

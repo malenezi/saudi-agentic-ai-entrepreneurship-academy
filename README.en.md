@@ -8,6 +8,19 @@
 
 Two thirds of Saudi establishments have not started using AI (GASTAT, 2025). Founders who want to serve them find guidance that is generic, in English, and silent on Saudi regulation. SAAEA is a free, Arabic-first path from a real problem inside a Saudi business to a working agent and a paying customer.
 
+**The main path is the [venture journey](journey/README.md):** twelve weeks in four stages, with progress decided at three gates passed on evidence.
+
+| Stage | You leave with | Gate |
+|---|---|---|
+| [1. Find](journey/1-find.md) | A problem a named business will pay to solve | Problem evidence |
+| [2. Build](journey/2-build.md) | An agent doing the real work beside staff | Agent in shadow mode in a real business |
+| [3. Sell](journey/3-sell.md) | A paid pilot on signed terms | A business has paid |
+| [4. Operate](journey/4-operate.md) | A retained customer or a measured saving | Day-180 follow-up |
+
+**How the Academy is measured:** by the [impact ledger](impact/README.md): problems participants validated, agents running in real businesses, and paying customers. **Every number is zero today:** no cohort has started, and the first is planned after Eid al-Fitr 2027. Content is [frozen](ROADMAP.md#content-freeze-26-november-2026) until it has run.
+
+What the journey draws on in this repository:
+
 - **4 courses, 28 lessons, 76 hours**, each lesson with a deck and a quiz, on a low-code track and a coding track
 - **Saudi Market Knowledge Framework:** 12 domains, every fact sourced and dated
 - **12 founder agents** you paste into any AI assistant
@@ -211,6 +224,8 @@ Details and conditions are in [CONTRIBUTING.md](CONTRIBUTING.md) and the [code o
 
 | Path | Contents |
 |---|---|
+| [`journey/`](journey/README.md) | **The main path:** the twelve-week venture journey, its four stages and three gates |
+| [`impact/`](impact/README.md) | The impact ledger: what participants achieved, with its evidence rules |
 | [`01-academy/`](01-academy/) | Vision and mission, learning framework, competency framework, learning pathways, instructor kit |
 | [`02-saudi-market-knowledge-framework/`](02-saudi-market-knowledge-framework/README.md) | The twelve domains, the regulatory register, the [official directory](02-saudi-market-knowledge-framework/official-directory.md), the compliance toolkit, founder agents |
 | [`03-courses/`](03-courses/README.md) | The four courses, their guides, the completion standard and the validation files |
