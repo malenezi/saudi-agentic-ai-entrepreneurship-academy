@@ -104,6 +104,10 @@ Four performance levels per criterion, the validation gates and a checkpoint for
 
 **Note.** Modules 3.4 and 3.7 are educational and are not legal or tax advice; neither has been reviewed by a lawyer or a tax adviser. Module 3.7 is orientation only. Company formation, data protection, tax and licensing rules change; follow the official portals and take professional advice.
 
+## Methodology cards
+
+The frameworks this course leans on, each on one standard card in the [methodology library](../../09-methodology-library/README.md): [Minimum Viable Product (MVP)](../../09-methodology-library/cards/minimum-viable-product.md) · [Business Model Canvas](../../09-methodology-library/cards/business-model-canvas.md) · [Unit Economics](../../09-methodology-library/cards/unit-economics.md) · [Go-to-Market Strategy (GTM)](../../09-methodology-library/cards/go-to-market.md) · [Value Proposition Canvas](../../09-methodology-library/cards/value-proposition-canvas.md) · [Lean Startup](../../09-methodology-library/cards/lean-startup.md) · [Customer Journey Map](../../09-methodology-library/cards/customer-journey-map.md) · [Kanban](../../09-methodology-library/cards/kanban.md). The cards explain a model and point back here; deliverables are still graded with this course's templates and rubric.
+
 ## Companion tools (optional)
 
 Separate repositories by the same author; see [companion repositories](../../07-resources/companion-repositories.md). The deliverable is graded with the Academy's templates.

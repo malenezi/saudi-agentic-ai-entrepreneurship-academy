@@ -1,0 +1,480 @@
+{
+  "note": "Registry of the methodology library. One entry per card in cards/. 'planned' lists names only; a name moves to 'cards' when its card is written and its source is in SOURCES.md section A. Read by tools/build_library.py.",
+  "cards": [
+    {
+      "id": "design-thinking",
+      "ar": "التفكير التصميمي",
+      "en": "Design Thinking",
+      "domain": "opportunity",
+      "type": "method",
+      "tier": "essential",
+      "origin": "global",
+      "stages": [
+        1
+      ],
+      "sources": [
+        "A185"
+      ],
+      "licence": "Described in the Academy's words; the d.school guide is not copied.",
+      "used_in": [
+        "03-courses/01-opportunity/lessons/1-4-workflow-shadowing.md",
+        "03-courses/01-opportunity/lessons/1-5-customer-discovery.md"
+      ],
+      "summary_ar": "فهم مشكلة المستخدم من موقعه قبل اقتراح أي حل، عبر خمسة أطوار تنتهي باختبار نموذج أولي.",
+      "summary_en": "Understand the user's problem where it happens before proposing a solution; five modes ending in a tested prototype."
+    },
+    {
+      "id": "jobs-to-be-done",
+      "ar": "المهام المطلوب إنجازها",
+      "en": "Jobs to Be Done",
+      "domain": "opportunity",
+      "type": "framework",
+      "tier": "essential",
+      "origin": "global",
+      "stages": [
+        1
+      ],
+      "sources": [
+        "A186"
+      ],
+      "licence": "Described in the Academy's words; the article is cited, not reproduced.",
+      "used_in": [
+        "03-courses/01-opportunity/lessons/1-5-customer-discovery.md",
+        "04-entrepreneur-toolkit/03-customer-discovery.md"
+      ],
+      "summary_ar": "العميل لا يشتري منتجاً بل «يوظّفه» لإنجاز مهمة في موقف محدد؛ افهم المهمة تفهم البدائل الحقيقية.",
+      "summary_en": "Customers hire a product to get a job done in a specific situation; the job reveals the real alternatives."
+    },
+    {
+      "id": "value-proposition-canvas",
+      "ar": "لوحة عرض القيمة",
+      "en": "Value Proposition Canvas",
+      "domain": "business-model",
+      "type": "tool",
+      "tier": "essential",
+      "origin": "global",
+      "stages": [
+        1,
+        3
+      ],
+      "sources": [
+        "A187"
+      ],
+      "licence": "Copyright Strategyzer AG; adaptations and inclusion in software reserved. Described and linked only.",
+      "used_in": [
+        "04-entrepreneur-toolkit/01-startup-idea-canvas.md",
+        "03-courses/01-opportunity/templates/thesis-template.md"
+      ],
+      "summary_ar": "مطابقة ما يقدّمه منتجك لمهام العميل وآلامه ومكاسبه، بنداً ببند.",
+      "summary_en": "Match what the product offers to the customer's jobs, pains and gains, item by item."
+    },
+    {
+      "id": "business-model-canvas",
+      "ar": "لوحة نموذج العمل",
+      "en": "Business Model Canvas",
+      "domain": "business-model",
+      "type": "tool",
+      "tier": "essential",
+      "origin": "global",
+      "stages": [
+        3
+      ],
+      "sources": [
+        "A187"
+      ],
+      "licence": "CC BY-SA 3.0, Strategyzer. Linked, not bundled, because the Academy's content is CC BY 4.0.",
+      "used_in": [
+        "04-entrepreneur-toolkit/05-ai-business-model-canvas.md",
+        "03-courses/03-launch/lessons/3-2-business-models-for-agentic-ventures.md"
+      ],
+      "summary_ar": "صفحة واحدة من تسعة مكوّنات تصف كيف يصنع المشروع القيمة ويوصلها ويكسب منها.",
+      "summary_en": "One page of nine building blocks describing how the venture creates, delivers and captures value."
+    },
+    {
+      "id": "lean-startup",
+      "ar": "الشركة الناشئة الرشيقة",
+      "en": "Lean Startup",
+      "domain": "venture",
+      "type": "method",
+      "tier": "essential",
+      "origin": "global",
+      "stages": [
+        1,
+        3
+      ],
+      "sources": [
+        "A189",
+        "A190"
+      ],
+      "licence": "Described in the Academy's words; the book and the article are cited, not reproduced.",
+      "used_in": [
+        "03-courses/founder-planning-guide.md",
+        "04-entrepreneur-toolkit/13-hybrid-planning-sheet.md",
+        "05-agentic-ai-lab/exercises/r1-evidence-scorecard-and-experiment.md"
+      ],
+      "summary_ar": "التقدّم يُقاس بما تعلّمته عن العميل بدليل، لا بما بنيته؛ ابنِ أقل ما يختبر الفرضية، وقِس، وقرّر.",
+      "summary_en": "Progress is validated learning about customers, not output; build the least that tests the hypothesis, measure, decide."
+    },
+    {
+      "id": "minimum-viable-product",
+      "ar": "المنتج الأولي",
+      "en": "Minimum Viable Product (MVP)",
+      "domain": "venture",
+      "type": "model",
+      "tier": "essential",
+      "origin": "global",
+      "stages": [
+        3
+      ],
+      "sources": [
+        "A189",
+        "A190"
+      ],
+      "licence": "Described in the Academy's words.",
+      "used_in": [
+        "03-courses/03-launch/lessons/3-1-from-prototype-to-mvp.md",
+        "04-entrepreneur-toolkit/07-ai-mvp-blueprint.md"
+      ],
+      "summary_ar": "أصغر نسخة يستخدمها عميل حقيقي لتختبر بها افتراضاً محدداً، لا نسخة ناقصة من المنتج النهائي.",
+      "summary_en": "The smallest version a real customer uses to test one stated assumption; not an unfinished final product."
+    },
+    {
+      "id": "customer-journey-map",
+      "ar": "خريطة رحلة العميل",
+      "en": "Customer Journey Map",
+      "domain": "opportunity",
+      "type": "model",
+      "tier": "essential",
+      "origin": "global",
+      "stages": [
+        1,
+        3
+      ],
+      "sources": [
+        "A191"
+      ],
+      "licence": "Described in the Academy's words; NN/g's article is cited.",
+      "used_in": [
+        "03-courses/01-opportunity/templates/workflow-map.md",
+        "03-courses/01-opportunity/lessons/1-4-workflow-shadowing.md"
+      ],
+      "summary_ar": "رسم ما يمر به عميل محدد في موقف محدد، خطوة خطوة، لتظهر نقاط الألم والفرص.",
+      "summary_en": "Draw what one specific customer goes through in one scenario, step by step, to surface pain points and opportunities."
+    },
+    {
+      "id": "kanban",
+      "ar": "كانبان",
+      "en": "Kanban",
+      "domain": "product-project",
+      "type": "method",
+      "tier": "essential",
+      "origin": "global",
+      "stages": [
+        2,
+        3,
+        4
+      ],
+      "sources": [
+        "A192"
+      ],
+      "licence": "The Kanban Guide is CC BY-SA 4.0; described in the Academy's words and linked, not copied.",
+      "used_in": [
+        "03-courses/founder-planning-guide.md",
+        "04-entrepreneur-toolkit/13-hybrid-planning-sheet.md"
+      ],
+      "summary_ar": "إظهار العمل الجاري على لوحة، وتحديد عدد ما يُعمل عليه في وقت واحد، ليكتمل العمل بدل أن يتراكم.",
+      "summary_en": "Make work visible on a board and limit work in progress so that items finish instead of piling up."
+    },
+    {
+      "id": "agent-architecture",
+      "ar": "معمارية الوكيل الذكي",
+      "en": "AI Agent Architecture",
+      "domain": "agentic-engineering",
+      "type": "model",
+      "tier": "essential",
+      "origin": "global",
+      "stages": [
+        2
+      ],
+      "sources": [
+        "A81"
+      ],
+      "licence": "Described in the Academy's words; a vendor's engineering guidance, cited.",
+      "used_in": [
+        "03-courses/02-build/lessons/2-1-agent-anatomy.md",
+        "04-entrepreneur-toolkit/07-ai-mvp-blueprint.md"
+      ],
+      "summary_ar": "مكوّنات الوكيل وحدوده مكتوبة قبل البناء: الهدف، والتعليمات، والأدوات، والمعرفة، والصلاحيات، والسجل.",
+      "summary_en": "The agent's parts and limits written down before building: goal, instructions, tools, knowledge, permissions, log."
+    },
+    {
+      "id": "agent-workflow",
+      "ar": "سير عمل الوكيل",
+      "en": "Agent Workflow",
+      "domain": "agentic-engineering",
+      "type": "model",
+      "tier": "essential",
+      "origin": "global",
+      "stages": [
+        1,
+        2
+      ],
+      "sources": [
+        "A81"
+      ],
+      "licence": "Described in the Academy's words; a vendor's engineering guidance, cited.",
+      "used_in": [
+        "03-courses/01-opportunity/templates/workflow-map.md",
+        "03-courses/02-build/lessons/2-7-from-one-agent-to-several.md",
+        "05-agentic-ai-lab/agent-templates/workflows/README.md"
+      ],
+      "summary_ar": "تحويل خريطة العمل البشري إلى خطوات يؤديها الوكيل: ما هو ثابت في الشيفرة، وما يقرره النموذج، وما يبقى للإنسان.",
+      "summary_en": "Turn the map of human work into steps the agent runs: what is fixed in code, what the model decides, what stays human."
+    },
+    {
+      "id": "human-in-the-loop",
+      "ar": "الإشراف البشري على الوكيل",
+      "en": "Human-in-the-Loop (HITL)",
+      "domain": "agentic-engineering",
+      "type": "model",
+      "tier": "essential",
+      "origin": "global",
+      "stages": [
+        1,
+        2,
+        4
+      ],
+      "sources": [
+        "A40"
+      ],
+      "licence": "Described in the Academy's words; the three terms come from non-binding EU guidance, used as vocabulary.",
+      "used_in": [
+        "03-courses/01-opportunity/lessons/1-4-workflow-shadowing.md",
+        "03-courses/02-build/lessons/2-6-guardrails-and-human-approval.md",
+        "05-agentic-ai-lab/exercises/r3-role-card-and-approval-matrix.md"
+      ],
+      "summary_ar": "لكل فعل يؤديه الوكيل، مَن الإنسان المسؤول ومتى يتدخل: قبل التنفيذ، أثناءه، أو على مستوى القرار باستخدام النظام.",
+      "summary_en": "For each action the agent takes, which person is responsible and when they step in: before, during, or over the system as a whole."
+    },
+    {
+      "id": "agent-evaluation",
+      "ar": "تقييم الوكيل",
+      "en": "Agent Evaluation",
+      "domain": "testing-evaluation",
+      "type": "method",
+      "tier": "essential",
+      "origin": "global",
+      "stages": [
+        2,
+        4
+      ],
+      "sources": [
+        "A193"
+      ],
+      "licence": "Described in the Academy's words; a vendor's engineering guidance, cited.",
+      "used_in": [
+        "03-courses/02-build/lessons/2-5-evaluation.md",
+        "05-agentic-ai-lab/evaluation/eval-template.md",
+        "05-agentic-ai-lab/exercises/r6-agent-evaluation.md"
+      ],
+      "summary_ar": "مجموعة حالات لها نتيجة صحيحة معروفة، يُشغَّل عليها الوكيل بعد كل تغيير، ليُعرف بالأرقام هل تحسّن أم تراجع.",
+      "summary_en": "A set of cases with known right outcomes, run after every change, so that improvement or regression shows in numbers."
+    },
+    {
+      "id": "unit-economics",
+      "ar": "اقتصاديات الوحدة",
+      "en": "Unit Economics",
+      "domain": "business-model",
+      "type": "model",
+      "tier": "essential",
+      "origin": "global",
+      "stages": [
+        1,
+        3
+      ],
+      "sources": [
+        "A194"
+      ],
+      "licence": "General concept, cited; the cost-per-resolved-task method and calculator are the Academy's.",
+      "used_in": [
+        "04-entrepreneur-toolkit/06-unit-economics.md",
+        "04-entrepreneur-toolkit/cost_per_resolved_task.py",
+        "03-courses/03-launch/lessons/3-3-unit-economics.md",
+        "03-courses/01-opportunity/lessons/1-2-agent-native-business.md"
+      ],
+      "summary_ar": "هل يربح المشروع من الوحدة الواحدة؟ وفي المشاريع القائمة على الوكلاء الوحدة هي المهمة المنجزة.",
+      "summary_en": "Does the venture earn on one unit? In an agentic venture the unit is the resolved task."
+    },
+    {
+      "id": "go-to-market",
+      "ar": "استراتيجية دخول السوق",
+      "en": "Go-to-Market Strategy (GTM)",
+      "domain": "governance-scale",
+      "type": "framework",
+      "tier": "essential",
+      "origin": "global",
+      "stages": [
+        3,
+        4
+      ],
+      "sources": [
+        "A195"
+      ],
+      "licence": "General concept, cited; the plan and funnel are the Academy's.",
+      "used_in": [
+        "03-courses/03-launch/lessons/3-5-going-to-market-in-the-kingdom.md",
+        "04-entrepreneur-toolkit/11-first-ten-customers-plan.md"
+      ],
+      "summary_ar": "خطة الوصول إلى العملاء وإقناعهم بالشراء: مَن أولاً، وعبر أي قناة، وبأي عرض، وكيف يُقاس التقدم.",
+      "summary_en": "The plan for reaching customers and convincing them to buy: who first, through which channel, with what offer, measured how."
+    }
+  ],
+  "planned": {
+    "opportunity": [
+      "Empathy Map",
+      "PESTEL Analysis",
+      "Porter's Five Forces",
+      "SWOT Analysis",
+      "TAM / SAM / SOM",
+      "The Mom Test",
+      "Assumption Mapping",
+      "Value Stream Mapping",
+      "Five Whys and Fishbone Diagram",
+      "Service Blueprint"
+    ],
+    "business-model": [
+      "Lean Canvas",
+      "Unique Value Proposition",
+      "Blue Ocean Strategy",
+      "Revenue Models",
+      "Pricing Models",
+      "Competitive Advantage",
+      "Product-Market Fit",
+      "Kano Model",
+      "Agent Business Model Canvas (Academy)"
+    ],
+    "venture": [
+      "Disciplined Entrepreneurship",
+      "Customer Development",
+      "Effectuation",
+      "Build-Measure-Learn",
+      "Hypothesis-Driven Development",
+      "Impact-Effort Matrix",
+      "OKRs",
+      "Balanced Scorecard",
+      "Pre-mortem",
+      "North Star Metric",
+      "AARRR Funnel",
+      "Agent Opportunity Assessment (Academy)",
+      "Agent Readiness Assessment (Academy)"
+    ],
+    "product-project": [
+      "Scrum",
+      "Swimlane Diagram",
+      "Work Breakdown Structure",
+      "Product Roadmap",
+      "User Stories and Acceptance Criteria",
+      "RACI Matrix",
+      "MoSCoW Prioritization",
+      "RICE Scoring",
+      "Risk Matrix",
+      "Critical Path Method",
+      "Technical Debt Management",
+      "BPMN"
+    ],
+    "requirements-design": [
+      "Use Case Diagram",
+      "UML Class Diagram",
+      "Sequence Diagram",
+      "Activity Diagram",
+      "State Machine Diagram",
+      "Component Diagram",
+      "Deployment Diagram",
+      "System Context Diagram",
+      "C4 Model",
+      "Software Requirements Specification",
+      "Software Architecture",
+      "Architecture Decision Records"
+    ],
+    "data": [
+      "Entity Relationship Diagram",
+      "Data Flow Diagram",
+      "Data Pipeline Diagram",
+      "Data Modeling",
+      "Database Schema",
+      "Modern Data Architecture",
+      "Dimensional Modeling",
+      "Data Lifecycle",
+      "Data Governance Framework",
+      "Data Classification",
+      "Data Protection Impact Assessment"
+    ],
+    "agentic-engineering": [
+      "Agent Loop",
+      "Tool Calling",
+      "Retrieval-Augmented Generation",
+      "Model Context Protocol",
+      "Multi-Agent Architecture",
+      "Agent Orchestration",
+      "Agent Memory Design",
+      "Context Engineering",
+      "Agent Design Patterns",
+      "Agent Permission Model",
+      "Agent Reliability Engineering",
+      "Agent2Agent Protocol",
+      "Guardrails",
+      "Agent Architecture Canvas (Academy)",
+      "Agent Capability Matrix (Academy)",
+      "Agent Autonomy and Responsibility Matrix (Academy)",
+      "Agent Tool-Access Matrix (Academy)"
+    ],
+    "software-engineering": [
+      "Spec-Driven Development",
+      "Test-Driven Development",
+      "CI/CD",
+      "Agentic Coding",
+      "Prompt Engineering",
+      "Code Review",
+      "Semantic Versioning",
+      "Observability",
+      "Site Reliability Engineering",
+      "MLOps / LLMOps"
+    ],
+    "testing-evaluation": [
+      "Functional Testing",
+      "Integration Testing",
+      "End-to-End Testing",
+      "Performance Testing",
+      "Security Testing",
+      "Scenario-Based Testing",
+      "LLM Evaluation",
+      "RAG Evaluation",
+      "Regression Testing",
+      "Adversarial Testing",
+      "Human Evaluation",
+      "Golden Dataset",
+      "Shadow Mode (Academy)",
+      "Agent Evaluation Plan (Academy)"
+    ],
+    "governance-scale": [
+      "AI Governance Framework",
+      "NIST AI RMF",
+      "ISO/IEC 42001",
+      "Threat Modeling",
+      "STRIDE",
+      "OWASP Top 10 for LLM Applications",
+      "Principle of Least Privilege",
+      "Zero Trust Architecture",
+      "Agent Lifecycle Governance",
+      "Agent Risk Register (Academy)",
+      "Total Cost of Ownership",
+      "Return on Investment",
+      "Customer Acquisition Cost",
+      "Customer Lifetime Value",
+      "Cohort and Retention Analysis",
+      "SaaS Financial Modeling",
+      "Ansoff Matrix",
+      "Crossing the Chasm"
+    ]
+  }
+}

@@ -18,6 +18,7 @@
 | صاحب منشأة صغيرة أو متوسطة | [تقييم فرص الوكلاء](04-entrepreneur-toolkit/02-ai-opportunity-assessment.md) مطبَّقاً على عمليات منشأتك | [الوحدة 1.4](03-courses/01-opportunity/lessons/1-4-workflow-shadowing.md)، ثم [قائمة الامتثال للمؤسس](02-saudi-market-knowledge-framework/founder-compliance-checklist.md) |
 | مؤسس تقني | [المقرر 1](03-courses/01-opportunity/syllabus.md) مكثفاً، ولا تتجاوز المقابلات | [المقرر 2](03-courses/02-build/syllabus.md) بالمسار العميق |
 | طالب أو مستقل | [حقيبة المؤسس](04-entrepreneur-toolkit/README.md) | المقررات بالترتيب، و[دراسات الحالة](06-case-studies/README.md) |
+| باحث عن نموذج أو منهجية بعينها | [مكتبة المنهجيات والنماذج](09-methodology-library/README.md) | الدرس أو القالب الذي يستخدم النموذج، من قسم «في الأكاديمية» في بطاقته |
 | جهة تشغّل فوجاً | [دليل مدرب المقرر 1](03-courses/01-opportunity/instructor-guide.md) | [دليل مدرب المقرر 2](03-courses/02-build/instructor-guide.md) |
 | باحث عن الأنظمة والمتطلبات فقط | [إطار المعرفة بالسوق السعودي](02-saudi-market-knowledge-framework/README.md) | [السجل التنظيمي](02-saudi-market-knowledge-framework/regulatory-register.md) |
 

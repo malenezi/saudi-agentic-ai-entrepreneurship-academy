@@ -103,6 +103,10 @@ Four performance levels per criterion, and rubrics for the workflow map and the 
 
 [Opportunity Scanner](../../05-agentic-ai-lab/skills/README.md#1-opportunity-scanner) · [Interview Guide Builder](../../05-agentic-ai-lab/skills/README.md#2-interview-guide-builder) · [Interview Synthesiser](../../05-agentic-ai-lab/skills/README.md#3-interview-synthesiser) · [Competitor Scan](../../05-agentic-ai-lab/skills/README.md#4-competitor-scan) · [Workflow Mapper](../../05-agentic-ai-lab/skills/README.md#5-workflow-mapper)
 
+## Methodology cards
+
+The frameworks this course leans on, each on one standard card in the [methodology library](../../09-methodology-library/README.md): [Design Thinking](../../09-methodology-library/cards/design-thinking.md) · [Jobs to Be Done](../../09-methodology-library/cards/jobs-to-be-done.md) · [Customer Journey Map](../../09-methodology-library/cards/customer-journey-map.md) · [Value Proposition Canvas](../../09-methodology-library/cards/value-proposition-canvas.md) · [Agent Workflow](../../09-methodology-library/cards/agent-workflow.md) · [Human-in-the-Loop (HITL)](../../09-methodology-library/cards/human-in-the-loop.md) · [Unit Economics](../../09-methodology-library/cards/unit-economics.md) · [Lean Startup](../../09-methodology-library/cards/lean-startup.md). The cards explain a model and point back here; deliverables are still graded with this course's templates and rubric.
+
 ## Companion tools (optional)
 
 The course is complete without these. They are separate repositories by the same author; see [companion repositories](../../07-resources/companion-repositories.md) for what overlaps and which template to use when.
