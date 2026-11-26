@@ -2,6 +2,12 @@
 
 ## Unreleased
 
+### Methodology library: Data Lifecycle card (26 November 2026)
+
+- **One card and one diagram.** Data Lifecycle, held back in the sixth batch because a secondary explainer named the stages only in an image. NDMO's standards (v1.5) were then read and name them in their text: creation, storage, movement, usage, retirement (p. 9). The card adds a question for each stage and a per-dataset table; the diagram is the library's fifteenth. 86 cards; 39 names wait.
+- **Source A253**, from the standards themselves: the sentence naming the stages, the storage and retention policy control (DO.2.1, p. 57) and the document retention and disposal control (DCM.4.2, p. 69). Destruction reaching recipients and backups rests on A50.
+- **Limits.** The standards name the stages and do not define them; the definitions, the Arabic stage names and the questions are the Academy's and are labelled so. The document says "retirement" in one place and "disposal" in another. It binds government entities and their business partners handling government data, not every startup; the card says so. Not tried with a learner.
+
 ### Methodology library, sixth batch: requirements, data and software engineering (26 November 2026)
 
 - **Nineteen cards.** Requirements and design: Use Case Diagram, Activity Diagram, State Machine Diagram, Component and Deployment Diagrams, C4 Model, Software Requirements Specification, Architecture Decision Records. Data: Dimensional Modeling, Data Governance Framework, Data Classification, Data Protection Impact Assessment. Software engineering: Test-Driven Development, Agentic Coding, Prompt Engineering, Code Review, Semantic Versioning, Observability, Site Reliability Engineering, MLOps / LLMOps. The library has 85 cards and lists 40 more by name.
