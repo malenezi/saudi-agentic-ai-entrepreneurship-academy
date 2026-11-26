@@ -15,7 +15,7 @@
 | [3. بِع](3-sell.md) | الأسابيع 9 إلى 12 | تجربة مدفوعة بشروط موقّعة | **البوابة 3:** منشأة دفعت |
 | [4. شغّل](4-operate.md) | من اليوم 90 إلى اليوم 180 | عميل مستمر، أو وفر مَقيس | متابعة اليوم 180 |
 
-شروط كل بوابة وأدلتها في [البوابات الثلاث](gates.md). وما يُسجَّل من نتائج في [سجل الأثر](../impact/README.md).
+شروط كل بوابة وأدلتها في [البوابات الثلاث](gates.md). وما يُسجَّل من نتائج في [سجل الأثر](../impact/README.md). ولمن يشغّل فوجاً: [خطة الجلسات الاثنتي عشرة](session-plan.md).
 
 ## كيف يسير الأسبوع
 
@@ -42,7 +42,7 @@
 
 ## القطاع الأول
 
-يبدأ أول فوج بقطاع واحد: **عمليات الطلبات وخدمة العملاء في المتاجر الإلكترونية.** فيه أنضج ما في المستودع: الوكيل المرجعي للطلبات، والقالب 1 لخدمة العملاء، و[وضع الظل](../05-agentic-ai-lab/agent-templates/workflows/shadow-mode/README.md)، و[المتجر المختلق](../05-agentic-ai-lab/datasets/ecommerce-store/README.md)، و[ورقة شروط التجربة المدفوعة](../04-entrepreneur-toolkit/14-paid-pilot-terms-sheet.md). القطاعات المنظَّمة (الصحة، والمالية، والمشتريات الحكومية) خارج الفوج الأول.
+يبدأ أول فوج بقطاع واحد: **عمليات الطلبات وخدمة العملاء في المتاجر الإلكترونية.** فيه أنضج ما في المستودع: الوكيل المرجعي للطلبات، والقالب 1 لخدمة العملاء، و[وضع الظل](../05-agentic-ai-lab/agent-templates/workflows/shadow-mode/README.md)، و[المتجر المختلق](../05-agentic-ai-lab/datasets/ecommerce-store/README.md)، و[ورقة شروط التجربة المدفوعة](../04-entrepreneur-toolkit/14-paid-pilot-terms-sheet.md)، و[وصفة الربط بقناة المتجر ومنصته](../05-agentic-ai-lab/agent-templates/workflows/recipes/online-store.md) من وثائق المزوّدين، ولم تُشغَّل بعد. القطاعات المنظَّمة (الصحة، والمالية، والمشتريات الحكومية) خارج الفوج الأول.
 
 ## الوكلاء معك من الأسبوع الأول
 
@@ -79,7 +79,7 @@
 | [3. Sell](3-sell.md) | Weeks 9 to 12 | A paid pilot on signed terms | **Gate 3:** a business has paid |
 | [4. Operate](4-operate.md) | Day 90 to day 180 | A retained customer or a measured saving | Day-180 follow-up |
 
-Criteria and evidence for each gate are in [the three gates](gates.md); results are recorded in the [impact ledger](../impact/README.md).
+Criteria and evidence for each gate are in [the three gates](gates.md); results are recorded in the [impact ledger](../impact/README.md). For whoever runs a cohort: the [twelve-session plan](session-plan.md).
 
 **A week** is one three-hour working session and six to eight hours in the field or at the keyboard. Lessons are support material, read when a gate calls for them.
 

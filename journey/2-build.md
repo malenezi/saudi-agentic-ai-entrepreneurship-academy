@@ -22,6 +22,7 @@
 | نقطة البداية | [القالب 1 في n8n](../05-agentic-ai-lab/agent-templates/workflows/README.md)، ثم نسختك منه | [الوكيل المرجعي للطلبات](../03-courses/02-build/labs/README.md) |
 | التقييم | [المختبر منخفض البرمجة](../03-courses/02-build/labs/lab-n8n-low-code.md) و[R6](../05-agentic-ai-lab/exercises/r6-agent-evaluation.md) | المختبران [2.5](../03-courses/02-build/labs/lab-2-5-evaluation-baseline.md) و[2.8](../03-courses/02-build/labs/lab-2-8-improvement-cycles.md) |
 | الظل والتدقيق | سير عمل وضع الظل وتقرير المقارنة | المشغّل عبر HTTP بسجل تدقيق (`tools/reality_run.py`) |
+| القناة والمنصة | [وصفة الربط للمتجر الإلكتروني](../05-agentic-ai-lab/agent-templates/workflows/recipes/online-store.md): الرسالة الواردة والاستعلام عن الطلب، من وثائق المزوّدين، ولم تُشغَّل بعد | الوصفة نفسها، تُستدعى من الشيفرة |
 
 ## بيانات المنشأة
 
