@@ -104,6 +104,10 @@ Four performance levels per criterion, the validation gates and a checkpoint for
 - Giving agents broad access "to be safe" instead of the least they need.
 - Raising money to find out whether customers want the product.
 
+## Methodology cards
+
+The frameworks this course leans on, each on one standard card in the [methodology library](../../09-methodology-library/README.md): [Go-to-Market Strategy (GTM)](../../09-methodology-library/cards/go-to-market.md) · [Agent Evaluation](../../09-methodology-library/cards/agent-evaluation.md) · [Human-in-the-Loop (HITL)](../../09-methodology-library/cards/human-in-the-loop.md) · [Kanban](../../09-methodology-library/cards/kanban.md). The cards explain a model and point back here; deliverables are still graded with this course's templates and rubric.
+
 ## Companion tools (optional)
 
 Separate repositories by the same author; see [companion repositories](../../07-resources/companion-repositories.md). The deliverable is graded with the Academy's templates.

@@ -122,6 +122,7 @@ Every course has a glossary and an instructor guide. Details are in the [courses
 | [Runnable agent templates](05-agentic-ai-lab/agent-templates/workflows/README.md) | Five files that import into n8n and run with a simulated model and no key, enforcing the oversight table in code | Available; their instructions were run three times with a language model outside n8n, the third on 24 November 2026 with repair and one retry ([results](05-agentic-ai-lab/agent-templates/workflows/real-model-runs/README.md)); not run through the HTTP node, no channel connected |
 | [Lab exercises](05-agentic-ai-lab/exercises/README.md) | Seventeen hands-on exercises: fourteen use the two companion repositories, three use the Academy's own skills | Available; not yet tried with learners |
 | [Case studies](06-case-studies/README.md) | Fifteen operating cases from public sources (eight Saudi) with evidence levels, an index by topic and course module, six scenarios and a learner worksheet; plus twenty-two sourced venture pages: funding, platforms, exits, ten Saudi companies building for agents and five international ones | Available; owner-written cases wanted |
+| [Methodology library](09-methodology-library/README.md) | Fourteen standard cards for the essential frameworks (design thinking, the business model canvas, agent architecture, agent evaluation, unit economics and others), each with a source, a template and an example; 126 more are listed and written in batches | Available; no card tried with learners |
 | [Learning pathways](01-academy/learning-pathways.md) | A route for each kind of learner, an [instructor kit](01-academy/instructor-kit/README.md) for a 15-week course, and a [venture workbook](workbook/index.html) | Available; not yet tried with learners |
 | [Academy](01-academy/) | [Vision and mission](01-academy/vision-and-mission.md), [learning framework](01-academy/learning-framework.md), [competency framework](01-academy/competency-framework.md) | Available |
 | [Resources](07-resources/README.md) · [Community](08-community/README.md) | Curated references; project showcase | Available |
@@ -218,6 +219,7 @@ Details and conditions are in [CONTRIBUTING.md](CONTRIBUTING.md) and the [code o
 | [`06-case-studies/`](06-case-studies/README.md) | Case studies and venture journeys |
 | [`07-resources/`](07-resources/README.md) | References, and the companion repositories |
 | [`08-community/`](08-community/README.md) | Participation and the project showcase |
+| [`09-methodology-library/`](09-methodology-library/README.md) | The methodology library: one standard card per framework, and a [page to browse them](library.html) |
 | [`workbook/`](workbook/index.html) | The venture workbook |
 | [`assets/videos/`](assets/videos/README.md) | The video series "From opportunity to venture" and its transcripts |
 | `tools/` · `tests/` | Build and checking tools and their tests; `make check` runs them all |

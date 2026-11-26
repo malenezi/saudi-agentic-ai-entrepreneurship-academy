@@ -108,6 +108,10 @@ Four performance levels per criterion, the validation gates and a checkpoint for
 - Using a model without reading its licence or knowing where data is processed.
 - Sending real customer personal data to a tool during testing. Use synthetic or anonymised data until the [PDPL guide](../../02-saudi-market-knowledge-framework/03-data-protection-pdpl/pdpl-founder-guide.md) steps are done.
 
+## Methodology cards
+
+The frameworks this course leans on, each on one standard card in the [methodology library](../../09-methodology-library/README.md): [AI Agent Architecture](../../09-methodology-library/cards/agent-architecture.md) · [Agent Workflow](../../09-methodology-library/cards/agent-workflow.md) · [Human-in-the-Loop (HITL)](../../09-methodology-library/cards/human-in-the-loop.md) · [Agent Evaluation](../../09-methodology-library/cards/agent-evaluation.md) · [Kanban](../../09-methodology-library/cards/kanban.md). The cards explain a model and point back here; deliverables are still graded with this course's templates and rubric.
+
 ## Companion tools (optional)
 
 Separate repositories by the same author; see [companion repositories](../../07-resources/companion-repositories.md). The deliverable is graded with the Academy's templates.

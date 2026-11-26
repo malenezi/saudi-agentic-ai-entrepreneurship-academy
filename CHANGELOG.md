@@ -2,6 +2,15 @@
 
 ## Unreleased
 
+### Methodology library, first batch (26 November 2026)
+
+- **New section `09-methodology-library/`**: one standard card per framework, method or model a founder needs, in Arabic with English terms. Twelve fixed parts per card: purpose, when to use, when not to use, inputs, steps, template, an illustrative example, how an AI agent helps, output, quality criteria, source and licence, and where the Academy uses it. **Fourteen cards** in this batch, the essential tier: Design Thinking, Jobs to Be Done, Value Proposition Canvas, Business Model Canvas, Lean Startup, MVP, Customer Journey Map, Kanban, AI Agent Architecture, Agent Workflow, Human-in-the-Loop, Agent Evaluation, Unit Economics, Go-to-Market. **126 more are listed by name** and are written in batches.
+- **`library.html`**, a page that filters the cards by course stage, tier, type, domain and origin, with a search box; linked from both landing pages. Each of the four syllabi links the cards its course leans on.
+- **`tools/build_library.py`** builds the index and the page from `library.json` and refuses a widely known model with no source in section A of `SOURCES.md`, a card with a missing part, a `used_in` path that does not exist, and an Academy model that does not say it is one. `tests/test_library.py`: nine tests.
+- **Built from a proposal the owner supplied** (131 names in ten domains), under the verify-then-build rule. Fifty-five of the names appeared nowhere in the Academy; ten of its twelve "Agent" models already existed under other names in the toolkit, the lab and Course 4. What was merged, dropped, corrected and added is in the library's `not-adopted.md`.
+- **Other people's canvases are described and linked, not bundled.** The Business Model Canvas and the Lean Canvas are CC BY-SA 3.0 and the Value Proposition Canvas is under copyright with adaptations and software inclusion reserved (A187, A188); the Academy's content is CC BY 4.0. OpenStax *Entrepreneurship*, named in the proposal as a founding reference, states CC BY-NC-SA 4.0 on its live pages (A196, B75): cited only.
+- **Limits.** No card has been tried with a learner. Ten of the twelve new sources were read from search extracts, not from the opened page, and two (the Jobs to Be Done article and the unit-economics case) from a description of a paywalled text; each row in `SOURCES.md` says which. The page was viewed in headless Chrome only. No Mermaid diagrams yet, no methodology agents, no English cards.
+
 ### An HTTP runner with an audit log (25 November 2026)
 
 - **`tools/reality_run.py`**, the first piece of v0.14. `run` posts a list of messages to a running webhook and writes one line per message: time sent, latency, action, level, outcome, the rule in code that decided (`gates`), and fingerprints of the message and of the reply. The customer's text is not written unless `--keep-text` is passed. `--expect store` or `--expect failures` adds a verdict against the invented store; the command exits 1 if the agent acted alone anywhere or a request failed. `report` prints the figures of a log. `serve` is a stand-in for n8n that answers with the workflow's own Code nodes.
