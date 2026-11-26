@@ -150,7 +150,8 @@ footer { margin-block-start: 56px; border-block-start: 1px solid var(--line); pa
       <p class="lead">أكاديمية سعودية مفتوحة لتمكين رواد الأعمال والمطورين من اكتشاف الفرص التجارية، وتصميم حلول الذكاء الاصطناعي القائمة على الوكلاء <bdi dir="ltr" lang="en">(Agentic AI)</bdi> وبنائها، وإطلاق منتجات قابلة للتشغيل والتوسع في السوق السعودي.</p>
       <p>تبدأ من مشكلة حقيقية لدى منشأة في المملكة، وتنتهي بوكيل ذكي قابل للتشغيل ومنتج ذي قيمة تجارية. محتواها باللغة العربية أساساً، مع المصطلحات الإنجليزية عند الحاجة، ويستند إلى أنظمة المملكة وسوقها.</p>
       <div class="actions">
-        <a class="btn" href="read.html?p=START-HERE.md">ابدأ من هنا</a>
+        <a class="btn" href="read.html?p=journey/README.md">رحلة المشروع</a>
+        <a class="btn ghost" href="read.html?p=START-HERE.md">ابدأ من هنا</a>
         <a class="btn ghost" href="#h-courses">استعرض المقررات</a>
         <a class="btn ghost" href="{G}">المستودع على <bdi dir="ltr" lang="en">GitHub</bdi></a>
         <a class="btn ghost" href="index.en.html" lang="en" dir="ltr" hreflang="en">English</a>
@@ -159,17 +160,16 @@ footer { margin-block-start: 56px; border-block-start: 1px solid var(--line); pa
     <img src="assets/brand/saaea-banner.jpg" alt="شعار الأكاديمية السعودية لريادة الأعمال بالذكاء الاصطناعي الوكيلي (SAAEA): تعلّم، ابنِ، انطلق" width="1024" height="576">
   </div>
   <div class="wrap">
-    <ul class="stats" aria-label="الأكاديمية في أرقام">
-      <li><b><bdi dir="ltr">4</bdi></b><span>مقررات متتابعة</span></li>
-      <li><b><bdi dir="ltr">28</bdi></b><span>درساً، لكل درس عرض واختبار قصير</span></li>
-      <li><b><bdi dir="ltr">76</bdi></b><span>ساعة تدريبية</span></li>
-      <li><b><bdi dir="ltr">12</bdi></b><span>مجالاً في إطار المعرفة بالسوق السعودي</span></li>
-      <li><b><bdi dir="ltr">12</bdi></b><span>وكيلاً ذكياً مساعداً للمؤسس</span></li>
-      <li><b><bdi dir="ltr">8</bdi></b><span>مختبرات تعمل دون مفتاح <bdi dir="ltr" lang="en">API</bdi></span></li>
+    <ul class="stats" aria-label="رحلة المشروع في أرقام">
+      <li><b><bdi dir="ltr">12</bdi></b><span>أسبوعاً من مشكلة حقيقية إلى عميل يدفع</span></li>
+      <li><b><bdi dir="ltr">4</bdi></b><span>مراحل: اكتشف، ابنِ، بِع، شغّل</span></li>
+      <li><b><bdi dir="ltr">3</bdi></b><span>بوابات تُجتاز بالدليل، لا بإتمام الدروس</span></li>
+      <li><b><bdi dir="ltr">0</bdi></b><span>عملاء يدفعون حتى الآن: لم يبدأ أي فوج بعد</span></li>
     </ul>
   </div>
   <nav class="subnav" aria-label="أقسام الصفحة">
     <div class="wrap">
+      <a href="#h-journey">رحلة المشروع</a>
       <a href="#h-why">لماذا الأكاديمية</a>
       <a href="#h-videos">الفيديوهات</a>
       <a href="#h-courses">المقررات</a>
@@ -183,6 +183,18 @@ footer { margin-block-start: 56px; border-block-start: 1px solid var(--line); pa
 </header>
 <main class="wrap" id="main">
   <p class="note">مبادرة شخصية مستقلة أسّسها ويشرف عليها أ.د. ممدوح العنزي. ليست جهة حكومية، ولا تمثل أي جهة، ولا تحمل اعتماد أي جهة. المحتوى تعليمي، وليس استشارة نظامية أو ضريبية أو مالية.</p>
+
+  <section class="start" aria-labelledby="h-journey">
+    <h2 id="h-journey">المسار الرئيس: رحلة المشروع</h2>
+    <p>اثنا عشر أسبوعاً بأربع مراحل. يُحسم التقدم عند ثلاث بوابات تُجتاز بدليل يراه المقيِّم: ملاحظات مقابلات مؤرخة، أو تقرير تشغيل في منشأة حقيقية، أو توقيع وفاتورة. والمقررات الأربعة مادتها المساندة.</p>
+    <ul class="grid four">
+      <li><a href="read.html?p=journey/1-find.md"><span class="meta">الأسابيع 1 إلى 4 · البوابة 1</span><span class="t">1. اكتشف</span><span class="d">مشكلة تقبل منشأة بعينها أن تدفع لحلها.</span></a></li>
+      <li><a href="read.html?p=journey/2-build.md"><span class="meta">الأسابيع 5 إلى 8 · البوابة 2</span><span class="t">2. ابنِ</span><span class="d">وكيل يؤدي العمل الفعلي إلى جانب الموظفين، في وضع الظل.</span></a></li>
+      <li><a href="read.html?p=journey/3-sell.md"><span class="meta">الأسابيع 9 إلى 12 · البوابة 3</span><span class="t">3. بِع</span><span class="d">تجربة مدفوعة بشروط موقّعة، وأول فاتورة.</span></a></li>
+      <li><a href="read.html?p=journey/4-operate.md"><span class="meta">من اليوم 90 إلى اليوم 180</span><span class="t">4. شغّل</span><span class="d">عميل مستمر، أو وفر مَقيس، وقرار مبني على أرقام.</span></a></li>
+    </ul>
+    <p class="src"><strong>بمَ تُقاس الأكاديمية:</strong> بما ينجزه المشاركون، لا بعدد مقرراتها. الأرقام اليوم كلها أصفار، ويُخطَّط لأول فوج بعد عيد الفطر <bdi dir="ltr">1448</bdi>هـ (<bdi dir="ltr">2027</bdi>). لم تخضع الرحلة للاختبار حتى الآن. <a href="read.html?p=impact/README.md">سجل الأثر</a> · <a href="read.html?p=journey/gates.md">البوابات الثلاث</a> · <a href="read.html?p=journey/session-plan.md">خطة الجلسات</a> · <a href="read.html?p=ROADMAP.md">لماذا جُمِّد المحتوى</a></p>
+  </section>
 
   <section class="start" aria-labelledby="h-why">
     <h2 id="h-why">لماذا هذه الأكاديمية؟</h2>
@@ -384,10 +396,11 @@ header .ar { font-size: 17px; }
   <div class="wrap hero">
     <div>
       <h1>Saudi Agentic AI Entrepreneurship Academy</h1>
-      <p class="lead">An open-source, Arabic-first reference for anyone who wants to start, run or grow a business in Saudi Arabia built on agentic AI: four courses, a Saudi market knowledge framework, a founder toolkit and a lab.</p>
+      <p class="lead">An open-source, Arabic-first path from a real problem inside a Saudi business to a working AI agent and a paying customer: a twelve-week venture journey with three evidence gates, drawing on four courses, a Saudi market knowledge framework, a founder toolkit and a lab.</p>
       <p class="ar" lang="ar" dir="rtl">الأكاديمية السعودية لريادة الأعمال بالذكاء الاصطناعي الوكيلي</p>
       <div class="actions">
-        <a class="btn" href="read.html?p=README.en.md">Read the overview</a>
+        <a class="btn" href="read.html?p=journey/README.md#english">The venture journey</a>
+        <a class="btn ghost" href="read.html?p=README.en.md">Read the overview</a>
         <a class="btn ghost" href="{G}">Repository on GitHub</a>
         <a class="btn ghost" href="index.html" lang="ar" dir="rtl" hreflang="ar">العربية</a>
       </div>
@@ -397,6 +410,20 @@ header .ar { font-size: 17px; }
 </header>
 <main class="wrap" id="main">
   <p class="note">An independent personal initiative, founded and maintained by Prof. Mamdouh Alenezi. It is not a government body and represents none. The content is educational, not legal, tax or financial advice.</p>
+
+  <section class="start" aria-labelledby="h-journey">
+    <h2 id="h-journey">The main path: the venture journey</h2>
+    <p>Twelve weeks in four stages. Progress is decided at three gates, each passed on evidence an assessor can see: dated interview notes, a run report from a real business, a signature and an invoice. The four courses are its support material.</p>
+    <ul class="grid">
+      <li><a href="read.html?p=journey/1-find.md"><span class="t">1. Find</span><span class="lang">Weeks 1 to 4</span><span class="d">A problem a named business will pay to solve. Gate 1: problem evidence.</span></a></li>
+      <li><a href="read.html?p=journey/2-build.md"><span class="t">2. Build</span><span class="lang">Weeks 5 to 8</span><span class="d">An agent doing the real work beside staff. Gate 2: agent in shadow mode.</span></a></li>
+      <li><a href="read.html?p=journey/3-sell.md"><span class="t">3. Sell</span><span class="lang">Weeks 9 to 12</span><span class="d">A paid pilot on signed terms. Gate 3: a business has paid.</span></a></li>
+      <li><a href="read.html?p=journey/4-operate.md"><span class="t">4. Operate</span><span class="lang">Day 90 to 180</span><span class="d">A retained customer or a measured saving, and a decision made on numbers.</span></a></li>
+      <li><a href="read.html?p=impact/README.md#english"><span class="t">Impact ledger</span><span class="d">How the Academy is measured: by what participants achieve. Every number is zero today; no cohort has started.</span></a></li>
+      <li><a href="read.html?p=journey/gates.md#english"><span class="t">The three gates</span><span class="d">Criteria and evidence for each gate, and the day-180 follow-up.</span></a></li>
+    </ul>
+    <p>The journey has not been tested. A first cohort is planned after Eid al-Fitr 2027, and content is frozen until it has run (<a href="read.html?p=ROADMAP.md">roadmap</a>).</p>
+  </section>
 
   <section class="start" aria-labelledby="h-start">
     <h2 id="h-start">What you will find</h2>

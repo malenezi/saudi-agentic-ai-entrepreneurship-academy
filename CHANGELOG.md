@@ -4,6 +4,15 @@
 
 Content is frozen: see the [roadmap](ROADMAP.md#content-freeze-26-november-2026).
 
+### Cohort-ready: the landing pages, a first integration recipe and a twelve-session plan (26 November 2026)
+
+- **Both landing pages lead with the journey and the ledger.** `tools/build_site.py`: the six content counters under the banner give way to the journey in numbers (twelve weeks, four stages, three gates, and zero paying customers so far, said as it is); a new first section shows the four stages and links the gates, the ledger and the session plan; the section links and the lead paragraph follow. The courses, decks and everything else on the pages are unchanged.
+- **First integration recipe: an online store** (`05-agentic-ai-lab/agent-templates/workflows/recipes/online-store.md`). What template 1 needs from outside (an inbound message, one order looked up read-only, a reply that is switched off in shadow mode) and what the providers' own documentation says about each: the WhatsApp Business Platform for the channel, Salla and Zid for the store. **Providers are named for the first time**, which settles the question left open in v0.13; naming is not endorsement, and the recipe says so.
+- **What the documentation does not settle is listed beside what it says:** whether the order number a customer types is the API's order id on either platform; Salla's base URL and its "Token" strategy; any signature or retry policy for Zid's webhooks; the inbound message payload, pricing and model-use terms for the channel. Five questions for a lawyer close the page.
+- **Twelve-session plan** (`journey/session-plan.md`), derived from the instructor kit's thirty sessions, which stay as they are. One three-hour session a week: evidence first, a short concept, a ninety-minute workshop on the participant's own venture, a commitment. Thirty-six classroom hours instead of ninety. Week 10 is a session with a lawyer and an accountant.
+- **Sources A254 to A262**, each from the provider's page.
+- **Limits.** The recipe was **not run with any provider**, and the adapter it describes is not built: its first run belongs in a real store in shadow mode. The nine source pages were read by an automated reader answering set questions, not in full by a person; each row says so. The session plan has not been tried with a cohort. The landing pages were viewed in headless Chrome at desktop width only.
+
 ### The venture journey and the impact ledger (26 November 2026)
 
 - **New section `journey/`**: the Academy's main path. Twelve weeks in four stages (find, build, sell, operate), with three gates passed on evidence and a day-180 follow-up; three routes (founder low-code, founder developer, adopter); four graduation levels, one of them a documented no-go. Six pages: the journey, one per stage with its week-by-week table, and the gates with their criteria and evidence. **No lesson, lab or template was moved or rewritten:** each week links to the existing material.
