@@ -1,6 +1,6 @@
 # وصفة الربط: متجر إلكتروني · Integration recipe: an online store
 
-**Status:** written 26 November 2026 from the providers' own developer documentation · **not run live** · no adapter workflow is built yet · no lawyer has reviewed the data questions at the end
+**Status:** written 26 November 2026 from the providers' own developer documentation · **not run with any provider** · the adapter's deterministic rules are written and tested locally (`tools/store_adapter.py`, 22 tests) and are not wired into n8n · no lawyer has reviewed the data questions at the end
 
 <div dir="rtl">
 
@@ -10,7 +10,28 @@
 
 > **تسمية المزوّد ليست تزكية له.** سُمّيت «سلة» و«زد» و«منصة واتساب للأعمال» لأن الوصفة لا تُكتب دون وثائق بعينها. الأكاديمية لا توصي بمزوّد، ولا علاقة لها بأي منهم. إن كان متجرك على منصة أخرى فالبنية واحدة، والأسماء تتغير.
 
-> **كيف قُرئت المصادر.** فُتحت كل صفحة في 26 نوفمبر 2026 بقراءة آلية تجيب عن أسئلة محددة، لا بقراءة إنسان للصفحة كاملة. كل بند في الجداول يحمل رقم مصدره في [سجل المصادر](../../../../SOURCES.md) (A254 إلى A262). **قبل أن تبني على بند، افتح صفحته.**
+> **كيف قُرئت المصادر.** فُتحت كل صفحة في 26 نوفمبر 2026 بقراءة آلية تجيب عن أسئلة محددة، لا بقراءة إنسان للصفحة كاملة. كل بند في الجداول يحمل رقم مصدره في [سجل المصادر](../../../../SOURCES.md) (A254 إلى A265). **قبل أن تبني على بند، افتح صفحته.**
+
+## ما المنفَّذ، وما المختبَر، وما المتحقَّق منه
+
+ثلاث حالات لا رابعة: **تحقق مع المزوّد** (بدليل من تشغيل فعلي)، أو **اختُبر محلياً** (على حمولات مبنية من الوثائق)، أو **لم يُتحقق منه**.
+
+| القدرة | منفَّذة | مختبَرة محلياً | متحقَّق منها مع المزوّد |
+|---|---|---|---|
+| التحقق من توقيع إشعار القناة (`X-Hub-Signature-256`) | نعم | نعم | **لا** |
+| التحقق من نقطة الاستقبال (`hub.challenge`) | نعم | نعم | **لا** |
+| توقيع إشعارات سلة، وبيانات زد الأساسية | نعم | نعم | **لا** |
+| إزالة التكرار بمعرّف الرسالة، لأكثر من سبعة أيام | نعم | نعم | **لا** |
+| قراءة الرسالة النصية من حمولة القناة | نعم | نعم | **لا** |
+| استخراج رقم الطلب مما يكتبه العميل | نعم | نعم، على أمثلة مختلقة | **لا.** لم تُرَ رسالة عميل حقيقية |
+| الاستعلام عن الطلب في سلة وزد | الطلب موصوف، ولا يُرسَل | صيغة الطلب فقط | **لا** |
+| مطابقة رقم المرسل برقم صاحب الطلب | نعم | نعم | **لا.** صيغة الرقم العائدة من المنصتين لم تُرَ |
+| تعليم الرسالة بأن نافذة الرد أُغلقت | نعم | نعم | **لا** |
+| الربط بالقالب 1 داخل n8n | **لا** | لا | لا |
+| الإرسال إلى العميل | **لا، ومعطّل عمداً** | | |
+| تجديد رمز الوصول | **لا** | لا | لا |
+
+القواعد في [`tools/store_adapter.py`](../../../../tools/store_adapter.py) واختباراتها في [`tests/test_store_adapter.py`](../../../../tests/test_store_adapter.py). الاختبارات تثبت أن القواعد تعمل كما كُتبت؛ **ولا تثبت أن المزوّد يتصرف كما تقول وثائقه.** خطة التحقق في [بروتوكول التجربة صفر](../../../../03-courses/validation/pilot-zero.md).
 
 ## 1. ما يحتاجه القالب من الخارج
 
@@ -79,14 +100,32 @@
 
 ### 3.3 ما يعنيه ذلك للقالب
 
-- **رقم الطلب الذي يكتبه العميل قد لا يكون معرّف الطلب في الواجهة.** هذه أول ما يُختبر في متجر حقيقي: ما الرقم الذي يراه العميل في رسالة التأكيد، وبأي حقل يُستعلَم عنه؟ الوثائق لا تحسمه في المنصتين.
+- **رقم الطلب الذي يكتبه العميل ليس بالضرورة معرّف الطلب في الواجهة.** التفصيل في القسم 3.4.
 - **«لصاحبه فقط» قاعدة في الشيفرة.** قارن رقم جوال المرسل برقم جوال العميل في الطلب قبل أن يرى النموذج أي تفصيل. إن لم يتطابقا فالقرار تحويل إلى موظف، لا جواب.
 - **لا تعتمد على الإشعارات لمعرفة حالة الطلب.** استعلم عند السؤال. إشعارات الأحداث تنفع لاحقاً لتنبيه العميل ابتداءً، وهذا خارج القالب 1.
 - **رمز الوصول ينتهي.** في سلة بعد 14 يوماً، وتجديده مرة واحدة لكل رمز تجديد. تشغيل يتوقف في اليوم الخامس عشر عيب في الربط لا في الوكيل.
 
-## 4. المحوّل: ما يُبنى، ولم يُبنَ بعد
+### 3.4 رقم الطلب: ما يكتبه العميل، وما تسأل به الواجهة
 
-سير عمل صغير يقف أمام القالب 1 ولا يغيّره:
+في كل منصة أكثر من معرّف للطلب الواحد، والوثائق لا تقول أيها يراه العميل:
+
+| المنصة | المعرّفات | ما تقوله الوثائق | المصدر |
+|---|---|---|---|
+| سلة | `id` و`reference_id` | `GET /orders/{order_id}` يأخذ `id`. و`GET /orders` يقبل `reference_id` معاملاً، ووصفه أنه الرقم المرجعي الذي يظهر **لصاحب المتجر**. ولا تقول الصفحة أي الرقمين يراه العميل | A258، A263 |
+| زد | `id` و`invoice_number` و`code` | `code` موصوف بأنه «رمز الطلب العام»، ومنه يُبنى رابط الطلب. ولا معامل للبحث به مطابقةً؛ البحث بـ`search_term` وهو بحث حر في الرمز والجوال والبريد والاسم | A260، A264 |
+
+**القاعدة المعتمدة في الشيفرة، إلى أن يحسمها متجر حقيقي:**
+
+1. لا يُستعلَم بمسار `/{order_id}` بما كتبه العميل أبداً. يُستعلَم بالقائمة: في سلة بـ`reference_id`، وفي زد بـ`search_term`.
+2. **نتيجة البحث لا يُوثق بها وحدها.** يُقبل الطلب إن ساوى أحد معرّفاته ما كتبه العميل حرفاً بحرف، وكان واحداً. غير ذلك تحويل إلى موظف.
+3. ثم مطابقة رقم الجوال. رقم طلب صحيح من رقم غير رقم صاحبه لا يكشف شيئاً.
+4. رقمان في رسالة واحدة: تحويل إلى موظف.
+
+**ما يبقى مفتوحاً، ولا يُغلق إلا بدليل:** أي الأرقام في رسالة تأكيد الطلب التي تصل العميل (الحالة P6 في [البروتوكول](../../../../03-courses/validation/pilot-zero.md))، وبأي الصيغ يكتبه العملاء فعلاً (القياس R4). إن تبيّن أن العميل يرى رقماً ثالثاً، فالقاعدة 2 تحوّله إلى موظف ولا تخطئ فيه.
+
+## 4. المحوّل: قواعده مكتوبة ومختبَرة محلياً، وربطه لم يُبنَ
+
+ما يقف أمام القالب 1 ولا يغيّره. قواعده الحتمية في [`tools/store_adapter.py`](../../../../tools/store_adapter.py)؛ أما سير العمل الذي يستدعيها من n8n ويستعلم من المنصة فعلاً فلم يُبنَ:
 
 </div>
 
@@ -118,6 +157,7 @@ Provider webhook -> Verify signature -> Deduplicate by message id -> Extract tex
 3. ما الذي يجب أن يُخبَر به العميل عن أن وكيلاً آلياً يقرأ رسالته، ومتى؟
 4. كم تُحفظ الرسائل وسجل التدقيق، وكيف تُتلف؟
 5. ما الذي تشترطه شروط كل مزوّد على تطبيق طرف ثالث يقرأ الطلبات؟
+6. هل يلزم إبلاغ جهة أو عميل عند حادثة بيانات، ومتى؟
 
 البداية من [قائمة الامتثال للمؤسس](../../../../02-saudi-market-knowledge-framework/founder-compliance-checklist.md)، ولا تغني عن المختص.
 
@@ -129,11 +169,11 @@ Provider webhook -> Verify signature -> Deduplicate by message id -> Extract tex
 
 How [template 1 (customer service)](../../01-whatsapp-customer-service.md) meets a real channel and a real system in an online store: a customer's message comes in, and one order is looked up by its number. This is the Academy's first integration recipe, for the first sector of the [venture journey](../../../../journey/README.md).
 
-**What it is and is not.** It records what the providers' documentation says about the three connection points the template needs, and what it does not say. **It has not been run with any provider.** The adapter in section 4 is not built; its first run belongs in a real store in shadow mode, and what that run shows will be corrected here.
+**What it is and is not.** It records what the providers' documentation says about the three connection points the template needs, and what it does not say. **It has not been run with any provider.** The adapter's deterministic rules are written in `tools/store_adapter.py` and tested locally on payloads built from the documentation (22 tests); they are not wired into n8n, the order lookup is described and never sent, and token refresh is not written. The tests show the rules behave as written, not that a provider behaves as documented. The table at the top of the Arabic section gives each capability one of three states: verified with the provider (none yet), tested locally, or not verified.
 
 **Naming a provider is not endorsing it.** Salla, Zid and the WhatsApp Business Platform are named because a recipe cannot be written without specific documentation. The Academy recommends no provider and has no relationship with any of them.
 
-**How the sources were read.** Each page was opened on 26 November 2026 by an automated reader answering set questions, not read in full by a person. Every row carries its entry in [SOURCES.md](../../../../SOURCES.md) (A254 to A262). Open the page before you build on a row.
+**How the sources were read.** Each page was opened on 26 November 2026 by an automated reader answering set questions, not read in full by a person. Every row carries its entry in [SOURCES.md](../../../../SOURCES.md) (A254 to A265). Open the page before you build on a row.
 
 **What the template needs:** the inbound message (text, sender, message id) from the channel; one order's status and its customer's phone number from the store platform, read only; and a way to send the reply, which is **switched off in shadow mode**.
 
@@ -143,6 +183,8 @@ How [template 1 (customer service)](../../01-whatsapp-customer-service.md) meets
 
 **Zid (A260 to A262).** View an order at `GET /v1/managers/store/orders/{order-id}/view` with scope `orders.read`, sending the partner token in `Authorization` and the store token in `X-Manager-Token`; the response carries `order_status`, `payment_status` and `shipping.method.tracking`. Webhooks are created at `POST https://api.zid.sa/v1/managers/webhooks`; the sender is verified by Basic credentials you supply at creation. Not stated on the pages read: any signature, any retry policy, and how to look an order up by the number the customer sees.
 
-**For the template.** The number a customer types may not be the API's order id: test this first in a real store. "Only for its owner" is a rule in code: match the sender's phone to the order's customer before the model sees any detail, and hand over if they differ. Look the order up when asked rather than relying on events. Plan for token expiry.
+**Order numbers.** Each platform has more than one identifier for an order and neither says which the customer sees: Salla has `id` and `reference_id`, and `GET /orders` accepts `reference_id`, described as the number shown to the store owner (A263); Zid has `id`, `invoice_number` and a public `code`, searchable only through the free-text `search_term` (A264). The rule in code until a real store settles it: never call the by-id path with what a customer typed; look up through the list endpoint; accept a hit only if one of its own identifiers equals the typed value exactly and it is the only one; then match the mobile number. Still open, and closed only by evidence: which number the customer's order confirmation shows, and how customers actually write it.
+
+**For the template.** "Only for its owner" is a rule in code: match the sender's phone to the order's customer before the model sees any detail, and hand over if they differ. Look the order up when asked rather than relying on events. Plan for token expiry.
 
 **Before any real message, a specialist must answer:** the legal basis and the controller and processor roles; whether messages leave the Kingdom with a hosted model or channel and what that requires; what the customer must be told about an automated agent; retention and disposal; and each provider's terms for a third-party app reading orders.
