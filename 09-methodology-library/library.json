@@ -1712,13 +1712,13 @@
       "sources": [
         "A242"
       ],
-      "licence": "The national standards are named and cited; their text was not read for this card and is not reproduced.",
+      "licence": "NDMO's Data Management and Personal Data Protection Standards (Version 1.5) are cited by page; described in the Academy's words, not reproduced.",
       "used_in": [
         "05-agentic-ai-lab/exercises/r8-data-governance.md",
         "03-courses/04-scale-and-govern/lessons/4-3-governance-and-risk.md"
       ],
-      "summary_ar": "من يملك كل مجموعة بيانات، ومن يحق له استعمالها، وبأي قواعد؛ والمرجع الوطني ضوابط مكتب إدارة البيانات الوطنية في خمسة عشر مجالاً.",
-      "summary_en": "Who owns each dataset, who may use it and under what rules; the national reference is the NDMO standards across fifteen domains."
+      "summary_ar": "من يملك كل مجموعة بيانات، ومن يحق له استعمالها، وبأي قواعد؛ والمرجع الوطني ضوابط مكتب إدارة البيانات الوطنية: خمسة عشر مجالاً، و77 ضابطاً، و191 مواصفة.",
+      "summary_en": "Who owns each dataset, who may use it and under what rules; the national reference is NDMO's standards: 15 domains, 77 controls, 191 specifications."
     },
     {
       "id": "data-classification",
@@ -1735,17 +1735,17 @@
       "sources": [
         "A243"
       ],
-      "licence": "The national policy is named and cited; its text was not read for this card and is not reproduced.",
+      "licence": "SDAIA's Data Classification Policy (National Data Governance Policies, Version 1, 5 May 2020) is cited by section; described in the Academy's words, not reproduced.",
       "used_in": [
         "05-agentic-ai-lab/exercises/r8-data-governance.md",
         "03-courses/03-launch/lessons/3-4-compliance-readiness.md"
       ],
       "summary_ar": "وضع كل مجموعة بيانات في مستوى بحسب أثر كشفها؛ والمستويات الوطنية أربعة: سري للغاية، وسري، ومقيّد، وعام.",
-      "summary_en": "Placing each dataset at a level according to the impact of its disclosure; the national levels are four: Top Secret, Secret, Restricted, Public."
+      "summary_en": "Placing each dataset at a level according to the impact of its disclosure; the national policy sets four levels: Top Secret, Secret, Restricted, Public."
     },
     {
       "id": "data-protection-impact-assessment",
-      "ar": "تقييم أثر حماية البيانات",
+      "ar": "تقويم أثر معالجة البيانات الشخصية",
       "en": "Data Protection Impact Assessment",
       "domain": "data",
       "type": "method",
@@ -1759,13 +1759,13 @@
         "A50",
         "A244"
       ],
-      "licence": "The regulation is cited by article; it is not reproduced. The template is the Academy's own and is not an official form.",
+      "licence": "The Personal Data Protection Law (Art. 22) and its Implementing Regulation (Art. 25) are cited by article and summarized, not reproduced. The template is the Academy's own and is not an official form.",
       "used_in": [
         "03-courses/03-launch/lessons/3-4-compliance-readiness.md",
         "02-saudi-market-knowledge-framework/compliance-toolkit/pdpl-self-assessment.md"
       ],
-      "summary_ar": "دراسة مكتوبة تسبق المعالجة: ما البيانات الشخصية، ولماذا، وما الضرر المحتمل على أصحابها، وما الذي يخففه؛ واللائحة تحدد متى تلزم.",
-      "summary_en": "A written study before processing: what personal data, why, what harm could reach its owners and what reduces it; the regulation says when it is required."
+      "summary_ar": "دراسة مكتوبة موثقة للآثار والمخاطر على صاحب البيانات، يوجبها النظام ولائحته في أحوال محددة، ولها ثمانية عناصر حدّاً أدنى.",
+      "summary_en": "A written, documented study of effects and risks to the data subject, required by the law and its regulation in defined cases, with eight minimum elements."
     },
     {
       "id": "test-driven-development",
