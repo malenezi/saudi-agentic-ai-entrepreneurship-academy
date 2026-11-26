@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 788 380" width="788" height="380" role="img" aria-labelledby="t d">
+<title id="t">مخطط تدفق البيانات: أين تذهب رسالة العميل؟ · Data flow diagram: where a customer&#x27;s message goes (illustrative)</title>
+<desc id="d">مخطط تدفق بيانات توضيحي: رسالة العميل تدخل عملية الاستقبال، ثم تُرسل مع التعليمات إلى مزوّد النموذج اللغوي خارج المنشأة، وتُقرأ حالة الطلب من سجل الطلبات، ويُكتب كل فعل في سجل التدقيق.</desc>
+<defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#475569"/></marker></defs>
+<rect width="788" height="380" fill="#ffffff"/>
+<text x="394.0" y="26.0" font-family="'IBM Plex Sans Arabic','Noto Sans Arabic','Segoe UI',Tahoma,sans-serif" font-size="17" font-weight="700" fill="#1e293b" text-anchor="middle" direction="rtl" unicode-bidi="plaintext">مخطط تدفق البيانات: أين تذهب رسالة العميل؟</text>
+<text x="394.0" y="46.0" font-family="'IBM Plex Sans Arabic','Noto Sans Arabic','Segoe UI',Tahoma,sans-serif" font-size="12" font-weight="500" fill="#475569" text-anchor="middle">Data flow diagram: where a customer&#x27;s message goes (illustrative)</text>
+<line x1="560.0" y1="102.0" x2="482.0" y2="102.0" stroke="#475569" stroke-width="1.6" marker-end="url(#a)"/>
+<line x1="394.0" y1="136.0" x2="394.0" y2="188.0" stroke="#475569" stroke-width="1.6" marker-end="url(#a)"/>
+<line x1="323.8" y1="190.0" x2="216.4" y2="138.0" stroke="#475569" stroke-width="1.6" marker-end="url(#a)" marker-start="url(#a)"/>
+<line x1="228.0" y1="224.0" x2="306.0" y2="224.0" stroke="#475569" stroke-width="1.6" marker-end="url(#a)"/>
+<line x1="480.0" y1="224.0" x2="558.0" y2="224.0" stroke="#475569" stroke-width="1.6" marker-end="url(#a)"/>
+<line x1="646.0" y1="190.0" x2="646.0" y2="128.0" stroke="#475569" stroke-width="1.6" marker-end="url(#a)"/>
+<line x1="394.0" y1="258.0" x2="394.0" y2="310.0" stroke="#475569" stroke-width="1.6" marker-end="url(#a)"/>
+<rect x="562.0" y="80.0" width="168" height="44.0" fill="#1e293b" stroke="#1e293b" stroke-width="1.6"/>
+<text x="646.0" y="107.0" font-family="'IBM Plex Sans Arabic','Noto Sans Arabic','Segoe UI',Tahoma,sans-serif" font-size="14" font-weight="700" fill="#ffffff" text-anchor="middle" direction="rtl" unicode-bidi="plaintext">العميل</text>
+<rect x="310.0" y="70.0" width="168" height="64.0" rx="26.0" fill="#fef3c7" stroke="#b45309" stroke-width="1.6"/>
+<text x="394.0" y="97.0" font-family="'IBM Plex Sans Arabic','Noto Sans Arabic','Segoe UI',Tahoma,sans-serif" font-size="14" font-weight="700" fill="#1e293b" text-anchor="middle" direction="rtl" unicode-bidi="plaintext">1. استقبال الرسالة</text>
+<text x="394.0" y="117.0" font-family="'IBM Plex Sans Arabic','Noto Sans Arabic','Segoe UI',Tahoma,sans-serif" font-size="14" font-weight="400" fill="#1e293b" text-anchor="middle" direction="rtl" unicode-bidi="plaintext">والتحقق من الحساب</text>
+<rect x="58.0" y="70.0" width="168" height="64.0" fill="#1e293b" stroke="#1e293b" stroke-width="1.6"/>
+<text x="142.0" y="97.0" font-family="'IBM Plex Sans Arabic','Noto Sans Arabic','Segoe UI',Tahoma,sans-serif" font-size="14" font-weight="700" fill="#ffffff" text-anchor="middle" direction="rtl" unicode-bidi="plaintext">مزوّد النموذج اللغوي</text>
+<text x="142.0" y="117.0" font-family="'IBM Plex Sans Arabic','Noto Sans Arabic','Segoe UI',Tahoma,sans-serif" font-size="14" font-weight="400" fill="#ffffff" text-anchor="middle" direction="rtl" unicode-bidi="plaintext">(خارج المنشأة)</text>
+<rect x="562.0" y="192.0" width="168" height="64.0" rx="26.0" fill="#fef3c7" stroke="#b45309" stroke-width="1.6"/>
+<text x="646.0" y="219.0" font-family="'IBM Plex Sans Arabic','Noto Sans Arabic','Segoe UI',Tahoma,sans-serif" font-size="14" font-weight="700" fill="#1e293b" text-anchor="middle" direction="rtl" unicode-bidi="plaintext">3. صياغة الرد</text>
+<text x="646.0" y="239.0" font-family="'IBM Plex Sans Arabic','Noto Sans Arabic','Segoe UI',Tahoma,sans-serif" font-size="14" font-weight="400" fill="#1e293b" text-anchor="middle" direction="rtl" unicode-bidi="plaintext">وإرساله</text>
+<rect x="310.0" y="192.0" width="168" height="64.0" rx="26.0" fill="#fef3c7" stroke="#b45309" stroke-width="1.6"/>
+<text x="394.0" y="219.0" font-family="'IBM Plex Sans Arabic','Noto Sans Arabic','Segoe UI',Tahoma,sans-serif" font-size="14" font-weight="700" fill="#1e293b" text-anchor="middle" direction="rtl" unicode-bidi="plaintext">2. فهم الطلب</text>
+<text x="394.0" y="239.0" font-family="'IBM Plex Sans Arabic','Noto Sans Arabic','Segoe UI',Tahoma,sans-serif" font-size="14" font-weight="400" fill="#1e293b" text-anchor="middle" direction="rtl" unicode-bidi="plaintext">وتحديد الفعل</text>
+<rect x="58.0" y="202.0" width="168" height="44.0" fill="#f1f5f9" stroke="none"/>
+<line x1="58.0" y1="202.0" x2="226.0" y2="202.0" stroke="#1e293b" stroke-width="1.8"/>
+<line x1="58.0" y1="246.0" x2="226.0" y2="246.0" stroke="#1e293b" stroke-width="1.8"/>
+<text x="142.0" y="229.0" font-family="'IBM Plex Sans Arabic','Noto Sans Arabic','Segoe UI',Tahoma,sans-serif" font-size="14" font-weight="700" fill="#1e293b" text-anchor="middle" direction="rtl" unicode-bidi="plaintext">سجل الطلبات</text>
+<rect x="310.0" y="314.0" width="168" height="44.0" fill="#f1f5f9" stroke="none"/>
+<line x1="310.0" y1="314.0" x2="478.0" y2="314.0" stroke="#1e293b" stroke-width="1.8"/>
+<line x1="310.0" y1="358.0" x2="478.0" y2="358.0" stroke="#1e293b" stroke-width="1.8"/>
+<text x="394.0" y="341.0" font-family="'IBM Plex Sans Arabic','Noto Sans Arabic','Segoe UI',Tahoma,sans-serif" font-size="14" font-weight="700" fill="#1e293b" text-anchor="middle" direction="rtl" unicode-bidi="plaintext">سجل التدقيق</text>
+<rect x="491.3" y="91.0" width="59.4" height="20" rx="6" fill="#ffffff" fill-opacity="0.92"/>
+<text x="521.0" y="106.0" font-family="'IBM Plex Sans Arabic','Noto Sans Arabic','Segoe UI',Tahoma,sans-serif" font-size="12" font-weight="500" fill="#475569" text-anchor="middle" direction="rtl" unicode-bidi="plaintext">الرسالة</text>
+<rect x="353.5" y="151.0" width="81.0" height="20" rx="6" fill="#ffffff" fill-opacity="0.92"/>
+<text x="394.0" y="166.0" font-family="'IBM Plex Sans Arabic','Noto Sans Arabic','Segoe UI',Tahoma,sans-serif" font-size="12" font-weight="500" fill="#475569" text-anchor="middle" direction="rtl" unicode-bidi="plaintext">بعد التحقق</text>
+<rect x="229.6" y="153.0" width="81.0" height="20" rx="6" fill="#ffffff" fill-opacity="0.92"/>
+<text x="270.1" y="168.0" font-family="'IBM Plex Sans Arabic','Noto Sans Arabic','Segoe UI',Tahoma,sans-serif" font-size="12" font-weight="500" fill="#475569" text-anchor="middle" direction="rtl" unicode-bidi="plaintext">نص الرسالة</text>
+<rect x="226.5" y="213.0" width="81.0" height="20" rx="6" fill="#ffffff" fill-opacity="0.92"/>
+<text x="267.0" y="228.0" font-family="'IBM Plex Sans Arabic','Noto Sans Arabic','Segoe UI',Tahoma,sans-serif" font-size="12" font-weight="500" fill="#475569" text-anchor="middle" direction="rtl" unicode-bidi="plaintext">حالة الطلب</text>
+<rect x="496.5" y="213.0" width="45.0" height="20" rx="6" fill="#ffffff" fill-opacity="0.92"/>
+<text x="519.0" y="228.0" font-family="'IBM Plex Sans Arabic','Noto Sans Arabic','Segoe UI',Tahoma,sans-serif" font-size="12" font-weight="500" fill="#475569" text-anchor="middle" direction="rtl" unicode-bidi="plaintext">الفعل</text>
+<rect x="627.1" y="148.0" width="37.8" height="20" rx="6" fill="#ffffff" fill-opacity="0.92"/>
+<text x="646.0" y="163.0" font-family="'IBM Plex Sans Arabic','Noto Sans Arabic','Segoe UI',Tahoma,sans-serif" font-size="12" font-weight="500" fill="#475569" text-anchor="middle" direction="rtl" unicode-bidi="plaintext">الرد</text>
+<rect x="349.9" y="273.0" width="88.2" height="20" rx="6" fill="#ffffff" fill-opacity="0.92"/>
+<text x="394.0" y="288.0" font-family="'IBM Plex Sans Arabic','Noto Sans Arabic','Segoe UI',Tahoma,sans-serif" font-size="12" font-weight="500" fill="#475569" text-anchor="middle" direction="rtl" unicode-bidi="plaintext">الفعل وسببه</text>
+</svg>

@@ -7,3 +7,4 @@ index.en.html linguist-generated=true
 library.html linguist-generated=true
 site-index.json linguist-generated=true
 *.n8n.json linguist-generated=true
+09-methodology-library/diagrams/*.svg linguist-generated=true

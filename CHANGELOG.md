@@ -2,6 +2,14 @@
 
 ## Unreleased
 
+### Methodology library, third batch: the practitioner tier and diagrams (26 November 2026)
+
+- **Thirteen cards:** UML Class Diagram, Sequence Diagram, Entity Relationship Diagram, Data Flow Diagram, Swimlane Diagram, Retrieval-Augmented Generation, Model Context Protocol, Multi-Agent Orchestration, Spec-Driven Development, Technical Debt Management, CI/CD, LLM Evaluation, Threat Modeling. The library has 35 cards and lists 102 more by name. Multi-Agent Architecture and Agent Orchestration became one card.
+- **`tools/build_diagrams.py`** draws the library's diagrams as SVG from one text specification (`09-methodology-library/diagrams/diagrams.json`): boxes on a grid with arrows and optional lanes, or a sequence of messages; right-to-left layout; a title, a description and Arabic alternative text in every file; standard library only. **Ten diagrams**, all illustrative: class, sequence, entity-relationship, data flow, swimlane, agent architecture, human oversight, multi-agent orchestration, RAG and MCP. The agent-architecture and human-oversight cards of the first batch now show theirs.
+- **Why not Mermaid.** The site's reader loads no script from outside the repository, so a Mermaid block would show as text there. SVG files show on GitHub and on the site alike. Recorded in the library's `not-adopted.md`.
+- **Checks.** The build refuses a diagram no card shows; the diagram tool refuses two nodes in one cell, an edge to a node that does not exist, and a label too long to fit between two boxes. `tests/test_library.py`: thirteen tests. Sources A197 to A205.
+- **Limits.** All nine new sources were read from search extracts, not from the opened page; the UML and BPMN specifications themselves were not opened, and the cards use them for what a diagram is, not for notation rules. The diagrams are simplified teaching drawings, not standard-conformant UML or BPMN. Edges are straight lines and can cross a box in a dense layout; each diagram was looked at once in headless Chrome. GitHub's Spec Kit was not tried. No card tried with a learner.
+
 ### Methodology library, second batch: the Academy's own agent models (26 November 2026)
 
 - **Eight cards**, each labelled as developed by the Academy and not as a standard: Agent Opportunity Assessment, Agent Business Model Canvas, Agent Capability Matrix, Agent Tool-Access Matrix, Agent Risk Register, Agent ROI Calculator (the customer's return), Agent Readiness Assessment, Shadow Mode. Five point at tools that already existed (toolkit templates 2 and 5, `buyer_return.py`, the compliance toolkit's risk register, the shadow-mode switch and report); the library now has 22 cards and lists 116 more by name.

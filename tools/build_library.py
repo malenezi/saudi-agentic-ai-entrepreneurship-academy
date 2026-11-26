@@ -108,6 +108,12 @@ def problems(registry=None):
             found.append("templates/%s: a library template must say, in Arabic and English, that the Academy developed it" % path.name)
         if not any("templates/" + path.name in used for card in registry["cards"] for used in card.get("used_in", [])):
             found.append("templates/%s: no card uses this template" % path.name)
+    spec = LIB / "diagrams" / "diagrams.json"
+    if spec.exists():
+        cards_text = "".join(p.read_text(encoding="utf-8") for p in (LIB / "cards").glob("*.md"))
+        for diagram in json.loads(spec.read_text(encoding="utf-8"))["diagrams"]:
+            if "../diagrams/%s.svg" % diagram["id"] not in cards_text:
+                found.append("diagrams/%s.svg: no card shows this diagram" % diagram["id"])
     on_disk = {p.stem for p in (LIB / "cards").glob("*.md")}
     for extra in sorted(on_disk - seen):
         found.append("%s: card file with no entry in library.json" % extra)
@@ -150,7 +156,7 @@ def readme(registry):
         out.append("")
     out += ["المرحلة برقم المقرر: 1 اكتشاف الفرصة، 2 بناء الوكيل، 3 الإطلاق والنموذج التجاري، 4 التوسع والحوكمة.", "",
             "## ما يُكتب تباعاً", "",
-            "أسماء فقط حتى تُكتب البطاقة ويُتحقق من مصدرها. ترتيب الكتابة: المستوى التطبيقي والمخططات، ثم بقية المجالات، ثم المستوى المتقدم.", ""]
+            "أسماء فقط حتى تُكتب البطاقة ويُتحقق من مصدرها. ترتيب الكتابة: بقية المجالات، ثم المستوى المتقدم.", ""]
     for domain, (domain_ar, _) in DOMAINS.items():
         if planned.get(domain):
             out += ["**%s:** %s" % (domain_ar, " · ".join(planned[domain])), ""]
@@ -161,6 +167,14 @@ def readme(registry):
         for path in templates:
             title = path.read_text(encoding="utf-8").split("\n", 1)[0].lstrip("# ").strip()
             out.append("- [%s](templates/%s)" % (title, path.name))
+        out.append("")
+    spec = LIB / "diagrams" / "diagrams.json"
+    if spec.exists():
+        drawn = json.loads(spec.read_text(encoding="utf-8"))["diagrams"]
+        out += ["## مخططات المكتبة", "", "%d مخططات من رسم الأكاديمية، بأمثلة توضيحية. تُرسم بأداة `tools/build_diagrams.py` من ملف نصي واحد "
+                "([diagrams.json](diagrams/diagrams.json))، فيُعدَّل المخطط بتعديل النص، ولا صورة منقولة من موقع آخر." % len(drawn), ""]
+        for diagram in drawn:
+            out.append("- [%s](diagrams/%s.svg)" % (diagram["title_ar"], diagram["id"]))
         out.append("")
     out += ["## كيف تُضاف بطاقة", "",
             "انسخ [قالب البطاقة](card-template.md) إلى `cards/` باسم المعرّف، وأضف مدخلها في `library.json`، ثم شغّل `python3 tools/build_library.py`. "

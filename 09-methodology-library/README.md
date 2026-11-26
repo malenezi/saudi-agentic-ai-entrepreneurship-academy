@@ -6,7 +6,7 @@
 
 بطاقة موحّدة لكل نموذج أو منهجية يحتاج إليها رائد الأعمال في رحلته: ما غرضه، ومتى يُستخدم ومتى لا يُستخدم، وخطواته، وقالبه، ومثال توضيحي، وكيف يعين الوكيل الذكي على تطبيقه، وأين يرد في مقررات الأكاديمية وأدواتها.
 
-**في المكتبة الآن 22 بطاقة، و116 نموذجاً تُكتب بطاقاتها تباعاً.** تصفّحها في [صفحة المكتبة](../library.html) بحسب المرحلة والمجال والمستوى.
+**في المكتبة الآن 35 بطاقة، و102 نموذجاً تُكتب بطاقاتها تباعاً.** تصفّحها في [صفحة المكتبة](../library.html) بحسب المرحلة والمجال والمستوى.
 
 **ثلاث قواعد:**
 
@@ -46,6 +46,19 @@
 | [العائد عند العميل](cards/buyer-return.md) (Agent ROI Calculator) | أداة أو قالب | 3 | من تطوير الأكاديمية | ما يوفّره العميل فعلاً بعد حساب ما يبقى على موظفيه: التوفير الحقيقي لا الظاهر. |
 | [تقييم جاهزية المنشأة للوكيل](cards/agent-readiness-assessment.md) (Agent Readiness Assessment) | أداة أو قالب | 1، 3 | من تطوير الأكاديمية | سبعة أسئلة تُجاب بنعم أو لا مع دليل: هل هذه المنشأة، في هذه المهمة، جاهزة لوكيل ذكي؟ ومن أين تبدأ؟ |
 | [وضع الظل](cards/shadow-mode.md) (Shadow Mode) | منهجية | 3 | من تطوير الأكاديمية | الوكيل يستقبل الرسائل الحقيقية ويسجّل ما كان سيفعله ولا يرسل شيئاً، ثم يُقارَن بما فعله الموظفون. |
+| [مخطط الفئات](cards/uml-class-diagram.md) (UML Class Diagram) | نموذج | 2 | معروف عالمياً | رسم الأشياء التي يتعامل معها النظام، وخصائص كل منها، وما يربط بينها، قبل أن تُكتب شيفرة أو تُوصل أداة. |
+| [مخطط التسلسل](cards/sequence-diagram.md) (Sequence Diagram) | نموذج | 2 | معروف عالمياً | من يكلّم من، وبأي ترتيب: العميل، والتطبيق، والنموذج اللغوي، والأدوات، والموظف، رسالةً بعد رسالة. |
+| [مخطط الكيانات والعلاقات](cards/entity-relationship-diagram.md) (Entity Relationship Diagram (ERD)) | نموذج | 2 | معروف عالمياً | تصميم ما يُخزَّن: الجداول، وحقولها، ومفاتيحها، وكيف يرتبط بعضها ببعض. |
+| [مخطط تدفق البيانات](cards/data-flow-diagram.md) (Data Flow Diagram (DFD)) | نموذج | 2، 3، 4 | معروف عالمياً | أين تذهب البيانات: من أي طرف تدخل، وأي عملية تعالجها، وأين تُخزَّن، وإلى من تخرج، ومنهم مزوّد النموذج. |
+| [مخطط المسارات](cards/swimlane-diagram.md) (Swimlane Diagram) | نموذج | 1 | معروف عالمياً | رسم سير العمل في مسارات، مسار لكل من يؤدي جزءاً منه، ليظهر من يفعل ماذا وأين ينتقل العمل من يد إلى يد. |
+| [التوليد المعزَّز بالاسترجاع](cards/retrieval-augmented-generation.md) (Retrieval-Augmented Generation (RAG)) | نموذج | 2 | معروف عالمياً | بدل أن يجيب النموذج من ذاكرته، يُجلب له من مستندات المنشأة ما يخص السؤال، فيجيب منه ويذكر مصدره. |
+| [بروتوكول سياق النموذج](cards/model-context-protocol.md) (Model Context Protocol (MCP)) | إطار عمل | 2 | معروف عالمياً | معيار مفتوح يوحّد طريقة وصل تطبيقات الذكاء الاصطناعي بالأدوات ومصادر البيانات؛ يسهّل الوصل ولا يجعل الأداة آمنة. |
+| [تنسيق عدة وكلاء](cards/multi-agent-orchestration.md) (Multi-Agent Orchestration) | نموذج | 2، 4 | معروف عالمياً | تقسيم العمل على وكلاء متخصصين ينسّق بينهم وكيل أو شيفرة؛ يُلجأ إليه حين يثبت بالقياس أن وكيلاً واحداً لا يكفي. |
+| [التطوير القائم على المواصفات](cards/spec-driven-development.md) (Spec-Driven Development) | منهجية | 2 | معروف عالمياً | اكتب ما يجب أن يُبنى ولماذا، ثم الخطة، ثم المهام الصغيرة، ثم دع وكيل البرمجة ينفّذ؛ والمواصفة هي المرجع عند الخلاف. |
+| [إدارة الديون التقنية](cards/technical-debt.md) (Technical Debt Management) | منهجية | 2، 4 | معروف عالمياً | كل اختصار في البناء دَين: تأخذه لتسرع، وتدفع فائدته في كل تعديل لاحق حتى تسدده. المطلوب أن تعرف ديونك وتختارها. |
+| [التكامل المستمر والتسليم المستمر](cards/ci-cd.md) (CI/CD) | منهجية | 2، 4 | معروف عالمياً | كل تغيير يُدمج بسرعة ويُفحص آلياً قبل أن يصل إلى أحد؛ ولوكيل ذكي يعني ذلك تشغيل مجموعة التقييم مع كل تغيير. |
+| [تقييم مخرجات النموذج اللغوي](cards/llm-evaluation.md) (LLM Evaluation) | منهجية | 2، 4 | معروف عالمياً | من يحكم على الناتج وكيف: مطابقة بالشيفرة حيث أمكن، ومراجع بشري للحساس، ونموذج حَكَم للحجم الكبير بعد اختباره. |
+| [نمذجة التهديدات](cards/threat-modeling.md) (Threat Modeling) | منهجية | 4 | معروف عالمياً | أربعة أسئلة على رسم النظام: على ماذا نعمل؟ ما الذي قد يسوء؟ ماذا سنفعل حياله؟ وهل أحسنّا؟ |
 
 ## المستوى: متقدم
 
@@ -57,7 +70,7 @@
 
 ## ما يُكتب تباعاً
 
-أسماء فقط حتى تُكتب البطاقة ويُتحقق من مصدرها. ترتيب الكتابة: المستوى التطبيقي والمخططات، ثم بقية المجالات، ثم المستوى المتقدم.
+أسماء فقط حتى تُكتب البطاقة ويُتحقق من مصدرها. ترتيب الكتابة: بقية المجالات، ثم المستوى المتقدم.
 
 **اكتشاف الفرص وفهم السوق:** Empathy Map · PESTEL Analysis · Porter's Five Forces · SWOT Analysis · TAM / SAM / SOM · The Mom Test · Assumption Mapping · Value Stream Mapping · Five Whys and Fishbone Diagram · Service Blueprint
 
@@ -65,19 +78,19 @@
 
 **تأسيس المشروع وإدارته:** Disciplined Entrepreneurship · Customer Development · Effectuation · Build-Measure-Learn · Hypothesis-Driven Development · Impact-Effort Matrix · OKRs · Balanced Scorecard · Pre-mortem · North Star Metric · AARRR Funnel
 
-**إدارة المنتجات والمشاريع:** Scrum · Swimlane Diagram · Work Breakdown Structure · Product Roadmap · User Stories and Acceptance Criteria · RACI Matrix · MoSCoW Prioritization · RICE Scoring · Risk Matrix · Critical Path Method · Technical Debt Management · BPMN
+**إدارة المنتجات والمشاريع:** Scrum · Work Breakdown Structure · Product Roadmap · User Stories and Acceptance Criteria · RACI Matrix · MoSCoW Prioritization · RICE Scoring · Risk Matrix · Critical Path Method · BPMN
 
-**تحليل المتطلبات وتصميم الأنظمة:** Use Case Diagram · UML Class Diagram · Sequence Diagram · Activity Diagram · State Machine Diagram · Component Diagram · Deployment Diagram · System Context Diagram · C4 Model · Software Requirements Specification · Software Architecture · Architecture Decision Records
+**تحليل المتطلبات وتصميم الأنظمة:** Use Case Diagram · Activity Diagram · State Machine Diagram · Component Diagram · Deployment Diagram · System Context Diagram · C4 Model · Software Requirements Specification · Software Architecture · Architecture Decision Records
 
-**هندسة البيانات وتصميمها:** Entity Relationship Diagram · Data Flow Diagram · Data Pipeline Diagram · Data Modeling · Database Schema · Modern Data Architecture · Dimensional Modeling · Data Lifecycle · Data Governance Framework · Data Classification · Data Protection Impact Assessment
+**هندسة البيانات وتصميمها:** Data Pipeline Diagram · Data Modeling · Database Schema · Modern Data Architecture · Dimensional Modeling · Data Lifecycle · Data Governance Framework · Data Classification · Data Protection Impact Assessment
 
-**هندسة الأنظمة القائمة على الوكلاء:** Agent Loop · Tool Calling · Retrieval-Augmented Generation · Model Context Protocol · Multi-Agent Architecture · Agent Orchestration · Agent Memory Design · Context Engineering · Agent Design Patterns · Agent Permission Model · Agent Reliability Engineering · Agent2Agent Protocol · Guardrails
+**هندسة الأنظمة القائمة على الوكلاء:** Agent Loop · Tool Calling · Agent Memory Design · Context Engineering · Agent Design Patterns · Agent Permission Model · Agent Reliability Engineering · Agent2Agent Protocol · Guardrails
 
-**تطوير البرمجيات والتشغيل:** Spec-Driven Development · Test-Driven Development · CI/CD · Agentic Coding · Prompt Engineering · Code Review · Semantic Versioning · Observability · Site Reliability Engineering · MLOps / LLMOps
+**تطوير البرمجيات والتشغيل:** Test-Driven Development · Agentic Coding · Prompt Engineering · Code Review · Semantic Versioning · Observability · Site Reliability Engineering · MLOps / LLMOps
 
-**الاختبار والتقييم وضمان الجودة:** Functional Testing · Integration Testing · End-to-End Testing · Performance Testing · Security Testing · Scenario-Based Testing · LLM Evaluation · RAG Evaluation · Regression Testing · Adversarial Testing · Human Evaluation · Golden Dataset
+**الاختبار والتقييم وضمان الجودة:** Functional Testing · Integration Testing · End-to-End Testing · Performance Testing · Security Testing · Scenario-Based Testing · RAG Evaluation · Regression Testing · Adversarial Testing · Human Evaluation · Golden Dataset
 
-**الحوكمة والأمن والتوسع التجاري:** AI Governance Framework · NIST AI RMF · ISO/IEC 42001 · Threat Modeling · STRIDE · OWASP Top 10 for LLM Applications · Principle of Least Privilege · Zero Trust Architecture · Agent Lifecycle Governance · Total Cost of Ownership · Return on Investment · Customer Acquisition Cost · Customer Lifetime Value · Cohort and Retention Analysis · SaaS Financial Modeling · Ansoff Matrix · Crossing the Chasm
+**الحوكمة والأمن والتوسع التجاري:** AI Governance Framework · NIST AI RMF · ISO/IEC 42001 · STRIDE · OWASP Top 10 for LLM Applications · Principle of Least Privilege · Zero Trust Architecture · Agent Lifecycle Governance · Total Cost of Ownership · Return on Investment · Customer Acquisition Cost · Customer Lifetime Value · Cohort and Retention Analysis · SaaS Financial Modeling · Ansoff Matrix · Crossing the Chasm
 
 ## قوالب المكتبة
 
@@ -86,6 +99,21 @@
 - [مصفوفة قدرات الوكيل · Agent capability matrix](templates/agent-capability-matrix.md)
 - [تقييم جاهزية المنشأة للوكيل · Agent readiness assessment](templates/agent-readiness-assessment.md)
 - [مصفوفة وصول الوكيل إلى الأدوات · Agent tool-access matrix](templates/agent-tool-access-matrix.md)
+
+## مخططات المكتبة
+
+10 مخططات من رسم الأكاديمية، بأمثلة توضيحية. تُرسم بأداة `tools/build_diagrams.py` من ملف نصي واحد ([diagrams.json](diagrams/diagrams.json))، فيُعدَّل المخطط بتعديل النص، ولا صورة منقولة من موقع آخر.
+
+- [مخطط الفئات: مطابقة فواتير الموردين](diagrams/class-diagram.svg)
+- [مخطط التسلسل: سؤال عن حالة طلب](diagrams/sequence-diagram.svg)
+- [مخطط الكيانات والعلاقات: سجل وكيل خدمة العملاء](diagrams/entity-relationship-diagram.svg)
+- [مخطط تدفق البيانات: أين تذهب رسالة العميل؟](diagrams/data-flow-diagram.svg)
+- [مخطط المسارات: مطابقة فاتورة مورّد](diagrams/swimlane-diagram.svg)
+- [معمارية الوكيل الذكي: المكوّنات والحدود](diagrams/agent-architecture.svg)
+- [الإشراف البشري: أربعة مستويات لكل فعل](diagrams/human-in-the-loop.svg)
+- [تنسيق عدة وكلاء: منسّق ووكلاء متخصصون](diagrams/multi-agent-orchestration.svg)
+- [التوليد المعزَّز بالاسترجاع](diagrams/retrieval-augmented-generation.svg)
+- [بروتوكول سياق النموذج](diagrams/model-context-protocol.svg)
 
 ## كيف تُضاف بطاقة
 
@@ -97,7 +125,7 @@
 
 One standard card per framework, method or model a founder needs on the way from an opportunity to a growing venture: purpose, when to use it and when not to, steps, a blank template, an illustrative example, how an AI agent helps apply it, and where the Academy's courses and tools use it. Cards are written in Arabic with English terms.
 
-**22 cards so far; 116 more are listed by name and are written in batches.** Browse them on the [library page](../library.html).
+**35 cards so far; 102 more are listed by name and are written in batches.** Browse them on the [library page](../library.html).
 
 Three rules: no card for a known model without a source in the [source register](../SOURCES.md); other people's canvases are described and linked, never copied; a model developed by the Academy is labelled as such and is not presented as a standard. No card has been tried with learners. What was left out of the original proposal is in [not-adopted.md](not-adopted.md).
 
@@ -125,3 +153,16 @@ Three rules: no card for a known model without a source in the [source register]
 | [Agent ROI Calculator](cards/buyer-return.md) | Tool or template | Practitioner | 3 | What the customer really saves once the work left with their own staff is counted: the real saving, not the apparent one. |
 | [Agent Readiness Assessment](cards/agent-readiness-assessment.md) | Tool or template | Practitioner | 1, 3 | Seven yes-or-no questions with evidence: is this business, for this task, ready for an agent, and where should it start? |
 | [Shadow Mode](cards/shadow-mode.md) | Method | Practitioner | 3 | The agent receives the real messages, records what it would have done and sends nothing; then it is compared with what staff did. |
+| [UML Class Diagram](cards/uml-class-diagram.md) | Model | Practitioner | 2 | Draw the things the system deals with, what each one holds and how they relate, before code is written or a tool is connected. |
+| [Sequence Diagram](cards/sequence-diagram.md) | Model | Practitioner | 2 | Who talks to whom and in what order: customer, application, model, tools and staff, message by message. |
+| [Entity Relationship Diagram (ERD)](cards/entity-relationship-diagram.md) | Model | Practitioner | 2 | Design what is stored: tables, their fields and keys, and how they connect. |
+| [Data Flow Diagram (DFD)](cards/data-flow-diagram.md) | Model | Practitioner | 2, 3, 4 | Where data goes: who it comes from, which process handles it, where it is stored and who it leaves to, the model provider included. |
+| [Swimlane Diagram](cards/swimlane-diagram.md) | Model | Practitioner | 1 | Draw the workflow in lanes, one per actor, so that who does what and every handoff is visible. |
+| [Retrieval-Augmented Generation (RAG)](cards/retrieval-augmented-generation.md) | Model | Practitioner | 2 | Instead of answering from memory, the model is given the passages of the business's documents that bear on the question, and answers from them with a source. |
+| [Model Context Protocol (MCP)](cards/model-context-protocol.md) | Framework | Practitioner | 2 | An open standard for connecting AI applications to tools and data sources; it eases connection and does not make a tool safe. |
+| [Multi-Agent Orchestration](cards/multi-agent-orchestration.md) | Model | Practitioner | 2, 4 | Split work across specialised agents coordinated by an agent or by code; used once measurement shows one agent is not enough. |
+| [Spec-Driven Development](cards/spec-driven-development.md) | Method | Practitioner | 2 | Write what must be built and why, then the plan, then small tasks, then let the coding agent implement; the specification is the reference. |
+| [Technical Debt Management](cards/technical-debt.md) | Method | Practitioner | 2, 4 | Every shortcut in the build is a debt: taken for speed, paid as interest on every later change until repaid. Know your debts and choose them. |
+| [CI/CD](cards/ci-cd.md) | Method | Practitioner | 2, 4 | Every change is merged quickly and checked automatically before it reaches anyone; for an agent, that means running the evaluation set on every change. |
+| [LLM Evaluation](cards/llm-evaluation.md) | Method | Practitioner | 2, 4 | Who judges the output and how: code checks where possible, a human for what is sensitive, a judge model for volume once the judge itself is tested. |
+| [Threat Modeling](cards/threat-modeling.md) | Method | Practitioner | 4 | Four questions asked over a drawing of the system: what are we working on, what can go wrong, what will we do about it, did we do a good enough job. |

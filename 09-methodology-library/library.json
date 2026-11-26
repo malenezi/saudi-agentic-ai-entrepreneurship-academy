@@ -499,6 +499,305 @@
       ],
       "summary_ar": "الوكيل يستقبل الرسائل الحقيقية ويسجّل ما كان سيفعله ولا يرسل شيئاً، ثم يُقارَن بما فعله الموظفون.",
       "summary_en": "The agent receives the real messages, records what it would have done and sends nothing; then it is compared with what staff did."
+    },
+    {
+      "id": "uml-class-diagram",
+      "ar": "مخطط الفئات",
+      "en": "UML Class Diagram",
+      "domain": "requirements-design",
+      "type": "model",
+      "tier": "practitioner",
+      "origin": "global",
+      "stages": [
+        2
+      ],
+      "sources": [
+        "A197"
+      ],
+      "licence": "UML is an OMG specification; described in the Academy's words. The diagram is the Academy's own drawing.",
+      "used_in": [
+        "05-agentic-ai-lab/datasets/ecommerce-store/README.md",
+        "04-entrepreneur-toolkit/12-agentic-due-diligence-pack.md"
+      ],
+      "summary_ar": "رسم الأشياء التي يتعامل معها النظام، وخصائص كل منها، وما يربط بينها، قبل أن تُكتب شيفرة أو تُوصل أداة.",
+      "summary_en": "Draw the things the system deals with, what each one holds and how they relate, before code is written or a tool is connected."
+    },
+    {
+      "id": "sequence-diagram",
+      "ar": "مخطط التسلسل",
+      "en": "Sequence Diagram",
+      "domain": "requirements-design",
+      "type": "model",
+      "tier": "practitioner",
+      "origin": "global",
+      "stages": [
+        2
+      ],
+      "sources": [
+        "A197"
+      ],
+      "licence": "UML is an OMG specification; described in the Academy's words. The diagram is the Academy's own drawing.",
+      "used_in": [
+        "03-courses/02-build/lessons/2-3-tools-and-integrations.md",
+        "05-agentic-ai-lab/agent-templates/workflows/README.md"
+      ],
+      "summary_ar": "من يكلّم من، وبأي ترتيب: العميل، والتطبيق، والنموذج اللغوي، والأدوات، والموظف، رسالةً بعد رسالة.",
+      "summary_en": "Who talks to whom and in what order: customer, application, model, tools and staff, message by message."
+    },
+    {
+      "id": "entity-relationship-diagram",
+      "ar": "مخطط الكيانات والعلاقات",
+      "en": "Entity Relationship Diagram (ERD)",
+      "domain": "data",
+      "type": "model",
+      "tier": "practitioner",
+      "origin": "global",
+      "stages": [
+        2
+      ],
+      "sources": [
+        "A198"
+      ],
+      "licence": "Described in the Academy's words; Chen's paper is cited. The diagram is the Academy's own drawing.",
+      "used_in": [
+        "05-agentic-ai-lab/datasets/ecommerce-store/README.md",
+        "03-courses/02-build/lessons/2-3-tools-and-integrations.md"
+      ],
+      "summary_ar": "تصميم ما يُخزَّن: الجداول، وحقولها، ومفاتيحها، وكيف يرتبط بعضها ببعض.",
+      "summary_en": "Design what is stored: tables, their fields and keys, and how they connect."
+    },
+    {
+      "id": "data-flow-diagram",
+      "ar": "مخطط تدفق البيانات",
+      "en": "Data Flow Diagram (DFD)",
+      "domain": "data",
+      "type": "model",
+      "tier": "practitioner",
+      "origin": "global",
+      "stages": [
+        2,
+        3,
+        4
+      ],
+      "sources": [
+        "A199"
+      ],
+      "licence": "Described in the Academy's words. The diagram is the Academy's own drawing.",
+      "used_in": [
+        "03-courses/03-launch/lessons/3-4-compliance-readiness.md",
+        "02-saudi-market-knowledge-framework/compliance-toolkit/pdpl-self-assessment.md"
+      ],
+      "summary_ar": "أين تذهب البيانات: من أي طرف تدخل، وأي عملية تعالجها، وأين تُخزَّن، وإلى من تخرج، ومنهم مزوّد النموذج.",
+      "summary_en": "Where data goes: who it comes from, which process handles it, where it is stored and who it leaves to, the model provider included."
+    },
+    {
+      "id": "swimlane-diagram",
+      "ar": "مخطط المسارات",
+      "en": "Swimlane Diagram",
+      "domain": "product-project",
+      "type": "model",
+      "tier": "practitioner",
+      "origin": "global",
+      "stages": [
+        1
+      ],
+      "sources": [
+        "A200",
+        "A44"
+      ],
+      "licence": "Described in the Academy's words; BPMN is an OMG specification. The diagram is the Academy's own drawing.",
+      "used_in": [
+        "03-courses/01-opportunity/templates/workflow-map.md",
+        "03-courses/01-opportunity/lessons/1-4-workflow-shadowing.md"
+      ],
+      "summary_ar": "رسم سير العمل في مسارات، مسار لكل من يؤدي جزءاً منه، ليظهر من يفعل ماذا وأين ينتقل العمل من يد إلى يد.",
+      "summary_en": "Draw the workflow in lanes, one per actor, so that who does what and every handoff is visible."
+    },
+    {
+      "id": "retrieval-augmented-generation",
+      "ar": "التوليد المعزَّز بالاسترجاع",
+      "en": "Retrieval-Augmented Generation (RAG)",
+      "domain": "agentic-engineering",
+      "type": "model",
+      "tier": "practitioner",
+      "origin": "global",
+      "stages": [
+        2
+      ],
+      "sources": [
+        "A201",
+        "A82"
+      ],
+      "licence": "Described in the Academy's words; the paper is cited. The diagram is the Academy's own drawing.",
+      "used_in": [
+        "03-courses/02-build/lessons/2-2-context-engineering-in-arabic.md",
+        "05-agentic-ai-lab/evaluation/eval-template.md"
+      ],
+      "summary_ar": "بدل أن يجيب النموذج من ذاكرته، يُجلب له من مستندات المنشأة ما يخص السؤال، فيجيب منه ويذكر مصدره.",
+      "summary_en": "Instead of answering from memory, the model is given the passages of the business's documents that bear on the question, and answers from them with a source."
+    },
+    {
+      "id": "model-context-protocol",
+      "ar": "بروتوكول سياق النموذج",
+      "en": "Model Context Protocol (MCP)",
+      "domain": "agentic-engineering",
+      "type": "framework",
+      "tier": "practitioner",
+      "origin": "global",
+      "stages": [
+        2
+      ],
+      "sources": [
+        "A83"
+      ],
+      "licence": "An open standard; described in the Academy's words. The diagram is the Academy's own drawing.",
+      "used_in": [
+        "03-courses/02-build/lessons/2-3-tools-and-integrations.md",
+        "03-courses/02-build/templates/tool-contract.md"
+      ],
+      "summary_ar": "معيار مفتوح يوحّد طريقة وصل تطبيقات الذكاء الاصطناعي بالأدوات ومصادر البيانات؛ يسهّل الوصل ولا يجعل الأداة آمنة.",
+      "summary_en": "An open standard for connecting AI applications to tools and data sources; it eases connection and does not make a tool safe."
+    },
+    {
+      "id": "multi-agent-orchestration",
+      "ar": "تنسيق عدة وكلاء",
+      "en": "Multi-Agent Orchestration",
+      "domain": "agentic-engineering",
+      "type": "model",
+      "tier": "practitioner",
+      "origin": "global",
+      "stages": [
+        2,
+        4
+      ],
+      "sources": [
+        "A81",
+        "A87"
+      ],
+      "licence": "Described in the Academy's words; a vendor's engineering write-ups, cited. The diagram is the Academy's own drawing.",
+      "used_in": [
+        "03-courses/02-build/lessons/2-7-from-one-agent-to-several.md",
+        "03-courses/04-scale-and-govern/lessons/4-1-the-agent-operated-company.md"
+      ],
+      "summary_ar": "تقسيم العمل على وكلاء متخصصين ينسّق بينهم وكيل أو شيفرة؛ يُلجأ إليه حين يثبت بالقياس أن وكيلاً واحداً لا يكفي.",
+      "summary_en": "Split work across specialised agents coordinated by an agent or by code; used once measurement shows one agent is not enough."
+    },
+    {
+      "id": "spec-driven-development",
+      "ar": "التطوير القائم على المواصفات",
+      "en": "Spec-Driven Development",
+      "domain": "software-engineering",
+      "type": "method",
+      "tier": "practitioner",
+      "origin": "global",
+      "stages": [
+        2
+      ],
+      "sources": [
+        "A204"
+      ],
+      "licence": "Described in the Academy's words; GitHub's toolkit is cited, not bundled.",
+      "used_in": [
+        "03-courses/02-build/templates/architecture-decision.md",
+        "04-entrepreneur-toolkit/07-ai-mvp-blueprint.md"
+      ],
+      "summary_ar": "اكتب ما يجب أن يُبنى ولماذا، ثم الخطة، ثم المهام الصغيرة، ثم دع وكيل البرمجة ينفّذ؛ والمواصفة هي المرجع عند الخلاف.",
+      "summary_en": "Write what must be built and why, then the plan, then small tasks, then let the coding agent implement; the specification is the reference."
+    },
+    {
+      "id": "technical-debt",
+      "ar": "إدارة الديون التقنية",
+      "en": "Technical Debt Management",
+      "domain": "product-project",
+      "type": "method",
+      "tier": "practitioner",
+      "origin": "global",
+      "stages": [
+        2,
+        4
+      ],
+      "sources": [
+        "A203"
+      ],
+      "licence": "Described in the Academy's words; the sources are cited.",
+      "used_in": [
+        "03-courses/02-build/templates/failure-and-improvement-log.md",
+        "04-entrepreneur-toolkit/12-agentic-due-diligence-pack.md"
+      ],
+      "summary_ar": "كل اختصار في البناء دَين: تأخذه لتسرع، وتدفع فائدته في كل تعديل لاحق حتى تسدده. المطلوب أن تعرف ديونك وتختارها.",
+      "summary_en": "Every shortcut in the build is a debt: taken for speed, paid as interest on every later change until repaid. Know your debts and choose them."
+    },
+    {
+      "id": "ci-cd",
+      "ar": "التكامل المستمر والتسليم المستمر",
+      "en": "CI/CD",
+      "domain": "software-engineering",
+      "type": "method",
+      "tier": "practitioner",
+      "origin": "global",
+      "stages": [
+        2,
+        4
+      ],
+      "sources": [
+        "A202"
+      ],
+      "licence": "Described in the Academy's words; Fowler's article is cited.",
+      "used_in": [
+        "Makefile",
+        ".github/workflows/ci.yml",
+        "03-courses/02-build/lessons/2-8-failure-analysis-and-iteration.md"
+      ],
+      "summary_ar": "كل تغيير يُدمج بسرعة ويُفحص آلياً قبل أن يصل إلى أحد؛ ولوكيل ذكي يعني ذلك تشغيل مجموعة التقييم مع كل تغيير.",
+      "summary_en": "Every change is merged quickly and checked automatically before it reaches anyone; for an agent, that means running the evaluation set on every change."
+    },
+    {
+      "id": "llm-evaluation",
+      "ar": "تقييم مخرجات النموذج اللغوي",
+      "en": "LLM Evaluation",
+      "domain": "testing-evaluation",
+      "type": "method",
+      "tier": "practitioner",
+      "origin": "global",
+      "stages": [
+        2,
+        4
+      ],
+      "sources": [
+        "A193"
+      ],
+      "licence": "Described in the Academy's words; a vendor's engineering guidance, cited.",
+      "used_in": [
+        "03-courses/02-build/lessons/2-5-evaluation.md",
+        "03-courses/02-build/lessons/2-4-choosing-a-model.md",
+        "05-agentic-ai-lab/evaluation/eval-template.md"
+      ],
+      "summary_ar": "من يحكم على الناتج وكيف: مطابقة بالشيفرة حيث أمكن، ومراجع بشري للحساس، ونموذج حَكَم للحجم الكبير بعد اختباره.",
+      "summary_en": "Who judges the output and how: code checks where possible, a human for what is sensitive, a judge model for volume once the judge itself is tested."
+    },
+    {
+      "id": "threat-modeling",
+      "ar": "نمذجة التهديدات",
+      "en": "Threat Modeling",
+      "domain": "governance-scale",
+      "type": "method",
+      "tier": "practitioner",
+      "origin": "global",
+      "stages": [
+        4
+      ],
+      "sources": [
+        "A205",
+        "A84"
+      ],
+      "licence": "Described in the Academy's words; the manifesto and OWASP pages are cited.",
+      "used_in": [
+        "03-courses/04-scale-and-govern/lessons/4-4-security-for-agentic-systems.md",
+        "02-saudi-market-knowledge-framework/compliance-toolkit/agent-security-assessment.md",
+        "05-agentic-ai-lab/exercises/r7-agent-red-teaming.md"
+      ],
+      "summary_ar": "أربعة أسئلة على رسم النظام: على ماذا نعمل؟ ما الذي قد يسوء؟ ماذا سنفعل حياله؟ وهل أحسنّا؟",
+      "summary_en": "Four questions asked over a drawing of the system: what are we working on, what can go wrong, what will we do about it, did we do a good enough job."
     }
   ],
   "planned": {
@@ -539,7 +838,6 @@
     ],
     "product-project": [
       "Scrum",
-      "Swimlane Diagram",
       "Work Breakdown Structure",
       "Product Roadmap",
       "User Stories and Acceptance Criteria",
@@ -548,13 +846,10 @@
       "RICE Scoring",
       "Risk Matrix",
       "Critical Path Method",
-      "Technical Debt Management",
       "BPMN"
     ],
     "requirements-design": [
       "Use Case Diagram",
-      "UML Class Diagram",
-      "Sequence Diagram",
       "Activity Diagram",
       "State Machine Diagram",
       "Component Diagram",
@@ -566,8 +861,6 @@
       "Architecture Decision Records"
     ],
     "data": [
-      "Entity Relationship Diagram",
-      "Data Flow Diagram",
       "Data Pipeline Diagram",
       "Data Modeling",
       "Database Schema",
@@ -581,10 +874,6 @@
     "agentic-engineering": [
       "Agent Loop",
       "Tool Calling",
-      "Retrieval-Augmented Generation",
-      "Model Context Protocol",
-      "Multi-Agent Architecture",
-      "Agent Orchestration",
       "Agent Memory Design",
       "Context Engineering",
       "Agent Design Patterns",
@@ -594,9 +883,7 @@
       "Guardrails"
     ],
     "software-engineering": [
-      "Spec-Driven Development",
       "Test-Driven Development",
-      "CI/CD",
       "Agentic Coding",
       "Prompt Engineering",
       "Code Review",
@@ -612,7 +899,6 @@
       "Performance Testing",
       "Security Testing",
       "Scenario-Based Testing",
-      "LLM Evaluation",
       "RAG Evaluation",
       "Regression Testing",
       "Adversarial Testing",
@@ -623,7 +909,6 @@
       "AI Governance Framework",
       "NIST AI RMF",
       "ISO/IEC 42001",
-      "Threat Modeling",
       "STRIDE",
       "OWASP Top 10 for LLM Applications",
       "Principle of Least Privilege",

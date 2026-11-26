@@ -1,0 +1,1149 @@
+{
+ "note": "Specification of the library's diagrams, drawn by tools/build_diagrams.py. All examples are illustrative.",
+ "diagrams": [
+  {
+   "id": "class-diagram",
+   "kind": "grid",
+   "title_ar": "مخطط الفئات: مطابقة فواتير الموردين",
+   "title_en": "Class diagram: supplier invoice matching (illustrative)",
+   "alt": "مخطط فئات توضيحي: المورّد له أوامر شراء وفواتير، ولكل فاتورة بنود ونتيجة مطابقة واحدة مرتبطة بأمر الشراء.",
+   "cols": 3,
+   "rows": 2,
+   "nodes": [
+    {
+     "id": "sup",
+     "col": 0,
+     "row": 0,
+     "text": [
+      "Supplier"
+     ],
+     "body": [
+      "id",
+      "name",
+      "vat_number"
+     ]
+    },
+    {
+     "id": "po",
+     "col": 1,
+     "row": 0,
+     "text": [
+      "PurchaseOrder"
+     ],
+     "body": [
+      "number",
+      "date",
+      "total",
+      "lines()"
+     ]
+    },
+    {
+     "id": "inv",
+     "col": 2,
+     "row": 0,
+     "text": [
+      "Invoice"
+     ],
+     "body": [
+      "number",
+      "date",
+      "total",
+      "status"
+     ]
+    },
+    {
+     "id": "line",
+     "col": 2,
+     "row": 1,
+     "text": [
+      "InvoiceLine"
+     ],
+     "body": [
+      "item",
+      "quantity",
+      "unit_price"
+     ]
+    },
+    {
+     "id": "match",
+     "col": 1,
+     "row": 1,
+     "text": [
+      "MatchResult"
+     ],
+     "body": [
+      "price_gap",
+      "quantity_gap",
+      "decision",
+      "decided_by"
+     ]
+    }
+   ],
+   "edges": [
+    {
+     "from": "sup",
+     "to": "po",
+     "label": "1 .. *",
+     "ltr": true
+    },
+    {
+     "from": "po",
+     "to": "inv",
+     "label": "1 .. *",
+     "ltr": true
+    },
+    {
+     "from": "inv",
+     "to": "line",
+     "label": "1 .. *",
+     "ltr": true
+    },
+    {
+     "from": "inv",
+     "to": "match",
+     "label": "1 .. 1",
+     "ltr": true
+    },
+    {
+     "from": "match",
+     "to": "po",
+     "label": "reads",
+     "ltr": true,
+     "dashed": true
+    }
+   ]
+  },
+  {
+   "id": "sequence-diagram",
+   "kind": "sequence",
+   "rtl": true,
+   "title_ar": "مخطط التسلسل: سؤال عن حالة طلب",
+   "title_en": "Sequence diagram: an order-status question (illustrative)",
+   "alt": "مخطط تسلسل توضيحي: العميل يسأل عن طلبه، فيتحقق التطبيق من الصلاحية بقاعدة، ويقرأ الوكيل حالة الطلب بأداة، ثم يرد؛ وطلب الإلغاء يُحال إلى الموظف.",
+   "participants": [
+    {
+     "id": "c",
+     "text": "العميل"
+    },
+    {
+     "id": "app",
+     "text": "التطبيق (قواعد)"
+    },
+    {
+     "id": "m",
+     "text": "النموذج اللغوي"
+    },
+    {
+     "id": "o",
+     "text": "نظام الطلبات"
+    },
+    {
+     "id": "h",
+     "text": "الموظف"
+    }
+   ],
+   "messages": [
+    {
+     "from": "c",
+     "to": "app",
+     "text": "وين طلبي A-1001؟"
+    },
+    {
+     "from": "app",
+     "to": "m",
+     "text": "الرسالة + التعليمات"
+    },
+    {
+     "from": "m",
+     "to": "app",
+     "text": "طلب أداة: get_order_status",
+     "dashed": true
+    },
+    {
+     "from": "app",
+     "to": "o",
+     "text": "قراءة حالة الطلب"
+    },
+    {
+     "from": "o",
+     "to": "app",
+     "text": "الحالة وآخر تحديث",
+     "dashed": true
+    },
+    {
+     "from": "app",
+     "to": "m",
+     "text": "نتيجة الأداة"
+    },
+    {
+     "from": "m",
+     "to": "app",
+     "text": "مسودة الرد",
+     "dashed": true
+    },
+    {
+     "from": "app",
+     "to": "c",
+     "text": "الرد على العميل"
+    },
+    {
+     "note": "مسار الاستثناء: في الرسالة طلب إلغاء"
+    },
+    {
+     "from": "app",
+     "to": "h",
+     "text": "إحالة بقاعدة في الشيفرة"
+    },
+    {
+     "from": "h",
+     "to": "c",
+     "text": "رد الموظف",
+     "dashed": true
+    }
+   ]
+  },
+  {
+   "id": "entity-relationship-diagram",
+   "kind": "grid",
+   "title_ar": "مخطط الكيانات والعلاقات: سجل وكيل خدمة العملاء",
+   "title_en": "Entity-relationship diagram: a customer-service agent's records (illustrative)",
+   "alt": "مخطط كيانات وعلاقات توضيحي: العميل له طلبات ورسائل، ولكل رسالة فعل واحد سجّله الوكيل، وبعض الأفعال لها موافقة بشرية.",
+   "cols": 3,
+   "rows": 2,
+   "nodes": [
+    {
+     "id": "cust",
+     "col": 0,
+     "row": 0,
+     "text": [
+      "customer"
+     ],
+     "body": [
+      "id  PK",
+      "phone",
+      "name"
+     ]
+    },
+    {
+     "id": "ord",
+     "col": 1,
+     "row": 0,
+     "text": [
+      "order"
+     ],
+     "body": [
+      "id  PK",
+      "customer_id  FK",
+      "status",
+      "updated_at"
+     ]
+    },
+    {
+     "id": "msg",
+     "col": 0,
+     "row": 1,
+     "text": [
+      "message"
+     ],
+     "body": [
+      "id  PK",
+      "customer_id  FK",
+      "received_at",
+      "text_hash"
+     ]
+    },
+    {
+     "id": "act",
+     "col": 1,
+     "row": 1,
+     "text": [
+      "agent_action"
+     ],
+     "body": [
+      "id  PK",
+      "message_id  FK",
+      "order_id  FK",
+      "action",
+      "level"
+     ]
+    },
+    {
+     "id": "app",
+     "col": 2,
+     "row": 1,
+     "text": [
+      "approval"
+     ],
+     "body": [
+      "id  PK",
+      "action_id  FK",
+      "approver",
+      "decided_at"
+     ]
+    }
+   ],
+   "edges": [
+    {
+     "from": "cust",
+     "to": "ord",
+     "label": "1 : N",
+     "ltr": true
+    },
+    {
+     "from": "cust",
+     "to": "msg",
+     "label": "1 : N",
+     "ltr": true
+    },
+    {
+     "from": "msg",
+     "to": "act",
+     "label": "1 : 1",
+     "ltr": true
+    },
+    {
+     "from": "act",
+     "to": "ord",
+     "label": "N : 1",
+     "ltr": true
+    },
+    {
+     "from": "act",
+     "to": "app",
+     "label": "1 : 0..1",
+     "ltr": true
+    }
+   ]
+  },
+  {
+   "id": "data-flow-diagram",
+   "kind": "grid",
+   "rtl": true,
+   "title_ar": "مخطط تدفق البيانات: أين تذهب رسالة العميل؟",
+   "title_en": "Data flow diagram: where a customer's message goes (illustrative)",
+   "alt": "مخطط تدفق بيانات توضيحي: رسالة العميل تدخل عملية الاستقبال، ثم تُرسل مع التعليمات إلى مزوّد النموذج اللغوي خارج المنشأة، وتُقرأ حالة الطلب من سجل الطلبات، ويُكتب كل فعل في سجل التدقيق.",
+   "cols": 3,
+   "rows": 3,
+   "nodes": [
+    {
+     "id": "c",
+     "col": 0,
+     "row": 0,
+     "text": [
+      "العميل"
+     ],
+     "shape": "actor"
+    },
+    {
+     "id": "p1",
+     "col": 1,
+     "row": 0,
+     "text": [
+      "1. استقبال الرسالة",
+      "والتحقق من الحساب"
+     ],
+     "shape": "round"
+    },
+    {
+     "id": "prov",
+     "col": 2,
+     "row": 0,
+     "text": [
+      "مزوّد النموذج اللغوي",
+      "(خارج المنشأة)"
+     ],
+     "shape": "actor"
+    },
+    {
+     "id": "p3",
+     "col": 0,
+     "row": 1,
+     "text": [
+      "3. صياغة الرد",
+      "وإرساله"
+     ],
+     "shape": "round"
+    },
+    {
+     "id": "p2",
+     "col": 1,
+     "row": 1,
+     "text": [
+      "2. فهم الطلب",
+      "وتحديد الفعل"
+     ],
+     "shape": "round"
+    },
+    {
+     "id": "orders",
+     "col": 2,
+     "row": 1,
+     "text": [
+      "سجل الطلبات"
+     ],
+     "shape": "store"
+    },
+    {
+     "id": "audit",
+     "col": 1,
+     "row": 2,
+     "text": [
+      "سجل التدقيق"
+     ],
+     "shape": "store"
+    }
+   ],
+   "edges": [
+    {
+     "from": "c",
+     "to": "p1",
+     "label": "الرسالة"
+    },
+    {
+     "from": "p1",
+     "to": "p2",
+     "label": "بعد التحقق"
+    },
+    {
+     "from": "p2",
+     "to": "prov",
+     "label": "نص الرسالة",
+     "both": true
+    },
+    {
+     "from": "orders",
+     "to": "p2",
+     "label": "حالة الطلب"
+    },
+    {
+     "from": "p2",
+     "to": "p3",
+     "label": "الفعل"
+    },
+    {
+     "from": "p3",
+     "to": "c",
+     "label": "الرد"
+    },
+    {
+     "from": "p2",
+     "to": "audit",
+     "label": "الفعل وسببه"
+    }
+   ]
+  },
+  {
+   "id": "swimlane-diagram",
+   "kind": "grid",
+   "rtl": true,
+   "title_ar": "مخطط المسارات: مطابقة فاتورة مورّد",
+   "title_en": "Swimlane diagram: matching a supplier invoice (illustrative)",
+   "alt": "مخطط مسارات توضيحي بأربعة مسارات: المورّد يرسل الفاتورة، والوكيل يستخرج بنودها ويطابقها بأمر الشراء، فإن لم يكن فرق سُجّلت مطابَقة، وإن كان فرق بتّ فيه المحاسب واعتمد الدفع، والنظام المحاسبي يسجّل.",
+   "cols": 5,
+   "rows": 4,
+   "lanes": [
+    [
+     "المورّد"
+    ],
+    [
+     "الوكيل الذكي"
+    ],
+    [
+     "المحاسب"
+    ],
+    [
+     "النظام",
+     "المحاسبي"
+    ]
+   ],
+   "nodes": [
+    {
+     "id": "s1",
+     "col": 0,
+     "row": 0,
+     "text": [
+      "يرسل الفاتورة"
+     ]
+    },
+    {
+     "id": "a1",
+     "col": 0,
+     "row": 1,
+     "text": [
+      "يستخرج البنود"
+     ]
+    },
+    {
+     "id": "a2",
+     "col": 1,
+     "row": 1,
+     "text": [
+      "يطابقها",
+      "بأمر الشراء"
+     ]
+    },
+    {
+     "id": "a3",
+     "col": 2,
+     "row": 1,
+     "text": [
+      "هل من فرق؟"
+     ],
+     "shape": "decision"
+    },
+    {
+     "id": "h1",
+     "col": 3,
+     "row": 2,
+     "text": [
+      "يبتّ في الفرق"
+     ]
+    },
+    {
+     "id": "h2",
+     "col": 4,
+     "row": 2,
+     "text": [
+      "يعتمد الدفع"
+     ]
+    },
+    {
+     "id": "y1",
+     "col": 1,
+     "row": 3,
+     "text": [
+      "أمر الشراء"
+     ],
+     "shape": "store"
+    },
+    {
+     "id": "y2",
+     "col": 2,
+     "row": 3,
+     "text": [
+      "يسجّل الفاتورة",
+      "مطابَقة"
+     ]
+    },
+    {
+     "id": "y3",
+     "col": 4,
+     "row": 3,
+     "text": [
+      "يسجّل الدفع",
+      "والملاحظة"
+     ]
+    }
+   ],
+   "edges": [
+    {
+     "from": "s1",
+     "to": "a1"
+    },
+    {
+     "from": "a1",
+     "to": "a2"
+    },
+    {
+     "from": "y1",
+     "to": "a2"
+    },
+    {
+     "from": "a2",
+     "to": "a3"
+    },
+    {
+     "from": "a3",
+     "to": "h1",
+     "label": "نعم"
+    },
+    {
+     "from": "a3",
+     "to": "y2",
+     "label": "لا"
+    },
+    {
+     "from": "h1",
+     "to": "h2"
+    },
+    {
+     "from": "h2",
+     "to": "y3"
+    }
+   ]
+  },
+  {
+   "id": "agent-architecture",
+   "kind": "grid",
+   "rtl": true,
+   "title_ar": "معمارية الوكيل الذكي: المكوّنات والحدود",
+   "title_en": "AI agent architecture: parts and limits",
+   "alt": "مخطط معمارية الوكيل: الطلب يدخل إلى النموذج اللغوي بتعليماته، وحوله المعرفة والأدوات، وتمرّ الأفعال بقواعد الصلاحيات قبل أن تصل إلى المخرج أو إلى موافقة إنسان، ويُكتب كل شيء في السجل.",
+   "cols": 3,
+   "rows": 3,
+   "nodes": [
+    {
+     "id": "know",
+     "col": 1,
+     "row": 0,
+     "text": [
+      "المعرفة",
+      "مصادر مسمّاة"
+     ],
+     "shape": "store"
+    },
+    {
+     "id": "in",
+     "col": 0,
+     "row": 1,
+     "text": [
+      "الطلب",
+      "المدخل"
+     ],
+     "shape": "actor"
+    },
+    {
+     "id": "model",
+     "col": 1,
+     "row": 1,
+     "text": [
+      "النموذج اللغوي",
+      "+ التعليمات"
+     ],
+     "shape": "round"
+    },
+    {
+     "id": "rules",
+     "col": 2,
+     "row": 1,
+     "text": [
+      "قواعد الصلاحيات",
+      "في الشيفرة"
+     ],
+     "shape": "decision"
+    },
+    {
+     "id": "tools",
+     "col": 0,
+     "row": 2,
+     "text": [
+      "الأدوات",
+      "قراءة / كتابة"
+     ]
+    },
+    {
+     "id": "log",
+     "col": 1,
+     "row": 2,
+     "text": [
+      "السجل"
+     ],
+     "shape": "store"
+    },
+    {
+     "id": "out",
+     "col": 2,
+     "row": 2,
+     "text": [
+      "المخرج أو",
+      "موافقة إنسان"
+     ],
+     "shape": "actor"
+    },
+    {
+     "id": "stop",
+     "col": 2,
+     "row": 0,
+     "text": [
+      "التوقف والفشل",
+      "إحالة إلى موظف"
+     ]
+    }
+   ],
+   "edges": [
+    {
+     "from": "in",
+     "to": "model"
+    },
+    {
+     "from": "know",
+     "to": "model"
+    },
+    {
+     "from": "model",
+     "to": "tools",
+     "both": true
+    },
+    {
+     "from": "model",
+     "to": "rules",
+     "label": "فعل مقترح"
+    },
+    {
+     "from": "rules",
+     "to": "out",
+     "label": "مسموح"
+    },
+    {
+     "from": "rules",
+     "to": "stop",
+     "label": "غير مسموح"
+    },
+    {
+     "from": "model",
+     "to": "log"
+    },
+    {
+     "from": "rules",
+     "to": "log"
+    }
+   ]
+  },
+  {
+   "id": "human-in-the-loop",
+   "kind": "grid",
+   "rtl": true,
+   "title_ar": "الإشراف البشري: أربعة مستويات لكل فعل",
+   "title_en": "Human oversight: four levels for every action",
+   "alt": "مخطط الإشراف البشري: كل فعل يقترحه الوكيل يمر بقاعدة في الشيفرة تحدد مستواه: A ينفّذ ويسجّل، B ينفّذ ثم يُبلّغ إنساناً، C ينتظر موافقة إنسان مسمّى، D لا ينفّذه الوكيل ويحيله.",
+   "cols": 3,
+   "rows": 4,
+   "nodes": [
+    {
+     "id": "act",
+     "col": 0,
+     "row": 1,
+     "text": [
+      "فعل يقترحه",
+      "الوكيل"
+     ],
+     "shape": "round"
+    },
+    {
+     "id": "rule",
+     "col": 1,
+     "row": 1,
+     "text": [
+      "ما مستوى",
+      "هذا الفعل؟"
+     ],
+     "shape": "decision"
+    },
+    {
+     "id": "A",
+     "col": 2,
+     "row": 0,
+     "text": [
+      "A مستقل",
+      "ينفّذ ويسجّل"
+     ]
+    },
+    {
+     "id": "B",
+     "col": 2,
+     "row": 1,
+     "text": [
+      "B إشعار",
+      "ينفّذ ثم يُبلّغ"
+     ]
+    },
+    {
+     "id": "C",
+     "col": 2,
+     "row": 2,
+     "text": [
+      "C موافقة",
+      "ينتظر إنساناً مسمّى"
+     ]
+    },
+    {
+     "id": "Dn",
+     "col": 1,
+     "row": 2,
+     "text": [
+      "D محظور",
+      "لا ينفّذ، يحيل"
+     ]
+    },
+    {
+     "id": "no",
+     "col": 2,
+     "row": 3,
+     "text": [
+      "بلا رد في المدة؟",
+      "لا تنفيذ"
+     ],
+     "shape": "store"
+    }
+   ],
+   "edges": [
+    {
+     "from": "act",
+     "to": "rule"
+    },
+    {
+     "from": "rule",
+     "to": "A"
+    },
+    {
+     "from": "rule",
+     "to": "B"
+    },
+    {
+     "from": "rule",
+     "to": "C"
+    },
+    {
+     "from": "rule",
+     "to": "Dn"
+    },
+    {
+     "from": "C",
+     "to": "no",
+     "dashed": true
+    }
+   ]
+  },
+  {
+   "id": "multi-agent-orchestration",
+   "kind": "grid",
+   "rtl": true,
+   "title_ar": "تنسيق عدة وكلاء: منسّق ووكلاء متخصصون",
+   "title_en": "Multi-agent orchestration: an orchestrator and specialised workers",
+   "alt": "مخطط تنسيق عدة وكلاء: المنسّق يقسّم المهمة على ثلاثة وكلاء متخصصين، لكل منهم أدواته وسياقه، ثم يجمع نتائجهم ويتحقق منها قبل تسليم المخرج.",
+   "cols": 3,
+   "rows": 3,
+   "nodes": [
+    {
+     "id": "task",
+     "col": 0,
+     "row": 1,
+     "text": [
+      "المهمة"
+     ],
+     "shape": "actor"
+    },
+    {
+     "id": "orch",
+     "col": 1,
+     "row": 1,
+     "text": [
+      "المنسّق",
+      "يقسّم ويجمع"
+     ],
+     "shape": "round"
+    },
+    {
+     "id": "w1",
+     "col": 2,
+     "row": 0,
+     "text": [
+      "وكيل البحث",
+      "أدوات قراءة"
+     ]
+    },
+    {
+     "id": "w2",
+     "col": 2,
+     "row": 1,
+     "text": [
+      "وكيل الحساب",
+      "أداة حاسبة"
+     ]
+    },
+    {
+     "id": "w3",
+     "col": 2,
+     "row": 2,
+     "text": [
+      "وكيل الصياغة",
+      "بلا أدوات"
+     ]
+    },
+    {
+     "id": "out",
+     "col": 0,
+     "row": 2,
+     "text": [
+      "المخرج",
+      "بعد التحقق"
+     ],
+     "shape": "actor"
+    },
+    {
+     "id": "cost",
+     "col": 1,
+     "row": 0,
+     "text": [
+      "التكلفة:",
+      "رموز كل وكيل تُجمع"
+     ],
+     "shape": "store"
+    }
+   ],
+   "edges": [
+    {
+     "from": "task",
+     "to": "orch"
+    },
+    {
+     "from": "orch",
+     "to": "w1",
+     "both": true
+    },
+    {
+     "from": "orch",
+     "to": "w2",
+     "both": true
+    },
+    {
+     "from": "orch",
+     "to": "w3",
+     "both": true
+    },
+    {
+     "from": "orch",
+     "to": "out"
+    },
+    {
+     "from": "orch",
+     "to": "cost",
+     "dashed": true
+    }
+   ]
+  },
+  {
+   "id": "retrieval-augmented-generation",
+   "kind": "grid",
+   "rtl": true,
+   "title_ar": "التوليد المعزَّز بالاسترجاع",
+   "title_en": "Retrieval-augmented generation (RAG)",
+   "alt": "مخطط التوليد المعزَّز بالاسترجاع: السؤال يذهب إلى المسترجِع الذي يبحث في فهرس المستندات، ثم يُعطى النموذج اللغوي السؤال مع المقاطع المسترجَعة ليكتب جواباً يذكر مصادره.",
+   "cols": 3,
+   "rows": 3,
+   "nodes": [
+    {
+     "id": "docs",
+     "col": 0,
+     "row": 0,
+     "text": [
+      "مستندات المنشأة",
+      "سياسات، أسعار، عقود"
+     ],
+     "shape": "store"
+    },
+    {
+     "id": "index",
+     "col": 1,
+     "row": 0,
+     "text": [
+      "الفهرس",
+      "مقاطع مرقّمة"
+     ],
+     "shape": "store"
+    },
+    {
+     "id": "q",
+     "col": 0,
+     "row": 1,
+     "text": [
+      "السؤال"
+     ],
+     "shape": "actor"
+    },
+    {
+     "id": "ret",
+     "col": 1,
+     "row": 1,
+     "text": [
+      "المسترجِع",
+      "يجلب أقرب المقاطع"
+     ],
+     "shape": "round"
+    },
+    {
+     "id": "llm",
+     "col": 2,
+     "row": 1,
+     "text": [
+      "النموذج اللغوي",
+      "السؤال + المقاطع"
+     ],
+     "shape": "round"
+    },
+    {
+     "id": "ans",
+     "col": 2,
+     "row": 2,
+     "text": [
+      "جواب بمصادره",
+      "أو «لا أجد»"
+     ],
+     "shape": "actor"
+    },
+    {
+     "id": "eval",
+     "col": 1,
+     "row": 2,
+     "text": [
+      "تقييم الاسترجاع",
+      "هل جُلب المقطع الصحيح؟"
+     ],
+     "shape": "decision"
+    }
+   ],
+   "edges": [
+    {
+     "from": "docs",
+     "to": "index",
+     "label": "تقطيع وفهرسة"
+    },
+    {
+     "from": "q",
+     "to": "ret"
+    },
+    {
+     "from": "index",
+     "to": "ret"
+    },
+    {
+     "from": "ret",
+     "to": "llm",
+     "label": "المقاطع"
+    },
+    {
+     "from": "llm",
+     "to": "ans"
+    },
+    {
+     "from": "ret",
+     "to": "eval",
+     "dashed": true
+    }
+   ]
+  },
+  {
+   "id": "model-context-protocol",
+   "kind": "grid",
+   "rtl": true,
+   "title_ar": "بروتوكول سياق النموذج",
+   "title_en": "Model Context Protocol (MCP)",
+   "alt": "مخطط بروتوكول سياق النموذج: تطبيق الذكاء الاصطناعي يتصل عبر عميل متوافق بعدة خوادم، وكل خادم يعرض أدوات وموارد من نظام واحد؛ والصلاحيات تبقى عند التطبيق وحساب الخدمة.",
+   "cols": 3,
+   "rows": 3,
+   "nodes": [
+    {
+     "id": "app",
+     "col": 0,
+     "row": 1,
+     "text": [
+      "تطبيق الذكاء الاصطناعي",
+      "عميل متوافق"
+     ],
+     "shape": "round"
+    },
+    {
+     "id": "s1",
+     "col": 1,
+     "row": 0,
+     "text": [
+      "خادم MCP",
+      "نظام الطلبات"
+     ]
+    },
+    {
+     "id": "s2",
+     "col": 1,
+     "row": 1,
+     "text": [
+      "خادم MCP",
+      "المحاسبة"
+     ]
+    },
+    {
+     "id": "s3",
+     "col": 1,
+     "row": 2,
+     "text": [
+      "خادم MCP",
+      "المستندات"
+     ]
+    },
+    {
+     "id": "y1",
+     "col": 2,
+     "row": 0,
+     "text": [
+      "نظام الطلبات"
+     ],
+     "shape": "store"
+    },
+    {
+     "id": "y2",
+     "col": 2,
+     "row": 1,
+     "text": [
+      "النظام المحاسبي"
+     ],
+     "shape": "store"
+    },
+    {
+     "id": "y3",
+     "col": 2,
+     "row": 2,
+     "text": [
+      "مخزن المستندات"
+     ],
+     "shape": "store"
+    },
+    {
+     "id": "perm",
+     "col": 0,
+     "row": 2,
+     "text": [
+      "الصلاحيات",
+      "خارج البروتوكول"
+     ],
+     "shape": "decision"
+    }
+   ],
+   "edges": [
+    {
+     "from": "app",
+     "to": "s1",
+     "both": true
+    },
+    {
+     "from": "app",
+     "to": "s2",
+     "both": true
+    },
+    {
+     "from": "app",
+     "to": "s3",
+     "both": true
+    },
+    {
+     "from": "s1",
+     "to": "y1",
+     "both": true
+    },
+    {
+     "from": "s2",
+     "to": "y2",
+     "both": true
+    },
+    {
+     "from": "s3",
+     "to": "y3",
+     "both": true
+    },
+    {
+     "from": "app",
+     "to": "perm",
+     "dashed": true
+    }
+   ]
+  }
+ ]
+}
